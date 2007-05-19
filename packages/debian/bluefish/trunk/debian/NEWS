@@ -1,0 +1,18 @@
+bluefish (1.0.5-1) unstable; urgency=high
+
+  The package provides updates for several highlighting pattern (e.g. C,
+  ChangeLog, CSS, SQL, Perl and PHP). To update your highlighting pattern,
+  follow the instructions in README.Debian. There you will also find
+  instructions for how to update custom menu files (the French localisation
+  was updated and a few bugs were fixed).
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat,  4 Feb 2006 22:39:12 +0100
+
+bluefish (1.0.4-2) unstable; urgency=low
+
+  The package updates highlighting patterns and custom menu files to fix
+  several issues and bugs. See README.Debian for instructions, how to update
+  highlighting pattern and custom menu files.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 16 Jan 2006 23:16:27 +0100
+
