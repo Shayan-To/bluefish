@@ -1,0 +1,2 @@
+debian/bluefish_icon.xpm usr/share/pixmaps
+debian/reportbug/* usr/share/bug/bluefish
