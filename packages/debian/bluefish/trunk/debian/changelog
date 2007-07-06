@@ -1,6 +1,8 @@
 bluefish (1.0.7-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * debian/rules (clean): Fixed debian-rules-ignores-make-clean-error lintian
+    warning.
   * debian/patches/02_431023_fix_segfault_in_aspell.dpatch: Added.
     - src/bfspell.c: Turn off the `Add( word)' button to prevent bluefish
       crashing (closes: #431023).
