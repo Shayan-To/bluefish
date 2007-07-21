@@ -1,6 +1,7 @@
 bluefish (1.0.7-3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * debian/watch: Added watch file.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 21 Jul 2007 15:40:28 +0200
 
