@@ -13,6 +13,8 @@ bluefish (1.0.7-3) UNRELEASED; urgency=low
   * debian/patches/91_desktop_file_validity.dpatch: Added.
     - Make the .desktop files compliant with the latest freedesktop.org
       policy.
+  * debian/patches/99_fix_436599_handle_nostrip.dpatch: Added.
+    - Handle the nostrip build option (closes: #436599).
   * debian/patches/00list: Adjusted.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 21 Jul 2007 15:40:28 +0200

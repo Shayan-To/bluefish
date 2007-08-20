@@ -1,3 +1,4 @@
 02_431023_fix_segfault_in_aspell
 90_manpage_update
 91_desktop_file_validity
+99_fix_436599_handle_nostrip
