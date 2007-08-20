@@ -1,7 +1,19 @@
 bluefish (1.0.7-3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * debian/bluefish-menu (section): Fixed to be compliant to the latest menu
+    policy.
+  * debian/control (Uploaders): Removed Leo, because I'm sponsored by someone
+    else for some time now.
+    (Suggests): Removed php4-cli and replaced mozilla with iceape | iceweasel.
   * debian/watch: Added watch file.
+  * debian/patches/90_manpage_update.dpatch: Added.
+    - Fix the manpage-has-useless-whatis-entry lintian warning and improve it
+      slightly (copied from upstream CVS).
+  * debian/patches/91_desktop_file_validity.dpatch: Added.
+    - Make the .desktop files compliant with the latest freedesktop.org
+      policy.
+  * debian/patches/00list: Adjusted.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 21 Jul 2007 15:40:28 +0200
 

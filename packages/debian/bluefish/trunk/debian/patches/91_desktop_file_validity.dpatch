@@ -1,0 +1,33 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 91_desktop_file_validity.dpatch by Daniel Leidert (dale) <daniel.leidert@wgdd.de>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Make the files compliant with the latest freedesktop.org specification.
+## DP:   This also fixes the lintian warnings.
+## DP:
+## DP: NOTE: This patch and 01_ubuntu_desktop_fix.dpatch may conflict with
+## DP:       each other and can lead to the patch beeing rejected.
+
+@DPATCH@
+diff -urNad trunk~/data/bluefish-project.desktop.in trunk/data/bluefish-project.desktop.in
+--- trunk~/data/bluefish-project.desktop.in	2006-01-31 07:23:18.000000000 +0100
++++ trunk/data/bluefish-project.desktop.in	2007-08-21 00:09:05.000000000 +0200
+@@ -10,6 +10,5 @@
+ Terminal=false
+ Type=Application
+ NoDisplay=true
+-Encoding=UTF-8
+ StartupNotify=true
+ MimeType=application/bluefish-project;
+diff -urNad trunk~/data/bluefish.desktop.in trunk/data/bluefish.desktop.in
+--- trunk~/data/bluefish.desktop.in	2006-01-31 07:23:18.000000000 +0100
++++ trunk/data/bluefish.desktop.in	2007-08-21 00:09:26.000000000 +0200
+@@ -9,7 +9,6 @@
+ Icon=ICONDIR/bluefish-icon.png
+ Terminal=false
+ Type=Application
+-Categories=GTK;GNOME;Application;Development;WebDevelopment;
+-Encoding=UTF-8
++Categories=GTK;GNOME;Development;WebDevelopment;
+ StartupNotify=true
+ MimeType=text/html;text/css;text/x-javascript;text/x-python;text/x-perl;application/x-php;text/x-java;text/javascript;text/x-php;application/x-cgi;application/x-javascript;application/x-perl;application/x-python;application/xhtml+xml;text/mathml;text/x-csrc;text/x-chdr;text/x-dtd;text/x-sql;text/xml;
