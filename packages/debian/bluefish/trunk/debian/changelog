@@ -8,6 +8,9 @@ bluefish (1.0.7-3) UNRELEASED; urgency=low
     time now.
     (Suggests): Removed php4-cli and replaced mozilla with iceape | iceweasel.
   * debian/watch: Added watch file.
+  * debian/patches/03_latest_highlighting_pattern.dpatch: Added.
+    - Update the filetypes list and the highlighting pattern to latest
+      upstream version.
   * debian/patches/90_manpage_update.dpatch: Added.
     - Fix the manpage-has-useless-whatis-entry lintian warning and improve it
       slightly (copied from upstream CVS).
