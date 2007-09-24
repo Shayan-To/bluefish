@@ -3,8 +3,9 @@ bluefish (1.0.7-3) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * debian/bluefish-menu (section): Fixed to be compliant to the latest menu
     policy.
-  * debian/control (Uploaders): Removed Leo, because I'm sponsored by someone
-    else for some time now.
+  * debian/control: Homepage field transition.
+    (Uploaders): Removed Leo, because I'm sponsored by someone else for some
+    time now.
     (Suggests): Removed php4-cli and replaced mozilla with iceape | iceweasel.
   * debian/watch: Added watch file.
   * debian/patches/90_manpage_update.dpatch: Added.
