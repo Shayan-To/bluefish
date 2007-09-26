@@ -1,3 +1,14 @@
+bluefish (1.0.7-3) unstable; urgency=low
+
+  This package update provides fixed/improved/updated pattern for C, Python,
+  PHP, Shell and XML. Pattern for D and Kid were added.
+
+  Further several filetype pattern have been updated (e.g. for C files).
+
+  To update your pattern, follow the instructions in README.Debian.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Wed, 26 Sep 2007 21:42:59 +0200
+
 bluefish (1.0.5-1) unstable; urgency=high
 
   The package provides updates for several highlighting pattern (e.g. C,

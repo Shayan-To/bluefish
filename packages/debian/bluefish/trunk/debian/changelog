@@ -1,6 +1,5 @@
-bluefish (1.0.7-3) UNRELEASED; urgency=low
+bluefish (1.0.7-3) unstable; urgency=low
 
-  * NOT RELEASED YET
   * debian/bluefish.menu (section): Fixed to be compliant to the latest menu
     policy.
   * debian/bluefish.postrm: Removed. Replaced by debhelper script calls.
@@ -28,7 +27,7 @@ bluefish (1.0.7-3) UNRELEASED; urgency=low
     - Handle the nostrip build option (closes: #436599).
   * debian/patches/00list: Adjusted.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 21 Jul 2007 15:40:28 +0200
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Wed, 26 Sep 2007 21:43:03 +0200
 
 bluefish (1.0.7-2) unstable; urgency=low
 
