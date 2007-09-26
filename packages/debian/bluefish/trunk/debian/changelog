@@ -1,3 +1,9 @@
+bluefish (1.0.7-4) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 27 Sep 2007 00:22:54 +0200
+
 bluefish (1.0.7-3) unstable; urgency=low
 
   * debian/bluefish.menu (section): Fixed to be compliant to the latest menu
