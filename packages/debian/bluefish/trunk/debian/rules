@@ -77,7 +77,9 @@ binary-arch: build install
 	dh_install
 	dh_installdocs
 	dh_installmenu
+	dh_installmime
 	dh_installchangelogs NEWS
+	dh_desktop
 	dh_link
 	dh_strip
 	dh_compress
