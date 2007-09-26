@@ -1,0 +1,23 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 99_fix_436599_handle_nostrip.dpatch by Daniel Leidert (dale) <daniel.leidert@wgdd.de>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Upstream hardcodes the stripping of the binary. This way, the nostrip
+## DP:   build option is silently ignored. This patch removes the stripping
+## DP:   option for install.
+## DP:
+## DP: <URL:http://bugs.debian.org/436599>
+
+@DPATCH@
+diff -urNad trunk~/src/Makefile.in trunk/src/Makefile.in
+--- trunk~/src/Makefile.in	2006-10-21 18:36:18.000000000 +0200
++++ trunk/src/Makefile.in	2007-08-21 00:30:34.000000000 +0200
+@@ -39,7 +39,7 @@
+ LIBS = @LIBS@
+ INSTALL = @INSTALL@
+ INSTALL_DIR = $(INSTALL) -d -m 755 
+-INSTALL_PROGRAM = $(INSTALL) -s -m 755
++INSTALL_PROGRAM = $(INSTALL) -m 755
+ DEFS = -DLOCALEDIR=\"$(localedir)\" -DGNULOCALEDIR=\"$(gnulocaledir)\" \
+ -DLOCALE_ALIAS_PATH=\"$(aliaspath)\" -DPKGDATADIR=\"$(pkgdatadir)\" @DEFS@
+ 
