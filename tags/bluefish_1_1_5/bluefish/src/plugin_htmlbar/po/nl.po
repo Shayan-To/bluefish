@@ -1,0 +1,2141 @@
+# translation of bluefish-unstable_plugin_htmlbar.pot to Dutch
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# Olav Sliekers <idunno@mysun.com>, 2001.
+# Olivier Sessink, 2002.
+# elve <elve@savage-elve.net>, 2007.
+# Dutch translation of Bluefish
+# Copyright (C) 2001, 2007 Free Software Foundation, Inc.
+msgid ""
+msgstr ""
+"Project-Id-Version: bluefish-unstable\n"
+"Report-Msgid-Bugs-To: bluefish-dev@lists.ems.ru\n"
+"POT-Creation-Date: 2007-08-20 20:48+0200\n"
+"PO-Revision-Date: 2007-08-22 17:11+0200\n"
+"Last-Translator: elve <elve@savage-elve.net>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. _DM_ Alert box asking if user would like to change request from add to
+#. * update.
+#.
+#: src/plugin_htmlbar/html2.c:499
+msgid "_Update"
+msgstr "Update"
+
+#: src/plugin_htmlbar/html2.c:504
+#, c-format
+msgid "The %s %s property already exists.\n"
+msgstr "De %s %s eigenschap bestaat al\n"
+
+#: src/plugin_htmlbar/html2.c:506
+#, c-format
+msgid "The %s property already exists.\n"
+msgstr "De %s eigenschap bestaat al\n"
+
+#: src/plugin_htmlbar/html2.c:509
+#, c-format
+msgid "Update it's value from %s to %s?"
+msgstr "Waarde updaten van %s naar %s?"
+
+#: src/plugin_htmlbar/html2.c:635
+msgid "Cascading Style Sheet Builder"
+msgstr "Cascading Style Sheet Builder"
+
+#: src/plugin_htmlbar/html2.c:655
+msgid "_Selector:"
+msgstr "Selector:"
+
+#: src/plugin_htmlbar/html2.c:674
+msgid "_Property:"
+msgstr "Eigenschap:"
+
+#: src/plugin_htmlbar/html2.c:676 src/plugin_htmlbar/html_form.c:650
+#: src/plugin_htmlbar/html_form.c:799 src/plugin_htmlbar/html_form.c:894
+msgid "_Value:"
+msgstr "Waarde:"
+
+#: src/plugin_htmlbar/html2.c:694
+msgid "Selector"
+msgstr "Selector"
+
+#: src/plugin_htmlbar/html2.c:694 src/plugin_htmlbar/html2.c:697
+msgid "Property"
+msgstr "Eigenschap"
+
+#: src/plugin_htmlbar/html2.c:694 src/plugin_htmlbar/html2.c:697
+msgid "Value"
+msgstr "Waarde"
+
+#: src/plugin_htmlbar/html2.c:712
+msgid " _Add "
+msgstr " Toevoegen "
+
+#: src/plugin_htmlbar/html2.c:715
+msgid " _Update "
+msgstr " Vernieuwen"
+
+#: src/plugin_htmlbar/html2.c:718
+msgid " _Delete "
+msgstr "Verwĳderen"
+
+#: src/plugin_htmlbar/html2.c:971 src/plugin_htmlbar/html2.c:1008
+msgid "_Style..."
+msgstr "Stĳl..."
+
+#: src/plugin_htmlbar/html2.c:1165
+msgid "Bluefish: Select color"
+msgstr "Bluefish: Selecteer kleur"
+
+#: src/plugin_htmlbar/htmlbar.c:36
+msgid "Edit color"
+msgstr "Kleur bewerken"
+
+#: src/plugin_htmlbar/htmlbar.c:44
+msgid "Edit tag"
+msgstr "Tag bewerken"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:203
+msgid "/_Tags"
+msgstr "/_Tags"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:205
+msgid "/Tags/_Headings"
+msgstr "/Tags/_Koppen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:207
+msgid "/Tags/Headings/H_1"
+msgstr "/Tags/Koppen/H_1"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:208
+msgid "/Tags/Headings/H_2"
+msgstr "/Tags/Koppen/H2"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:209
+msgid "/Tags/Headings/H_3"
+msgstr "/Tags/Koppen/H3"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:210
+msgid "/Tags/Headings/H_4"
+msgstr "/Tags/Koppen/H4"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:211
+msgid "/Tags/Headings/H_5"
+msgstr "/Tags/Koppen/H5"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:212
+msgid "/Tags/Headings/H_6"
+msgstr "/Tags/Koppen/H6"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:213
+msgid "/Tags/_Special"
+msgstr "/Tags/Speciaal"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:215
+msgid "/Tags/Special/_Accent"
+msgstr "/Tags/Speciaal/Accent"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:217
+msgid "/Tags/Special/Accent/_Uppercase"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:218
+msgid "/Tags/Special/Accent/Uppercase/_A-I"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:220
+msgid "/Tags/Special/Accent/Uppercase/A-I/A grave À"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/A grave À"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:221
+msgid "/Tags/Special/Accent/Uppercase/A-I/A acute Á"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/A acute Á"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:222
+msgid "/Tags/Special/Accent/Uppercase/A-I/A circumflex Â"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/A circumflex Â"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:223
+msgid "/Tags/Special/Accent/Uppercase/A-I/A tilde Ã"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/A tilde Ã"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:224
+msgid "/Tags/Special/Accent/Uppercase/A-I/AE ligature Æ"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/AE ligature Æ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:225
+msgid "/Tags/Special/Accent/Uppercase/A-I/A diaeresis Ä"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/A diaeresis Ä"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:226
+msgid "/Tags/Special/Accent/Uppercase/A-I/A ring Å"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/A ring Å"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:227
+msgid "/Tags/Special/Accent/Uppercase/A-I/C cedilla Ç"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/C cedilla Ç"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:228
+msgid "/Tags/Special/Accent/Uppercase/A-I/E grave È"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/E grave È"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:229
+msgid "/Tags/Special/Accent/Uppercase/A-I/E acute É"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/E acute É"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:230
+msgid "/Tags/Special/Accent/Uppercase/A-I/E circumflex Ê"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/E circumflex Ê"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:231
+msgid "/Tags/Special/Accent/Uppercase/A-I/E diaeresis Ë"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/E diaeresis Ë"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:232
+msgid "/Tags/Special/Accent/Uppercase/A-I/I grave Ì"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/I grave Ì"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:233
+msgid "/Tags/Special/Accent/Uppercase/A-I/I acute Í"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/I acute Í"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:234
+msgid "/Tags/Special/Accent/Uppercase/A-I/I circumflex Î"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/I circumflex Î"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:235
+msgid "/Tags/Special/Accent/Uppercase/A-I/I diaeresis Ï"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/I diaeresis Ï"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:236
+msgid "/Tags/Special/Accent/Uppercase/_J-Z"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:238
+msgid "/Tags/Special/Accent/Uppercase/J-Z/N tilde Ñ"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/N tilde Ñ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:239
+msgid "/Tags/Special/Accent/Uppercase/J-Z/O grave Ò"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/O grave Ò"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:240
+msgid "/Tags/Special/Accent/Uppercase/J-Z/O acute Ó"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/O acute Ó"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:241
+msgid "/Tags/Special/Accent/Uppercase/J-Z/O circumflex Ô"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/O circumflex Ô"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:242
+msgid "/Tags/Special/Accent/Uppercase/J-Z/OE ligature Œ"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/A-I/OE ligature Œ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:243
+msgid "/Tags/Special/Accent/Uppercase/J-Z/O tilde Õ"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/O tilde Õ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:244
+msgid "/Tags/Special/Accent/Uppercase/J-Z/O diaeresis Ö"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/O diaeresis Ö"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:245
+msgid "/Tags/Special/Accent/Uppercase/J-Z/O slash Ø"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/O slash Ø"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:246
+msgid "/Tags/Special/Accent/Uppercase/J-Z/U grave Ù"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/U grave Ù"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:247
+msgid "/Tags/Special/Accent/Uppercase/J-Z/U acute Ú"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/U acute Ú"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:248
+msgid "/Tags/Special/Accent/Uppercase/J-Z/U circumflex Û"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/U circumflex Û"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:249
+msgid "/Tags/Special/Accent/Uppercase/J-Z/U diaeresis Ü"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/U diaeresis Ü"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:250
+msgid "/Tags/Special/Accent/Uppercase/J-Z/Y acute Ý"
+msgstr "/Tags/Speciaal/Accent/Hoofdletters/J-Z/Y acute Ý"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:251
+msgid "/Tags/Special/Accent/_Lowercase"
+msgstr "/Tags/Speciaal/Accent/kleine letters"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:252
+msgid "/Tags/Special/Accent/Lowercase/_A-I"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:254
+msgid "/Tags/Special/Accent/Lowercase/A-I/a grave à"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/a grave à"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:255
+msgid "/Tags/Special/Accent/Lowercase/A-I/a acute á"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/a acute á"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:256
+msgid "/Tags/Special/Accent/Lowercase/A-I/a circumflex â"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/a circumflex â"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:257
+msgid "/Tags/Special/Accent/Lowercase/A-I/a tilde ã"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/a tilde ã"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:258
+msgid "/Tags/Special/Accent/Lowercase/A-I/a ring å"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/a ring å"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:259
+msgid "/Tags/Special/Accent/Lowercase/A-I/ae ligature æ"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/ae ligature æ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:260
+msgid "/Tags/Special/Accent/Lowercase/A-I/a diaeresis ä"
+msgstr "/Tags/Speciaal/Accent/kleine letters/A-I/a diaeresis ä"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:261
+msgid "/Tags/Special/Accent/Lowercase/A-I/c cedilla ç"
+msgstr "/Tags/Speciaal/Accent/kleine letters/A-I/c cedilla ç"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:262
+msgid "/Tags/Special/Accent/Lowercase/A-I/e grave è"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/e grave è"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:263
+msgid "/Tags/Special/Accent/Lowercase/A-I/e acute é"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/ e acute é"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:264
+msgid "/Tags/Special/Accent/Lowercase/A-I/e circumflex ê"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/e circumflex ê"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:265
+msgid "/Tags/Special/Accent/Lowercase/A-I/e diaeresis ë"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/e diaeresis ë"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:266
+msgid "/Tags/Special/Accent/Lowercase/A-I/i grave ì"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/i grave ì"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:267
+msgid "/Tags/Special/Accent/Lowercase/A-I/i acute í"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/i acute í"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:268
+msgid "/Tags/Special/Accent/Lowercase/A-I/i circumflex î"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/i circumflex î"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:269
+msgid "/Tags/Special/Accent/Lowercase/A-I/i diaeresis ï"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/i diaeresis ï"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:270
+msgid "/Tags/Special/Accent/Lowercase/_J-Z"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:272
+msgid "/Tags/Special/Accent/Lowercase/J-Z/n tilde ñ"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/n tilde ñ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:273
+msgid "/Tags/Special/Accent/Lowercase/J-Z/o grave ò"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/o grave ò"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:274
+msgid "/Tags/Special/Accent/Lowercase/J-Z/o acute ó"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/o acute ó"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:275
+msgid "/Tags/Special/Accent/Lowercase/J-Z/oe ligature œ"
+msgstr "/Tags/Speciaal/Accent/kleine letters/a-i/oe ligature œ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:276
+msgid "/Tags/Special/Accent/Lowercase/J-Z/o circumflex ô"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/o circumflex ô"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:277
+msgid "/Tags/Special/Accent/Lowercase/J-Z/o tilde õ"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/o tilde õ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:278
+msgid "/Tags/Special/Accent/Lowercase/J-Z/o diaeresis ö"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/o diaeresis ö"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:279
+msgid "/Tags/Special/Accent/Lowercase/J-Z/o slash ø"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/o slash ø"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:280
+msgid "/Tags/Special/Accent/Lowercase/J-Z/u grave ù"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/u grave ù"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:281
+msgid "/Tags/Special/Accent/Lowercase/J-Z/u acute ú"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/u acute ú"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:282
+msgid "/Tags/Special/Accent/Lowercase/J-Z/u circumflex û"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/u circumflex û"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:283
+msgid "/Tags/Special/Accent/Lowercase/J-Z/u diaeresis ü"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/u diaereis ü"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:284
+msgid "/Tags/Special/Accent/Lowercase/J-Z/y acute ý"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/y acute ý"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:285
+msgid "/Tags/Special/Accent/Lowercase/J-Z/y diaeresis ÿ"
+msgstr "/Tags/Speciaal/Accent/kleine letters/j-z/y diaeresis ÿ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:287
+msgid "/Tags/Special/Accent/U_mlaut ¨"
+msgstr "/Tags/Speciaal/Accent/Umlaut ¨"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:288
+msgid "/Tags/Special/Accent/_Acute ´"
+msgstr "/Tags/Speciaal/Accent/Acute `"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:289
+msgid "/Tags/Special/Accent/_Cedilla ¸"
+msgstr "/Tags/Speciaal/Accent/Cedilla ¸"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:290
+msgid "/Tags/Special/_Currency"
+msgstr "/Tags/Speciaal/Munteenheid"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:292
+msgid "/Tags/Special/Currency/_Cent sign ¢"
+msgstr "/Tags/Speciaal/Munteenheid/Cent teken ¢"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:293
+msgid "/Tags/Special/Currency/_Pound sterling £"
+msgstr "/Tags/Speciaal/Munteenheid/Pond sterling £"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:294
+msgid "/Tags/Special/Currency/C_urrency sign ¤"
+msgstr "/Tags/Speciaal/Munteenheid/Munteenheid ¤"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:295
+msgid "/Tags/Special/Currency/_Yen sign ¥"
+msgstr "/Tags/Speciaal/Munteenheid/Yen teken ¥"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:296
+msgid "/Tags/Special/Currency/_Euro "
+msgstr "/Tags/Speciaal/Munteenheid/Euro teken €"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:297
+msgid "/Tags/Special/_Math-Science"
+msgstr "/Tags speciaal/Wiskunde"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:299
+msgid "/Tags/Special/Math-Science/Logical _not sign ¬"
+msgstr "/Tags speciaal/Wiskunde/Logische NOT teken ¬"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:300
+msgid "/Tags/Special/Math-Science/_Multiplication sign ×"
+msgstr "/Tags speciaal/Wiskunde/Vermenigvuldigingsteken ×"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:301
+msgid "/Tags/Special/Math-Science/_Division sign ÷"
+msgstr "/Tags speciaal/Wiskunde/Delingsteken ÷"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:302
+msgid "/Tags/Special/Math-Science/_Plus-minus sign ±"
+msgstr "/Tags speciaal/Wiskunde/Plus-Minus teken ±"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:303
+msgid "/Tags/Special/Math-Science/_Less-than sign <"
+msgstr "/Tags speciaal/Wiskunde/Kleiner dan teken <"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:304
+msgid "/Tags/Special/Math-Science/_Greater-than sign >"
+msgstr "/Tags speciaal/Wiskunde/Groter dan teken >"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:305
+msgid "/Tags/Special/Math-Science/Superscript _1 ¹"
+msgstr "/Tags speciaal/Wiskunde/Superscript 1 ¹"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:306
+msgid "/Tags/Special/Math-Science/Superscript _2 ²"
+msgstr "/Tags speciaal/Wiskunde/Superscript 2 ²"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:307
+msgid "/Tags/Special/Math-Science/Superscript _3 ³"
+msgstr "/Tags speciaal/Wiskunde/Superscript 3 ³"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:308
+msgid "/Tags/Special/Math-Science/One _quarter ¼"
+msgstr "/Tags speciaal/Wiskunde/Een kwart ¼"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:309
+msgid "/Tags/Special/Math-Science/One _half ½"
+msgstr "/Tags speciaal/Wiskunde/Een half ½"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:310
+msgid "/Tags/Special/Math-Science/_Three quarters ¾"
+msgstr "/Tags speciaal/Wiskunde/Drie kwart ¾"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:311
+msgid "/Tags/Special/Math-Science/Deg_ree sign °"
+msgstr "/Tags speciaal/Wiskunde/Graden teken °"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:312
+msgid "/Tags/Special/_Non Latin"
+msgstr "/Tags/Speciaal/Non Latin"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:314
+msgid "/Tags/Special/Non Latin/_ETH (Icelandic) Ð"
+msgstr "/Tags/Speciaal/Non Latin/ETH (Ĳsland) Ð"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:315
+msgid "/Tags/Special/Non Latin/_THORN (Icelandic) Þ"
+msgstr "/Tags/Speciaal/Non Latin/THORN (Ĳsland) Þ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:316
+msgid "/Tags/Special/Non Latin/et_h (Icelandic) ð"
+msgstr "/Tags/Speciaal/Non Latin/eth (Ĳsland) ð"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:317
+msgid "/Tags/Special/Non Latin/th_orn ÿ"
+msgstr "/Tags/Speciaal/Non Latin/thorn ÿ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:318
+msgid "/Tags/Special/Non Latin/Sharp _s ß"
+msgstr "/Tags/Speciaal/Non Latin/Ringeles ß"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:319
+msgid "/Tags/Special/Non Latin/_Micro sign µ"
+msgstr "/Tags/Speciaal/Non Latin/Micro teken µ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:320
+msgid "/Tags/Special/_Other"
+msgstr "/Tags/Speciaal/Overige"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:322
+msgid "/Tags/Special/Other/_Non-breaking space"
+msgstr "/Tags/Speciaal/Overige/Spatie"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:323
+msgid "/Tags/Special/Other/_Section sign §"
+msgstr "/Tags/Speciaal/Overige/Paragraaf teken §"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:324
+msgid "/Tags/Special/Other/_Copyright sign ©"
+msgstr "/Tags/Speciaal/Overige/Copyright teken ©"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:325
+msgid "/Tags/Special/Other/_Left angle quotes «"
+msgstr "/Tags/Speciaal/Overige/Linker hoek quotes «"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:326
+msgid "/Tags/Special/Other/_Right angle quotes »"
+msgstr "/Tags/Speciaal/Overige/rechter hoek quotes »"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:327
+msgid "/Tags/Special/Other/Registered _trademark ®"
+msgstr "/Tags/Speciaal/Overige/Registered trademark ®"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:328
+msgid "/Tags/Special/Other/Inverted _exclamation ¡"
+msgstr "/Tags/Speciaal/Overige/Omgekeerd uitroepteken ¡"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:329
+msgid "/Tags/Special/Other/Inverted _question mark ¿"
+msgstr "/Tags/Speciaal/Overige/Omgekeerd vraagteken ¿"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:330
+msgid "/Tags/Special/Other/_Feminine ordinal ª"
+msgstr "/Tags/Speciaal/Overige/Vroouwelijke ordinaal ª"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:331
+msgid "/Tags/Special/Other/_Masculine ordinal º"
+msgstr "/Tags/Speciaal/Overige/Mannelijke ordinaal º"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:332
+msgid "/Tags/Special/Other/_Pilcrow (paragraph sign) ¶"
+msgstr "/Tags/Speciaal/Overige/Pilcrow (paragraaf teken) ¶"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:333
+msgid "/Tags/Special/Other/_Broken bar ¦"
+msgstr "/Tags/Speciaal/Overige/Onderbroken balk ¦"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:334
+msgid "/Tags/Special/Other/Soft _hypen -"
+msgstr "/Tags/Speciaal/Overige/­Soft hypen -"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:335
+msgid "/Tags/Special/Other/Spa_cing macron ¯"
+msgstr "/Tags/Speciaal/Overige/Spacing macron ¯"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:336
+msgid "/Tags/Special/Other/Middle _dot ·"
+msgstr "/Tags/Speciaal/Overige/Midden stip ·"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:337
+msgid "/Tags/_Format by layout"
+msgstr "/Tags/Opmaak"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:339
+msgid "/Tags/Format by layout/_Bold"
+msgstr "/Tags/Opmaak/Vet"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:340
+msgid "/Tags/Format by layout/_Italic"
+msgstr "/Tags/Opmaak/Cursief"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:341
+msgid "/Tags/Format by layout/_Underline"
+msgstr "/Tags/Opmaak/Onderstrepen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:342
+msgid "/Tags/Format by layout/_Strikeout"
+msgstr "/Tags/Opmaak/Doorhalen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:343
+msgid "/Tags/Format by layout/Sm_all"
+msgstr "/Tags/Opmaak/Klein"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:344
+msgid "/Tags/Format by layout/Bi_g"
+msgstr "/Tags/Opmaak/Groot"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:345
+msgid "/Tags/F_ormat by context"
+msgstr "/Tags/Logische tekst-opmaak"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:347
+msgid "/Tags/Format by context/_Strong"
+msgstr "/Tags/Logische tekst-opmaak/Extra nadruk"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:348
+msgid "/Tags/Format by context/_Emphasis"
+msgstr "/Tags/Logische tekst-opmaak/Nadruk"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:349
+msgid "/Tags/Format by context/_Define"
+msgstr "/Tags/Logische tekst-opmaak/Definitie"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:350
+msgid "/Tags/Format by context/_Code"
+msgstr "/Tags/Logische tekst-opmaak/Code"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:351
+msgid "/Tags/Format by context/Sa_mple"
+msgstr "/Tags/Logische tekst-opmaak/Voorbeeld"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:352
+msgid "/Tags/Format by context/_Keyboard"
+msgstr "/Tags/Logische tekst-opmaak/Toetsenbord"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:353
+msgid "/Tags/Format by context/_Variable"
+msgstr "/Tags/Logische tekst-opmaak/Variabele"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:354
+msgid "/Tags/Format by context/Ci_tation"
+msgstr "/Tags/Logische tekst-opmaak/Citaat"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:355
+msgid "/Tags/Format by context/_Abbreviation"
+msgstr "/Tags/Logische tekst-opmaak/Afkorting"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:356
+msgid "/Tags/Format by context/Ac_ronym"
+msgstr "/Tags/Opmaak met context/Acroniem"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:357
+msgid "/Tags/Format _general"
+msgstr "/Tags/Opmaak algemeen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:359
+msgid "/Tags/Format general/_Paragraph"
+msgstr "/Tags/Opmaak algemeen/Alinea"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:360
+msgid "/Tags/Format general/_Break"
+msgstr "/Tags/Opmaak algemeen/Return"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:361
+msgid "/Tags/Format general/Break clear _all"
+msgstr "/Tags/Opmaak algemeen/Harde return"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:362
+msgid "/Tags/Format general/_Non-Breaking Space"
+msgstr "/Tags/Opmaak algemeen/Spatie"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:364
+msgid "/Tags/Format general/Font Si_ze +1"
+msgstr "/Tags/Opmaak algemeen/Lettergroote +1"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:365
+msgid "/Tags/Format general/Font _Size -1"
+msgstr "/Tags/Opmaak algemeen/Lettergrootte -1"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:367
+msgid "/Tags/Format general/Preformatted _Text"
+msgstr "/Tags/Opmaak algemeen/Vaste Opmaak tekst"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:368
+msgid "/Tags/Format general/Su_bscript"
+msgstr "/Tags/Opmaak algemeen/Subscript"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:369
+msgid "/Tags/Format general/Su_perscript"
+msgstr "/Tags/Opmaak algemeen/Superscript"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:371
+msgid "/Tags/Format general/_Center"
+msgstr "/Tags/Opmaak algemeen/Centreren"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:372
+msgid "/Tags/Format general/Align _right"
+msgstr "/Tags/Opmaak algemeen/Rechts uitlĳnen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:373
+msgid "/Tags/_Table"
+msgstr "/Tags/Tabel"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:375
+msgid "/Tags/Table/_Table"
+msgstr "/Tags/Tabel/Tabel"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:376
+msgid "/Tags/Table/Table _Row"
+msgstr "/Tags/Tabel/Tabelrĳ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:377
+msgid "/Tags/Table/Table _Header"
+msgstr "/Tags/Tabel/Tabelkop"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:378
+msgid "/Tags/Table/Table _Data"
+msgstr "/Tags/Tabel/Tabelgegevens"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:379
+msgid "/Tags/Table/Table _Caption"
+msgstr "/Tags/Tabel/Tabel bĳschrift"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:380
+msgid "/Tags/_List"
+msgstr "/Tags/_Lĳst"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:382
+msgid "/Tags/List/Unordered _List"
+msgstr "/Tags/Lĳst/Ongeordende lĳst"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:383
+msgid "/Tags/List/_Ordered List"
+msgstr "/Tags/Lĳst/Geordende lĳst"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:384
+msgid "/Tags/List/List Ite_m"
+msgstr "/Tags/Lĳst/Lĳst item"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:385
+msgid "/Tags/List/De_finition List"
+msgstr "/Tags/Lĳst/Lĳst met definities"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:386
+msgid "/Tags/List/Definition _Term"
+msgstr "/Tags/Lĳst/Gedefinieerde term"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:387
+msgid "/Tags/List/_Definition"
+msgstr "/Tags/Lĳst/Definitie"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:388
+msgid "/Tags/List/Men_u"
+msgstr "/Tags/Lĳst/Menu lĳst"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:389
+msgid "/Tags/Fo_rm"
+msgstr "/Dialogen/Formulier"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:391
+msgid "/Tags/Form/_Form"
+msgstr "/Dialogen/Formulier/Formulier"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:392
+msgid "/Tags/Form/_Button"
+msgstr "/Dialogen/Formulier/Invoerknop"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:393
+msgid "/Tags/Form/_Input"
+msgstr "/Dialogen/Formulier/Invoerknop"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:394
+msgid "/Tags/Form/_Textarea"
+msgstr "/Dialogen/Formulier/Tekstinvoerblok"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:395
+msgid "/Tags/_Misc"
+msgstr "/Tags/Diversen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:397
+msgid "/Tags/Misc/Insert Generator _META-Tag"
+msgstr "/Tags/Diversen/Generator META-Tag invoegen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:398
+msgid "/Tags/Misc/_Span"
+msgstr "/Tags/Diversen/Span"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:399
+msgid "/Tags/Misc/_Div"
+msgstr "/Tags/Diversen/Div"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:400
+msgid "/Tags/Misc/_Link"
+msgstr "/Tags/Diversen/Link"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:401
+msgid "/Tags/Misc/S_cript"
+msgstr "/Tags/Diversen/Script"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:402
+msgid "/Tags/Misc/_Anchor"
+msgstr "/Tags/Diversen/Anker"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:403
+msgid "/Tags/Misc/_Image"
+msgstr "/Tags/Diversen/Afbeelding"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:404
+msgid "/Tags/_Comment"
+msgstr "/Tags/Commentaar"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:405
+msgid "/Dial_ogs"
+msgstr "/_Dialogen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:407
+msgid "/Dialogs/_General"
+msgstr "/Dialogen/Algemeen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:409
+msgid "/Dialogs/General/_Quickstart..."
+msgstr "/Dialogen/Algemeen/Snelstart..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:410
+msgid "/Dialogs/General/_Link Header..."
+msgstr "/Dialogen/Algemeen/Link Header..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:411
+msgid "/Dialogs/General/_Body..."
+msgstr "/Dialogen/Algemeen/Body..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:412
+msgid "/Dialogs/General/_Anchor..."
+msgstr "/Dialogen/Algemeen/Anker..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:413
+msgid "/Dialogs/General/_Email..."
+msgstr "/Dialogen/Algemeen/Email..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:414
+msgid "/Dialogs/General/_Rule..."
+msgstr "/Dialogen/Algemeen/Horizontale lĳn..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:415
+msgid "/Dialogs/General/_Font..."
+msgstr "/Dialogen/Algemeen/Lettertype..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:416
+msgid "/Dialogs/General/Basef_ont..."
+msgstr "/Dialogen/Algemeen/Basislettertype..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:417
+msgid "/Dialogs/General/Quick_list..."
+msgstr "/Dialogen/Algemeen/Snellĳst..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:418
+msgid "/Dialogs/General/_Meta..."
+msgstr "/Dialogen/Algemeen/Meta..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:419
+msgid "/Dialogs/General/Embe_d..."
+msgstr "/Dialogen/Algemeen/Multimedia (Embed)..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:420
+msgid "/Dialogs/General/Select _Color..."
+msgstr "/Dialogen/Algemeen/Selecteer Kleur..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:421
+msgid "/Dialogs/General/Insert _Time..."
+msgstr "/Dialogen/Algemeen/Tĳd invoegen..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:422
+msgid "/Dialogs/General/Insert _Image..."
+msgstr "/Dialogen/Algemeen/Afbeelding invoegen..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:423
+msgid "/Dialogs/General/Insert T_humbnail..."
+msgstr "/Dialogen/Algemeen/Voorbeeldafbeelding invoegen..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:424
+msgid "/Dialogs/_Table"
+msgstr "/Dialogen/Tabel"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:426
+msgid "/Dialogs/Table/Table _Wizard..."
+msgstr "/Dialogen/Tabel/Tabel Wizard..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:427
+msgid "/Dialogs/Table/_Table..."
+msgstr "/Dialogen/Tabel/Tabel..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:428
+msgid "/Dialogs/Table/Table _Row..."
+msgstr "/Dialogen/Tabel/Tabelrĳ..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:429
+msgid "/Dialogs/Table/Table _Head..."
+msgstr "/Dialogen/Tabel/Tabelhoofd..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:430
+msgid "/Dialogs/Table/Table _Data..."
+msgstr "/Dialogen/Tabel/Tabeldata..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:431
+msgid "/Dialogs/_CSS"
+msgstr "/Dialogen/CSS"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:433
+msgid "/Dialogs/CSS/_Create Style..."
+msgstr "/Dialogen/CSS/Stĳl maken..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:434
+msgid "/Dialogs/CSS/S_pan..."
+msgstr "/Dialogen/CSS/Span..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:435
+msgid "/Dialogs/CSS/_Div..."
+msgstr "/Dialogen/CSS/Div..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:436
+msgid "/Dialogs/CSS/_Style..."
+msgstr "/Dialogen/CSS/Stĳl..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:437
+msgid "/Dialogs/CSS/_Link to Stylesheet..."
+msgstr "/Dialogen/CSS/Link naar stĳlsheet..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:438
+msgid "/Dialogs/_Frame"
+msgstr "/Dialogen/Frame"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:440
+msgid "/Dialogs/Frame/Frame _Wizard..."
+msgstr "/Dialogen/Frame/Frame Wizard..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:441
+msgid "/Dialogs/Frame/Frame_set..."
+msgstr "/Dialogen/Frame/Frameset..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:442
+msgid "/Dialogs/Frame/_Frame..."
+msgstr "/Dialogen/Frame/Frame..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:443
+msgid "/Dialogs/F_orm"
+msgstr "/Dialogen/Formulier"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:445
+msgid "/Dialogs/Form/F_orm..."
+msgstr "/Dialogen/Formulier/Formulier..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:446
+msgid "/Dialogs/Form/_Input..."
+msgstr "/Dialogen/Formulier/Invoer..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:447
+msgid "/Dialogs/Form/Input Buttons..."
+msgstr "/Dialogen/Formulier/Invoerknop..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:448
+msgid "/Dialogs/Form/Input Text..."
+msgstr "/Dialogen/Formulier/Tekstinvoerregel..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:449
+msgid "/Dialogs/Form/Text_area..."
+msgstr "/Dialogen/Formulier/Tekstinvoerblok..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:450
+msgid "/Dialogs/Form/_Select..."
+msgstr "/Dialogen/Formulier/Keuzelĳst..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:451
+msgid "/Dialogs/Form/O_ption..."
+msgstr "/Dialogen/Formulier/Optie..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:452
+msgid "/Dialogs/Form/Option _Group..."
+msgstr "/Dialogen/Formulier/Optie groep..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:453
+msgid "/Dialogs/Form/_Button..."
+msgstr "/Dialogen/Formulier/Knop..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:455
+msgid "/Dialogs/_Edit tag under cursor..."
+msgstr "/Dialogen/Formulier/Tag onder cursor bewerken..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:458
+msgid "/View/View _HTML Toolbar"
+msgstr "/Opties/Beeld/Toon HTML-werkbalk"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:732
+msgid "QuickStart..."
+msgstr "Snelle start..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:733
+msgid "Body..."
+msgstr "Body..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:734
+msgid "Bold"
+msgstr "Vet"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:735
+msgid "Italic"
+msgstr "Cursief"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:736 src/plugin_htmlbar/html.c:777
+msgid "Paragraph"
+msgstr "Alinea"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:737
+msgid "Break"
+msgstr "Nieuwe regel"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:738
+msgid "Break and clear"
+msgstr "Nieuwe regel geheel links "
+
+#: src/plugin_htmlbar/htmlbar_gui.c:739
+msgid "Non-breaking space"
+msgstr "Spatie"
+
+#. spacing
+#: src/plugin_htmlbar/htmlbar_gui.c:741
+msgid "Anchor..."
+msgstr "Anker..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:742
+msgid "Rule..."
+msgstr "Lĳn..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:743
+msgid "Center"
+msgstr "Centreren"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:744
+msgid "Right Justify"
+msgstr "Rechts Uitlĳnen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:745
+msgid "Comment"
+msgstr "Commentaar"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:746
+msgid "E-mail..."
+msgstr "E-Mail..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:747
+msgid "Font..."
+msgstr "Lettertype..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:748
+msgid "Base Font Size..."
+msgstr "Standaard lettergrootte..."
+
+#. spacing
+#: src/plugin_htmlbar/htmlbar_gui.c:750
+msgid "Font Size +1"
+msgstr "Lettergrootte +1"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:751
+msgid "Font Size -1"
+msgstr "Lettergrootte -1"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:752
+msgid "Preformatted Text"
+msgstr "Vaste opmaak van tekst"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:753
+msgid "Subscript"
+msgstr "Subscript"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:754
+msgid "Superscript"
+msgstr "Superscript"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:755
+msgid "Strong"
+msgstr "Extra Nadruk"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:756
+msgid "Emphasis"
+msgstr "Nadruk"
+
+#. spacing
+#: src/plugin_htmlbar/htmlbar_gui.c:758 src/plugin_htmlbar/html.c:786
+msgid "Heading 1"
+msgstr "Kop 1"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:759 src/plugin_htmlbar/html.c:789
+msgid "Heading 2"
+msgstr "Kop 2"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:760 src/plugin_htmlbar/html.c:792
+msgid "Heading 3"
+msgstr "Kop 3"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:761 src/plugin_htmlbar/html.c:795
+msgid "Heading 4"
+msgstr "Kop 4"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:762 src/plugin_htmlbar/html.c:798
+msgid "Heading 5"
+msgstr "Kop 5"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:763 src/plugin_htmlbar/html.c:801
+msgid "Heading 6"
+msgstr "Kop 6"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:764
+msgid "Table Wizard..."
+msgstr "Tabel Wizard..."
+
+#. spacing
+#: src/plugin_htmlbar/htmlbar_gui.c:766
+msgid "Table..."
+msgstr "Tabel..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:767
+msgid "Table Row..."
+msgstr "Tabel Rĳ..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:768
+msgid "Table Header..."
+msgstr "Tabel Hoofd..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:769
+msgid "Table Data..."
+msgstr "Tabelgegevens..."
+
+#. spacing
+#: src/plugin_htmlbar/htmlbar_gui.c:771 src/plugin_htmlbar/html_table.c:77
+msgid "Table"
+msgstr "Tabel"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:772 src/plugin_htmlbar/html_table.c:209
+msgid "Table Row"
+msgstr "Tabel Rĳ"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:773 src/plugin_htmlbar/html_table.c:320
+msgid "Table Header"
+msgstr "Tabel Hoofd"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:774 src/plugin_htmlbar/html_table.c:318
+msgid "Table Data"
+msgstr "Tabel Gegevens"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:775
+msgid "Table Caption"
+msgstr "Tabel Bĳschrift"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:776
+msgid "Frame Wizard..."
+msgstr "Frame Wizard..."
+
+#. spacing
+#: src/plugin_htmlbar/htmlbar_gui.c:778
+msgid "Frameset..."
+msgstr "Frameset..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:779
+msgid "Frame..."
+msgstr "Frame..."
+
+#. spacing
+#: src/plugin_htmlbar/htmlbar_gui.c:781 src/plugin_htmlbar/html.c:1586
+msgid "Frameset"
+msgstr "Frameset"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:782 src/plugin_htmlbar/html.c:1670
+msgid "Frame"
+msgstr "Frame"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:783
+msgid "Noframes"
+msgstr "Noframes"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:784
+msgid "Target"
+msgstr "Doel"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:785
+msgid "Form..."
+msgstr "Formulier..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:786
+msgid "Input Button..."
+msgstr "Input Button..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:787
+msgid "Input Text..."
+msgstr "Input Tekst..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:788
+msgid "Input Hidden..."
+msgstr "Verborgen Invoer..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:789
+msgid "Textarea..."
+msgstr "Tekstinvoerblok..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:790
+msgid "Input Radio Button..."
+msgstr "Aanklikrondje..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:791
+msgid "Input Check Box..."
+msgstr "Aankruisvakje..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:792
+msgid "Select..."
+msgstr "Keuzelĳst..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:793
+msgid "Option..."
+msgstr "Optie..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:794
+msgid "Option group..."
+msgstr "Groep van opties..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:795
+msgid "Button..."
+msgstr "Button..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:796
+msgid "Quick List..."
+msgstr "Snel lĳst aanmaken..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:797
+msgid "Unordered List"
+msgstr "Ongeordende Lĳst"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:798
+msgid "Ordered List"
+msgstr "Geordende lĳst"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:799
+msgid "List Item"
+msgstr "Lĳst item"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:800
+msgid "Definition List"
+msgstr "Lĳst met definities"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:801
+msgid "Definition Term"
+msgstr "Gedefinieerde term"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:802 src/plugin_htmlbar/htmlbar_gui.c:811
+msgid "Definition"
+msgstr "Definitie"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:803
+msgid "Create stylesheet..."
+msgstr "Stylesheet maken..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:804
+msgid "Span..."
+msgstr "Span..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:805
+msgid "Div..."
+msgstr "Div..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:806 src/plugin_htmlbar/html_form.c:825
+msgid "Style"
+msgstr "Stĳl"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:807
+msgid "Link to stylesheet..."
+msgstr "Link naar stylesheet..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:808
+msgid "Insert image..."
+msgstr "Beeld invoegen..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:809
+msgid "Insert thumbnail..."
+msgstr "Voorbeeldafbeelding invoegen..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:810
+msgid "Multi thumbnail..."
+msgstr "Meervoudige voorbeeldafbeelding..."
+
+#: src/plugin_htmlbar/htmlbar_gui.c:812
+msgid "Code"
+msgstr "Code"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:813
+msgid "Sample"
+msgstr "Voorbeeld"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:814
+msgid "Keyboard"
+msgstr "Toetsenbord"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:815
+msgid "Variable"
+msgstr "Variabelen"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:816
+msgid "Citation"
+msgstr "Citaat"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:817
+msgid "Abbreviation"
+msgstr "Afkorting"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:818
+msgid "Acronym"
+msgstr "Afkorting"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:938
+msgid "Remove from quickbar"
+msgstr "Verwĳder van snelbalk"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:939
+msgid "Move Left"
+msgstr "Verplaats naar links"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:940
+msgid "Move Right"
+msgstr "Verplaats naar rechts"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:980
+msgid "Add to quickbar"
+msgstr "Voeg toe aan  Snel balk "
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1082
+msgid " Quick bar "
+msgstr " Snel balk "
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1087
+msgid "Heading"
+msgstr "Kop"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1089
+msgid " Standard bar "
+msgstr "Standaard balk"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1094
+msgid "Context formatting"
+msgstr "Logische opmaak"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1096
+msgid " Fonts "
+msgstr " Lettertype "
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1101
+msgid " Tables "
+msgstr " Tabellen "
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1106
+msgid " Frames "
+msgstr " Frames "
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1111
+msgid " Forms "
+msgstr " Formulieren "
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1116
+msgid " List "
+msgstr "Lĳsten"
+
+#: src/plugin_htmlbar/htmlbar_gui.c:1121
+msgid " CSS "
+msgstr " CSS "
+
+#: src/plugin_htmlbar/html.c:385
+msgid "Insert Time"
+msgstr "Voeg tĳd in"
+
+#: src/plugin_htmlbar/html.c:393
+#, c-format
+msgid "  _Time (%i:%i:%i)"
+msgstr "  Tĳd (%i:%i:%i)"
+
+#: src/plugin_htmlbar/html.c:398
+msgid "  Day of the _week (Sunday)"
+msgstr " Dag van de week (zondag)"
+
+#: src/plugin_htmlbar/html.c:401
+msgid "  Day of the _week (Monday)"
+msgstr "  Dag van de week (maandag)"
+
+#: src/plugin_htmlbar/html.c:404
+msgid "  Day of the _week (Tuesday)"
+msgstr "Dag van de week (dinsdag)"
+
+#: src/plugin_htmlbar/html.c:407
+msgid "  Day of the _week (Wednesday)"
+msgstr "  Dag van de week (woensdag)"
+
+#: src/plugin_htmlbar/html.c:410
+msgid "  Day of the _week (Thursday)"
+msgstr "  Dag van de week (donderdag)"
+
+#: src/plugin_htmlbar/html.c:413
+msgid "  Day of the _week (Friday)"
+msgstr "  Dag van de week (vrĳdag)"
+
+#: src/plugin_htmlbar/html.c:416
+msgid "  Day of the _week (Saturday)"
+msgstr "  Dag van de week (zaterdag)"
+
+#: src/plugin_htmlbar/html.c:419
+msgid "You appear to have a non existant day!\n"
+msgstr "Niet bestaande dag!\n"
+
+#: src/plugin_htmlbar/html.c:427
+#, c-format
+msgid "  _Date (%i/%i/%i)"
+msgstr "  Datum (%i/%i/%i)"
+
+#: src/plugin_htmlbar/html.c:430
+#, c-format
+msgid "  _Unix Time (%i)"
+msgstr "  Unix tĳd (%i)"
+
+#: src/plugin_htmlbar/html.c:435
+#, c-format
+msgid "  Unix Date _String (%s)"
+msgstr "Unix datum string (%s)"
+
+#: src/plugin_htmlbar/html.c:443
+#, c-format
+msgid "  ISO-8601 Ti_me (%s)"
+msgstr "ISO-8601 Tĳd (%s)"
+
+#: src/plugin_htmlbar/html.c:585
+msgid "Quick Anchor"
+msgstr "Snel anker"
+
+#: src/plugin_htmlbar/html.c:591 src/plugin_htmlbar/html_form.c:780
+msgid "Attributes"
+msgstr "Attributen"
+
+#: src/plugin_htmlbar/html.c:605 src/plugin_htmlbar/html.c:1914
+msgid "_HREF:"
+msgstr "HREF:"
+
+#: src/plugin_htmlbar/html.c:609 src/plugin_htmlbar/html_form.c:183
+msgid "_Target:"
+msgstr "Doel:"
+
+#: src/plugin_htmlbar/html.c:613 src/plugin_htmlbar/html.c:833
+#: src/plugin_htmlbar/html.c:1208 src/plugin_htmlbar/html.c:1682
+#: src/plugin_htmlbar/html_form.c:231 src/plugin_htmlbar/html_form.c:596
+#: src/plugin_htmlbar/html_form.c:795 src/plugin_htmlbar/html_form.c:890
+#: src/plugin_htmlbar/image.c:440
+msgid "_Name:"
+msgstr "Naam:"
+
+#: src/plugin_htmlbar/html.c:619 src/plugin_htmlbar/html.c:1066
+#: src/plugin_htmlbar/html.c:1237 src/plugin_htmlbar/html.c:1829
+msgid "_Language:"
+msgstr "Taal:"
+
+#: src/plugin_htmlbar/html.c:623 src/plugin_htmlbar/html.c:841
+#: src/plugin_htmlbar/html.c:975 src/plugin_htmlbar/html.c:1070
+#: src/plugin_htmlbar/html.c:1245 src/plugin_htmlbar/html.c:1618
+#: src/plugin_htmlbar/html.c:1719 src/plugin_htmlbar/html.c:1848
+#: src/plugin_htmlbar/html_form.c:187 src/plugin_htmlbar/html_form.c:243
+#: src/plugin_htmlbar/html_form.c:609 src/plugin_htmlbar/html_form.c:903
+#: src/plugin_htmlbar/html_table.c:101 src/plugin_htmlbar/html_table.c:253
+#: src/plugin_htmlbar/html_table.c:361 src/plugin_htmlbar/image.c:448
+msgid "Custo_m:"
+msgstr "Aangepast:"
+
+#: src/plugin_htmlbar/html.c:626 src/plugin_htmlbar/html.c:1074
+#: src/plugin_htmlbar/html_form.c:829
+msgid "Events"
+msgstr "Gebeurtenissen"
+
+#: src/plugin_htmlbar/html.c:629
+msgid "OnClic_k:"
+msgstr "OnClick:"
+
+#: src/plugin_htmlbar/html.c:633
+msgid "OnD_blClick:"
+msgstr "OnDblClick:"
+
+#: src/plugin_htmlbar/html.c:637
+msgid "OnMouseO_ver:"
+msgstr "OnMouseOver:"
+
+#: src/plugin_htmlbar/html.c:641
+msgid "OnMouse_Down:"
+msgstr "OnMouseDown:"
+
+#: src/plugin_htmlbar/html.c:645
+msgid "OnMouse_Move:"
+msgstr "OnMouseMove:"
+
+#: src/plugin_htmlbar/html.c:649
+msgid "OnMouseOu_t:"
+msgstr "OnMouseOut:"
+
+#: src/plugin_htmlbar/html.c:653
+msgid "OnMouse_Up:"
+msgstr "OnMouseUp:"
+
+#: src/plugin_htmlbar/html.c:657
+msgid "OnKeyDo_wn:"
+msgstr "OnKeyDown:"
+
+#: src/plugin_htmlbar/html.c:661
+msgid "OnKey_Press:"
+msgstr "OnKeyPress:"
+
+#: src/plugin_htmlbar/html.c:665
+msgid "OnKe_yUp:"
+msgstr "OnKeyUp:"
+
+#: src/plugin_htmlbar/html.c:780
+msgid "Div"
+msgstr "Div"
+
+#: src/plugin_htmlbar/html.c:783
+msgid "Span"
+msgstr "Span"
+
+#: src/plugin_htmlbar/html.c:818 src/plugin_htmlbar/html_table.c:109
+#: src/plugin_htmlbar/html_table.c:219 src/plugin_htmlbar/html_table.c:333
+msgid "Ali_gn:"
+msgstr "Uitlĳnen:"
+
+#: src/plugin_htmlbar/html.c:822 src/plugin_htmlbar/html.c:1058
+#: src/plugin_htmlbar/html_diag.c:373 src/plugin_htmlbar/html_table.c:91
+#: src/plugin_htmlbar/html_table.c:237 src/plugin_htmlbar/html_table.c:351
+msgid "Cl_ass:"
+msgstr "Klasse:"
+
+#: src/plugin_htmlbar/html.c:826 src/plugin_htmlbar/html.c:1051
+#: src/plugin_htmlbar/html_diag.c:381 src/plugin_htmlbar/html_table.c:96
+#: src/plugin_htmlbar/html_table.c:248 src/plugin_htmlbar/html_table.c:356
+msgid "St_yle:"
+msgstr "Stĳl:"
+
+#: src/plugin_htmlbar/html.c:837 src/plugin_htmlbar/html.c:1062
+#: src/plugin_htmlbar/html_diag.c:377
+msgid "_ID:"
+msgstr "ID:"
+
+#: src/plugin_htmlbar/html.c:938
+msgid "Horizontal Rule"
+msgstr "Horizontale Lĳn"
+
+#: src/plugin_htmlbar/html.c:949 src/plugin_htmlbar/html.c:1767
+#: src/plugin_htmlbar/image.c:466
+msgid "_Align:"
+msgstr "Uitlĳnen:"
+
+#: src/plugin_htmlbar/html.c:956 src/plugin_htmlbar/html.c:1775
+#: src/plugin_htmlbar/html_table.c:387
+msgid "_Height:"
+msgstr "Hoogte:"
+
+#. gtk_spin_button_set_numeric (GTK_SPIN_BUTTON (spin2), 1);
+#: src/plugin_htmlbar/html.c:962 src/plugin_htmlbar/html.c:1771
+#: src/plugin_htmlbar/html_table.c:134 src/plugin_htmlbar/html_table.c:380
+#: src/plugin_htmlbar/image.c:424
+msgid "_Width:"
+msgstr "Breedte:"
+
+#: src/plugin_htmlbar/html.c:965
+msgid "Is _percent"
+msgstr "Percentage?"
+
+#: src/plugin_htmlbar/html.c:970
+msgid "No _shading"
+msgstr "Geen schaduw"
+
+#: src/plugin_htmlbar/html.c:1035
+msgid "Body"
+msgstr "Body"
+
+#: src/plugin_htmlbar/html.c:1043
+msgid "Options"
+msgstr "Opties"
+
+#: src/plugin_htmlbar/html.c:1081
+msgid "On_Load:"
+msgstr "On Load:"
+
+#: src/plugin_htmlbar/html.c:1089
+msgid "On_UnLoad:"
+msgstr "On UnLoad:"
+
+#: src/plugin_htmlbar/html.c:1098
+msgid "Depreciated options"
+msgstr "Verouderde opties"
+
+#: src/plugin_htmlbar/html.c:1108
+msgid "Background _Image:"
+msgstr "Achtergrond Afbeelding:"
+
+#: src/plugin_htmlbar/html.c:1115
+msgid "Back_ground Color:"
+msgstr "Achtergrond-kleur:"
+
+#: src/plugin_htmlbar/html.c:1121
+msgid "_Text Color:"
+msgstr "Kleur van tekst:"
+
+#: src/plugin_htmlbar/html.c:1127
+msgid "_Link Color:"
+msgstr "Kleur van Link:"
+
+#: src/plugin_htmlbar/html.c:1133
+msgid "_Visited Link Color:"
+msgstr "Kleur van bezochte link:"
+
+#: src/plugin_htmlbar/html.c:1139
+msgid "_Active Link Color:"
+msgstr "Kleur van active link:"
+
+#: src/plugin_htmlbar/html.c:1190
+msgid "Meta"
+msgstr "Meta"
+
+#: src/plugin_htmlbar/html.c:1228
+msgid "_HTTP-EQUIV:"
+msgstr "HTTP-EQUIV:"
+
+#: src/plugin_htmlbar/html.c:1233
+msgid "Con_tent:"
+msgstr "Inhoud:"
+
+#: src/plugin_htmlbar/html.c:1241
+msgid "_Scheme:"
+msgstr "Schema:"
+
+#: src/plugin_htmlbar/html.c:1322
+msgid "Font"
+msgstr "Lettertype::"
+
+#: src/plugin_htmlbar/html.c:1325
+msgid "Base Font"
+msgstr "Basis lettergrootte"
+
+#: src/plugin_htmlbar/html.c:1340
+msgid "Size"
+msgstr "Grootte"
+
+#: src/plugin_htmlbar/html.c:1348
+msgid "Color"
+msgstr "Kleur"
+
+#: src/plugin_htmlbar/html.c:1353
+msgid "Face"
+msgstr "Face"
+
+#: src/plugin_htmlbar/html.c:1357
+msgid "Custom"
+msgstr "Aangepast"
+
+#: src/plugin_htmlbar/html.c:1441
+msgid "E-mail"
+msgstr "Email"
+
+#: src/plugin_htmlbar/html.c:1449
+msgid "_Mail to:"
+msgstr "Mailen naar:"
+
+#: src/plugin_htmlbar/html.c:1453
+msgid "_Copy to:"
+msgstr "Kopieëren naar:"
+
+#: src/plugin_htmlbar/html.c:1457
+msgid "Blin_d copy to:"
+msgstr "Blinde kopie naar:"
+
+#: src/plugin_htmlbar/html.c:1461
+msgid "with _Subject:"
+msgstr "met Onderwerp:"
+
+#: src/plugin_htmlbar/html.c:1465
+msgid "with _Body:"
+msgstr "met Body:"
+
+#: src/plugin_htmlbar/html.c:1509
+msgid "Quick List"
+msgstr "Snel lĳst"
+
+#: src/plugin_htmlbar/html.c:1514 src/plugin_htmlbar/html.c:1596
+#: src/plugin_htmlbar/html_form.c:236
+msgid "_Rows:"
+msgstr "Rĳen:"
+
+#: src/plugin_htmlbar/html.c:1517
+msgid "Or_dered"
+msgstr "Geordend"
+
+#: src/plugin_htmlbar/html.c:1518
+msgid "_Unordered"
+msgstr "Ongeordend"
+
+#: src/plugin_htmlbar/html.c:1520
+msgid "Style:"
+msgstr "Stĳl:"
+
+#: src/plugin_htmlbar/html.c:1592 src/plugin_htmlbar/html_form.c:240
+msgid "Co_ls:"
+msgstr "Kolommen:"
+
+#: src/plugin_htmlbar/html.c:1601
+msgid "_Add <frame> elements"
+msgstr "<frame> elementen toevoegen"
+
+#: src/plugin_htmlbar/html.c:1678 src/plugin_htmlbar/html.c:1763
+#: src/plugin_htmlbar/html.c:1822
+msgid "_Source:"
+msgstr "Bron:"
+
+#: src/plugin_htmlbar/html.c:1686
+msgid "Margin _Width:"
+msgstr "Marge breedte:"
+
+#: src/plugin_htmlbar/html.c:1690
+msgid "Margin _Height:"
+msgstr "Marge hoogte:"
+
+#: src/plugin_htmlbar/html.c:1698
+msgid "Scrollin_g:"
+msgstr "Schuifbalk:"
+
+#: src/plugin_htmlbar/html.c:1702
+msgid "_Frameborder:"
+msgstr "Framerand:"
+
+#: src/plugin_htmlbar/html.c:1707
+msgid "No _Resize:"
+msgstr "Frames fixeren:"
+
+#: src/plugin_htmlbar/html.c:1757
+msgid "Embed"
+msgstr "Multimedia (embed)"
+
+#: src/plugin_htmlbar/html.c:1779 src/plugin_htmlbar/html_table.c:140
+msgid "Bo_rder:"
+msgstr "Rand:"
+
+#: src/plugin_htmlbar/html.c:1815
+msgid "Script"
+msgstr "Script"
+
+#: src/plugin_htmlbar/html.c:1844 src/plugin_htmlbar/html.c:1945
+#: src/plugin_htmlbar/html_form.c:789 src/plugin_htmlbar/html_form.c:899
+msgid "_Type:"
+msgstr "Type:"
+
+#: src/plugin_htmlbar/html.c:1903
+msgid "Link"
+msgstr "Link"
+
+#: src/plugin_htmlbar/html.c:1920
+msgid "HREF_LANG:"
+msgstr "HREF_LANG:"
+
+#: src/plugin_htmlbar/html.c:1924
+msgid "T_itle:"
+msgstr "Titel:"
+
+#: src/plugin_htmlbar/html.c:1964
+msgid "_Forward Relation:"
+msgstr "Voorwaartse relatie:"
+
+#: src/plugin_htmlbar/html.c:1968
+msgid "_Reverse Relation:"
+msgstr "Achterwaartse relatie:"
+
+#: src/plugin_htmlbar/html.c:1979
+msgid "Media:"
+msgstr "Media:"
+
+#: src/plugin_htmlbar/html.c:1983
+msgid "L_ang:"
+msgstr "Taal:"
+
+#: src/plugin_htmlbar/html.c:1987
+msgid "_Custom:"
+msgstr "Aangepast:"
+
+#: src/plugin_htmlbar/html_form.c:141
+msgid "Form"
+msgstr "Formulier"
+
+#: src/plugin_htmlbar/html_form.c:159
+msgid "_Action:"
+msgstr "Actie:"
+
+#: src/plugin_htmlbar/html_form.c:167
+msgid "Metho_d:"
+msgstr "Methode:"
+
+#: src/plugin_htmlbar/html_form.c:176
+msgid "_Enctype:"
+msgstr "Codering type:"
+
+#: src/plugin_htmlbar/html_form.c:225
+msgid "Text area"
+msgstr "Tekstinvoerblok"
+
+#: src/plugin_htmlbar/html_form.c:590
+msgid "Select"
+msgstr "Keuzelĳst"
+
+#: src/plugin_htmlbar/html_form.c:601 src/plugin_htmlbar/html_form.c:808
+msgid "Si_ze:"
+msgstr "Grootte:"
+
+#: src/plugin_htmlbar/html_form.c:605
+msgid "Multiple _Selections:"
+msgstr "Meerdere keuzes:"
+
+#: src/plugin_htmlbar/html_form.c:644
+msgid "Option"
+msgstr "Optie"
+
+#: src/plugin_htmlbar/html_form.c:654 src/plugin_htmlbar/html_form.c:697
+msgid "_Label:"
+msgstr "Label:"
+
+#: src/plugin_htmlbar/html_form.c:659
+msgid "_Selected:"
+msgstr "Geselecteerd:"
+
+#: src/plugin_htmlbar/html_form.c:692
+msgid "Option group"
+msgstr "Optie groep"
+
+#: src/plugin_htmlbar/html_form.c:775
+msgid "Input"
+msgstr "Invoer"
+
+#: src/plugin_htmlbar/html_form.c:803
+msgid "_Checked:"
+msgstr "Aangevinkt:"
+
+#: src/plugin_htmlbar/html_form.c:812
+msgid "Max _Length:"
+msgstr "Max Lengte:"
+
+#: src/plugin_htmlbar/html_form.c:816
+msgid "_Accept:"
+msgstr "Accept:"
+
+#: src/plugin_htmlbar/html_form.c:820
+msgid "C_ustom:"
+msgstr "Aangepast:"
+
+#: src/plugin_htmlbar/html_form.c:832
+msgid "On_Focus:"
+msgstr "OnFocus:"
+
+#: src/plugin_htmlbar/html_form.c:836
+msgid "On_Blur:"
+msgstr "OnBlur:"
+
+#: src/plugin_htmlbar/html_form.c:840
+msgid "On_Select:"
+msgstr "OnSelect:"
+
+#: src/plugin_htmlbar/html_form.c:844
+msgid "On_Change:"
+msgstr "OnChange:"
+
+#: src/plugin_htmlbar/html_form.c:884
+msgid "Button"
+msgstr "Knop"
+
+#: src/plugin_htmlbar/html_table.c:83
+msgid "Cell _Padding:"
+msgstr "Ruimte celrand-inhoud:"
+
+#: src/plugin_htmlbar/html_table.c:87
+msgid "C_ell Spacing:"
+msgstr "Ruimte cel-cel:"
+
+#: src/plugin_htmlbar/html_table.c:123 src/plugin_htmlbar/html_table.c:233
+#: src/plugin_htmlbar/html_table.c:347
+msgid "_Valign:"
+msgstr "Verticale uitlĳning:"
+
+#: src/plugin_htmlbar/html_table.c:128 src/plugin_htmlbar/html_table.c:242
+#: src/plugin_htmlbar/html_table.c:392
+msgid "Backgrou_nd Color:"
+msgstr "Achtergrond-kleur:"
+
+#: src/plugin_htmlbar/html_table.c:154
+msgid "_Frame:"
+msgstr "Frame:"
+
+#: src/plugin_htmlbar/html_table.c:165
+msgid "R_ules:"
+msgstr "Rules:"
+
+#: src/plugin_htmlbar/html_table.c:365
+msgid "Co_l Span:"
+msgstr "Aantal samen te voegen kolommen:"
+
+#: src/plugin_htmlbar/html_table.c:369
+msgid "_Row Span:"
+msgstr "Aantal samen te voegen rĳen:"
+
+#: src/plugin_htmlbar/html_table.c:374
+msgid "No Wra_p:"
+msgstr "Geen omloop:"
+
+#: src/plugin_htmlbar/image.c:265
+msgid "Loading image failed..."
+msgstr "Laden van afbeelding mislukt..."
+
+#: src/plugin_htmlbar/image.c:334
+#, c-format
+msgid "Loading file %s..."
+msgstr "Bestand %s wordt geladen..."
+
+#: src/plugin_htmlbar/image.c:386
+msgid "Insert thumbnail"
+msgstr "Voeg voorbeeldafbeelding in"
+
+#: src/plugin_htmlbar/image.c:388
+msgid "Insert image"
+msgstr "Afbeelding invoegen"
+
+#: src/plugin_htmlbar/image.c:394
+msgid "Preview"
+msgstr "Preview"
+
+#: src/plugin_htmlbar/image.c:416
+msgid "_Image location:"
+msgstr "Locatie van afbeelding:"
+
+#: src/plugin_htmlbar/image.c:431
+msgid "Hei_ght:"
+msgstr "Hoogte:"
+
+#: src/plugin_htmlbar/image.c:436
+msgid "_Usemap:"
+msgstr "Aanklikbare afbeelding:"
+
+#: src/plugin_htmlbar/image.c:444
+msgid "Alternate _text:"
+msgstr "Alternatieve tekst:"
+
+#: src/plugin_htmlbar/image.c:452
+msgid "_Hspace:"
+msgstr "Ruimte links/rechts:"
+
+#: src/plugin_htmlbar/image.c:456
+msgid "_Vspace:"
+msgstr "Ruimte onder/boven:"
+
+#: src/plugin_htmlbar/image.c:470
+msgid "Borde_r:"
+msgstr "Rand:"
+
+#: src/plugin_htmlbar/image.c:801
+msgid "Select files for thumbnail creation"
+msgstr "Selecteer bestanden voor voorbeeldafbeelding creatie"
+
+#: src/plugin_htmlbar/image.c:836
+msgid "Scaling (%)"
+msgstr "Schaal  (%)"
+
+#: src/plugin_htmlbar/image.c:840 src/plugin_htmlbar/image.c:848
+msgid "Width"
+msgstr "Breedte"
+
+#: src/plugin_htmlbar/image.c:844 src/plugin_htmlbar/image.c:876
+msgid "Height"
+msgstr "Hoogte"
+
+#: src/plugin_htmlbar/image.c:865
+msgid "Multi thumbnail"
+msgstr "Meervoudige voorbeeldafbeelding"
+
+#: src/plugin_htmlbar/image.c:871
+msgid "By scaling"
+msgstr "Met schaal"
+
+#: src/plugin_htmlbar/image.c:872
+msgid "By width, keep aspect ratio"
+msgstr "Met breedte, behoud verhoudingen"
+
+#: src/plugin_htmlbar/image.c:873
+msgid "By height, keep aspect ratio"
+msgstr "Met hoogte,behoud verhoudingen"
+
+#: src/plugin_htmlbar/image.c:874
+msgid "By width and height, ignore aspect ratio"
+msgstr "Met hoogte en breedte,negeer verhoudingen"
+
+#: src/plugin_htmlbar/image.c:898
+msgid ""
+"%r: original filename  %t: thumbnail filename\n"
+"%w: original width  %h: original height\n"
+"%x: thumbnail width  %y: thumbnail height\n"
+"%b: original size (bytes)"
+msgstr ""
+"%r: originele bestandsnaam %t: voorbeeldafbeelding bestandsnaam\n"
+"%w: originele breedte  %h: originele hoogte\n"
+"%x: voorbeeldafbeelding breedte  %y:voorbeeldafbeelding hoogte\n"
+"%b: originele  grootte (bytes)"
+
+#: src/plugin_htmlbar/quickstart.c:512
+msgid "<b>E_xternal Style Sheet</b>"
+msgstr "<b>Extern Style Sheet</b>"
+
+#: src/plugin_htmlbar/quickstart.c:522
+msgid "Ty_pe:"
+msgstr "Type:"
+
+#: src/plugin_htmlbar/quickstart.c:540
+msgid "HRE_F:"
+msgstr "HREF:"
+
+#: src/plugin_htmlbar/quickstart.c:544
+msgid "_Media:"
+msgstr "Media:"
+
+#: src/plugin_htmlbar/quickstart.c:548
+msgid "Titl_e:"
+msgstr "Titel:"
+
+#. TODO: add an option to place content in the style area
+#. * Possibly from a code snippet library
+#.
+#: src/plugin_htmlbar/quickstart.c:554
+msgid "<b>Style Area</b>"
+msgstr "<b>Stĳl Gebied</b>"
+
+#: src/plugin_htmlbar/quickstart.c:558
+msgid "Cre_ate empty style area"
+msgstr "Maak een leeg stĳl gebied"
+
+#: src/plugin_htmlbar/quickstart.c:580
+msgid "<b>Attributes</b>"
+msgstr "<b>Attributen</b>"
+
+#: src/plugin_htmlbar/quickstart.c:595
+msgid "_Src:"
+msgstr "Bron:"
+
+#. TODO: add an option to place content in the script area
+#: src/plugin_htmlbar/quickstart.c:602
+msgid "<b>Script Area</b>"
+msgstr "<b>Script Area</b>"
+
+#: src/plugin_htmlbar/quickstart.c:606
+msgid "Cre_ate empty script area"
+msgstr "Maak een leeg script gebied"
+
+#: src/plugin_htmlbar/quickstart.c:633
+msgid "Quick Start"
+msgstr "Snelle Start"
+
+#: src/plugin_htmlbar/quickstart.c:647
+msgid "_DTD:"
+msgstr "DTD:"
+
+#: src/plugin_htmlbar/quickstart.c:651 src/plugin_htmlbar/wizards.c:186
+msgid "_Title:"
+msgstr "Titel:"
+
+#: src/plugin_htmlbar/quickstart.c:674
+msgid "_Head:"
+msgstr "Head:"
+
+#: src/plugin_htmlbar/quickstart.c:691
+msgid "Open in _new document."
+msgstr "Open in nieuw document."
+
+#: src/plugin_htmlbar/wizards.c:68
+msgid "Table Wizard"
+msgstr "Tabel Wizard"
+
+#: src/plugin_htmlbar/wizards.c:76
+msgid "Number of _rows:"
+msgstr "Aantal rĳen:"
+
+#: src/plugin_htmlbar/wizards.c:80
+msgid "Number of colu_mns:"
+msgstr "Aantal kolommen:"
+
+#: src/plugin_htmlbar/wizards.c:84
+msgid "Table rows on one _line:"
+msgstr "Tabelrĳen op één regel:"
+
+#: src/plugin_htmlbar/wizards.c:88
+msgid "_Indent table code:"
+msgstr "Inspringen tabel-code:"
+
+#: src/plugin_htmlbar/wizards.c:175
+msgid "Frame Wizard"
+msgstr "Frame Wizard"
+
+#: src/plugin_htmlbar/wizards.c:190
+msgid "Use _DTD:"
+msgstr "Gebruik DTD:"
+
+#: src/plugin_htmlbar/wizards.c:193
+msgid "Orientation:"
+msgstr "Oriëntatie:"
+
+#: src/plugin_htmlbar/wizards.c:196
+msgid "_Horizontal"
+msgstr "Horizontaal"
+
+#: src/plugin_htmlbar/wizards.c:197
+msgid "_Vertical"
+msgstr "Verticaal"
+
+#: src/plugin_htmlbar/wizards.c:202
+msgid "Number of _Frames:"
+msgstr "Aantal Frames:"
+
+#: src/plugin_htmlbar/wizards.c:205
+msgid "Frame's"
+msgstr "Frames"
+
+#: src/plugin_htmlbar/wizards.c:217
+msgid "Name:"
+msgstr "Naam:"
+
+#: src/plugin_htmlbar/wizards.c:219
+msgid "Source:"
+msgstr "Bron:"
+
+#: src/plugin_htmlbar/wizards.c:223
+msgid "Size:"
+msgstr "Grootte:"

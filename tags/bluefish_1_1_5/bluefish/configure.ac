@@ -1,0 +1,582 @@
+dnl ************************
+dnl configure.ac
+dnl $Id: configure.ac,v 1.151 2007-10-09 22:35:42 dleidert Exp $
+dnl
+dnl Copyright (C) 2002-2007 Olivier Sessink
+dnl Copyright (C) 2006-2007 Daniel Leidert
+dnl
+dnl This file is free software. The copyright owner gives unlimited
+dnl permission to copy, distribute and modify it.
+dnl ************************
+
+AC_INIT([bluefish-unstable],[1.1.5],[http://bugzilla.gnome.org/buglist.cgi?product=bluefish])
+dnl The `-Wno-portability' value will suppress the GNU make warnings. Add it if necessary.
+AM_INIT_AUTOMAKE([-Wall])
+AC_CONFIG_SRCDIR(src/bluefish.c)
+AC_CONFIG_HEADERS(src/config.h)
+AC_CANONICAL_HOST
+
+AC_REVISION($Revision: 1.151 $)
+
+AC_DEFINE_UNQUOTED([CONFIGURE_OPTIONS], ["$0 $*"], [The configure options used to compile bluefish.])
+
+
+dnl ************************
+dnl   I18N options
+dnl ************************
+
+ALL_LINGUAS="da de es eu fi fr it ja nb nl pl pt pt_BR ru sk sr sv ta tr zh_CN zh_TW"
+AC_SUBST(ALL_LINGUAS)
+GETTEXT_PACKAGE=AC_PACKAGE_NAME
+AC_SUBST(GETTEXT_PACKAGE)
+AM_GLIB_GNU_GETTEXT
+IT_PROG_INTLTOOL
+case "$host" in
+	*-openbsd3.8)
+		AC_PROG_LN_S
+		$LN_S -f ../../config.status src/plugin_about/
+		$LN_S -f ../../config.status src/plugin_entities/
+		$LN_S -f ../../config.status src/plugin_htmlbar/
+		AC_MSG_NOTICE([Don't try to run '(g)make distcheck, because it will fail.])
+		OPENBSD_3_8_FIX=config.status
+		AC_SUBST([OPENBSD_3_8_FIX])
+	;;
+	*)
+	;;	
+esac
+dnl if AM_PO_SUBDIRS is available use it (most recent systems)
+dnl else try to use the very old AM_WITH_NLS
+dnl or try AM_GNU_GETTEXT at last 
+m4_ifdef(
+	[AM_PO_SUBDIRS],
+	[AM_PO_SUBDIRS],
+	[
+	 m4_ifdef(
+	 	[AM_WITH_NLS],
+	 	[AM_WITH_NLS([external])],
+	 	[AM_GNU_GETTEXT([external])]
+	 )
+	]
+)
+
+
+dnl ************************
+dnl   Compiler options
+dnl ************************
+
+#AC_ARG_PROGRAM
+AC_PROG_CC
+AC_LIBTOOL_DLOPEN
+AC_LIBTOOL_WIN32_DLL
+AC_PROG_LIBTOOL
+AC_ISC_POSIX
+AC_C_INLINE
+AC_PROG_INSTALL
+
+if test "$CC" = "gcc" ; then
+	CFLAGS="$CFLAGS -Wall -pipe"
+fi
+
+case "$host_os" in
+	windows* | cygwin* | mingw*)
+		AC_DEFINE([WIN32], [1], [Define to 1 if you have a Cygwin/Windows OS.])
+		LIBS="$LIBS -lintl.dll"
+		AC_MSG_NOTICE([platform is... Windows/Cygwin])
+	;;
+	solaris*)
+		AC_DEFINE([PLATFORM_SOLARIS], [1], [Define to 1 if you have a Solaris OS.])
+		AC_MSG_NOTICE([platform is... Solaris])
+	;;
+	*)
+	;;
+esac
+
+case "$host" in
+	*-*-mingw* | *cygwin* | *windows*)
+		native_win32=yes
+	;;		
+	*-apple-darwin*)
+		AC_DEFINE([PLATFORM_DARWIN], [1], [Define to 1 if you have a Darwin host.])
+		AC_MSG_NOTICE([platform is... MacOSX])
+	;;
+	*)
+		native_win32=no
+	;;
+esac
+
+AM_CONDITIONAL([OS_WIN32], [test "x$native_win32" = "xyes"])
+
+
+dnl ************************
+dnl   Configure options e/d
+dnl ************************
+
+AC_ARG_ENABLE(
+	[debugging-output],
+	AC_HELP_STRING(
+		[--enable-debugging-output],
+		[enable massive debugging output (slows down the program) @<:@default=no@:>@]
+	),
+	[
+	 if test "x$enableval" != "xno"; then
+		 AC_DEFINE([DEBUG], [1], [Define to 1 if you want to have debug output.])
+	 fi
+	]
+)
+
+AC_ARG_ENABLE(
+	[highlight-profiling],
+	AC_HELP_STRING(
+		[--enable-highlight-profiling],
+		[enable profiling information about highlighting patterns (slows down the program) @<:@default=no@:>@]
+	),
+	[
+	 if test "x$enableval" != "xno"; then
+		 AC_DEFINE([HL_PROFILING], [1], [Define to 1 if you want to have profiling information about highlighting patterns.])
+	 fi
+	]
+)
+
+AC_ARG_ENABLE(
+	[development],
+	AC_HELP_STRING(
+		[--enable-development],
+		[enable development checks (slows down the program) @<:@default=no@:>@]
+	),
+	[
+	 if test "x$enableval" != "xno"; then
+		 AC_DEFINE([DEVELOPMENT], [1], [Define to 1 if you want to have development checks.])
+	 fi
+	]
+)
+
+AC_ARG_ENABLE(
+	[gprof-profiling],
+	AC_HELP_STRING(
+		[--enable-gprof-profiling],
+		[enable gprof profiling (slows down the program) @<:@default=no@:>@]
+	),
+	[
+	 if test "x$enableval" != "xno"; then
+		 CFLAGS="$CFLAGS -pg"
+		 LDFLAGS="$LDFLAGS -pg"
+	 fi
+	]
+)
+
+AC_ARG_ENABLE(
+	[gcov-coverage],
+	AC_HELP_STRING(
+		[--enable-gcov-coverage],
+		[enable coverage (slows down the program) @<:@default=no@:>@]
+	),
+	[
+	 if test "x$enableval" != "xno"; then
+		 CFLAGS="$CFLAGS -fprofile-arcs -ftest-coverage"
+	 fi
+	]
+)
+
+AC_ARG_ENABLE(
+	[splash-screen],
+	AC_HELP_STRING(
+		[--enable-splash-screen],
+		[enable (or disable) the splash screen @<:@default=yes@:>@]
+	),
+	[
+	 if test "x$enableval" = "xno"; then
+		 AC_DEFINE([NOSPLASH], [1], [Define to 1 if you want to disable the splash screen.])
+	 fi
+	],
+	[enable_splash_screen=yes]
+)
+
+dnl if splash-screen is disabled, we don't need to install the icon
+AM_CONDITIONAL([INSTALL_SPLASH], [test "x$enable_splash_screen" != "xno"])
+
+
+dnl To create our catalog and maybe update the systems XML catalog, we need xmlcatalog.
+dnl But because several systems like Debian or Mac use their own system, so let the user
+dnl decide, if he wants to update the sytems catalog.
+AC_PATH_PROG([XMLCATALOG], [xmlcatalog], [no])
+if test "x$XMLCATALOG" = "xno"; then
+	AC_MSG_ERROR([Instal the xmlcatalog application, which is delivered with the GNOME xml-library.])
+fi
+
+AC_ARG_ENABLE(
+	[xml-catalog-update],
+	AC_HELP_STRING(
+		[--enable-xml-catalog-update],
+		[
+		 enable (or disable) the running of xmlcatalog after installation -
+		 some distributions like Debian use their own system for registering
+		 catalogs, so be careful here and also check the `--with-xml-catalog'
+		 option @<:@default=yes@:>@
+		]
+	),
+)
+
+AC_ARG_ENABLE(
+	[update-databases],
+	AC_HELP_STRING(
+		[--enable-update-databases],
+		[enable (or disable) the running of update-desktop-database/update-mime-database after installation @<:@default=yes@:>@]
+	),
+	[
+	 if test "x$enableval" != "xno"; then
+		 AC_PATH_PROG([UPDATE_DESKTOP_DATABASE], [update-desktop-database])
+		 AC_PATH_PROG([UPDATE_MIME_DATABASE], [update-mime-database])
+	 else
+	 	 UPDATE_DESKTOP_DATABASE=
+	 	 UPDATE_MIME_DATABASE=
+	 fi
+	],
+	[
+	 AC_PATH_PROG([UPDATE_DESKTOP_DATABASE], [update-desktop-database])
+	 AC_PATH_PROG([UPDATE_MIME_DATABASE], [update-mime-database])
+	]
+)
+
+AC_SUBST([UPDATE_DESKTOP_DATABASE])
+AM_CONDITIONAL([HAVE_UPDATE_DESKTOP_DATABASE], [test -n "$UPDATE_DESKTOP_DATABASE"])
+AC_SUBST([UPDATE_MIME_DATABASE])
+AM_CONDITIONAL([HAVE_UPDATE_MIME_DATABASE], [test -n "$UPDATE_MIME_DATABASE"])
+
+dnl ************************
+dnl   Configure options w/wo
+dnl ************************
+
+AC_ARG_WITH(
+	[xml-catalog],
+	AC_HELP_STRING(
+		[--with-xml-catalog=@<:@FILE@:>@],
+		[
+		 the specified file is the systems XML catalog (/etc/xml/catalog for most systems),
+		 that shall be updated after installation running
+		 xmlcatalog @<:@default=${sysconfdir}/xml/catalog@:>@
+		]
+	),
+	[xmlcatalog="$withval"],
+	[xmlcatalog="${sysconfdir}/xml/catalog"]
+)
+
+AC_ARG_WITH(
+	[freedesktop_org-menu],
+	AC_HELP_STRING(
+		[--with-freedesktop_org-menu=@<:@DIR@:>@],
+		[install freedesktop.org menu files in directory DIR (if supplied) or suppress installation @<:@default=${datadir}/applications@:>@]
+	),
+	[fdomenupath="$withval"],
+	[fdomenupath="${datadir}/applications"]
+)
+
+AC_ARG_WITH(
+	[freedesktop_org-mime], 
+	AC_HELP_STRING(
+		[--with-freedesktop_org-mime=@<:@DIR@:>@],
+		[install freedesktop.org mime support files in directory DIR (if supplied) or suppress installation @<:@default=${datadir}/mime@:>@]
+	),
+	[fdomimepath="$withval"],
+	[fdomimepath="${datadir}/mime"]
+)
+
+AC_ARG_WITH(
+	[gnome2_4-mime],
+	AC_HELP_STRING(
+		[--with-gnome2_4-mime=@<:@DIR@:>@],
+		[install gnome2.4 mime support files in directory DIR (if supplied) or suppress installation @<:@default=${datadir}/mime-info@:>@]
+	),
+	[oldgmimepath="$withval"],
+	[oldgmimepath="${datadir}/mime-info"]
+)
+
+AC_ARG_WITH(
+	[theme-path],
+	AC_HELP_STRING(
+		[--with-theme-path=@<:@DIR@:>@],
+		[install theme icons in directory DIR (if supplied) or suppress installation @<:@default=${datadir}/icons/hicolor@:>@]
+	),
+	[iconthemepath="$withval"],
+	[iconthemepath="${datadir}/icons/hicolor"]
+)
+
+AC_ARG_WITH(
+	[icon-path],
+	AC_HELP_STRING(
+		[--with-icon-path=@<:@DIR@:>@],
+		[install GNOME-pixmap icons in directory DIR (if supplied) or suppress installation @<:@default=${datadir}/pixmaps@:>@]
+	),
+	[iconpath="$withval"],
+	[iconpath="${datadir}/pixmaps"]
+)
+
+if ! test -f "$xmlcatalog" ; then
+	AC_MSG_NOTICE([The given systems XML catalog $xmlcatalog seems to be unavailable.])
+	AC_MSG_NOTICE([We will not try to update it after installation.])
+	XML_CATALOG_FILE=""
+else
+	XML_CATALOG_FILE="$xmlcatalog"
+fi
+	
+AC_SUBST([XML_CATALOG_FILE])
+AM_CONDITIONAL([REGISTER_XML_CATALOG], [test "x$enable_xml_catalog_update" != "xno" -a -n "$XML_CATALOG_FILE" ])
+AC_SUBST([fdomenupath])
+AM_CONDITIONAL(INSTALL_FDOMENU, [test "x$fdomenupath" != "xno"])
+AC_SUBST([fdomimepath])
+AM_CONDITIONAL(INSTALL_FDOMIME, [test "x$fdomimepath" != "xno"])
+AC_SUBST([oldgmimepath])
+AM_CONDITIONAL(INSTALL_GMIME, [test "x$oldgmimepath" != "xno"])
+AC_SUBST([iconthemepath])
+AM_CONDITIONAL(INSTALL_THEMEICONS, [test "x$iconthemepath" != "xno"])
+AC_SUBST([iconpath])
+AM_CONDITIONAL(INSTALL_ICONS, [test "x$iconpath" != "xno"])
+
+
+dnl ************************
+dnl   Standard headers
+dnl ************************
+
+AC_HEADER_STDC
+
+
+dnl ************************
+dnl   Libraries
+dnl ************************
+
+PKG_PROG_PKG_CONFIG
+BFVAR_required="gtk+-2.0 >= 2.6 gmodule-2.0 >= 2.6 gobject-2.0 glib-2.0 pango gdk-pixbuf-2.0 gdk-2.0 gnome-vfs-2.0 >= 2.10 libxml-2.0 libgnomeui-2.0 >= 2.6"
+PKG_CHECK_MODULES([BFVAR], [$BFVAR_required])
+
+if ( $PKG_CONFIG gnome-vfs-2.0 --atleast-version=2.14 ) ; then
+	AC_DEFINE([HAVE_ATLEAST_GNOMEVFS_2_14], [1], [Define to 1 if you have Gnome-VFS-2.0 >= 2.14.])
+fi
+
+
+AC_PATH_PROG([PCRE_CONFIG], [pcre-config], [no])
+if test "x$PCRE_CONFIG" = "xno" ; then
+	AC_MSG_ERROR([pcre-config not found - please install libpcre3-dev or similar])
+else
+	LIBS="$LIBS `$PCRE_CONFIG --libs`"
+	CFLAGS="$CFLAGS `$PCRE_CONFIG --cflags`"
+fi
+
+AC_CHECK_LIB(
+	[posix4],
+	[nanosleep], 
+	[LIBS="$LIBS -lposix4" AC_DEFINE([HAVE_NANOSLEEP], [1], [Define to 1 if you have nanosleep.])],
+	[AC_CHECK_LIB(
+		[rt],
+		[nanosleep],
+		[LIBS="$LIBS -lrt" AC_DEFINE([HAVE_NANOSLEEP], [1], [Define to 1 if you have nanosleep.])]
+	)]
+)
+
+AC_CHECK_HEADER(
+	[aspell.h], 
+	[AC_CHECK_LIB(
+		[aspell],
+		[new_aspell_config],
+		[
+		 LIBS="$LIBS -laspell"
+		 AC_DEFINE([HAVE_LIBASPELL], [1], [Define to 1 if you have libaspell installed.])
+		],
+		[
+		 OLDLIBS="$LIBS"
+		 LIBS="$OLDSLIBS -lstdc++"
+		 AC_CHECK_LIB(
+			[aspell],
+			[new_aspell_config],
+			[
+			 LIBS="$LIBS -laspell"
+			 AC_DEFINE([HAVE_LIBASPELL], [1], [Define to 1 if you have libaspell installed.])
+			],
+			[
+			 LIBS="$OLDSLIBS -laspell-common -lstdc++"
+			 AC_CHECK_LIB(
+				 [aspell],
+				 [new_aspell_config],
+				 [
+					LIBS="$LIBS -laspell" 
+					AC_DEFINE([HAVE_LIBASPELL], [1], [Define to 1 if you have libaspell installed.])
+				 ],
+				 [
+					LIBS="$OLDLIBS"
+					AC_MSG_WARN([libaspell not found - please install libaspell-dev or similar])
+				 ]
+			 )
+			]
+		 )
+		]
+	 )
+	]
+)
+
+AC_ARG_ENABLE(
+	[python],
+	AC_HELP_STRING(
+		[--enable-python],
+		[enable (or disable) the building of the python plugin @<:@default=auto->yes@:>@]
+	),
+	[enable_python="$enableval"],
+	[enable_python="yes"]
+)
+
+if test "x$enable_python" = "xyes" ; then
+	AC_ARG_VAR(
+		[PYTHON],
+		[The 'python' binary with path. Use it to define or override the location of 'python'.]
+	)
+	AC_PATH_PROGS([PYTHON], [python python2.4 python2.3 python2.2 python2])
+	if test -n "$PYTHON" ; then
+		# The following was inspired by Andrew Collier's AC_PYTHON_MODULE macro.
+		for python_module in "sys" "distutils.sysconfig" ; do
+			AC_MSG_CHECKING([for python module '$python_module'])
+			$PYTHON -c "import $python_module" 2>/dev/null
+			if test "$?" -ne "0" ; then
+				AC_MSG_RESULT([no])
+				AC_MSG_NOTICE([This could mean, that the module '$python_module' is not available
+or not shipped with the python runtime (like e.g. on SuSE systems,
+where the necessary modules are in the python-devel package) or that
+the python binary '$PYTHON' does not exist.])
+				enable_python="no"
+				break
+			else
+				AC_MSG_RESULT([yes])
+			fi
+		done
+		if test "x$enable_python" != "xno" ; then
+			AC_MSG_CHECKING([for Python version])
+			PY_VER=`$PYTHON -c 'import distutils.sysconfig; print distutils.sysconfig.get_python_version();'`
+			PY_LIB=`$PYTHON -c 'import distutils.sysconfig; print distutils.sysconfig.get_python_lib(standard_lib=1);'`
+			PY_INC=`$PYTHON -c 'import distutils.sysconfig; print distutils.sysconfig.get_python_inc();'`
+			AC_MSG_RESULT([$PY_VER])
+			changequote([<<, >>])
+			$PYTHON -c "import sys; map(int,sys.version[:3].split('.'))>= [2,2] or sys.exit(1)"
+			changequote([, ])
+			if test "$?" -ne "1" ; then
+				AC_MSG_CHECKING([for Python $PY_VER compile flags])
+				PY_PREFIX=`$PYTHON -c 'import sys; print sys.prefix'`
+				PY_EXEC_PREFIX=`$PYTHON -c 'import sys; print sys.exec_prefix'`
+				if test -f "$PY_INC/Python.h" ; then
+					AC_MSG_RESULT([-I$PY_INC])
+					AC_MSG_CHECKING([for Python $PY_VER link flags])
+					PYSHARED=`$PYTHON -c 'import distutils.sysconfig; print distutils.sysconfig.get_config_var("LIBS")'`
+					AC_MSG_RESULT([-L$PY_LIB/config -lpython$PY_VER $PYSHARED])
+					LIBS="$LIBS -L$PY_LIB/config -lpython$PY_VER $PYSHARED"
+					CFLAGS="$CFLAGS -I$PY_INC"
+				else
+					enable_python="no"
+					AC_MSG_RESULT([Can't find Python.h])
+				fi
+			else
+				AC_MSG_WARN([Python too old. Only 2.2 or above is supported.])
+				enable_python="no"
+			fi
+		fi
+	else
+		enable_python="no"
+	fi
+fi
+if test "x$enable_python" = "xyes"; then
+	AC_DEFINE([HAVE_PYTHON], [1], [Define to 1 if you have python installed.])
+fi
+
+
+dnl ************************
+dnl   Header
+dnl ************************
+
+AC_CHECK_HEADERS([stdlib.h unistd.h string.h strings.h errno.h stdio.h sys/stat.h ctype.h getopt.h math.h time.h sys/types.h fcntl.h netdb.h netinet/in.h sys/socket.h arpa/inet.h dirent.h sys/select.h sys/time.h sys/ipc.h sys/msg.h])
+
+AC_CHECK_FUNC([msgrcv], AC_DEFINE([HAVE_MSGRCV], [1], [Define to 1 if msgrcv() is available.]))
+AC_CHECK_FUNC([msgsnd], AC_DEFINE([HAVE_MSGSND], [1], [Define to 1 if msgsnd() is available.]))
+AC_CHECK_FUNC([ctime], AC_DEFINE([HAVE_CTIME], [1], [Define to 1 if ctime() is available.]))
+AC_CHECK_FUNC([ctime_r], AC_DEFINE([HAVE_CTIME_R], [1], [Define to 1 if ctime_r() is available.]))
+AC_CHECK_FUNC([asctime], AC_DEFINE([HAVE_ASCTIME], [1], [Define to 1 if asctime() is available.]))
+AC_CHECK_FUNC([asctime_r], AC_DEFINE([HAVE_ASCTIME_R], [1], [Define to 1 if asctime_r() is available.]))
+AC_CHECK_FUNC([localtime], AC_DEFINE([HAVE_LOCALTIME], [1], [Define to 1 if localtime() is available.]))
+
+
+dnl **************************
+dnl   Spell checker
+dnl **************************
+
+AC_DEFINE([WITH_SPC], [1], [Don't define to 1 if you want to build without spell-checker.])
+AC_FUNC_SELECT_ARGTYPES
+AC_HEADER_TIME
+
+
+dnl ************************
+dnl   Final Cflags/Libs
+dnl ************************
+
+CFLAGS="$BFVAR_CFLAGS $CFLAGS"
+LIBS="$BFVAR_LIBS $LIBS"
+
+
+dnl ************************
+dnl   Locations
+dnl ************************
+
+if test "$prefix" == "NONE"; then
+	prefix="${ac_default_prefix}"
+	AC_SUBST([prefix])
+fi
+
+if test "$exec_prefix" == "NONE"; then
+	exec_prefix="${ac_default_prefix}"
+	AC_SUBST([exec_prefix])
+fi
+
+if test -n "$localedir"; then
+	localedir="${datadir}/locale"
+	AC_SUBST([localedir])
+fi
+
+
+dnl *******************************
+dnl   Manpage macros
+dnl *******************************
+BF_PROG_XMLLINT
+BF_PROG_XSLTPROC
+BF_PROG_MAN
+
+
+dnl *******************************
+dnl   Output Makefiles
+dnl *******************************
+AC_CONFIG_FILES([
+	Makefile
+	data/Makefile
+	data/bflang/Makefile
+	data/bflib/Makefile
+	desktop-data/Makefile
+	images/Makefile
+	man/bf_entities.dtd
+	man/Makefile
+	po/Makefile.in
+	src/Makefile
+	src/pixmaps/Makefile
+	src/plugin_about/Makefile
+	src/plugin_about/po/Makefile.in
+	src/plugin_entities/Makefile
+	src/plugin_entities/po/Makefile.in
+	src/plugin_htmlbar/Makefile
+	src/plugin_htmlbar/pixmaps/Makefile
+	src/plugin_htmlbar/po/Makefile.in
+	src/plugin_infbrowser/Makefile
+	src/plugin_infbrowser/po/Makefile.in
+	src/plugin_snippets/Makefile
+	src/plugin_snippets/po/Makefile.in
+])
+AC_OUTPUT
+
+
+dnl *******************************
+dnl   Feedback
+dnl *******************************
+AC_MSG_NOTICE([
+-----------
+If you like this program, please let me know and send me
+a postcard and tell me what city/country you're from
+-----------])

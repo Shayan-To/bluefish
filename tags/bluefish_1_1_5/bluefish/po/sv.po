@@ -1,0 +1,5325 @@
+# Swedish language file for Bluefish.
+# Copyright (C) 2000, 2003 Free Software Foundation, Inc.
+# Bo Forslund <bo.forslund@abc.se>, 2000
+# David Smeringe <david.smeringe@telia.com>, 2003,2004
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bluefish gtk2-port\n"
+"Report-Msgid-Bugs-To: bluefish-dev@lists.ems.ru\n"
+"POT-Creation-Date: 2007-08-26 00:56+0200\n"
+"PO-Revision-Date: 2004-11-27 21:02+0100\n"
+"Last-Translator: David Smeringe <david.smeringe@telia.com>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-data/bluefish-unstable.desktop.in.h:1
+#: ../desktop-data/bluefish-unstable-project.desktop.in.h:1
+msgid "Bluefish Editor (CVS)"
+msgstr ""
+
+#: ../desktop-data/bluefish-unstable.desktop.in.h:2
+#: ../desktop-data/bluefish-unstable-project.desktop.in.h:2
+msgid "Web Development Editor (CVS)"
+msgstr ""
+
+#: ../desktop-data/bluefish-unstable.keys.in.h:1
+#, fuzzy
+msgid "Bluefish Project"
+msgstr "Skriv in Bluefish-projektfilnamn"
+
+#: ../desktop-data/bluefish-unstable.xml.in.h:1
+#, fuzzy
+msgid "Bluefish project file"
+msgstr "Skriv in Bluefish-projektfilnamn"
+
+#: ../src/bf_lib.c:175 ../src/bf_lib.c:195
+#, c-format
+msgid ""
+"Bluefish has trouble reading the filenames. Try to set the environment "
+"variable G_BROKEN_FILENAMES=1\n"
+msgstr ""
+"Bluefish har problem med att lösa filnamnen. Försök att sätta miljövariabeln "
+"G_BROKEN_FILENAMES=1\n"
+
+#: ../src/bfspell.c:391
+msgid "Check Spelling"
+msgstr "Kontrollera stavning"
+
+#: ../src/bfspell.c:395
+msgid "Checking"
+msgstr "Kontrollerar"
+
+#: ../src/bfspell.c:404
+msgid "_Misspelled word:"
+msgstr "_Felstavat ord:"
+
+#: ../src/bfspell.c:408
+msgid "Change _to:"
+msgstr "Ändra _till:"
+
+#: ../src/bfspell.c:411
+msgid "I_gnore"
+msgstr "I_gnorera"
+
+#: ../src/bfspell.c:412 ../src/snr2.c:1764
+msgid "_Replace"
+msgstr "_Ersätt"
+
+#: ../src/bfspell.c:425
+msgid "In _document"
+msgstr "I _dokumentet"
+
+#: ../src/bfspell.c:426
+msgid "I_n selection"
+msgstr "I _urvalet"
+
+#: ../src/bfspell.c:435
+msgid "personal dictionary"
+msgstr "personlig ordbok"
+
+#: ../src/bfspell.c:438
+msgid "session dictionary"
+msgstr "sessionsordbok"
+
+#: ../src/bfspell.c:444
+msgid "Dictionary:"
+msgstr "Ordbok:"
+
+#: ../src/bfspell.c:448
+#, fuzzy
+msgid "_Add Word"
+msgstr " L_ägg till "
+
+#: ../src/bfspell.c:454
+msgid "Language:"
+msgstr "Språk:"
+
+#: ../src/bfspell.c:458
+msgid "Set defa_ult"
+msgstr "Använd standa_rd"
+
+#: ../src/bfspell.c:462
+msgid "Filter:"
+msgstr "Filtrera:"
+
+#: ../src/bfspell.c:470
+msgid "no filter"
+msgstr "inget filter"
+
+#: ../src/bfspell.c:472
+msgid "html filter"
+msgstr "htmlfilter"
+
+#: ../src/bf-textview.c:167
+msgid "Expand all"
+msgstr ""
+
+#: ../src/bf-textview.c:170
+#, fuzzy
+msgid "Collapse all"
+msgstr "Stäng _alla"
+
+#: ../src/blocksync.c:88
+msgid ""
+"Select the block to sync to other pages. Include the start-of-block and end-"
+"of-block markers in your selection."
+msgstr ""
+
+#: ../src/blocksync.c:93
+msgid "To proceed with the current selection click forward."
+msgstr ""
+
+#: ../src/blocksync.c:122
+msgid ""
+"Below is the block, including start and end marker. Please <b>select the "
+"start marker</b> in the text below."
+msgstr ""
+
+#: ../src/blocksync.c:157
+msgid "Please <b>select the end marker</b> in the text below."
+msgstr ""
+
+#: ../src/blocksync.c:226
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Please select the block of text to "
+"synchronize.</span>"
+msgstr ""
+
+#: ../src/blocksync.c:240 ../src/blocksync.c:260
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">This marker exists more than once "
+"in the block.</span>"
+msgstr ""
+
+#: ../src/blocksync.c:246
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Select the text that marks the "
+"start of the block.</span>"
+msgstr ""
+
+#: ../src/blocksync.c:266
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Select the text that marks the end "
+"of the block.</span>"
+msgstr ""
+
+#: ../src/blocksync.c:297
+msgid "Block synchronisation"
+msgstr ""
+
+#: ../src/bluefish.c:73
+#, fuzzy
+msgid "Bluefish Editor"
+msgstr "Bluefish-tips:"
+
+#: ../src/bluefish.c:74
+msgid "Visit us at http://bluefish.openoffice.nl"
+msgstr ""
+
+#: ../src/bluefish.c:101 ../src/bluefish.c:111
+msgid "Open in a new window."
+msgstr ""
+
+#: ../src/bluefish.c:102 ../src/bluefish.c:112
+msgid "Open a project from the specified projectfile."
+msgstr ""
+
+#: ../src/bluefish.c:102 ../src/bluefish.c:112
+msgid "PROJECTFILE"
+msgstr ""
+
+#: ../src/bluefish.c:103 ../src/bluefish.c:113
+#, fuzzy
+msgid "Skip root check."
+msgstr "-s           hoppa över rotkontroll\n"
+
+#: ../src/bluefish.c:104 ../src/bluefish.c:114
+msgid "Print version information."
+msgstr ""
+
+#: ../src/bluefish.c:128
+msgid " [FILE(S)]"
+msgstr ""
+
+#: ../src/bluefish.c:215
+msgid "parsing highlighting file..."
+msgstr "tolkar färgkodningsfil..."
+
+#: ../src/bluefish.c:236
+msgid "compiling highlighting patterns..."
+msgstr "kompilerar färgkodningsmönstren..."
+
+#: ../src/bluefish.c:242
+#, fuzzy
+msgid "building file filters ..."
+msgstr "Läser in filer..."
+
+#: ../src/bluefish.c:250
+#, fuzzy
+msgid "setting up bookmarks ..."
+msgstr "Ta bort bokmärken."
+
+#: ../src/bluefish.c:260
+msgid "creating main gui..."
+msgstr "skapar det grafiska huvudgränssnittet..."
+
+#: ../src/bluefish.c:271
+msgid "showing main gui..."
+msgstr "visar det grafiska huvudgränssnittet..."
+
+#: ../src/bookmark.c:431
+msgid "_Name:"
+msgstr "_Namn:"
+
+#: ../src/bookmark.c:436
+msgid "_Description:"
+msgstr "_Beskrivning:"
+
+#: ../src/bookmark.c:438
+msgid "Temporary"
+msgstr "Tillfällig"
+
+#: ../src/bookmark.c:584
+#, c-format
+msgid "Do you really want to delete all bookmarks for %s?"
+msgstr "Vill du verkligen ta bort alla bokmärken för %s?"
+
+#: ../src/bookmark.c:588
+msgid "Delete bookmarks?"
+msgstr "Ta bort bokmärke?"
+
+#: ../src/bookmark.c:613
+#, c-format
+msgid "Do you really want to delete %s?"
+msgstr "Vill du verkligen ta bort %s?"
+
+#: ../src/bookmark.c:617
+msgid "Delete permanent bookmark."
+msgstr "Ta bort fast bokmärke."
+
+#: ../src/bookmark.c:638
+msgid "Edit bookmark"
+msgstr "Redigera bokmärke"
+
+#: ../src/bookmark.c:695
+#, fuzzy
+msgid "/Goto"
+msgstr "/_Gå"
+
+#: ../src/bookmark.c:696
+#, fuzzy
+msgid "/Edit"
+msgstr "/_Redigera"
+
+#: ../src/bookmark.c:697
+#, fuzzy
+msgid "/Delete"
+msgstr " _Ta bort"
+
+#: ../src/bookmark.c:699
+#, fuzzy
+msgid "/Delete All in document"
+msgstr "Ta bort allt i dokument"
+
+#: ../src/bookmark.c:700
+#, fuzzy
+msgid "/Delete All"
+msgstr " Ta bort allt"
+
+#: ../src/bookmark.c:702
+#, fuzzy
+msgid "/Permanent by default"
+msgstr "Gör permanent som standard"
+
+#: ../src/bookmark.c:704
+#, fuzzy
+msgid "/Show file"
+msgstr "Inget filnamn"
+
+#: ../src/bookmark.c:705
+#, fuzzy
+msgid "/Show file/By name"
+msgstr "Inget filnamn"
+
+#: ../src/bookmark.c:706
+#, fuzzy
+msgid "/Show file/By full path"
+msgstr "Visa hela trädet"
+
+#: ../src/bookmark.c:707
+#, fuzzy
+msgid "/Show file/By full uri"
+msgstr "Visa hela trädet"
+
+#: ../src/bookmark.c:708
+#, fuzzy
+msgid "/Show bookmark"
+msgstr "Gå till bokmärke"
+
+#: ../src/bookmark.c:709
+msgid "/Show bookmark/Name & Content"
+msgstr ""
+
+#: ../src/bookmark.c:710
+msgid "/Show bookmark/Content"
+msgstr ""
+
+#: ../src/bookmark.c:711
+#, fuzzy
+msgid "/Show bookmark/Name"
+msgstr "Gå till bokmärke"
+
+#: ../src/bookmark.c:1304 ../src/bookmark.c:1363
+#, fuzzy
+msgid "Error adding bookmark"
+msgstr "Redigera bokmärke"
+
+#: ../src/bookmark.c:1305 ../src/bookmark.c:1364
+#, fuzzy
+msgid "Cannot add bookmarks to unsaved files."
+msgstr "Kan inte lägga till bokmärken i namnlösa filer"
+
+#: ../src/bookmark.c:1324
+#, fuzzy
+msgid "Can't add bookmark"
+msgstr "Lägg till bokmärke"
+
+#: ../src/bookmark.c:1325
+msgid "You already have a bookmark here!"
+msgstr "Du har redan ett bokmärke här!"
+
+#: ../src/bookmark.c:1400
+msgid "Delete all bookmarks."
+msgstr "Ta bort bokmärken."
+
+#: ../src/bookmark.c:1440
+#, fuzzy
+msgid "File size changed in file \n"
+msgstr "Filstorlek ändrad i fil\n"
+
+#: ../src/bookmark.c:1444
+msgid "Bookmarks positions could be incorrect. Delete bookmarks?"
+msgstr "Bokmärkenas positioner kan vara felaktiga. Ta bort bokmärken?"
+
+#: ../src/document.c:408
+msgid "Name: "
+msgstr "Namn: "
+
+#: ../src/document.c:412
+#, fuzzy
+msgid ""
+"\n"
+"File type: "
+msgstr "Filtyper"
+
+#: ../src/document.c:416
+msgid ""
+"\n"
+"Encoding: "
+msgstr ""
+"\n"
+"Kodning: "
+
+#: ../src/document.c:423
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Permissions: %s\n"
+"Uid: %u Gid: %u"
+msgstr ""
+"\n"
+"Rättigheter: "
+
+#: ../src/document.c:428
+msgid ""
+"\n"
+"Size (on disk): "
+msgstr ""
+"\n"
+"Storlek (på disk): "
+
+#: ../src/document.c:433
+#, fuzzy
+msgid ""
+"\n"
+"Mime type: "
+msgstr "Filtyper"
+
+#: ../src/document.c:439
+msgid ""
+"\n"
+"Last modified: "
+msgstr ""
+"\n"
+"Senast ändrad: "
+
+#: ../src/document.c:490
+#, c-format
+msgid "Untitled %d"
+msgstr "Namnlöst %d"
+
+#: ../src/document.c:821
+#, fuzzy, c-format
+msgid "Document %s is already open in another Bluefish window."
+msgstr "Öppna filer i ett redan startat bluefishfönster"
+
+#: ../src/document.c:823
+msgid "Move to this window"
+msgstr ""
+
+#: ../src/document.c:823
+msgid "Open readonly"
+msgstr ""
+
+#: ../src/document.c:823
+#, fuzzy
+msgid "Do not open"
+msgstr "Kunde inte öppna filen\n"
+
+#: ../src/document.c:1183
+#, fuzzy, c-format
+msgid " Ln: %d, Col: %d"
+msgstr "Rad %d, Kol %d"
+
+#: ../src/document.c:1203
+msgid " OVR"
+msgstr ""
+
+#: ../src/document.c:1203
+msgid " INS"
+msgstr ""
+
+#: ../src/document.c:1205
+msgid " RO"
+msgstr ""
+
+#: ../src/document.c:1219 ../src/document.c:1220
+#, c-format
+msgid "  %s, %s"
+msgstr "  %s, %s"
+
+#: ../src/document.c:1622
+msgid "Cannot display file, unknown characters found."
+msgstr "Kan inte visa filen på grund av okända tecken."
+
+#: ../src/document.c:2104 ../src/snr2.c:1625
+msgid "Replace"
+msgstr "Ersätt"
+
+#: ../src/document.c:2109 ../src/snr2.c:1622
+msgid "Find"
+msgstr "Sök"
+
+#: ../src/document.c:2117
+msgid "Delete bookmark"
+msgstr "Ta bort bokmärke"
+
+#: ../src/document.c:2121
+msgid "Add bookmark"
+msgstr "Lägg till bokmärke"
+
+#. if (main_v->props.backup_abort_action == 2)
+#. we have to ask the user
+#. we have to ask the user what to do
+#: ../src/document.c:2263 ../src/file_dialogs.c:344 ../src/file_dialogs.c:384
+msgid "_Abort save"
+msgstr "_Avbryt spara"
+
+#: ../src/document.c:2263
+msgid "_Continue save in UTF-8"
+msgstr "_Fortsätt spara i UTF-8"
+
+#: ../src/document.c:2274
+#, c-format
+msgid ""
+"Failed to convert %s to character encoding %s. Encoding failed on character "
+"'%s' at line %d column %d\n"
+"\n"
+"Continue saving in UTF-8 encoding?"
+msgstr ""
+"Misslyckades med att konvertera %s till teckenkodningen %s. Kodning "
+"misslyckades vid tecken '%s' på rad %d, kolumn %d\n"
+"\n"
+"Fortsätt spara i UTF-8-kodning?"
+
+#: ../src/document.c:2278
+msgid "File encoding conversion failure"
+msgstr "Teckenkodningskonvertering misslyckad"
+
+#: ../src/document.c:2510
+msgid "Previously: "
+msgstr "Föregående: "
+
+#. || (!file_exists_and_readable(doc->uri))
+#: ../src/document.c:3294
+msgid "Unable to open file"
+msgstr "Kan inte öppna filen"
+
+#: ../src/document.c:3316
+#, fuzzy
+msgid "_Unset file name"
+msgstr "filnamn"
+
+#: ../src/document.c:3316
+#, fuzzy
+msgid "_Save"
+msgstr "Spara"
+
+#. file is deleted on disk, what do we do now ?
+#: ../src/document.c:3318
+#, fuzzy, c-format
+msgid "File name: %s"
+msgstr "Filnamn"
+
+#: ../src/document.c:3322
+#, fuzzy
+msgid "File disappeared from disk\n"
+msgstr "kontroll över fil ändrad på disk"
+
+#: ../src/document.c:3339
+msgid "_Ignore"
+msgstr "_Ignorera"
+
+#: ../src/document.c:3339
+msgid "_Reload"
+msgstr "_Läs om"
+
+#: ../src/document.c:3342
+#, c-format
+msgid ""
+"Filename: %s\n"
+"\n"
+"New modification time is: %s\n"
+"Old modification time is: %s"
+msgstr ""
+"Filnamn: %s\n"
+"\n"
+"Ny modifieringstid: %s\n"
+"Gammal modifieringstid: %s"
+
+#: ../src/document.c:3346
+msgid "File has been modified by another process\n"
+msgstr "Filen har ändrats av en annan process\n"
+
+#: ../src/document.c:3403
+msgid "_Retry"
+msgstr ""
+
+#: ../src/document.c:3403
+msgid "Retry _all failed"
+msgstr ""
+
+#: ../src/document.c:3403
+#, fuzzy
+msgid "_Close"
+msgstr "Stäng"
+
+#: ../src/document.c:3403
+#, fuzzy
+msgid "Close all _failed"
+msgstr "Sparande av fil är avbruten.\n"
+
+#: ../src/document.c:3407
+#, fuzzy
+msgid "File "
+msgstr "Filantal"
+
+#: ../src/document.c:3407
+msgid " failed to load."
+msgstr ""
+
+#: ../src/document.c:3411
+msgid "File failed to load\n"
+msgstr ""
+
+#: ../src/document.c:3531
+msgid "Select file to insert"
+msgstr "Välj fil att sätta in"
+
+#: ../src/document.c:3539
+msgid "No file to insert"
+msgstr "Ingen fil att sätta in"
+
+#: ../src/document.c:3688
+#, c-format
+msgid "Statistics: %d lines, %d words, %d characters"
+msgstr "Statistik: %d rader, %d ord, %d tecken"
+
+#: ../src/filebrowser2.c:1071
+msgid "Could not rename\n"
+msgstr "Kunde byta namn\n"
+
+#: ../src/filebrowser2.c:1109
+#, fuzzy
+msgid "New directory"
+msgstr "/_Ny katalog"
+
+#: ../src/filebrowser2.c:1114 ../src/filebrowser2.c:1120
+#, fuzzy
+msgid "New file"
+msgstr "/_Ny fil"
+
+#. Do we really need to display the full path here?
+#. *
+#. * Having the filename in the both the primary and secondary text seems to be redundant.
+#. * Set back to just the primary text for now.
+#. *
+#. * --> Sometimes you can have a file in many directories (e.g. Makefile.in, index.html)
+#. * and then this might give you more indication if this is indeed the file you wanted to delete
+#.
+#: ../src/filebrowser2.c:1209
+#, fuzzy, c-format
+msgid ""
+"Are you sure you want to delete\n"
+"\"%s\"?"
+msgstr "Är du säker på att du vill ta bort \"%s\" ?"
+
+#: ../src/filebrowser2.c:1210
+#, fuzzy, c-format
+msgid "If you delete %s, it will be permanently lost."
+msgstr "Om du tar bort denna filen så är den borta för alltid."
+
+#: ../src/filebrowser2.c:1314
+msgid "/_Open"
+msgstr "/_Öppna"
+
+#: ../src/filebrowser2.c:1315
+msgid "/Open _Advanced..."
+msgstr "/Öppna _Avancerat..."
+
+#: ../src/filebrowser2.c:1316
+msgid "/Rena_me"
+msgstr "/Byt na_mn"
+
+#: ../src/filebrowser2.c:1317
+msgid "/_Delete"
+msgstr " _Ta bort"
+
+#: ../src/filebrowser2.c:1319
+msgid "/New _File"
+msgstr "/_Ny fil"
+
+#: ../src/filebrowser2.c:1320
+msgid "/_New Directory"
+msgstr "/_Ny katalog"
+
+#: ../src/filebrowser2.c:1322
+msgid "/_Refresh"
+msgstr "/_Uppdatera"
+
+#: ../src/filebrowser2.c:1323
+#, fuzzy
+msgid "/Show Full _Tree"
+msgstr "Visa hela trädet"
+
+#: ../src/filebrowser2.c:1324
+msgid "/_Set as basedir"
+msgstr "/_Sätt som startkatalog"
+
+#: ../src/filebrowser2.c:1326
+#, fuzzy
+msgid "/Follow active document"
+msgstr "/Gå/Sist_a dokumentet"
+
+#: ../src/filebrowser2.c:1327
+#, fuzzy
+msgid "/Show hidden files"
+msgstr "Visa dolda filer"
+
+#: ../src/filebrowser2.c:1328
+#, fuzzy
+msgid "/Show backup files"
+msgstr "Visa säkerhetskopior"
+
+#. Add filter submenu
+#: ../src/filebrowser2.c:1394
+msgid "Filter"
+msgstr "Filtrera"
+
+#: ../src/filebrowser2.c:1419 ../src/filefilter.c:346
+#, fuzzy
+msgid "Edit filter"
+msgstr "htmlfilter"
+
+#: ../src/filebrowser2.c:1422
+#, fuzzy
+msgid "Delete filter"
+msgstr "Välj fil"
+
+#: ../src/filebrowser2.c:1426
+#, fuzzy
+msgid "New filter"
+msgstr "/_Ny fil"
+
+#: ../src/file.c:1054
+#, fuzzy, c-format
+msgid "%d document open."
+msgid_plural "%d documents open."
+msgstr[0] "I _dokumentet"
+msgstr[1] "I _dokumentet"
+
+#. BUG: we should ask the user what to do ?
+#: ../src/file.c:1317
+msgid "_Skip"
+msgstr "_Hoppa över"
+
+#: ../src/file.c:1317 ../src/file_dialogs.c:508 ../src/file_dialogs.c:531
+#: ../src/project.c:223
+msgid "_Overwrite"
+msgstr "_Skriv över"
+
+#: ../src/file.c:1322
+#, fuzzy, c-format
+msgid "%s already exists, overwrite?"
+msgstr "Filen %s finns och är öppen, skriv över?"
+
+#: ../src/file.c:1326
+#, fuzzy
+msgid "Overwrite file?"
+msgstr "_Skriv över"
+
+#: ../src/file_dialogs.c:88
+msgid "Select basedir"
+msgstr "Välj startkatalog"
+
+#: ../src/file_dialogs.c:125
+msgid "Advanced open file selector"
+msgstr "Avancerad filöppningsväljare"
+
+#: ../src/file_dialogs.c:134
+msgid "<b>General</b>"
+msgstr "<b>Vanlig</b>"
+
+#: ../src/file_dialogs.c:140
+#, fuzzy
+msgid "Base _Dir:"
+msgstr "Start_katalog:"
+
+#: ../src/file_dialogs.c:142 ../src/gtk_easy.c:1263
+msgid "_Browse..."
+msgstr "_Bläddra..."
+
+#: ../src/file_dialogs.c:151
+#, fuzzy
+msgid "_Pattern:"
+msgstr "Möns_ter:"
+
+#: ../src/file_dialogs.c:156
+msgid "_Match on file name only:"
+msgstr ""
+
+#: ../src/file_dialogs.c:160
+msgid "_Recursive:"
+msgstr "_Rekursivt:"
+
+#: ../src/file_dialogs.c:163
+msgid "<b>Contains</b>"
+msgstr "<b>Innehåller</b>"
+
+#: ../src/file_dialogs.c:167
+msgid "Pa_ttern:"
+msgstr "Möns_ter:"
+
+#: ../src/file_dialogs.c:171
+msgid "Is rege_x:"
+msgstr "Är regulj_ärt uttryck:"
+
+#: ../src/file_dialogs.c:231
+msgid "Select files"
+msgstr "Välj filer"
+
+#: ../src/file_dialogs.c:279
+msgid "Open URL"
+msgstr "Öppna URL"
+
+#: ../src/file_dialogs.c:283
+msgid "<b>Open URL</b>"
+msgstr "<b>Öppna URL</b>"
+
+#: ../src/file_dialogs.c:344 ../src/file_dialogs.c:384
+msgid "_Continue save"
+msgstr "_Fortsätt spara"
+
+#: ../src/file_dialogs.c:346
+#, c-format
+msgid ""
+"A backupfile for %s could not be created. If you continue, this file will be "
+"overwritten."
+msgstr ""
+"En säkerhetskopia för %s kunde inte skapas. Om du fortsätter så kommer filen "
+"att skrivas över. "
+
+#: ../src/file_dialogs.c:350
+msgid "File backup failure"
+msgstr "Säkerhetskopiering av fil misslyckades"
+
+#: ../src/file_dialogs.c:368
+#, fuzzy
+msgid ""
+"Could not save file:\n"
+"\""
+msgstr ""
+"Kunde inte skriva filen:\n"
+"\""
+
+#: ../src/file_dialogs.c:372
+#, fuzzy
+msgid "File save failed!\n"
+msgstr "Sparande av fil är avbruten.\n"
+
+#: ../src/file_dialogs.c:389
+#, fuzzy, c-format
+msgid "File %s has been modified on disk, overwrite?"
+msgstr "Filen %s finns och är öppen, skriv över?"
+
+#: ../src/file_dialogs.c:391
+#, fuzzy, c-format
+msgid "Failed to check if %s has been modified on disk"
+msgstr "kontroll över fil ändrad på disk"
+
+#: ../src/file_dialogs.c:484
+#, c-format
+msgid "Move/rename %s to"
+msgstr "Flytta/byt namn på %s till"
+
+#: ../src/file_dialogs.c:484
+#, c-format
+msgid "Save %s as"
+msgstr "Spara %s som..."
+
+#: ../src/file_dialogs.c:508 ../src/file_dialogs.c:531
+#: ../src/file_dialogs.c:802 ../src/project.c:223
+msgid "_Cancel"
+msgstr "A_vbryt"
+
+#: ../src/file_dialogs.c:509
+#, fuzzy, c-format
+msgid "File %s exists and is open, overwrite?"
+msgstr "Filen %s finns och är öppen, skriv över?"
+
+#: ../src/file_dialogs.c:514
+msgid "The file you have selected is being edited in Bluefish."
+msgstr "Filen som du har valt redigeras i Bluefish."
+
+#: ../src/file_dialogs.c:532 ../src/project.c:224
+#, c-format
+msgid "A file named \"%s\" already exists."
+msgstr "En fil med namnet \"%s\" finns redan."
+
+#: ../src/file_dialogs.c:537 ../src/project.c:229
+msgid "Do you want to replace the existing file?"
+msgstr "Vill du ersätta den befintliga filen?"
+
+#. this message is not in very nice english I'm afraid
+#: ../src/file_dialogs.c:600
+#, fuzzy
+msgid ""
+"File:\n"
+"\""
+msgstr "Filtrera:"
+
+#: ../src/file_dialogs.c:604
+msgid "Save in progress!"
+msgstr ""
+
+#: ../src/file_dialogs.c:748 ../src/project.c:391
+msgid "Close _Without Saving"
+msgstr ""
+
+#: ../src/file_dialogs.c:751
+#, fuzzy, c-format
+msgid "Save changes to \"%s\" before closing?"
+msgstr "Spara ändringar för \"%s\" innan den stängs?"
+
+#: ../src/file_dialogs.c:756 ../src/file_dialogs.c:807 ../src/project.c:403
+msgid "If you don't save your changes they will be lost."
+msgstr "Dina ändringar kommer gå förlorade om du inte sparar."
+
+#: ../src/file_dialogs.c:802
+msgid "Choose per _File"
+msgstr "Välj per _fil"
+
+#: ../src/file_dialogs.c:802
+msgid "Close _All"
+msgstr "Stäng _alla"
+
+#: ../src/file_dialogs.c:802
+msgid "_Save All"
+msgstr "_Spara alla"
+
+#: ../src/file_dialogs.c:806
+msgid "Multiple open files have been changed."
+msgstr "Flera öppna filer har ändrats."
+
+#. build a list of filters
+#: ../src/filefilter.c:127 ../src/gtk_easy.c:1373
+msgid "All files"
+msgstr "Alla filer"
+
+#: ../src/filefilter.c:375
+#, fuzzy
+msgid "Show files in filter"
+msgstr "Filtyper och filter"
+
+#: ../src/filefilter.c:380 ../src/filefilter.c:392
+#, fuzzy
+msgid "Mime type"
+msgstr "Filtyper"
+
+#: ../src/filefilter.c:383 ../src/filefilter.c:395
+msgid "Icon"
+msgstr "Ikon"
+
+#: ../src/gtk_easy.c:1092
+#, c-format
+msgid "%d of %d"
+msgstr "%d av %d"
+
+#: ../src/gtk_easy.c:1198
+msgid "Select File"
+msgstr "Välj fil"
+
+#: ../src/gtk_easy.c:1363
+msgid "Show backup files"
+msgstr "Visa säkerhetskopior"
+
+#: ../src/gtk_easy.c:1423
+#, fuzzy
+msgid "Character _Encoding:"
+msgstr "/Dokument/T_eckenkodning"
+
+#: ../src/gtk_easy.c:1437
+#, fuzzy
+msgid "Automatic detection"
+msgstr "Uppdatera automatiskt META-taggen \"author\""
+
+#: ../src/gui.c:259
+msgid "Filebrowser"
+msgstr "Filbläddrare"
+
+#: ../src/gui.c:260
+msgid "Bookmarks"
+msgstr "Bokmärken"
+
+#: ../src/gui.c:392
+msgid "New"
+msgstr "Ny"
+
+#: ../src/gui.c:394
+msgid "Open..."
+msgstr "Öppna.."
+
+#: ../src/gui.c:396
+msgid "Save"
+msgstr "Spara"
+
+#: ../src/gui.c:398
+msgid "Save As..."
+msgstr "Spara Som..."
+
+#: ../src/gui.c:400
+msgid "Close"
+msgstr "Stäng"
+
+#: ../src/gui.c:403
+msgid "Cut"
+msgstr "Klipp ut"
+
+#: ../src/gui.c:405
+msgid "Copy"
+msgstr "Kopiera"
+
+#: ../src/gui.c:407
+msgid "Paste"
+msgstr "Klistra in"
+
+#: ../src/gui.c:410
+msgid "Find..."
+msgstr "Sök..."
+
+#: ../src/gui.c:412
+msgid "Replace..."
+msgstr "Ersätt..."
+
+#: ../src/gui.c:415
+msgid "Undo"
+msgstr "Ångra"
+
+#: ../src/gui.c:417
+msgid "Redo"
+msgstr "Gör om"
+
+#: ../src/gui.c:420
+msgid "Shift Left"
+msgstr "Flytta åt vänster"
+
+#: ../src/gui.c:422
+msgid "Shift Right"
+msgstr "Flytta åt höger"
+
+#: ../src/gui.c:429
+msgid "Spellcheck..."
+msgstr "Stavningskontroll..."
+
+#: ../src/gui.c:434
+msgid "View in browser"
+msgstr "Visa i webbläsare"
+
+#: ../src/gui.c:437
+msgid "Preferences..."
+msgstr "Inställningar..."
+
+#: ../src/gui.c:674
+msgid "New Bluefish Window"
+msgstr "Nytt Bluefish-fönster"
+
+#. Fake-label (for notebook_hide() and _show() ;)
+#: ../src/gui.c:730
+msgid "Stand by..."
+msgstr "Vänta..."
+
+#: ../src/gui.c:926
+msgid "Goto line"
+msgstr "Gå till rad"
+
+#: ../src/gui.c:934
+msgid "_Line number:"
+msgstr "_Radnummer:"
+
+#. mnemonic for label
+#: ../src/gui.c:940
+msgid "From _selection"
+msgstr "Från _markering"
+
+#: ../src/gui.c:943
+msgid "Keep _dialog"
+msgstr "Behåll _dialogrutan"
+
+#: ../src/gui.c:1007
+msgid "starting bluefish"
+msgstr "startar bluefish"
+
+#: ../src/menu.c:214
+msgid "/_File"
+msgstr "/_Arkiv"
+
+#: ../src/menu.c:216
+msgid "/File/_New"
+msgstr "/Arkiv/_Nytt"
+
+#: ../src/menu.c:217
+msgid "/File/New _Window"
+msgstr "/Arkiv/Nytt _Fönster"
+
+#: ../src/menu.c:218
+msgid "/File/_Open..."
+msgstr "/Arkiv/_Öppna..."
+
+#: ../src/menu.c:219
+msgid "/File/Open _recent"
+msgstr "/Arkiv/Öppna senaste"
+
+#: ../src/menu.c:221
+msgid "/File/Open Ad_vanced..."
+msgstr "/Arkiv/Öppna A_vancerat..."
+
+#: ../src/menu.c:222
+msgid "/File/Open _URL..."
+msgstr "/Arkiv/Öppna _URL..."
+
+#: ../src/menu.c:223
+msgid "/File/Open _from selection"
+msgstr "/Arkiv/Öppna _från markering"
+
+#: ../src/menu.c:225
+msgid "/File/_Save"
+msgstr "/Arkiv/_Spara"
+
+#: ../src/menu.c:226
+msgid "/File/Save _As..."
+msgstr "/Arkiv/Sp_ara som..."
+
+#: ../src/menu.c:227
+msgid "/File/Sav_e All"
+msgstr "/Arkiv/S_para alla"
+
+#: ../src/menu.c:228
+msgid "/File/Rever_t to Saved"
+msgstr "/Arkiv/_Återgå till sparat"
+
+#: ../src/menu.c:230
+msgid "/File/_Insert..."
+msgstr "/Arkiv/_Infoga..."
+
+#: ../src/menu.c:231
+msgid "/File/Rena_me..."
+msgstr "/Arkiv/_Döp om..."
+
+#: ../src/menu.c:233
+msgid "/File/_Close"
+msgstr "/Arkiv/S_täng"
+
+#: ../src/menu.c:234
+msgid "/File/Close A_ll"
+msgstr "/Arkiv/Stäng alla"
+
+#: ../src/menu.c:235
+msgid "/File/Close Win_dow"
+msgstr "/Arkiv/Stäng Föns_ter"
+
+#: ../src/menu.c:237
+msgid "/File/_Quit"
+msgstr "/Arkiv/_Avsluta"
+
+#: ../src/menu.c:240
+msgid "/File/Run Python Script"
+msgstr ""
+
+#: ../src/menu.c:242
+msgid "/_Edit"
+msgstr "/_Redigera"
+
+#: ../src/menu.c:244
+msgid "/Edit/_Undo"
+msgstr "/Redigera/_Ångra"
+
+#: ../src/menu.c:245
+msgid "/Edit/_Redo"
+msgstr "/Redigera/_Gör om"
+
+#: ../src/menu.c:246
+msgid "/Edit/Undo All"
+msgstr "/Redigera/Ångra allt"
+
+#: ../src/menu.c:247
+msgid "/Edit/Redo All"
+msgstr "/Redigera/Gör om allt"
+
+#: ../src/menu.c:249
+msgid "/Edit/Cu_t"
+msgstr "/Redigera/Klipp _ut"
+
+#: ../src/menu.c:250
+msgid "/Edit/_Copy"
+msgstr "/Redigera/_Kopiera"
+
+#: ../src/menu.c:251
+msgid "/Edit/_Paste"
+msgstr "/Redigera/Klistra _in"
+
+#: ../src/menu.c:253
+msgid "/Edit/Select _All"
+msgstr "/Redigera/Markera _allt"
+
+#: ../src/menu.c:255
+msgid "/Edit/_Find..."
+msgstr "/Redigera/_Sök..."
+
+#: ../src/menu.c:256
+msgid "/Edit/Find A_gain"
+msgstr "/Redigera/Sök ige_n"
+
+#: ../src/menu.c:257
+msgid "/Edit/Find from selection"
+msgstr "/Redigera/Sök utifrån markering"
+
+#: ../src/menu.c:258
+msgid "/Edit/R_eplace..."
+msgstr "/Redigera/_Ersätt..."
+
+#: ../src/menu.c:259
+msgid "/Edit/Replace Agai_n"
+msgstr "/Redigera/Ersätt _igen"
+
+#: ../src/menu.c:260
+msgid "/Edit/Replace special"
+msgstr "/Redigera/Ersätt special"
+
+#: ../src/menu.c:262
+#, fuzzy
+msgid "/Edit/Replace special/Block sync"
+msgstr "/Redigera/Ersätt special"
+
+#: ../src/menu.c:264
+msgid "/Edit/S_hift Right"
+msgstr "/Edit/Flytta åt _höger"
+
+#: ../src/menu.c:265
+msgid "/Edit/Shift _Left"
+msgstr "/Redigera/Flytta åt _vänster"
+
+#: ../src/menu.c:267
+msgid "/Edit/Add _Bookmark"
+msgstr "/Redigera/Lägg till _Bokmärke"
+
+#: ../src/menu.c:269
+msgid "/Edit/Save Sett_ings"
+msgstr "/Redigera/_Spara inställningar"
+
+#: ../src/menu.c:270
+msgid "/Edit/Save Shortcut _Keys"
+msgstr "/Redigera/Spara _kortkomandon"
+
+#: ../src/menu.c:271
+msgid "/Edit/Preference_s"
+msgstr "/Redigera/_Inställningar"
+
+#: ../src/menu.c:272
+msgid "/_View"
+msgstr "/_Visa"
+
+#: ../src/menu.c:274
+msgid "/View/View _Main Toolbar"
+msgstr "/Visa/Visa h_uvudverktygsraden"
+
+#: ../src/menu.c:275
+msgid "/View/View _Sidebar"
+msgstr "/Visa/Visa sidolist"
+
+#: ../src/menu.c:276
+msgid "/_Document"
+msgstr "/_Dokument"
+
+#: ../src/menu.c:278
+msgid "/Document/_Increase Tabsize"
+msgstr "/Dokument/_Öka tabulatorsteg"
+
+#: ../src/menu.c:279
+msgid "/Document/_Decrease Tabsize"
+msgstr "/Dokument/_Minska tabulatorsteg"
+
+#: ../src/menu.c:280
+msgid "/Document/_Auto Indent"
+msgstr "/Dokument/_Automatisk indentering"
+
+#: ../src/menu.c:282
+msgid "/Document/Auto Close H_TML tags"
+msgstr "/Dokument/Stäng H_TML-taggar Automatiskt"
+
+#: ../src/menu.c:283
+msgid "/Document/_Wrap"
+msgstr "/Dokument/_Radbrytning"
+
+#: ../src/menu.c:284
+msgid "/Document/_Line Numbers"
+msgstr "/Dokument/R_adnummer"
+
+#: ../src/menu.c:285
+#, fuzzy
+msgid "/Document/Show _blocks"
+msgstr "/Dokument/Räkna _ord"
+
+#: ../src/menu.c:286
+#, fuzzy
+msgid "/Document/Show _symbols"
+msgstr "/Dokument/Räkna _ord"
+
+#: ../src/menu.c:288
+msgid "/Document/_Highlight Syntax"
+msgstr "/Dokument/_Färgkoda syntax"
+
+#: ../src/menu.c:289
+msgid "/Document/_Update Highlighting"
+msgstr "/Dokument/_Uppdatera färgkodning"
+
+#: ../src/menu.c:291
+msgid "/Document/Document Ty_pe"
+msgstr "/Dokument/Dokumentty_p"
+
+#: ../src/menu.c:293
+msgid "/Document/Character _Encoding"
+msgstr "/Dokument/T_eckenkodning"
+
+#: ../src/menu.c:297
+msgid "/Document/Check _Spelling..."
+msgstr "/Dokument/Kontrollera _Stavning..."
+
+#: ../src/menu.c:299
+msgid "/Document/_Floating window"
+msgstr "/Dokument/_Flytande fönster"
+
+#: ../src/menu.c:300
+msgid "/Document/Word _Count"
+msgstr "/Dokument/Räkna _ord"
+
+#: ../src/menu.c:302
+#, fuzzy
+msgid "/Document/Move left"
+msgstr "/Dokument/Automatisk indentering"
+
+#: ../src/menu.c:303
+#, fuzzy
+msgid "/Document/Move right"
+msgstr "/Dokument/sep1"
+
+#: ../src/menu.c:304
+msgid "/_Go"
+msgstr "/_Gå"
+
+#: ../src/menu.c:306
+msgid "/Go/_Previous document"
+msgstr "/Gå/_Föregående dokument"
+
+#: ../src/menu.c:307
+msgid "/Go/_Next document"
+msgstr "/Gå/_Nästa dokument"
+
+#: ../src/menu.c:309
+msgid "/Go/_First document"
+msgstr "/Gå/_Första dokumentet"
+
+#: ../src/menu.c:310
+msgid "/Go/L_ast document"
+msgstr "/Gå/Sist_a dokumentet"
+
+#: ../src/menu.c:312
+msgid "/Go/Goto _Line"
+msgstr "/Gå/Gå ti_ll rad"
+
+#: ../src/menu.c:313
+msgid "/Go/Goto _Selection"
+msgstr "/Gå/Gå till _markering"
+
+#: ../src/menu.c:314
+msgid "/_Project"
+msgstr "/Projekt"
+
+#: ../src/menu.c:316
+msgid "/Project/_New Project"
+msgstr "/Projekt/_Nytt Projekt"
+
+#: ../src/menu.c:317
+msgid "/Project/_Open Project..."
+msgstr "/Projekt/_Öppna Projekt..."
+
+#: ../src/menu.c:318
+msgid "/Project/Open _recent"
+msgstr "/Projekt/Öppna s_enaste"
+
+#: ../src/menu.c:321
+msgid "/Project/_Save"
+msgstr "/Projekt/_Spara"
+
+#: ../src/menu.c:322
+msgid "/Project/Save _as..."
+msgstr "/Projekt/Sp_ara _som..."
+
+#: ../src/menu.c:323
+msgid "/Project/Save & _close"
+msgstr "/Projekt/Sp_ara & stäng"
+
+#: ../src/menu.c:325
+msgid "/Project/E_dit Project Options..."
+msgstr "/Projekt/Re_digera Projektinställningar..."
+
+#: ../src/menu.c:326
+msgid "/E_xternal"
+msgstr "/E_xterna"
+
+#: ../src/menu.c:493
+msgid "/Document/Document Type"
+msgstr "/Dokument/Dokumenttyp"
+
+#: ../src/menu.c:643
+msgid "/Project/Open recent"
+msgstr "/Projekt/Öppna senaste"
+
+#: ../src/menu.c:647
+msgid "/File/Open recent"
+msgstr "/Arkiv/Öppna senaste"
+
+#: ../src/menu.c:826
+msgid "/Windows"
+msgstr "/Fönster"
+
+#: ../src/menu.c:919
+#, fuzzy
+msgid "No default browser found"
+msgstr "Standardstartkatalog"
+
+#: ../src/menu.c:920
+msgid ""
+"You can set a default browser by going to:\n"
+"Edit->Preferences->External Commands"
+msgstr ""
+
+#: ../src/menu.c:939
+msgid "Operate filter only on selection?"
+msgstr ""
+
+#: ../src/menu.c:987
+msgid "/External/Outputbox/"
+msgstr "/Externa/Utskriftsfönster/"
+
+#: ../src/menu.c:988
+msgid "/External/Commands/"
+msgstr "/Externa/Kommandon/"
+
+#: ../src/menu.c:989
+#, fuzzy
+msgid "/External/Filters/"
+msgstr "/Externa/Webbläsare/"
+
+#: ../src/menu.c:1002
+#, fuzzy
+msgid "/External/Filters"
+msgstr "/Externa/tearoff1"
+
+#: ../src/menu.c:1025
+msgid "/External"
+msgstr "/Externa"
+
+#: ../src/menu.c:1027
+msgid "/External/Commands"
+msgstr "/Externa/Kommandon"
+
+#: ../src/menu.c:1055
+msgid "/External/Outputbox"
+msgstr "/Externa/Utskriftsfönster"
+
+#: ../src/menu.c:1099
+msgid "/Document/Character Encoding"
+msgstr "/Dokument/Teckenkodning"
+
+#: ../src/outputbox.c:258
+#, c-format
+msgid "failed to compile outputbox pattern %s\n"
+msgstr ""
+
+#: ../src/preferences.c:313
+msgid "Untitled"
+msgstr "Namnlöst"
+
+#: ../src/preferences.c:413
+msgid "Select font"
+msgstr "Välj typsnitt"
+
+#: ../src/preferences.c:438
+#, fuzzy
+msgid "Select color"
+msgstr "Välj"
+
+#: ../src/preferences.c:604
+msgid "Message"
+msgstr ""
+
+#: ../src/preferences.c:605
+#, fuzzy
+msgid "Enabled"
+msgstr "Redigerbar"
+
+#: ../src/preferences.c:606
+#, fuzzy
+msgid "File"
+msgstr "Filantal"
+
+#: ../src/preferences.c:759
+msgid ""
+"Text styles are applied on top of each other. If multiple styles are applied "
+"to the same text, the top-most style in this list has the highest priority. "
+"Use drag and drop to re-order the text styles."
+msgstr ""
+
+#: ../src/preferences.c:768 ../src/preferences.c:1436
+#: ../src/preferences.c:1506
+msgid "Label"
+msgstr "Etikett"
+
+#: ../src/preferences.c:780 ../src/preferences.c:1966
+msgid "Foreground color"
+msgstr "Förgrundsfärg"
+
+#: ../src/preferences.c:781 ../src/preferences.c:1967
+msgid "Background color"
+msgstr "Bakgrundsfärg"
+
+#: ../src/preferences.c:782
+msgid "don't change weight"
+msgstr "ändra inte vikten"
+
+#: ../src/preferences.c:784
+msgid "force non-bold weight"
+msgstr "tvinga icke-fet vikt"
+
+#: ../src/preferences.c:786
+msgid "force bold weight"
+msgstr "tvinga fet vikt"
+
+#: ../src/preferences.c:788
+msgid "don't change style"
+msgstr "ändra inte stil"
+
+#: ../src/preferences.c:790
+msgid "force non-italic style"
+msgstr "tvinga icke-kursiv stil"
+
+#: ../src/preferences.c:792
+msgid "force italic style"
+msgstr "tvinga kursiv stil"
+
+#: ../src/preferences.c:1325 ../src/preferences.c:1597
+msgid "Name"
+msgstr "Namn"
+
+#: ../src/preferences.c:1437 ../src/preferences.c:1507
+#: ../src/preferences.c:1602
+msgid "Command"
+msgstr "Kommando"
+
+#: ../src/preferences.c:1438
+#, fuzzy
+msgid "Default browser"
+msgstr "Standardstartkatalog"
+
+#: ../src/preferences.c:1440
+msgid ""
+"<small><b>Input options</b>\n"
+"specify no options to read the input from the standard output\n"
+"%s local filename (available for local files)\n"
+"%i temporary fifo for input, equals %s if the document is not modified and "
+"local\n"
+"%I temporary filename for input, equals %s if the document is not modified "
+"and local\n"
+"<b>Other options</b>\n"
+"%c local directory of file (available for local files)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+
+#: ../src/preferences.c:1510
+msgid ""
+"<small><b>Input options</b>\n"
+"specify no options to read the input from the standard output\n"
+"%s local filename (requires local file, cannot operate on selection)\n"
+"%i temporary fifo for input\n"
+"%I temporary filename for input\n"
+"<b>Output options</b>\n"
+"specify no options to read the output from the standard output\n"
+"%o temporary fifo\n"
+"%O temporary filename\n"
+"%t temporary filename for both input and output (for in-place-editing "
+"filters, cannot operate on selection)\n"
+"<b>Other options</b>\n"
+"%c local directory of file (requires local file)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+
+#: ../src/preferences.c:1598
+msgid "Pattern"
+msgstr "Mönster"
+
+#: ../src/preferences.c:1599
+msgid "File #"
+msgstr "Filantal"
+
+#: ../src/preferences.c:1600
+msgid "Line #"
+msgstr "Radantal"
+
+#: ../src/preferences.c:1601
+msgid "Output #"
+msgstr "Utdataantal"
+
+#: ../src/preferences.c:1603
+msgid "Show all output"
+msgstr "Visa all utdata"
+
+#: ../src/preferences.c:1605
+msgid ""
+"<small><b>Input options</b>\n"
+"specify no options to read the input from the standard output\n"
+"%s local filename (available for local files)\n"
+"%i temporary fifo for input, equals %s if the document is not modified and "
+"local\n"
+"%I temporary filename for input, equals %s if the document is not modified "
+"and local\n"
+"<b>Output options</b>\n"
+"specify no options to read the output from the standard output\n"
+"%o temporary fifo\n"
+"%O temporary filename\n"
+"%t temporary filename for both input and output (for in-place-editing "
+"filters)\n"
+"<b>Other options</b>\n"
+"%c local directory of file (available for local files)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+
+#: ../src/preferences.c:1910 ../src/preferences.c:1911
+msgid "left"
+msgstr "vänster"
+
+#: ../src/preferences.c:1910 ../src/preferences.c:1911
+msgid "right"
+msgstr "höger"
+
+#: ../src/preferences.c:1910
+msgid "top"
+msgstr "topp"
+
+#: ../src/preferences.c:1910
+msgid "bottom"
+msgstr "botten"
+
+#: ../src/preferences.c:1912
+#, fuzzy
+msgid "Nothing"
+msgstr "Ingen _skuggning"
+
+#: ../src/preferences.c:1912
+#, fuzzy
+msgid "Modified time and file size"
+msgstr "kontrollera förändringstid och storlek"
+
+#: ../src/preferences.c:1912
+msgid "Modified time"
+msgstr ""
+
+#: ../src/preferences.c:1912
+#, fuzzy
+msgid "File size"
+msgstr "Filantal"
+
+#: ../src/preferences.c:1920
+msgid "Edit preferences"
+msgstr "Redigera inställningar"
+
+#: ../src/preferences.c:1946
+msgid "Editor"
+msgstr "Redigerare"
+
+#: ../src/preferences.c:1952
+#, fuzzy
+msgid "Editor startup options"
+msgstr "Inställningar för redigerare"
+
+#: ../src/preferences.c:1957
+msgid "Show splash-screen"
+msgstr ""
+
+#: ../src/preferences.c:1960
+msgid "Editor options"
+msgstr "Inställningar för redigerare"
+
+#: ../src/preferences.c:1965
+msgid "Font"
+msgstr "Typsnitt"
+
+#: ../src/preferences.c:1968
+msgid "Tab width"
+msgstr "Tabulatorsteg"
+
+#: ../src/preferences.c:1969
+msgid "Smart cursor positioning"
+msgstr ""
+
+#: ../src/preferences.c:1970
+msgid "Use spaces to indent, not tabs"
+msgstr "Använd mellanslag för indentering, inte tabbar"
+
+#: ../src/preferences.c:1971
+msgid "Word wrap default"
+msgstr "Ordbrytning standard"
+
+#: ../src/preferences.c:1972
+msgid "Line numbers by default"
+msgstr "Radnummer som standard"
+
+#: ../src/preferences.c:1973
+#, fuzzy
+msgid "Block folding view by default"
+msgstr "Ordbrytning som standard"
+
+#: ../src/preferences.c:1974
+#, fuzzy
+msgid "Symbols view by default"
+msgstr "Visa sidlist som standard"
+
+#: ../src/preferences.c:1975
+msgid "Highlight syntax by default"
+msgstr "Färgkoda syntax som standard"
+
+#: ../src/preferences.c:1976
+#, fuzzy
+msgid "Tag autoclose by default"
+msgstr "Visa sidlist som standard"
+
+#: ../src/preferences.c:1978
+#, fuzzy
+msgid "Undo options"
+msgstr "Inställningar för redigerare"
+
+#: ../src/preferences.c:1983
+msgid "Undo history size"
+msgstr "Storlek på Ångra-lista"
+
+#: ../src/preferences.c:1984
+msgid "Clear undo history on save"
+msgstr "Töm ångralista när fil sparas"
+
+#: ../src/preferences.c:2000
+msgid "HTML"
+msgstr "HTML"
+
+#.
+#. gtk_notebook_append_page(GTK_NOTEBOOK(pd->noteb), vbox1, hbox_with_pix_and_text(_("HTML"),154,TRUE));
+#.
+#: ../src/preferences.c:2005
+msgid "HTML options"
+msgstr "HTML-alternativ"
+
+#: ../src/preferences.c:2010
+msgid "Lowercase HTML tags"
+msgstr "HTML-taggar som gemener"
+
+#: ../src/preferences.c:2011
+msgid "Use deprecated tags (e.g. <font> and <nobr>)"
+msgstr "Använd gamla taggar (exempelvis <font> och <nobr>)"
+
+#: ../src/preferences.c:2012
+msgid "Use XHTML style tags (<br />)"
+msgstr "Använd XHTML-syntax (såsom <br />)"
+
+#: ../src/preferences.c:2014
+#, fuzzy
+msgid "Automatically update author meta tag"
+msgstr "Uppdatera automatiskt META-taggen \"author\""
+
+#: ../src/preferences.c:2015
+#, fuzzy
+msgid "Automatically update date meta tag"
+msgstr "Uppdatera automatiskt META-taggen \"author\""
+
+#: ../src/preferences.c:2016
+#, fuzzy
+msgid "Automatically update generator meta tag"
+msgstr "Uppdatera automatiskt META-taggen \"author\""
+
+#: ../src/preferences.c:2020
+msgid "Files"
+msgstr "Filer"
+
+#.
+#. gtk_notebook_append_page(GTK_NOTEBOOK(pd->noteb), vbox1, hbox_with_pix_and_text(_("Files"),152,TRUE));
+#.
+#: ../src/preferences.c:2025
+msgid "Encoding"
+msgstr "Kodning"
+
+#: ../src/preferences.c:2037
+#, fuzzy
+msgid "Default character set for new files"
+msgstr "Standardteckenuppsättning"
+
+#: ../src/preferences.c:2040
+#, fuzzy
+msgid "Auto set <meta> HTML tag on encoding change"
+msgstr "Sätt <meta> kodningstaggen automatiskt vid ändring"
+
+#: ../src/preferences.c:2042
+msgid "Backup"
+msgstr "Säkerhetskopia"
+
+#: ../src/preferences.c:2046
+#, fuzzy
+msgid "Create backup file during file save"
+msgstr "Skapa säkerhetskopia när filer sparas"
+
+#: ../src/preferences.c:2047
+msgid ""
+"The backup prefix may contain a slash to indicate a directory component, for "
+"example \".backup/\""
+msgstr ""
+
+#: ../src/preferences.c:2050
+#, fuzzy
+msgid "Backup file prefix"
+msgstr "Säkerhetskopians filändelse"
+
+#: ../src/preferences.c:2051
+msgid "Backup file suffix"
+msgstr "Säkerhetskopians filändelse"
+
+#: ../src/preferences.c:2053
+#, fuzzy
+msgid "Continue save"
+msgstr "_Fortsätt spara"
+
+#: ../src/preferences.c:2053
+#, fuzzy
+msgid "Abort save"
+msgstr "_Avbryt spara"
+
+#: ../src/preferences.c:2053
+msgid "Ask what to do"
+msgstr ""
+
+#: ../src/preferences.c:2054
+#, fuzzy
+msgid "If the backup fails"
+msgstr "Visa säkerhetskopior"
+
+#: ../src/preferences.c:2056
+#, fuzzy
+msgid "Remove backup file on close"
+msgstr "Ta bort säkerhetskopia vid stängning"
+
+#: ../src/preferences.c:2060
+msgid "Misc"
+msgstr "Diverse"
+
+#: ../src/preferences.c:2066
+msgid "Open files in already running bluefish window"
+msgstr "Öppna filer i ett redan startat bluefishfönster"
+
+#: ../src/preferences.c:2068
+msgid "File properties to check on disk for modifications"
+msgstr ""
+
+#: ../src/preferences.c:2069
+#, fuzzy
+msgid "Periodically check if file is modified on disk"
+msgstr "kontroll över fil ändrad på disk"
+
+#: ../src/preferences.c:2070
+#, fuzzy
+msgid "Number of files in 'Open recent' menu"
+msgstr "Antal filer i \"Senast öppnade\""
+
+#: ../src/preferences.c:2075
+msgid "User interface"
+msgstr "Användargränssnitt"
+
+#: ../src/preferences.c:2077
+msgid "General"
+msgstr "Generell"
+
+#: ../src/preferences.c:2082
+msgid "Make HTML dialogs transient"
+msgstr "Gör HTML-dialoger kortvariga"
+
+#: ../src/preferences.c:2083
+#, fuzzy
+msgid ""
+"Notebook tab font \n"
+"(leave empty for gtk default)"
+msgstr "Typsnitt på flikhäftets flikar (lämna tom för gtk standard)"
+
+#: ../src/preferences.c:2084
+msgid "Document notebook tab position"
+msgstr "Placering för dokumentflikar"
+
+#: ../src/preferences.c:2085
+msgid "Sidebar notebook tab position"
+msgstr "Placering för sidlistflikar"
+
+#: ../src/preferences.c:2086
+msgid "Sidebar location"
+msgstr "Placering för sidlisten"
+
+#: ../src/preferences.c:2090 ../src/preferences.c:2092
+msgid "Dimensions"
+msgstr "Dimensioner"
+
+#: ../src/preferences.c:2096
+msgid "Restore last used dimensions"
+msgstr "Återställ senast använda dimensioner"
+
+#: ../src/preferences.c:2097
+msgid "Initial sidebar width"
+msgstr "Initial sidlistbredd"
+
+#: ../src/preferences.c:2098
+msgid "Initial window height"
+msgstr "Initial fönsterhöjd"
+
+#: ../src/preferences.c:2099
+msgid "Initial window width"
+msgstr "Initial fönsterbredd"
+
+#: ../src/preferences.c:2105 ../src/preferences.c:2107
+#, fuzzy
+msgid "File and directory view"
+msgstr "Använd separata fil och katalogvyer"
+
+#. pd->prefs[default_basedir] = prefs_string(_("Default basedir"), main_v->props.default_basedir, vbox2, pd, string_none);
+#: ../src/preferences.c:2112
+msgid "Use separate file and directory view"
+msgstr "Använd separata fil och katalogvyer"
+
+#: ../src/preferences.c:2113
+msgid "Unknown icon"
+msgstr "Okänd ikon"
+
+#. arr = array_from_arglist(_("Java programming"),"1", "java:image:jsp", NULL);
+#. main_v->globses.filefilters = g_list_append(main_v->globses.filefilters, arr);
+#: ../src/preferences.c:2162 ../src/rcfile.c:910
+msgid "Images"
+msgstr "Bilder"
+
+#.
+#. gtk_notebook_append_page(GTK_NOTEBOOK(pd->noteb), vbox1, hbox_with_pix_and_text(_("Images"), 155,TRUE));
+#.
+#: ../src/preferences.c:2167
+msgid "Thumbnails"
+msgstr "Miniatyrbilder"
+
+#: ../src/preferences.c:2171
+msgid "Thumbnail suffix"
+msgstr "Filändelse för miniatyrbild"
+
+#: ../src/preferences.c:2175
+msgid "Thumbnail filetype"
+msgstr "Filtyp för miniatybild"
+
+#: ../src/preferences.c:2194
+#, fuzzy
+msgid "External commands"
+msgstr "/Externa/Kommandon"
+
+#.
+#. gtk_notebook_append_page(GTK_NOTEBOOK(pd->noteb), vbox1, hbox_with_pix_and_text(_("External commands"), 151,TRUE));
+#.
+#: ../src/preferences.c:2201
+#, fuzzy
+msgid "Commands"
+msgstr "Kommando"
+
+#: ../src/preferences.c:2209
+#, fuzzy
+msgid "External filters"
+msgstr "Externa program"
+
+#.
+#. gtk_notebook_append_page(GTK_NOTEBOOK(pd->noteb), vbox1, hbox_with_pix_and_text(_("External filters"), 151,TRUE));
+#.
+#: ../src/preferences.c:2214
+#, fuzzy
+msgid "Filters"
+msgstr "Filtrera"
+
+#.
+#. gtk_notebook_append_page(GTK_NOTEBOOK(pd->noteb), vbox1, hbox_with_pix_and_text(_("Output parsers"), 157,TRUE));
+#.
+#: ../src/preferences.c:2222 ../src/preferences.c:2227
+msgid "Output parsers"
+msgstr "Tolkar för utdata"
+
+#: ../src/preferences.c:2238 ../src/preferences.c:2239
+msgid "Plugins"
+msgstr ""
+
+#: ../src/preferences.c:2247
+msgid "Servers"
+msgstr "Servrar"
+
+#: ../src/preferences.c:2249
+msgid "Remote servers"
+msgstr "Fjärrservrar"
+
+#: ../src/preferences.c:2254
+msgid "Zope compatibility mode"
+msgstr "Zope-kompatibilitetsläge"
+
+#: ../src/preferences.c:2258 ../src/preferences.c:2259
+msgid "Text styles"
+msgstr ""
+
+#: ../src/preferences.c:2268
+#, fuzzy
+msgid "Syntax scanning"
+msgstr "Efter omskalning"
+
+#: ../src/preferences.c:2271
+msgid "Advanced syntax scanning options"
+msgstr ""
+
+#: ../src/preferences.c:2275
+#, fuzzy
+msgid "Match block begin-end by default"
+msgstr "Ordbrytning som standard"
+
+#: ../src/preferences.c:2276
+#, fuzzy
+msgid "Highlight current line by default"
+msgstr "Färgkoda syntax som standard"
+
+#: ../src/preferences.c:2277
+#, fuzzy
+msgid "Show right margin by default"
+msgstr "Visa vänsterpanelen som standard"
+
+#: ../src/preferences.c:2278
+msgid "Right margin at"
+msgstr ""
+
+#: ../src/preferences.c:2280
+#, fuzzy
+msgid "whole document"
+msgstr "I _dokumentet"
+
+#: ../src/preferences.c:2280
+msgid "visible area"
+msgstr ""
+
+#: ../src/preferences.c:2281
+msgid "Scan mode"
+msgstr ""
+
+#: ../src/preferences.c:2283
+msgid "Autocompletion key"
+msgstr ""
+
+#: ../src/preferences.c:2286 ../src/preferences.c:2289
+msgid "Syntax highlighting"
+msgstr "Syntaxfärgkodning"
+
+#: ../src/project.c:123
+msgid "New project"
+msgstr "Nytt projekt"
+
+#: ../src/project.c:210
+msgid "Enter Bluefish project filename"
+msgstr "Skriv in Bluefish-projektfilnamn"
+
+#: ../src/project.c:336
+msgid "Select Bluefish project filename"
+msgstr "Välj Bluefish-projektfilnamn"
+
+#. dialog
+#: ../src/project.c:398
+#, fuzzy
+msgid "Save current project?"
+msgstr "Misslyckades med att spara nuvarande projekt"
+
+#: ../src/project.c:534
+msgid "Create New Project"
+msgstr "Skapa Nytt Projekt"
+
+#: ../src/project.c:537
+msgid "Edit Project"
+msgstr "Redigera Projekt"
+
+#: ../src/project.c:560
+#, c-format
+msgid "This project contains %d files"
+msgstr "Det här projektet innehåller %d filer"
+
+#: ../src/project.c:572
+msgid "Project _Name:"
+msgstr "Projektnamn:"
+
+#: ../src/project.c:576
+msgid "_Basedir:"
+msgstr "Start_katalog:"
+
+#: ../src/project.c:580
+msgid "_Preview URL:"
+msgstr "Förhandsgransknings-URL:"
+
+#: ../src/project.c:584
+msgid "_Template:"
+msgstr "_Template:"
+
+#: ../src/project.c:590
+msgid "_Word wrap by default"
+msgstr "Ordbrytning som standard"
+
+#: ../src/project.c:601
+msgid "Create _Project"
+msgstr "Skapa _Projekt"
+
+#: ../src/project.c:641
+msgid "Create project"
+msgstr "Create project"
+
+#: ../src/project.c:645
+msgid "Create project with currently opened documents"
+msgstr "Skapa ett projekt med de öppna dokumenten"
+
+#: ../src/project.c:646
+msgid "Create empty project"
+msgstr "Skapa tomt projekt"
+
+#. if the user does not have outputbox settings --> set them to defaults values
+#: ../src/rcfile.c:633
+msgid "make"
+msgstr "make"
+
+#: ../src/rcfile.c:634
+msgid "weblint HTML checker"
+msgstr "HTML-verifieraren weblint"
+
+#: ../src/rcfile.c:635
+msgid "tidy HTML validator"
+msgstr "HTML-verifieraren tidy"
+
+#: ../src/rcfile.c:636
+msgid "javac"
+msgstr "javac"
+
+#: ../src/rcfile.c:637
+msgid "xmllint XML checker"
+msgstr "xmllint XML kontrollerare"
+
+#: ../src/rcfile.c:638
+msgid "php"
+msgstr "php"
+
+#: ../src/rcfile.c:831
+msgid "Untitled Project"
+msgstr "Namnlöst Projekt"
+
+#: ../src/rcfile.c:904
+msgid "C programming"
+msgstr "C-programmering"
+
+#: ../src/rcfile.c:906
+#, fuzzy
+msgid "Web files"
+msgstr "Alla webbfiler"
+
+#: ../src/rcfile.c:912
+msgid "Hide objectfiles"
+msgstr "Dölj objektfiler"
+
+#: ../src/snr2.c:227
+msgid "Regular expression error: "
+msgstr "Fel i regjulärt uttryck: "
+
+#: ../src/snr2.c:231 ../src/snr2.c:280
+msgid "Search failed"
+msgstr "Sökning misslyckades"
+
+#: ../src/snr2.c:276
+#, c-format
+msgid "Regular expression error: %s at offset %d"
+msgstr "Fel i reguljärt uttryck: %s vid avstånd %d"
+
+#: ../src/snr2.c:1334
+#, c-format
+msgid "Found %d matches, "
+msgid_plural "Found %d matches, "
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/snr2.c:1335
+#, fuzzy, c-format
+msgid "replaced %d"
+msgid_plural "replaced %d"
+msgstr[0] "Ersätt"
+msgstr[1] "Ersätt"
+
+#: ../src/snr2.c:1340
+#, c-format
+msgid "Found %d matches"
+msgid_plural "Found %d matches"
+msgstr[0] ""
+msgstr[1] ""
+
+#. display warning that not all documents have yet finished loading
+#: ../src/snr2.c:1361
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Not all documents are loaded yet</"
+"span>"
+msgstr ""
+
+#: ../src/snr2.c:1483
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">No selection. Please select a block "
+"of text first.</span>"
+msgstr ""
+
+#: ../src/snr2.c:1522 ../src/snr2.c:1883
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">No more matches found, next search "
+"will continue at the beginning.</span>"
+msgstr ""
+
+#: ../src/snr2.c:1598
+#, fuzzy
+msgid "Entire document"
+msgstr "I _dokumentet"
+
+#: ../src/snr2.c:1599
+msgid "Forward from cursor position"
+msgstr ""
+
+#: ../src/snr2.c:1600
+#, fuzzy
+msgid "Selection"
+msgstr "Välj typsnitt"
+
+#: ../src/snr2.c:1601
+#, fuzzy
+msgid "All open files"
+msgstr "Alla webbfiler"
+
+#: ../src/snr2.c:1605 ../src/snr2.c:1612
+msgid "Normal"
+msgstr "Normal"
+
+#: ../src/snr2.c:1606
+msgid "Entire word only"
+msgstr ""
+
+#: ../src/snr2.c:1607
+#, fuzzy
+msgid "POSIX"
+msgstr "POSIX-typ"
+
+#: ../src/snr2.c:1608
+#, fuzzy
+msgid "PERL"
+msgstr "PERL-typ"
+
+#: ../src/snr2.c:1613
+msgid "Uppercase"
+msgstr "Versaler"
+
+#: ../src/snr2.c:1614
+msgid "Lowercase"
+msgstr "Gemener"
+
+#: ../src/snr2.c:1652
+msgid "_Search for: "
+msgstr "_Sök efter: "
+
+#: ../src/snr2.c:1656
+msgid "The pattern to look for"
+msgstr ""
+
+#: ../src/snr2.c:1671
+#, fuzzy
+msgid "Replace _with: "
+msgstr "E_rsätt med: "
+
+#: ../src/snr2.c:1675
+msgid "Replace matching text with"
+msgstr ""
+
+#: ../src/snr2.c:1683
+msgid "Sco_pe: "
+msgstr ""
+
+#: ../src/snr2.c:1687
+msgid "Where to look for the pattern."
+msgstr ""
+
+#: ../src/snr2.c:1693
+msgid "Found 0 matches, replaced 0"
+msgstr ""
+
+#: ../src/snr2.c:1693
+msgid "Found 0 matches"
+msgstr ""
+
+#: ../src/snr2.c:1703
+#, fuzzy
+msgid "<b>_Options</b>"
+msgstr "<b>Innehåller</b>"
+
+#: ../src/snr2.c:1718
+#, fuzzy
+msgid "Match Patter_n: "
+msgstr "Sökmönster"
+
+#: ../src/snr2.c:1722
+msgid "How to interpret the pattern."
+msgstr ""
+
+#: ../src/snr2.c:1729
+#, fuzzy
+msgid "Replace T_ype: "
+msgstr "Ersättningstyp:"
+
+#: ../src/snr2.c:1734
+#, fuzzy
+msgid "What to replace with."
+msgstr "E_rsätt med: "
+
+#: ../src/snr2.c:1738
+#, fuzzy
+msgid "Allow o_verlapping matches"
+msgstr "Ö_verlappande sökningar"
+
+#: ../src/snr2.c:1741
+msgid "After a match is found, start next search within that match."
+msgstr ""
+
+#: ../src/snr2.c:1743
+#, fuzzy
+msgid "Case sensitive _matching"
+msgstr "Storlekskänslig matchning"
+
+#: ../src/snr2.c:1746
+msgid "Only match if case (upper/lower) is identical."
+msgstr ""
+
+#: ../src/snr2.c:1748
+#, fuzzy
+msgid "_Use escape chars"
+msgstr "Uppdatera tecken"
+
+#: ../src/snr2.c:1751
+msgid "Unescape backslash escaped characters such as \\n, \\t etc."
+msgstr ""
+
+#: ../src/snr2.c:1753
+#, fuzzy
+msgid "_Bookmark matches"
+msgstr "Bokmärken"
+
+#: ../src/snr2.c:1756
+msgid "Create a bookmark for each match"
+msgstr ""
+
+#: ../src/snr2.c:1761
+#, fuzzy
+msgid "Replace _All"
+msgstr "Ersätt alla"
+
+#: ../src/snr2.c:1767
+#, fuzzy
+msgid "Find _All"
+msgstr "Sök"
+
+#: ../src/stringlist.c:367
+msgid " Add "
+msgstr " Lägg till "
+
+#: ../src/stringlist.c:369
+msgid " Update "
+msgstr " Uppdatera "
+
+#: ../src/stringlist.c:371
+msgid " Delete "
+msgstr " Ta bort "
+
+#: ../src/stringlist.c:373
+msgid " Up "
+msgstr " Upp "
+
+#: ../src/stringlist.c:375
+msgid " Down "
+msgstr " Ner "
+
+#: ../src/stringlist.c:377
+msgid " Sort "
+msgstr " Sortera "
+
+#: ../src/undo_redo.c:463
+#, fuzzy
+msgid "Undo in _all documents"
+msgstr "i alla öppna dokument"
+
+#: ../src/undo_redo.c:463
+#, fuzzy
+msgid "Undo only _this document"
+msgstr "I _dokumentet"
+
+#: ../src/undo_redo.c:466
+msgid "Undo this change in all documents?"
+msgstr ""
+
+#: ../src/undo_redo.c:466
+msgid "This change concerns multiple documents."
+msgstr ""
+
+#~ msgid "parsing custom menu file..."
+#~ msgstr "tolkar användarspecifika menyfil..."
+
+#, fuzzy
+#~ msgid "Cannot load reference file %s\n"
+#~ msgstr "Sök referensfiler igen"
+
+#, fuzzy
+#~ msgid ""
+#~ "Bad root element in reference file %s\n"
+#~ "Should be <ref> or <r> and found %s"
+#~ msgstr "Sök referensfiler igen"
+
+#, fuzzy
+#~ msgid "Bad root element in reference file"
+#~ msgstr "Sök referensfiler igen"
+
+#, fuzzy
+#~ msgid "Bad reference"
+#~ msgstr "Redigera inställningar"
+
+#, fuzzy
+#~ msgid "Loading reference"
+#~ msgstr "Redigera inställningar"
+
+#, fuzzy
+#~ msgid "Unloading reference"
+#~ msgstr "Funktionsreferens"
+
+#, fuzzy
+#~ msgid "Identifier"
+#~ msgstr "Centrera"
+
+#, fuzzy
+#~ msgid "Kind"
+#~ msgstr "Sök"
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "_Typ:"
+
+#, fuzzy
+#~ msgid "Default value"
+#~ msgstr "Standardstartkatalog"
+
+#, fuzzy
+#~ msgid "Input type"
+#~ msgstr "Infotyp"
+
+#~ msgid "Description"
+#~ msgstr "Beskrivning"
+
+#, fuzzy
+#~ msgid "Values"
+#~ msgstr "Värde"
+
+#, fuzzy
+#~ msgid "Insert syntax"
+#~ msgstr "Infoga bild"
+
+#, fuzzy
+#~ msgid "Insert text"
+#~ msgstr "Sätt in tid"
+
+#, fuzzy
+#~ msgid "Help"
+#~ msgstr "/_Hjälp"
+
+#, fuzzy
+#~ msgid "Properties"
+#~ msgstr "Egenskaper"
+
+#, fuzzy
+#~ msgid "Add property"
+#~ msgstr "Egenskaper"
+
+#, fuzzy
+#~ msgid "Add ref definition"
+#~ msgstr "Definitionsterm"
+
+#~ msgid "Delete"
+#~ msgstr "Ta bort"
+
+#~ msgid "Error"
+#~ msgstr "Fel"
+
+#, fuzzy
+#~ msgid ""
+#~ "Perhaps you didn't load a library, or you did not select a library to "
+#~ "search in."
+#~ msgstr ""
+#~ "Antagligen laddade du inte en referens, eller så valde du kanske inte en "
+#~ "referens att söka i."
+
+#, fuzzy
+#~ msgid "Element %s not found"
+#~ msgstr "Referens hittades inte"
+
+#, fuzzy
+#~ msgid "Element search"
+#~ msgstr "Referenssök"
+
+#, fuzzy
+#~ msgid "New library"
+#~ msgstr "/_Ny katalog"
+
+#, fuzzy
+#~ msgid "Library name"
+#~ msgstr "Katalognamn"
+
+#, fuzzy
+#~ msgid "Delete library?"
+#~ msgstr "Ta bort bokmärke?"
+
+#, fuzzy
+#~ msgid "Reference not loaded."
+#~ msgstr "Referens hittades inte"
+
+#, fuzzy
+#~ msgid "New note"
+#~ msgstr "Nytt projekt"
+
+#, fuzzy
+#~ msgid "Title"
+#~ msgstr "_Titel:"
+
+#, fuzzy
+#~ msgid "Text"
+#~ msgstr "Flerradigt textfält"
+
+#, fuzzy
+#~ msgid "New group"
+#~ msgstr "Nytt projekt"
+
+#, fuzzy
+#~ msgid "New description def"
+#~ msgstr "Beskrivning"
+
+#, fuzzy
+#~ msgid "Description text"
+#~ msgstr "Beskrivning"
+
+#, fuzzy
+#~ msgid "New values def"
+#~ msgstr "Nytt Bluefish-fönster"
+
+#, fuzzy
+#~ msgid "Definitions"
+#~ msgstr "Definition"
+
+#, fuzzy
+#~ msgid "New property"
+#~ msgstr "Nytt projekt"
+
+#, fuzzy
+#~ msgid "No name"
+#~ msgstr "Inget filnamn"
+
+#, fuzzy
+#~ msgid "Delete definition?"
+#~ msgstr "Definition"
+
+#, fuzzy
+#~ msgid "Delete group"
+#~ msgstr " Ta bort "
+
+#, fuzzy
+#~ msgid "Delete group?"
+#~ msgstr " Ta bort "
+
+#, fuzzy
+#~ msgid "Do you really want to delete current entity?"
+#~ msgstr "Vill du verkligen ta bort %s?"
+
+#~ msgid "Show info window"
+#~ msgstr "Visa infofönster"
+
+#~ msgid "Insert"
+#~ msgstr "Sätt in"
+
+#~ msgid "Attributes/Parameters"
+#~ msgstr "Attribut/Parametrar"
+
+#~ msgid "Notes"
+#~ msgstr "Anteckningar"
+
+#, fuzzy
+#~ msgid "Examples"
+#~ msgstr "Exempel"
+
+#, fuzzy
+#~ msgid "Links"
+#~ msgstr "Länk"
+
+#, fuzzy
+#~ msgid "Rescan directories"
+#~ msgstr "Sök referensfiler igen"
+
+#~ msgid "Edit"
+#~ msgstr "Redigera"
+
+#, fuzzy
+#~ msgid "Delete library"
+#~ msgstr "Ta bort bokmärke"
+
+#, fuzzy
+#~ msgid "Note"
+#~ msgstr "Anteckningar"
+
+#, fuzzy
+#~ msgid "Property definition"
+#~ msgstr "Definition"
+
+#, fuzzy
+#~ msgid "Description definition"
+#~ msgstr "Beskrivning"
+
+#, fuzzy
+#~ msgid "Values definition"
+#~ msgstr "Definition"
+
+#, fuzzy
+#~ msgid "Element"
+#~ msgstr "Händelser"
+
+#, fuzzy
+#~ msgid "Delete definition"
+#~ msgstr "Definition"
+
+#, fuzzy
+#~ msgid "Delete entity"
+#~ msgstr "Ta bort menyval"
+
+#~ msgid "Function reference"
+#~ msgstr "Funktionsreferens"
+
+#~ msgid "/View/View _Custom Menu"
+#~ msgstr "/Visa/Visa _anpassad meny"
+
+#~ msgid "This custom search and replace requires a selection"
+#~ msgstr "Den här sök- och ersättfunktionen kräver en  markering"
+
+#~ msgid "/_Custom menu"
+#~ msgstr "/_Egen meny"
+
+#~ msgid "/Custom menu/Edit custom menu..."
+#~ msgstr "/Egen meny/Redigera egen meny..."
+
+#~ msgid "/Custom menu/Reset"
+#~ msgstr "/Egen meny/Återställ"
+
+#~ msgid "/Custom menu/Load new"
+#~ msgstr "/Egen meny/Öppna ny"
+
+#~ msgid "Search Pattern"
+#~ msgstr "Sökmönster"
+
+#~ msgid "Replace String"
+#~ msgstr "Ersätt sträng"
+
+#~ msgid "Formatstring Before"
+#~ msgstr "Formatsträng Före"
+
+#~ msgid "Formatstring After"
+#~ msgstr "Formatsträng Efter"
+
+#~ msgid "The menupath you want to update does not exist yet"
+#~ msgstr "Menysökvägen som du vill uppdatera finns inte ännu"
+
+#~ msgid "Try 'add' instead."
+#~ msgstr "Försök 'lägg till' istället."
+
+#~ msgid "The menupath you want to add already exists."
+#~ msgstr "menysökvägen som du vill lägga till finns redan."
+
+#~ msgid "The menupath should start with a / character"
+#~ msgstr "Menysökvägen bör börja med ett /-tecken"
+
+#~ msgid "Custom Menu Editor"
+#~ msgstr "Redigerare för Egen meny"
+
+#~ msgid "Add New Menu Entry"
+#~ msgstr "Lägg till Nytt Menyval"
+
+#~ msgid "Apply Changes"
+#~ msgstr "Verkställ Ändringarna"
+
+#~ msgid "Delete Menu Entry"
+#~ msgstr "Ta bort menyval"
+
+#~ msgid "Close Discards Changes"
+#~ msgstr "Stäng och Ignorera Ändringarna"
+
+#~ msgid "Save Changes and Exit"
+#~ msgstr "Spara Ändringarna och Avsluta"
+
+#~ msgid "_Menu Path:"
+#~ msgstr "Menysökväg:"
+
+#~ msgid "Menu path"
+#~ msgstr "Menysökväg"
+
+#~ msgid "Number of _Variables:"
+#~ msgstr "Antal variabler:"
+
+#~ msgid "Variables"
+#~ msgstr "Variabler"
+
+#~ msgid "Custom Dialo_g"
+#~ msgstr "egen dialogruta"
+
+#~ msgid "Custom Replace"
+#~ msgstr "egen Ersätt"
+
+#~ msgid "_Replace:"
+#~ msgstr "_Ersätt:"
+
+#~ msgid "in current document"
+#~ msgstr "i aktuellt dokument"
+
+#~ msgid "from cursor"
+#~ msgstr "från markören"
+
+#~ msgid "in selection"
+#~ msgstr "i urval"
+
+#~ msgid "in all open documents"
+#~ msgstr "i alla öppna dokument"
+
+#~ msgid "Matc_hing:"
+#~ msgstr "Matchar:"
+
+#~ msgid "normal"
+#~ msgstr "normal"
+
+#~ msgid "posix regular expressions"
+#~ msgstr "posix reguljära uttryck"
+
+#~ msgid "perl regular expressions"
+#~ msgstr "perl reguljärt uttryck"
+
+#~ msgid "Case Se_nsitive"
+#~ msgstr "Känslig för _versaler/gemener"
+
+#, fuzzy
+#~ msgid "Reference library"
+#~ msgstr "Referenssök"
+
+#, fuzzy
+#~ msgid "Info background color"
+#~ msgstr "Bakgrundsfärg"
+
+#, fuzzy
+#~ msgid "Info foreground color"
+#~ msgstr "Förgrundsfärg"
+
+#~ msgid ""
+#~ "Bluefish is an editor for experienced web designers and programmers. It "
+#~ "supports many programming and markup languages, but focuses on editing "
+#~ "dynamic and interactive websites. Bluefish is an open source development "
+#~ "project, released under the GPL license.\n"
+#~ "\n"
+#~ "For more information, visit the Bluefish Website at http://bluefish."
+#~ "openoffice.nl/\n"
+#~ "\n"
+#~ "This version of bluefish was compiled with the following options:\n"
+#~ msgstr ""
+#~ "Bluefish är ett redigeringsverktyg avsett för erfarna webbutvecklare och "
+#~ "programmerare. Den stödjer flertalet programmerings- och markeringsspråk, "
+#~ "men inriktar mot redigering av dynamiska och interaktiva webbplatser. "
+#~ "Bluefish är ett utvecklingsprojekt som bygger på öppen källkod och är "
+#~ "släppt under GPL-licensen.\n"
+#~ "\n"
+#~ "Besök Bluefish webbplats på http://bluefish.openoffice.nl/ för mer "
+#~ "information.\n"
+#~ "\n"
+#~ "Den här versionen av Bluefish var byggd med följande alternativ:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Project leader:\n"
+#~ "  Olivier Sessink <olivier@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Developers for this release:\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Jim Hayward\n"
+#~ "   <jimhayward@linuxexperience.net>\n"
+#~ "  Daniel Leidert\n"
+#~ "   <daniel.leidert@wgdd.de>\n"
+#~ "  Oskar Świda\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "  Eugene Morenko(More)\n"
+#~ "   <more@irpin.com>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "\n"
+#~ "Developers for previous releases:\n"
+#~ "  Chris Mazuc\n"
+#~ "  Neil Millar\n"
+#~ "  Gero Takke\n"
+#~ "  Bo Forslund\n"
+#~ "  David Arno\n"
+#~ "  Pablo De Napoli\n"
+#~ "  Santiago Capel Torres\n"
+#~ "  Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "  Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "  Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "  Antti-Juhani Kaijanaho\n"
+#~ "\n"
+#~ "Documentation:\n"
+#~ "  Scott White\n"
+#~ "   <wwsw3@earthlink.net>\n"
+#~ "  Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "  Anita Lewis\n"
+#~ "   <ajreiki@highstream.net>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "  Daniel Blair\n"
+#~ "   <joecamel@realcoders.org>\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Denny Reeh\n"
+#~ "\n"
+#~ "Package Maintainers:\n"
+#~ "  Debian:   Daniel Leidert\n"
+#~ "   <daniel.leidert@wgdd.de>\n"
+#~ "  Redhat:   Matthias Haase\n"
+#~ "   <matthias_haase@bennewitz.com>\n"
+#~ "  Mandrake: Todd Lyons\n"
+#~ "   <todd@mrball.net>\n"
+#~ "  Fink: Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "If you know of anyone missing from this list, please let us know\n"
+#~ "<bluefish@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Thanks to all who helped making this software available.\n"
+#~ msgstr ""
+#~ "Projektledare:\n"
+#~ "  Olivier Sessink <olivier@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Utvecklare för den här utgåvan:\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Jim Hayward\n"
+#~ "   <jimhayward@linuxexperience.com>\n"
+#~ "  Oskar Świda \n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "  Eugene Morenko(More)\n"
+#~ "   <more@irpin.com>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "\n"
+#~ "Utvecklare för föregående utgåvor:\n"
+#~ "  Chirs Mazuc\n"
+#~ "  Neil Millar\n"
+#~ "  Gero Takke\n"
+#~ "  Bo Forslund\n"
+#~ "  David Arno\n"
+#~ "  Pablo De Napoli\n"
+#~ "  Santiago Capel Torres\n"
+#~ "  Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "  Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "  Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "  Antti-Juhani Kaijanaho\n"
+#~ "\n"
+#~ "Dokumentation:\n"
+#~ "  Scott White\n"
+#~ "   <wwsw3@earthlink.net>\n"
+#~ "  Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "  Anita Lewis\n"
+#~ "   <ajreiki@highstream.net>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "  Daniel Blair\n"
+#~ "   <joecamel@realcoders.org>\n"
+#~ "  Denny Reeh\n"
+#~ "\n"
+#~ "Paketeringsansvariga:\n"
+#~ "  Debian:   Davide Puricelli\n"
+#~ "   <evo@debian.org>\n"
+#~ "  Redhat:   Matthias Haase \n"
+#~ "   <matthias_haase@bennewitz.com>\n"
+#~ "  Mandrake: Todd Lyons \n"
+#~ "   <todd@mrball.net>\n"
+#~ "  Fink: Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "Meddela oss gärna om du känner till någon som fattas i den här listan.\n"
+#~ "<bluefish@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Tack till alla som har hjälpt till att göra denna mjukvara tillgänglig.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Current translators:\n"
+#~ "\n"
+#~ "  Brazilian Portuguese: Anderson Rocha\n"
+#~ "   <anderson@maxlinux.com.br>\n"
+#~ "\n"
+#~ "  Bulgarian: Peio Popov\n"
+#~ "   <peio@peio.org>\n"
+#~ "\n"
+#~ "  Chinese: Ting Yang (Dormouse)\n"
+#~ "   <mouselinux@163.com>\n"
+#~ "\n"
+#~ "  Chinese, Traditional: OLS3\n"
+#~ "   <ols3@lxer.idv.tw>\n"
+#~ "\n"
+#~ "  Danish: Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "\n"
+#~ "  Finnish: Juho Roukala\n"
+#~ "   <j.mr@luukku.com>\n"
+#~ "\n"
+#~ "  French: Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "  German: Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "\n"
+#~ "  Hungarian: Péter Sáska\n"
+#~ "   <sasek@ccsystem.hu>\n"
+#~ "\n"
+#~ "  Italian: Stefano Canepa\n"
+#~ "   <sc@linux.it>\n"
+#~ "\n"
+#~ "  Japanese: Takeshi Hamasaki\n"
+#~ "   <hma@syd.odn.ne.jp>\n"
+#~ "\n"
+#~ "  Norwegian: Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "\n"
+#~ "  Polish: Oskar Swida\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "\n"
+#~ "  Portuguese: Lopo Pizarro\n"
+#~ "   <lopopizarro@netcabo.pt>\n"
+#~ "\n"
+#~ "  Russian: Eugene Rupakov\n"
+#~ "   <rupakov@jet.msk.su>\n"
+#~ "\n"
+#~ "  Serbian: Marko Milenović\n"
+#~ "   <raven@sbb.co.yu>\n"
+#~ "\n"
+#~ "  Spanish: Walter Oscar Echarri\n"
+#~ "   <wecharri@arnet.com.ar>\n"
+#~ "\n"
+#~ "  Swedish: David Smeringe\n"
+#~ "   <david.smeringe@telia.com>\n"
+#~ "\n"
+#~ "  Tamil: Murugapandian Barathee\n"
+#~ "   <barathee@yahoo.com>\n"
+#~ "\n"
+#~ "  Turkish: Oğuz Eren\n"
+#~ "   <ogzeren@gmail.com>\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Nuvarande översättare:\n"
+#~ "\n"
+#~ "  Braziliansk portugisiska - Anderson Rocha\n"
+#~ "   <anderson@maxlinux.com.br>\n"
+#~ "\n"
+#~ "  Bulgariska - Peio Popov\n"
+#~ "   <peio@peio.org>\n"
+#~ "\n"
+#~ "  Danska - Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "\n"
+#~ "  Finska - Juho Roukala\n"
+#~ "   <j.mr@luukku.com>\n"
+#~ "\n"
+#~ "  Franska - Roméo Viu-Berges\n"
+#~ "   <apostledemencia@free.fr>\n"
+#~ "\n"
+#~ "  Italienska - Stefano Canepa\n"
+#~ "   <sc@linux.it>\n"
+#~ "\n"
+#~ "  Kinesiska - Ting Yang (Dormouse)\n"
+#~ "   <mouselinux@163.com>\n"
+#~ "\n"
+#~ "  Polska - Oskar Swida\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "\n"
+#~ "  Portugisiska - Lopo Pizarro\n"
+#~ "   <lopopizarro@netcabo.pt>\n"
+#~ "\n"
+#~ "  Ryska - Eugene Rupakov\n"
+#~ "   <rupakov@jet.msk.su>\n"
+#~ "\n"
+#~ "  Serbiska - Marko Milenović\n"
+#~ "   <raven@sbb.co.yu>\n"
+#~ "\n"
+#~ "  Svenska - David Smeringe\n"
+#~ "   <david.smeringe@telia.com>\n"
+#~ "\n"
+#~ "  Spanska - Walter Oscar Echarri\n"
+#~ "   <wecharri@infovia.com.ar>\n"
+#~ "\n"
+#~ "  Tamil - Murugapandian Barathee\n"
+#~ "   <barathee@yahoo.com>\n"
+#~ "\n"
+#~ "  Tyska - Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "\n"
+#~ "  Ungerska - Péter Sáska\n"
+#~ "   <sasek@ccsystem.hu>\n"
+
+#~ msgid "About Bluefish"
+#~ msgstr "Om Bluefish"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "Authors"
+#~ msgstr "Upphovsmän"
+
+#~ msgid "Translators"
+#~ msgstr "Översättare"
+
+#~ msgid "Authentication required"
+#~ msgstr "autentisering krävs"
+
+#, fuzzy
+#~ msgid "_Username:"
+#~ msgstr "Användarnamn:"
+
+#, fuzzy
+#~ msgid "_Domain:"
+#~ msgstr "_Vertikal Justering:"
+
+#, fuzzy
+#~ msgid "_Pasword:"
+#~ msgstr "Lösenord:"
+
+#~ msgid "Authentication is required for %s."
+#~ msgstr "autentisering krävs för %s."
+
+#~ msgid "Username:"
+#~ msgstr "Användarnamn:"
+
+#~ msgid "Password:"
+#~ msgstr "Lösenord:"
+
+#~ msgid "_Add"
+#~ msgstr "_Lägg till"
+
+#~ msgid ""
+#~ "\n"
+#~ "Usage: %s [options] [filenames ...]\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Användning: %s [flaggor] [filnamn ...]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Currently accepted options are:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "De flaggor som finns att tillgå är:\n"
+
+#~ msgid "-v           current version\n"
+#~ msgstr "-v           aktuell version\n"
+
+#~ msgid "-n           open new window\n"
+#~ msgstr "-n           öppna nytt fönster\n"
+
+#~ msgid "-p filename  open project\n"
+#~ msgstr "-p filnamn  öppna projekt\n"
+
+#~ msgid "-h           this help screen\n"
+#~ msgstr "-h           denna hjälptext\n"
+
+#~ msgid "/Document/Highlight Syntax"
+#~ msgstr "/Dokument/Färgkodningssyntax"
+
+#~ msgid ""
+#~ "\n"
+#~ "Type: "
+#~ msgstr ""
+#~ "\n"
+#~ "Typ: "
+
+#~ msgid " bytes"
+#~ msgstr " bytes"
+
+#, fuzzy
+#~ msgid "Advanced open: finished searching files, %d documents open"
+#~ msgstr "Avancerad filöppningsväljare"
+
+#~ msgid "Show hidden files"
+#~ msgstr "Visa dolda filer"
+
+#~ msgid "Syntax highlighting error for "
+#~ msgstr "Syntaxfärgkodningsfel för "
+
+#~ msgid "compiling pattern '%s': %s at offset %d"
+#~ msgstr "Kompilerar mönster '%s': %s vid offset %d"
+
+#~ msgid "studying pattern '%s': %s"
+#~ msgstr "Undersöker mönster '%s': %s"
+
+#~ msgid "compiling 2nd pattern '%s': %s at offset %d"
+#~ msgstr "Kompilerar andra mönstret '%s': %s vid offset %d"
+
+#~ msgid "studying 2nd pattern '%s': %s"
+#~ msgstr "Undersöker andra mönstret '%s': %s"
+
+#~ msgid "Extensions"
+#~ msgstr "Ändelser"
+
+#~ msgid "Update chars"
+#~ msgstr "Uppdatera tecken"
+
+#~ msgid "Editable"
+#~ msgstr "Redigerbar"
+
+#~ msgid "Content regex"
+#~ msgstr "Regex för innehåll"
+
+#~ msgid "Auto close tags mode"
+#~ msgstr "Automatiskt taggavslutsläge"
+
+#, fuzzy
+#~ msgid "Language file"
+#~ msgstr "Språk:"
+
+#~ msgid "Inverse filter"
+#~ msgstr "Inverterad filtrering"
+
+#~ msgid "filetype"
+#~ msgstr "filtyp"
+
+#~ msgid "Reset"
+#~ msgstr "Återställ"
+
+#~ msgid "Pattern name"
+#~ msgstr "Mönsternamn"
+
+#~ msgid "Start pattern and end pattern"
+#~ msgstr "Startmönster och slutmönster"
+
+#~ msgid "Only start pattern"
+#~ msgstr "Endast startmönster"
+
+#~ msgid "Subpattern from parent"
+#~ msgstr "Extramönster från ägaren"
+
+#~ msgid "Start pattern"
+#~ msgstr "Startmönster"
+
+#~ msgid "End pattern"
+#~ msgstr "Slutmönster"
+
+#~ msgid "Parentmatch"
+#~ msgstr "Ägarmatchning"
+
+#~ msgid "no check"
+#~ msgstr "ingen kontroll"
+
+#~ msgid "check mtime"
+#~ msgstr "kontrollera förändringstid"
+
+#~ msgid "check size"
+#~ msgstr "kontrollera storlek"
+
+#~ msgid "Highlight # lines"
+#~ msgstr "Färgkoda antal rader"
+
+#~ msgid "save"
+#~ msgstr "spara"
+
+#~ msgid "abort"
+#~ msgstr "avbryt"
+
+#~ msgid "ask"
+#~ msgstr "fråga"
+
+#~ msgid "Action on backup failure"
+#~ msgstr "Åtgärd vid misslyckande att skapa säkerhetskopia"
+
+#~ msgid "File modified on disk check "
+#~ msgstr "kontroll över fil ändrad på disk"
+
+#~ msgid "File browser"
+#~ msgstr "Filbläddrare"
+
+#~ msgid "Directory icon"
+#~ msgstr "Katalogikon"
+
+#, fuzzy
+#~ msgid "File filters"
+#~ msgstr "Filfilter"
+
+#~ msgid "Patterns"
+#~ msgstr "Mönster"
+
+#~ msgid "Java programming"
+#~ msgstr "Java-programmering"
+
+#, fuzzy
+#~ msgid "_Case sensitive matching"
+#~ msgstr "Storlekskänslig matchning"
+
+#~ msgid "Show hidden"
+#~ msgstr "Visa dolda"
+
+#~ msgid "/File/tearoff1"
+#~ msgstr "/Arkiv/tearoff1"
+
+#~ msgid "/File/Open recent/tearoff1"
+#~ msgstr "/Arkiv/Öppna senaste/tearoff1"
+
+#~ msgid "/File/sep1"
+#~ msgstr "/Arkiv/sep1"
+
+#~ msgid "/File/sep2"
+#~ msgstr "/Arkiv/sep2"
+
+#~ msgid "/File/sep3"
+#~ msgstr "/Arkiv/sep3"
+
+#~ msgid "/File/sep4"
+#~ msgstr "/Arkiv/sep4"
+
+#, fuzzy
+#~ msgid "/File/sep5"
+#~ msgstr "/Arkiv/sep1"
+
+#~ msgid "/Edit/Tearoff1"
+#~ msgstr "/Redigera/Tearoff1"
+
+#~ msgid "/Edit/sep1"
+#~ msgstr "/Redigera/sep1"
+
+#~ msgid "/Edit/sep2"
+#~ msgstr "/Redigera/sep2"
+
+#~ msgid "/Edit/sep3"
+#~ msgstr "/Redigera/sep3"
+
+#~ msgid "/Edit/Replace special/Tearoff1"
+#~ msgstr "/Redigera/Ersätt special/Tearoff1"
+
+#~ msgid "/Edit/Replace special/_ASCII to HTML Entities"
+#~ msgstr "/Redigera/Ersätt special/_ASCII till HTML-entiteter"
+
+#~ msgid "/Edit/Replace special/_ISO8859 to HTML Entities"
+#~ msgstr "/Redigera/Ersätt special/_iso8859 till HTML-entiteter"
+
+#~ msgid "/Edit/Replace special/_Both Types to HTML Entities"
+#~ msgstr "/Redigera/Ersätt special/_Båda typerna till HTML-entiteter"
+
+#~ msgid "/Edit/Replace special/To _Uppercase"
+#~ msgstr "/Redigera/Ersätt special/Till _Versaler"
+
+#~ msgid "/Edit/Replace special/To _Lowercase"
+#~ msgstr "/Redigera/Ersätt special/Till _Gemener"
+
+#~ msgid "/Edit/sep4"
+#~ msgstr "/Redigera/sep4"
+
+#~ msgid "/Edit/sep5"
+#~ msgstr "/Redigera/sep5"
+
+#~ msgid "/Edit/sep6"
+#~ msgstr "/Redigera/sep6"
+
+#~ msgid "/View/tearoff1"
+#~ msgstr "/Visa/tearoff1"
+
+#~ msgid "/Document/tearoff1"
+#~ msgstr "/Dokument/tearoff1"
+
+#~ msgid "/Document/sep1"
+#~ msgstr "/Dokument/sep1"
+
+#~ msgid "/Document/sep2"
+#~ msgstr "/Dokument/sep2"
+
+#~ msgid "/Document/sep3"
+#~ msgstr "/Dokument/sep3"
+
+#~ msgid "/Document/Document Type/tearoff1"
+#~ msgstr "/Dokument/Dokumenttyp/tearoff1"
+
+#~ msgid "/Document/Character Encoding/tearoff1"
+#~ msgstr "/Dokument/Teckenkodning/tearoff1"
+
+#~ msgid "/Document/sep4"
+#~ msgstr "/Dokument/sep4"
+
+#, fuzzy
+#~ msgid "/Document/sep5"
+#~ msgstr "/Dokument/sep1"
+
+#~ msgid "/Go/tearoff1"
+#~ msgstr "/Gå/tearoff1"
+
+#~ msgid "/Go/sep1"
+#~ msgstr "/Gå/sep1"
+
+#~ msgid "/Project/tearoff1"
+#~ msgstr "/Projekt/tearoff1"
+
+#~ msgid "/Project/Open recent/tearoff1"
+#~ msgstr "/Projekt/Öppna senaste/tearoff1"
+
+#~ msgid "/Project/sep1"
+#~ msgstr "/Arkiv/sep1"
+
+#~ msgid "/Project/sep2"
+#~ msgstr "/Projekt/sep2"
+
+#~ msgid "/External/tearoff1"
+#~ msgstr "/Externa/tearoff1"
+
+#~ msgid "/_Help"
+#~ msgstr "/_Hjälp"
+
+#~ msgid "/Help/_About..."
+#~ msgstr "/Hjälp/_Om..."
+
+#~ msgid "/Custom menu/sep"
+#~ msgstr "/Egen meny/sep"
+
+#~ msgid "Notebook tab font (leave empty for gtk default)"
+#~ msgstr "Typsnitt på flikhäftets flikar (lämna tom för gtk standard)"
+
+#, fuzzy
+#~ msgid "General scanner preferences"
+#~ msgstr "Sök referensfiler igen"
+
+#, fuzzy
+#~ msgid "Languages"
+#~ msgstr "Språk:"
+
+#~ msgid "Confirm replace"
+#~ msgstr "Bekräfta ersättning"
+
+#~ msgid "Replace selected text?"
+#~ msgstr "Ersätt markerad text?"
+
+#~ msgid "Search: no match found"
+#~ msgstr "Sökning: hittade inget"
+
+#~ msgid "\\0 refers to the first subsearch_pattern, \\1 to the second etc."
+#~ msgstr ""
+#~ "\\0 refererar till det första undermönstret, \\1 till det andra osv."
+
+#~ msgid "Beginning of document till end"
+#~ msgstr "Början av _dokumentet tills slutet"
+
+#~ msgid "Current position till end"
+#~ msgstr "Nuvarande position tills slutet"
+
+#~ msgid "Beginning of selection till end of selection"
+#~ msgstr "Början av u_rvalet tills slutet av urvalet"
+
+#~ msgid "All opened files begin till end"
+#~ msgstr "Alla öppnade filer tills slutet"
+
+#~ msgid "Disabled"
+#~ msgstr "Avstängd"
+
+#~ msgid "Starts at:"
+#~ msgstr "Börjar vid:"
+
+#~ msgid "Regular expression:"
+#~ msgstr "Reguljärt uttryck:"
+
+#~ msgid "_Patterns contain backslash escape sequences (\\n, \\t)"
+#~ msgstr "Mönster innehåller bakåtstreckssekvenser (\\n, \\t)"
+
+#~ msgid "_Match case"
+#~ msgstr "Matcha versaler/gemener"
+
+#~ msgid "Prompt _before replace"
+#~ msgstr "Fråga _före ersättning"
+
+#~ msgid "Replace o_nce"
+#~ msgstr "Ers_ätt en gång"
+
+#~ msgid "Bookmark results"
+#~ msgstr "Bokmärksresultat"
+
+#~ msgid ""
+#~ "This message is shown since you do not have any items in the Quickbar.\n"
+#~ "\n"
+#~ "If you right-click a button in the HTML toolbars you can add buttons to "
+#~ "the Quickbar."
+#~ msgstr ""
+#~ "Det här meddelandet visas då du inte har någonting i din snabblist.\n"
+#~ "\n"
+#~ "Om du högerklickar på en knapp i någon av verktygsraderna så kan du lägga "
+#~ "till den i din snabblist"
+
+#~ msgid "Edit color"
+#~ msgstr "Redigera färg"
+
+#~ msgid "Edit tag"
+#~ msgstr "Redigera tagg"
+
+#~ msgid "Could not delete \n"
+#~ msgstr "Kunde inte ta bort \n"
+
+#~ msgid "Error creating path"
+#~ msgstr "Fel vid skapande av sökväg"
+
+#~ msgid "The specified pathname already exists."
+#~ msgstr "Angiven katalogsökväg finns redan."
+
+#~ msgid "Directory name"
+#~ msgstr "Katalognamn"
+
+#~ msgid "Opening directory..."
+#~ msgstr "Öppnar katalog... "
+
+#~ msgid "Follow focus"
+#~ msgstr "Följ fokus"
+
+#~ msgid "Do_n't save"
+#~ msgstr "Spara i_nte"
+
+#, fuzzy
+#~ msgid "Select font for reference view"
+#~ msgstr "Sök referensfiler igen"
+
+#, fuzzy
+#~ msgid "Set reference colors"
+#~ msgstr "Redigera inställningar"
+
+#, fuzzy
+#~ msgid "Set view font"
+#~ msgstr "Välj typsnitt"
+
+#~ msgid "Dialog"
+#~ msgstr "Dialog"
+
+#~ msgid "Options"
+#~ msgstr "Alternativ"
+
+#~ msgid "Left doubleclick action"
+#~ msgstr "Vänster dubbelklickshändelse"
+
+#~ msgid "Info type"
+#~ msgstr "Infotyp"
+
+#~ msgid "Reference not found"
+#~ msgstr "Referens hittades inte"
+
+#~ msgid ""
+#~ "Perhaps you didn't load a reference, or you did not select a reference to "
+#~ "search in."
+#~ msgstr ""
+#~ "Antagligen laddade du inte en referens, eller så valde du kanske inte en "
+#~ "referens att söka i."
+
+#~ msgid "Search"
+#~ msgstr "Sök"
+
+#~ msgid "QuickStart..."
+#~ msgstr "Snabbstart..."
+
+#~ msgid "Body..."
+#~ msgstr "Kropp..."
+
+#~ msgid "Bold"
+#~ msgstr "Fet"
+
+#~ msgid "Italic"
+#~ msgstr "Kursiv"
+
+#~ msgid "Paragraph"
+#~ msgstr "Stycke"
+
+#~ msgid "Break"
+#~ msgstr "Brytning"
+
+#~ msgid "Break and clear"
+#~ msgstr "Bryt och töm"
+
+#~ msgid "Non-breaking space"
+#~ msgstr "Radbrytningfritt mellanslag"
+
+#~ msgid "Anchor..."
+#~ msgstr "Ankare..."
+
+#~ msgid "Rule..."
+#~ msgstr "Linje..."
+
+#~ msgid "Center"
+#~ msgstr "Centrera"
+
+#~ msgid "Right Justify"
+#~ msgstr "Högerjustera"
+
+#~ msgid "Comment"
+#~ msgstr "Kommentar"
+
+#~ msgid "E-Mail..."
+#~ msgstr "E-post..."
+
+#~ msgid "Font..."
+#~ msgstr "Typsnitt..."
+
+#~ msgid "Base Font Size..."
+#~ msgstr "Grundtypsnittsstorlek..."
+
+#~ msgid "Font Size +1"
+#~ msgstr "Typsnittsstorlek +1"
+
+#~ msgid "Font Size -1"
+#~ msgstr "Typsnittsstorlek -1"
+
+#~ msgid "Preformatted Text"
+#~ msgstr "Förformaterad text"
+
+#~ msgid "Subscript"
+#~ msgstr "Nedsänkt"
+
+#~ msgid "Superscript"
+#~ msgstr "Upphöjt"
+
+#~ msgid "Strong"
+#~ msgstr "Förstärkt (strong)"
+
+#~ msgid "Emphasis"
+#~ msgstr "Betonad"
+
+#~ msgid "Heading 1"
+#~ msgstr "Rubrik 1"
+
+#~ msgid "Heading 2"
+#~ msgstr "Rubrik 2"
+
+#~ msgid "Heading 3"
+#~ msgstr "Rubrik 3"
+
+#~ msgid "Heading 4"
+#~ msgstr "Rubrik 4"
+
+#~ msgid "Heading 5"
+#~ msgstr "Rubrik 5"
+
+#~ msgid "Heading 6"
+#~ msgstr "Rubrik 6"
+
+#~ msgid "Table Wizard..."
+#~ msgstr "Tabellguide..."
+
+#~ msgid "Table..."
+#~ msgstr "Tabell..."
+
+#~ msgid "Table Row..."
+#~ msgstr "Tabellrad..."
+
+#~ msgid "Table Header..."
+#~ msgstr "Tabellhuvud..."
+
+#~ msgid "Table Data..."
+#~ msgstr "Tabelldata..."
+
+#~ msgid "Table"
+#~ msgstr "Tabell"
+
+#~ msgid "Table Row"
+#~ msgstr "Tabellrad"
+
+#~ msgid "Table Header"
+#~ msgstr "Tabellhuvud"
+
+#~ msgid "Table Data"
+#~ msgstr "Tabelldata"
+
+#~ msgid "Table Caption"
+#~ msgstr "Tabellrubrik"
+
+#~ msgid "Frame Wizard..."
+#~ msgstr "Ramguide..."
+
+#~ msgid "Frameset..."
+#~ msgstr "Ramsamling..."
+
+#~ msgid "Frame..."
+#~ msgstr "Ram..."
+
+#~ msgid "Frameset"
+#~ msgstr "Ramuppsamling"
+
+#~ msgid "Frame"
+#~ msgstr "Ram"
+
+#~ msgid "Noframes"
+#~ msgstr "Inga ramar"
+
+#~ msgid "Target"
+#~ msgstr "Mål"
+
+#~ msgid "Form..."
+#~ msgstr "Formulär..."
+
+#~ msgid "Input Button..."
+#~ msgstr "Knapp..."
+
+#~ msgid "Input Text..."
+#~ msgstr "Text..."
+
+#~ msgid "Input Hidden..."
+#~ msgstr "Dold..."
+
+#~ msgid "Textarea..."
+#~ msgstr "Flerradigt textfält..."
+
+#~ msgid "Input Radio Button..."
+#~ msgstr "Radioknapp..."
+
+#~ msgid "Input Check Box..."
+#~ msgstr "Kryssruta..."
+
+#~ msgid "Select..."
+#~ msgstr "Välj..."
+
+#~ msgid "Option..."
+#~ msgstr "Alternativ..."
+
+#~ msgid "Option group..."
+#~ msgstr "Altermativgrupp..."
+
+#~ msgid "Button..."
+#~ msgstr "Knapp..."
+
+#~ msgid "Quick List..."
+#~ msgstr "Snabblista..."
+
+#~ msgid "Unordered List"
+#~ msgstr "Oordnad lista"
+
+#~ msgid "Ordered List"
+#~ msgstr "Ordnad lista"
+
+#~ msgid "List Item"
+#~ msgstr "Listenhet"
+
+#~ msgid "Definition List"
+#~ msgstr "Definitionslista"
+
+#~ msgid "Definition Term"
+#~ msgstr "Definitionsterm"
+
+#~ msgid "Definition"
+#~ msgstr "Definition"
+
+#~ msgid "Create stylesheet..."
+#~ msgstr "Skapa stilmall..."
+
+#~ msgid "Span..."
+#~ msgstr "Span..."
+
+#~ msgid "Div..."
+#~ msgstr "Div..."
+
+#~ msgid "Style"
+#~ msgstr "Stil"
+
+#~ msgid "Link to stylesheet..."
+#~ msgstr "Länk till stilmall..."
+
+#~ msgid "Insert image..."
+#~ msgstr "Infoga bild..."
+
+#~ msgid "Insert thumbnail..."
+#~ msgstr "Infoga miniatyrbild..."
+
+#~ msgid "Multi thumbnail..."
+#~ msgstr "Flera miniatyrbilder..."
+
+#~ msgid "Code"
+#~ msgstr "Kod"
+
+#~ msgid "Sample"
+#~ msgstr "Exempel"
+
+#~ msgid "Keyboard"
+#~ msgstr "Tangentbord"
+
+#~ msgid "Variable"
+#~ msgstr "Variabel"
+
+#~ msgid "Citation"
+#~ msgstr "Citat"
+
+#~ msgid "Abbreviation"
+#~ msgstr "Förkortning"
+
+#~ msgid "Acronym"
+#~ msgstr "Akronym"
+
+#~ msgid "Remove from quickbar"
+#~ msgstr "Ta bort från snabblisten"
+
+#~ msgid "Move Left"
+#~ msgstr "Flytta vänster"
+
+#~ msgid "Move Right"
+#~ msgstr "Flytta höger"
+
+#~ msgid "Add to quickbar"
+#~ msgstr "Lägg till i snabblisten"
+
+#~ msgid " Quick bar "
+#~ msgstr " Snabblist "
+
+#~ msgid "Heading"
+#~ msgstr "Rubriker"
+
+#~ msgid " Standard bar "
+#~ msgstr " Standardflik "
+
+#~ msgid "Context formatting"
+#~ msgstr "Sammanhangsformatering"
+
+#~ msgid " Fonts "
+#~ msgstr " Typsnitt "
+
+#~ msgid " Tables "
+#~ msgstr " Tabeller "
+
+#~ msgid " Frames "
+#~ msgstr " Ramar "
+
+#~ msgid " Forms "
+#~ msgstr " Formulär "
+
+#~ msgid " List "
+#~ msgstr " Lista "
+
+#~ msgid " CSS "
+#~ msgstr " CSS "
+
+#~ msgid "Cascading StyleSheet dialog"
+#~ msgstr "Stilmallsdialog"
+
+#~ msgid "_Selector:"
+#~ msgstr "V_äljare:"
+
+#~ msgid "_Property:"
+#~ msgstr "Egenskaper:"
+
+#~ msgid "_Value:"
+#~ msgstr "_Värde:"
+
+#~ msgid "Property"
+#~ msgstr "Egenskaper"
+
+#~ msgid "Value"
+#~ msgstr "Värde"
+
+#~ msgid " _Update "
+#~ msgstr " _Uppdatera "
+
+#~ msgid " _Delete "
+#~ msgstr " _Ta bort "
+
+#~ msgid "_Style..."
+#~ msgstr "_Stil..."
+
+#~ msgid "Bluefish: Select color"
+#~ msgstr "Bluefish: Välj färg"
+
+#~ msgid "Insert Time"
+#~ msgstr "Sätt in tid"
+
+#~ msgid "  _Time (%i:%i:%i)"
+#~ msgstr "  _Tid (%i.%i.%i)"
+
+#~ msgid "  Day of the _week (Sunday)"
+#~ msgstr "  _Veckodag (söndag)"
+
+#~ msgid "  Day of the _week (Monday)"
+#~ msgstr "  _Veckodag (måndag)"
+
+#~ msgid "  Day of the _week (Tuesday)"
+#~ msgstr "  _Veckodag (tisdag)"
+
+#~ msgid "  Day of the _week (Wednesday)"
+#~ msgstr "  _Veckodag (onsdag)"
+
+#~ msgid "  Day of the _week (Thursday)"
+#~ msgstr "  _Veckodag (torsdag)"
+
+#~ msgid "  Day of the _week (Friday)"
+#~ msgstr "  _Veckodag (fredag)"
+
+#~ msgid "  Day of the _week (Saturday)"
+#~ msgstr "  _Veckodag (lördag)"
+
+#~ msgid "You appear to have a non existant day!\n"
+#~ msgstr "Den angivna dagen existerar inte!\n"
+
+#~ msgid "  _Date (%i/%i/%i)"
+#~ msgstr "  _Datum (%3$i-%1$i-%2$i)"
+
+#~ msgid "  _Unix Time (%i)"
+#~ msgstr "  _Unix-tid (%i)"
+
+#~ msgid "  Unix Date _String (%s"
+#~ msgstr "  Unix-datum_sträng (%s"
+
+#~ msgid "Quick Anchor"
+#~ msgstr "Ankare"
+
+#~ msgid "Attributes"
+#~ msgstr "Attribut"
+
+#~ msgid "_HREF:"
+#~ msgstr "HREF:"
+
+#~ msgid "_Target:"
+#~ msgstr "M_ål:"
+
+#~ msgid "_Language:"
+#~ msgstr "Språ_k:"
+
+#~ msgid "Custo_m:"
+#~ msgstr "An_passad:"
+
+#~ msgid "Events"
+#~ msgstr "Händelser"
+
+#~ msgid "OnClic_k:"
+#~ msgstr "Vid kli_ck:"
+
+#~ msgid "OnD_blClick:"
+#~ msgstr "Vid du_bbelklick:"
+
+#~ msgid "OnMouseO_ver:"
+#~ msgstr "Vid mus-ö_ver:"
+
+#~ msgid "OnMouse_Down:"
+#~ msgstr "Vid mus-n_ere:"
+
+#~ msgid "OnMouse_Move:"
+#~ msgstr "Vid _musrörelse:"
+
+#~ msgid "OnMouseOu_t:"
+#~ msgstr "Vid mus-u_t:"
+
+#~ msgid "OnMouse_Up:"
+#~ msgstr "Vid mus-_uppe:"
+
+#~ msgid "OnKeyDo_wn:"
+#~ msgstr "Vid tangent-nertr_yckt:"
+
+#~ msgid "OnKey_Press:"
+#~ msgstr "Vid tangent-t_ryckt:"
+
+#~ msgid "OnKe_yUp:"
+#~ msgstr "Vid tange_nt-upp:"
+
+#~ msgid "Div"
+#~ msgstr "Div"
+
+#~ msgid "Span"
+#~ msgstr "Spann"
+
+#~ msgid "Ali_gn:"
+#~ msgstr "_Justera:"
+
+#~ msgid "Cl_ass:"
+#~ msgstr "Kl_ass:"
+
+#~ msgid "St_yle:"
+#~ msgstr "St_il:"
+
+#~ msgid "_ID:"
+#~ msgstr "_ID:"
+
+#~ msgid "Horizontal Rule"
+#~ msgstr "Horisontell linje"
+
+#~ msgid "_Align:"
+#~ msgstr "Justera:"
+
+#~ msgid "_Height:"
+#~ msgstr "_Höjd:"
+
+#~ msgid "_Width:"
+#~ msgstr "_Bredd:"
+
+#~ msgid "Is _percent"
+#~ msgstr "Är _procent"
+
+#~ msgid "Body"
+#~ msgstr "Kropp"
+
+#~ msgid "On_Load:"
+#~ msgstr "Vid laddning:"
+
+#~ msgid "On_UnLoad:"
+#~ msgstr "Vid urladdning:"
+
+#~ msgid "Depreciated options"
+#~ msgstr "Föråldrade alternativ"
+
+#~ msgid "Background _Image:"
+#~ msgstr "Bakgrundsb_ild:"
+
+#~ msgid "Back_ground Color:"
+#~ msgstr "Bak_grundsfärg:"
+
+#~ msgid "_Text Color:"
+#~ msgstr "_Textfärg:"
+
+#~ msgid "_Link Color:"
+#~ msgstr "Färg på _länk:"
+
+#~ msgid "_Visited Link Color:"
+#~ msgstr "Färg på besökt länk:"
+
+#~ msgid "_Active Link Color:"
+#~ msgstr "Färg på _aktiv länk:"
+
+#~ msgid "Meta"
+#~ msgstr "Meta"
+
+#~ msgid "_HTTP-EQUIV:"
+#~ msgstr "_HTTP-EQUIV:"
+
+#~ msgid "Con_tent:"
+#~ msgstr "_Innehåll:"
+
+#~ msgid "_Scheme:"
+#~ msgstr "_Schema:"
+
+#~ msgid "Base Font"
+#~ msgstr "Standardtypsnitt"
+
+#~ msgid "Size"
+#~ msgstr "Storlek"
+
+#~ msgid "Color"
+#~ msgstr "Färg"
+
+#~ msgid "Face"
+#~ msgstr "Typsnittsfamilj"
+
+#~ msgid "Custom"
+#~ msgstr "Anpassad"
+
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#~ msgid "_Email address:"
+#~ msgstr "_E-postadress:"
+
+#~ msgid "UrlEncoded _subject:"
+#~ msgstr "Url-kodat _ämne:"
+
+#~ msgid "UrlEncoded _body:"
+#~ msgstr "Url-kodat _innehåll:"
+
+#~ msgid "Quick List"
+#~ msgstr "Snabblista"
+
+#~ msgid "_Rows:"
+#~ msgstr "Rader:"
+
+#~ msgid "Or_dered"
+#~ msgstr "Or_dnad"
+
+#~ msgid "_Unordered"
+#~ msgstr "_Oordnad"
+
+#~ msgid "Style:"
+#~ msgstr "Stil:"
+
+#~ msgid "Co_ls:"
+#~ msgstr "Ko_lumner:"
+
+#~ msgid "_Add <frame> elements"
+#~ msgstr "_Läggtill <frame> element"
+
+#~ msgid "_Source:"
+#~ msgstr "_Källkod:"
+
+#~ msgid "Margin _Width:"
+#~ msgstr "Marginalb_redd:"
+
+#~ msgid "Margin _Height:"
+#~ msgstr "Marginal_höjd:"
+
+#~ msgid "Scrollin_g:"
+#~ msgstr "Rullnin_g:"
+
+#~ msgid "_Frameborder:"
+#~ msgstr "_Ramkant:"
+
+#~ msgid "No _Resize:"
+#~ msgstr "Ingen sto_rleksändring:"
+
+#~ msgid "Embed"
+#~ msgstr "Inbäddad"
+
+#~ msgid "Bo_rder:"
+#~ msgstr "Kant:"
+
+#~ msgid "Script"
+#~ msgstr "Skript"
+
+#~ msgid "_Type:"
+#~ msgstr "_Typ:"
+
+#~ msgid "Link"
+#~ msgstr "Länk"
+
+#~ msgid "_Href:"
+#~ msgstr "_Länk:"
+
+#~ msgid "Href_lang:"
+#~ msgstr "Länk_språk:"
+
+#~ msgid "_Forward Relation:"
+#~ msgstr "_Framåtrelation:"
+
+#~ msgid "_Reverse Relation:"
+#~ msgstr "_Bakåtrelation:"
+
+#~ msgid "Media:"
+#~ msgstr "Media:"
+
+#~ msgid "L_ang:"
+#~ msgstr "Spr_åk:"
+
+#~ msgid "_Custom:"
+#~ msgstr "A_npassad:"
+
+#~ msgid "Form"
+#~ msgstr "Formulär"
+
+#~ msgid "_Action:"
+#~ msgstr "_Åtgärd:"
+
+#~ msgid "Metho_d:"
+#~ msgstr "Meto_d:"
+
+#~ msgid "_Enctype:"
+#~ msgstr "_Kodningstyp:"
+
+#~ msgid "Text area"
+#~ msgstr "Flerradigt textfält"
+
+#~ msgid "Select"
+#~ msgstr "Välj"
+
+#~ msgid "Si_ze:"
+#~ msgstr "Stor_lek:"
+
+#~ msgid "Multiple _Selections:"
+#~ msgstr "Flera _val"
+
+#~ msgid "Option"
+#~ msgstr "Alternativ"
+
+#~ msgid "_Label:"
+#~ msgstr "_Etikett:"
+
+#~ msgid "_Selected:"
+#~ msgstr "V_ald:"
+
+#~ msgid "Option group"
+#~ msgstr "Alternativgrupp"
+
+#~ msgid "Input"
+#~ msgstr "Input"
+
+#~ msgid "_Checked:"
+#~ msgstr "_Vald:"
+
+#~ msgid "Max _Length:"
+#~ msgstr "Maximal _längd:"
+
+#~ msgid "_Accept:"
+#~ msgstr "_Acceptera:"
+
+#~ msgid "C_ustom:"
+#~ msgstr "An_passad:"
+
+#~ msgid "On_Focus:"
+#~ msgstr "Vid Fokus:"
+
+#~ msgid "On_Blur:"
+#~ msgstr "Vid fokus förlorad:"
+
+#~ msgid "On_Select:"
+#~ msgstr "Vid markering:"
+
+#~ msgid "On_Change:"
+#~ msgstr "Vid förändring:"
+
+#~ msgid "Button"
+#~ msgstr "Knapp"
+
+#~ msgid "Cell _Padding:"
+#~ msgstr "Cellut_fyllnad:"
+
+#~ msgid "C_ell Spacing:"
+#~ msgstr "C_ellmellanrum:"
+
+#~ msgid "Backgrou_nd Color:"
+#~ msgstr "Bakgru_ndsfärg:"
+
+#~ msgid "_Frame:"
+#~ msgstr "_Ram:"
+
+#~ msgid "R_ules:"
+#~ msgstr "R_egler:"
+
+#~ msgid "Co_l Span:"
+#~ msgstr "Spännvidd för ko_lumn:"
+
+#~ msgid "_Row Span:"
+#~ msgstr "Spännvidd för _rad:"
+
+#~ msgid "No Wra_p:"
+#~ msgstr "Ingen radb_rytning:"
+
+#~ msgid "Insert thumbnail"
+#~ msgstr "Infoga tumnagel"
+
+#~ msgid "Insert image"
+#~ msgstr "Infoga bild"
+
+#~ msgid "Preview"
+#~ msgstr "Förhandsgranska"
+
+#~ msgid "_Image location:"
+#~ msgstr "Sökväg för b_ild:"
+
+#~ msgid "Hei_ght:"
+#~ msgstr "Hö_jd:"
+
+#~ msgid "_Usemap:"
+#~ msgstr "Usemap:"
+
+#~ msgid "Alternate _text:"
+#~ msgstr "Alternativ _text:"
+
+#~ msgid "_Hspace:"
+#~ msgstr "_Horisontellt avstånd:"
+
+#~ msgid "_Vspace:"
+#~ msgstr "_Vertikalt avstånd:"
+
+#~ msgid "Borde_r:"
+#~ msgstr "Kan_t:"
+
+#~ msgid "Select files for thumbnail creation"
+#~ msgstr "Välj filer för skapande av miniatyrbilder"
+
+#~ msgid "Scaling (%)"
+#~ msgstr "Omskalning (%)"
+
+#~ msgid "Width"
+#~ msgstr "Bredd"
+
+#~ msgid "Height"
+#~ msgstr "Höjd"
+
+#~ msgid "Multi thumbnail"
+#~ msgstr "Flera miniatyrbilder"
+
+#~ msgid "By width, keep aspect ratio"
+#~ msgstr "Efter bredd, Behåll proportioner"
+
+#~ msgid "By height, keep aspect ratio"
+#~ msgstr "Efter höjd, Behåll proportioner"
+
+#~ msgid "By width and height, ignore aspect ratio"
+#~ msgstr "Efter bredd och höjd, Ignorera proportioner"
+
+#~ msgid ""
+#~ "%r: original filename  %t: thumbnail filename\n"
+#~ "%w: original width  %h: original height\n"
+#~ "%x: thumbnail width  %y: thumbnail height\n"
+#~ "%b: original size (bytes)"
+#~ msgstr ""
+#~ "%r: orginalfilnman  %t: miniatyrbildsfilnamn\n"
+#~ "%w: originalbredd  %h: originalhöjd\n"
+#~ "%x: miniatyrbildsbredd  %y: miniatyrbildshöjd\n"
+#~ "%b: originalstorlek (bitar)"
+
+#~ msgid "/View/View _HTML Toolbar"
+#~ msgstr "/Visa/Visa _HTML-verktygen"
+
+#~ msgid "/_Tags"
+#~ msgstr "/_Taggar"
+
+#~ msgid "/Tags/Tearoff1"
+#~ msgstr "/Taggar/Tearoff1"
+
+#~ msgid "/Tags/_Headings"
+#~ msgstr "/Taggar/_Rubriker"
+
+#~ msgid "/Tags/Headings/Tearoff1"
+#~ msgstr "/Taggar/Rubriker/Tearoff1"
+
+#~ msgid "/Tags/Headings/H_1"
+#~ msgstr "/Taggar/Rubriker/H_1"
+
+#~ msgid "/Tags/Headings/H_2"
+#~ msgstr "/Taggar/Rubriker/H_2"
+
+#~ msgid "/Tags/Headings/H_3"
+#~ msgstr "/Taggar/Rubriker/H_3"
+
+#~ msgid "/Tags/Headings/H_4"
+#~ msgstr "/Taggar/Rubriker/H_4"
+
+#~ msgid "/Tags/Headings/H_5"
+#~ msgstr "/Taggar/Rubriker/H_5"
+
+#~ msgid "/Tags/Headings/H_6"
+#~ msgstr "/Taggar/Rubriker/H_6"
+
+#~ msgid "/Tags/_Special"
+#~ msgstr "/Taggar/_Special"
+
+#~ msgid "/Tags/Special/tearoff1"
+#~ msgstr "/Taggar/Special/tearoff1"
+
+#~ msgid "/Tags/Special/_Accent"
+#~ msgstr "/Taggar/Special/Accentuerade"
+
+#~ msgid "/Tags/Special/Accent/tearoff1"
+#~ msgstr "/Taggar/Special/Accentuerade/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/_Uppercase"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/_A-I"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/_A-I"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/tearoff1"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A grave À"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/A med grav accent À"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A acute Á"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/A med akut accent Á"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A circumflex Â"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/A circumflex Â"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A tilde Ã"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/A med tilde Ã"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/AE ligature Æ"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/AE med ligatur Æ"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A diaeresis Ä"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/A med trema Ä"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A ring Å"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/A med ring Å"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/C cedilla Ç"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/C med cedilj Ç"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E grave È"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/E med grav accent È"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E acute É"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/E med akut accent É"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E circumflex Ê"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/E med cirkumflex É"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E diaeresis Ë"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/E med trema É"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I grave Ì"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/I med grav accent Ì"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I acute Í"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/I med akut accent Í"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I circumflex Î"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/I cirkumflex Î"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I diaeresis Ï"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/I med trema Ï"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/_J-Z"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/_J-Z"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/tearoff1"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/N tilde Ñ"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/N med tilde Ñ"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O grave Ò"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/O med grav accent Ò"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O acute Ó"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/O med akut accent Ó"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O circumflex Ô"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/O med cirkumflex Ô"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/OE ligature"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/A-I/OE ligature"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O tilde Õ"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/O med tilde Õ"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O diaeresis Ö"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/O med trema Ö"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O slash Ø"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/O med snedstreck Ø"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U grave Ù"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/U med grav accent Ù"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U acute Ú"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/U med akut accent Ú"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U circumflex Û"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/U med cirkumflex Û"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U diaeresis Ü"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/U med trema Ü"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/Y acute Ý"
+#~ msgstr "/Taggar/Special/Accentuerade/Versaler/J-Z/Y med akut accent Ý"
+
+#~ msgid "/Tags/Special/Accent/_Lowercase"
+#~ msgstr "/Taggar/Special/Accentuerade/_Gemener"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/_A-I"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/_A-I"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/tearoff1"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a grave à"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/a med grav accent à"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a acute á"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/a med akut accent á"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a circumflex â"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/a med cirkumflex â"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a tilde ã"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/a med tilde ã"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a ring å"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/a med ring å"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/ae ligature æ"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/ae med ligatur æ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a diaeresis ä"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/a med trema ä"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/c cedilla ç"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/c med cedilj ç"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e grave è"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/e grav accent è"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e acute é"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/e akut accent é"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e circumflex ê"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/e med cirkumflex ê"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e diaeresis ë"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/e med trema ë"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i grave ì"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/i med grav ì"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i acute í"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/i med akut í"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i circumflex î"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/i med cirkumflex î"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i diaeresis ï"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/i med trema ï"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/_J-Z"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/_J-Z"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/tearoff1"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/n tilde ñ"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/n med tilde ñ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o grave ò"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/o med grav accent ò"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o acute ó"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/o med akut accent ó"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/oe ligature æ"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/A-I/oe med ligatur æ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o circumflex ô"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/o med cirkumflex ô"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o tilde õ"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/o med tilde õ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o diaeresis ö"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/o med trema ö"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o slash ø"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/o med snedstreck ø"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u grave ù"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/u med grav accent ù"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u acute ú"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/u med akut accent ú"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u circumflex û"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/u med cirkumflex û"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u diaeresis ü"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/u med trema ü"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/y acute ý"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/y med akut accent ý"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/y diaeresis ÿ"
+#~ msgstr "/Taggar/Special/Accentuerade/gemener/J-Z/y med trema ÿ"
+
+#~ msgid "/Tags/Special/Accent/separator"
+#~ msgstr "/Taggar/Special/Accent/Separator"
+
+#~ msgid "/Tags/Special/Accent/U_mlaut ¨"
+#~ msgstr "/Taggar/Special/Accent/U_mlaut ¨"
+
+#~ msgid "/Tags/Special/Accent/_Acute ´"
+#~ msgstr "/Taggar/Special/Accent/_Akut ´"
+
+#~ msgid "/Tags/Special/Accent/_Cedilla ¸"
+#~ msgstr "/Taggar/Special/Accent/_Cedilj ¸"
+
+#~ msgid "/Tags/Special/_Currency"
+#~ msgstr "/Taggar/Special/_Valuta"
+
+#~ msgid "/Tags/Special/Currency/tearoff1"
+#~ msgstr "/Taggar/Special/Valuta/tearoff1"
+
+#~ msgid "/Tags/Special/Currency/_Cent sign ¢"
+#~ msgstr "/Taggar/Special/Valuta/_Cent tecken ¢"
+
+#~ msgid "/Tags/Special/Currency/_Pound sterling £"
+#~ msgstr "/Taggar/Special/Valuta/_Pund £"
+
+#~ msgid "/Tags/Special/Currency/C_urrency sign ¤"
+#~ msgstr "/Taggar/Special/Valuta/Va_lutatecken ¤"
+
+#~ msgid "/Tags/Special/Currency/_Yen sign ¥"
+#~ msgstr "/Taggar/Special/Valuta/Yentecken ¥"
+
+#~ msgid "/Tags/Special/Currency/_Euro "
+#~ msgstr "/Taggar/Special/Valuta/_Euro "
+
+#~ msgid "/Tags/Special/_Math-Science"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap"
+
+#~ msgid "/Tags/Special/Math-Science/tearoff1"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/tearoff1"
+
+#~ msgid "/Tags/Special/Math-Science/Logical _not sign ¬"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/Logiskt i_nte ¬"
+
+#~ msgid "/Tags/Special/Math-Science/_Multiplication sign ×"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/_Multiplikationstecken ×"
+
+#~ msgid "/Tags/Special/Math-Science/_Division sign ÷"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/_Divisionstecken ÷"
+
+#~ msgid "/Tags/Special/Math-Science/_Plus-minus sign ±"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/_Plus-minus-tecken ±"
+
+#~ msgid "/Tags/Special/Math-Science/_Less-than sign <"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/ Mindre _än-tecken <"
+
+#~ msgid "/Tags/Special/Math-Science/_Greater-than sign >"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/S_törre än-tecken >"
+
+#~ msgid "/Tags/Special/Math-Science/Superscript _1 ¹"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/Upphöjt _1 ¹"
+
+#~ msgid "/Tags/Special/Math-Science/Superscript _2 ²"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/Upphöjt _2 ²"
+
+#~ msgid "/Tags/Special/Math-Science/Superscript _3 ³"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/Upphöjt _3 ³"
+
+#~ msgid "/Tags/Special/Math-Science/One _quarter ¼"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/En _fjärdedel ¼"
+
+#~ msgid "/Tags/Special/Math-Science/One _half ½"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/En _halv ½"
+
+#~ msgid "/Tags/Special/Math-Science/_Three quarters ¾"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/_Tre fjärdedelar ¾"
+
+#~ msgid "/Tags/Special/Math-Science/Deg_ree sign °"
+#~ msgstr "/Taggar/Special/Matematik-Vetenskap/G_radtecken °"
+
+#~ msgid "/Tags/Special/_Non Latin"
+#~ msgstr "/Taggar/Special/Ej lati_nska"
+
+#~ msgid "/Tags/Special/Non Latin/tearoff1"
+#~ msgstr "/Taggar/Special/Ej latinska/tearoff1"
+
+#~ msgid "/Tags/Special/Non Latin/_ETH (Icelandic) Ð"
+#~ msgstr "/Taggar/Special/Ej latinska/_ETH (Isländskt) Ð"
+
+#~ msgid "/Tags/Special/Non Latin/_THORN (Icelandic) Þ"
+#~ msgstr "/Taggar/Special/Ej latinska/ _THORN (Isländskt) Þ"
+
+#~ msgid "/Tags/Special/Non Latin/et_h (Icelandic) ð"
+#~ msgstr "/Taggar/Special/Ej latinska/et_h (Isländskt) ð"
+
+#~ msgid "/Tags/Special/Non Latin/th_orn ÿ"
+#~ msgstr "/Taggar/Special/Ej latinska/th_orn ÿ"
+
+#~ msgid "/Tags/Special/Non Latin/Sharp _s ß"
+#~ msgstr "/Taggar/Special/Ej latinska/Sharp_s ß"
+
+#~ msgid "/Tags/Special/Non Latin/_Micro sign µ"
+#~ msgstr "/Taggar/Special/Ej latinska/Microtecken µ"
+
+#~ msgid "/Tags/Special/_Other"
+#~ msgstr "/Taggar/Special/_Övriga"
+
+#~ msgid "/Tags/Special/Other/tearoff1"
+#~ msgstr "/Taggar/Special/Övriga/tearoff1"
+
+#~ msgid "/Tags/Special/Other/_Non-breaking space"
+#~ msgstr "/Taggar/Special/Övriga/Radbryt_ningsfritt mellanslag"
+
+#~ msgid "/Tags/Special/Other/_Section sign §"
+#~ msgstr "/Taggar/Special/Övriga/_Paragraftecken §"
+
+#~ msgid "/Tags/Special/Other/_Copyright sign ©"
+#~ msgstr "/Taggar/Special/Övriga/_Copyrighttecken ©"
+
+#~ msgid "/Tags/Special/Other/_Left angle quotes «"
+#~ msgstr "/Taggar/Special/Övriga/_Vänster vinkelcitationstecken «"
+
+#~ msgid "/Tags/Special/Other/_Right angle quotes »"
+#~ msgstr "/Taggar/Special/Övriga/_Höger vinkelcitationstecken »"
+
+#~ msgid "/Tags/Special/Other/Registered _trademark ®"
+#~ msgstr "/Taggar/Special/Övriga/_Registrerat varumärke ®"
+
+#~ msgid "/Tags/Special/Other/Inverted _exclamation ¡"
+#~ msgstr "/Taggar/Special/Övriga/Inv_erterat utropstecken ¡"
+
+#~ msgid "/Tags/Special/Other/Inverted _question mark ¿"
+#~ msgstr "/Taggar/Special/Övriga/Inverterat fr_ågetecken ¿"
+
+#~ msgid "/Tags/Special/Other/_Feminine ordinal ª"
+#~ msgstr "/Taggar/Special/Övriga/_Feminint ordinal ª"
+
+#~ msgid "/Tags/Special/Other/_Masculine ordinal º"
+#~ msgstr "/Taggar/Special/Övriga/_Maskulint ordinal º"
+
+#~ msgid "/Tags/Special/Other/_Pilcrow (paragraph sign) ¶"
+#~ msgstr "/Taggar/Special/Övriga/_Paragraftecken ¶"
+
+#~ msgid "/Tags/Special/Other/_Broken bar ¦"
+#~ msgstr "/Taggar/Special/Övriga/_Bruten vertikal linje ¦"
+
+#~ msgid "/Tags/Special/Other/Soft _hypen -"
+#~ msgstr "/Taggar/Special/Övriga/M_jukt bindestreck -"
+
+#~ msgid "/Tags/Special/Other/Spa_cing macron ¯"
+#~ msgstr "/Taggar/Special/Övriga/Upp_höjt bindestreck ¯"
+
+#~ msgid "/Tags/Special/Other/Middle _dot ·"
+#~ msgstr "/Taggar/Special/Övriga/Mittenp_unkt ·"
+
+#~ msgid "/Tags/_Format by layout"
+#~ msgstr "/Taggar/_Formatera efter layout"
+
+#~ msgid "/Tags/Format by layout/tearoff1"
+#~ msgstr "/Taggar/Formatera efter layout/tearoff1"
+
+#~ msgid "/Tags/Format by layout/_Bold"
+#~ msgstr "/Taggar/Formatera efter layout/_Fet"
+
+#~ msgid "/Tags/Format by layout/_Italic"
+#~ msgstr "/Taggar/Formatera efter layout/_Kursiv"
+
+#~ msgid "/Tags/Format by layout/_Underline"
+#~ msgstr "/Taggar/Formatera efter layout/_Understrykning"
+
+#~ msgid "/Tags/Format by layout/_Strikeout"
+#~ msgstr "/Taggar/Formatera efter layout/_Överstrykning"
+
+#~ msgid "/Tags/Format by layout/Sm_all"
+#~ msgstr "/Taggar/Formatera efter layout/L_iten"
+
+#~ msgid "/Tags/Format by layout/Bi_g"
+#~ msgstr "/Taggar/_Formatera efter layout/S_tor"
+
+#~ msgid "/Tags/F_ormat by context"
+#~ msgstr "/Taggar/F_ormatera genom sammanhang"
+
+#~ msgid "/Tags/Format by context/tearoff1"
+#~ msgstr "/Taggar/Formatera genom sammanhang/tearoff1"
+
+#~ msgid "/Tags/Format by context/_Strong"
+#~ msgstr "/Taggar/Formatera efter sammanhang/_Markerad"
+
+#~ msgid "/Tags/Format by context/_Emphasis"
+#~ msgstr "/Taggar/Formatera efter sammanhang/_Betonad"
+
+#~ msgid "/Tags/Format by context/_Define"
+#~ msgstr "/Taggar/Formatera efter sammanhang/_Definition"
+
+#~ msgid "/Tags/Format by context/_Code"
+#~ msgstr "/Taggar/Formatera efter sammanhang/_Kod"
+
+#~ msgid "/Tags/Format by context/Sa_mple"
+#~ msgstr "/Taggar/Formatera efter sammanhang/E_xempel"
+
+#~ msgid "/Tags/Format by context/_Keyboard"
+#~ msgstr "/Taggar/Formatera efter sammanhang/_Tangentbord"
+
+#~ msgid "/Tags/Format by context/_Variable"
+#~ msgstr "/Taggar/Formatera efter sammanhang/_Variabel"
+
+#~ msgid "/Tags/Format by context/Ci_tation"
+#~ msgstr "/Taggar/Formatera efter sammanhang/_Citat"
+
+#~ msgid "/Tags/Format by context/_Abbreviation"
+#~ msgstr "/Taggar/Formatera efter sammanhang/_Förkortning"
+
+#~ msgid "/Tags/Format by context/Ac_ronym"
+#~ msgstr "/Taggar/Formatera efter sammanhang/Ak_ronym"
+
+#~ msgid "/Tags/Format _general"
+#~ msgstr "/Taggar/_Vanlig formatering"
+
+#~ msgid "/Tags/Format general/tearoff1"
+#~ msgstr "/Taggar/Vanlig formatering/tearoff1"
+
+#~ msgid "/Tags/Format general/_Paragraph"
+#~ msgstr "/Taggar/Vanlig formatering/_Paragraf"
+
+#~ msgid "/Tags/Format general/_Break"
+#~ msgstr "/Taggar/Vanlig formatering/Rad_brytning"
+
+#~ msgid "/Tags/Format general/Break clear _all"
+#~ msgstr "/Taggar/Vanlig formatering/Radbrytning, töm _helt"
+
+#~ msgid "/Tags/Format general/_Non-Breaking Space"
+#~ msgstr "/Taggar/Vanlig formatering/Radbryt_ningsfritt mellanslag"
+
+#~ msgid "/Tags/Format general/<separator>"
+#~ msgstr "/Taggar/Vanlig formatering/<separator>"
+
+#~ msgid "/Tags/Format general/Font Si_ze +1"
+#~ msgstr "/Taggar/Vanlig formatering/Typsnittss_torlek +1"
+
+#~ msgid "/Tags/Format general/Font _Size -1"
+#~ msgstr "/Taggar/Vanlig formatering/Typsnittsst_orlek -1"
+
+#~ msgid "/Tags/Format general/Preformatted _Text"
+#~ msgstr "/Taggar/Vanlig formatering/Förformaterad _text"
+
+#~ msgid "/Tags/Format general/Su_bscript"
+#~ msgstr "/Taggar/Vanlig formatering/S_änkt"
+
+#~ msgid "/Tags/Format general/Su_perscript"
+#~ msgstr "/Taggar/Vanlig formatering/_Upphöjd"
+
+#~ msgid "/Tags/Format general/_Center"
+#~ msgstr "/Taggar/Vanlig formatering/_Centrera"
+
+#~ msgid "/Tags/Format general/Align _right"
+#~ msgstr "/Taggar/Vanlig formatering/_Högerjustera"
+
+#~ msgid "/Tags/_Table"
+#~ msgstr "/Taggar/_Tabell"
+
+#~ msgid "/Tags/Table/tearoff1"
+#~ msgstr "/Taggar/Tabell/tearoff1"
+
+#~ msgid "/Tags/Table/_Table"
+#~ msgstr "/Taggar/Tabell/_Tabell"
+
+#~ msgid "/Tags/Table/Table _Row"
+#~ msgstr "/Taggar/Tabell/Tabell_rad"
+
+#~ msgid "/Tags/Table/Table _Header"
+#~ msgstr "/Taggar/Tabell/Tabell_huvud"
+
+#~ msgid "/Tags/Table/Table _Data"
+#~ msgstr "/Taggar/Tabell/Tabell_data"
+
+#~ msgid "/Tags/Table/Table _Caption"
+#~ msgstr "/Taggar/Tabell/Tabellr_ubrik"
+
+#~ msgid "/Tags/_List"
+#~ msgstr "/Taggar/_Lista"
+
+#~ msgid "/Tags/List/tearoff1"
+#~ msgstr "/Taggar/Lista/tearoff1"
+
+#~ msgid "/Tags/List/Unordered _List"
+#~ msgstr "/Taggar/Lista/Oordnad lista"
+
+#~ msgid "/Tags/List/_Ordered List"
+#~ msgstr "/Taggar/Lista/_Ordnad Lista"
+
+#~ msgid "/Tags/List/List Ite_m"
+#~ msgstr "/Taggar/Lista/List_enhet"
+
+#~ msgid "/Tags/List/De_finition List"
+#~ msgstr "/Taggar/Lista/De_finitionslista"
+
+#~ msgid "/Tags/List/Definition _Term"
+#~ msgstr "/Taggar/Lista/Definitions_term"
+
+#~ msgid "/Tags/List/_Definition"
+#~ msgstr "/Taggar/Lista/De_finition"
+
+#~ msgid "/Tags/List/Men_u"
+#~ msgstr "/Taggar/Lista/_Meny"
+
+#~ msgid "/Tags/Fo_rm"
+#~ msgstr "/Taggar/F_ormulär"
+
+#~ msgid "/Tags/Form/tearoff1"
+#~ msgstr "/Taggar/Formulär/tearoff1"
+
+#~ msgid "/Tags/Form/_Form"
+#~ msgstr "/Taggar/Formulär/F_ormulär..."
+
+#~ msgid "/Tags/Form/_Button"
+#~ msgstr "/Taggar/Formulär/_Knapp..."
+
+#~ msgid "/Tags/Form/_Input"
+#~ msgstr "/Taggar/Formulär/_Input..."
+
+#~ msgid "/Tags/Form/_Textarea"
+#~ msgstr "/Taggar/Formulär/Flerr_adigt textfält..."
+
+#~ msgid "/Tags/_Misc"
+#~ msgstr "/Taggar/_Övriga"
+
+#~ msgid "/Tags/Misc/tearoff1"
+#~ msgstr "/Taggar/Övriga/tearoff1"
+
+#~ msgid "/Tags/Misc/Insert Generator _META-Tag"
+#~ msgstr "/Taggar/Övriga/Infoga _META-taggen \"Generator\""
+
+#~ msgid "/Tags/Misc/_Span"
+#~ msgstr "/Taggar/Övriga/_Span"
+
+#~ msgid "/Tags/Misc/_Div"
+#~ msgstr "/Taggar/Övriga/_Div"
+
+#~ msgid "/Tags/Misc/_Link"
+#~ msgstr "/Taggar/Övriga/_Link"
+
+#~ msgid "/Tags/Misc/S_cript"
+#~ msgstr "/Taggar/Övriga/S_cript"
+
+#~ msgid "/Tags/Misc/_Anchor"
+#~ msgstr "/Taggar/Övriga/_Ankare"
+
+#~ msgid "/Tags/Misc/_Image"
+#~ msgstr "/Taggar/Övriga/Tabell"
+
+#~ msgid "/Tags/_Comment"
+#~ msgstr "/Taggar/_Kommentar"
+
+#~ msgid "/Dial_ogs"
+#~ msgstr "/Dial_oger"
+
+#~ msgid "/Dialogs/tearoff1"
+#~ msgstr "/Dialoger/tearoff1"
+
+#~ msgid "/Dialogs/_General"
+#~ msgstr "/Dialoger/_Vanliga"
+
+#~ msgid "/Dialogs/General/tearoff1"
+#~ msgstr "/Dialoger/Vanliga/tearoff1"
+
+#~ msgid "/Dialogs/General/_Quickstart..."
+#~ msgstr "/Dialoger/Vanliga/_Snabbstart..."
+
+#~ msgid "/Dialogs/General/_Body..."
+#~ msgstr "/Dialoger/Vanliga/_Kropp(body)..."
+
+#~ msgid "/Dialogs/General/_Anchor..."
+#~ msgstr "/Dialoger/Vanliga/_Ankare..."
+
+#~ msgid "/Dialogs/General/_Email..."
+#~ msgstr "/Dialoger/Vanliga/_E-post..."
+
+#~ msgid "/Dialogs/General/_Rule..."
+#~ msgstr "/Dialoger/Vanliga/_Linje..."
+
+#~ msgid "/Dialogs/General/_Font..."
+#~ msgstr "/Dialoger/Vanliga/_Typsnitt (font)..."
+
+#~ msgid "/Dialogs/General/Basef_ont..."
+#~ msgstr "/Dialoger/Vanliga/Gr_undtypsnitt (basefont).."
+
+#~ msgid "/Dialogs/General/Quick_list..."
+#~ msgstr "/Dialoger/Vanliga/Snabb_list..."
+
+#~ msgid "/Dialogs/General/_Meta..."
+#~ msgstr "/Dialoger/Vanliga/_Metadata..."
+
+#~ msgid "/Dialogs/General/Embe_d..."
+#~ msgstr "/Dialoger/Vanliga/Inbä_ddad..."
+
+#~ msgid "/Dialogs/General/Select _Color..."
+#~ msgstr "/Dialoger/Vanliga/Välj f_ärg..."
+
+#~ msgid "/Dialogs/General/Insert _Time..."
+#~ msgstr "/Dialoger/Vanliga/Infoga _tid..."
+
+#~ msgid "/Dialogs/General/Insert _Image..."
+#~ msgstr "/Dialoger/Vanliga/Infoga en _bild..."
+
+#~ msgid "/Dialogs/General/Insert T_humbnail..."
+#~ msgstr "/Dialoger/Vanliga/Infoga en _miniatyrbild..."
+
+#~ msgid "/Dialogs/_Table"
+#~ msgstr "/Dialoger/_Tabell"
+
+#~ msgid "/Dialogs/Table/tearoff1"
+#~ msgstr "/Dialoger/Tabell/tearoff1"
+
+#~ msgid "/Dialogs/Table/Table _Wizard..."
+#~ msgstr "/Dialoger/Tabell/Tabell_guide"
+
+#~ msgid "/Dialogs/Table/_Table..."
+#~ msgstr "/Dialoger/Tabell/_Tabell..."
+
+#~ msgid "/Dialogs/Table/Table _Row..."
+#~ msgstr "/Dialoger/Tabell/Tabell_rad..."
+
+#~ msgid "/Dialogs/Table/Table _Head..."
+#~ msgstr "/Dialoger/Tabell/Tabell_huvud..."
+
+#~ msgid "/Dialogs/Table/Table _Data..."
+#~ msgstr "/Dialoger/Tabell/Tabell_innehåll..."
+
+#~ msgid "/Dialogs/_CSS"
+#~ msgstr "/Dialoger/_CSS"
+
+#~ msgid "/Dialogs/CSS/tearoff1"
+#~ msgstr "Dialoger/CSS/tearoff1"
+
+#~ msgid "/Dialogs/CSS/_Create Style..."
+#~ msgstr "/Dialoger/CSS/_Skapa stilmall..."
+
+#~ msgid "/Dialogs/CSS/S_pan..."
+#~ msgstr "/Dialoger/CSS/S_pan..."
+
+#~ msgid "/Dialogs/CSS/_Div..."
+#~ msgstr "/Dialoger/CSS/_Div..."
+
+#~ msgid "/Dialogs/CSS/_Style..."
+#~ msgstr "/Dialoger/CSS/_Style..."
+
+#~ msgid "/Dialogs/CSS/_Link to Stylesheet..."
+#~ msgstr "/Dialoger/CSS/_Länk till stilmall..."
+
+#~ msgid "/Dialogs/_Frame"
+#~ msgstr "/Dialoger/_Ram"
+
+#~ msgid "/Dialogs/Frame/tearoff1"
+#~ msgstr "/Dialoger/Ram/tearoff1"
+
+#~ msgid "/Dialogs/Frame/Frame _Wizard..."
+#~ msgstr "/Dialoger/Ram/Ram_guide..."
+
+#~ msgid "/Dialogs/Frame/Frame_set..."
+#~ msgstr "/Dialoger/Ram/Ram_uppsättning..."
+
+#~ msgid "/Dialogs/Frame/_Frame..."
+#~ msgstr "/Dialoger/Ram/_Ram..."
+
+#~ msgid "/Dialogs/F_orm"
+#~ msgstr "/Dialoger/F_ormulär"
+
+#~ msgid "/Dialogs/Form/tearoff1"
+#~ msgstr "/Dialoger/Formulär/tearoff1"
+
+#~ msgid "/Dialogs/Form/F_orm..."
+#~ msgstr "/Dialoger/Formulär/F_ormulär..."
+
+#~ msgid "/Dialogs/Form/_Input..."
+#~ msgstr "/Dialoger/Formulär/_Input..."
+
+#~ msgid "/Dialogs/Form/Input Buttons..."
+#~ msgstr "/Dialoger/Formulär/_Knapp..."
+
+#~ msgid "/Dialogs/Form/Input Text..."
+#~ msgstr "/Dialoger/Formulär/_Textfält..."
+
+#~ msgid "/Dialogs/Form/Text_area..."
+#~ msgstr "/Dialoger/Formulär/Flerr_adigt textfält..."
+
+#~ msgid "/Dialogs/Form/_Select..."
+#~ msgstr "/Dialoger/Formulär/_Select..."
+
+#~ msgid "/Dialogs/Form/O_ption..."
+#~ msgstr "/Dialoger/Formulär/_Alternativ..."
+
+#~ msgid "/Dialogs/Form/Option _Group..."
+#~ msgstr "/Dialoger/Formulär/Alternativ_grupp..."
+
+#~ msgid "/Dialogs/Form/_Button..."
+#~ msgstr "/Dialoger/Formulär/_Knapp..."
+
+#~ msgid "/Dialogs/sep1"
+#~ msgstr "/Dialoger/sep1"
+
+#~ msgid "/Dialogs/_Edit tag under cursor..."
+#~ msgstr "/Dialoger/_Redigera tagg vid markör..."
+
+#, fuzzy
+#~ msgid "Could not view file in browser."
+#~ msgstr "Kunde inte hitta filen \"%s\"."
+
+#, fuzzy
+#~ msgid "File has not been saved\n"
+#~ msgstr "Filen har inte blivit sparad."
+
+#~ msgid "/External/Browsers"
+#~ msgstr "/External/Webläsare"
+
+#~ msgid ""
+#~ "%s for current filename (any command)\n"
+#~ "%i for input and %f for output filename (filters)"
+#~ msgstr ""
+#~ "%s för aktuellt filnamn (valfritt kommando)\n"
+#~ "%i för indata och %f för utdatafilnamn (filter)"
+
+#~ msgid "Bookmark options"
+#~ msgstr "Bokmärkealternativ"
+
+#~ msgid "full path"
+#~ msgstr "hel sökväg"
+
+#~ msgid "path from basedir"
+#~ msgstr "sökväg från startkatalog"
+
+#~ msgid "Bookmarks filename display"
+#~ msgstr "Bokmärkens filnamnsvisning"
+
+#~ msgid "Allow multi instances of a file"
+#~ msgstr "Tillåt flera instanser av en fil"
+
+#~ msgid "External browsers in submenu"
+#~ msgstr "Externa webläsare i undermeny"
+
+#~ msgid "External commands in submenu"
+#~ msgstr "Externa kommandon i undermeny"
+
+#~ msgid "External outputbox in submenu"
+#~ msgstr "Externa utskriftsfönster i undermeny"
+
+#~ msgid "Browsers"
+#~ msgstr "Webläsare"
+
+#~ msgid "Utilities and filters"
+#~ msgstr "Verktyg och filter"
+
+#~ msgid "Outputbox"
+#~ msgstr "Utdatabox"
+
+#, fuzzy
+#~ msgid "Ty_pe:"
+#~ msgstr "_Typ:"
+
+#, fuzzy
+#~ msgid "Hre_f:"
+#~ msgstr "_Länk:"
+
+#, fuzzy
+#~ msgid "_Media:"
+#~ msgstr "Media:"
+
+#, fuzzy
+#~ msgid "Titl_e:"
+#~ msgstr "_Titel:"
+
+#, fuzzy
+#~ msgid "<b>Style Area</b>"
+#~ msgstr "<b>Vanlig</b>"
+
+#, fuzzy
+#~ msgid "Cre_ate empty style area"
+#~ msgstr "Skapa tomt projekt"
+
+#, fuzzy
+#~ msgid "<b>Attributes</b>"
+#~ msgstr "Attribut"
+
+#, fuzzy
+#~ msgid "_Src:"
+#~ msgstr "_Källkod:"
+
+#, fuzzy
+#~ msgid "Create _empty script area"
+#~ msgstr "Skapa tomt projekt"
+
+#~ msgid "Quick Start"
+#~ msgstr "Snabbstart"
+
+#, fuzzy
+#~ msgid "_DTD:"
+#~ msgstr "Använd _DTD:"
+
+#~ msgid "_Title:"
+#~ msgstr "_Titel:"
+
+#, fuzzy
+#~ msgid "_Head:"
+#~ msgstr "_Länk:"
+
+#~ msgid "Galeon"
+#~ msgstr "Galeon"
+
+#~ msgid "Mozilla"
+#~ msgstr "Mozilla"
+
+#~ msgid "Opera"
+#~ msgstr "Opera"
+
+#~ msgid "Netscape"
+#~ msgstr "Netscape"
+
+#~ msgid "Gnome default"
+#~ msgstr "GNOME-standardalternativ"
+
+#~ msgid "Dos2Unix filter"
+#~ msgstr "Dos2Unix-filter"
+
+#~ msgid "Tidy cleanup filter"
+#~ msgstr "Upprensningsfiltret tidy"
+
+#~ msgid "Table Wizard"
+#~ msgstr "Tabellguide"
+
+#~ msgid "Number of _rows:"
+#~ msgstr "Antal _rader:"
+
+#~ msgid "Number of colu_mns:"
+#~ msgstr "Antal kolu_mner:"
+
+#~ msgid "Table rows on one _line:"
+#~ msgstr "Tabel_lrader på en rad:"
+
+#~ msgid "_Indent table code:"
+#~ msgstr "_Indentera tabellkod:"
+
+#~ msgid "Frame Wizard"
+#~ msgstr "Ramguide"
+
+#~ msgid "Use _DTD:"
+#~ msgstr "Använd _DTD:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Orientering:"
+
+#~ msgid "_Horizontal"
+#~ msgstr "_Horisontell"
+
+#~ msgid "_Vertical"
+#~ msgstr "_Vertikal"
+
+#~ msgid "Number of _Frames:"
+#~ msgstr "Antal _ramar:"
+
+#~ msgid "Frame's"
+#~ msgstr "Ramar"
+
+#~ msgid "Name:"
+#~ msgstr "Namn:"
+
+#~ msgid "Source:"
+#~ msgstr "Källkod:"
+
+#~ msgid "Size:"
+#~ msgstr "Storlek:"
+
+#~ msgid "This bookmark is set in a file that no longer exists."
+#~ msgstr "Det här bokmärket är satt i en fil som inte längre finns."
+
+#~ msgid "Are you sure?"
+#~ msgstr "Är du säker?"
+
+#~ msgid "Could not read file:\n"
+#~ msgstr "Kunde inte läsa filen:\n"
+
+#~ msgid "Opening file "
+#~ msgstr "Öppnar fil "
+
+#~ msgid "Saving file"
+#~ msgstr "Sparar filen"
+
+#~ msgid "Save as..."
+#~ msgstr "Spara som..."
+
+#~ msgid ""
+#~ "File: %s\n"
+#~ "\n"
+#~ "New modification time: %s\n"
+#~ "Old modification time: %s"
+#~ msgstr ""
+#~ "Fil: %s\n"
+#~ "\n"
+#~ "Ny modifieringstid: %s\n"
+#~ "Gammal modifieringstid: %s"
+
+#~ msgid "File has been modified by another process."
+#~ msgstr "Filen har ändrats av en annan process."
+
+#~ msgid "Saving %s"
+#~ msgstr "Sparar %s"
+
+#~ msgid ""
+#~ "Could not backup file:\n"
+#~ "\""
+#~ msgstr ""
+#~ "Kunde inte säkerhetskopiera filen:\n"
+#~ "\""
+
+#~ msgid "File save error"
+#~ msgstr "Fel vid spara fil"
+
+#~ msgid ""
+#~ "These files could not opened:\n"
+#~ "\n"
+#~ msgstr ""
+#~ "De här filerna kunde inte öppnas:\n"
+#~ "\n"
+
+#~ msgid "Unable to open file(s)\n"
+#~ msgstr "Kan inte öppna fil(erna)\n"
+
+#~ msgid "searching files..."
+#~ msgstr "söker filer..."
+
+#~ msgid "grep {contains} `find {basedir} -name '{file type}'`"
+#~ msgstr "grep {innehåller} `find {startkatalog} -name '{filtyp}'`"
+
+#~ msgid "_File Type:"
+#~ msgstr "_Filtyp:"
+
+#~ msgid "Loading %d file(s)..."
+#~ msgstr "Läser in %d fil(er)..."
+
+#~ msgid "No matching files found"
+#~ msgstr "Inga matchande filer funna"
+
+#~ msgid "_Doctype:"
+#~ msgstr "_Dokumenttyp:"
+
+#~ msgid "Header tags:"
+#~ msgstr "Rubriktaggar:"
+
+#~ msgid "Loading file(s)..."
+#~ msgstr "Läser in fil(er)..."
+
+#~ msgid "The filename was:\n"
+#~ msgstr "Filnamnet var:\n"
+
+#~ msgid "Could not view file in browser, the file does not yet have a name\n"
+#~ msgstr "Kunde inte visa filen i en webbläsare då den saknar namn\n"
+
+#~ msgid "These files were not opened:\n"
+#~ msgstr "De här filerna var inte öppnade\n"
+
+#~ msgid "Show main toolbar by default"
+#~ msgstr "Visa huvudverktygsrad som standard"
+
+#~ msgid "Show custom menu by default"
+#~ msgstr "Visa specialmenyn som standard"
+
+#~ msgid "Show HTML toolbar by default"
+#~ msgstr "Visa HTML-verktygsraden som standard"
+
+#~ msgid "Do you want to save the project?"
+#~ msgstr "Vill du spara projektet?"
+
+#~ msgid "Save document as"
+#~ msgstr "Spara dokumentet som"
+
+#~ msgid "Save changes to this untitled file before closing?"
+#~ msgstr ""
+#~ "Vill du spara ändringarna för denna namnlösa filen innan den stängs?"
+
+#~ msgid "Search..."
+#~ msgstr "Sök..."
+
+#~ msgid "Search and Replace..."
+#~ msgstr "Sök och ersätt..."
+
+#~ msgid "Do_n't Save"
+#~ msgstr "Spara i_nte"
+
+#~ msgid "default"
+#~ msgstr "standard"
+
+#~ msgid "temp"
+#~ msgstr "temp"
+
+#, fuzzy
+#~ msgid "/View/View Sidebar"
+#~ msgstr "/Visa/Visa huvudverktygsraden"
+
+#~ msgid "/Edit/Undo"
+#~ msgstr "/Redigera/Ångra"
+
+#~ msgid "/Edit/Redo"
+#~ msgstr "/Redigera/Gör om"
+
+#~ msgid "/Document/Wrap"
+#~ msgstr "/Dokument/Radbrytning"
+
+#~ msgid "/Document/Line Numbers"
+#~ msgstr "/Dokument/Radnummer"
+
+#~ msgid "/Document/Auto Close HTML tags"
+#~ msgstr "/Dokument/Stäng HTML-taggar automatiskt"
+
+#~ msgid "/View/View HTML Toolbar"
+#~ msgstr "/Visa/Visa HTML-verktygsraden"
+
+#~ msgid "/View/View Main Toolbar"
+#~ msgstr "/Visa/Visa huvudverktygsraden"
+
+#~ msgid "/View/View Custom Menu"
+#~ msgstr "/Visa/Visa specialmenyn"
+
+#~ msgid "Sort by line number"
+#~ msgstr "Sortera efter radnummer"
+
+#~ msgid "/Project/Save"
+#~ msgstr "/Projekt/Spara"
+
+#~ msgid "/Project/Save as..."
+#~ msgstr "/Projekt/Spara som..."
+
+#~ msgid "/Project/Save & close"
+#~ msgstr "/Projekt/Spara & stäng"
+
+#~ msgid "/Project/Edit Project Options..."
+#~ msgstr "/Projekt/Redigera projektinställningar..."
+
+#~ msgid "/View/View Left Panel"
+#~ msgstr "/Visa/Visa Vänstra Panelen"
+
+#~ msgid "/View/View _Left Panel"
+#~ msgstr "/Visa/Visa vänstra pane_len"
+
+#~ msgid "Initial left panel width"
+#~ msgstr "Initial bredd på vänstra panelen"
+
+#~ msgid "/File/Open recen_t"
+#~ msgstr "/Arkiv/Öppna senas_te"
+
+#~ msgid "/Project/Open r_ecent"
+#~ msgstr "/Projekt/Öppna s_enaste"
+
+#~ msgid "Your changes will be lost if you don't save them."
+#~ msgstr "Dina ändringar kommer gå förlorade om du inte sparar dom."
+
+#~ msgid "Filetype"
+#~ msgstr "Filtyp"
+
+#~ msgid "Filefilter"
+#~ msgstr "Filfilter"
+
+#~ msgid "Filetypes (colon separated)"
+#~ msgstr "Filtyper (kolonseparerade)"
+
+#~ msgid "Browser"
+#~ msgstr "Webbläsare"
+
+#~ msgid "%s = current filename"
+#~ msgstr "%s = aktuellt filnamn"
+
+#~ msgid "File subpattern #"
+#~ msgstr "Fil-extramönster antal"
+
+#~ msgid "Line subpattern #"
+#~ msgstr "Rad-extramönster antal"
+
+#~ msgid "Output subpattern #"
+#~ msgstr "Utdata-extramönster antal"

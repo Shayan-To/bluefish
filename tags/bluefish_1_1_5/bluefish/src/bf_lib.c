@@ -1,0 +1,1649 @@
+/* Bluefish HTML Editor
+ * bf_lib.c - non-GUI general functions
+ *
+ * Copyright (C) 2000-2006 Olivier Sessink
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+/* #define DEBUG */
+
+#include "config.h"
+
+/* this is needed for Solaris to comply with the latest POSIX standard 
+ * regarding the ctime_r() function
+ */
+#ifdef PLATFORM_SOLARIS
+#define __EXTENSIONS__
+#define _POSIX_C_SOURCE 200312L
+#endif
+
+#include <gtk/gtk.h>
+#include <ctype.h>     /* toupper */
+#include <errno.h>     /* errno */
+#include <stdio.h>     /* fopen(), tempnam() */
+#include <string.h>    /* strrchr strncmp memmove strncat*/
+#include <sys/stat.h>  /* S_IFDIR */
+#include <time.h>      /* ctime_r() */
+#include <unistd.h>    /* chdir() */
+
+#include "bluefish.h"  /* for DEBUG_MSG and stuff like that */
+#include "bf_lib.h"    /* myself */
+
+#ifdef REFP_DEBUG
+void refcpointer_ref(Trefcpointer *rp) {
+	rp->count++;
+	g_print("refcpointer_ref, %p refcount=%d\n",rp, rp->count);
+}
+#endif
+Trefcpointer *refcpointer_new(gpointer data) {
+	Trefcpointer *rp = g_new(Trefcpointer,1);
+	rp->data = data;
+	rp->count = 1;
+#ifdef REFP_DEBUG
+	g_print("refcpointer_new, created %p with refcount 1\n",rp);
+#endif
+	return rp;
+}
+
+void refcpointer_unref(Trefcpointer *rp) {
+	rp->count--;
+#ifdef REFP_DEBUG
+	g_print("refcpointer_unref, %p refcount=%d %s\n",rp, rp->count, (rp->count ==0 ? "freeing data" : ""));
+#endif
+	if (rp->count <= 0) {
+		g_free(rp->data);
+		g_free(rp);
+	}
+}
+
+GnomeVFSURI *add_suffix_to_uri(GnomeVFSURI *uri, const char *suffix) {
+	if (!suffix) {
+		gnome_vfs_uri_ref(uri);
+		return uri;
+	} else {
+		gchar *tmp, *tmp2;
+		GnomeVFSURI *retval;
+		tmp = gnome_vfs_uri_to_string(uri,0);
+		tmp2 = g_strconcat(tmp, suffix, NULL);
+		retval = gnome_vfs_uri_new(tmp2);
+		g_free(tmp);
+		g_free(tmp2);
+		return retval;
+	}
+}
+
+GList *urilist_to_stringlist(GList *urilist) {
+	GList *retlist=NULL, *tmplist = g_list_last(urilist);
+	while (tmplist) {/* previously, passwords were hidden with GNOME_VFS_URI_HIDE_PASSWORD */
+		retlist = g_list_prepend(retlist, gnome_vfs_uri_to_string((GnomeVFSURI *)tmplist->data,0));
+		tmplist = g_list_previous(tmplist);
+	}
+	return retlist;
+}
+
+void free_urilist(GList *urilist) {
+	GList *tmplist = g_list_first(urilist);
+	while (tmplist) {
+		gnome_vfs_uri_unref((GnomeVFSURI *)tmplist->data);
+		tmplist = g_list_next(tmplist);
+	}
+	g_list_free(urilist);
+}
+
+gchar *full_path_utf8_from_uri(GnomeVFSURI *uri) {
+	gchar *curi;
+	
+	curi = gnome_vfs_uri_to_string(uri, GNOME_VFS_URI_HIDE_PASSWORD);
+	if (gnome_vfs_uri_is_local(uri)) {
+		gchar *utf8uri;
+		/* for local uri's, this function  will use the encoding of the filesystem to
+		unescape the uri correctly to UTF-8 */
+		utf8uri = gnome_vfs_format_uri_for_display(curi);
+		g_free(curi);
+		curi = utf8uri;
+	}
+	return curi;
+	/* 
+	gnome_vfs_format_uri_for_display guarantees to return UTF-8, it will retrieve the 
+		encoding of the LOCAL filesystem, and use that to create the utf8 encoded string, and 
+		if it fails	to convert a local filename to utf-8 it will return the uri form
+		
+	gnome_vfs_unescape_string_for_display does return some string, but 
+		it seems (after some testing) to stop after it encounters any character 
+		it cannot convert to utf-8 (and thus shows only half of the filename) */
+}
+
+/* gchar *filename_utf8_from_full_path_utf8(const gchar *full_path_utf8) {
+	gchar *tmp, *tmp2;
+	tmp = g_path_get_basename(full_path_utf8);
+	/ * BUG: if the filename contains characters that are not in utf8, the 
+	'unescape_string' will unescape those characters, and thus produce non-utf8, which bluefish
+	cannot display... "Invalid UTF-8 string passed to pango_layout_set_text()"
+	hmm how to do this... perhaps test if the returned string is utf8 ??* /
+	
+	/ * What does gnome-vfs use for the conversion? The g_filename_* set of functions?
+	 * There is a short description in the glib documentation about file name encodings
+	 * in the character set conversion section. I don't recall seeing it previously.
+	 * /
+	tmp2 = gnome_vfs_unescape_string_for_display(tmp);
+	g_free(tmp);
+	return tmp2;
+}*/
+
+gchar *filename_utf8_from_uri(GnomeVFSURI *uri) {
+	gchar *filename;
+	/* for local files we can use the current disk encoding, and 
+	then strip the filename part of the uri. For remote files we
+	strip the filename, and try to unescape, if the resulting string is
+	utf8  we use it, else we'll use the escaped string */
+	
+	if (gnome_vfs_uri_is_local(uri)) {
+		gchar *tmp,*curi;
+		curi = gnome_vfs_uri_to_string(uri, GNOME_VFS_URI_HIDE_PASSWORD);
+		tmp = gnome_vfs_format_uri_for_display(curi);
+		filename = g_path_get_basename(tmp);
+		g_free(tmp);
+		g_free(curi);
+	} else {
+		gchar *tmp, *tmp2;
+		tmp = gnome_vfs_uri_extract_short_path_name(uri);
+		tmp2 = gnome_vfs_unescape_string(tmp, "");
+		if (g_utf8_validate(tmp2, -1, NULL)) {
+			filename =  tmp2;
+			g_free(tmp);
+		} else {
+			filename =  tmp;
+			g_free(tmp2);
+		}
+	}
+	return filename;
+}
+
+/**
+ * get_filename_on_disk_encoding:
+ *
+ * if gnome_vfs is defined, this function will also escape local paths
+ * to make sure we can open files with a # in their name
+ */
+gchar *get_filename_on_disk_encoding(const gchar *utf8filename) {
+	if (utf8filename) {
+		GError *gerror=NULL;
+		gsize b_written;
+		gchar *ondiskencoding = g_filename_from_utf8(utf8filename,-1, NULL,&b_written,&gerror);
+		if (gerror) {
+			g_print(_("Bluefish has trouble reading the filenames. Try to set the environment variable G_BROKEN_FILENAMES=1\n"));
+			ondiskencoding = g_strdup(utf8filename);
+		}
+		/* convert local path's */
+		if (ondiskencoding[0] == '/') {
+			gchar *tmp = gnome_vfs_escape_path_string(ondiskencoding);
+			g_free(ondiskencoding);
+			ondiskencoding = tmp;
+		}
+		return ondiskencoding;
+	}
+	return NULL;
+}
+
+gchar *get_utf8filename_from_on_disk_encoding(const gchar *encodedname) {
+	if (encodedname) {
+		GError *gerror=NULL;
+		gsize b_written;
+		gchar *ondiskencoding = g_filename_to_utf8(encodedname,-1, NULL,&b_written,&gerror);
+		if (gerror) {
+			g_print(_("Bluefish has trouble reading the filenames. Try to set the environment variable G_BROKEN_FILENAMES=1\n"));
+			ondiskencoding = g_strdup(encodedname);
+		}
+		DEBUG_MSG("get_utf8filename_from_on_disk_encoding, utf8filename=%s\n",ondiskencoding);
+		return ondiskencoding;
+	}
+	return NULL;
+}
+
+gboolean string_is_color(const gchar *color) {
+	GdkColor gcolor;
+	return gdk_color_parse(color, &gcolor);
+}
+
+static void fill_rwx(short unsigned int bits, char *chars) {
+	chars[0] = (bits & S_IRUSR) ? 'r' : '-';
+	chars[1] = (bits & S_IWUSR) ? 'w' : '-';
+	chars[2] = (bits & S_IXUSR) ? 'x' : '-';
+}
+static void fill_setid(short unsigned int bits, char *chars) {
+#ifdef S_ISUID
+	if (bits & S_ISUID) {
+		/* Set-uid, but not executable by owner.  */
+		if (chars[3] != 'x') chars[3] = 'S';
+		else chars[3] = 's';
+	}
+#endif
+#ifdef S_ISGID
+	if (bits & S_ISGID) {
+		/* Set-gid, but not executable by group.  */
+		if (chars[6] != 'x') chars[6] = 'S';
+		else chars[6] = 's';
+	}
+#endif
+#ifdef S_ISVTX
+	if (bits & S_ISVTX) {
+		/* Sticky, but not executable by others.  */
+		if (chars[9] != 'x') chars[9] = 'T';
+		else chars[9] = 't';
+	}
+#endif
+}
+gchar *filemode_to_string(mode_t statmode) {
+	gchar *str = g_malloc0(10);
+ 	/* following code "adapted" from GNU filemode.c program */
+	fill_rwx((statmode & 0700) << 0, &str[0]);
+	fill_rwx((statmode & 0070) << 3, &str[3]);
+	fill_rwx((statmode & 0007) << 6, &str[6]);
+	fill_setid(statmode, str);
+	return str;
+}
+
+
+/**
+ * return_root_with_protocol:
+ * @url: #const gchar* with the url 
+ *
+ * returns the root of the url, including its trailing slash
+ * this might be in the form
+ * - "protocol://server:port/"
+ * - "/"
+ * - NULL, if the url contains no url, nor does it start with a / character
+ *
+ * if there is no trailing slash, this function will return the root WITH a
+ * trailing slash appended!!
+ *
+ * Return value: #gchar* newly allocated, or NULL
+ * /
+gchar *return_root_with_protocol(const gchar *url) {
+	gchar *q;
+	if (!url) return NULL;
+	q = strchr(url,':');
+	if (q && *(q+1)=='/' && *(q+2)=='/' && *(q+3)!='\0') {
+		/ * we have a protocol * /
+		gchar *root = strchr(q+3, '/');
+		if (root) return g_strndup(url, root - url + 1);
+		/ * if there is no third slash character, we probably
+		have an url like http://someserver so we will append 
+		the slash ourselves * /
+		return g_strconcat(url, "/",NULL);
+	} else if (url[0] == '/') {
+		/ * no protocol, return / * /
+		return g_strdup("/");
+	}
+	/ * no root known * /
+	return NULL;
+}
+*/
+/**
+ * pointer_switch_addresses:
+ * a: #gpointer;
+ * b: #gpointer
+ *
+ * after this call, a will contain the address previously in a
+ * and b will contain the address previously in b
+ *
+ * Return value: void
+ */
+#ifdef __GNUC__
+__inline__ 
+#endif
+void pointer_switch_addresses(gpointer *a, gpointer *b) {
+	gpointer c;
+	DEBUG_MSG("pointer_switch_addresses, before, a=%p, b=%p\n",a,b);
+	c = *a;
+	*a = *b;
+	*b = c;
+	DEBUG_MSG("pointer_switch_addresses, after, a=%p, b=%p\n",a,b);
+}
+
+/**
+ * list_switch_order:
+ * @first: a #GList * item
+ * @second: a #GList * item
+ * 
+ * this function will switch place of these two list items
+ * actually not the items themselves, but the data they are 
+ * pointer to is switched
+ * 
+ * Return value: void
+ **/
+void list_switch_order(GList *first, GList *second) {
+	gpointer tmp;
+	tmp = first->data;
+	first->data = second->data;
+	second->data = tmp;
+}
+
+/* moves the data pointer data to position pos in the list */
+void list_move_entry(GList *list, gpointer data, gint pos) {
+	
+
+}
+
+/**
+ * file_copy:
+ * @source: a #gchar * containing the source filename
+ * @dest: a #gchar * containing the destination filename
+ * 
+ * copies the contents of the file source to dest
+ * this function is Gnome-VFS aware, so it will work on URI's
+ * 
+ * Return value: gboolean, TRUE if the function succeeds
+ ** /
+#define BYTES_TO_PROCESS 8196
+gboolean file_copy(gchar *source, gchar *dest) {
+	GnomeVFSHandle *read_handle, *write_handle;
+	GnomeVFSFileSize bytes_read, bytes_written;
+	guint buffer[BYTES_TO_PROCESS];
+	GnomeVFSResult result;
+	gchar *OnDiEn_source, *OnDiEn_dest;
+	OnDiEn_source = get_filename_on_disk_encoding(source);
+	OnDiEn_dest = get_filename_on_disk_encoding(dest);
+	
+	result = gnome_vfs_open(&read_handle, OnDiEn_source, GNOME_VFS_OPEN_READ);
+	g_free(OnDiEn_source);
+	if (result != GNOME_VFS_OK) return FALSE;
+	result = gnome_vfs_create(&write_handle, OnDiEn_dest, GNOME_VFS_OPEN_WRITE, FALSE, 0644);
+	g_free(OnDiEn_dest);
+	if (result != GNOME_VFS_OK) {
+		gnome_vfs_close(read_handle);
+		return FALSE;
+	}
+	result = gnome_vfs_read (read_handle, buffer, BYTES_TO_PROCESS, &bytes_read);
+	while (result == GNOME_VFS_OK) {
+		result = gnome_vfs_write (write_handle, buffer, bytes_read, &bytes_written);
+		if (result != GNOME_VFS_OK || bytes_written != bytes_read) {
+			DEBUG_MSG("file_copy, return FALSE, write result=%d, written=%ld, read=%ld\n",result,(long)bytes_written,(long)bytes_read);
+			gnome_vfs_close(write_handle);
+			gnome_vfs_close(read_handle);
+			return FALSE;
+		}
+		result = gnome_vfs_read(read_handle, buffer, BYTES_TO_PROCESS, &bytes_read);
+	}
+	gnome_vfs_close(write_handle);
+	gnome_vfs_close(read_handle);
+	return TRUE;
+}
+*/
+static gint length_common_prefix(gchar *first, gchar *second) {
+	gint i=0;
+	while (first[i] == second[i] && first[i] != '\0') {
+		i++;
+	}
+	return i;
+}
+/**
+ * find_common_prefix_in_stringlist:
+ * @stringlist: a #GList* with strings
+ * 
+ * tests every string in stringlist, and returns the length of the 
+ * common prefix all these strings have
+ *
+ * This is for example useful to find out if a list of filenames
+ * share the same base directory
+ * 
+ * Return value: #gint with number of common characters
+ **/
+gint find_common_prefixlen_in_stringlist(GList *stringlist) {
+	gchar *firststring;
+	gint commonlen;
+	GList *tmplist;
+	tmplist = g_list_first(stringlist);
+	firststring = (gchar *)tmplist->data;
+	commonlen = strlen(firststring);
+	tmplist = g_list_next(tmplist);
+	while(tmplist){
+		gint testlen;
+		gchar *secondstring = (gchar *)tmplist->data;
+		testlen = length_common_prefix(firststring, secondstring);
+		if (testlen < commonlen) {
+			commonlen = testlen;
+		}
+		tmplist = g_list_next(tmplist);
+	}
+	return commonlen;
+}
+/**
+ * append_string_to_file:
+ * @filename: a #gchar * containing the destination filename
+ * @string: a #gchar * containing the string to append
+ * 
+ * opens the file filename in append mode, and appends the string
+ * no newline or anything else is appended, just the string
+ *
+ * DOES NOT YET SUPPORT GNOME_VFS !!!
+ * 
+ * Return value: gboolean, TRUE if the function succeeds
+ ** /
+gboolean append_string_to_file(gchar *filename, gchar *string) {
+	FILE *out;
+	gchar *ondiskencoding = get_filename_on_disk_encoding(filename);
+	out = fopen(ondiskencoding, "a");
+	g_free(ondiskencoding);
+	if (!out) {
+		DEBUG_MSG("append_to_file, could not open file %s for append\n", filename);
+		return FALSE;
+	}
+	fputs(string, out);
+	fclose(out);
+	return TRUE;
+}*/
+/**
+ * countchars:
+ * @string: a gchar * to count the chars in
+ * @chars: a gchar * with the characters you are interested in
+ *
+ * this function will count every character in string that is also in chars
+ * 
+ * Return value: guint with the number of characters found
+ **/
+guint countchars(const gchar *string, const gchar *chars) {
+	guint count=0;
+	gchar *newstr = strpbrk(string, chars);
+	while(newstr) {
+		count++;
+		newstr = strpbrk(++newstr, chars);
+	}
+	DEBUG_MSG("countchars, returning %d\n",count);
+	return count;
+}
+static gint table_convert_char2int_backend(Tconvert_table *table, const gchar *my_char
+		, Ttcc2i_mode mode, int (*func)(const gchar *arg1, const gchar *arg2) ) {
+	Tconvert_table *entry;
+	entry = table;
+	while (entry->my_char) {
+		if (func(my_char,entry->my_char)==0) {
+			return entry->my_int;
+		}
+		entry++;
+	}
+	return -1;
+}
+static int strfirstchar(const gchar *mychar, const gchar *tablechar) {
+	return mychar[0] - tablechar[0];
+}
+static int strmycharlen(const gchar *mychar, const gchar *tablechar) {
+	return strncmp(mychar,tablechar,strlen(mychar));
+}
+static int strfull_match_gettext(const gchar *mychar, const gchar *tablechar) {
+	return strcmp(mychar,_(tablechar));
+}
+/**
+ * table_convert_char2int:
+ * @table: a #tconvert_table * with strings and integers
+ * @my_char: a #gchar * containing the string to convert
+ * @mode: #Ttcc2i_mode
+ * 
+ * this function can be used to translate a string from some set (in table)
+ * to an integer
+ * 
+ * Return value: gint, found in table, or -1 if not found
+ **/
+gint table_convert_char2int(Tconvert_table *table, const gchar *my_char, Ttcc2i_mode mode) {
+	switch (mode) {
+	case tcc2i_firstchar:
+		return table_convert_char2int_backend(table,my_char,mode,strfirstchar);
+	case tcc2i_mycharlen:
+		return table_convert_char2int_backend(table,my_char,mode,strmycharlen);
+	case tcc2i_full_match:
+		return table_convert_char2int_backend(table,my_char,mode,strcmp);
+	case tcc2i_full_match_gettext:
+		return table_convert_char2int_backend(table,my_char,mode,strfull_match_gettext);
+	default:
+		DEBUG_MSG("bug in call to table_convert_char2int()\n");
+		return -1;
+	}
+}
+/**
+ * table_convert_int2char:
+ * @table: a #tconvert_table * with strings and integers
+ * @my_int: a #gint containing the integer to convert
+ * 
+ * this function can be used to translate an integer from some set (in table)
+ * to a string
+ * WARNING: This function will return a pointer into table, it will 
+ * NOT allocate new memory
+ * 
+ * Return value: gchar * found in table, else NULL
+ **/
+gchar *table_convert_int2char(Tconvert_table *table, gint my_int) {
+	Tconvert_table *entry;
+	entry = table;
+	while (entry->my_char) {
+		if (my_int == entry->my_int) {
+			return entry->my_char;
+		}
+		entry++;
+	}
+	return NULL;
+}
+/**
+ * expand_string:
+ * @string: a formatstring #gchar * to convert
+ * @specialchar: a const char to use as 'delimited' or 'special character'
+ * @table: a #Tconvert_table * array to use for conversion
+ * 
+ * this function can convert a format string with %0, %1, or \n, \t 
+ * into the final string, where each %number or \char entry is replaced 
+ * with the string found in table
+ *
+ * so this function is the backend for unescape_string() and 
+ * for replace_string_printflike()
+ *
+ * table is an array with last entry {0, NULL}
+ * 
+ * Return value: a newly allocated gchar * with the resulting string
+ **/
+gchar *expand_string(const gchar *string, const char specialchar, Tconvert_table *table) {
+	gchar *p, *prev, *stringdup;
+	gchar *tmp, *dest = g_strdup("");
+
+	stringdup = g_strdup(string); /* we make a copy so we can set some \0 chars in the string */
+	prev = stringdup;
+	DEBUG_MSG("expand_string, string='%s'\n", string);
+	p = strchr(prev, specialchar);
+	while (p) {
+		gchar *converted;
+		tmp = dest;
+		*p = '\0'; /* set a \0 at this point, the pointer prev now contains everything up to the current % */
+		DEBUG_MSG("expand_string, prev='%s'\n", prev);
+		p++;
+		converted = table_convert_int2char(table, *p);
+		DEBUG_MSG("expand_string, converted='%s'\n", converted);
+		dest = g_strconcat(dest, prev, converted, NULL);
+		g_free(tmp);
+		prev = ++p;
+		p = strchr(p, specialchar);
+	}
+	tmp = dest;
+	dest = g_strconcat(dest, prev, NULL); /* append the end to the current string */
+	g_free(tmp);
+	
+	g_free(stringdup);
+	DEBUG_MSG("expand_string, dest='%s'\n", dest);
+	return dest;
+}
+gchar *replace_string_printflike(const gchar *string, Tconvert_table *table) {
+	return expand_string(string,'%',table);
+}
+
+static gint tablesize(Tconvert_table *table) {
+	Tconvert_table *tmpentry = table;
+	while (tmpentry->my_char) tmpentry++;
+	return (tmpentry - table);
+}
+/* for now this function can only unexpand strings with tables that contain only
+single character strings like "\n", "\t" etc. */
+gchar *unexpand_string(const gchar *original, const char specialchar, Tconvert_table *table) {
+	gchar *tmp, *tosearchfor, *retval, *prev, *dest, *orig;
+	Tconvert_table *tmpentry;
+	
+	orig = g_strdup(original);
+	DEBUG_MSG("original='%s', strlen()=%d\n",original,strlen(original));
+	tosearchfor = g_malloc(tablesize(table)+1);
+	DEBUG_MSG("tablesize(table)=%d, alloc'ed %d bytes for tosearchfor\n",tablesize(table), tablesize(table)+1);
+	tmp = tosearchfor;
+	tmpentry = table;
+	while(tmpentry->my_char != NULL) {
+		*tmp = tmpentry->my_char[0]; /* we fill the search string with the first character */
+		tmpentry++;
+		tmp++;
+	}
+	*tmp = '\0';
+	DEBUG_MSG("unexpand_string, tosearchfor='%s'\n",tosearchfor);
+	DEBUG_MSG("alloc'ing %d bytes\n", (countchars(original, tosearchfor) + strlen(original) + 1));
+	retval = g_malloc((countchars(original, tosearchfor) + strlen(original) + 1) * sizeof(gchar));
+	dest = retval;
+	prev = orig;
+	/* now we go trough the original till we hit specialchar */
+	tmp = strpbrk(prev, tosearchfor);
+	while (tmp) {
+		gint len = tmp - prev;
+		gint mychar = table_convert_char2int(table, tmp, tcc2i_firstchar);
+		DEBUG_MSG("unexpand_string, tmp='%s', prev='%s'\n",tmp, prev);
+		if (mychar == -1) mychar = *tmp;
+		DEBUG_MSG("unexpand_string, copy %d bytes and advancing dest\n",len);
+		memcpy(dest, prev, len);
+		dest += len;
+		*dest = specialchar;
+		dest++;
+		*dest = mychar;
+		dest++;
+		prev=tmp+1;
+		DEBUG_MSG("prev now is '%s'\n",prev);
+		tmp = strpbrk(prev, tosearchfor);
+	}
+	DEBUG_MSG("unexpand_string, copy the rest (%s) to dest\n",prev);
+	memcpy(dest,prev,strlen(prev)+1); /* this will also make sure there is a \0 at the end */
+	DEBUG_MSG("unexpand_string, retval='%s'\n",retval);
+	g_free(orig);
+	g_free(tosearchfor);
+	return retval;
+}
+/* if you change this table, please change escape_string() and unescape_string() and new_convert_table() in the same way */
+static Tconvert_table standardescapetable [] = {
+	{'n', "\n"},
+	{'t', "\t"},
+	{'\\', "\\"},
+	{'f', "\f"},
+	{'r', "\r"},
+	{'a', "\a"},
+	{'b', "\b"},
+	{'v', "\v"},
+	{'n', "\n"},
+	{':', ":"}, /* this double entry is there to make unescape_string and escape_string work efficient */
+	{0, NULL}
+};
+gchar *unescape_string(const gchar *original, gboolean escape_colon) {
+	gchar *string, *tmp=NULL;
+	DEBUG_MSG("unescape_string, started\n");
+	if (!escape_colon) {
+		tmp = standardescapetable[9].my_char;
+		standardescapetable[9].my_char = NULL;
+	}
+	string = expand_string(original,'\\',standardescapetable);
+	if (!escape_colon) {
+		standardescapetable[9].my_char = tmp;
+	}
+	return string;
+}
+gchar *escape_string(const gchar *original, gboolean escape_colon) {
+	gchar *string, *tmp=NULL;
+	DEBUG_MSG("escape_string, started\n");
+	if (!escape_colon) {
+		tmp = standardescapetable[9].my_char;
+		standardescapetable[9].my_char = NULL;
+	}
+	string = unexpand_string(original,'\\',standardescapetable);
+	if (!escape_colon) {
+		standardescapetable[9].my_char = tmp;
+	}
+	return string;
+}
+Tconvert_table *new_convert_table(gint size, gboolean fill_standardescape) {
+	gint realsize = (fill_standardescape) ? size + 10 : size;
+	Tconvert_table * tct = g_new(Tconvert_table, realsize+1);
+	DEBUG_MSG("new_convert_table, size=%d, realsize=%d,alloced=%d\n",size,realsize,realsize+1);
+	if (fill_standardescape) {
+		gint i;
+		for (i=size;i<realsize;i++) {
+			tct[i].my_int = standardescapetable[i-size].my_int;
+			tct[i].my_char = g_strdup(standardescapetable[i-size].my_char);
+		}
+		DEBUG_MSG("new_convert_table, setting tct[%d] (i) to NULL\n",i);
+		tct[i].my_char = NULL;
+	} else {
+		DEBUG_MSG("new_convert_table, setting tct[%d] (size) to NULL\n",size);
+		tct[size].my_char = NULL;
+	}
+	return tct;
+}
+void free_convert_table(Tconvert_table *tct) {
+	Tconvert_table *tmp = tct;
+	while (tmp->my_char) {
+		DEBUG_MSG("free_convert_table, my_char=%s\n",tmp->my_char);
+		g_free(tmp->my_char);
+		tmp++;
+	}
+	DEBUG_MSG("free_convert_table, free table %p\n",tct);
+	g_free(tct);
+}
+/**************************************************/
+/* byte offset to UTF8 character offset functions */
+/**************************************************/
+
+/*
+html files usually have enough cache at size 4
+large php files, a cache of 
+	10 resulted in 160% of the buffer to be parsed
+	12 resulted in 152% of the buffer to be parsed
+	14 resulted in 152% of the buffer to be parsed
+	16 resulted in 152% of the buffer to be parsed
+so we keep it at 12 for the moment
+*/
+#define UTF8_OFFSET_CACHE_SIZE 12
+/* #define UTF8_BYTECHARDEBUG */
+
+typedef struct {
+#ifdef DEVELOPMENT
+	gchar *last_buf;
+#endif
+	/* the two arrays must be grouped and in this order, because they are moved back 
+	one position in ONE memmove() call */
+	guint  last_byteoffset[UTF8_OFFSET_CACHE_SIZE];
+	guint  last_charoffset[UTF8_OFFSET_CACHE_SIZE];
+#ifdef UTF8_BYTECHARDEBUG
+	guint numcalls_since_reset;
+	unsigned long long int numbytes_parsed;
+	guint numcalls_cached_since_reset;
+	unsigned long long int numbytes_cached_parsed;
+#endif
+} Tutf8_offset_cache;
+
+static Tutf8_offset_cache utf8_offset_cache;
+
+/**
+ * utf8_offset_cache_reset:
+ * 
+ * this function will reset the utf8 offset cache used by 
+ * utf8_byteoffset_to_charsoffset_cached() to use a new buffer
+ *
+ * Return value: void
+ **/
+#ifdef __GNUC__
+__inline__ 
+#endif
+void utf8_offset_cache_reset() {
+#ifdef UTF8_BYTECHARDEBUG
+	g_print("UTF8_BYTECHARDEBUG: called %d times for total %llu bytes\n",utf8_offset_cache.numcalls_since_reset,utf8_offset_cache.numbytes_parsed);
+	g_print("UTF8_BYTECHARDEBUG: cache HIT %d times, reduced to %llu bytes, cache size %d\n",utf8_offset_cache.numcalls_cached_since_reset,utf8_offset_cache.numbytes_cached_parsed,UTF8_OFFSET_CACHE_SIZE);
+#endif
+	memset(&utf8_offset_cache, 0, sizeof(Tutf8_offset_cache));
+}
+/**
+ * utf8_byteoffset_to_charsoffset_cached:
+ * @string: the gchar * you want to count
+ * @byteoffset: glong with the byteoffset you want the charoffset for
+ * 
+ * this function calculates the UTF-8 character offset in a string for
+ * a given byte offset
+ * It uses caching to speedup multiple calls for the same buffer, the cache
+ * is emptied if you change to another buffer. If you use the same buffer but 
+ * change it inbetween calls, you have to reset it yourself using
+ * the utf8_offset_cache_reset() function
+ *
+ **** the result is undefined if the provided byteoffset is in the middle of a UTF8 character ***
+ * 
+ * Return value: guint with character offset
+ **/
+guint utf8_byteoffset_to_charsoffset_cached(gchar *string, glong byteoffset) {
+	guint retval;
+	gint i = UTF8_OFFSET_CACHE_SIZE-1;
+	if (byteoffset ==0) return 0;
+#ifdef DEVELOPMENT
+	if (utf8_offset_cache.last_buf != NULL && string != utf8_offset_cache.last_buf) {
+		/*utf8_offset_cache_reset();
+		utf8_offset_cache.last_buf = string;*/
+		g_print("bug found in a call to utf8_byteoffset_to_charsoffset_cached, the cache was not reset\n");
+		exit(156);
+	}
+#endif
+#ifdef DEBUG
+	DEBUG_MSG("utf8_byteoffset_to_charsoffset_cached, string %p has strlen %d, looking for byteoffset %ld, starting in cache at i=%d\n", string, strlen(string),byteoffset,i);
+#endif
+
+	while (i > 0 && utf8_offset_cache.last_byteoffset[i] > byteoffset) {
+		i--;
+	}
+
+	if (i > 0) {
+		if (utf8_offset_cache.last_byteoffset[i] == byteoffset) {
+#ifdef DEBUG
+			DEBUG_MSG("byteoffset %ld is in the cache at i=%d, returning %d\n",byteoffset,i,utf8_offset_cache.last_charoffset[i]);
+#endif
+			return utf8_offset_cache.last_charoffset[i];
+		}
+		/* if the byteoffset is in the middle of a multibyte character, this line will fail (but
+		we are not supposed to get called in the middle of a character)*/
+		retval = g_utf8_pointer_to_offset(string+utf8_offset_cache.last_byteoffset[i], string+byteoffset)+utf8_offset_cache.last_charoffset[i];
+#ifdef UTF8_BYTECHARDEBUG
+		utf8_offset_cache.numbytes_parsed += (byteoffset - utf8_offset_cache.last_byteoffset[i]);
+		utf8_offset_cache.numbytes_cached_parsed += (byteoffset - utf8_offset_cache.last_byteoffset[i]);
+		utf8_offset_cache.numcalls_cached_since_reset++;
+#endif
+	} else {
+		retval = g_utf8_pointer_to_offset(string, string+byteoffset);
+#ifdef UTF8_BYTECHARDEBUG
+		utf8_offset_cache.numbytes_parsed += byteoffset;
+#endif
+	}
+	DEBUG_MSG(" and byteoffset %ld has charoffset %d\n",byteoffset,retval);
+	if (i == (UTF8_OFFSET_CACHE_SIZE-1)) {
+		/* add this new calculation to the cache */
+		/* this is a nasty trick to move all guint entries one back in the array, so we can add the new one */
+		memmove(&utf8_offset_cache.last_byteoffset[0], &utf8_offset_cache.last_byteoffset[1], (UTF8_OFFSET_CACHE_SIZE+UTF8_OFFSET_CACHE_SIZE-1)*sizeof(guint));
+
+		utf8_offset_cache.last_byteoffset[UTF8_OFFSET_CACHE_SIZE-1] = byteoffset;
+		utf8_offset_cache.last_charoffset[UTF8_OFFSET_CACHE_SIZE-1] = retval;
+	}
+#ifdef UTF8_BYTECHARDEBUG
+	utf8_offset_cache.numcalls_since_reset++;
+#endif
+	return retval;
+}
+
+/**
+ * escapestring:
+ * @original: a gchar * to escape
+ * @delimiter: a gchar that needs escaping, use '\0' if you don't need one
+ *
+ * this function will backslash escape \n, \t, and \ characters, and if 
+ * there is a delimiter it will also be escaped
+ * 
+ * Return value: a newly allocated gchar * that is escaped
+ **/
+/*gchar *old_escapestring(gchar *original, gchar delimiter)
+{
+	gchar *tmp, *newstring, *escapedchars;
+	guint newsize, pos=0;
+
+	* count the size of the new string *
+	escapedchars = g_strdup_printf("\n\t\\%c", delimiter);
+	DEBUG_MSG("escapestring, escapedchars=%s, extra length=%d\n", escapedchars, countchars(original, escapedchars));
+	newsize = countchars(original, escapedchars) + strlen(original) + 1;
+	newstring = g_malloc0(newsize * sizeof(gchar));
+	g_free(escapedchars);
+	DEBUG_MSG("escapestring, original=%s, newsize=%d\n", original, newsize);
+
+	tmp = original;
+	while (*tmp != '\0') {
+		switch (*tmp) {
+		case '\\':
+			strcat(newstring, "\\\\");
+			pos +=2;
+		break;
+		case '\n':
+			strcat(newstring, "\\n");
+			pos +=2;
+		break;
+		case '\t':
+			strcat(newstring, "\\t");
+			pos +=2;
+		break;
+		default:
+			if (*tmp == delimiter) {
+				newstring[pos] = '\\';
+				newstring[pos+1] = delimiter;
+				pos +=2;			
+			} else {
+				newstring[pos] = *tmp;
+				pos++;
+			}
+		break;
+		}
+		newstring[pos] = '\0';
+		tmp++;
+	}
+	DEBUG_MSG("escapestring, newstring = %s\n", newstring);
+	return newstring;
+}*/
+
+/**
+ * unescapestring:
+ * @original: a gchar * to unescape
+ *
+ * this function will backslash unescape \n, \t, and \\ sequences to 
+ * their characters, and if there is any other escaped character 
+ * it will be replaced without the backslash
+ * 
+ * Return value: a newly allocated gchar * that is unescaped
+ **/
+/*gchar *old_unescapestring(gchar *original)
+{
+	gchar *tmp1, *tmp2, *newstring;
+	guint newsize;
+	gint escaped;
+
+	newsize = strlen(original) + 1;
+	newstring = g_malloc0(newsize * sizeof(gchar));
+	DEBUG_MSG("unescapestring, original=%s, newsize = %d\n", original, newsize);
+
+	tmp1 = original;
+	tmp2 = newstring;
+	escaped = 0;
+	while (*tmp1 != '\0') {
+		if (escaped) {
+			switch (*tmp1) {
+			case '\\':
+				*tmp2++ = '\\';
+			break;
+			case 'n':
+				*tmp2++ = '\n';
+			break;
+			case 't':
+				*tmp2++ = '\t';
+			break;
+			default:
+				*tmp2++ = *tmp1;
+			break;
+			}
+
+			escaped = 0;
+		} else {
+			if (*tmp1 == '\\')
+				escaped = 1;
+			else
+				*tmp2++ = *tmp1;
+		}
+		tmp1++;
+	}
+	DEBUG_MSG("unescapestring, newstring = %s\n", newstring);
+	return newstring;
+}*/
+
+/**
+ * strip_any_whitespace:
+ * @string: a gchar * to strip
+ *
+ * strips any double chars defined by isspace() from the string, 
+ * only single spaces are returned
+ * the same string is returned, no memory is allocated in this function
+ * 
+ * Return value: the same gchar * as passed to the function
+ **/
+gchar *strip_any_whitespace(gchar *string) {
+	gint count=0, len;
+
+#ifdef DEVELOPMENT
+	g_assert(string);
+#endif
+
+	DEBUG_MSG("strip_any_whitespace, starting string='%s'\n", string);
+	len = strlen(string);
+	while(string[count]) {
+		if (isspace((char)string[count])) {
+			string[count] = ' ';
+			if (string[count+1] && isspace((char)string[count+1])) {
+				gint fcount = count;
+				while (string[fcount] && isspace((char)string[fcount])) {
+					fcount++;
+				}
+				DEBUG_MSG("strip_any_whitespace, found %d spaces\n", fcount - count);
+				memmove(&string[count+1], &string[fcount], len - (count+1));
+				string[len- (fcount-count)+1] = '\0';
+				DEBUG_MSG("strip_any_whitespace, after memmove, string='%s'\n", string);
+			}
+		}
+		count++;
+	}
+	g_strstrip(string);
+	DEBUG_MSG("strip_any_whitespace, returning string='%s'\n", string);
+	return string;
+}
+/**
+ * trunc_on_char:
+ * @string: a #gchar * to truncate
+ * @which_char: a #gchar with the char to truncate on
+ *
+ * Returns a pointer to the same string which is truncated at the first
+ * occurence of which_char
+ * 
+ * Return value: the same gchar * as passed to the function
+ **/
+gchar *trunc_on_char(gchar * string, gchar which_char)
+{
+	gchar *tmpchar = string;
+	while(*tmpchar) {
+		if (*tmpchar == which_char) {
+			*tmpchar = '\0';
+			return string;
+		}
+		tmpchar++;
+	}
+	return string;
+}
+/* gchar *strip_common_path(char *image_fn, char *html_fn)
+ * returns a newly allocated string containing the the to_filename
+ * but all the common path with from_filename is removed 
+ *
+ * IS THIS IN USE ?? OBVIOUSLY NOT BECAUSE I CAN REMOVE IT */ 
+/*gchar *strip_common_path(char *to_filename, char *from_filename)
+{
+	gchar *tempstr;
+	int count, count2, dir_length;
+
+	count = 0;
+	tempstr = strrchr(to_filename, DIRCHR);
+	dir_length = strlen(to_filename) - strlen(tempstr);
+	dir_length += 1;
+	DEBUG_MSG("strip_common_path, dir_lenght=%d\n", dir_length);
+	while ((strncmp(to_filename, from_filename, count + 1)) == 0) {
+		count++;
+		if (count > dir_length) {
+			count = dir_length;
+			break;
+		}
+	}
+	while (to_filename[count - 1] != DIRCHR)
+		count--;
+	DEBUG_MSG("strip_common_path, equal count = %d\n", count);
+	count2 = strlen(to_filename);
+	tempstr = g_malloc(count2 - count + 2);
+	memcpy(tempstr, &to_filename[count], count2 - count + 2);
+	DEBUG_MSG("strip_common_path, tempstr= %s, should be %d long\n", tempstr, count2 - count);
+	return tempstr;
+} */
+
+/**
+ * most_efficient_filename:
+ * @filename: a gchar * with a possibly inefficient filename like /hello/../tmp/../myfile
+ *
+ * tries to eliminate any dir/../ combinations in filename
+ * this function could do evern better, it should also remove /./ entries
+ * 
+ * Return value: the same gchar * as passed to the function
+ **/
+gchar *most_efficient_filename(gchar *filename) {
+	gint i,j, len;
+
+	DEBUG_MSG("most_efficient_filename, 1 filename=%s\n", filename);
+	len = strlen(filename);
+	for (i=0; i < len-4; i++) {
+/*		DEBUG_MSG("most_efficient_filename, i=%d\n", i); */
+		if (strncmp(&filename[i], "/../", 4) == 0) {
+			for (j=1; j < i; j++) {
+				if ((filename[i - j] == DIRCHR) || (i==j)) {
+					DEBUG_MSG("most_efficient_filename, &filename[%d-%d]=%s, &filename[%d+3]=%s, %d-%d-4=%d\n", i,j,&filename[i-j],i, &filename[i+3], len, j, len-j-4);
+					memmove(&filename[i-j], &filename[i+3], len-i);
+					j=i;
+					i--;
+				}
+			}
+		}
+	}
+	DEBUG_MSG("most_efficient_filename, 3 filename=%s\n", filename);
+	return filename;
+}
+
+/**
+ * create_relative_link_to:
+ * @current_filepath: a #gchar * with the current filename
+ * @link_to_filepath: a #gchar * with a file to link to
+ *
+ * creates a newly allocated relative link from current_filepath 
+ * to link_to_filepath
+ *
+ * if current_filepath == NULL it returns the most efficient filepath 
+ * for link_to_filepath
+ *
+ * if link_to_filepath == NULL it will return NULL
+ *
+ * Return value: a newly allocated gchar * with the relative link
+ **/
+gchar *create_relative_link_to(gchar * current_filepath, gchar * link_to_filepath)
+{
+	gchar *returnstring = NULL;
+	gchar *eff_current_filepath, *eff_link_to_filepath;
+	gint common_lenght, maxcommonlen;
+	gint current_filename_length, link_to_filename_length, current_dirname_length, link_to_dirname_length;
+	gint count, deeper_dirs;
+
+	if (!current_filepath){
+		returnstring = most_efficient_filename(g_strdup(link_to_filepath));
+		return returnstring;
+	}
+	if (!link_to_filepath) {
+		return NULL;
+	}
+	eff_current_filepath = most_efficient_filename(g_strdup(current_filepath));
+	eff_link_to_filepath = most_efficient_filename(g_strdup(link_to_filepath));
+	DEBUG_MSG("eff_current: '%s'\n",eff_current_filepath);
+	DEBUG_MSG("eff_link_to: '%s'\n",eff_link_to_filepath);
+	/* get the size of the directory of the current_filename */
+	current_filename_length = strlen(strrchr(eff_current_filepath, DIRCHR))-1;
+	link_to_filename_length = strlen(strrchr(eff_link_to_filepath, DIRCHR))-1;
+	DEBUG_MSG("create_relative_link_to, filenames: current: %d, link_to:%d\n", current_filename_length,link_to_filename_length); 
+	current_dirname_length = strlen(eff_current_filepath) - current_filename_length;
+	link_to_dirname_length = strlen(eff_link_to_filepath) - link_to_filename_length;
+	DEBUG_MSG("create_relative_link_to, dir's: current: %d, link_to:%d\n", current_dirname_length, link_to_dirname_length); 
+
+	if (current_dirname_length < link_to_dirname_length) {
+		maxcommonlen = current_dirname_length;
+	} else {
+		maxcommonlen = link_to_dirname_length;
+	}
+	
+	/* first lets get the common basedir for both dir+file  by comparing the
+	   common path in the directories */
+	common_lenght = 0;
+	while ((strncmp(eff_current_filepath, eff_link_to_filepath, common_lenght + 1)) == 0) {
+		common_lenght++;
+		if (common_lenght >= maxcommonlen) {
+			common_lenght = maxcommonlen;
+			break;
+		}
+	}
+	DEBUG_MSG("create_relative_link_to, common_lenght=%d (not checked for directory)\n", common_lenght);
+	/* this is the common length, but we need the common directories */
+	if (eff_current_filepath[common_lenght] != DIRCHR) {
+		gchar *ltmp = &eff_current_filepath[common_lenght];
+		while ((*ltmp != DIRCHR) && (common_lenght > 0)) {
+			common_lenght--;
+			ltmp--;
+		}
+	}
+	DEBUG_MSG("create_relative_link_to, common_lenght=%d (checked for directory)\n", common_lenght);
+
+	/* now we need to count how much deeper (in directories) the current_filename
+	   is compared to the link_to_file, that is the amount of ../ we need to add */
+	deeper_dirs = 0;
+	for (count = common_lenght+1; count <= current_dirname_length; count++) {
+		if (eff_current_filepath[count] == DIRCHR) {
+			deeper_dirs++;
+			DEBUG_MSG("create_relative_link_to, on count=%d, deeper_dirs=%d\n", count, deeper_dirs);
+		}
+	}
+	DEBUG_MSG("create_relative_link_to, deeper_dirs=%d\n", deeper_dirs);
+
+	/* now we know everything we need to know we can create the relative link */
+	returnstring = g_malloc0((strlen(link_to_filepath) - common_lenght + 3 * deeper_dirs + 1) * sizeof(gchar *));
+	count = deeper_dirs;
+	while (count) {
+		strcat(returnstring, "../");
+		count--;
+	}
+	strcat(returnstring, &eff_link_to_filepath[common_lenght+1]);
+	DEBUG_MSG("create_relative_link_to, returnstring=%s\n", returnstring);
+	g_free(eff_current_filepath);
+	g_free(eff_link_to_filepath);
+	return returnstring;
+}
+
+#define STRIP_FILE_URI
+/**
+ * create_full_path:
+ * @filename: a gchar * with the (relative or not) filename
+ * @basedir: a gchar * with a basedir or NULL for current dir
+ *
+ * if filename is already absolute, it returns it
+ * else it will use basedir if available, else the current dir
+ * to add to the filename to form the full path
+ *
+ * for URL's it will simply return a strdup(), except for file:// URL's, 
+ * there the file:// bit is stripped and 
+ * IF YOU HAVE GNOME_VFS any %XX sequenves are converted
+ * so if you DON'T have gnome_vfs, you should not feed file:// uri's!!
+ *
+ * it does use most_efficient_filename() to remote unwanted dir/../ entries
+ *
+ * Return value: a newly allocated gchar * with the full path
+ **/
+/* 
+used:
+bluefish.c:95
+bluefish.c:120
+outputbox.c:163
+*/
+gchar *create_full_path(const gchar * filename, const gchar *basedir) {
+	gchar *absolute_filename;
+	gchar *tmpcdir;
+
+	if (!filename) return NULL;
+	filename = gnome_vfs_expand_initial_tilde(filename);
+	DEBUG_MSG("create_full_path, filename=%s, basedir=%s\n", filename, basedir);
+	if (strchr(filename, ':') != NULL) { /* it is an URI!! */
+		DEBUG_MSG("create_full_path, %s is an URI\n",filename);
+		if (strncmp(filename, "file://", 7)==0) {
+			return gnome_vfs_get_local_path_from_uri(filename);
+		}
+		return g_strdup(filename); /* cannot do this on remote paths */
+	}
+	if (g_path_is_absolute(filename)) {
+		absolute_filename = g_strdup(filename);
+	} else {
+		if (basedir) {
+			tmpcdir = ending_slash(basedir);
+		} else {
+			gchar *curdir = g_get_current_dir();
+			tmpcdir = ending_slash(curdir);
+			g_free(curdir);
+		}
+		absolute_filename = g_strconcat(tmpcdir, filename, NULL);
+		g_free(tmpcdir);
+	}
+	absolute_filename = most_efficient_filename(absolute_filename);
+	return absolute_filename;
+}
+
+/**
+ * strip_trailing_slash:
+ * @dirname: a gchar *pointing to a directory
+ *
+ * Return value: the same string, but 1 char shorter if there was a trailing slash
+ */
+gchar *strip_trailing_slash(gchar *input) {
+	if (input) {
+		gint len = strlen(input);
+		if (input[len-1] == '/') input[len-1] = '\0';
+	}
+	return input;
+}
+
+/**
+ * ending_slash:
+ * @dirname: a #const gchar * with a diretory name
+ *
+ * makes sure the last character of the newly allocated 
+ * string it returns is a '/'
+ *
+ * Return value: a newly allocated gchar * dirname that does end on a '/'
+ **/
+gchar *ending_slash(const gchar *dirname) {
+	if (!dirname) {
+		return g_strdup("");
+	}
+
+	if (dirname[strlen(dirname)-1] == DIRCHR) {
+		return g_strdup(dirname);
+	} else {
+		return g_strconcat(dirname, DIRSTR, NULL);
+	}
+}
+/**
+ * path_get_dirname_with_ending_slash:
+ * @filename: a #const gchar * with a file path
+ *
+ * returns a newly allocated string, containing everything up to 
+ * the last '/' character, including that character itself.
+ *
+ * if no '/' character is found it returns NULL
+ *
+ * Return value: a newly allocated gchar * dirname that does end on a '/', or NULL on failure
+ **/
+gchar *path_get_dirname_with_ending_slash(const gchar *filename) {
+	gchar *tmp = strrchr(filename, DIRCHR);
+	if (tmp) {
+		return g_strndup(filename, (tmp - filename + 1));
+	} else {
+		return NULL;
+	}
+}
+
+/**
+ * full_path_exists:
+ * @full_path: gchar*
+ *
+ * convenience function that will create a GnomeVFSURI, check if it exists, and unref it again.
+ *
+ * if you already have a GnomeVFSURI you should use gnome_vfs_uri_exists()
+ *
+ */
+gboolean full_path_exists(const gchar *full_path) {
+	GnomeVFSURI *uri;
+	gboolean retval;
+	uri = gnome_vfs_uri_new(full_path);
+	retval = gnome_vfs_uri_exists(uri);
+	gnome_vfs_uri_unref(uri);
+	return retval;
+}
+
+/**
+ * file_exists_and_readable:
+ * @filename: a #const gchar * with a file path
+ *
+ * tests if the file exists, and  if it is readable, the last
+ * check is not reliable, it does not check all the groups you are
+ * in, so change this function before you rely on that check!
+ *
+ * this function is Gnome-VFS aware, so it will work on URI's
+ *
+ * Return value: gboolean, TRUE if readable, else FALSE
+ ** /
+gboolean file_exists_and_readable(const gchar * filename) {
+	GnomeVFSURI* uri;
+	gboolean retval=TRUE;
+#ifdef DEVELOPMENT
+	g_assert(filename);
+#endif
+	if (!filename || strlen(filename) < 2) {
+		DEBUG_MSG("file_exists_and_readable, strlen(filename) < 2 or no filename!!!!\n");
+		return FALSE;
+	}
+	DEBUG_MSG("file_exists_and_readable, filename(%p)=\"%s\", strlen(filename)=%d\n", filename, filename, strlen(filename));
+	if (strchr(filename, ':')!=NULL) { / * uri * /
+		uri = gnome_vfs_uri_new(filename);
+	} else if (filename[0] == '/') { / * local path * /
+		uri = gnome_vfs_uri_new(filename);
+	} else {
+		gchar *curi, *tmp1, *tmp2;
+		tmp1 = g_get_current_dir();
+		tmp2 = ending_slash(tmp1);
+		/ * relative path * /
+		curi = gnome_vfs_uri_make_full_from_relative(tmp2, filename);
+		DEBUG_MSG("file_exists_and_readable, constructed %s from %s and %s\n",curi,tmp2,filename);
+		uri = gnome_vfs_uri_new(curi);
+		g_free(tmp1);
+		g_free(tmp2);
+		g_free(curi);
+	}
+	retval = gnome_vfs_uri_exists(uri);
+	gnome_vfs_uri_unref(uri);
+	DEBUG_MSG("file_exists_and_readable, return %d for %s\n",retval,filename);
+	return retval;
+}
+*/
+/**
+ * return_first_existing_filename:
+ * @filename: a #const gchar * with a filename
+ * @...: more filenames
+ *
+ * you can pass multiple filenames to this function, and it will return
+ * the first filename that really exists according to file_exists_and_readable()
+ *
+ * Return value: gchar * with the first filename found
+ **/
+gchar *return_first_existing_filename(const gchar *filename, ...) {
+	va_list args;
+	gchar *retval=NULL;
+
+	va_start(args, filename);
+	while (filename) {
+		DEBUG_MSG("return_first_existing_filename, testing %s\n",filename);
+		if (access(filename, R_OK) == 0) {
+			retval = g_strdup(filename);
+			break;
+		}
+		filename = va_arg(args, gchar*);
+	}
+	va_end(args);
+	return retval;
+}
+
+/**
+ * filename_test_extensions:
+ * @extensions: a #gchar ** NULL terminated arrau of strings
+ * @filename: a #const gchar * with a filename
+ *
+ * tests if the filename matches one of the extensions passed in the NULL terminated array
+ * of strings
+ *
+ * Return value: gboolean, TRUE if the file has one of the extensions in the array
+ **/
+gboolean filename_test_extensions(gchar **extensions, const gchar *filename) {
+	gint fnlen;
+	if (!extensions) {
+		return FALSE;
+	}
+	fnlen = strlen(filename);
+	while (*extensions) {
+		gint extlen;
+		extlen = strlen(*extensions);
+		if (fnlen > extlen && strncmp(filename + fnlen - extlen, *extensions, extlen) == 0 ) {
+			return TRUE;
+		}
+		extensions++;
+	}
+	return FALSE;
+}
+
+/**
+ * bf_str_repeat:
+ * @str: a #const gchar * 
+ * @number_of: a #gint
+ *
+ * returns a newly allocated string, 
+ * containing str repeated number_of times
+ *
+ * Return value: the newly allocated #gchar *
+ **/
+gchar *bf_str_repeat(const gchar * str, gint number_of) {
+	gchar *retstr;
+	gint len = strlen(str) * number_of;
+	retstr = g_malloc(len + 1);
+	retstr[0] = '\0';
+	while (number_of) {
+		strncat(retstr, str, len);
+		number_of--;
+	};
+	return retstr;
+}
+
+/**
+ * get_int_from_string:
+ * @string: a #const gchar * 
+ *
+ * tries to find a positive integer value in the string and returns it
+ * the string does not have to start or end with the integer
+ * it returns -1 if no integer was found somewhere in the string
+ *
+ * Return value: the found #gint, -1 on failure
+ **/
+gint get_int_from_string(gchar *string) {
+	if (string) {
+		gint faktor = 1, result=-1;
+		gint i,len = strlen(string);
+		for (i=len-1;i>=0;i--) {
+			if ((string[i] < 58) && (string[i] > 47)) {
+				if (result == -1) {
+					result = 0;
+				} else {
+					faktor *= 10;
+				}
+				result += (((gint)string[i])-48)*faktor;
+				DEBUG_MSG("get_int_from_string, set result to %d\n", result);
+			} else {
+				if (result !=-1) {
+					return result;
+				}
+			}
+		}
+		return result;
+	}
+	return -1;
+}
+
+static gchar *return_securedir(void) {
+	if (main_v->securedir) {
+		if (access(main_v->securedir, W_OK|X_OK)==0) {
+			return main_v->securedir;
+		} else {
+			g_free(main_v->securedir);
+		}
+	}
+	DEBUG_MSG("return_securedir,g_get_tmp_dir()=%s\n", g_get_tmp_dir());
+	/* it is SAFE to use tempnam() here, because we don't open a file with that name,
+	 * we create a directory with that name. mkdir() will FAIL if this name is a hardlink
+	 * or a symlink, so we DO NOT overwrite any file the link is pointing to
+	 */
+	main_v->securedir = tempnam(g_get_tmp_dir(), "bfish");
+	while (mkdir(main_v->securedir, 0700) != 0) {
+		g_free(main_v->securedir);
+		main_v->securedir = tempnam(g_get_tmp_dir(), "bfish");
+	}
+	return main_v->securedir;
+}
+
+/**
+ * create_secure_dir_return_filename:
+ *
+ * this function uses mkdir(name) to create a dir with permissions rwx------
+ * mkdir will fail if name already exists or is a symlink or something
+ * the name is chosen by tempnam() so the chance that mkdir() fails in
+ * a normal situation is minimal, it almost must be a hacking attempt
+ *
+ * the filename generated can safely be used for output of an external 
+ * script because the dir has rwx------ permissions
+ *
+ * Return value: a newly allocated #gchar * containing a temporary filename in a secure dir
+ **/
+gchar *create_secure_dir_return_filename(void) {
+	gchar *name, *name2;
+	
+	name = return_securedir();
+	DEBUG_MSG("create_secure_dir_return_filename, dir is at %s\n",name);
+	name2 = tempnam(name, "bf-");
+	DEBUG_MSG("create_secure_dir_return_filename, name2=%s\n", name2);
+	return name2;
+}
+/**
+ * remove_secure_dir_and_filename:
+ * @filename: the #gchar * filename to remove
+ *
+ * this function will remove a the filename created 
+ * by create_secure_dir_return_filename(), and the safe
+ * directory the file was created in
+ *
+ * Return value: void
+ **/
+/*void remove_secure_dir_and_filename(gchar *filename) {
+	gchar *dirname = g_path_get_dirname(filename);
+	unlink(filename);
+	rmdir(dirname);
+	g_free(dirname);
+}*/
+
+/* gchar *buf_replace_char(gchar *buf, gint len, gchar srcchar, gchar destchar) {
+	gint curlen=0;
+	gchar *tmpbuf=buf;
+	while(tmpbuf[curlen] != '\0' && curlen < len) {
+		if (tmpbuf[curlen] == srcchar) {
+			tmpbuf[curlen] = destchar;
+		}
+		curlen++;
+	}
+	return buf;
+}*/
+
+/**
+ * wordcount:
+ * @text: A #gchar* to examine.
+ * @chars: #guint*, will contain no. chars in text.
+ * @lines: #guint*, will contain no. lines in text.
+ * @words: #guint*, will contain no. words in text.
+ *
+ * Returns number of characters, lines and words in the supplied #gchar*.
+ * Handles UTF-8 correctly. Input must be properly encoded UTF-8.
+ * Words are defined as any characters grouped, separated with spaces.
+ * I.e., this is a word: "12a42a,.". This is two words: ". ."
+ *
+ * This function contains a switch() with inspiration from the GNU wc utility.
+ * Rewritten for glib UTF-8 handling by Christian Tellefsen, chris@tellefsen.net.
+ *
+ * Note that gchar == char, so that gives us no problems here.
+ *
+ * Return value: void
+ **/
+void wordcount(gchar *text, guint *chars, guint *lines, guint *words)
+{
+	guint in_word = 0;
+	gunichar utext;
+	
+	if(!text) return; /* politely refuse to operate on NULL .. */
+		
+	*chars = *words = *lines = 0;
+	while (*text != '\0') {
+		(*chars)++;
+		
+		switch (*text) {
+			case '\n':
+				(*lines)++;
+				/* Fall through. */
+			case '\r':
+			case '\f':
+			case '\t':
+			case ' ':
+			case '\v':
+				mb_word_separator:
+				if (in_word) {
+					in_word = 0;
+					(*words)++;
+				}
+				break;
+			default:
+				utext = g_utf8_get_char_validated(text, 2); /* This might be an utf-8 char..*/
+				if (g_unichar_isspace (utext)) /* Unicode encoded space? */
+					goto mb_word_separator;
+				if (g_unichar_isgraph (utext)) /* Is this something printable? */
+					in_word = 1;
+				break;
+		} /* switch */
+		
+		text = g_utf8_next_char(text); /* Even if the current char is 2 bytes, this will iterate correctly. */
+	}
+	
+	/* Capture last word, if there's no whitespace at the end of the file. */
+	if(in_word) (*words)++;
+	/* We start counting line numbers from 1 */
+	if(*chars > 0) (*lines)++;
+}
+
+GSList *gslist_from_glist_reversed(GList *src) {
+	GSList *target=NULL;
+	GList *tmplist = g_list_first(src);
+	while (tmplist) {
+		target = g_slist_prepend(target, tmplist->data);
+		tmplist = g_list_next(tmplist);
+	}
+	return target;
+}
+
+GList *glist_from_gslist(GSList *src) {
+	GList *target=NULL;
+	GSList *tmplist = src;
+	while (tmplist) {
+		target = g_list_append(target, tmplist->data);
+		tmplist = g_slist_next(tmplist);
+	}
+	return target;
+}
+/* returns a newly allocated string! */
+gchar *bf_portable_time(const time_t *timep) {
+	gchar *retstr=NULL;
+#ifdef HAVE_CTIME_R
+	retstr = g_new(gchar, 128);
+	ctime_r(timep,retstr);
+#else
+#ifdef HAVE_ASCTIME_R
+	retstr = g_new(gchar, 128);
+	asctime_r(localtime(timep),retstr);
+#else
+#ifdef HAVE_CTIME
+	retstr = g_strdup(ctime(timep));
+#else
+#ifdef HAVE_ASCTIME
+	retstr = g_strdup(asctime(locasltime(timep)));
+#endif /* HAVE_ASCTIME */
+#endif /* HAVE_CTIME */
+#endif /* HAVE_ASCTIME_R */
+#endif /* HAVE_CTIME_R */
+	return retstr;
+}
+
+/* these hash functions hash the first 3 strings in a gchar ** */
+gboolean arr3_equal (gconstpointer v1,gconstpointer v2)
+{
+	const gchar **arr1 = (const gchar **)v1;
+	const gchar **arr2 = (const gchar **)v2;
+  
+	return ((strcmp ((char *)arr1[0], (char *)arr2[0]) == 0 )&&
+			(strcmp ((char *)arr1[1], (char *)arr2[1]) == 0) &&
+			(strcmp ((char *)arr1[2], (char *)arr2[2]) == 0));
+}
+
+guint arr3_hash(gconstpointer v)
+{
+  /* modified after g_str_hash */
+  	const signed char **tmp = (const signed char **)v;
+	const signed char *p;
+	guint32 h = *tmp[0];
+	if (h) {
+		gshort i=0;
+		while (i<3) {
+			p = tmp[i];
+			for (p += 1; *p != '\0'; p++)
+				h = (h << 5) - h + *p;
+			i++;
+		}
+	}
+	return h;
+}
+
+
