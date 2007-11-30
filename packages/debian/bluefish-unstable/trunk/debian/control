@@ -8,7 +8,7 @@ Homepage: http://bluefish.openoffice.nl
 
 Package: bluefish-unstable
 Architecture: any
-Depends: bluefish-plugins (= ${binary:Version}), bluefish-data (= ${source:Version}), ${shlibs:Depends}
+Depends: bluefish-unstable-plugins (= ${binary:Version}), bluefish-unstable-data (= ${source:Version}), ${shlibs:Depends}
 Recommends: bluefish-plugins
 Suggests: galeon | iceape | iceweasel | www-browser, gnome-bin, weblint-perl | weblint, libxml2-utils, php5-cli, tidy
 Description: advanced Gtk+ HTML editor
@@ -48,3 +48,16 @@ Description: advanced Gtk+ HTML editor
  syntax highlighting.
  .
  This package contains the architecture independent data.
+
+Package: bluefish-unstable-dbg
+Architecture: any
+Depends: bluefish-unstable (= ${binary:Version})
+Description: advanced Gtk+ HTML editor
+ Bluefish is a GTK+ HTML editor for the experienced web designer.
+ Its features include nice wizards for startup, tables and frames; a
+ fully featured image insert dialog; thumbnail creation and automatically
+ linking of the thumbnail with the original image; and configurable HTML
+ syntax highlighting.
+ .
+ This package contains the debugging symbols. Install it to get a better
+ backtrace if you observe a crash.
