@@ -1,0 +1,48 @@
+Source: bluefish
+Maintainer: Daniel Leidert (dale) <daniel.leidert@wgdd.de>
+Section: web
+Priority: optional
+Build-Depends: debhelper (>= 5), dpatch, autotools-dev, gettext, libaspell-dev, libfreetype6-dev, libgnomeui-dev, libgnomevfs2-dev, libglib2.0-dev, libgtk2.0-dev, libpcre3-dev, libxml2-dev, zlib1g-dev
+Standards-Version: 3.7.2
+Homepage: http://bluefish.openoffice.nl
+
+Package: bluefish
+Architecture: any
+Depends: bluefish-plugins (= ${binary:Version}), bluefish-data (= ${source:Version}), ${shlibs:Depends}
+Recommends: bluefish-plugins
+Suggests: galeon | iceape | iceweasel | www-browser, gnome-bin, weblint-perl | weblint, libxml2-utils, php5-cli, tidy
+Description: advanced Gtk+ HTML editor
+ Bluefish is a GTK+ HTML editor for the experienced web designer.
+ Its features include nice wizards for startup, tables and frames; a
+ fully featured image insert dialog; thumbnail creation and automatically
+ linking of the thumbnail with the original image; and configurable HTML
+ syntax highlighting.
+ .
+ For validation to work you need weblint and xmllint. For preview to work,
+ you need a web browser that can view local files given to it
+ on the command line.
+
+Package: bluefish-plugins
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: advanced Gtk+ HTML editor
+ Bluefish is a GTK+ HTML editor for the experienced web designer.
+ Its features include nice wizards for startup, tables and frames; a
+ fully featured image insert dialog; thumbnail creation and automatically
+ linking of the thumbnail with the original image; and configurable HTML
+ syntax highlighting.
+ .
+ This package contains the plugins. You will need it for the HTML dialogs.
+ So it's basically necessary.
+
+Package: bluefish-data
+Architecture: all
+Depends: ${shlibs:Depends}
+Description: advanced Gtk+ HTML editor
+ Bluefish is a GTK+ HTML editor for the experienced web designer.
+ Its features include nice wizards for startup, tables and frames; a
+ fully featured image insert dialog; thumbnail creation and automatically
+ linking of the thumbnail with the original image; and configurable HTML
+ syntax highlighting.
+ .
+ This package contains the architecture independent data.
