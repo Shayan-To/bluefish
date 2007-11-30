@@ -1,4 +1,4 @@
-Source: bluefish
+Source: bluefish-unstable
 Maintainer: Daniel Leidert (dale) <daniel.leidert@wgdd.de>
 Section: web
 Priority: optional
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 5), dpatch, autotools-dev, gettext, libaspell-dev, 
 Standards-Version: 3.7.2
 Homepage: http://bluefish.openoffice.nl
 
-Package: bluefish
+Package: bluefish-unstable
 Architecture: any
 Depends: bluefish-plugins (= ${binary:Version}), bluefish-data (= ${source:Version}), ${shlibs:Depends}
 Recommends: bluefish-plugins
@@ -22,7 +22,7 @@ Description: advanced Gtk+ HTML editor
  you need a web browser that can view local files given to it
  on the command line.
 
-Package: bluefish-plugins
+Package: bluefish-unstable-plugins
 Architecture: any
 Depends: ${shlibs:Depends}
 Description: advanced Gtk+ HTML editor
@@ -35,9 +35,11 @@ Description: advanced Gtk+ HTML editor
  This package contains the plugins. You will need it for the HTML dialogs.
  So it's basically necessary.
 
-Package: bluefish-data
+Package: bluefish-unstable-data
 Architecture: all
 Depends: ${shlibs:Depends}
+Replaces: bluefish-unstable (<< 1.1.5)
+Conflicts: bluefish-unstable (<< 1.1.5)
 Description: advanced Gtk+ HTML editor
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a

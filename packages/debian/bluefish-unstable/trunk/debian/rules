@@ -5,11 +5,12 @@
 # Uncomment this to turn on verbose mode.
 # export DH_VERBOSE=1
 
-PACKAGE=bluefish
+PACKAGE=bluefish-unstable
 
 include /usr/share/dpatch/dpatch.make
 
-CFLAGS= -Wall -g
+CFLAGS  = -Wall -g
+LDFLAGS = -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
   CFLAGS += -O0
@@ -20,15 +21,17 @@ endif
 config.status: configure
 	dh_testdir
 	# Add here commands to configure the package.
-	CFLAGS="$(CFLAGS)" ./configure \
+	LDFLAGS="$(LDFLAGS)" CFLAGS="$(CFLAGS)" ./configure \
 		--prefix=/usr \
 		--mandir=\$${prefix}/share/man \
 		--with-icon-path=\$${prefix}/share/pixmaps \
+		--with-theme-path=\$${prefix}/share/icons \
 		--with-freedesktop_org-menu=\$${prefix}/share/applications \
 		--with-freedesktop_org-mime=\$${prefix}/share/mime \
 		--without-gnome2_4-mime \
-		--without-gnome2_4-appreg \
-		--disable-update-databases
+		--disable-xml-catalog-update \
+		--disable-update-databases \
+
 
 build: build-stamp
 
@@ -74,8 +77,9 @@ binary-indep: build install
 binary-arch: build install
 	dh_testdir
 	dh_testroot
-	dh_install
+	dh_installchangelogs NEWS
 	dh_installdocs
+	dh_move
 	dh_installmenu
 	dh_installmime
 	dh_installchangelogs NEWS
