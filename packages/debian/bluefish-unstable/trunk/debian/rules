@@ -10,7 +10,7 @@ PACKAGE=bluefish-unstable
 include /usr/share/dpatch/dpatch.make
 
 CFLAGS  = -Wall -g
-LDFLAGS = -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
+LDFLAGS = -Wl,-O1 -Wl,--as-needed
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
   CFLAGS += -O0
@@ -23,6 +23,7 @@ config.status: configure
 	# Add here commands to configure the package.
 	LDFLAGS="$(LDFLAGS)" CFLAGS="$(CFLAGS)" ./configure \
 		--prefix=/usr \
+		--exec-prefix=/usr \
 		--mandir=\$${prefix}/share/man \
 		--with-icon-path=\$${prefix}/share/pixmaps \
 		--with-theme-path=\$${prefix}/share/icons \
@@ -30,8 +31,7 @@ config.status: configure
 		--with-freedesktop_org-mime=\$${prefix}/share/mime \
 		--without-gnome2_4-mime \
 		--disable-xml-catalog-update \
-		--disable-update-databases \
-
+		--disable-update-databases
 
 build: build-stamp
 
@@ -46,17 +46,13 @@ clean: unpatch
 	dh_testdir
 	dh_testroot
 	-rm -f build-stamp patch-stamp
-	
-	# Add here commands to clean up after the build process.
 	[ ! -f Makefile ] || $(MAKE) distclean
-	
 	-test -r /usr/share/misc/config.sub && \
 		cp -f /usr/share/misc/config.sub config.sub
 	-test -r /usr/share/misc/config.guess && \
 		cp -f /usr/share/misc/config.guess config.guess
 	-test -r /usr/share/gettext/config.rpath && \
 		cp -f /usr/share/gettext/config.rpath config.rpath
-	
 	dh_clean
 
 install: build
@@ -64,9 +60,11 @@ install: build
 	dh_testroot
 	dh_clean -k
 	dh_installdirs
-
-	# Add here commands to install the package into debian/bluefish.
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/$(PACKAGE)
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	dh_install -p$(PACKAGE) --ignore=debian/$(PACKAGE).install debian/bluefish-unstable.xpm usr/share/pixmaps/
+	for pkg in $(PACKAGE) $(PACKAGE)-data $(PACKAGE)-dbg $(PACKAGE)-plugins ; do \
+		dh_install -p$${pkg} --ignore=debian/$${pkg}.install debian/reportbug/* usr/share/bug/$${pkg}/ ; \
+	done
 
 
 # Build architecture-independent files here.
@@ -75,9 +73,9 @@ binary-indep: build install
 	dh_testroot -i
 	dh_installchangelogs -i NEWS
 	dh_installdocs -i
-	dh_move -i --sourcedir=$(CURDIR)/debian/$(PACKAGE)
-	dh_install -i
+	dh_install -i --sourcedir=debian/tmp
 	dh_installmime -i
+	dh_installxmlcatalogs -i
 	dh_desktop -i
 	dh_compress -i
 	dh_fixperms -i
@@ -92,8 +90,7 @@ binary-arch: build install
 	dh_testroot -a
 	dh_installchangelogs -a NEWS
 	dh_installdocs -a
-	dh_move -a --sourcedir=$(CURDIR)/debian/$(PACKAGE)
-	dh_install -a
+	dh_install -a --sourcedir=debian/tmp
 	dh_installmenu -a
 	dh_link -a
 	dh_strip -a --dbg-package=$(PACKAGE)-dbg

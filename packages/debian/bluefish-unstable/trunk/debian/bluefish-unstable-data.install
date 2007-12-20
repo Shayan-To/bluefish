@@ -1,1 +1,6 @@
-reportbug/* usr/share/bug/bluefish-unstable-data
+usr/share/bluefish-unstable
+usr/share/icons
+usr/share/locale
+usr/share/mime
+usr/share/pixmaps
+usr/share/xml

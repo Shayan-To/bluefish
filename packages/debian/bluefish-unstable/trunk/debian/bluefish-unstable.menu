@@ -1,4 +1,4 @@
-?package(bluefish):\
+?package(bluefish-unstable):\
   needs="X11"\
   section="Applications/Web Development"\
   title="Bluefish (CVS)"\
