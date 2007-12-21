@@ -1,3 +1,9 @@
+bluefish-unstable (1.1.5+cvs071220-0dl3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 03:37:14 +0100
+
 bluefish-unstable (1.1.5+cvs071220-0dl2) unstable; urgency=low
 
   * debian/control (Depends, Recommends): Remove non-existent package
