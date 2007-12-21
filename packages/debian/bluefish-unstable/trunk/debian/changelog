@@ -1,13 +1,11 @@
-bluefish-unstable (1.1.5+cvs071220-0dl3) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
+bluefish-unstable (1.1.5+cvs071220-0dl3) unstable; urgency=low
 
   * debian/bluefish-unstable-data.preinst: Added diversion to solve file
     conflict with the bluefish package.
   * debian/bluefish-unstable-data.postrm: Ditto.
   * debian/control (Suggests): Removed obsolete gnome-bin.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 03:37:14 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 04:51:24 +0100
 
 bluefish-unstable (1.1.5+cvs071220-0dl2) unstable; urgency=low
 
