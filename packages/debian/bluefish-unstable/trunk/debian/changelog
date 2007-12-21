@@ -1,3 +1,9 @@
+bluefish-unstable (1.1.5+cvs071220-0dl4) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 21:09:05 +0100
+
 bluefish-unstable (1.1.5+cvs071220-0dl3) unstable; urgency=low
 
   * debian/bluefish-unstable-data.preinst: Added diversion to solve file
