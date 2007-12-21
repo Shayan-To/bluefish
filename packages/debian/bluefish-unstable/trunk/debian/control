@@ -13,7 +13,7 @@ Package: bluefish-unstable
 Architecture: any
 Depends: bluefish-unstable-data (= ${source:Version}), bluefish-unstable-plugins (= ${binary:Version}), ${shlibs:Depends}
 Recommends: bluefish-unstable-dbg
-Suggests: galeon | iceape | iceweasel | www-browser, gnome-bin, weblint-perl | weblint, libxml2-utils, php5-cli, tidy
+Suggests: galeon | iceape | iceweasel | www-browser, weblint-perl | weblint, libxml2-utils, php5-cli, tidy
 Description: advanced Gtk+ HTML editor
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a
@@ -25,10 +25,10 @@ Description: advanced Gtk+ HTML editor
  you need a web browser that can view local files given to it
  on the command line.
 
-Package: bluefish-unstable-plugins
+Package: bluefish-unstable-plugins 
 Architecture: any
 Depends: ${shlibs:Depends}
-Description: advanced Gtk+ HTML editor
+Description: advanced Gtk+ HTML editor (plugins)
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a
  fully featured image insert dialog; thumbnail creation and automatically
@@ -38,12 +38,12 @@ Description: advanced Gtk+ HTML editor
  This package contains the plugins. You will need it for the HTML dialogs.
  So it's basically necessary.
 
-Package: bluefish-unstable-data
+Package: bluefish-unstable-data 
 Architecture: all
 Depends: ${misc:Depends}
 Replaces: bluefish-unstable (<< 1.1.5)
 Conflicts: bluefish-unstable (<< 1.1.5)
-Description: advanced Gtk+ HTML editor
+Description: advanced Gtk+ HTML editor (data)
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a
  fully featured image insert dialog; thumbnail creation and automatically
@@ -52,11 +52,11 @@ Description: advanced Gtk+ HTML editor
  .
  This package contains the architecture independent data.
 
-Package: bluefish-unstable-dbg
+Package: bluefish-unstable-dbg 
 Architecture: any
 Priority: extra
 Depends: bluefish-unstable (= ${binary:Version})
-Description: advanced Gtk+ HTML editor
+Description: advanced Gtk+ HTML editor (debugging symbols)
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a
  fully featured image insert dialog; thumbnail creation and automatically

@@ -1,0 +1,14 @@
+#!/bin/sh
+# postrm script for #PACKAGE#
+#
+# see: dh_installdeb(1)
+
+set -e
+
+dpkg-divert --package bluefish-unstable-data --remove --rename --divert \
+            /usr/share/pixmaps/gnome-mime-application-bluefish-project.stable.png \
+            /usr/share/pixmaps/gnome-mime-application-bluefish-project.png
+
+#DEBHELPER#
+
+exit 0
