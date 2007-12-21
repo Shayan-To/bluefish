@@ -2,6 +2,9 @@ bluefish-unstable (1.1.5+cvs071220-0dl4) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
+  * debian/control (Build-Depends): Raised debhelper version to 5.0.57, which
+    added the --ignore switch.
+
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 21:09:05 +0100
 
 bluefish-unstable (1.1.5+cvs071220-0dl3) unstable; urgency=low
