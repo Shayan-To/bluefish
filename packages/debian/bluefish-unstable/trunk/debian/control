@@ -25,7 +25,7 @@ Description: advanced Gtk+ HTML editor
  you need a web browser that can view local files given to it
  on the command line.
 
-Package: bluefish-unstable-plugins 
+Package: bluefish-unstable-plugins
 Architecture: any
 Depends: ${shlibs:Depends}
 Description: advanced Gtk+ HTML editor (plugins)
@@ -38,7 +38,7 @@ Description: advanced Gtk+ HTML editor (plugins)
  This package contains the plugins. You will need it for the HTML dialogs.
  So it's basically necessary.
 
-Package: bluefish-unstable-data 
+Package: bluefish-unstable-data
 Architecture: all
 Depends: ${misc:Depends}
 Replaces: bluefish-unstable (<< 1.1.5)
@@ -52,7 +52,7 @@ Description: advanced Gtk+ HTML editor (data)
  .
  This package contains the architecture independent data.
 
-Package: bluefish-unstable-dbg 
+Package: bluefish-unstable-dbg
 Architecture: any
 Priority: extra
 Depends: bluefish-unstable (= ${binary:Version})

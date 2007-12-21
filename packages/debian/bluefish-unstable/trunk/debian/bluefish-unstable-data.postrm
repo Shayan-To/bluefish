@@ -1,5 +1,5 @@
 #!/bin/sh
-# postrm script for #PACKAGE#
+# postrm script for bluefish-unstable-data
 #
 # see: dh_installdeb(1)
 
