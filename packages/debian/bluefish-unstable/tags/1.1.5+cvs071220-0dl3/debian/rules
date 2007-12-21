@@ -1,0 +1,106 @@
+#!/usr/bin/make -f
+# Sample debian/rules that uses debhelper.
+# GNU copyright 1997 to 1999 by Joey Hess.
+#
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+PACKAGE=bluefish-unstable
+
+include /usr/share/dpatch/dpatch.make
+
+CFLAGS  = -Wall -g
+LDFLAGS = -Wl,-O1 -Wl,--as-needed
+
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+  CFLAGS += -O0
+else
+  CFLAGS += -O2
+endif
+
+config.status: configure
+	dh_testdir
+	# Add here commands to configure the package.
+	LDFLAGS="$(LDFLAGS)" CFLAGS="$(CFLAGS)" ./configure \
+		--prefix=/usr \
+		--exec-prefix=/usr \
+		--mandir=\$${prefix}/share/man \
+		--with-icon-path=\$${prefix}/share/pixmaps \
+		--with-theme-path=\$${prefix}/share/icons \
+		--with-freedesktop_org-menu=\$${prefix}/share/applications \
+		--with-freedesktop_org-mime=\$${prefix}/share/mime \
+		--without-gnome2_4-mime \
+		--disable-xml-catalog-update \
+		--disable-update-databases
+
+build: build-stamp
+
+build-stamp: patch-stamp config.status
+	dh_testdir
+	# Add here commands to compile the package.
+	$(MAKE)
+
+	touch build-stamp
+
+clean: unpatch
+	dh_testdir
+	dh_testroot
+	-rm -f build-stamp patch-stamp
+	[ ! -f Makefile ] || $(MAKE) distclean
+	-test -r /usr/share/misc/config.sub && \
+		cp -f /usr/share/misc/config.sub config.sub
+	-test -r /usr/share/misc/config.guess && \
+		cp -f /usr/share/misc/config.guess config.guess
+	-test -r /usr/share/gettext/config.rpath && \
+		cp -f /usr/share/gettext/config.rpath config.rpath
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	dh_install -p$(PACKAGE) --ignore=debian/$(PACKAGE).install debian/bluefish-unstable.xpm usr/share/pixmaps/
+	for pkg in $(PACKAGE) $(PACKAGE)-data $(PACKAGE)-dbg $(PACKAGE)-plugins ; do \
+		dh_install -p$${pkg} --ignore=debian/$${pkg}.install debian/reportbug/* usr/share/bug/$${pkg}/ ; \
+	done
+
+
+# Build architecture-independent files here.
+binary-indep: build install
+	dh_testdir -i
+	dh_testroot -i
+	dh_installchangelogs -i NEWS
+	dh_installdocs -i
+	dh_install -i --sourcedir=debian/tmp
+	dh_installmime -i
+	dh_installxmlcatalogs -i
+	dh_desktop -i
+	dh_compress -i
+	dh_fixperms -i
+	dh_installdeb -i
+	dh_gencontrol -i
+	dh_md5sums -i
+	dh_builddeb -i
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir -a
+	dh_testroot -a
+	dh_installchangelogs -a NEWS
+	dh_installdocs -a
+	dh_install -a --sourcedir=debian/tmp
+	dh_installmenu -a
+	dh_link -a
+	dh_strip -a --dbg-package=$(PACKAGE)-dbg
+	dh_compress -a
+	dh_fixperms -a
+	dh_installdeb -a
+	dh_shlibdeps -a
+	dh_gencontrol -a
+	dh_md5sums -a
+	dh_builddeb -a
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install
