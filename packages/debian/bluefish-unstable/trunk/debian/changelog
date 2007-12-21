@@ -1,9 +1,11 @@
-bluefish-unstable (1.1.5-1) UNRELEASED; urgency=low
+bluefish-unstable (1.1.5+cvs071220-0dl1) unstable; urgency=low
+
+  * New snapshot from CVS (2007-12-20).
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 02:09:51 +0100
+
+bluefish-unstable (1.1.5-0dl1) unstable; urgency=low
 
   * Initial release.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 30 Nov 2007 02:10:21 +0100
-
-Local variables:
-mode: debian-changelog
-End:
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 01:36:23 +0100
