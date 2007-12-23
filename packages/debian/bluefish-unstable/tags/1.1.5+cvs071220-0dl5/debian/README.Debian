@@ -1,0 +1,44 @@
+bluefish for Debian
+-------------------
+
+Update files after package upgrade
+==================================
+
+
+The version 1.0 of bluefish contains some changes to ~/.bluefish/rcfile_v2
+and ~/.bluefish/highlighting. Now there are References-Files for HTML, CSS, PHP
+and Python. If you are upgrading from an older version than 1.0, maybe you
+want to backup your existing ~/.bluefish-directory and completely make a new
+one.
+
+
+It is recommended to update/reset the highlighting pattern. First backup your
+existing highlighting pattern file ~/.bluefish/highighting. Then
+reset/update the pattern with:
+
+  Edit > Preferences > Syntax highlighting > (choose a pattern type) > [Reset]
+
+Now you can play back your customized patterns.
+
+
+To update/reset the custom menu, backup your ~/.bluefish/custom_menu and then
+use:
+
+  Custom menu > [Reset]
+
+Now you can play back your changes to the customized menu. The "easiest" way
+to get your changes is to use diff between your saved and newly created
+~/.bluefish/highighting and ~/.bluefish/custom_menu files.
+
+
+For filetype pattern updates, backup ~/.bluefish/rcfile_v2. Then open this
+file and remove all lines beginning with 
+
+filetypes:
+
+Starting bluefish now will make bluefish read the defaults from
+/usr/share/bluefish/filetypes. If you have made changes, that are not covered
+by an update to the filetype pattern, you need to make these changes again via
+the GUI.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat,  4 Feb 2006 22:39:12 +0100
