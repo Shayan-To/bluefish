@@ -61,11 +61,12 @@ install: build
 	dh_clean -k
 	dh_installdirs
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
-	dh_install -p$(PACKAGE) --ignore=debian/$(PACKAGE).install debian/bluefish-unstable.xpm usr/share/pixmaps/
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/pixmaps
+	install -m 644 debian/bluefish-unstable.xpm $(CURDIR)/debian/$(PACKAGE)/usr/share/pixmaps/
 	for pkg in $(PACKAGE) $(PACKAGE)-data $(PACKAGE)-dbg $(PACKAGE)-plugins ; do \
-		dh_install -p$${pkg} --ignore=debian/$${pkg}.install debian/reportbug/* usr/share/bug/$${pkg}/ ; \
+		install -d $(CURDIR)/debian/$${pkg}/usr/share/bug/$${pkg} ; \
+		install -m 644 debian/reportbug/* $(CURDIR)/debian/$${pkg}/usr/share/bug/$${pkg}/ ; \
 	done
-
 
 # Build architecture-independent files here.
 binary-indep: build install
