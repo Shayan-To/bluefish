@@ -93,6 +93,8 @@ binary-arch: build install
 	dh_installdocs -a
 	dh_install -a --sourcedir=debian/tmp
 	dh_installmenu -a
+	dh_installmime -a
+	dh_desktop -a
 	dh_link -a
 	dh_strip -a --dbg-package=$(PACKAGE)-dbg
 	dh_compress -a
