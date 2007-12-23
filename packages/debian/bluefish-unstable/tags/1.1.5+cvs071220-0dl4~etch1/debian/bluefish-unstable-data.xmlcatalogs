@@ -1,0 +1,5 @@
+root;uri;http://bluefish.openoffice.nl/DTD
+
+package;system;http://bluefish.openoffice.nl/DTD/bflang.dtd;/usr/share/xml/bluefish-unstable/catalog.xml
+package;public;Bluefish/DTD/Bflang;/usr/share/xml/bluefish-unstable/catalog.xml
+
