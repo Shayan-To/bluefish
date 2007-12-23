@@ -1,0 +1,39 @@
+bluefish-unstable (1.1.5+cvs071220-0dl4~etch1) stable; urgency=low
+
+  * Rebuilt for Etch.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 03:05:17 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl4) unstable; urgency=low
+
+  * debian/rules (install): Do not depend on a debhelper 5.0.57 feature.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 02:16:46 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl3) unstable; urgency=low
+
+  * debian/bluefish-unstable-data.preinst: Added diversion to solve file
+    conflict with the bluefish package.
+  * debian/bluefish-unstable-data.postrm: Ditto.
+  * debian/control (Suggests): Removed obsolete gnome-bin.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 04:51:24 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl2) unstable; urgency=low
+
+  * debian/control (Depends, Recommends): Remove non-existent package
+    recommendation. Make -dbg a recommendation.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 03:20:32 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl1) unstable; urgency=low
+
+  * New snapshot from CVS (2007-12-20).
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 02:09:51 +0100
+
+bluefish-unstable (1.1.5-0dl1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 01:36:23 +0100
