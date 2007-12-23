@@ -1,8 +1,21 @@
-bluefish-unstable (1.1.5+cvs071220-0dl4~etch1) stable; urgency=low
+bluefish-unstable (1.1.5+cvs071220-0dl6~etch1) stable; urgency=high
 
   * Rebuilt for Etch.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 03:05:17 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 17:22:18 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl6) unstable; urgency=low
+
+  * debian/rules (binary-arch): Moved the .desktop files from -data into the
+    binary package, so call dh_desktop here.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 16:48:30 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl5) unstable; urgency=high
+
+  * debian/bluefish-unstable-data.postrm: Fixed a bad bug. Sorry!
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 16:17:25 +0100
 
 bluefish-unstable (1.1.5+cvs071220-0dl4) unstable; urgency=low
 
