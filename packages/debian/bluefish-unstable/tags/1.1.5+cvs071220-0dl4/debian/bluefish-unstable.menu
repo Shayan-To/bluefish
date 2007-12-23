@@ -1,0 +1,7 @@
+?package(bluefish-unstable):\
+  needs="X11"\
+  section="Applications/Web Development"\
+  title="Bluefish (CVS)"\
+  icon="/usr/share/pixmaps/bluefish-unstable.xpm"\
+  command="/usr/bin/bluefish-unstable"
+
