@@ -68,7 +68,6 @@ install: build
 		install -m 644 debian/reportbug/* $(CURDIR)/debian/$${pkg}/usr/share/bug/$${pkg}/ ; \
 	done
 
-
 # Build architecture-independent files here.
 binary-indep: build install
 	dh_testdir -i
