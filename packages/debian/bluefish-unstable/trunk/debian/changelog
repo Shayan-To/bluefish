@@ -1,10 +1,8 @@
-bluefish-unstable (1.1.5+cvs071220-0dl4) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
+bluefish-unstable (1.1.5+cvs071220-0dl4) unstable; urgency=low
 
   * debian/rules (install): Do not depend on a debhelper 5.0.57 feature.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 21:09:05 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 02:16:46 +0100
 
 bluefish-unstable (1.1.5+cvs071220-0dl3) unstable; urgency=low
 
