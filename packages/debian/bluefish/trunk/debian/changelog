@@ -1,6 +1,17 @@
 bluefish (1.0.7-4) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * debian/control: Added XS-DM-Upload-Allowed.
+    (Standards-Version): Raised to 3.7.3.
+  * debian/rules: Added LDFLAGS to drop useless dependencies (should be safe
+    here). Make sure, there are no unresolved symbols.
+  * debian/patches/04_fix_maximization_state_save.dpatch: Added.
+    - Fixes a long-time-standing bug, that prevents bluefish from saving the
+      maximization state, if people quit with File > Quit.
+  * debian/patches/05_fix_449288_hlt_pattern_dialog.dpatch: Added.
+    - Fixes the empty highlighting pattern dialog (closes: #449288). Thanks to
+      Jim Hayward for the patch.
+  * debian/patches/00list: Adjusted.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 27 Sep 2007 00:22:54 +0200
 
