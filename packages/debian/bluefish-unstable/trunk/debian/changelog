@@ -1,3 +1,9 @@
+bluefish-unstable (1.1.5+cvs080202-0dl1) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 02 Feb 2008 16:21:02 +0100
+
 bluefish-unstable (1.1.5+cvs071220-0dl6) unstable; urgency=low
 
   * debian/rules (binary-arch): Moved the .desktop files from -data into the
