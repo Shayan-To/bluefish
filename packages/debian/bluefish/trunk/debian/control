@@ -5,7 +5,7 @@ Priority: optional
 Build-Depends: debhelper (>= 5), dpatch, autotools-dev, gettext, libaspell-dev, libfreetype6-dev, libgnomeui-dev, libgnomevfs2-dev, libglib2.0-dev, libgtk2.0-dev, libpcre3-dev, libxml2-dev, zlib1g-dev
 Standards-Version: 3.7.3
 Homepage: http://bluefish.openoffice.nl
-XS-DM-Upload-Allowed: yes
+DM-Upload-Allowed: yes
 
 Package: bluefish
 Architecture: any

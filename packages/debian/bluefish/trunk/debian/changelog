@@ -1,7 +1,7 @@
 bluefish (1.0.7-4) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
-  * debian/control: Added XS-DM-Upload-Allowed.
+  * debian/control: Added DM-Upload-Allowed for DM status.
     (Standards-Version): Raised to 3.7.3.
   * debian/rules: Added LDFLAGS to drop useless dependencies (should be safe
     here). Make sure, there are no unresolved symbols.
