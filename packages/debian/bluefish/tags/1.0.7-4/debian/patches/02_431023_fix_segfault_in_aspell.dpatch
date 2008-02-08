@@ -1,0 +1,45 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 02_431023_fix_segfault_in_aspell.dpatch by Daniel Leidert (dale) <daniel.leidert@wgdd.de>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: * src/bfspell.c (Tbfspell, spell_gui_set_button_status, spell_gui): Rename
+## DP:     the "Add" button to "Add word" to make it's intention more clear.
+## DP:     Further fix the crash that happens, when this button was hit with an
+## DP:     empty mispelled word field. Fix written for upstream by Jim Hayward.
+## DP:
+## DP: <URL:http://bugzilla.gnome.org/show_bug.cgi?id=378825>
+## DP: <URL:https://bugs.launchpad.net/ubuntu/+source/bluefish/+bug/120140>
+
+@DPATCH@
+diff -urNad trunk~/src/bfspell.c trunk/src/bfspell.c
+--- trunk~/src/bfspell.c	2005-11-24 19:18:01.000000000 +0100
++++ trunk/src/bfspell.c	2007-07-06 03:56:53.000000000 +0200
+@@ -47,6 +47,7 @@
+ 	GtkWidget *filter;
+ 	GList *langs;
+ 	GtkWidget *dict;
++	GtkWidget *addbut;
+ 	GtkWidget *runbut;
+ 	GtkWidget *repbut;
+ 	GtkWidget *ignbut;
+@@ -68,6 +69,7 @@
+ 	gtk_widget_set_sensitive(bfspell->lang,!is_running);
+ 	gtk_widget_set_sensitive(bfspell->repbut,is_running);
+ 	gtk_widget_set_sensitive(bfspell->ignbut,is_running);
++	gtk_widget_set_sensitive(bfspell->addbut, is_running);
+ }
+ 
+ static gboolean test_unichar(gunichar ch,gpointer data) {
+@@ -441,8 +443,10 @@
+ 	gtk_table_attach_defaults(GTK_TABLE(table), label,0,1,2,3);
+ 	gtk_misc_set_alignment(GTK_MISC(label), 1, 0.5);
+ 	gtk_table_attach_defaults(GTK_TABLE(table), bfspell->dict,1,2,2,3);
+-	but = bf_generic_mnemonic_button(_("_Add"), G_CALLBACK(spell_gui_add_clicked), bfspell);
+-	gtk_table_attach_defaults(GTK_TABLE(table), but,2,3,2,3);
++	bfspell->addbut = bf_generic_mnemonic_button(_("_Add Word"), G_CALLBACK(spell_gui_add_clicked), bfspell);
++	gtk_table_attach_defaults(GTK_TABLE(table), bfspell->addbut,2,3,2,3);
++
++	gtk_widget_set_sensitive(bfspell->addbut, FALSE);
+ 
+ 	bfspell->lang = gtk_option_menu_new();
+ 	label = gtk_label_new(_("Language:"));
