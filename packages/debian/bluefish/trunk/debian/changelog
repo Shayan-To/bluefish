@@ -1,6 +1,5 @@
-bluefish (1.0.7-4) UNRELEASED; urgency=low
+bluefish (1.0.7-4) unstable; urgency=low
 
-  * NOT RELEASED YET
   * debian/control: Added DM-Upload-Allowed for DM status.
     (Standards-Version): Raised to 3.7.3.
   * debian/rules: Added LDFLAGS to drop useless dependencies (should be safe
@@ -13,7 +12,7 @@ bluefish (1.0.7-4) UNRELEASED; urgency=low
       Jim Hayward for the patch.
   * debian/patches/00list: Adjusted.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 27 Sep 2007 00:22:54 +0200
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 05 Feb 2008 03:03:47 +0100
 
 bluefish (1.0.7-3) unstable; urgency=low
 
