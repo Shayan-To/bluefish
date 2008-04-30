@@ -3,6 +3,8 @@ bluefish (1.0.7-5) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * debian/rules (build, clean): Moved the config.* copy action to
     config.status. Files can further be removed by dh_clean.
+    (config.status): According to the manuals, variables should be given after
+    the configure call.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 08 Feb 2008 02:11:07 +0100
 

@@ -25,15 +25,15 @@ config.status: configure
 	[ ! -f /usr/share/misc/config.sub ] || cp -f /usr/share/misc/config.sub config.sub
 	[ ! -f /usr/share/gettext/config.rpath ] || cp -f /usr/share/gettext/config.rpath config.rpath
 	# Add here commands to configure the package.
-	LDFLAGS="$(LDFLAGS)" CFLAGS="$(CFLAGS)" ./configure \
-		--prefix=/usr \
+	./configure --prefix=/usr \
 		--mandir=\$${prefix}/share/man \
 		--with-icon-path=\$${prefix}/share/pixmaps \
 		--with-freedesktop_org-menu=\$${prefix}/share/applications \
 		--with-freedesktop_org-mime=\$${prefix}/share/mime \
 		--without-gnome2_4-mime \
 		--without-gnome2_4-appreg \
-		--disable-update-databases
+		--disable-update-databases \
+		LDFLAGS="$(LDFLAGS)" CFLAGS="$(CFLAGS)"
 
 build: build-stamp
 
