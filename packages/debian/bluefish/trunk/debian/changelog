@@ -5,6 +5,9 @@ bluefish (1.0.7-5) UNRELEASED; urgency=low
     config.status. Files can further be removed by dh_clean.
     (config.status): According to the manuals, variables should be given after
     the configure call.
+  * debian/patches/03_latest_highlighting_pattern.dpatch: Adjusted.
+    - Fix php highlighting pattern, that seem to lead to a segmentation fault on
+      e.g. i386 architectures in some cases (LP: #228068).
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 08 Feb 2008 02:11:07 +0100
 

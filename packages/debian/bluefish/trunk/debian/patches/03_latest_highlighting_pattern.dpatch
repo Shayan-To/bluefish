@@ -6,12 +6,14 @@
 ## DP: of the bluefish stable tree.
 ## DP:
 ## DP: data/filetypes.in  1.19.2.6
-## DP: data/highlighting.in  1.52.2.40
+## DP: data/highlighting.in  1.52.2.42
+## DP:
+## DP: https://bugs.launchpad.net/ubuntu/+source/bluefish/+bug/228068
 
 @DPATCH@
 diff -urNad trunk~/data/filetypes.in trunk/data/filetypes.in
 --- trunk~/data/filetypes.in	2006-06-01 12:12:07.000000000 +0200
-+++ trunk/data/filetypes.in	2007-09-25 01:35:00.000000000 +0200
++++ trunk/data/filetypes.in	2008-05-09 00:15:14.000000000 +0200
 @@ -1,25 +1,27 @@
  text:.txt:::1::0:
 -php:.php\:.php4\:.inc\:.php3: <>'"/?$\\t-{}[]{}\n;:PKGDATADIRicon_php.png:1:^(#!/[a-z/]+php|<\\?php):2:
@@ -58,7 +60,7 @@ diff -urNad trunk~/data/filetypes.in trunk/data/filetypes.in
 -changelog:ChangeLog::::::
 diff -urNad trunk~/data/highlighting.in trunk/data/highlighting.in
 --- trunk~/data/highlighting.in	2006-09-26 19:29:32.000000000 +0200
-+++ trunk/data/highlighting.in	2007-09-25 01:34:55.000000000 +0200
++++ trunk/data/highlighting.in	2008-05-09 00:15:32.000000000 +0200
 @@ -5,10 +5,10 @@
  c:Comment (C99/C++):0://.*?$::2:^(top|preprocessor)$:#0000FF::1:2:
  c:Keywords:0:\\b(break|case|continue|default|do|else|for|goto|if|return|sizeof|switch|while)\\b::2::#009999::2:0:
@@ -140,20 +142,6 @@ diff -urNad trunk~/data/highlighting.in trunk/data/highlighting.in
  octave:String (escaped):1:\\\\[\\\\"'0abfnrtv]::2:^String$:#000099::0:0:
  octave:String:1:":":1:^(top|Function)$:#009900::0:0:
  octave:Braces:1:[][(){}]::2:^(top|Function)$:::2:0:
-@@ -167,11 +221,11 @@
- php:Keywords:0:\\b(return|goto|global|var|class|function|new)\\b::2:^PHP Block$:#000000::2:0:
- php:Braces:0:[{()}]::2:^PHP Block$:#000000::2:1:
- php:Brackets:1:[\\[\\]]::2:^PHP Block$:#0000cc::2:0:
--php:String (double quoted):0:":":1:^PHP Block$:#009900::1:1:
-+php:String (double quoted):0:"(\\\\"|.)*?"::2:^PHP Block$:#009900::1:1:
- php:String (double quote escaped):0:\\\\.::2:^String \\(double quoted\\)$:::1:1:
- php:Variables:1:\\$?\\$[a-z_][a-z0-9>_$-]*::2:^PHP Block$:#cc0000::2:0:
- php:Variables (special characters):0:(\\[|\\]|->)::2:^Variables$:#0000cc::2:0:
--php:String (single quoted):0:':':1:^PHP Block$:#009900::1:1:
-+php:String (single quoted):0:'(\\\\'|.)*?'::2:^PHP Block$:#009900::1:1:
- php:String (single quote escaped):0:\\\\.::2:^String \\(single quoted\\)$:::1:1:
- php:Comment (C):0:/\\*.*?\\*/::2:^PHP Block$:#7777aa::1:2:
- php:Comment (C++/single line):0:(//|#).*?$::2:^PHP Block$:#7777aa::1:2:
 @@ -180,19 +234,17 @@
  php:String (SQL Functions):0:\\b(MATCH|AGAINST|ASCII|CHAR|SOUNDEX|MAX|MIN|MD5|LCASE|UCASE|PASSWORD|ENCRYPT|RAND|LAST_INSERT_ID|COUNT|AVG|SUM|NOW|CURDATE|CURDATE|FROM_DAYS|FROM_UNIXTIME|PERIOD_ADD|PERIOD_DIFF|TO_DAYS|UNIX_TIMESTAMP|USER|WEEKDAY|CONCAT|DATE_(FORMAT|ADD|SUB))\\b\\(:\\):1:^(PHP Block|String \\(double quoted\\)|String \\(single quoted\\))$:#999966::2:1:
  php:Operators:1:[\\+\\-\\*\\/\\.<>=`!%]+(?!\\?php)::2:^PHP Block$:#cc0000::2:1:
@@ -171,7 +159,7 @@ diff -urNad trunk~/data/highlighting.in trunk/data/highlighting.in
 -python:Special Values:0:\\bNone\\b::2::#999900::0:0:
 -python:Include:0:^(import |from ).*?$::2::#990099::0:0:
 -python:Braces:0:[{()}\\[\\]]::2::#000000::2:
-+python:Definition:0:(def|class)\\s+([a-z0-9\\-_]*)::2::#0000aa::0:0:
++python:Definition:0:(class|def)[\\t ]+[a-zA-Z0-9_-]+(\\([^)]*\\))?[\\t ]*\:::2::#0000aa::0:0:
 +python:Name:1:1::3:^Definition$:#ff8800::1:0:
 +python:Keywords:0:\\b(and|break|continue|del|elif|else|exec|for|from|if|import|in|is|not|or|pass|print|raise|return|while|yield|(assert|except|finally|try))\\b::2::#ff8800::0:0:
 +python:Keywords Exception:0:2::3:^Keywords$:#ff8800::2:0:
