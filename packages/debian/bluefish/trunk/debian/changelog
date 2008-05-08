@@ -1,6 +1,5 @@
-bluefish (1.0.7-5) UNRELEASED; urgency=low
+bluefish (1.0.7-5) unstable; urgency=low
 
-  * NOT RELEASED YET
   * debian/rules (build, clean): Moved the config.* copy action to
     config.status. Files can further be removed by dh_clean.
     (config.status): According to the manuals, variables should be given after
@@ -9,7 +8,7 @@ bluefish (1.0.7-5) UNRELEASED; urgency=low
     - Fix php highlighting pattern, that seem to lead to a segmentation fault on
       e.g. i386 architectures in some cases (LP: #228068).
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 08 Feb 2008 02:11:07 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 09 May 2008 00:28:35 +0200
 
 bluefish (1.0.7-4) unstable; urgency=low
 
