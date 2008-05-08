@@ -1,0 +1,22 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 04_fix_maximization_state_save.dpatch by Daniel Leidert (dale) <daniel.leidert@wgdd.de>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: When you maximize the bluefish window, this is not saved during
+## DP:   File > Quit. This patch fixes it (CVS src/gui.c 1.198.2.11).
+## DP:
+## DP: <URL:http://bluefish.cvs.sourceforge.net/bluefish/bluefish-gtk2/src/gui.c?r1=1.198.2.10&r2=1.198.2.11&pathrev=bluefish_1_0>
+
+@DPATCH@
+diff -urNad trunk~/src/gui.c trunk/src/gui.c
+--- trunk~/src/gui.c	2006-02-05 18:22:43.000000000 +0100
++++ trunk/src/gui.c	2008-01-20 14:16:03.000000000 +0100
+@@ -1181,7 +1181,7 @@
+ 				main_v->globses.main_window_h = event->height;
+ 				DEBUG_MSG("gui_main_window_configure_event_lcb, width=%d, height=%d\n",main_v->globses.main_window_w,main_v->globses.main_window_h);
+ 			}
+-		} else if (revent->type == GDK_WINDOW_STATE) {
++		} else if (revent->type == GDK_WINDOW_STATE && GTK_WIDGET_VISIBLE(bfwin->main_window)) {
+ 			GdkEventWindowState *event = (GdkEventWindowState *)revent;
+ 			if (event->new_window_state == GDK_WINDOW_STATE_MAXIMIZED && main_v->globses.main_window_w > 0) {
+ 				main_v->globses.main_window_w = -1 * main_v->globses.main_window_w; /* negative means it is maximized !! */
