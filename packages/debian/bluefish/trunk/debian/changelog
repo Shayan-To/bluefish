@@ -1,3 +1,9 @@
+bluefish (1.0.7-6) UNRELEASED; urgency=low
+
+  *
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 09 May 2008 01:15:20 +0200
+
 bluefish (1.0.7-5) unstable; urgency=low
 
   * debian/rules (build, clean): Moved the config.* copy action to
