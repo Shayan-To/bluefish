@@ -1,6 +1,6 @@
 bluefish-unstable (1.1.6+cvs080509-0dl1) UNRELEASED; urgency=low
 
-  * New test release from CVS 2008/02/02 (1.1.7 series).
+  * New test release from CVS 2008/05/09 (1.1.7 series).
     - Added option to select the match in the text search dialog.
     - Global session option to highlight a search result or select it.
     - Improvements to the drag and drop behaviour of the snippets plugin.
@@ -11,6 +11,7 @@ bluefish-unstable (1.1.6+cvs080509-0dl1) UNRELEASED; urgency=low
       to GtkSourceView and drop the self-written solution).
 
   * debian/control: Added Vcs-Browser field.
+    (Build-Depends): Removed dpatch.
     (Depends): bluefish-unstable-dbg also contains the debugging symbols of
     bluefish-unstable-plugins.
   * debian/copyright: Small update.
@@ -19,12 +20,14 @@ bluefish-unstable (1.1.6+cvs080509-0dl1) UNRELEASED; urgency=low
   * debian/bluefish-unstable-data.install: Ditto.
   * debian/bluefish-unstable-plugins.install: Ditto.
   * debian/bluefish-unstable-dbg.install: Ditto (initially added).
-  * debian/rules (config.status): Moved variables behind the configure call
-    and added --disable-static to avoid building the statically linked
-    plugins.
+  * debian/rules: Removed dpatch related stuff.
+    (config.status): Moved variables behind the configure call and added
+    --disable-static to avoid building the statically linked plugins.
+    (config.status, clean): Better copy config.* here instead in clean.
     (install): Removed stuff to install files from debian/ into the packaging
     directories (done by dh_install now).
     (binary-indep): List unconsidered files in debian/tmp.
+    (binary-arch, binary-indep): Fix for older dh_desktop versions.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 02 Feb 2008 16:54:34 +0100
 
