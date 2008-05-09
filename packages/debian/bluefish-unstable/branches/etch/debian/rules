@@ -7,8 +7,6 @@
 
 PACKAGE=bluefish-unstable
 
-include /usr/share/dpatch/dpatch.make
-
 CFLAGS  = -Wall -g
 LDFLAGS = -Wl,-O1 -Wl,--as-needed
 
@@ -21,39 +19,33 @@ endif
 config.status: configure
 	dh_testdir
 	# Add here commands to configure the package.
-	LDFLAGS="$(LDFLAGS)" CFLAGS="$(CFLAGS)" ./configure \
-		--prefix=/usr \
-		--exec-prefix=/usr \
+	[ ! -f /usr/share/misc/config.guess ] || cp -f /usr/share/misc/config.guess config.guess
+	[ ! -f /usr/share/misc/config.sub ] || cp -f /usr/share/misc/config.sub config.sub
+	[ ! -f /usr/share/gettext/config.rpath ] || cp -f /usr/share/gettext/config.rpath config.rpath
+	./configure --prefix=/usr --exec-prefix=/usr \
 		--mandir=\$${prefix}/share/man \
 		--with-icon-path=\$${prefix}/share/pixmaps \
 		--with-theme-path=\$${prefix}/share/icons \
 		--with-freedesktop_org-menu=\$${prefix}/share/applications \
 		--with-freedesktop_org-mime=\$${prefix}/share/mime \
 		--without-gnome2_4-mime \
+		--disable-static \
 		--disable-xml-catalog-update \
-		--disable-update-databases
+		--disable-update-databases \
+		LDFLAGS="$(LDFLAGS)" CFLAGS="$(CFLAGS)"
 
 build: build-stamp
-
-build-stamp: patch-stamp config.status
+build-stamp: config.status
 	dh_testdir
 	# Add here commands to compile the package.
 	$(MAKE)
-
 	touch build-stamp
 
-clean: unpatch
+clean:
 	dh_testdir
 	dh_testroot
-	-rm -f build-stamp patch-stamp
 	[ ! -f Makefile ] || $(MAKE) distclean
-	-test -r /usr/share/misc/config.sub && \
-		cp -f /usr/share/misc/config.sub config.sub
-	-test -r /usr/share/misc/config.guess && \
-		cp -f /usr/share/misc/config.guess config.guess
-	-test -r /usr/share/gettext/config.rpath && \
-		cp -f /usr/share/gettext/config.rpath config.rpath
-	dh_clean
+	dh_clean build-stamp
 
 install: build
 	dh_testdir
@@ -61,12 +53,6 @@ install: build
 	dh_clean -k
 	dh_installdirs
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
-	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/pixmaps
-	install -m 644 debian/bluefish-unstable.xpm $(CURDIR)/debian/$(PACKAGE)/usr/share/pixmaps/
-	for pkg in $(PACKAGE) $(PACKAGE)-data $(PACKAGE)-dbg $(PACKAGE)-plugins ; do \
-		install -d $(CURDIR)/debian/$${pkg}/usr/share/bug/$${pkg} ; \
-		install -m 644 debian/reportbug/* $(CURDIR)/debian/$${pkg}/usr/share/bug/$${pkg}/ ; \
-	done
 
 # Build architecture-independent files here.
 binary-indep: build install
@@ -77,7 +63,6 @@ binary-indep: build install
 	dh_install -i --sourcedir=debian/tmp
 	dh_installmime -i
 	dh_installxmlcatalogs -i
-	# dh_desktop -i
 	dh_compress -i
 	dh_fixperms -i
 	dh_installdeb -i
@@ -91,7 +76,7 @@ binary-arch: build install
 	dh_testroot -a
 	dh_installchangelogs -a NEWS
 	dh_installdocs -a
-	dh_install -a --sourcedir=debian/tmp
+	dh_install --list-missing --sourcedir=debian/tmp
 	dh_installmenu -a
 	dh_installmime -a
 	dh_desktop -p$(PACKAGE)
