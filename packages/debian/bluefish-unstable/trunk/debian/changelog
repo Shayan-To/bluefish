@@ -1,4 +1,4 @@
-bluefish-unstable (1.1.6+cvs080509-0dl1) UNRELEASED; urgency=low
+bluefish-unstable (1.1.6+cvs080509-0dl1) unstable; urgency=low
 
   * New test release from CVS 2008/05/09 (1.1.7 series).
     - Added option to select the match in the text search dialog.
@@ -31,7 +31,7 @@ bluefish-unstable (1.1.6+cvs080509-0dl1) UNRELEASED; urgency=low
     (binary-indep): List unconsidered files in debian/tmp.
     (binary-arch, binary-indep): Fix for older dh_desktop versions.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 02 Feb 2008 16:54:34 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 09 May 2008 04:08:06 +0200
 
 bluefish-unstable (1.1.5+cvs071220-0dl6) unstable; urgency=low
 
