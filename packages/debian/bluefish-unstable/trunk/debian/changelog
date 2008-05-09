@@ -18,7 +18,8 @@ bluefish-unstable (1.1.6+cvs080509-0dl1) UNRELEASED; urgency=low
   * debian/bluefish-unstable.install: Added stuff not in debian/tmp (removed
     it from debian/rules).
   * debian/bluefish-unstable-data.install: Ditto.
-  * debian/bluefish-unstable-plugins.install: Ditto.
+  * debian/bluefish-unstable-plugins.install: Ditto (further don't install .la
+    files).
   * debian/bluefish-unstable-dbg.install: Ditto (initially added).
   * debian/rules: Removed dpatch related stuff.
     (config.status): Moved variables behind the configure call and added
