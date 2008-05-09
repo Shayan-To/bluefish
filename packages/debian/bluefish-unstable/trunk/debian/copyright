@@ -8,7 +8,7 @@ Copyright and Partial Copyright:
 
   Copyright (C) 1998-2000 Chris Mazuc
   Copyright (C) 1998-2000 Roland Steinbach
-  Copyright (C) 1998-2007 Olivier Sessink
+  Copyright (C) 1998-2008 Olivier Sessink
   Copyright (C) 1999 Antti-Juhani Kaijanaho
   Copyright (C) 1999 Hylke van der Schaaf
   Copyright (C) 2000 Pablo De Napoli
@@ -32,7 +32,7 @@ Upstream Authors:
   Olivier Sessink, Chris Mazuc, Neil Millar, Hylke van der Schaaf, Jim Hayward
   and others. See the file AUTHORS.gz for a list of all authors.
 
-License: GNU General Public License version 2
+License: GNU GPL v2 or later
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by

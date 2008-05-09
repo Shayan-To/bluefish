@@ -8,6 +8,7 @@ Build-Depends: debhelper (>= 5), dpatch, autotools-dev, gettext,
  libxml2-dev, libxml2-utils, python-dev, xml-core, zlib1g-dev
 Standards-Version: 3.7.3
 Homepage: http://bluefish.openoffice.nl
+Vcs-Browser: http://svn.wgdd.de/websvn/wsvn/packages/bluefish-unstable/
 
 Package: bluefish-unstable
 Architecture: any
@@ -55,7 +56,7 @@ Description: advanced Gtk+ HTML editor (data)
 Package: bluefish-unstable-dbg
 Architecture: any
 Priority: extra
-Depends: bluefish-unstable (= ${binary:Version})
+Depends: bluefish-unstable (= ${binary:Version}), bluefish-unstable-plugins (= ${binary:Version})
 Description: advanced Gtk+ HTML editor (debugging symbols)
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a
