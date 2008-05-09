@@ -14,6 +14,7 @@ bluefish-unstable (1.1.6+cvs080509-0dl1) UNRELEASED; urgency=low
     (Build-Depends): Removed dpatch.
     (Depends): bluefish-unstable-dbg also contains the debugging symbols of
     bluefish-unstable-plugins.
+    (Suggests): Added firefox for Ubuntu. 
   * debian/copyright: Small update.
   * debian/bluefish-unstable.install: Added stuff not in debian/tmp (removed
     it from debian/rules).
