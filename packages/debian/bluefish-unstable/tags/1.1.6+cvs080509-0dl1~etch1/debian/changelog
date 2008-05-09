@@ -1,0 +1,87 @@
+bluefish-unstable (1.1.6+cvs080509-0dl1~etch1) unstable; urgency=low
+
+  * Rebuilt for Etch.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 09 May 2008 04:30:10 +0200
+
+bluefish-unstable (1.1.6+cvs080509-0dl1) unstable; urgency=low
+
+  * New test release from CVS 2008/05/09 (1.1.7 series).
+    - Added option to select the match in the text search dialog.
+    - Global session option to highlight a search result or select it.
+    - Improvements to the drag and drop behaviour of the snippets plugin.
+    - New "flat mode" for the filebrowser.
+    - Improvements/fixes to the CSS highlighting pattern.
+    - Several code fixes, cleanups and improvements.
+    - Improvements of the highlighting engine (however, we will probably move
+      to GtkSourceView and drop the self-written solution).
+
+  * debian/control: Added Vcs-Browser field.
+    (Build-Depends): Removed dpatch.
+    (Depends): bluefish-unstable-dbg also contains the debugging symbols of
+    bluefish-unstable-plugins.
+    (Suggests): Added firefox for Ubuntu. 
+  * debian/copyright: Small update.
+  * debian/bluefish-unstable.install: Added stuff not in debian/tmp (removed
+    it from debian/rules).
+  * debian/bluefish-unstable-data.install: Ditto.
+  * debian/bluefish-unstable-plugins.install: Ditto (further don't install .la
+    files).
+  * debian/bluefish-unstable-dbg.install: Ditto (initially added).
+  * debian/rules: Removed dpatch related stuff.
+    (config.status): Moved variables behind the configure call and added
+    --disable-static to avoid building the statically linked plugins.
+    (config.status, clean): Better copy config.* here instead in clean.
+    (install): Removed stuff to install files from debian/ into the packaging
+    directories (done by dh_install now).
+    (binary-indep): List unconsidered files in debian/tmp.
+    (binary-arch, binary-indep): Fix for older dh_desktop versions.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 09 May 2008 04:08:06 +0200
+
+bluefish-unstable (1.1.5+cvs071220-0dl6) unstable; urgency=low
+
+  * debian/rules (binary-arch): Moved the .desktop files from -data into the
+    binary package, so call dh_desktop here.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 16:48:30 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl5) unstable; urgency=high
+
+  * debian/bluefish-unstable-data.postrm: Fixed a bad bug. Sorry!
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 16:17:25 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl4) unstable; urgency=low
+
+  * debian/rules (install): Do not depend on a debhelper 5.0.57 feature.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 23 Dec 2007 02:16:46 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl3) unstable; urgency=low
+
+  * debian/bluefish-unstable-data.preinst: Added diversion to solve file
+    conflict with the bluefish package.
+  * debian/bluefish-unstable-data.postrm: Ditto.
+  * debian/control (Suggests): Removed obsolete gnome-bin.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 04:51:24 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl2) unstable; urgency=low
+
+  * debian/control (Depends, Recommends): Remove non-existent package
+    recommendation. Make -dbg a recommendation.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 03:20:32 +0100
+
+bluefish-unstable (1.1.5+cvs071220-0dl1) unstable; urgency=low
+
+  * New snapshot from CVS (2007-12-20).
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 02:09:51 +0100
+
+bluefish-unstable (1.1.5-0dl1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 21 Dec 2007 01:36:23 +0100
