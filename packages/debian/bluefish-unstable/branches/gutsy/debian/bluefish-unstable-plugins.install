@@ -1,1 +1,2 @@
-usr/lib/bluefish-unstable
+usr/lib/bluefish-unstable/*.so
+../../debian/reportbug/* usr/share/bug/bluefish-unstable-plugins/
