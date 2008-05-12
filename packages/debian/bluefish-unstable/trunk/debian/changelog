@@ -1,3 +1,9 @@
+bluefish-unstable (1.1.6+cvs080509-0dl2) UNRELEASED; urgency=low
+
+  * 
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 12 May 2008 17:25:27 +0200
+
 bluefish-unstable (1.1.6+cvs080509-0dl1) unstable; urgency=low
 
   * New test release from CVS 2008/05/09 (1.1.7 series).
