@@ -1,4 +1,5 @@
-This package was debianized by Davide Puricelli (evo) <evo@debian.org>.
+This package was debianized by Davide Puricelli (evo) <evo@debian.org>. It is
+currently maintained by Daniel Leidert <daniel.leidert@wgdd.de>.
 
 It was downloaded from:
 
@@ -7,15 +8,15 @@ It was downloaded from:
 Copyright and Partial Copyright:
 
   Copyright (C) 1998-2000 Chris Mazuc
-  Copyright (C) 1998-2000 Roland Steinbach
+  Copyright (C) 1998-2002 Roland Steinbach
   Copyright (C) 1998-2008 Olivier Sessink
   Copyright (C) 1999 Antti-Juhani Kaijanaho
   Copyright (C) 1999 Hylke van der Schaaf
   Copyright (C) 2000 Pablo De Napoli
-  Copyright (C) 2003 Oskar Swida
+  Copyright (C) 2003,2007 Oskar Świda
   Copyright (C) 2004 Eugene Morenko
   Copyright (C) 2004 Salvador Fandino
-  Copyright (C) 2005,2006 James Hayward
+  Copyright (C) 2005-2008 James Hayward
 
   src/gtk_easy.c: Partial code copyright
   Copyright (C) 1999 Free Software Foundation
@@ -49,5 +50,8 @@ License: GNU GPL v2 or later
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
   MA 02110-1301, USA.
 
-On Debian systems, the GNU General Public License, version 2, is
-available as the file /usr/share/common-licenses/copyright/GPL.
+On Debian systems, the current version of the GNU General Public License, is
+available as the file `/usr/share/common-licenses/copyright/GPL'.
+
+The Debian packaging is licensed under the GPL, see
+`/usr/share/common-licenses/GPL'.
