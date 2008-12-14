@@ -1,0 +1,57 @@
+This package was debianized by Davide Puricelli (evo) <evo@debian.org>. It is
+currently maintained by Daniel Leidert <daniel.leidert@wgdd.de>.
+
+It was downloaded from:
+
+  http://bluefish.openoffice.nl
+
+Copyright and Partial Copyright:
+
+  Copyright (C) 1998-2000 Chris Mazuc
+  Copyright (C) 1998-2002 Roland Steinbach
+  Copyright (C) 1998-2008 Olivier Sessink
+  Copyright (C) 1999 Antti-Juhani Kaijanaho
+  Copyright (C) 1999 Hylke van der Schaaf
+  Copyright (C) 2000 Pablo De Napoli
+  Copyright (C) 2003,2007 Oskar Świda
+  Copyright (C) 2004 Eugene Morenko
+  Copyright (C) 2004 Salvador Fandino
+  Copyright (C) 2005-2008 James Hayward
+
+  src/gtk_easy.c: Partial code copyright
+  Copyright (C) 1999 Free Software Foundation
+  Copyright (C) 2000, 2001 Eazel, Inc.
+
+  src/document.c: Partial code copyright
+  Copyright (C) 2001 Mikael Hermansson
+  Copyright (C) 2001 Chris Phelps
+
+  But many others also contributed code.
+
+Upstream Authors:
+
+  Olivier Sessink, Chris Mazuc, Neil Millar, Hylke van der Schaaf, Jim Hayward
+  and others. See the file AUTHORS for a list of all authors.
+
+License: GNU GPL v2 or later
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+  MA 02110-1301, USA.
+
+On Debian systems, the current version of the GNU General Public License, is
+available as the file `/usr/share/common-licenses/copyright/GPL'.
+
+The Debian packaging is licensed under the GPL, see
+`/usr/share/common-licenses/GPL'.
