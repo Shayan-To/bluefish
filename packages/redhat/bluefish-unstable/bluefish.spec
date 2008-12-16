@@ -1,8 +1,8 @@
 %define name	bluefish-unstable
-%define version	1.1.5
-%define release	3
-%define distro	fc8
-%define source	bluefish-unstable-1.1.5
+%define version	1.3.0
+%define release	4
+%define distro	fc10
+%define source	bluefish-unstable-1.3.0
 
 
 Summary: A GTK2 web development application for experienced users
@@ -96,11 +96,10 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 %{_datadir}/mime/packages/*
 %{_datadir}/pixmaps/*
 %{_datadir}/icons/hicolor/*/*/*
-%{_datadir}/xml/%{name}
 %{_mandir}/man1/*
 
 
 
 %changelog
-* Mon Nov 12 2007 Matthias Haase <matthias_haase@bennewitz.com> - 1.1.5-3.fc8
+* Mon Dec 15 2008 Matthias Haase <matthias_haase@bennewitz.com> - 1.3.0-4.fc10
 - Automatic build
