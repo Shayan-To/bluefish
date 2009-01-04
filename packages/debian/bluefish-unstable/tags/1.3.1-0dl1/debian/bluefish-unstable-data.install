@@ -1,0 +1,6 @@
+usr/share/bluefish-unstable
+usr/share/icons
+usr/share/locale
+usr/share/mime
+usr/share/pixmaps
+../../debian/reportbug/* usr/share/bug/bluefish-unstable-data/
