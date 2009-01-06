@@ -1,8 +1,8 @@
 %define name	bluefish-unstable
-%define version	1.3.0
+%define version	1.3.1
 %define release	4
 %define distro	fc10
-%define source	bluefish-unstable-1.3.0
+%define source	bluefish-unstable-1.3.1
 
 
 Summary: A GTK2 web development application for experienced users
@@ -10,11 +10,12 @@ Name: %{name}
 Version: %{version}
 Release: %{release}.%{distro}
 Source: ftp://ftp.ratisbona.com/pub/bluefish/snapshots/%{source}.tar.gz
+Patch0: %{name}-%{version}-bfmime.patch
 URL: http://bluefish.openoffice.nl
 License: GPL
 Group: Development/Tools
-Requires: gtk2, pcre, aspell, gnome-vfs2, libgnomeui
-BuildRequires: gtk2-devel, pcre-devel, gnome-vfs2-devel, aspell-devel
+Requires: gtk2, pcre, aspell, libgnomeui
+BuildRequires: gtk2-devel, pcre-devel, aspell-devel
 BuildRequires: desktop-file-utils, gettext, libxml2, perl-XML-Parser
 BuildRequires: libgnomeui-devel
 Requires(post): desktop-file-utils, shared-mime-info
@@ -28,6 +29,7 @@ editing dynamic and interactive websites
 
 %prep
 %setup -q -n %{source}
+%patch0 -p1 -b .%{name}-%{version}-bfmime
 
 %build
 %configure --disable-update-databases \
@@ -41,7 +43,9 @@ editing dynamic and interactive websites
 %{__rm} -rf %{buildroot}
 make install DESTDIR=%{buildroot}
 %{__rm} -f %{buildroot}%{_libdir}/%{name}/*.*a
-
+# temporary 
+%{__mv} %{buildroot}%{_datadir}/pixmaps/gnome-mime-application-bluefish-project.png \
+        %{buildroot}%{_datadir}/pixmaps/gnome-mime-application-x-bluefish-project.png
 # required ugly joining
 %find_lang %{name}
 %find_lang %{name}_plugin_about
@@ -101,5 +105,5 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 
 
 %changelog
-* Mon Dec 15 2008 Matthias Haase <matthias_haase@bennewitz.com> - 1.3.0-4.fc10
+* Mon Jan 05 2009 Matthias Haase <matthias_haase@bennewitz.com> - 1.3.1-4.fc10
 - Automatic build
