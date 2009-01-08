@@ -1,0 +1,5 @@
+You are using a non-official Debian/Ubuntu package. _DON'T_ bug any of these
+projects with bug reports.
+
+Better use upstream bugzilla (you can use bug-buddy) to report bugs:
+http://bugzilla.gnome.org/enter_bug.cgi?product=bluefish
