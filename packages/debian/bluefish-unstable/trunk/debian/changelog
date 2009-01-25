@@ -1,3 +1,9 @@
+bluefish-unstable (1.3.1+svn4478-0dl3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 25 Jan 2009 15:59:33 +0100
+
 bluefish-unstable (1.3.1+svn4478-0dl2) unstable; urgency=low
 
   * data/bflang/php.bflang2: Removed outdated copy.
