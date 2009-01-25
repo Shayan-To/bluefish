@@ -25,7 +25,7 @@ config.status: configure
 	./configure --prefix=/usr --exec-prefix=/usr \
 		--mandir=\$${prefix}/share/man \
 		--with-icon-path=\$${prefix}/share/pixmaps \
-		--with-theme-path=\$${prefix}/share/icons \
+		--with-theme-path=\$${prefix}/share/icons/hicolor \
 		--with-freedesktop_org-menu=\$${prefix}/share/applications \
 		--with-freedesktop_org-mime=\$${prefix}/share/mime \
 		--without-gnome2_4-mime \
@@ -62,6 +62,7 @@ binary-indep: build install
 	dh_installdocs -i
 	dh_install -i --sourcedir=debian/tmp
 	dh_installmime -i
+	dh_icons -i
 	dh_compress -i
 	dh_fixperms -i
 	dh_installdeb -i

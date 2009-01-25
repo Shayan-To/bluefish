@@ -2,6 +2,15 @@ bluefish-unstable (1.3.1+svn20090117-0dl1) UNRELEASED; urgency=low
 
   * New tarball created from SVN revision 4455.
 
+  * debian/bluefish-unstable-data.preinst: Removed. The file is now installed
+    with a different name.
+  * debian/bluefish-unstable-data.postrm: Ditto.
+  * debian/control (Build-Depends): dh_icons needs versioned debhelper.
+    (Depends): Added ${misc:Depends} to all. Added gvfs-backends for the
+    application for remote file-system support.
+  * debian/rules (config.status): Fixed the icons path.
+    (binary-indep): Call dh_icons to update the cache.
+
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 05 Jan 2009 00:31:16 +0100
 
 bluefish-unstable (1.3.1-0dl1) unstable; urgency=low
