@@ -1,6 +1,6 @@
-bluefish-unstable (1.3.1+svn20090117-0dl1) UNRELEASED; urgency=low
+bluefish-unstable (1.3.1+svn4478-0dl1) UNRELEASED; urgency=low
 
-  * New tarball created from SVN revision 4455.
+  * New tarball created from SVN revision 4478.
 
   * debian/bluefish-unstable-data.preinst: Removed. The file is now installed
     with a different name.
