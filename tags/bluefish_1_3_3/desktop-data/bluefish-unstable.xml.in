@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="application/x-bluefish-project">
+		<sub-class-of type="text/plain" />
+		<_comment>Bluefish project file</_comment>
+		<glob pattern="*.bfproject" />
+		<!-- drop the next line as soon as this becomes the stable version -->
+		<alias type="application/bluefish-project" />
+	</mime-type>
+	<mime-type type="application/x-bluefish-language2">
+		<sub-class-of type="application/xml" />
+		<_comment>Bluefish language definition file</_comment>
+		<glob pattern="*.bflang2" />
+		<match value="&lt;bflang" type="string" offset="0:256" />
+		<root-XML namespaceURI="http://bluefish.openoffice.nl/bflang2" localName="bflang" />
+	</mime-type>
+</mime-info>
