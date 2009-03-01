@@ -1,3 +1,9 @@
+bluefish-unstable (1.3.3-0dl1) UNRELEASED; urgency=low
+
+  * New upstream release 1.3.3.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 01 Mar 2009 15:24:48 +0100
+
 bluefish-unstable (1.3.2+svn4508-0dl1) unstable; urgency=low
 
   * New upstream release 1.3.2 including some fixes from SVN revision 4508.
