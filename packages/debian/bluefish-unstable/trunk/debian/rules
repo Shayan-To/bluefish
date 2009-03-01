@@ -8,12 +8,18 @@
 PACKAGE=bluefish-unstable
 
 CFLAGS  = -Wall -g
-LDFLAGS = -Wl,-O1 -Wl,--as-needed
+LDFLAGS = -Wl,--as-needed
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
   CFLAGS += -O0
 else
   CFLAGS += -O2
+  LDFLAGS += -Wl,-O1
+endif
+
+ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
+  NUMJOBS = $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
+  MAKEFLAGS += -j$(NUMJOBS)
 endif
 
 config.status: configure
