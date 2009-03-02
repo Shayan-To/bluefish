@@ -1,3 +1,9 @@
+bluefish (1.0.7-7) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 02 Mar 2009 18:24:34 +0100
+
 bluefish (1.0.7-6) unstable; urgency=low
 
   * debian/control: Added Vcs-Svn and Vcs-Browser field.
