@@ -2,15 +2,19 @@ Source: bluefish
 Maintainer: Daniel Leidert (dale) <daniel.leidert@wgdd.de>
 Section: web
 Priority: optional
-Build-Depends: debhelper (>= 5), dpatch, autotools-dev, gettext, libaspell-dev, libfreetype6-dev, libgnomeui-dev, libgnomevfs2-dev, libglib2.0-dev, libgtk2.0-dev, libpcre3-dev, libxml2-dev, zlib1g-dev
-Standards-Version: 3.7.3
+Build-Depends: debhelper (>= 5), dpatch, autotools-dev, gettext,
+ libaspell-dev, libfreetype6-dev, libgnomeui-dev, libgnomevfs2-dev,
+ libglib2.0-dev, libgtk2.0-dev, libpcre3-dev, libxml2-dev, zlib1g-dev
+Standards-Version: 3.8.0
 Homepage: http://bluefish.openoffice.nl
+Vcs-Browser: http://bluefish.svn.sourceforge.net/viewvc/bluefish/packages/debian/bluefish/
+Vcs-Svn: https://bluefish.svn.sourceforge.net/svnroot/bluefish/packages/debian/bluefish/trunk/
 DM-Upload-Allowed: yes
 
 Package: bluefish
 Architecture: any
 Depends: ${shlibs:Depends}
-Suggests: galeon | iceape | iceweasel | www-browser, gnome-bin, weblint-perl | weblint, libxml2-utils, php5-cli, tidy
+Suggests: galeon | iceweasel | www-browser, weblint-perl | weblint, libxml2-utils, php5-cli, tidy
 Description: advanced Gtk+ HTML editor
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a

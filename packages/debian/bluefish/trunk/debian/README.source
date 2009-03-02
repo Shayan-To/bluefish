@@ -1,0 +1,7 @@
+bluefish source for Debian
+--------------------------
+
+This package uses the `dpatch' patch management solution. See
+/usr/share/doc/dpatch/README.source.gz.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>, Mar 2009

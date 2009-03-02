@@ -1,6 +1,9 @@
 bluefish (1.0.7-6) UNRELEASED; urgency=low
 
-  *
+  * debian/control: Added Vcs-Svn and Vcs-Browser field.
+    (Standards-Version): Bumped to 3.8.0.
+    (Suggests): Removed iceape. Removed gnome-bin (closes: #510738).
+  * debian/README.source: Added to be compliant with policy version 3.8.0.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 09 May 2008 01:15:20 +0200
 
