@@ -1,0 +1,88 @@
+#!/usr/bin/make -f
+# Sample debian/rules that uses debhelper.
+# GNU copyright 1997 to 1999 by Joey Hess.
+#
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+PACKAGE=bluefish
+
+include /usr/share/dpatch/dpatch.make
+
+CFLAGS = -Wall -g
+LDFLAGS = -Wl,-z,defs -Wl,--as-needed
+
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+  CFLAGS += -O0
+else
+  CFLAGS += -O2
+  LDFLAGS += -Wl,-O1
+endif
+
+config.status: configure
+	dh_testdir
+	[ ! -f /usr/share/misc/config.guess ] || cp -f /usr/share/misc/config.guess config.guess
+	[ ! -f /usr/share/misc/config.sub ] || cp -f /usr/share/misc/config.sub config.sub
+	[ ! -f /usr/share/gettext/config.rpath ] || cp -f /usr/share/gettext/config.rpath config.rpath
+	# Add here commands to configure the package.
+	./configure --prefix=/usr \
+		--mandir=\$${prefix}/share/man \
+		--with-icon-path=\$${prefix}/share/pixmaps \
+		--with-freedesktop_org-menu=\$${prefix}/share/applications \
+		--with-freedesktop_org-mime=\$${prefix}/share/mime \
+		--without-gnome2_4-mime \
+		--without-gnome2_4-appreg \
+		--disable-update-databases \
+		LDFLAGS="$(LDFLAGS)" CFLAGS="$(CFLAGS)"
+
+build: build-stamp
+
+build-stamp: patch-stamp config.status
+	dh_testdir
+	# Add here commands to compile the package.
+	$(MAKE)
+
+	touch build-stamp
+
+clean: unpatch
+	dh_testdir
+	dh_testroot
+	# Add here commands to clean up after the build process.
+	[ ! -f Makefile ] || $(MAKE) distclean
+	dh_clean build-stamp patch-stamp
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+	# Add here commands to install the package into debian/bluefish.
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/$(PACKAGE)
+
+
+# Build architecture-independent files here.
+binary-indep: build install
+# We have nothing to do by default.
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_install
+	dh_installdocs
+	dh_installmenu
+	dh_installmime
+	dh_installchangelogs NEWS
+	dh_desktop
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install

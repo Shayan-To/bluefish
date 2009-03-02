@@ -1,0 +1,35 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 01_ubuntu_desktop_fix.dpatch by Thierry Moisan (independent of work done by Barry deFreese)
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: * date/bluefish.desktop.in (Icon): Removes the absolute icon path from
+## DP:   the file (https://wiki.ubuntu.com/UniverseDesktopFileAbsolutePath).
+## DP:   Fixes https://launchpad.net/distros/ubuntu/+source/bluefish/+bug/3946.
+## DP: * date/bluefish-project.desktop.in (Icon): Ditto.
+
+
+@DPATCH@
+diff -urNad bluefish-1.0.5~/data/bluefish.desktop.in bluefish-1.0.5/data/bluefish.desktop.in
+--- bluefish-1.0.5~/data/bluefish.desktop.in	2006-01-31 07:54:05.000000000 +0100
++++ bluefish-1.0.5/data/bluefish.desktop.in	2006-02-06 16:42:52.000000000 +0100
+@@ -6,7 +6,7 @@
+ Comment[de]=Webseiten erstellen
+ Comment[fr]=Éditeur pour développeurs web
+ Exec=bluefish %F
+-Icon=ICONDIR/bluefish-icon.png
++Icon=bluefish-icon
+ Terminal=false
+ Type=Application
+ Categories=GTK;GNOME;Application;Development;WebDevelopment;
+diff -urNad bluefish-1.0.5~/data/bluefish-project.desktop.in bluefish-1.0.5/data/bluefish-project.desktop.in
+--- bluefish-1.0.5~/data/bluefish-project.desktop.in	2006-01-31 07:54:05.000000000 +0100
++++ bluefish-1.0.5/data/bluefish-project.desktop.in	2006-02-06 16:42:52.000000000 +0100
+@@ -6,7 +6,7 @@
+ Comment[de]=Editor für Web-Entwickler
+ Comment[fr]=Éditeur pour développeurs web
+ Exec=bluefish -n -p %f
+-Icon=ICONDIR/bluefish-icon.png
++Icon=bluefish-icon
+ Terminal=false
+ Type=Application
+ NoDisplay=true
