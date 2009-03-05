@@ -1,3 +1,25 @@
+bluefish-unstable (1.3.3+svn4608-0dl1) unstable; urgency=low
+
+  * New upstream release 1.3.3 including small fixes from SVN rev 4608.
+    - dropped --projectfile switch in favour of MIME type based detection
+    - dropped --newwindow swtch in favour of --curwindow (new window now
+      default)
+    - dropped --skiprootcheck switch
+    - German, Japanese and Brazilian Portuguese translation updates
+    - code cleanup and several memory leak fixes
+    - new visible spacing feature
+    - new charmap plugin
+    - several bug fixes and improvements
+
+  * debian/control (Priority): Downgraded to extra.
+    (Build-Depends): Added libgucharmap2-dev | libgucharmap-dev. intltool
+    dependency increased.
+  * debian/copyright: 
+  * debian/rules: Added support for parallel building.
+    (LDFLAGS): Don't use `-Wl,-O1' with noopt.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 05 Mar 2009 17:34:35 +0100
+
 bluefish-unstable (1.3.2+svn4508-0dl1) unstable; urgency=low
 
   * New upstream release 1.3.2 including some fixes from SVN revision 4508.
