@@ -1,3 +1,11 @@
+bluefish-unstable (1.3.3+svn4608-0dl1~ubuntu1) intrepid; urgency=low
+
+  * Rebuild for Ubuntu intrepid.
+    - debian/control (Build-Depends): Add libxml2-utils to not FTBFS.
+      (Suggests): Added seamonkey-browser and mozilla-browser.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 05 Mar 2009 20:04:38 +0100
+
 bluefish-unstable (1.3.3+svn4608-0dl1) unstable; urgency=low
 
   * New upstream release 1.3.3 including small fixes from SVN rev 4608.
