@@ -5,17 +5,19 @@ Priority: extra
 Build-Depends: debhelper (>= 5.0.51), autotools-dev, gettext, intltool (>= 0.40),
  libtool, libaspell-dev, libglib2.0-dev (>= 2.16), libgtk2.0-dev (>= 2.12),
  libgucharmap2-dev (>= 2.20) | libgucharmap-dev (>= 2.20), libpango1.0-dev,
- libpcre3-dev, libxml2-dev, python-dev, zlib1g-dev
-Standards-Version: 3.8.0
+ libpcre3-dev, libxml2-utils, libxml2-dev, python-dev, zlib1g-dev
+Standards-Version: 3.8.1
 Homepage: http://bluefish.openoffice.nl
 Vcs-Browser: http://bluefish.svn.sourceforge.net/viewvc/bluefish/packages/debian/bluefish-unstable/
 Vcs-Svn: https://bluefish.svn.sourceforge.net/svnroot/bluefish/packages/debian/bluefish-unstable/trunk/
 
 Package: bluefish-unstable
 Architecture: any
-Depends: bluefish-unstable-data (= ${source:Version}), bluefish-unstable-plugins (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, gvfs-backends
+Depends: bluefish-unstable-data (= ${source:Version}), bluefish-unstable-plugins (= ${binary:Version}),
+ ${shlibs:Depends}, ${misc:Depends}, gvfs-backends
 Recommends: bluefish-unstable-dbg
-Suggests: galeon | iceape | iceweasel | firefox | www-browser, weblint-perl | weblint, libxml2-utils, php5-cli, tidy
+Suggests: galeon | iceweasel | firefox | seamonkey-browser | mozilla-browser | www-browser,
+ weblint-perl | weblint, libxml2-utils, php5-cli, tidy
 Description: advanced Gtk+ HTML editor (DEVELOPMENT VERSION)
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a
@@ -61,6 +63,7 @@ Description: advanced Gtk+ HTML editor (data)
  THIS IS THE DEVELOPMENT VERSION OF BLUEFISH!
 
 Package: bluefish-unstable-dbg
+Section: debug
 Architecture: any
 Priority: extra
 Depends: bluefish-unstable (= ${binary:Version}), bluefish-unstable-plugins (= ${binary:Version}), ${misc:Depends}

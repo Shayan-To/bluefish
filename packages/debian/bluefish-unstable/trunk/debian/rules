@@ -8,7 +8,7 @@
 PACKAGE=bluefish-unstable
 
 CFLAGS  = -Wall -g
-LDFLAGS = -Wl,--as-needed
+LDFLAGS += -Wl,--as-needed
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
   CFLAGS += -O0
@@ -30,11 +30,12 @@ config.status: configure
 	[ ! -f /usr/share/gettext/config.rpath ] || cp -f /usr/share/gettext/config.rpath config.rpath
 	./configure --prefix=/usr --exec-prefix=/usr \
 		--mandir=\$${prefix}/share/man \
+		--sysconfdir=etc \
 		--with-icon-path=\$${prefix}/share/pixmaps \
 		--with-theme-path=\$${prefix}/share/icons/hicolor \
 		--with-freedesktop_org-menu=\$${prefix}/share/applications \
 		--with-freedesktop_org-mime=\$${prefix}/share/mime \
-		--without-gnome2_4-mime \
+		--with-xml-catalog=\$${sysconfdir}/xml/catalog \
 		--disable-static \
 		--disable-xml-catalog-update \
 		--disable-update-databases \
@@ -59,6 +60,7 @@ install: build
 	dh_clean -k
 	dh_installdirs
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	dh_install --list-missing --sourcedir=debian/tmp
 
 # Build architecture-independent files here.
 binary-indep: build install
@@ -66,7 +68,6 @@ binary-indep: build install
 	dh_testroot -i
 	dh_installchangelogs -i NEWS
 	dh_installdocs -i
-	dh_install -i --sourcedir=debian/tmp
 	dh_installmime -i
 	dh_icons -i
 	dh_compress -i
@@ -82,9 +83,7 @@ binary-arch: build install
 	dh_testroot -a
 	dh_installchangelogs -a NEWS
 	dh_installdocs -a
-	dh_install --list-missing --sourcedir=debian/tmp
 	dh_installmenu -a
-	dh_installmime -a
 	dh_desktop -p$(PACKAGE)
 	dh_link -a
 	dh_strip -a --dbg-package=$(PACKAGE)-dbg
