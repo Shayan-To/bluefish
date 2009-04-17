@@ -30,7 +30,7 @@ config.status: configure
 	[ ! -f /usr/share/gettext/config.rpath ] || cp -f /usr/share/gettext/config.rpath config.rpath
 	./configure --prefix=/usr --exec-prefix=/usr \
 		--mandir=\$${prefix}/share/man \
-		--sysconfdir=etc \
+		--sysconfdir=/etc \
 		--with-icon-path=\$${prefix}/share/pixmaps \
 		--with-theme-path=\$${prefix}/share/icons/hicolor \
 		--with-freedesktop_org-menu=\$${prefix}/share/applications \
