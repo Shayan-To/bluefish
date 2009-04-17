@@ -1,8 +1,8 @@
 %define name	bluefish-unstable
-%define version	1.3.2
+%define version	1.3.4
 %define release	4
 %define distro	fc10
-%define source	bluefish-unstable-1.3.2
+%define source	bluefish-unstable-1.3.4
 
 
 Summary: A GTK2 web development application for experienced users
@@ -59,10 +59,6 @@ desktop-file-install --vendor=fedora --delete-original \
   --add-category X-Fedora                              \
   --add-category Development                           \
   %{buildroot}%{_datadir}/applications/%{name}.desktop
-desktop-file-install --vendor=fedora --delete-original \
-  --dir %{buildroot}%{_datadir}/applications           \
-  --add-category X-Fedora                              \
-  %{buildroot}%{_datadir}/applications/%{name}-project.desktop
 
 %clean
 %{__rm} -rf %{buildroot}
@@ -100,5 +96,5 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 
 
 %changelog
-* Wed Jan 28 2009 Matthias Haase <matthias_haase@bennewitz.com> - 1.3.2-4.fc10
+* Fri Apr 17 2009 Matthias Haase <matthias_haase@bennewitz.com> - 1.3.4-4.fc10
 - Automatic build
