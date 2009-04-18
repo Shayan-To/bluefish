@@ -65,7 +65,6 @@ Description: advanced Gtk+ HTML editor (data)
 Package: bluefish-unstable-dbg
 Section: debug
 Architecture: any
-Priority: extra
 Depends: bluefish-unstable (= ${binary:Version}), bluefish-unstable-plugins (= ${binary:Version}), ${misc:Depends}
 Description: advanced Gtk+ HTML editor (debugging symbols)
  Bluefish is a GTK+ HTML editor for the experienced web designer.

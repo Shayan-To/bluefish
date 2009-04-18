@@ -6,6 +6,7 @@ bluefish-unstable (1.3.4-0dl1) UNRELEASED; urgency=low
     (Build-Depends): Added libxml2-utils for Ubuntu.
     (Suggests): Added the Ubuntu browser packages.
     (Section): The debugging symbols belong into the debug section.
+    (Priority): Fixed binary-control-field-duplicates-source.
   * debian/rules (LDFLAGS): Don't overwrite LDFLAGS from environment.
     (config.status): Removed obsolete switch. Added switches for the catalog
     system (although they are unused atm).
