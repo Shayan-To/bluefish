@@ -1,3 +1,9 @@
+bluefish-unstable (1.3.4-0dl1~bpo50+1) lenny-backports; urgency=low
+
+  * Rebuild for lenny-backports.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 18 Apr 2009 02:41:41 +0200
+
 bluefish-unstable (1.3.4-0dl1) unstable; urgency=low
 
   * New upstream release 1.3.4.
