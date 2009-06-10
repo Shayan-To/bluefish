@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		shell.bflang2 $Revision$
+ 
+		Copyright (C) 2008 Olivier Sessink
+
+		This program is free software; you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation; either version 2 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program; if not, write to the Free Software
+		Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.		
+-->
+
+<bflang name="Shell" matches="29" contexts="3" table="82">
+<header>
+	<mime type="application/x-shellscript"/>
+	<mime type="text/x-shellscript"/>
+	<mime type="text/x-sh"/>
+	<highlight name="string" style="string"   />
+	<highlight name="keyword" style="keyword"  />
+	<highlight name="value" style="value"  />
+	<highlight name="function" style="function"  />
+	<highlight name="comment" style="comment"  />
+	<highlight name="variable" style="variable"  />
+</header>
+<properties>
+	<comment id="#" type="line" start="#" />
+</properties>
+
+<definition>
+<context symbols=" $;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;">
+<element pattern="[0-9.]+" is_regex="1" highlight="value"/>
+<element pattern="$[a-z0-9._]+" is_regex="1" case_insens="1" highlight="variable"/>
+<element pattern="${[^}]+}" is_regex="1" case_insens="1" highlight="variable"/>
+<group autocomplete="1" highlight="function">
+	<element pattern="print" />
+	<element pattern="echo" />
+	<element pattern="setopt" />
+	<element pattern="alias" />
+	<element pattern="set" />
+	<element pattern="if" />
+	<element pattern="then" />
+	<element pattern="else" />
+	<element pattern="fi" />
+	<element pattern="for" />
+	<element pattern="in" />
+	<element pattern="do" />
+	<element pattern="done" />
+	<element pattern="while"/>
+	<element pattern="case" />
+	<element pattern="esac" />
+	<element pattern="break" />
+	<element pattern="eval" />
+</group>
+
+<element id="{" pattern="{" starts_block="1" mayfold="1" highlight="brackets" />
+<element pattern="}" ends_block="1" blockstartelement="{" highlight="brackets" />
+<element id="[" pattern="[" starts_block="1" mayfold="1" highlight="brackets" />
+<element pattern="]" ends_block="1" blockstartelement="[" highlight="brackets" />
+<element id="(" pattern="(" starts_block="1" mayfold="1" highlight="brackets" />
+<element pattern=")" ends_block="1" blockstartelement="(" highlight="brackets" />
+
+<element pattern="#[^&#10;&#13;]*" is_regex="1" highlight="comment"/>
+<element pattern="'[^']*'" is_regex="1" highlight="string"/>
+<element pattern="&quot;" highlight="string">
+<context symbols="\&quot;${}" highlight="string">
+	<element pattern="\\." is_regex="1" highlight="tag" />
+	<element pattern="$[a-z0-9._]+" is_regex="1" case_insens="1" highlight="variable"/>
+	<element pattern="${[^}]+}" is_regex="1" case_insens="1" highlight="variable"/>
+	<element pattern="&quot;" highlight="string" ends_context="1"/>
+</context>
+</element>
+</context>
+</definition>
+</bflang>
