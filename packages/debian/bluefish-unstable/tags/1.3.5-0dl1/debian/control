@@ -1,0 +1,81 @@
+Source: bluefish-unstable
+Maintainer: Daniel Leidert (dale) <daniel.leidert@wgdd.de>
+Section: web
+Priority: extra
+Build-Depends: debhelper (>= 5.0.51), autotools-dev, gettext, intltool (>= 0.40),
+ libtool, libaspell-dev, libglib2.0-dev (>= 2.16), libgtk2.0-dev (>= 2.12),
+ libgucharmap2-dev (>= 2.20) | libgucharmap-dev (>= 2.20), libpango1.0-dev,
+ libpcre3-dev, libxml2-utils, libxml2-dev, python-dev, zlib1g-dev
+Standards-Version: 3.8.2
+Homepage: http://bluefish.openoffice.nl
+Vcs-Browser: http://bluefish.svn.sourceforge.net/viewvc/bluefish/packages/debian/bluefish-unstable/
+Vcs-Svn: https://bluefish.svn.sourceforge.net/svnroot/bluefish/packages/debian/bluefish-unstable/trunk/
+
+Package: bluefish-unstable
+Architecture: any
+Depends: bluefish-unstable-data (= ${source:Version}), bluefish-unstable-plugins (= ${binary:Version}),
+ ${shlibs:Depends}, ${misc:Depends}, gvfs-backends
+Recommends: bluefish-unstable-dbg
+Suggests: galeon | iceweasel | firefox | abrowser | seamonkey-browser | mozilla-browser | www-browser,
+ weblint-perl | weblint, libxml2-utils, php5-cli, tidy
+Description: advanced Gtk+ HTML editor (DEVELOPMENT VERSION)
+ Bluefish is a GTK+ HTML editor for the experienced web designer.
+ Its features include nice wizards for startup, tables and frames; a
+ fully featured image insert dialog; thumbnail creation and automatically
+ linking of the thumbnail with the original image; and configurable HTML
+ syntax highlighting.
+ .
+ For validation to work you need weblint and xmllint. For preview to work,
+ you need a web browser that can view local files given to it
+ on the command line.
+ .
+ THIS IS THE DEVELOPMENT VERSION OF BLUEFISH!
+
+Package: bluefish-unstable-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: advanced Gtk+ HTML editor (plugins)
+ Bluefish is a GTK+ HTML editor for the experienced web designer.
+ Its features include nice wizards for startup, tables and frames; a
+ fully featured image insert dialog; thumbnail creation and automatically
+ linking of the thumbnail with the original image; and configurable HTML
+ syntax highlighting.
+ .
+ This package contains the plugins. You will need it for the HTML dialogs.
+ So it's basically necessary.
+ .
+ THIS IS THE DEVELOPMENT VERSION OF BLUEFISH!
+
+Package: bluefish-unstable-data
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: bluefish-unstable (<< 1.1.5)
+Conflicts: bluefish-unstable (<< 1.1.5)
+Description: advanced Gtk+ HTML editor (data)
+ Bluefish is a GTK+ HTML editor for the experienced web designer.
+ Its features include nice wizards for startup, tables and frames; a
+ fully featured image insert dialog; thumbnail creation and automatically
+ linking of the thumbnail with the original image; and configurable HTML
+ syntax highlighting.
+ .
+ This package contains the architecture independent data.
+ .
+ THIS IS THE DEVELOPMENT VERSION OF BLUEFISH!
+
+Package: bluefish-unstable-dbg
+Section: debug
+Architecture: any
+Depends: bluefish-unstable (= ${binary:Version}), bluefish-unstable-plugins (= ${binary:Version}), ${misc:Depends}
+Suggests: libc6-dbg, libatk1.0-dbg, libcairo2-dbg, libglib2.0-0-dbg,
+ libgtk2.0-0-dbg, libpango1.0-0-dbg, libpcre3-dbg, libxml2-dbg, zlib1g-dbg
+Description: advanced Gtk+ HTML editor (debugging symbols)
+ Bluefish is a GTK+ HTML editor for the experienced web designer.
+ Its features include nice wizards for startup, tables and frames; a
+ fully featured image insert dialog; thumbnail creation and automatically
+ linking of the thumbnail with the original image; and configurable HTML
+ syntax highlighting.
+ .
+ This package contains the debugging symbols. It is recommended to
+ install it if you suffer a crash.
+ .
+ THIS IS THE DEVELOPMENT VERSION OF BLUEFISH!
