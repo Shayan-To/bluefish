@@ -1,0 +1,2827 @@
+# Japanese language file for Bluefish.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Iwasa Kazmi <kzmi@ca2.so-net.ne.jp>, 2000.
+# Ryoichi INAGAKI <ryo1@bc.wakwak.com>, 2003.
+# Timothy Joko-Veltman <tim-oss@indigopixel.com>, 2004
+# Takeshi HAMASAKI <hmatrjp@users.sourceforge.jp>, 2005-2009
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bluefish SVN\n"
+"Report-Msgid-Bugs-To: bluefish-dev@lists.ems.ru\n"
+"POT-Creation-Date: 2009-08-13 13:48+0200\n"
+"PO-Revision-Date: 2009-05-17 16:06+0700\n"
+"Last-Translator: Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=0;\n"
+
+#: ../desktop-data/bluefish-unstable.desktop.in.h:1
+msgid "Bluefish Editor (SVN)"
+msgstr "Bluefish エディタ(SVN)"
+
+#: ../desktop-data/bluefish-unstable.desktop.in.h:2
+msgid "Web Development Editor (development version)"
+msgstr "ウェブ開発エディタ(開発版)"
+
+#: ../desktop-data/bluefish-unstable.xml.in.h:1
+msgid "Bluefish language definition file"
+msgstr "Bluefish 言語定義ファイル"
+
+#: ../desktop-data/bluefish-unstable.xml.in.h:2
+msgid "Bluefish project file"
+msgstr "Bluefish プロジェクトファイル"
+
+#: ../src/bftextview2_spell.c:496
+#, fuzzy
+msgid "Spell check language"
+msgstr "スペルチェック..."
+
+#: ../src/blocksync.c:88
+msgid ""
+"Select the block to sync to other pages. Include the start-of-block and end-"
+"of-block markers in your selection."
+msgstr ""
+"他のページと同期するブロックを選択してください。ブロック開始マーカーとブロッ"
+"ク終了マーカーとを選択範囲に含めてください。"
+
+#: ../src/blocksync.c:93
+msgid "To proceed with the current selection click forward."
+msgstr "現在の選択で実行するには、forward をクリックしてください。"
+
+#: ../src/blocksync.c:122
+msgid ""
+"Below is the block, including start and end marker. Please <b>select the "
+"start marker</b> in the text below."
+msgstr ""
+"下はスタートマーカーとエンドマーカーを含んだテキストブロックです。この中から"
+"<b>スタートマーカーを選んでください。</b>"
+
+#: ../src/blocksync.c:157
+msgid "Please <b>select the end marker</b> in the text below."
+msgstr "下のテキストで<b>終わりのマーカーを選んで</b>ください。"
+
+#: ../src/blocksync.c:226
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Please select the block of text to "
+"synchronize.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">同期するテキストのブロックを選んでく"
+"ださい。</span>"
+
+#: ../src/blocksync.c:240 ../src/blocksync.c:260
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">This marker exists more than once "
+"in the block.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">このマーカーはそのブロックの中に2回"
+"以上出てきます。</span>"
+
+#: ../src/blocksync.c:246
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Select the text that marks the "
+"start of the block.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">ブロックの初めを示すテキストを選んで"
+"ください。</span>"
+
+#: ../src/blocksync.c:266
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Select the text that marks the end "
+"of the block.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">ブロックの終わりを示すテキストを選ん"
+"でください。</span>"
+
+#: ../src/blocksync.c:297
+msgid "Synchronize text block"
+msgstr ""
+
+#: ../src/bluefish.c:75
+msgid "Bluefish Editor"
+msgstr "Bluefish エディタ"
+
+#: ../src/bluefish.c:75
+msgid "Visit us at http://bluefish.openoffice.nl"
+msgstr "ホームページは http://bluefish.openoffice.nl です"
+
+#: ../src/bluefish.c:99
+#, fuzzy
+msgid "Open in existing window."
+msgstr "新規ウィンドウで開く"
+
+#: ../src/bluefish.c:101
+#, fuzzy
+msgid "Open in new window."
+msgstr "新規ウィンドウで開く"
+
+#: ../src/bluefish.c:103
+msgid "Print version information."
+msgstr "バージョン情報を表示"
+
+#: ../src/bluefish.c:130
+msgid " [FILE(S)]"
+msgstr "[ファイル（複数でも可）]..."
+
+#: ../src/bluefish.c:141
+#, c-format
+msgid ""
+"Error parsing command line options. %s\n"
+"Please run: %s -?\n"
+msgstr ""
+"コマンドラインオプションを解釈している途中にエラーが発生しました。 %s\n"
+"次のコマンドを実行してみてください: %s -?\n"
+
+#: ../src/bluefish.c:177
+msgid "loading plugins..."
+msgstr "プラグインを読み込んでいます..."
+
+#: ../src/bluefish.c:199
+msgid "reading language files..."
+msgstr "言語ファイルを読み込んでいます..."
+
+#: ../src/bluefish.c:207
+#, fuzzy
+msgid "building file browser ..."
+msgstr "ファイルフィルタを構築しています..."
+
+#: ../src/bluefish.c:221
+msgid "checking for running bluefish process ..."
+msgstr ""
+
+#: ../src/bluefish.c:228
+msgid "creating main gui..."
+msgstr "メインの GUI を作成中..."
+
+#: ../src/bluefish.c:255
+msgid "showing main gui..."
+msgstr "メインの GUI を表示..."
+
+#: ../src/bookmark.c:460
+msgid "_Name:"
+msgstr "名前(_N):"
+
+#: ../src/bookmark.c:465
+msgid "_Description:"
+msgstr "説明(_D):"
+
+#: ../src/bookmark.c:467
+msgid "Temporary"
+msgstr "臨時ブックマーク"
+
+#: ../src/bookmark.c:619
+#, c-format
+msgid "Do you really want to delete all bookmarks for %s?"
+msgstr "本当に %s を削除してよろしいですか?"
+
+#: ../src/bookmark.c:623
+msgid "Delete bookmarks?"
+msgstr "すべてのブックマークを削除しますか？"
+
+#: ../src/bookmark.c:648
+#, c-format
+msgid "Do you really want to delete %s?"
+msgstr "本当に %s を削除してよろしいですか?"
+
+#: ../src/bookmark.c:652
+msgid "Delete permanent bookmark."
+msgstr "永続ブックマークを削除します."
+
+#: ../src/bookmark.c:673
+msgid "Edit bookmark"
+msgstr "ブックマークを編集"
+
+#: ../src/bookmark.c:730
+msgid "/Goto"
+msgstr "/移動"
+
+#: ../src/bookmark.c:731
+msgid "/Edit"
+msgstr "/編集"
+
+#: ../src/bookmark.c:732
+msgid "/Delete"
+msgstr "/削除"
+
+#: ../src/bookmark.c:734
+msgid "/Delete All in document"
+msgstr "/開いている文書内で全て削除"
+
+#: ../src/bookmark.c:735
+msgid "/Delete All"
+msgstr "/全て削除 "
+
+#: ../src/bookmark.c:737
+msgid "/Permanent by default"
+msgstr "/デフォルトで(一時的でなく)永続ブックマークとする"
+
+#: ../src/bookmark.c:739
+msgid "/Show file"
+msgstr "/ファイル表示"
+
+#: ../src/bookmark.c:740
+msgid "/Show file/By name"
+msgstr "/ファイル表示/名前のみ"
+
+#: ../src/bookmark.c:741
+msgid "/Show file/By full path"
+msgstr "/ファイル表示/絶対パス"
+
+#: ../src/bookmark.c:742
+msgid "/Show file/By full uri"
+msgstr "/ファイル表示/絶対URI"
+
+#: ../src/bookmark.c:743
+msgid "/Show bookmark"
+msgstr "/ブックマーク表示"
+
+#: ../src/bookmark.c:744
+msgid "/Show bookmark/Name & Content"
+msgstr "/ブックマーク表示/名前と内容"
+
+#: ../src/bookmark.c:745
+msgid "/Show bookmark/Content"
+msgstr "/ブックマーク表示/内容"
+
+#: ../src/bookmark.c:746
+msgid "/Show bookmark/Name"
+msgstr "/ブックマーク表示/名前"
+
+#: ../src/bookmark.c:879
+msgid "First bookmark"
+msgstr "最初のブックマーク"
+
+#: ../src/bookmark.c:883
+msgid "Previous bookmark"
+msgstr "前のブックマーク"
+
+#: ../src/bookmark.c:887
+msgid "Next bookmark"
+msgstr "次のブックマーク"
+
+#: ../src/bookmark.c:891
+msgid "Last bookmark"
+msgstr "最後のブックマーク"
+
+#: ../src/bookmark.c:1527 ../src/bookmark.c:1580
+msgid "Error adding bookmark"
+msgstr "ブックマーク追加エラー"
+
+#: ../src/bookmark.c:1528 ../src/bookmark.c:1581
+msgid "Cannot add bookmarks to unsaved files."
+msgstr "まだ保存していないファイルにはブックマークを追加できません."
+
+#: ../src/bookmark.c:1547
+msgid "Can't add bookmark"
+msgstr "ブックマークを追加できません"
+
+#: ../src/bookmark.c:1548
+msgid "You already have a bookmark here!"
+msgstr "すでにここにブックマークがあります!"
+
+#: ../src/bookmark.c:1617
+msgid "Delete all bookmarks."
+msgstr "すべてのブックマークを削除します."
+
+#: ../src/document.c:364
+msgid "Name: "
+msgstr "名前: "
+
+#: ../src/document.c:368
+msgid ""
+"\n"
+"File type: "
+msgstr ""
+"\n"
+"ファイルの種類:"
+
+#: ../src/document.c:372
+msgid ""
+"\n"
+"Encoding: "
+msgstr ""
+"\n"
+"文字コード: "
+
+#: ../src/document.c:379
+#, c-format
+msgid ""
+"\n"
+"Permissions: %s\n"
+"Uid: %u Gid: %u"
+msgstr ""
+"\n"
+"権限: %s\n"
+"Uid: %u Gid: %u"
+
+#: ../src/document.c:384
+msgid ""
+"\n"
+"Size (on disk): "
+msgstr ""
+"\n"
+"(ディスク上での)サイズ: "
+
+#: ../src/document.c:393
+msgid ""
+"\n"
+"Mime type: "
+msgstr ""
+"\n"
+"MIME タイプ:"
+
+#: ../src/document.c:401
+msgid ""
+"\n"
+"Last modified: "
+msgstr ""
+"\n"
+"最終更新: "
+
+#: ../src/document.c:432
+#, c-format
+msgid "Untitled %d"
+msgstr "無題 %d"
+
+#: ../src/document.c:594
+#, c-format
+msgid "Changed tab width to %d"
+msgstr ""
+
+#: ../src/document.c:757
+#, c-format
+msgid "Document %s is already open in another Bluefish window."
+msgstr "文書 %s は既に他の Bluefish のウィンドウで開いています。"
+
+#: ../src/document.c:759
+msgid "Move to this window"
+msgstr "このウィンドウに移す"
+
+#: ../src/document.c:759
+msgid "Open readonly"
+msgstr "読み込み専用で開く"
+
+#: ../src/document.c:759
+msgid "Do not open"
+msgstr "開きません"
+
+#: ../src/document.c:1032
+#, c-format
+msgid " Ln: %d, Col: %d, Char: %d"
+msgstr " 行: %d, 桁: %d, 文字: %d"
+
+#: ../src/document.c:1034
+#, c-format
+msgid " Ln: %d, Col: %d"
+msgstr "%d 行, %d 列目"
+
+#: ../src/document.c:1055
+msgid " OVR"
+msgstr " 上書き"
+
+#: ../src/document.c:1055
+msgid " INS"
+msgstr " 挿入"
+
+#: ../src/document.c:1057
+msgid " RO"
+msgstr " 読み込み専用"
+
+#: ../src/document.c:1077 ../src/document.c:1083
+#, c-format
+msgid "  %s, %s"
+msgstr "  %s, %s"
+
+#: ../src/document.c:1435
+msgid "Cannot display file, unknown characters found."
+msgstr "ファイルを表示できません、不明な文字が見つかりました。"
+
+#: ../src/document.c:1648 ../src/snr2.c:1675
+msgid "Replace"
+msgstr "置換"
+
+#: ../src/document.c:1653 ../src/snr2.c:1672
+msgid "Find"
+msgstr "検索"
+
+#: ../src/document.c:1661
+msgid "Delete bookmark"
+msgstr "ブックマークを削除する"
+
+#: ../src/document.c:1665
+msgid "Add bookmark"
+msgstr "ブックマークを追加する"
+
+#. if (main_v->props.backup_abort_action == 2)
+#. we have to ask the user
+#. we have to ask the user what to do
+#: ../src/document.c:1782 ../src/file_dialogs.c:419 ../src/file_dialogs.c:457
+msgid "_Abort save"
+msgstr "保存中止(_A)"
+
+#: ../src/document.c:1782
+msgid "_Continue save in UTF-8"
+msgstr "UTF-8 で保存を続ける(_C)"
+
+#: ../src/document.c:1793
+#, c-format
+msgid ""
+"Failed to convert %s to character encoding %s. Encoding failed on character "
+"'%s' at line %d column %d\n"
+"\n"
+"Continue saving in UTF-8 encoding?"
+msgstr ""
+"%s の文字コードを %s へ変換するのに失敗しました. 変換は文字'%s' (%d 行目 %d "
+"列め)で失敗ました\n"
+"\n"
+"文字コード UTF-8 で保存を続けますか?"
+
+#: ../src/document.c:1797
+msgid "File encoding conversion failure"
+msgstr "ファイルの文字コード変換に失敗しました"
+
+#: ../src/document.c:2043
+msgid "Previously: "
+msgstr "元: "
+
+#. || (!file_exists_and_readable(doc->uri))
+#: ../src/document.c:2539
+msgid "Unable to open file"
+msgstr "ファイルをオープンできません"
+
+#: ../src/document.c:2549
+#, c-format
+msgid ""
+"If you revert \"%s\" to your last saved copy, your current changes will be "
+"permanently lost."
+msgstr ""
+"ファイル \"%s\"について 一つ前の保存から行われた変更を破棄すると、その変更は"
+"失われます。"
+
+#: ../src/document.c:2553
+msgid "Revert changes to last saved copy?"
+msgstr "一つ前の保存から行われた変更を破棄しますか？"
+
+#: ../src/document.c:2586
+msgid "_Unset file name"
+msgstr "ファイル名の設定を外す(_U)"
+
+#: ../src/document.c:2586
+msgid "_Save"
+msgstr "保存(_S)"
+
+#. file is deleted on disk, what do we do now ?
+#: ../src/document.c:2588
+#, c-format
+msgid "File name: %s"
+msgstr "ファイル名: %s"
+
+#: ../src/document.c:2592
+msgid "File disappeared from disk\n"
+msgstr "ディスクからファイルがなくなりました\n"
+
+#: ../src/document.c:2609
+msgid "_Ignore"
+msgstr "無視(_I)"
+
+#: ../src/document.c:2609
+msgid "_Reload"
+msgstr "再読込み(_R)"
+
+#: ../src/document.c:2609
+msgid "Check and reload all documents"
+msgstr "すべての文書を確認し開き直す"
+
+#: ../src/document.c:2617
+#, c-format
+msgid ""
+"Filename: %s\n"
+"\n"
+"New modification time is: %s\n"
+"Old modification time is: %s"
+msgstr ""
+"ファイル名: %s\n"
+"\n"
+"新しい最終更新日時: %s\n"
+"  古い最終更新日時: %s"
+
+#: ../src/document.c:2621
+msgid "File has been modified by another process\n"
+msgstr "ファイルは他のプロセスによって変更されています\n"
+
+#: ../src/document.c:2684
+msgid "_Retry"
+msgstr "再試行(_R)"
+
+#: ../src/document.c:2684
+msgid "Retry _all failed"
+msgstr "失敗したすべての文書をもう一度開く(_A)"
+
+#: ../src/document.c:2684
+msgid "_Close"
+msgstr "閉じる(_C)"
+
+#: ../src/document.c:2684
+msgid "Close all _failed"
+msgstr "失敗したすべての文書を閉じる(_F)"
+
+#: ../src/document.c:2688
+msgid "File "
+msgstr "ファイル"
+
+#: ../src/document.c:2688
+msgid " failed to load."
+msgstr " 読み込みに失敗"
+
+#: ../src/document.c:2692
+msgid "File failed to load\n"
+msgstr "ファイルの読み込みに失敗しました\n"
+
+#: ../src/document.c:2812
+msgid "Select file to insert"
+msgstr "挿入するファイルの選択"
+
+#: ../src/document.c:2820
+msgid "No file to insert"
+msgstr "挿入するファイルがありません"
+
+#: ../src/document.c:2958
+#, c-format
+msgid "Statistics: %d lines, %d words, %d characters"
+msgstr "ファイル統計: %d 行, %d 語, %d 文字"
+
+#: ../src/encodings_dialog.c:329
+msgid "_Available encodings:"
+msgstr "利用可能なエンコーディング(_A):"
+
+#: ../src/encodings_dialog.c:381 ../src/encodings_dialog.c:452
+msgid "Description"
+msgstr "説明"
+
+#: ../src/encodings_dialog.c:391 ../src/encodings_dialog.c:461
+#: ../src/preferences.c:1639
+msgid "Encoding"
+msgstr "文字コード"
+
+#: ../src/encodings_dialog.c:427
+msgid "Encodings in _menu:"
+msgstr "メニューで使用するエンコーディング(_M)."
+
+#: ../src/encodings_dialog.c:511
+msgid "Add or remove document encodings"
+msgstr "文書のエンコーディングを追加/削除する"
+
+#: ../src/filebrowser2.c:228
+msgid "Set documentroot and webroot"
+msgstr "文書ルート と ウェブルートを設定"
+
+#: ../src/filebrowser2.c:237
+msgid ""
+"The <i>documentroot</i> is the place where Bluefish finds the file,\n"
+"the <i>webroot</i> is the location where those same files can be viewed on "
+"the webserver"
+msgstr ""
+"<i>文書ルート</i>はBluefish がファイルを探す場所の基点です。\n"
+"<i>ウェブルート</i>はウェブサーバにアクセスした時に、同じファイルがどこに見え"
+"るかを示します。"
+
+#: ../src/filebrowser2.c:244
+msgid "Documentroot"
+msgstr "文書ルート"
+
+#: ../src/filebrowser2.c:256
+msgid "Webroot"
+msgstr "ウェブルート"
+
+#: ../src/filebrowser2.c:1416
+msgid "Could not rename\n"
+msgstr "ファイル名を変更できませんでした\n"
+
+#: ../src/filebrowser2.c:1488
+msgid "New directory"
+msgstr "新しいディレクトリ"
+
+#: ../src/filebrowser2.c:1510 ../src/filebrowser2.c:1512
+msgid "New file"
+msgstr "新規ファイル"
+
+#. Do we really need to display the full path here?
+#. *
+#. * Having the filename in the both the primary and secondary text seems to be redundant.
+#. * Set back to just the primary text for now.
+#. *
+#. * --> Sometimes you can have a file in many directories (e.g. Makefile.in, index.html)
+#. * and then this might give you more indication if this is indeed the file you wanted to delete
+#.
+#: ../src/filebrowser2.c:1622
+#, c-format
+msgid ""
+"Are you sure you want to delete\n"
+"\"%s\"?"
+msgstr ""
+"\"%s\" \n"
+"を削除してよろしいですか?"
+
+#: ../src/filebrowser2.c:1623
+#, c-format
+msgid "If you delete %s, it will be permanently lost."
+msgstr "ファイル %s を削除すると、元に戻すことはできません。"
+
+#: ../src/filebrowser2.c:1768
+msgid "/_Open"
+msgstr "/開く(_O)"
+
+#: ../src/filebrowser2.c:1769
+msgid "/Open _Advanced..."
+msgstr "/検索して開く(_A)..."
+
+#: ../src/filebrowser2.c:1770
+msgid "/Rena_me"
+msgstr "ファイル名変更(_M)"
+
+#: ../src/filebrowser2.c:1771
+msgid "/_Delete"
+msgstr "/削除(_D)"
+
+#: ../src/filebrowser2.c:1773
+msgid "/New _File"
+msgstr "/新規ファイル(_F)"
+
+#: ../src/filebrowser2.c:1774
+msgid "/_New Directory"
+msgstr "/新規ディレクトリ(_D)"
+
+#: ../src/filebrowser2.c:1776
+msgid "/_Refresh"
+msgstr "/最新の情報に更新(_R)"
+
+#: ../src/filebrowser2.c:1777
+msgid "/Follow active document"
+msgstr "/編集対象になっている文書に追随する"
+
+#: ../src/filebrowser2.c:1778
+msgid "/_Set as basedir"
+msgstr "/ベースディレクトリに設定(_S)"
+
+#: ../src/filebrowser2.c:1779
+msgid "/Set as documentroot"
+msgstr "/文書ルートに設定"
+
+#: ../src/filebrowser2.c:1781
+msgid "/Show Full _Tree"
+msgstr "/全ツリーを表示"
+
+#: ../src/filebrowser2.c:1782
+msgid "/Show hidden files"
+msgstr "/隠しファイルを表示する"
+
+#: ../src/filebrowser2.c:1783
+msgid "/Show backup files"
+msgstr "/バックアップファイルを表示する"
+
+#: ../src/filebrowser2.c:1784
+msgid "/View mode"
+msgstr "/表示モード"
+
+#: ../src/filebrowser2.c:1785
+msgid "/View mode/Tree"
+msgstr "/表示モード/ツリー表示"
+
+#: ../src/filebrowser2.c:1786
+msgid "/View mode/Dual"
+msgstr "/表示モード/デュアル・モード"
+
+#: ../src/filebrowser2.c:1787
+msgid "/View mode/Flat"
+msgstr "/表示モード/フラット"
+
+#. Add filter submenu
+#: ../src/filebrowser2.c:1865
+msgid "Filter"
+msgstr "フィルタ"
+
+#: ../src/filebrowser2.c:1891 ../src/filefilter.c:475
+msgid "Edit filter"
+msgstr "フィルタを編集"
+
+#: ../src/filebrowser2.c:1895
+msgid "Delete filter"
+msgstr "フィルタを削除"
+
+#: ../src/filebrowser2.c:1900
+msgid "New filter"
+msgstr "新規フィルタ"
+
+#: ../src/file.c:702
+#, c-format
+msgid "Still loading %d files, finished %s"
+msgstr "まだ %d 個のファイルを読み込んでいます, 完了 %s"
+
+#: ../src/file.c:704
+#, c-format
+msgid "All files loaded, finished %s"
+msgstr "すべてのファイルを読み込みました, %s"
+
+#: ../src/file.c:889
+#, c-format
+msgid "%d document open."
+msgid_plural "%d documents open."
+msgstr[0] "%d のドキュメントを開いています"
+msgstr[1] "%d のドキュメントを開いています"
+
+#: ../src/file.c:1142
+msgid "_Skip"
+msgstr "スキップ(_S)"
+
+#: ../src/file.c:1142 ../src/file_dialogs.c:582 ../src/file_dialogs.c:603
+#: ../src/project.c:252
+msgid "_Overwrite"
+msgstr "上書き(_O)"
+
+#: ../src/file.c:1146
+#, c-format
+msgid "%s cannot be copied, it already exists, overwrite?"
+msgstr "ファイル %s はコピーできません, 既に存在します, 上書きしますか?"
+
+#: ../src/file.c:1150
+msgid "Overwrite file?"
+msgstr "ファイルを上書きしますか?"
+
+#: ../src/file_autosave.c:225
+#, fuzzy
+msgid "Autosave in progress..."
+msgstr "保存中です!"
+
+#: ../src/file_dialogs.c:99
+msgid "Select basedir"
+msgstr "ベースディレクトリを選択"
+
+#: ../src/file_dialogs.c:142
+msgid "Advanced open file selector"
+msgstr "高度なファイル選択"
+
+#: ../src/file_dialogs.c:155
+msgid "<b>General</b>"
+msgstr "<b>全般</b>"
+
+#: ../src/file_dialogs.c:164
+msgid "Base _Dir:"
+msgstr "ベースディレクトリ(_D):"
+
+#: ../src/file_dialogs.c:179
+msgid "_Pattern:"
+msgstr "パターン(_P):"
+
+#: ../src/file_dialogs.c:187
+msgid "_Match on file name only:"
+msgstr "ファイル名のみで一致を判定(_M):"
+
+#: ../src/file_dialogs.c:191
+msgid "_Recursive:"
+msgstr "再帰検索(_R):"
+
+#: ../src/file_dialogs.c:200
+msgid "<b>Contains</b>"
+msgstr "<b>Contains</b>"
+
+#: ../src/file_dialogs.c:206
+msgid "Pa_ttern:"
+msgstr "パターン(_T):"
+
+#: ../src/file_dialogs.c:210
+msgid "Is rege_x:"
+msgstr "正規表現(_X):"
+
+#: ../src/file_dialogs.c:292
+msgid "Select files"
+msgstr "ファイル選択"
+
+#: ../src/file_dialogs.c:347
+msgid "Open URL"
+msgstr "URLを開く"
+
+#: ../src/file_dialogs.c:351
+msgid "<b>Open URL</b>"
+msgstr "URLを開く"
+
+#: ../src/file_dialogs.c:419 ../src/file_dialogs.c:457
+msgid "_Continue save"
+msgstr "保存継続(_C)"
+
+#: ../src/file_dialogs.c:423
+#, c-format
+msgid ""
+"A backupfile for %s could not be created. If you continue, this file will be "
+"overwritten."
+msgstr ""
+"%s のバックアップを作成できませんでした. 作業を続けるのであれば, このファイル"
+"が上書きされます."
+
+#: ../src/file_dialogs.c:427
+msgid "File backup failure"
+msgstr "ファイルのバックアップに失敗"
+
+#: ../src/file_dialogs.c:444
+msgid ""
+"Could not save file:\n"
+"\""
+msgstr ""
+"ファイルを保存できませんでした:\n"
+"\""
+
+#: ../src/file_dialogs.c:447
+msgid "File save failed!\n"
+msgstr "ファイルの保存に失敗しました!\n"
+
+#: ../src/file_dialogs.c:462
+#, c-format
+msgid "File %s has been modified on disk, overwrite?"
+msgstr "ファイル %s はディスク上で変更されています. 上書きしますか ?"
+
+#: ../src/file_dialogs.c:464
+#, c-format
+msgid "Failed to check if %s has been modified on disk"
+msgstr "%s がディスク上で変更されているかの確認に失敗しました。"
+
+#: ../src/file_dialogs.c:555
+#, c-format
+msgid "Move/rename %s to"
+msgstr "文書 %s を移動/名前変更"
+
+#: ../src/file_dialogs.c:555
+#, c-format
+msgid "Save %s as"
+msgstr "文書 %s を別名で保存"
+
+#: ../src/file_dialogs.c:582 ../src/file_dialogs.c:603
+#: ../src/file_dialogs.c:842 ../src/project.c:252
+msgid "_Cancel"
+msgstr "キャンセル(_C)"
+
+#: ../src/file_dialogs.c:583
+#, c-format
+msgid "File %s exists and is open, overwrite?"
+msgstr "ファイル %s は存在し, 開いています. 上書きしますか ?"
+
+#: ../src/file_dialogs.c:586
+msgid "The file you have selected is being edited in Bluefish."
+msgstr "選択したファイルは Bluefish で編集されています."
+
+#: ../src/file_dialogs.c:604 ../src/project.c:254
+#, c-format
+msgid "A file named \"%s\" already exists."
+msgstr "\"%s\"  というファイル名は既に存在します."
+
+#: ../src/file_dialogs.c:607 ../src/project.c:259
+msgid "Do you want to replace the existing file?"
+msgstr "存在しているファイルと置換しますか？"
+
+#: ../src/file_dialogs.c:683
+msgid ""
+"File:\n"
+"\""
+msgstr ""
+"ファイル:\n"
+"\""
+
+#: ../src/file_dialogs.c:686
+msgid "Save in progress!"
+msgstr "保存中です!"
+
+#: ../src/file_dialogs.c:830
+msgid "Close _Without Saving"
+msgstr "変更を破棄して閉じる(_W)"
+
+#: ../src/file_dialogs.c:833
+#, c-format
+msgid "Save changes to \"%s\" before closing?"
+msgstr "閉じる前に\"%s\"に行われた変更を保存しますか？"
+
+#: ../src/file_dialogs.c:836 ../src/file_dialogs.c:846
+msgid "If you don't save your changes they will be lost."
+msgstr "保存しない場合は、ファイルに行われた変更が失われます。"
+
+#: ../src/file_dialogs.c:842
+msgid "Choose per _File"
+msgstr "ファイル毎に指定(_F)"
+
+#: ../src/file_dialogs.c:842
+msgid "Close _All"
+msgstr "すべて閉じる(_A)"
+
+#: ../src/file_dialogs.c:842
+msgid "_Save All"
+msgstr "すべて保存(_A)"
+
+#: ../src/file_dialogs.c:845
+#, fuzzy
+msgid "One or more open files have been changed."
+msgstr "いくつかのファイルが変更されています."
+
+#: ../src/file_dialogs.c:1098
+msgid "incomplete finished"
+msgstr ""
+
+#: ../src/file_dialogs.c:1100
+msgid "completed"
+msgstr ""
+
+#: ../src/file_dialogs.c:1141
+msgid "Upload / Download"
+msgstr ""
+
+#: ../src/file_dialogs.c:1142
+#, fuzzy
+msgid "Upload"
+msgstr "再読込み(_R)"
+
+#: ../src/file_dialogs.c:1142
+msgid "Download"
+msgstr ""
+
+#: ../src/file_dialogs.c:1146
+#, fuzzy
+msgid "Local directory"
+msgstr "新しいディレクトリ"
+
+#: ../src/file_dialogs.c:1153
+#, fuzzy
+msgid "Remote directory"
+msgstr "新しいディレクトリ"
+
+#: ../src/file_dialogs.c:1158
+#, fuzzy
+msgid "Delete deprecated files"
+msgstr "ファイル選択"
+
+#: ../src/file_dialogs.c:1159
+#, fuzzy
+msgid "Include hidden files"
+msgstr "/隠しファイルを表示する"
+
+#. build a list of filters
+#: ../src/filefilter.c:214 ../src/gtk_easy.c:1390
+msgid "All files"
+msgstr "すべてのファイル"
+
+#: ../src/filefilter.c:515
+msgid "Hide files that match the filter"
+msgstr "フィルタに一致するファイルを隠す"
+
+#: ../src/filefilter.c:526 ../src/filefilter.c:538
+msgid "Mime type"
+msgstr "MIME タイプ"
+
+#: ../src/filefilter.c:529 ../src/filefilter.c:541
+msgid "Icon"
+msgstr "アイコン"
+
+#: ../src/gtk_easy.c:1088
+#, c-format
+msgid "%d of %d"
+msgstr "%d of %d"
+
+#: ../src/gtk_easy.c:1194
+msgid "Select File"
+msgstr "ファイル選択"
+
+#: ../src/gtk_easy.c:1265
+msgid "_Browse..."
+msgstr "参照(_B)..."
+
+#: ../src/gtk_easy.c:1380
+msgid "Show backup files"
+msgstr "バックアップファイルを表示する"
+
+#: ../src/gtk_easy.c:1440
+msgid "Character _Encoding:"
+msgstr "文字エンコード(_E):"
+
+#: ../src/gtk_easy.c:1462
+msgid "Automatic detection"
+msgstr "自動検出"
+
+#: ../src/gtkmountoperation.c:125
+#, fuzzy
+msgid "Parent"
+msgstr "パターン"
+
+#: ../src/gtkmountoperation.c:126
+msgid "The parent window"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:133
+msgid "Is Showing"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:134
+msgid "Are we showing a dialog"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:141
+msgid "Screen"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:142
+msgid "The screen where this window will be displayed."
+msgstr ""
+
+#: ../src/gtkmountoperation.c:449
+msgid "Co_nnect"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:516
+msgid "Connect _anonymously"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:525
+msgid "Connect as u_ser:"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:563
+#, fuzzy
+msgid "_Username:"
+msgstr "名前(_N):"
+
+#: ../src/gtkmountoperation.c:568
+msgid "_Domain:"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:574
+msgid "_Password:"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:592
+msgid "Forget password _immediately"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:602
+msgid "Remember password until you _logout"
+msgstr ""
+
+#: ../src/gtkmountoperation.c:612
+msgid "Remember _forever"
+msgstr ""
+
+#: ../src/gui.c:268
+msgid "Filebrowser"
+msgstr "ファイルブラウザ"
+
+#: ../src/gui.c:269
+msgid "Bookmarks"
+msgstr "ブックマーク"
+
+#: ../src/gui.c:408
+msgid "New"
+msgstr "新規"
+
+#: ../src/gui.c:410
+msgid "Open..."
+msgstr "開く.."
+
+#: ../src/gui.c:412
+msgid "Save"
+msgstr "保存"
+
+#: ../src/gui.c:414
+msgid "Save As..."
+msgstr "別名で保存..."
+
+#: ../src/gui.c:416
+msgid "Close"
+msgstr "閉じる"
+
+#: ../src/gui.c:419
+msgid "Cut"
+msgstr "切り取り"
+
+#: ../src/gui.c:421
+msgid "Copy"
+msgstr "コピー"
+
+#: ../src/gui.c:423
+msgid "Paste"
+msgstr "貼り付け"
+
+#: ../src/gui.c:426
+msgid "Find..."
+msgstr "検索..."
+
+#: ../src/gui.c:428
+msgid "Replace..."
+msgstr "置換..."
+
+#: ../src/gui.c:431
+msgid "Undo"
+msgstr "元に戻す"
+
+#: ../src/gui.c:433
+msgid "Redo"
+msgstr "やり直す"
+
+#: ../src/gui.c:436
+msgid "Unindent"
+msgstr "字上げ"
+
+#: ../src/gui.c:438
+msgid "Indent"
+msgstr "字下げ"
+
+#: ../src/gui.c:446
+#, fuzzy
+msgid "Spellcheck"
+msgstr "スペルチェック..."
+
+#: ../src/gui.c:451
+msgid "View in browser"
+msgstr "ブラウザで表示"
+
+#: ../src/gui.c:454
+msgid "Preferences..."
+msgstr "設定..."
+
+#: ../src/gui.c:457
+msgid "Toggle Full Screen"
+msgstr ""
+
+#: ../src/gui.c:459
+msgid "Toggle Normal Screen"
+msgstr ""
+
+#: ../src/gui.c:895
+msgid "Goto Line:"
+msgstr "行ジャンプ:"
+
+#: ../src/gui.c:910
+msgid "New Bluefish Window"
+msgstr "新規 Bluefish ウィンドウ"
+
+#. Fake-label (for notebook_hide() and _show() ;)
+#: ../src/gui.c:969
+msgid "Stand by..."
+msgstr "Stand by..."
+
+#: ../src/gui.c:1142
+msgid "starting bluefish"
+msgstr "bluefishを起動中"
+
+#: ../src/menu.c:209
+msgid "/_File"
+msgstr "/ファイル(_F)"
+
+#: ../src/menu.c:211
+msgid "/File/_New"
+msgstr "/ファイル/新規(_N)"
+
+#: ../src/menu.c:212
+msgid "/File/New _Window"
+msgstr "/ファイル/新規ウィンドウ(_W)"
+
+#: ../src/menu.c:213
+msgid "/File/_Open..."
+msgstr "/ファイル/開く(_O)..."
+
+#: ../src/menu.c:214
+#, fuzzy
+msgid "/File/Open _Recent"
+msgstr "/ファイル/最近開いたファイル"
+
+#: ../src/menu.c:216
+msgid "/File/Open Ad_vanced..."
+msgstr "/ファイル/検索したファイルを開く(_V)..."
+
+#: ../src/menu.c:217
+msgid "/File/Open _URL..."
+msgstr "/ファイル/URLを開く(_U)..."
+
+#: ../src/menu.c:218
+#, fuzzy
+msgid "/File/Open _From Selection"
+msgstr "/ファイル/選択したファイルを開く(_F)"
+
+#: ../src/menu.c:219
+msgid "/File/_Insert..."
+msgstr "/ファイル/挿入(_I)..."
+
+#: ../src/menu.c:221
+msgid "/File/_Save"
+msgstr "/ファイル/保存(_S)"
+
+#: ../src/menu.c:222
+msgid "/File/Save _As..."
+msgstr "/ファイル/別名で保存(_A)..."
+
+#: ../src/menu.c:223
+msgid "/File/Rena_me..."
+msgstr "/ファイル/名前の変更(_M)..."
+
+#: ../src/menu.c:224
+msgid "/File/Sav_e All"
+msgstr "/ファイル/すべて保存(_E)"
+
+#: ../src/menu.c:225
+msgid "/File/Rever_t to Saved"
+msgstr "/ファイル/保存されている内容に戻す(_T)"
+
+#: ../src/menu.c:227
+msgid "/File/_Close"
+msgstr "/ファイル/閉じる(_C)"
+
+#: ../src/menu.c:228
+msgid "/File/Close A_ll"
+msgstr "/ファイル/すべて閉じる(_L)"
+
+#: ../src/menu.c:229
+msgid "/File/Close Win_dow"
+msgstr "/ファイル/このウィンドウを閉じる(_D)"
+
+#: ../src/menu.c:231
+msgid "/File/Upload \\/ Download"
+msgstr ""
+
+#: ../src/menu.c:233
+msgid "/File/_Quit"
+msgstr "/ファイル/終了(_Q)"
+
+#: ../src/menu.c:236
+msgid "/File/Run Python Script"
+msgstr "/ファイル/Python スクリプトを実行"
+
+#: ../src/menu.c:238
+msgid "/_Edit"
+msgstr "/編集(_E)"
+
+#: ../src/menu.c:240
+msgid "/Edit/_Undo"
+msgstr "/編集/やり直す(_U)"
+
+#: ../src/menu.c:241
+msgid "/Edit/_Redo"
+msgstr "/編集/元に戻す(_R)"
+
+#: ../src/menu.c:242
+msgid "/Edit/Undo All"
+msgstr "/編集/すべて元に戻す"
+
+#: ../src/menu.c:243
+msgid "/Edit/Redo All"
+msgstr "/編集/すべてやり直す"
+
+#: ../src/menu.c:245
+msgid "/Edit/Cu_t"
+msgstr "/編集/切り取り(_T)"
+
+#: ../src/menu.c:246
+msgid "/Edit/_Copy"
+msgstr "/編集/コピー(_C)"
+
+#: ../src/menu.c:247
+msgid "/Edit/_Paste"
+msgstr "/編集/貼り付け(_P)"
+
+#: ../src/menu.c:249
+msgid "/Edit/Select _All"
+msgstr "/編集/すべて選択(_A)"
+
+#: ../src/menu.c:251
+msgid "/Edit/_Find..."
+msgstr "/編集/検索(_F)..."
+
+#: ../src/menu.c:252
+msgid "/Edit/Find A_gain"
+msgstr "/編集/再検索(_G)"
+
+#: ../src/menu.c:253
+#, fuzzy
+msgid "/Edit/Find From Selection"
+msgstr "/編集/選択領域内で検索"
+
+#: ../src/menu.c:254
+msgid "/Edit/R_eplace..."
+msgstr "/編集/置換(_E)..."
+
+#: ../src/menu.c:255
+msgid "/Edit/Replace Agai_n"
+msgstr "/編集/再置換(_N)"
+
+#: ../src/menu.c:257
+msgid "/Edit/_Indent"
+msgstr "/編集/右へインデント(_H)"
+
+#: ../src/menu.c:258
+msgid "/Edit/_Unindent"
+msgstr "/編集/左へインデント(_L)"
+
+#. {N_("/Edit/Save Sett_ings"), NULL, rcfile_save_configfile_menu_cb, 0, "<Item>"},
+#: ../src/menu.c:261
+msgid "/Edit/Save Shortcut _Keys"
+msgstr "/編集/ショートカットキー設定の保存(_K)"
+
+#: ../src/menu.c:262
+msgid "/Edit/Preference_s"
+msgstr "/編集/環境設定(_S)"
+
+#: ../src/menu.c:263
+msgid "/_View"
+msgstr "/表示(_V)"
+
+#: ../src/menu.c:265
+#, fuzzy
+msgid "/View/_Full Screen"
+msgstr "/表示/フルスクリーン表示"
+
+#: ../src/menu.c:267
+#, fuzzy
+msgid "/View/_Main Toolbar"
+msgstr "/表示/メインツールバー(_M)"
+
+#: ../src/menu.c:268
+#, fuzzy
+msgid "/View/_Side Pane"
+msgstr "/表示/サイドバー(_S)"
+
+#: ../src/menu.c:269
+msgid "/View/_Output Pane"
+msgstr ""
+
+#: ../src/menu.c:270
+#, fuzzy
+msgid "/View/Status_bar"
+msgstr "/表示/ステータスバーを表示する(_T)"
+
+#: ../src/menu.c:271
+msgid "/_Document"
+msgstr "文書(_D)"
+
+#: ../src/menu.c:273
+msgid "/Document/_Auto Indent"
+msgstr "/文書/自動字下げ(_A)"
+
+#: ../src/menu.c:274
+#, fuzzy
+msgid "/Document/Auto _Completion Popup"
+msgstr "/文書/自動補完ポップアップ(_A)"
+
+#: ../src/menu.c:275
+msgid "/Document/_Wrap"
+msgstr "/文書/折り返し(_W)"
+
+#: ../src/menu.c:276
+msgid "/Document/_Line Numbers"
+msgstr "/文書/行番号(_L)"
+
+#: ../src/menu.c:277
+#, fuzzy
+msgid "/Document/Show _Blocks"
+msgstr "/文書/ブロックを表示(_B)"
+
+#: ../src/menu.c:278
+#, fuzzy
+msgid "/Document/_Visible Spacing"
+msgstr "/文書/ウィンドウのフロート化(_F)"
+
+#: ../src/menu.c:280
+#, fuzzy
+msgid "/Document/_Tab Size"
+msgstr "/文書/タブサイズを増やす(_I)"
+
+#: ../src/menu.c:282
+#, fuzzy
+msgid "/Document/Tab Size/_Increase"
+msgstr "/文書/タブサイズを増やす(_I)"
+
+#: ../src/menu.c:283
+#, fuzzy
+msgid "/Document/Tab Size/_Decrease"
+msgstr "/文書/タブサイズを減らす(_D)"
+
+#: ../src/menu.c:285
+#, fuzzy
+msgid "/Document/Tab Size/_Reset"
+msgstr "/文書/タブサイズを増やす(_I)"
+
+#: ../src/menu.c:286
+#, fuzzy
+msgid "/Document/_Font Size"
+msgstr "/文書/形式"
+
+#: ../src/menu.c:288
+#, fuzzy
+msgid "/Document/Font Size/_Increase"
+msgstr "/文書/タブサイズを増やす(_I)"
+
+#: ../src/menu.c:289
+#, fuzzy
+msgid "/Document/Font Size/_Decrease"
+msgstr "/文書/タブサイズを減らす(_D)"
+
+#: ../src/menu.c:291
+#, fuzzy
+msgid "/Document/Font Size/_Reset"
+msgstr "/文書/形式(_P)"
+
+#: ../src/menu.c:293
+msgid "/Document/_Highlight Syntax"
+msgstr "/文書/文法解析による色分け(_H)"
+
+#: ../src/menu.c:295
+msgid "/Document/_Rescan Syntax & Spelling"
+msgstr ""
+
+#: ../src/menu.c:297
+#, fuzzy
+msgid "/Document/_Rescan Syntax"
+msgstr "/文書/文法解析による色分け(_H)"
+
+#: ../src/menu.c:299
+#, fuzzy
+msgid "/Document/Language _Mode"
+msgstr "/文書/色分けモード(_M)"
+
+#: ../src/menu.c:302
+msgid "/Document/Character _Encoding"
+msgstr "/文書/文字コード(_E)"
+
+#: ../src/menu.c:307
+#, fuzzy
+msgid "/Document/Add Boo_kmark"
+msgstr "編集/ブックマークを追加する(_B)"
+
+#: ../src/menu.c:308
+#, fuzzy
+msgid "/Document/Floati_ng Window"
+msgstr "/文書/ウィンドウのフロート化(_F)"
+
+#: ../src/menu.c:310
+#, fuzzy
+msgid "/Document/Move Left"
+msgstr "/文書/左の文書"
+
+#: ../src/menu.c:311
+#, fuzzy
+msgid "/Document/Move Right"
+msgstr "/文書/右の文書"
+
+#: ../src/menu.c:312
+msgid "/_Go"
+msgstr "/移動(_G)"
+
+#: ../src/menu.c:314
+#, fuzzy
+msgid "/Go/_Previous Document"
+msgstr "/移動/前の文書(_P)"
+
+#: ../src/menu.c:315
+#, fuzzy
+msgid "/Go/_Next Document"
+msgstr "/移動/次の文書(_N)"
+
+#: ../src/menu.c:316
+#, fuzzy
+msgid "/Go/_First Document"
+msgstr "/移動/先頭の文書(_F)"
+
+#: ../src/menu.c:317
+#, fuzzy
+msgid "/Go/L_ast Document"
+msgstr "/移動/最後の文書(_A)"
+
+#: ../src/menu.c:319
+#, fuzzy
+msgid "/Go/F_irst Bookmark"
+msgstr "/移動/最初のブックマーク"
+
+#: ../src/menu.c:320
+#, fuzzy
+msgid "/Go/P_revious Bookmark"
+msgstr "/移動/前ののブックマーク"
+
+#: ../src/menu.c:321
+#, fuzzy
+msgid "/Go/N_ext Bookmark"
+msgstr "/移動/次ののブックマーク(_B)"
+
+#: ../src/menu.c:322
+#, fuzzy
+msgid "/Go/Last _Bookmark"
+msgstr "/移動/最後のブックマーク"
+
+#: ../src/menu.c:324
+msgid "/Go/Goto _Line"
+msgstr "/移動/行ジャンプ(_L)"
+
+#: ../src/menu.c:325
+#, fuzzy
+msgid "/Go/Goto line number in _selection"
+msgstr "/移動/選択ジャンプ(_O)"
+
+#: ../src/menu.c:326
+msgid "/_Project"
+msgstr "/プロジェクト(_P)"
+
+#: ../src/menu.c:328
+msgid "/Project/_New Project"
+msgstr "/プロジェクト/新規プロジェクト(_N)"
+
+#: ../src/menu.c:329
+msgid "/Project/_Open Project..."
+msgstr "/プロジェクト/プロジェクトを開く(_O)..."
+
+#: ../src/menu.c:330
+#, fuzzy
+msgid "/Project/Open _Recent"
+msgstr "/プロジェクト/最近開いたプロジェクト(_R)"
+
+#: ../src/menu.c:333
+msgid "/Project/_Save"
+msgstr "/プロジェクト/保存(_S)"
+
+#: ../src/menu.c:334
+msgid "/Project/Save _as..."
+msgstr "/プロジェクト/別名で保存(_A)..."
+
+#: ../src/menu.c:335
+msgid "/Project/Save & _close"
+msgstr "/プロジェクト/保存して閉じる(_C)"
+
+#: ../src/menu.c:337
+msgid "/Project/E_dit Project Options..."
+msgstr "/プロジェクト/オプションを編集(_D)..."
+
+#: ../src/menu.c:338
+#, fuzzy
+msgid "/_Tools"
+msgstr "/起動(_X)"
+
+#: ../src/menu.c:341
+#, fuzzy
+msgid "/Tools/_Commands"
+msgstr "/起動/コマンド"
+
+#: ../src/menu.c:343
+#, fuzzy
+msgid "/Tools/_Outputbox"
+msgstr "/起動/Outputbox"
+
+#: ../src/menu.c:345
+#, fuzzy
+msgid "/Tools/_Filters"
+msgstr "/起動/フィルタ"
+
+#: ../src/menu.c:348
+msgid "/Tools/_Synchronize text block"
+msgstr ""
+
+#: ../src/menu.c:349
+#, fuzzy
+msgid "/Tools/Toggle _Comment"
+msgstr "/文書/単語カウント(_C)"
+
+#: ../src/menu.c:350
+#, fuzzy
+msgid "/Tools/_Word Count"
+msgstr "/文書/単語カウント(_C)"
+
+#: ../src/menu.c:352
+#, fuzzy
+msgid "/Tools/Strip T_railing Whitespace"
+msgstr "/編集/特殊な置換/末尾のホワイトスペースを取り除く"
+
+#: ../src/menu.c:353
+#, fuzzy
+msgid "/Tools/_Join lines"
+msgstr "/起動/フィルタ"
+
+#: ../src/menu.c:354
+#, fuzzy
+msgid "/Tools/Sp_lit lines"
+msgstr "/起動/フィルタ"
+
+#: ../src/menu.c:355
+#, fuzzy
+msgid "/Tools/Indenting To T_abs"
+msgstr "/編集/特殊な置換/インデントをタブに変換"
+
+#: ../src/menu.c:356
+#, fuzzy
+msgid "/Tools/Indenting To S_paces"
+msgstr "/編集/特殊な置換/インデントをスペースに変換"
+
+#: ../src/menu.c:357
+msgid "/Tools/Split Into Col_umns"
+msgstr ""
+
+#: ../src/menu.c:514
+#, fuzzy
+msgid "/Document/Language Mode"
+msgstr "/文書/色分け"
+
+#: ../src/menu.c:649
+#, fuzzy
+msgid "/Project/Open Recent"
+msgstr "/プロジェクト/最近開いたプロジェクト"
+
+#: ../src/menu.c:653
+#, fuzzy
+msgid "/File/Open Recent"
+msgstr "/ファイル/最近開いたファイル"
+
+#: ../src/menu.c:836
+msgid "No default browser found"
+msgstr "既定のブラウザが見つかりません"
+
+#: ../src/menu.c:837
+msgid ""
+"You can set a default browser by going to:\n"
+"Edit->Preferences->External Commands"
+msgstr ""
+"編集→環境設定→起動プログラムの設定 \n"
+"から既定のブラウザを設定できます"
+
+#: ../src/menu.c:872
+msgid "Operate filter only on selection?"
+msgstr "選択範囲のみにフィルタを適用しますか?"
+
+#: ../src/menu.c:932
+msgid "/Tools/Filters"
+msgstr "/起動/フィルタ"
+
+#: ../src/menu.c:953
+#, fuzzy
+msgid "/Tools"
+msgstr "/起動(_X)"
+
+#: ../src/menu.c:956
+msgid "/Tools/Commands"
+msgstr "/起動/コマンド"
+
+#: ../src/menu.c:984
+msgid "/Tools/Outputbox"
+msgstr "/起動/Outputbox"
+
+#: ../src/menu.c:1029
+msgid "/Document/Character Encoding"
+msgstr "/文書/文字コード"
+
+#: ../src/outputbox.c:408
+#, c-format
+msgid "failed to compile outputbox pattern %s\n"
+msgstr "Outputbox のパターン %s を解釈できませんでした\n"
+
+#: ../src/preferences.c:277
+msgid "Untitled"
+msgstr "無題"
+
+#: ../src/preferences.c:378
+msgid "Select font"
+msgstr "フォントの選択"
+
+#: ../src/preferences.c:403
+msgid "Select color"
+msgstr "色の選択"
+
+#: ../src/preferences.c:497
+msgid "Message"
+msgstr "メッセージ"
+
+#: ../src/preferences.c:498
+msgid "Enabled"
+msgstr "有効"
+
+#: ../src/preferences.c:499
+msgid "File"
+msgstr "ファイル"
+
+#: ../src/preferences.c:655
+msgid ""
+"Text styles are applied on top of each other. If multiple styles are applied "
+"to the same text, the top-most style in this list has the highest priority. "
+"Use drag and drop to re-order the text styles."
+msgstr ""
+"テキストのスタイルは、トップに適用されます。複数のスタイルが適用された場合、"
+"リストの中で一番トップにあるものが最優先されます。順番を変更するにはドラッグ "
+"& ドロップしてください。"
+
+#: ../src/preferences.c:664 ../src/preferences.c:957 ../src/preferences.c:1027
+msgid "Label"
+msgstr "ラベル"
+
+#: ../src/preferences.c:676 ../src/preferences.c:1583
+msgid "Foreground color"
+msgstr "文字色"
+
+#: ../src/preferences.c:677 ../src/preferences.c:1584
+msgid "Background color"
+msgstr "背景色"
+
+#: ../src/preferences.c:678
+msgid "normal weight"
+msgstr "普通の太さ"
+
+#: ../src/preferences.c:680
+msgid "bold weight"
+msgstr "太字"
+
+#: ../src/preferences.c:682
+msgid "normal style"
+msgstr "普通"
+
+#: ../src/preferences.c:684
+msgid "italic style"
+msgstr "斜体"
+
+#: ../src/preferences.c:687
+#, fuzzy
+msgid "Spell check"
+msgstr "スペルチェック..."
+
+#: ../src/preferences.c:901 ../src/preferences.c:1118
+msgid "Name"
+msgstr "名前"
+
+#: ../src/preferences.c:958 ../src/preferences.c:1028
+#: ../src/preferences.c:1123
+msgid "Command"
+msgstr "コマンド"
+
+#: ../src/preferences.c:959
+msgid "Default browser"
+msgstr "既定のブラウザ"
+
+#: ../src/preferences.c:961
+#, fuzzy
+msgid ""
+"<small><b>Input options</b>\n"
+"start with a | to send the input to the standard input\n"
+"%f local filename (available for local files)\n"
+"%i temporary fifo for input, equals %f if the document is not modified and "
+"local\n"
+"%I temporary filename for input, equals %s if the document is not modified "
+"and local\n"
+"<b>Other options</b>\n"
+"%c local directory of file (available for local files)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+"<small><b>入力オプション</b>\n"
+"| で始めると入力を標準入力へ送ることができます\n"
+"%s ローカルファイル名 (ローカルファイルに有効)\n"
+"%i 入力のための一時的な FIFO, 文書がローカルにあり変更されていなければ、%s と"
+"同じです\n"
+"%I 入力のための一時的なファイル, 文書がローカルにあり変更されていなければ、%"
+"s と同じです\n"
+"<b>その他のオプション</b>\n"
+"%c ファイルが格納されているローカルディレクトリ (ローカルファイルに有効)\n"
+"%n パスなしのファイル名 (編集対象となるすべてのファイルに有効)\n"
+"%u URL (編集対象となるすべてのファイルに有効)\n"
+"%p プレビュー用の URL  プロジェクト設定でベースディレクトリとプレビューディレ"
+"クトリを設定している場合。そうでなければ %u と同じです</small>"
+
+#: ../src/preferences.c:1031
+#, fuzzy
+msgid ""
+"<small><b>Input options</b>\n"
+"start with a | to send the input to the standard input\n"
+"%f local filename (requires local file, cannot operate on selection)\n"
+"%i temporary fifo for input\n"
+"%I temporary filename for input\n"
+"<b>Output options</b>\n"
+"end with a | to read the output from the standard output\n"
+"%o temporary fifo\n"
+"%O temporary filename\n"
+"%t temporary filename for both input and output (for in-place-editing "
+"filters, cannot operate on selection)\n"
+"<b>Other options</b>\n"
+"%c local directory of file (requires local file)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+"<small><b>入力オプション</b>\n"
+"| で始めると入力を標準入力へ送ることができます\n"
+"%s ローカルファイル名 (ローカルファイルに有効、選択範囲を対象にはできませ"
+"ん)\n"
+"%i 入力のための一時的な FIFO\n"
+"%I 入力のための一時的なファイル\n"
+"<b>出力オプション</b>\n"
+"| で終えると出力を標準出力から読み出すことができます\n"
+"%o 出力のための一時的な FIFO\n"
+"%O 出力のための一時的なファイル\n"
+"%t 入出力両方のための一時的なファイル(その場で編集 タイプのフィルタ用、選択範"
+"囲を対象にはできません)\n"
+"<b>その他のオプション</b>\n"
+"%c ファイルが格納されているローカルディレクトリ (ローカルファイルに有効)\n"
+"%n パスなしのファイル名 (編集対象となるすべてのファイルに有効)\n"
+"%u URL (編集対象となるすべてのファイルに有効)\n"
+"%p プレビュー用の URL  プロジェクト設定でベースディレクトリとプレビューディレ"
+"クトリを設定している場合。そうでなければ %u と同じです</small>"
+
+#: ../src/preferences.c:1119
+msgid "Pattern"
+msgstr "パターン"
+
+#: ../src/preferences.c:1120
+msgid "File #"
+msgstr "ファイル名パターン#"
+
+#: ../src/preferences.c:1121
+msgid "Line #"
+msgstr "行パターン#"
+
+#: ../src/preferences.c:1122
+msgid "Output #"
+msgstr "出力パターン#"
+
+#: ../src/preferences.c:1124
+msgid "Show all output"
+msgstr "出力をすべて表示"
+
+#: ../src/preferences.c:1126
+msgid ""
+"<small><b>Input options</b>\n"
+"start with a | to send the input to the standard input\n"
+"%s local filename (available for local files)\n"
+"%i temporary fifo for input, equals %s if the document is not modified and "
+"local\n"
+"%I temporary filename for input, equals %s if the document is not modified "
+"and local\n"
+"<b>Output options</b>\n"
+"end with a | to read the output from the standard output\n"
+"%o temporary fifo\n"
+"%O temporary filename\n"
+"%t temporary filename for both input and output (for in-place-editing "
+"filters)\n"
+"<b>Other options</b>\n"
+"%c local directory of file (available for local files)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+"<small><b>入力オプション</b>\n"
+"| で始めると入力を標準入力へ送ることができます\n"
+"%s ローカルファイル名 (ローカルファイルに有効)\n"
+"%i 入力のための一時的な FIFO, 文書がローカルにあり変更されていなければ、%s と"
+"同じです\n"
+"%I 入力のための一時的なファイル, 文書がローカルにあり変更されていなければ、%"
+"s と同じです\n"
+"<b>出力オプション</b>\n"
+"| で終えると出力を標準出力から読み出すことができます\n"
+"%o 出力のための一時的な FIFO\n"
+"%O 出力のための一時的なファイル\n"
+"%t 入出力両方のための一時的なファイル(その場で編集 タイプのフィルタ用)\n"
+"<b>その他のオプション</b>\n"
+"%c ファイルが格納されているローカルディレクトリ (ローカルファイルに有効)\n"
+"%n パスなしのファイル名 (編集対象となるすべてのファイルに有効)\n"
+"%u URL (編集対象となるすべてのファイルに有効)\n"
+"%p プレビュー用の URL  プロジェクト設定でベースディレクトリとプレビューディレ"
+"クトリを設定している場合。そうでなければ %u と同じです</small>"
+
+#. label = gtk_label_new(NULL);
+#. gtk_label_set_markup(GTK_LABEL(label), _("<small>language dialog not yet ready..</small>"));
+#. gtk_box_pack_start(GTK_BOX(vbox1),label, TRUE, TRUE, 2);
+#. skip column 0, the language name
+#. 1=text
+#: ../src/preferences.c:1276
+msgid "Option name"
+msgstr "オプション名"
+
+#. 2=boolean
+#: ../src/preferences.c:1277
+msgid "value"
+msgstr "値"
+
+#. 1=text
+#: ../src/preferences.c:1290
+msgid "Highlight name"
+msgstr "色分けの名前"
+
+#. the textstyle model
+#: ../src/preferences.c:1293
+msgid "Textstyle"
+msgstr "テキストスタイル"
+
+#: ../src/preferences.c:1536 ../src/preferences.c:1537
+msgid "left"
+msgstr "左"
+
+#: ../src/preferences.c:1536 ../src/preferences.c:1537
+msgid "right"
+msgstr "右"
+
+#: ../src/preferences.c:1536
+msgid "top"
+msgstr "上"
+
+#: ../src/preferences.c:1536
+msgid "bottom"
+msgstr "下"
+
+#: ../src/preferences.c:1538
+msgid "Nothing"
+msgstr "チェックしない"
+
+#: ../src/preferences.c:1538
+msgid "Modified time and file size"
+msgstr "更新時刻とファイルサイズ"
+
+#: ../src/preferences.c:1538
+msgid "Modified time"
+msgstr "更新時刻"
+
+#: ../src/preferences.c:1538
+msgid "File size"
+msgstr "ファイルサイズ"
+
+#: ../src/preferences.c:1554
+msgid "Edit preferences"
+msgstr "環境設定"
+
+#: ../src/preferences.c:1575
+#, fuzzy
+msgid "Editor settings"
+msgstr "エディタの設定"
+
+#: ../src/preferences.c:1577
+#, fuzzy
+msgid "Generic editor settings"
+msgstr "エディタの一般設定"
+
+#: ../src/preferences.c:1582
+msgid "Font"
+msgstr "フォント"
+
+#: ../src/preferences.c:1585
+msgid "Smart Home/End cursor positioning"
+msgstr "行頭と行末での Home/End キーによるスマートなカーソル移動"
+
+#: ../src/preferences.c:1586
+msgid "Use spaces to indent, not tabs"
+msgstr "字下げにはタブでなく空白を使う"
+
+#: ../src/preferences.c:1587
+msgid "Smart auto indenting"
+msgstr ""
+
+#: ../src/preferences.c:1589
+msgid "Number of actions in undo history"
+msgstr "取り消し履歴に保存する数"
+
+#: ../src/preferences.c:1590
+msgid "Clear undo history on save"
+msgstr "保存時に取り消し履歴をクリア"
+
+#: ../src/preferences.c:1594
+#, fuzzy
+msgid "Initial editor settings"
+msgstr "起動時のウィンドウの高さ"
+
+#: ../src/preferences.c:1597
+msgid "Initial settings for new documents"
+msgstr ""
+
+#: ../src/preferences.c:1602
+#, fuzzy
+msgid "Default mime type for new files"
+msgstr "新規ファイルに使用する文字コード"
+
+#: ../src/preferences.c:1604
+msgid "(Smart) Auto indenting"
+msgstr ""
+
+#: ../src/preferences.c:1605
+msgid "Tab width"
+msgstr "タブ幅"
+
+#: ../src/preferences.c:1606
+msgid "Word wrap"
+msgstr "行からはみ出す単語を自動的に次の行に送る"
+
+#: ../src/preferences.c:1607
+msgid "Show line numbers"
+msgstr "行番号を表示"
+
+#. pd->prefs[defaulthighlight] = boxed_checkbut_with_value(_("Highlight syntax"), main_v->props.defaulthighlight, vbox2);
+#: ../src/preferences.c:1610
+msgid "Highlight current line"
+msgstr "現在の行をハイライトする"
+
+#: ../src/preferences.c:1611
+msgid "Enable block folding"
+msgstr "ブロックの折り畳みを有効にする"
+
+#: ../src/preferences.c:1612
+msgid "Enable automatic completion pop-up"
+msgstr "自動補完ポップアップウィンドウを有効にする"
+
+#: ../src/preferences.c:1613
+msgid "Highlight matching block begin-end"
+msgstr "一致したブロックの初めから終わりをハイライトする"
+
+#: ../src/preferences.c:1618
+msgid "HTML"
+msgstr "HTML"
+
+#: ../src/preferences.c:1620
+msgid "HTML options"
+msgstr "HTML オプション"
+
+#: ../src/preferences.c:1625
+msgid "Lowercase HTML tags"
+msgstr "HTMLタグに小文字を使う"
+
+#: ../src/preferences.c:1626
+msgid "Use deprecated tags (e.g. <font> and <nobr>)"
+msgstr "推奨されないタグ (例: <font> や <nobr>) を使う"
+
+#: ../src/preferences.c:1627
+msgid "Use XHTML style tags (<br />)"
+msgstr "XHTMLの書き方を使う (<br /> など)"
+
+#. pd->prefs[insert_close_tag] = boxed_checkbut_with_value(_("Automatically close tags"), main_v->props.insert_close_tag, vbox2);
+#. pd->prefs[close_tag_newline] = boxed_checkbut_with_value(_("Prepend close tags with a newline"), main_v->props.close_tag_newline, vbox2);
+#: ../src/preferences.c:1631
+msgid "Automatically update author meta tag"
+msgstr "meta タグの著者情報を自動的に更新する"
+
+#: ../src/preferences.c:1632
+msgid "Automatically update date meta tag"
+msgstr "meta タグの日付情報を自動更新する"
+
+#: ../src/preferences.c:1633
+msgid "Automatically update generator meta tag"
+msgstr "meta タグの generator を自動的に更新する"
+
+#: ../src/preferences.c:1637
+msgid "Files"
+msgstr "ファイル"
+
+#: ../src/preferences.c:1650
+msgid "Default character set for new files"
+msgstr "新規ファイルに使用する文字コード"
+
+#: ../src/preferences.c:1653
+msgid "Auto set <meta> HTML tag on encoding change"
+msgstr "使用するエンコーディングが変わった時に自動的に<meta>タグを設定する"
+
+#: ../src/preferences.c:1655
+msgid "Backup files and recovery of modified documents"
+msgstr ""
+
+#: ../src/preferences.c:1659
+msgid "Create backup file during file save"
+msgstr "保存時にバックアップを作成"
+
+#: ../src/preferences.c:1661
+msgid "Continue save"
+msgstr "保存継続"
+
+#: ../src/preferences.c:1661
+msgid "Abort save"
+msgstr "保存中止"
+
+#: ../src/preferences.c:1661
+msgid "Ask what to do"
+msgstr "どうするか尋ねる"
+
+#: ../src/preferences.c:1662
+msgid "If the backup fails"
+msgstr "バックアップが失敗したら"
+
+#: ../src/preferences.c:1664
+msgid "Remove backup file on close"
+msgstr "閉じたときにバックアップファイルを削除する"
+
+#: ../src/preferences.c:1668
+msgid "Enable recovery of modified documents"
+msgstr ""
+
+#: ../src/preferences.c:1669
+msgid "Frequency to store changes (seconds)"
+msgstr ""
+
+#: ../src/preferences.c:1671
+msgid "Misc"
+msgstr "その他"
+
+#: ../src/preferences.c:1677
+#, fuzzy
+msgid "Open commandline files in running bluefish process"
+msgstr "既に起動している bluefish のウィンドウでファイルを開く"
+
+#: ../src/preferences.c:1679
+#, fuzzy
+msgid "Open commandline files in new window"
+msgstr "既に起動している bluefish のウィンドウでファイルを開く"
+
+#: ../src/preferences.c:1682
+msgid "File properties to check on disk for modifications"
+msgstr "ディスク上での変更を確認するためのファイルのプロパティ"
+
+#: ../src/preferences.c:1683
+msgid "Periodically check if file is modified on disk"
+msgstr "ファイルがディスク上で変更されたか定期的にチェックする"
+
+#: ../src/preferences.c:1684
+msgid "Number of files in 'Open recent' menu"
+msgstr "[最近開いたファイル]リストの最大表示数"
+
+#: ../src/preferences.c:1689
+msgid "User interface"
+msgstr "インターフェイス"
+
+#: ../src/preferences.c:1692
+msgid "Startup options"
+msgstr "起動時の設定"
+
+#: ../src/preferences.c:1697
+msgid "Show splash-screen"
+msgstr "スプラッシュを表示する"
+
+#: ../src/preferences.c:1700
+msgid "General"
+msgstr "全般"
+
+#: ../src/preferences.c:1705
+msgid "Make HTML dialogs transient"
+msgstr "HTMLダイアログを常に上に表示"
+
+#: ../src/preferences.c:1706
+msgid ""
+"Notebook tab font \n"
+"(leave empty for gtk default)"
+msgstr ""
+"タブに用いるフォント\n"
+"(空の場合 gtk のデフォルトになります)"
+
+#: ../src/preferences.c:1707
+msgid "Document notebook tab position"
+msgstr "文書名タブの位置"
+
+#: ../src/preferences.c:1708
+msgid "Switch between tabs with <Alt>+0..9"
+msgstr "<Alt>+0..9 でタブを切り替えることができます"
+
+#: ../src/preferences.c:1709
+msgid "Sidebar notebook tab position"
+msgstr "サイドバーのタブの位置"
+
+#: ../src/preferences.c:1710
+msgid "Sidebar location"
+msgstr "サイドバーの配置"
+
+#: ../src/preferences.c:1714 ../src/preferences.c:1716
+msgid "Dimensions"
+msgstr "ウィンドウサイズ"
+
+#: ../src/preferences.c:1721
+msgid "Leave dimensions to window manager"
+msgstr "サイズの決定をウィンドウマネージャに任せる"
+
+#: ../src/preferences.c:1722
+msgid "Restore last used dimensions"
+msgstr "前回終了時のウィンドウサイズを覚えておく"
+
+#: ../src/preferences.c:1723
+msgid "Initial sidebar width"
+msgstr "起動時のウィンドウの幅"
+
+#: ../src/preferences.c:1724
+msgid "Initial window height"
+msgstr "起動時のウィンドウの高さ"
+
+#: ../src/preferences.c:1725
+msgid "Initial window width"
+msgstr "起動時のウィンドウの幅"
+
+#. arr = array_from_arglist(_("Java programming"),"1", "java:image:jsp", NULL);
+#. main_v->globses.filefilters = g_list_append(main_v->globses.filefilters, arr);
+#: ../src/preferences.c:1732 ../src/rcfile.c:689
+msgid "Images"
+msgstr "画像ファイル"
+
+#: ../src/preferences.c:1734
+msgid "Thumbnails"
+msgstr "サムネイル"
+
+#: ../src/preferences.c:1738
+msgid "Thumbnail suffix"
+msgstr "サムネイルファイルの後ろに付ける文字"
+
+#: ../src/preferences.c:1741
+msgid "Thumbnail filetype"
+msgstr "サムネイルファイルの形式"
+
+#: ../src/preferences.c:1746
+msgid "External commands"
+msgstr "外部コマンド"
+
+#: ../src/preferences.c:1748
+msgid "Commands"
+msgstr "コマンド"
+
+#: ../src/preferences.c:1756
+msgid "External filters"
+msgstr "外部フィルタ"
+
+#: ../src/preferences.c:1758
+msgid "Filters"
+msgstr "フィルタ"
+
+#: ../src/preferences.c:1766 ../src/preferences.c:1768
+msgid "Output parsers"
+msgstr "出力パーサ"
+
+#: ../src/preferences.c:1776 ../src/preferences.c:1777
+msgid "Plugins"
+msgstr "プラグイン"
+
+#: ../src/preferences.c:1785 ../src/preferences.c:1786
+msgid "Text styles"
+msgstr "テキストスタイル"
+
+#: ../src/preferences.c:1795
+msgid "Language support"
+msgstr "言語サポート"
+
+#: ../src/preferences.c:1797
+msgid "Advanced syntax scanning options"
+msgstr "文法スキャンの詳細設定"
+
+#: ../src/preferences.c:1803
+msgid "Delayed"
+msgstr "遅延"
+
+#: ../src/preferences.c:1803
+msgid "Immediately"
+msgstr "すぐに"
+
+#: ../src/preferences.c:1804
+msgid "Show the automatic completion pop-up window"
+msgstr "自動補完ポップアップウィンドウを表示する"
+
+#: ../src/preferences.c:1806
+msgid "Load reference information from language file"
+msgstr "言語定義ファイルからリファレンス情報を読み込む"
+
+#: ../src/preferences.c:1807
+msgid "Show reference information in autocompletion pop-up"
+msgstr "リファレンス情報を自動補完ポップアップウィンドウに表示する"
+
+#: ../src/preferences.c:1808
+msgid "Show reference information in tooltip window"
+msgstr "リファレンス情報をツールチップウィンドウに表示"
+
+#: ../src/project.c:154
+msgid "New project"
+msgstr "新規プロジェクト"
+
+#: ../src/project.c:225
+msgid "Enter Bluefish project filename"
+msgstr "Bluefishプロジェクトのファイル名を入力してください"
+
+#: ../src/project.c:348
+msgid "Select Bluefish project filename"
+msgstr "プロジェクトのファイル名を選択"
+
+#: ../src/project.c:494
+msgid "Create New Project"
+msgstr "新規プロジェクトの作成"
+
+#: ../src/project.c:497
+msgid "Edit Project"
+msgstr "プロジェクトの編集"
+
+#: ../src/project.c:520
+#, c-format
+msgid "This project contains %d files"
+msgstr "このプロジェクトには %d 個のファイルが存在します"
+
+#: ../src/project.c:532
+msgid "Project _Name:"
+msgstr "プロジェクト名(_N):"
+
+#: ../src/project.c:537
+msgid "_Template:"
+msgstr "テンプレート(_T):"
+
+#: ../src/project.c:543
+msgid "_Word wrap by default"
+msgstr "デフォルトで、行を折り返す(_W)"
+
+#: ../src/project.c:554
+msgid "Create _Project"
+msgstr "プロジェクトを作成(_P)"
+
+#: ../src/project.c:594
+msgid "Create project"
+msgstr "プロジェクトを作成する"
+
+#: ../src/project.c:598
+msgid "Create project with currently opened documents"
+msgstr "現在開いているファイルからプロジェクトを作成する"
+
+#: ../src/project.c:599
+msgid "Create empty project"
+msgstr "空のプロジェクトを作成する"
+
+#. if the user does not have outputbox settings --> set them to defaults values
+#: ../src/rcfile.c:484
+msgid "make"
+msgstr "make"
+
+#: ../src/rcfile.c:485
+msgid "weblint HTML checker"
+msgstr "weblint HTML 文法チェッカ"
+
+#: ../src/rcfile.c:486
+msgid "tidy HTML validator"
+msgstr "tidy HTML 妥当性チェック"
+
+#: ../src/rcfile.c:487
+msgid "javac"
+msgstr "javac"
+
+#: ../src/rcfile.c:488
+msgid "xmllint XML checker"
+msgstr "xmllink XML 文法チェッカ"
+
+#: ../src/rcfile.c:489
+msgid "php"
+msgstr "php"
+
+#: ../src/rcfile.c:492
+msgid "Sort"
+msgstr "ソート"
+
+#: ../src/rcfile.c:493
+msgid "Reverse lines"
+msgstr "行単位で逆順に並べ替え"
+
+#: ../src/rcfile.c:494
+msgid "Dos2unix"
+msgstr "Dos2unix 改行変換"
+
+#: ../src/rcfile.c:495
+msgid "Tidy HTML"
+msgstr "Tidy HTML 妥当性チェック"
+
+#: ../src/rcfile.c:496
+msgid "Strip empty lines"
+msgstr "空行を削除する"
+
+#: ../src/rcfile.c:497
+msgid "Render HTML to text"
+msgstr "HTMLをテキストに変換する"
+
+#: ../src/rcfile.c:500
+msgid "Mozilla"
+msgstr "Mozillaで確認"
+
+#: ../src/rcfile.c:501
+msgid "Firefox"
+msgstr "Firefox"
+
+#: ../src/rcfile.c:502
+msgid "Opera"
+msgstr "Operaで確認"
+
+#: ../src/rcfile.c:503
+msgid "Konqueror"
+msgstr "Konqueror"
+
+#: ../src/rcfile.c:504
+msgid "Galeon"
+msgstr "Galeonで確認"
+
+#: ../src/rcfile.c:505
+msgid "Epiphany"
+msgstr "Epiphany"
+
+#: ../src/rcfile.c:506
+msgid "Kazehakase"
+msgstr "風博士"
+
+#: ../src/rcfile.c:507
+msgid "Links2 (graphics)"
+msgstr "Links2 (グラフィック版)"
+
+#: ../src/rcfile.c:625
+msgid "Untitled Project"
+msgstr "無題のプロジェクト"
+
+#: ../src/rcfile.c:683
+msgid "C programming"
+msgstr "C プログラム"
+
+#: ../src/rcfile.c:685
+msgid "Web files"
+msgstr "Webファイル"
+
+#: ../src/rcfile.c:691
+msgid "Hide objectfiles"
+msgstr "オブジェクトファイルを隠す"
+
+#: ../src/snr2.c:235
+msgid "Regular expression error: "
+msgstr "正規表現エラー: "
+
+#: ../src/snr2.c:239 ../src/snr2.c:288
+msgid "Search failed"
+msgstr "検索に失敗"
+
+#: ../src/snr2.c:284
+#, c-format
+msgid "Regular expression error: %s at offset %d"
+msgstr "正規表現エラー: %s at offset %d"
+
+#: ../src/snr2.c:1380
+#, c-format
+msgid "Found %d matches, "
+msgid_plural "Found %d matches, "
+msgstr[0] "%d 個一致しました,"
+msgstr[1] "%d 個一致しました,"
+
+#: ../src/snr2.c:1381
+#, c-format
+msgid "replaced %d"
+msgid_plural "replaced %d"
+msgstr[0] "%d 個が置き換えられました"
+msgstr[1] "%d 個が置き換えられました"
+
+#: ../src/snr2.c:1386
+#, c-format
+msgid "Found %d matches"
+msgid_plural "Found %d matches"
+msgstr[0] "%d 個一致しました"
+msgstr[1] "%d 個一致しました"
+
+#. display warning that not all documents have yet finished loading
+#: ../src/snr2.c:1407
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Not all documents are loaded yet</"
+"span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">まだ読み込まれていない文書があります"
+"</span>"
+
+#: ../src/snr2.c:1532
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">No selection. Please select a block "
+"of text first.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">何も選択されていません。まずテキスト"
+"ブロックを選択してください。</span>"
+
+#: ../src/snr2.c:1571 ../src/snr2.c:1937
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">No more matches found, next search "
+"will continue at the beginning.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">これより下には見つかりませんでした。"
+"次は初めから探します。</span>"
+
+#: ../src/snr2.c:1648
+msgid "Entire document"
+msgstr "文書内"
+
+#: ../src/snr2.c:1649
+msgid "Forward from cursor position"
+msgstr "カーソル位置からスタート"
+
+#: ../src/snr2.c:1650
+msgid "Selection"
+msgstr "選択範囲"
+
+#: ../src/snr2.c:1651
+msgid "All open files"
+msgstr "開いているすべてのファイル"
+
+#: ../src/snr2.c:1655 ../src/snr2.c:1662
+msgid "Normal"
+msgstr "通常"
+
+#: ../src/snr2.c:1656
+msgid "Entire word only"
+msgstr "単語一致"
+
+#: ../src/snr2.c:1657
+msgid "POSIX"
+msgstr "POSIX 形式"
+
+#: ../src/snr2.c:1658
+msgid "PERL"
+msgstr "PERL 形式"
+
+#: ../src/snr2.c:1663
+msgid "Uppercase"
+msgstr "大文字"
+
+#: ../src/snr2.c:1664
+msgid "Lowercase"
+msgstr "小文字"
+
+#: ../src/snr2.c:1702
+msgid "_Search for: "
+msgstr "検索対象(_F):"
+
+#: ../src/snr2.c:1706
+msgid "The pattern to look for"
+msgstr "検索するパターン"
+
+#: ../src/snr2.c:1721
+msgid "Replace _with: "
+msgstr "置換文字列(_W): "
+
+#: ../src/snr2.c:1725
+msgid "Replace matching text with"
+msgstr "一致するテキストを次で置換する"
+
+#: ../src/snr2.c:1733
+msgid "Sco_pe: "
+msgstr "範囲(_P):"
+
+#: ../src/snr2.c:1737
+msgid "Where to look for the pattern."
+msgstr "パターンを検索する範囲。"
+
+#: ../src/snr2.c:1743
+msgid "Found 0 matches, replaced 0"
+msgstr "一致しませんでしたので, 置換しませんでした"
+
+#: ../src/snr2.c:1743
+msgid "Found 0 matches"
+msgstr "一致しませんでした"
+
+#: ../src/snr2.c:1753
+msgid "<b>_Options</b>"
+msgstr "<b>オプション(_O)</b>"
+
+#: ../src/snr2.c:1768
+msgid "Match Patter_n: "
+msgstr "検索パターン(_N):"
+
+#: ../src/snr2.c:1772
+msgid "How to interpret the pattern."
+msgstr "パターンをどう解釈するか。"
+
+#: ../src/snr2.c:1779
+msgid "Replace T_ype: "
+msgstr "置換の種類(_Y):"
+
+#: ../src/snr2.c:1784
+msgid "What to replace with."
+msgstr "置換の対象とするテキスト"
+
+#: ../src/snr2.c:1788
+msgid "Allow o_verlapping matches"
+msgstr "折り返して検索(_V)"
+
+#: ../src/snr2.c:1791
+msgid "After a match is found, start next search within that match."
+msgstr "一致が見つかった後に、次の検索をその一致を使用して始めます。"
+
+#: ../src/snr2.c:1793
+msgid "Case sensitive _matching"
+msgstr "大文字小文字を区別する(_M)"
+
+#: ../src/snr2.c:1796
+msgid "Only match if case (upper/lower) is identical."
+msgstr "大文字/小文字が一致した場合のみ。"
+
+#: ../src/snr2.c:1798
+msgid "_Use escape chars"
+msgstr "エスケープ文字を使用する(_U)"
+
+#: ../src/snr2.c:1801
+msgid "Unescape backslash escaped characters such as \\n, \\t etc."
+msgstr ""
+"バックスラッシュを使用した \\n,\\t のようなエスケープ文字のエスケープを外す"
+
+#: ../src/snr2.c:1803
+msgid "_Select matches"
+msgstr "一致箇所を選択(_S)"
+
+#: ../src/snr2.c:1806
+msgid "Select the matching text instead of just highlighting it"
+msgstr "一致するテキストをハイライトするだけでなく選択する。"
+
+#: ../src/snr2.c:1808
+msgid "_Bookmark matches"
+msgstr "検索に合致した箇所をブックマークする(_B)"
+
+#: ../src/snr2.c:1810
+msgid "Create a bookmark for each match"
+msgstr "見つかった一致それぞれに、ブックマークを設定"
+
+#: ../src/snr2.c:1815
+msgid "Replace _All"
+msgstr "すべて置換(_A)"
+
+#: ../src/snr2.c:1818
+msgid "_Replace"
+msgstr "置換(_R)"
+
+#: ../src/snr2.c:1821
+msgid "Find _All"
+msgstr "すべてを検索(_A)"
+
+#: ../src/snr2.c:2423
+msgid "Lines into columns"
+msgstr ""
+
+#: ../src/snr2.c:2435
+#, fuzzy
+msgid "Number of columns"
+msgstr "取り消し履歴に保存する数"
+
+#: ../src/snr2.c:2438
+msgid "Spread lines horizontally"
+msgstr ""
+
+#: ../src/snr2.c:2439
+msgid "Column separator"
+msgstr ""
+
+#: ../src/snr2.c:2441
+#, fuzzy
+msgid "Fill empty entries"
+msgstr "空行を削除する"
+
+#: ../src/undo_redo.c:463
+msgid "Undo in _all documents"
+msgstr "すべての文書でこの変更を元に戻す(_A)"
+
+#: ../src/undo_redo.c:463
+msgid "Undo only _this document"
+msgstr "この文書で変更を元に戻す(_T)"
+
+#: ../src/undo_redo.c:466
+msgid "Undo this change in all documents?"
+msgstr "すべての文書でこの変更を元に戻しますか?"
+
+#: ../src/undo_redo.c:466
+msgid "This change concerns multiple documents."
+msgstr "この変更には複数の文書が関係しています。"
+
+#~ msgid "/View/Fullscreen"
+#~ msgstr "/表示/フルスクリーン表示"
+
+#~ msgid ""
+#~ "Bluefish has trouble reading the filenames. Try to set the environment "
+#~ "variable G_BROKEN_FILENAMES=1\n"
+#~ msgstr ""
+#~ "Bluefishはファイル名を読み取れません。次の環境変数を設定してみてください。"
+#~ "G_BROKEN_FILENAMES=1\n"
+
+#~ msgid "Check Spelling"
+#~ msgstr "スペルをチェック中"
+
+#~ msgid "Checking"
+#~ msgstr "チェック中"
+
+#~ msgid "_Misspelled word:"
+#~ msgstr "スペルの違う語(_M):"
+
+#~ msgid "Change _to:"
+#~ msgstr "修正した語(_T):"
+
+#~ msgid "I_gnore"
+#~ msgstr "無視(_G)"
+
+#~ msgid "In _document"
+#~ msgstr "文書内(_D)"
+
+#~ msgid "I_n selection"
+#~ msgstr "選択範囲内(_N)"
+
+#~ msgid "personal dictionary"
+#~ msgstr "個人辞書"
+
+#~ msgid "session dictionary"
+#~ msgstr "セッション辞書"
+
+#~ msgid "Dictionary:"
+#~ msgstr "辞書:"
+
+#~ msgid "_Add Word"
+#~ msgstr " 単語を追加(_A) "
+
+#~ msgid "Language:"
+#~ msgstr "言語:"
+
+#~ msgid "Set defa_ult"
+#~ msgstr "デフォルトを使う(_U)"
+
+#~ msgid "Filter:"
+#~ msgstr "フィルタ:"
+
+#~ msgid "no filter"
+#~ msgstr "フィルタなし"
+
+#~ msgid "html filter"
+#~ msgstr " HTMLフィルタ"
+
+#~ msgid "Block synchronisation"
+#~ msgstr "ブロック同期"
+
+#~ msgid "Open a project from the specified projectfile."
+#~ msgstr "プロジェクトを指定したプロジェクトファイルから開く"
+
+#~ msgid "PROJECTFILE"
+#~ msgstr "プロジェクトファイル"
+
+#~ msgid "Skip root check."
+#~ msgstr "rootチェックをしない"
+
+#~ msgid "setting up bookmarks ..."
+#~ msgstr "ブックマークを設定しています..."
+
+#~ msgid "/Edit/Replace special"
+#~ msgstr "/編集/特殊な置換"
+
+#~ msgid "/Tools/Block sync"
+#~ msgstr "/編集/特殊な置換/ブロック同期"
+
+#~ msgid "/Edit/Save Sett_ings"
+#~ msgstr "/編集/設定を保存する(_I)"
+
+#~ msgid "/Document/_Update Highlighting"
+#~ msgstr "/文書/色分けの更新(_U)"
+
+#~ msgid "/Tools/Check _Spelling..."
+#~ msgstr "/文書/スペルチェック(_S)..."
+
+#~ msgid "/Windows"
+#~ msgstr "/ウィンドウ"
+
+#~ msgid "/Tools/Outputbox/"
+#~ msgstr "/起動/Outputbox/"
+
+#~ msgid "/Tools/Commands/"
+#~ msgstr "/起動/コマンド/"
+
+#~ msgid "/Tools/Filters/"
+#~ msgstr "/起動/フィルタ/"
+
+#~ msgid "/External"
+#~ msgstr "/起動"
+
+#~ msgid "Editor defaults"
+#~ msgstr "エディタのデフォルト"
+
+#~ msgid "Default values"
+#~ msgstr "デフォルトの値"
+
+#~ msgid "Highlight syntax"
+#~ msgstr "文法解析による色分け"
+
+#~ msgid "Automatically close tags"
+#~ msgstr "自動的にタグを閉じる"
+
+#~ msgid "Prepend close tags with a newline"
+#~ msgstr "閉じタグの前に改行を入れる"
+
+#~ msgid "Backup"
+#~ msgstr "バックアップ"
+
+#~ msgid "File and directory view"
+#~ msgstr "ファイルとディレクトリの表示"
+
+#~ msgid "Save current project?"
+#~ msgstr "現在のプロジェクトを保存しますか?"
+
+#~ msgid "Bluefish Project"
+#~ msgstr "Bluefish プロジェクト"
+
+#~ msgid "_Line number:"
+#~ msgstr "行番号(_L): "
+
+#~ msgid "From _selection"
+#~ msgstr "選択から(_S)"
+
+#~ msgid "Keep _dialog"
+#~ msgstr "ダイアログの値を保持(_K)"
+
+#~ msgid "/Document/Auto Close H_TML tags"
+#~ msgstr "/文書/自動的にHTMLタグを閉じる(_T)"
+
+#~ msgid "/Document/Show _symbols"
+#~ msgstr "/文書/シンボルを表示(_S)"
+
+#~ msgid "Editor"
+#~ msgstr "エディタ"
+
+#~ msgid "Syntax scanning"
+#~ msgstr "文法スキャン"
+
+#~ msgid "Syntax highlighting"
+#~ msgstr "文法解析による色分け"
+
+#~ msgid "On keypress only"
+#~ msgstr "キーが押された時だけ"
