@@ -1,8 +1,8 @@
 %define name	bluefish-unstable
-%define version	1.3.4
-%define release	4
-%define distro	fc10
-%define source	bluefish-unstable-1.3.4
+%define version	1.3.6
+%define release	5
+%define distro	fc11
+%define source	bluefish-unstable-1.3.6
 
 
 Summary: A GTK2 web development application for experienced users
@@ -48,11 +48,13 @@ make install DESTDIR=%{buildroot}
 %find_lang %{name}_plugin_infbrowser
 %find_lang %{name}_plugin_htmlbar
 %find_lang %{name}_plugin_snippets
+%find_lang %{name}_plugin_charmap
 %{__cat} %{name}_plugin_about.lang >> %{name}.lang
 %{__cat} %{name}_plugin_entities.lang >> %{name}.lang
 %{__cat} %{name}_plugin_infbrowser.lang >> %{name}.lang
 %{__cat} %{name}_plugin_htmlbar.lang >> %{name}.lang
 %{__cat} %{name}_plugin_snippets.lang >> %{name}.lang
+%{__cat} %{name}_plugin_charmap.lang >> %{name}.lang
 
 desktop-file-install --vendor=fedora --delete-original \
   --dir %{buildroot}%{_datadir}/applications           \
@@ -96,5 +98,5 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 
 
 %changelog
-* Fri Apr 17 2009 Matthias Haase <matthias_haase@bennewitz.com> - 1.3.4-4.fc10
+* Mon Aug 17 2009 Matthias Haase <matthias_haase@bennewitz.com> - 1.3.6-5.fc11
 - Automatic build
