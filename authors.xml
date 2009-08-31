@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<authors>
+	<author uid="christte">Christian Tellefsen</author>
+	<author uid="dleidert">Daniel Leidert</author>
+	<author uid="endurman">Matthias Haase</author>
+	<author uid="jimh6583">Jim Hayward </author>
+	<author uid="kernel86">Shawn Novak</author>
+	<author uid="oli4">Olivier Sessink</author>
+</authors>
+<!-- svn2cl -i -''-authors=authors.xml -f ChangeLog_1_3_2 -r 4502:4367 -->
