@@ -1,8 +1,8 @@
 %define name	bluefish-unstable
-%define version	1.3.6
+%define version	1.3.7
 %define release	5
 %define distro	fc11
-%define source	bluefish-unstable-1.3.6
+%define source	bluefish-unstable-1.3.7
 
 
 Summary: A GTK2 web development application for experienced users
@@ -16,6 +16,7 @@ Group: Development/Tools
 Requires: gtk2, pcre, aspell
 BuildRequires: gtk2-devel, pcre-devel, aspell-devel
 BuildRequires: desktop-file-utils, gettext, libxml2, perl-XML-Parser
+BuildRequires: enchant-devel
 Requires(post): desktop-file-utils, shared-mime-info
 Requires(postun): desktop-file-utils, shared-mime-info
 BuildRoot: %{_tmppath}/%{name}-%{release}-root
@@ -98,5 +99,5 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 
 
 %changelog
-* Mon Aug 17 2009 Matthias Haase <matthias_haase@bennewitz.com> - 1.3.6-5.fc11
+* Wed Sep 23 2009 Matthias Haase <matthias_haase@bennewitz.com> - 1.3.7-5.fc11
 - Automatic build
