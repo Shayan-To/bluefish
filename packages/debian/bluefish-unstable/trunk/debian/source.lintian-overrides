@@ -1,0 +1,3 @@
+# This is a transitional package.
+bluefish-unstable source: duplicate-long-description
+bluefish-unstable source: dbg-package-missing-depends bluefish-unstable-dbg

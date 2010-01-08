@@ -1,11 +1,10 @@
 bluefish-unstable for Debian
 ----------------------------
 
+This is a dummy package to allow for transition to the stable Bluefish 2.0
+seris for all users of the bluefish-unstable 1.3 series packages.
+
 This is an unofficial Debian package. Send comments or bug reports to the
 official bluefish lists or to the package maintainer.
 
-Note, that this is a development version of bluefish. So use it carefully(!)
-and report bugs (backtraces can be improved by installing
-bluefish-unstable-dbg).
-
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>, somewhere in late 2008
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>, January 2010

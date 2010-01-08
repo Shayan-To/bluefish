@@ -2,6 +2,7 @@ bluefish-unstable (2.0.0~rc1-0dl1) UNRELEASED; urgency=low
 
   * First release candidate for release 2.0.0.
     <URL:http://bluefish.openoffice.nl/#bluefish_2_0_0_rc1>
+  * Make all bluefish-unstable packages transitional packages.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 08 Jan 2010 16:07:54 +0100
 
