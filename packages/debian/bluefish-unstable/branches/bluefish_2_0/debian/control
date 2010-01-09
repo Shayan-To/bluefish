@@ -45,8 +45,8 @@ Description: advanced Gtk+ HTML editor (plugins)
 Package: bluefish-data
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: bluefish (<< 1.3), bluefish-unstable (<< 1.1.5), bluefish-unstable-data
-Conflicts: bluefish (<< 1.3), bluefish-unstable (<< 1.1.5), bluefish-unstable-data
+Replaces: bluefish (<< 1.3), bluefish-unstable (<< 1.1.5), bluefish-unstable-data (<< 2.0)
+Conflicts: bluefish (<< 1.3), bluefish-unstable (<< 1.1.5), bluefish-unstable-data (<< 2.0)
 Description: advanced Gtk+ HTML editor (data)
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a
