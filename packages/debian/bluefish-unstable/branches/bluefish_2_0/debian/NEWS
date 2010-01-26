@@ -1,0 +1,13 @@
+bluefish (2.0.0~rc2-0dl1) UNRELEASED; urgency=low
+
+  This is the second release candidate for Bluefish 2.0. These packages
+  will replace your existing bluefish 1.0 installation from the Debian or
+  Ubuntu repositories.
+
+  There was further a package split. Binary (bluefish), highlighting files
+  and autocompletion data (bluefish-data) and plugins (bluefish-plugins)
+  are provided in separate packages. For the case you observe a crash and
+  you want to send us a backtrace, the debugging symbols are shipped with
+  a separate package (bluefish-dbg) too.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 26 Jan 2010 16:26:17 +0100
