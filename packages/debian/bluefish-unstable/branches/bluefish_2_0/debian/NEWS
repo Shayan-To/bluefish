@@ -1,4 +1,4 @@
-bluefish (2.0.0~rc2-0dl1) UNRELEASED; urgency=low
+bluefish (2.0.0~rc2-0dl1) unstable; urgency=low
 
   This is the second release candidate for Bluefish 2.0. These packages
   will replace your existing bluefish 1.0 installation from the Debian or
