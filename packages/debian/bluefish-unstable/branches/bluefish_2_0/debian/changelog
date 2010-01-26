@@ -3,6 +3,7 @@ bluefish (2.0.0~rc1-0dl1) UNRELEASED; urgency=low
   * First release candidate for 2.0.
     <URL:http://bluefish.openoffice.nl/#bluefish_2_0_0_rc1>
   * Adjusted all packaging files and added proper conflicts.
+  * debian/watch: Adjusted for stable 2.0 series.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 26 Dec 2009 21:06:35 +0100
 
