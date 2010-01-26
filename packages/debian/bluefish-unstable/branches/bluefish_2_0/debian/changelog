@@ -2,6 +2,7 @@ bluefish (2.0.0~rc2-0dl1) UNRELEASED; urgency=low
 
   * Second release candidate for 2.0.
     <URL:http://bluefish.openoffice.nl/#bluefish_2_0_0_rc2>
+  * debian/bluefish-data.install: Install XML stuff and sample bflang2 file.
   * debian/NEWS: Added.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 26 Jan 2010 16:23:53 +0100

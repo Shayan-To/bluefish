@@ -3,4 +3,6 @@ usr/share/icons
 usr/share/locale
 usr/share/mime
 usr/share/pixmaps
+usr/share/xml
+usr/share/doc/bluefish/bflang
 ../../debian/reportbug/* usr/share/bug/bluefish-data/
