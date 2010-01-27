@@ -1,3 +1,9 @@
+bluefish (2.0.0~rc2-0dl1~bpo50+1) lenny-backports; urgency=low
+
+  * Rebuild for lenny-backports.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Wed, 27 Jan 2010 01:18:48 +0100
+
 bluefish (2.0.0~rc2-0dl1) unstable; urgency=low
 
   * Second release candidate for 2.0.
