@@ -1,9 +1,9 @@
-bluefish (2.0.0~rc3-0dl1) UNRELEASED; urgency=low
+bluefish (2.0.0~rc3-0dl1) unstable; urgency=low
 
   * Third release candidate for 2.0.
     <URL:http://bluefish.openoffice.nl/#bluefish_2_0_0_rc3>
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 29 Jan 2010 22:32:11 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 29 Jan 2010 22:41:12 +0100
 
 bluefish (2.0.0~rc2-0dl1) unstable; urgency=low
 
