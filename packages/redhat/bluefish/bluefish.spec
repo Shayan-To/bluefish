@@ -1,22 +1,23 @@
 %define name	bluefish
 %define version	2.0.0
-%define release	rc2
+%define release	3
 %define distro	fc12
-%define source	bluefish-2.0.0-rc2
-
+%define source	bluefish-2.0.0
 
 Summary: A GTK2 web development application for experienced users
 Name: %{name}
 Version: %{version}
 Release: %{release}.%{distro}
-Source: ftp://ftp.ratisbona.com/pub/bluefish/snapshots/%{source}.tar.gz
-URL: http://bluefish.openoffice.nl
-License: GPL
+URL: http://bluefish.openoffice.nl/
+Source: http://www.bennewitz.com/bluefish/stable/source/%{source}.tar.gz
+Patch0: %{name}-%{version}-dso-linking.patch
+Patch1: %{name}-%{version}-xml-bflang2.patch
+License: GPLv2+
 Group: Development/Tools
-Requires: gtk2, pcre, aspell
-BuildRequires: gtk2-devel, pcre-devel, aspell-devel
+Requires: gtk2, pcre, findutils, grep
+BuildRequires: glib2-devel, gtk2-devel, pcre-devel, gucharmap-devel
 BuildRequires: desktop-file-utils, gettext, libxml2, perl-XML-Parser
-BuildRequires: enchant-devel
+BuildRequires: libgnomeui-devel, enchant-devel, python-devel, man, intltool
 Requires(post): desktop-file-utils, shared-mime-info
 Requires(postun): desktop-file-utils, shared-mime-info
 BuildRoot: %{_tmppath}/%{name}-%{release}-root
@@ -28,6 +29,8 @@ editing dynamic and interactive websites
 
 %prep
 %setup -q -n %{source}
+%patch0 -p1 -b .%{name}-%{version}-dso-linking
+%patch1 -p1 -b .%{name}-%{version}-xml-bflang2
 
 %build
 %configure --disable-update-databases \
@@ -42,20 +45,15 @@ editing dynamic and interactive websites
 make install DESTDIR=%{buildroot}
 %{__rm} -f %{buildroot}%{_libdir}/%{name}/*.*a
 
-# required ugly joining
 %find_lang %{name}
 %find_lang %{name}_plugin_about
-%find_lang %{name}_plugin_entities
-%find_lang %{name}_plugin_infbrowser
-%find_lang %{name}_plugin_htmlbar
-%find_lang %{name}_plugin_snippets
 %find_lang %{name}_plugin_charmap
-%{__cat} %{name}_plugin_about.lang >> %{name}.lang
-%{__cat} %{name}_plugin_entities.lang >> %{name}.lang
-%{__cat} %{name}_plugin_infbrowser.lang >> %{name}.lang
-%{__cat} %{name}_plugin_htmlbar.lang >> %{name}.lang
-%{__cat} %{name}_plugin_snippets.lang >> %{name}.lang
-%{__cat} %{name}_plugin_charmap.lang >> %{name}.lang
+%find_lang %{name}_plugin_entities
+%find_lang %{name}_plugin_htmlbar
+%find_lang %{name}_plugin_infbrowser
+%find_lang %{name}_plugin_snippets
+%{__cat} %{name}_plugin_{about,charmap,entities,htmlbar,infbrowser,snippets}.lang >> \
+  %{name}.lang
 
 desktop-file-install --vendor=fedora --delete-original \
   --dir %{buildroot}%{_datadir}/applications           \
@@ -88,17 +86,26 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 %defattr(-, root, root)
 %doc AUTHORS COPYING README TODO
 %{_bindir}/*
-%{_datadir}/%{name}
+%{_datadir}/%{name}/
 %{_datadir}/doc/%{name}/*
 %{_datadir}/xml/%{name}/*
 %{_datadir}/applications/*
 %{_datadir}/mime/packages/*
 %{_datadir}/pixmaps/*
 %{_datadir}/icons/hicolor/*/*/*
-%{_libdir}/%{name}
+%{_libdir}/%{name}/
 %{_mandir}/man1/*
 
 %changelog
+* Tue Feb 16 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.0-3
+- Update to 2.0.0 Release
+- dso-linking.patch added (Function log10 in bftextview2.c requires -lm)
+- xml-bflang2.patch added
+- source url corrected
+
+* Sat Jan 30 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.0-rc3
+- Update to 2.0.0-rc3
+
 * Tue Jan 26 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.0-rc2
 - Update to 2.0.0-rc2
 - enhanced file list for doc and xml directories
