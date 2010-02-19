@@ -2,6 +2,7 @@ bluefish (2.0.0-0dl1) UNRELEASED; urgency=low
 
   * The shiny new bluefish 2.0.0.
     <URL:http://bluefish.openoffice.nl/#bluefish_2_0_0>
+  * debian/control (Standards-Version): Bumped to 3.8.4.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 19 Feb 2010 20:27:26 +0100
 
