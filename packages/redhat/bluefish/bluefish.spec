@@ -1,6 +1,6 @@
 %define name	bluefish
 %define version	2.0.0
-%define release	4
+%define release	5
 %define distro	fc12
 %define source	bluefish-2.0.0
 
@@ -17,7 +17,7 @@ Group: Development/Tools
 Requires: gtk2, pcre, findutils, grep
 BuildRequires: glib2-devel, gtk2-devel, pcre-devel, gucharmap-devel
 BuildRequires: desktop-file-utils, gettext, libxml2, perl-XML-Parser
-BuildRequires: enchant-devel, python-devel, man, intltool
+BuildRequires: enchant-devel, man, intltool
 Requires(post): desktop-file-utils, shared-mime-info
 Requires(postun): desktop-file-utils, shared-mime-info
 BuildRoot: %{_tmppath}/%{name}-%{release}-root
@@ -97,6 +97,9 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 %{_mandir}/man1/*
 
 %changelog
+* Fri Feb 19 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.0-5
+- python-devel removed from BuildRequires
+
 * Thu Feb 18 2010 Matthias Haase <endur@bennew01.localdomain> - 2.0.0-4
 - libgnomeui-devel removed from BuildRequires
 
