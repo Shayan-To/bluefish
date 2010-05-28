@@ -1,8 +1,8 @@
 %define name	bluefish
-%define version	2.0.0
-%define release	5
-%define distro	fc12
-%define source	bluefish-2.0.0
+%define version	2.0.1
+%define release	rc1
+%define distro	fc13
+%define source	bluefish-2.0.1-rc1
 
 Summary: A GTK2 web development application for experienced users
 Name: %{name}
@@ -10,8 +10,6 @@ Version: %{version}
 Release: %{release}.%{distro}
 URL: http://bluefish.openoffice.nl/
 Source: http://www.bennewitz.com/bluefish/stable/source/%{source}.tar.gz
-Patch0: %{name}-%{version}-dso-linking.patch
-Patch1: %{name}-%{version}-xml-bflang2.patch
 License: GPLv2+
 Group: Development/Tools
 Requires: gtk2, pcre, findutils, grep
@@ -22,6 +20,8 @@ Requires(post): desktop-file-utils, shared-mime-info
 Requires(postun): desktop-file-utils, shared-mime-info
 BuildRoot: %{_tmppath}/%{name}-%{release}-root
 
+Obsoletes: bluefish-shared-data
+
 %description
 Bluefish is a powerful editor for experienced web designers and programmers.
 Bluefish supports many programming and markup languages, but it focuses on
@@ -29,8 +29,6 @@ editing dynamic and interactive websites
 
 %prep
 %setup -q -n %{source}
-%patch0 -p1 -b .%{name}-%{version}-dso-linking
-%patch1 -p1 -b .%{name}-%{version}-xml-bflang2
 
 %build
 %configure --disable-update-databases \
@@ -97,6 +95,10 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 %{_mandir}/man1/*
 
 %changelog
+* Thu May 27 2010 Matthias Haase <endur@bennew01.localdomain> - 2.0.1-rc1
+- Rebuild for Fedora 13
+- Remove upstreamed dso-linking and xml-bflang2 patches
+
 * Fri Feb 19 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.0-5
 - python-devel removed from BuildRequires
 
