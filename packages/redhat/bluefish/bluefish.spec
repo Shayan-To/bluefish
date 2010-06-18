@@ -1,8 +1,8 @@
 %define name	bluefish
 %define version	2.0.1
-%define release	rc1
+%define release	1
 %define distro	fc13
-%define source	bluefish-2.0.1-rc1
+%define source	bluefish-2.0.1
 
 Summary: A GTK2 web development application for experienced users
 Name: %{name}
@@ -95,6 +95,9 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 %{_mandir}/man1/*
 
 %changelog
+* Fri Jun 18 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.1
+- Update to 2.0.1 Release
+
 * Thu May 27 2010 Matthias Haase <endur@bennew01.localdomain> - 2.0.1-rc1
 - Rebuild for Fedora 13
 - Remove upstreamed dso-linking and xml-bflang2 patches
