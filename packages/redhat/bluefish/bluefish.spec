@@ -1,6 +1,6 @@
 %define name	bluefish
 %define version	2.0.1
-%define release	1
+%define release	2
 %define distro	fc13
 %define source	bluefish-2.0.1
 
@@ -12,8 +12,8 @@ URL: http://bluefish.openoffice.nl/
 Source: http://www.bennewitz.com/bluefish/stable/source/%{source}.tar.gz
 License: GPLv2+
 Group: Development/Tools
-Requires: gtk2, pcre, findutils, grep
-BuildRequires: glib2-devel, gtk2-devel, pcre-devel, gucharmap-devel
+Requires: gtk2, findutils, grep
+BuildRequires: glib2-devel, gtk2-devel, gucharmap-devel
 BuildRequires: desktop-file-utils, gettext, libxml2, perl-XML-Parser
 BuildRequires: enchant-devel, man, intltool
 Requires(post): desktop-file-utils, shared-mime-info
@@ -95,6 +95,9 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 %{_mandir}/man1/*
 
 %changelog
+* Sat Jun 19 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.1-2
+- pcre and pcre-devel removed from Requires and BuildRequires
+
 * Fri Jun 18 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.1
 - Update to 2.0.1 Release
 
