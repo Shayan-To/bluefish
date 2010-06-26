@@ -1,10 +1,9 @@
-bluefish (2.0.1-1) UNRELEASED; urgency=low
+bluefish (2.0.1-1) unstable; urgency=low
 
-  * NOT RELEASED YET
   * New upstream release - the first release of the 2.0 series for Debian.
   * Updated and adjusted packaging files. Bumped Standards-Version to 3.8.4.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 26 Jun 2010 23:20:17 +0200
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 27 Jun 2010 00:13:53 +0200
 
 bluefish (1.0.7-6) unstable; urgency=low
 

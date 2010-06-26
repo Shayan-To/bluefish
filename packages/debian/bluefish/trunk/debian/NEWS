@@ -10,4 +10,5 @@ bluefish (2.0.1-1) unstable; urgency=low
   you want to send us a backtrace, the debugging symbols are shipped with
   a separate package (bluefish-dbg) too.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 26 Jan 2010 16:26:17 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 27 Jun 2010 00:02:15 +0200
+
