@@ -1,4 +1,5 @@
-This package was debianized by Davide Puricelli (evo) <evo@debian.org>.
+This package was debianized by Davide Puricelli (evo) <evo@debian.org>. It is
+currently maintained by Daniel Leidert <daniel.leidert@wgdd.de>.
 
 It was downloaded from:
 
@@ -7,15 +8,16 @@ It was downloaded from:
 Copyright and Partial Copyright:
 
   Copyright (C) 1998-2000 Chris Mazuc
-  Copyright (C) 1998-2000 Roland Steinbach
-  Copyright (C) 1998-2006 Olivier Sessink
+  Copyright (C) 1998-2002 Roland Steinbach
+  Copyright (C) 1998-2010 Olivier Sessink
   Copyright (C) 1999 Antti-Juhani Kaijanaho
   Copyright (C) 1999 Hylke van der Schaaf
   Copyright (C) 2000 Pablo De Napoli
-  Copyright (C) 2003 Oskar Swida
+  Copyright (C) 2003,2007 Oskar Świda
   Copyright (C) 2004 Eugene Morenko
   Copyright (C) 2004 Salvador Fandino
-  Copyright (C) 2005,2006 James Hayward
+  Copyright (C) 2005-2010 James Hayward
+  Copyright (C) 2006,2009,2010 Daniel Leidert
 
   src/gtk_easy.c: Partial code copyright
   Copyright (C) 1999 Free Software Foundation
@@ -29,10 +31,10 @@ Copyright and Partial Copyright:
 
 Upstream Authors:
 
-  Olivier Sessink, Chris Mazuc, Neil Millar, Hylke van der Schaaf, Jim Hayward
-  and others. See the file AUTHORS.gz for a list of all authors.
+  Olivier Sessink, Jim Hayward, Daniel Leidert and others. See the file
+  AUTHORS for a list of all authors.
 
-License: GNU General Public License version 2
+License: GPL2+
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -49,6 +51,9 @@ License: GNU General Public License version 2
   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
   MA 02110-1301, USA.
 
-On Debian systems, the GNU General Public License, version 2, is
-available as the file /usr/share/common-licenses/copyright/GPL.
+On Debian systems, the current version of the GNU General Public License, is
+available as the file `/usr/share/common-licenses/copyright/GPL'.
 
+The Debian packaging is Copyright (C) 2005-2010 by Daniel Leidert
+<daniel.leidert@wgdd.de> and is licensed under the GPL, see
+`/usr/share/common-licenses/GPL'.
