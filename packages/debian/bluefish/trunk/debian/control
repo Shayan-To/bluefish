@@ -15,8 +15,7 @@ Package: bluefish
 Architecture: any
 Depends: bluefish-data (= ${source:Version}), bluefish-plugins (= ${binary:Version}),
  ${shlibs:Depends}, ${misc:Depends}, gvfs-backends
-Recommends: bluefish-dbg
-Suggests: galeon | iceweasel | firefox | abrowser | seamonkey-browser | mozilla-browser | www-browser,
+Suggests: bluefish-dbg, galeon | iceweasel | firefox | abrowser | seamonkey-browser | mozilla-browser | www-browser,
  weblint-perl | weblint, libxml2-utils, php5-cli, tidy
 Description: advanced Gtk+ HTML editor (DEVELOPMENT VERSION)
  Bluefish is a GTK+ HTML editor for the experienced web designer.
