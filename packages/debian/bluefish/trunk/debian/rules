@@ -79,7 +79,6 @@ binary-arch: build install
 	dh_installchangelogs -a NEWS
 	dh_installdocs -a
 	dh_installmenu -a
-	dh_desktop -p$(PACKAGE)
 	dh_link -a
 	dh_strip -a --dbg-package=$(PACKAGE)-dbg
 	dh_compress -a
