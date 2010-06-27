@@ -1,9 +1,17 @@
 bluefish (2.0.1-1) unstable; urgency=low
 
-  * New upstream release - the first release of the 2.0 series for Debian.
+  * New upstream release - the first release of the 2.0 series for Debian
+    (closes: #570731; LP: #540126). This release fixes these reported issues:
+    - Better settings handling (closes: #548272).
+    - Improved filebrowser (LP: #45927).
+    - Improved syntax highlighting engine (LP: #108628).
+    - Improved file operations (LP: #181110).
+    - Translated menu descriptions (LP: #371318, #371322). The chosen menu
+      name is fine.
+    - Improved browser commands and handling (LP: #158891, #348408).
   * Updated and adjusted packaging files. Bumped Standards-Version to 3.8.4.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 27 Jun 2010 00:13:53 +0200
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 27 Jun 2010 12:31:05 +0200
 
 bluefish (1.0.7-6) unstable; urgency=low
 
