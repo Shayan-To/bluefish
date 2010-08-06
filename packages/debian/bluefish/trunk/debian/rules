@@ -47,7 +47,7 @@ clean:
 	dh_testdir
 	dh_testroot
 	[ ! -f Makefile ] || $(MAKE) distclean
-	dh_clean build-stamp
+	dh_clean build-stamp config.guess config.sub config.rpath
 
 install: build
 	dh_testdir
