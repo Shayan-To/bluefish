@@ -10,6 +10,7 @@ Standards-Version: 3.8.4
 Homepage: http://bluefish.openoffice.nl
 Vcs-Browser: http://bluefish.svn.sourceforge.net/viewvc/bluefish/packages/debian/bluefish/
 Vcs-Svn: https://bluefish.svn.sourceforge.net/svnroot/bluefish/packages/debian/bluefish/trunk/
+DM-Upload-Allowed: yes
 
 Package: bluefish
 Architecture: any
@@ -17,7 +18,7 @@ Depends: bluefish-data (= ${source:Version}), bluefish-plugins (= ${binary:Versi
  ${shlibs:Depends}, ${misc:Depends}, gvfs-backends
 Suggests: bluefish-dbg, galeon | iceweasel | firefox | abrowser | seamonkey-browser | mozilla-browser | www-browser,
  weblint-perl | weblint, libxml2-utils, php5-cli, tidy
-Description: advanced Gtk+ HTML editor (DEVELOPMENT VERSION)
+Description: advanced Gtk+ HTML editor
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a
  fully featured image insert dialog; thumbnail creation and automatically

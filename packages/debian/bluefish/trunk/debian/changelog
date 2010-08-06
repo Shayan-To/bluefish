@@ -9,9 +9,31 @@ bluefish (2.0.1-1) unstable; urgency=low
     - Translated menu descriptions (LP: #371318, #371322). The chosen menu
       name is fine.
     - Improved browser commands and handling (LP: #158891, #348408).
-  * Updated and adjusted packaging files. Bumped Standards-Version to 3.8.4.
+  * Updated and adjusted packaging files.
+  * debian/bluefish_icon.xpm: Renamed to debian/bluefish.xpm.
+  * debian/bluefish.install: Adjusted.
+  * debian/bluefish.menu (icon): Adjusted.
+  * debian/bluefish-data.install, debian/bluefish-plugins.install: Added.
+  * debian/control: Added bluefish-data, bluefish-dbg and bluefish-plugins.
+    (Build-Depends): Dropped deprecated build-dependencies libaspell-dev,
+    libgnomeui-dev, libgnomevfs2-dev, libpcre3-dev and dpatch. Added intltool,
+    libtool, libenchant-dev and libgucharmap2-dev.
+    (Standards-Version): Bumped to 3.8.4.
+    (Depends, Suggests): Adjusted. Added gvfs-backends as dependency.
+  * debian/copyright: Updated.
+  * debian/rules: Rewritten. Dropped dpatch.
+    (LDFLAGS): Dropped -Wl,-z,defs because of plugins.
+    (config.status:): Adjusted configure switches.
+    (install): Install to debian/tmp and list missing files.
+    (binary-indep): Added for bluefish-data.
+    (binary-arch): Adjusted. Put debugging symbols into bluefish-dbg.
+  * debian/watch: Added support for RCs.
+  * debian/README.Debian: Dropped (useless with 2.0).
+  * debian/README.source: Dropped together with dpatch.
+  * debian/patches/: Dropped (obsolete).
+  * debian/reportbug/: Dropped.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 27 Jun 2010 12:31:05 +0200
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 29 Jun 2010 21:40:10 +0200
 
 bluefish (1.0.7-6) unstable; urgency=low
 
