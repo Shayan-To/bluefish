@@ -1,3 +1,9 @@
+bluefish (2.0.1-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 06 Aug 2010 23:42:49 +0200
+
 bluefish (2.0.1-1) unstable; urgency=low
 
   * New upstream release - the first release of the 2.0 series for Debian
