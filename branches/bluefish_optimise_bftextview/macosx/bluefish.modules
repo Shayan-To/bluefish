@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE moduleset SYSTEM "moduleset.dtd">
+<?xml-stylesheet type="text/xsl" href="moduleset.xsl"?>
+<moduleset>
+ <include href="http://github.com/jralls/gtk-osx-build/raw/master/modulesets-stable/gtk-osx.modules"/>
+ <!--<include href="./Source/jhbuild/modulesets/gnome-suites-2.28.modules" />-->
+ <repository type="svn" name="bluefish-svn" default="yes" href="https://bluefish.svn.sourceforge.net/svnroot/" />
+ <autotools id="bluefish-svn" 
+ autogen-template="%(srcdir)s/%(autogen-sh)s"
+ makeargs='-f Makefile.osxapp clean all'
+ makeinstallargs='-f Makefile.osxapp' >
+ 
+ <!-- autogen-template="%(srcdir)s/%(autogen-sh)s &amp;&amp; %(srcdir)s/configure - - prefix=/ - - libdir %(libdir)s %(autogenargs)s CONFIG_SITE=maxosx/config.osxapp" -->
+
+ <branch repo="bluefish-svn" module="bluefish/trunk/bluefish"/>
+ <dependencies>
+ <dep package="intltool"/>
+ <dep package="gtk+"/>
+ <dep package="glib"/>
+ <dep package="libxml2"/>
+ <!--<dep package="gvfs"/>-->
+ <dep package="ige-mac-integration"/>
+ <dep package="shared-mime-info" />
+ </dependencies>
+ <suggests>
+ <dep package="enchant"/>
+ <dep package="gucharmap"/>
+ </suggests>
+ </autotools>
+
+</moduleset>
+
