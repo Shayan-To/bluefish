@@ -8,8 +8,8 @@ Build-Depends: debhelper (>> 5.0.51~), autotools-dev, gettext, intltool (>= 0.40
  libxml2-utils, libxml2-dev, python-dev, zlib1g-dev
 Standards-Version: 3.9.1
 Homepage: http://bluefish.openoffice.nl
-Vcs-Browser: http://bluefish.svn.sourceforge.net/viewvc/bluefish/packages/debian/bluefish/trunk/
-Vcs-Svn: https://bluefish.svn.sourceforge.net/svnroot/bluefish/packages/debian/bluefish/trunk/
+Vcs-Browser: http://bluefish.svn.sourceforge.net/viewvc/bluefish/packages/debian/bluefish/branches/experimental/
+Vcs-Svn: https://bluefish.svn.sourceforge.net/svnroot/bluefish/packages/debian/bluefish/branches/experimental/
 DM-Upload-Allowed: yes
 
 Package: bluefish
