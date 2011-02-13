@@ -7,6 +7,9 @@
 
 PACKAGE=bluefish
 
+DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+
 CFLAGS  = -Wall -g
 LDFLAGS += -Wl,--as-needed
 
@@ -23,7 +26,9 @@ config.status: configure
 	[ ! -f /usr/share/misc/config.guess ] || cp -f /usr/share/misc/config.guess config.guess
 	[ ! -f /usr/share/misc/config.sub ] || cp -f /usr/share/misc/config.sub config.sub
 	[ ! -f /usr/share/gettext/config.rpath ] || cp -f /usr/share/gettext/config.rpath config.rpath
-	./configure --prefix=/usr --exec-prefix=/usr \
+	./configure \
+		--build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
+		--prefix=/usr --exec-prefix=/usr \		
 		--mandir=\$${prefix}/share/man \
 		--sysconfdir=/etc \
 		--with-icon-path=\$${prefix}/share/pixmaps \

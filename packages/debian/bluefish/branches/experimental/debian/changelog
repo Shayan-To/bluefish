@@ -7,6 +7,7 @@ bluefish (2.0.3~rc2-1) UNRELEASED; urgency=low
     - long page title do not longer cause window to resize over screen
       boarders (LP: #693367).
   * debian/control (Vcs-*): Fixed for experimental.
+  * debian/rules (config.status): Support cross compilation.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 17 Sep 2010 01:22:56 +0200
 
