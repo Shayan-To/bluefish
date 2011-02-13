@@ -1,6 +1,5 @@
-bluefish (2.0.3~rc2-1) UNRELEASED; urgency=low
+bluefish (2.0.3~rc2-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * Second release candidate for version 2.0.3.
     - <img> modification window no longer always reports the original image
       width and height and instead of the imposted one (LP: #363009).
@@ -9,7 +8,7 @@ bluefish (2.0.3~rc2-1) UNRELEASED; urgency=low
   * debian/control (Vcs-*): Fixed for experimental.
   * debian/rules (config.status): Support cross compilation.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 17 Sep 2010 01:22:56 +0200
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 13 Feb 2011 17:46:39 +0100
 
 bluefish (2.0.2-1) unstable; urgency=low
 
