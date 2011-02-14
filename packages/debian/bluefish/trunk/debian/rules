@@ -27,8 +27,8 @@ config.status: configure
 	[ ! -f /usr/share/misc/config.sub ] || cp -f /usr/share/misc/config.sub config.sub
 	[ ! -f /usr/share/gettext/config.rpath ] || cp -f /usr/share/gettext/config.rpath config.rpath
 	./configure \
-		--build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
-		--prefix=/usr --exec-prefix=/usr \		
+		--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) \
+		--prefix=/usr --exec-prefix=/usr \
 		--mandir=\$${prefix}/share/man \
 		--sysconfdir=/etc \
 		--with-icon-path=\$${prefix}/share/pixmaps \
