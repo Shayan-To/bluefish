@@ -1,6 +1,7 @@
-bluefish (2.0.3~rc2-1) UNRELEASED; urgency=low
+bluefish (2.0.3-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * New upstream release.
   * Second release candidate for version 2.0.3.
     - <img> modification window no longer always reports the original image
       width and height and instead of the imposted one (LP: #363009).
