@@ -1,6 +1,5 @@
-bluefish (2.2.0-1) UNRELEASED; urgency=low
+bluefish (2.2.0-1) unstable; urgency=low
 
-  * NOT RELEASED YET
   * New upstream release (closes: #623122; LP: #858992).
   * Acknowledge NMU (closes: #643737).
   * debian/compat: Increased dh compatibility level to 7.
@@ -16,7 +15,7 @@ bluefish (2.2.0-1) UNRELEASED; urgency=low
   * debian/patches/LP810663_blacklist_from_appmenu.patch: Added for Ubuntu.
   * debian/patches/series: Added empty.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 15 Mar 2011 22:56:36 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 24 Nov 2011 22:10:26 +0100
 
 bluefish (2.0.3-1.1) unstable; urgency=low
 
