@@ -1,9 +1,33 @@
 bluefish (2.2.0-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
-  * New upstream release.
+  * New upstream release (closes: #623122; LP: #858992).
+  * Acknowledge NMU (closes: #643737).
+  * debian/compat: Increased dh compatibility level to 7.
+  * debian/control (Standards-Version): Bumped to 3.9.2.
+    (Build-Depends): Replaced libgtk2.0-dev, libgucharmap2-dev and
+    libgucharmap-dev by libgtk-3-dev and libgucharmap-2-90-dev. Increased
+    required debhelper version.
+    (Conflicts): Changed to Breaks to fix conflicts-with-version.
+  * debian/copyright: Minor update.
+  * debian/rules: Rewritten for debhelper 7.
+  * debian/watch: Added support for .bz2 suffix.
+  * debian/source/format: Added for format 3.0 (quilt).
+  * debian/patches/LP810663_blacklist_from_appmenu.patch: Added for Ubuntu.
+  * debian/patches/series: Added empty.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 15 Mar 2011 22:56:36 +0100
+
+bluefish (2.0.3-1.1) unstable; urgency=low
+
+  * Non-maintainer upload, for the GNOME 3 transition.
+  * Disable charmap plugin, as the GTK+ 2.0 version of libgucharmap7 is
+    going away and loading GTK+ 2.0 and 3.0 in the same process is not
+    allowed (closes: #643737).
+  * Move Build-Depends on libgucharmap2-dev to Build-Conflicts as there
+    isn't a configure switch to disable the plugin.
+
+ -- Jordi Mallach <jordi@debian.org>  Thu, 13 Oct 2011 12:19:57 +0200
 
 bluefish (2.0.3-1) unstable; urgency=low
 

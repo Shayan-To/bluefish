@@ -9,15 +9,15 @@ Copyright and Partial Copyright:
 
   Copyright (C) 1998-2000 Chris Mazuc
   Copyright (C) 1998-2002 Roland Steinbach
-  Copyright (C) 1998-2010 Olivier Sessink
+  Copyright (C) 1998-2011 Olivier Sessink
   Copyright (C) 1999 Antti-Juhani Kaijanaho
   Copyright (C) 1999 Hylke van der Schaaf
   Copyright (C) 2000 Pablo De Napoli
   Copyright (C) 2003,2007 Oskar Świda
   Copyright (C) 2004 Eugene Morenko
   Copyright (C) 2004 Salvador Fandino
-  Copyright (C) 2005-2010 James Hayward
-  Copyright (C) 2006,2009,2010 Daniel Leidert
+  Copyright (C) 2005-2011 James Hayward
+  Copyright (C) 2006,2009-2011 Daniel Leidert
 
   src/gtk_easy.c: Partial code copyright
   Copyright (C) 1999 Free Software Foundation
@@ -54,6 +54,6 @@ License: GPL2+
 On Debian systems, the current version of the GNU General Public License, is
 available as the file `/usr/share/common-licenses/copyright/GPL'.
 
-The Debian packaging is Copyright (C) 2005-2010 by Daniel Leidert
+The Debian packaging is Copyright (C) 2005-2011 by Daniel Leidert
 <daniel.leidert@wgdd.de> and is licensed under the GPL, see
 `/usr/share/common-licenses/GPL'.
