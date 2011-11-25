@@ -1,3 +1,9 @@
+bluefish (2.2.0-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 25 Nov 2011 01:54:43 +0100
+
 bluefish (2.2.0-1) unstable; urgency=low
 
   * New upstream release (closes: #623122; LP: #858992).
