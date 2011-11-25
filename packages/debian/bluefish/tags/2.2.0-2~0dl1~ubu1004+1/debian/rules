@@ -1,0 +1,37 @@
+#!/usr/bin/make -f
+# Sample debian/rules that uses debhelper.
+# GNU copyright 1997 to 1999 by Joey Hess.
+#
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+PACKAGE  = bluefish
+
+LDFLAGS ?=
+LDFLAGS += -Wl,--as-needed
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_test:
+override_dh_auto_configure: configure
+	dh_auto_configure -- \
+	    --with-icon-path=\$${prefix}/share/pixmaps \
+	    --with-theme-path=\$${prefix}/share/icons/hicolor \
+	    --with-freedesktop_org-menu=\$${prefix}/share/applications \
+	    --with-freedesktop_org-mime=\$${prefix}/share/mime \
+	    --with-xml-catalog=\$${sysconfdir}/xml/catalog \
+	    --disable-static \
+	    --disable-xml-catalog-update \
+	    --disable-update-databases \
+	    LDFLAGS="$(LDFLAGS)"
+
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_strip:
+	dh_strip --dbg-package=$(PACKAGE)-dbg
+
