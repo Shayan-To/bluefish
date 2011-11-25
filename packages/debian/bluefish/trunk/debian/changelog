@@ -1,10 +1,9 @@
-bluefish (2.2.0-2) UNRELEASED; urgency=low
+bluefish (2.2.0-2) unstable; urgency=low
 
-  * NOT RELEASED YET
   * debian/control (bluefish-dbg/Suggests): Replace libgtk2.0-0-dbg by
     libgtk-3-0-dbg.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 25 Nov 2011 01:54:43 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 25 Nov 2011 01:56:36 +0100
 
 bluefish (2.2.0-1) unstable; urgency=low
 
