@@ -60,8 +60,10 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: bluefish (= ${binary:Version}), bluefish-plugins (= ${binary:Version}), ${misc:Depends}
-Suggests: libc6-dbg, libatk1.0-dbg, libcairo2-dbg, libglib2.0-0-dbg,
- libgtk-3-0-dbg, libpango1.0-0-dbg, libxml2-dbg, zlib1g-dbg
+Suggests: libc0.1-dbg [!linux-any !hurd-any], libc0.3-dbg [!linux-any !kfreebsd-any], 
+ libc6-dbg [!alpha !ia64 !hurd-any !kfreebsd-any], libc6.1-dbg [alpha ia64],
+ libatk1.0-dbg, libcairo2-dbg, libglib2.0-0-dbg, libgtk-3-0-dbg,
+ libpango1.0-0-dbg, libxml2-dbg, zlib1g-dbg, gvfs-dbg
 Description: advanced Gtk+ HTML editor (debugging symbols)
  Bluefish is a GTK+ HTML editor for the experienced web designer.
  Its features include nice wizards for startup, tables and frames; a

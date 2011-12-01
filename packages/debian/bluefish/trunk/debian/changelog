@@ -1,6 +1,9 @@
 bluefish (2.2.0-3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * debian/control (bluefish-dbg/Suggests): Added gvfs-dbg. Fixed the
+    dependency on libc6-dbg by adding dependencies to libc0.1-dbg, libc0.3-dbg
+    and libc6.1-dbg for the relevant architectures.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 01 Dec 2011 22:44:38 +0100
 
