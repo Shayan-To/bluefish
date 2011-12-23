@@ -1,6 +1,5 @@
-bluefish (2.2.1-1) UNRELEASED; urgency=low
+bluefish (2.2.1-1) unstable; urgency=low
 
-  * NOT RELEASED YET
   * New upstream release.
   * debian/control: Used wrap-and-sort.
     (Build-Depends): Increased autotools-dev version for dh addon usage.
@@ -8,7 +7,7 @@ bluefish (2.2.1-1) UNRELEASED; urgency=low
     by adding dependencies to libc0.1-dbg, libc0.3-dbg and libc6.1-dbg for the
     relevant architectures.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 01 Dec 2011 22:44:38 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 23 Dec 2011 11:44:09 +0100
 
 bluefish (2.2.0-2) unstable; urgency=low
 
