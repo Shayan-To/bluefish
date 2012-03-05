@@ -16,7 +16,7 @@ Build-Depends: autotools-dev (>> 20100122.1~),
                libxml2-utils,
                python-dev,
                zlib1g-dev
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://bluefish.openoffice.nl
 Vcs-Browser: http://bluefish.svn.sourceforge.net/viewvc/bluefish/packages/debian/bluefish/trunk/
 Vcs-Svn: https://bluefish.svn.sourceforge.net/svnroot/bluefish/packages/debian/bluefish/trunk/

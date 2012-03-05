@@ -1,6 +1,7 @@
 bluefish (2.2.2-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.9.3.
 
  -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 05 Mar 2012 20:36:07 +0100
 
