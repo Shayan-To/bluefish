@@ -1,9 +1,10 @@
-bluefish (2.2.2-1) UNRELEASED; urgency=low
+bluefish (2.2.2-1) unstable; urgency=low
 
   * New upstream release.
+    - Fixes various crashes (closes: #656013).
   * debian/control (Standards-Version): Bumped to 3.9.3.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 05 Mar 2012 20:36:07 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 05 Mar 2012 20:52:34 +0100
 
 bluefish (2.2.1-1) unstable; urgency=low
 
