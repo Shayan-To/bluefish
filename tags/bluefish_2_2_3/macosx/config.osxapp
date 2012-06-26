@@ -1,0 +1,23 @@
+#!/bin/sh
+
+prefix=/
+exec_prefix='${prefix}'
+bindir='${prefix}/Contents/MacOS'
+datarootdir='${prefix}/Contents/Resources/share'
+libdir='${prefix}/Contents/Resources/lib'
+mandir='${datarootdir}/man'
+DATADIRNAME=Contents/Resources/share
+with_xml_catalog=no
+with_icon_path='${datarootdir}/pixmaps'
+with_theme_path=no
+with_freedesktop_org_menu=no
+with_freedesktop_org_mime=no
+enable_debugging_output=no
+enable_static=no
+enable_xml_catalog_update=no
+enable_update_databases=no
+enable_maintainer_mode=yes
+enable_nls=yes
+LDFLAGS="-L/Users/olivier/gtk/inst/lib/"
+CFLAGS="-I/Users/olivier/gtk/inst/include/ -g -Wall -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -O2 -DOSXAPP -DRELPLUGINPATH=\\\"../Resources\\\""
+CPPFLAGS="-g -Wall -O2"
