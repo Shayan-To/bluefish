@@ -8,10 +8,10 @@ Last-Update: 2011-07-14
 
 --- a/desktop-data/bluefish.desktop.in
 +++ b/desktop-data/bluefish.desktop.in
-@@ -2,7 +2,7 @@
- Version=1.0
+@@ -3,7 +3,7 @@
  _Name=Bluefish Editor
  _Comment=Web Development Editor
+ _Keywords=programming;code;html;php;python;
 -Exec=bluefish %F
 +Exec=env UBUNTU_MENUPROXY= bluefish %F
  Icon=bluefish

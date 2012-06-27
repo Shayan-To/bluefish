@@ -5,13 +5,16 @@
 # Uncomment this to turn on verbose mode.
 # export DH_VERBOSE=1
 
-PACKAGE  = bluefish
+PACKAGE := bluefish
 
-LDFLAGS ?=
-LDFLAGS += -Wl,--as-needed
+DEB_VENDOR := $(shell dpkg-vendor --query vendor)
+
+CPPFLAGS ?= $(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS   ?= $(shell dpkg-buildflags --get CFLAGS)
+LDFLAGS  ?= $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 
 %:
-	dh $@ --with autotools_dev --parallel
+	dh $@ --with autotools_dev,python2 --parallel
 
 override_dh_auto_test:
 override_dh_auto_configure: configure
@@ -24,6 +27,8 @@ override_dh_auto_configure: configure
 	    --disable-static \
 	    --disable-xml-catalog-update \
 	    --disable-update-databases \
+	    CPPFLAGS="$(CPPFLAGS)" \
+	    CFLAGS="$(CFLAGS)" \
 	    LDFLAGS="$(LDFLAGS)"
 
 override_dh_install:
@@ -34,4 +39,14 @@ override_dh_installchangelogs:
 
 override_dh_strip:
 	dh_strip --dbg-package=$(PACKAGE)-dbg
+
+override_dh_python2:
+	dh_python2 -pbluefish-data usr/share/bluefish/plugins/zencoding/ usr/share/bluefish/lipsum/
+
+override_dh_gencontrol:
+ifneq (,$(filter Ubuntu,$(DEB_VENDOR)))
+	dh_gencontrol -- -Vvendor:Browser='firefox | abrowser'
+else
+	dh_gencontrol -- -Vvendor:Browser='iceweasel | iceape'
+endif
 

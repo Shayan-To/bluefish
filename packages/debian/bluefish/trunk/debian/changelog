@@ -1,6 +1,14 @@
 bluefish (2.2.3-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * debian/control: Dropped DM-Upload-Allowed.
+    (Maintainer): Set to my new address.
+    (Suggests): Calculate browsers depending on distribution.
+    (Depends): Added python depends for newly shipped Python scripts.
+  * debian/copyright: Minor update. Link to GPLv2 text.
+  * debian/rules: Enabled hardening. Added python2 module. Calculate brwoser
+    dependencies via dpkg-vendor.
+  * debian/patches/LP810663_blacklist_from_appmenu.patch: Adjusted.
 
  -- Daniel Leidert <dleidert@debian.org>  Wed, 27 Jun 2012 21:43:22 +0200
 
