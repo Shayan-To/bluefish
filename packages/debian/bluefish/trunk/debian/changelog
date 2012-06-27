@@ -1,4 +1,4 @@
-bluefish (2.2.3-1) UNRELEASED; urgency=low
+bluefish (2.2.3-1) unstable; urgency=low
 
   * New upstream release.
   * debian/control: Dropped DM-Upload-Allowed.
@@ -10,7 +10,7 @@ bluefish (2.2.3-1) UNRELEASED; urgency=low
     dependencies via dpkg-vendor.
   * debian/patches/LP810663_blacklist_from_appmenu.patch: Adjusted.
 
- -- Daniel Leidert <dleidert@debian.org>  Wed, 27 Jun 2012 21:43:22 +0200
+ -- Daniel Leidert <dleidert@debian.org>  Wed, 27 Jun 2012 22:28:39 +0200
 
 bluefish (2.2.2-1) unstable; urgency=low
 
