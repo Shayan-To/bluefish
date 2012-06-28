@@ -1,12 +1,15 @@
 bluefish (2.2.3-2) UNRELEASED; urgency=low
 
-  * 
+  * debian/copyright: Updated to GPL-3+ (closes: #666025).
 
  -- Daniel Leidert <dleidert@debian.org>  Thu, 28 Jun 2012 23:42:58 +0200
 
 bluefish (2.2.3-1) unstable; urgency=low
 
   * New upstream release.
+    - Added search keywords to .desktop file (LP: #948228).
+    - Fixed crash in highlighting engine (LP: #990716).
+    - Fixed thumbnail creation (closes: #663100).
   * debian/control: Dropped DM-Upload-Allowed.
     (Maintainer): Set to my new address.
     (Suggests): Calculate browsers depending on distribution.
