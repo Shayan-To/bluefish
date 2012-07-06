@@ -1,8 +1,8 @@
 %define name	bluefish
-%define version	2.0.1
+%define version	2.2.3
 %define release	2
-%define distro	fc13
-%define source	bluefish-2.0.1
+%define distro	fc17
+%define source	bluefish-2.2.3
 
 Summary: A GTK2 web development application for experienced users
 Name: %{name}
@@ -13,9 +13,9 @@ Source: http://www.bennewitz.com/bluefish/stable/source/%{source}.tar.gz
 License: GPLv2+
 Group: Development/Tools
 Requires: gtk2, findutils, grep
-BuildRequires: glib2-devel, gtk2-devel, gucharmap-devel
+BuildRequires: glib2-devel, gtk2-devel
 BuildRequires: desktop-file-utils, gettext, libxml2, perl-XML-Parser
-BuildRequires: enchant-devel, man, intltool
+BuildRequires: enchant-devel, man, intltool, gucharmap, jing
 Requires(post): desktop-file-utils, shared-mime-info
 Requires(postun): desktop-file-utils, shared-mime-info
 BuildRoot: %{_tmppath}/%{name}-%{release}-root
@@ -31,11 +31,10 @@ editing dynamic and interactive websites
 %setup -q -n %{source}
 
 %build
-%configure --disable-update-databases \
-  --disable-xml-catalog-update        \
-  --without-gnome2_4-mime             \
-  --without-gnome2_4-appreg           
-
+%configure --disable-dependency-tracking \
+  --disable-static \
+  --disable-update-databases \
+  --disable-xml-catalog-update
 %{__make} %{?_smp_mflags}
 
 %install
@@ -50,7 +49,8 @@ make install DESTDIR=%{buildroot}
 %find_lang %{name}_plugin_htmlbar
 %find_lang %{name}_plugin_infbrowser
 %find_lang %{name}_plugin_snippets
-%{__cat} %{name}_plugin_{about,charmap,entities,htmlbar,infbrowser,snippets}.lang >> \
+%find_lang %{name}_plugin_zencoding
+%{__cat} %{name}_plugin_{about,charmap,entities,htmlbar,infbrowser,snippets,zencoding}.lang >> \
   %{name}.lang
 
 desktop-file-install --vendor=fedora --delete-original \
@@ -95,6 +95,36 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 %{_mandir}/man1/*
 
 %changelog
+* Thu Jul  5 2012 Matthias Haase <matthias_haase@bennewitz.com> - 2.2.3-2
+- Update to 2.2.3 Release
+- libxml2-devel added to BuildRequires
+
+* Thu Mar  1 2012  Matthias Haase <matthias_haase@bennewitz.com> - 2.2.2-2
+- Update to 2.2.2 Release
+- Zencoding plugin added
+
+* Thu Nov 24 2011 Matthias Haase <matthias_haase@bennewitz.com> - 2.2.0-2
+- Update to 2.2.0 Release
+- Rebuild for Fedora 16
+- Patches of previous version are removed
+
+* Sun May 29 2011 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.3-4
+- Rebuild for Fedora 15
+- Patches added
+- Jing added to BuildRequires
+
+* Thu Feb 24 2011 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.3-2
+- Update to 2.0.3 Release
+
+* Thu Feb 10 2011 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.3-rc2
+- Update to 2.0.3 rc2 
+
+* Tue Jan  4 2011 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.3-rc1
+- Update to 2.0.3 rc1
+
+* Sat Sep 18 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.2-1
+- Update to 2.0.2 Release
+
 * Sat Jun 19 2010 Matthias Haase <matthias_haase@bennewitz.com> - 2.0.1-2
 - pcre and pcre-devel removed from Requires and BuildRequires
 
