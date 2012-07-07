@@ -14,7 +14,7 @@ License: GPLv2+
 Group: Development/Tools
 Requires: gtk2, findutils, grep
 BuildRequires: glib2-devel, gtk2-devel
-BuildRequires: desktop-file-utils, gettext, libxml2, perl-XML-Parser
+BuildRequires: desktop-file-utils, gettext, libxml2-devel, perl-XML-Parser
 BuildRequires: enchant-devel, man, intltool, gucharmap, jing
 Requires(post): desktop-file-utils, shared-mime-info
 Requires(postun): desktop-file-utils, shared-mime-info
