@@ -1,6 +1,6 @@
 Author: Olivier Sessink <oli4@users.sourceforge.net>
 Reviewed-By: Daniel Leidert <dleidert@debian.org>
-Origin: http://bluefish.svn.sourceforge.net/bluefish/?rev=7557&view=
+Origin: http://bluefish.svn.sourceforge.net/viewvc/bluefish?view=revision&revision=7557
 Description: Fix a segmentation fault on platforms where G_GSIZE_FORMAT
  does not equal %lu.
 Bug: https://bugzilla.gnome.org/679203

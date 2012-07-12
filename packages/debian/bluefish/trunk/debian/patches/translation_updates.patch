@@ -1,3 +1,9 @@
+Author: Daniel Leidert <dleidert@debian.org>
+Description: Bring translations up-to-date.
+Origin: http://bluefish.svn.sourceforge.net/viewvc/bluefish?view=revision&revision=7558
+Origin: http://bluefish.svn.sourceforge.net/viewvc/bluefish?view=revision&revision=7538
+Forwarded: not-needed
+
 --- a/po/es.po
 +++ b/po/es.po
 @@ -29,7 +29,7 @@
