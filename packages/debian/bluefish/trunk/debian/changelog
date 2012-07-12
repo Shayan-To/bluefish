@@ -1,4 +1,4 @@
-bluefish (2.2.3-3) UNRELEASED; urgency=low
+bluefish (2.2.3-3) unstable; urgency=low
 
   * debian/patches/bz679203_fix_segfault.patch: Added.
     - Fix a segmentation fault (LP: #954879).
@@ -6,7 +6,7 @@ bluefish (2.2.3-3) UNRELEASED; urgency=low
     - Bring translations up-to-date.
   * debian/patches/series: Adjusted.
 
- -- Daniel Leidert <dleidert@debian.org>  Fri, 13 Jul 2012 00:03:31 +0200
+ -- Daniel Leidert <dleidert@debian.org>  Fri, 13 Jul 2012 00:30:20 +0200
 
 bluefish (2.2.3-2) unstable; urgency=low
 
