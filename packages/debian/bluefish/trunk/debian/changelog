@@ -1,3 +1,9 @@
+bluefish (2.2.3-3) UNRELEASED; urgency=low
+
+  * 
+
+ -- Daniel Leidert <dleidert@debian.org>  Fri, 13 Jul 2012 00:03:31 +0200
+
 bluefish (2.2.3-2) unstable; urgency=low
 
   * debian/copyright: Updated to GPL-3+ (closes: #666025).
