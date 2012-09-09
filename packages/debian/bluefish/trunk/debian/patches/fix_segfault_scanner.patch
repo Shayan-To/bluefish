@@ -1,0 +1,79 @@
+Author: Olivier Sessink <oli4@users.sourceforge.net>
+Acked-By: Daniel Leidert <dleidert@debian.org>
+Description: When starting a scan at the first position, if there
+ is a scancache the 'nextfound' variable should be initialized.
+ .
+ Fix a cornercase when rescanning changed text, in which the area
+ that needs scanning is incorrectly not resized. This was easy to
+ reproduce with the python language file when entering new strings
+ into the file.
+Origin: http://bluefish.svn.sourceforge.net/viewvc/bluefish/trunk/bluefish/src/bftextview2_scanner.c?r1=7588&r2=7590&pathrev=7590
+
+--- a/src/bftextview2_scanner.c
++++ b/src/bftextview2_scanner.c
+@@ -258,7 +258,7 @@
+ {
+ 	Tfound *tmpfound1 = *found;
+ 	GSequenceIter *tmpsiter1 = *siter;
+-	guint invalidoffset = 0;
++	guint invalidoffset;
+ 	gint blockstackcount = 0, contextstackcount = 0;
+ 	
+ 	if (!tmpfound1)
+@@ -267,7 +267,8 @@
+ 	*found = get_foundcache_next(btv, siter);
+ 	DBG_SCANCACHE("remove_cache_entry, STARTED, remove %p at offset %d and any children, numblockchange=%d, numcontextchange=%d\n", tmpfound1,
+ 				  tmpfound1->charoffset_o, tmpfound1->numblockchange, tmpfound1->numcontextchange);
+-		/* if this entry pops blocks or contexts, mark the ends of those as undefined */
++	invalidoffset = tmpfound1->charoffset_o;
++	/* if this entry pops blocks or contexts, mark the ends of those as undefined */
+ 	if (tmpfound1->numblockchange < 0) {
+ 		Tfoundblock *tmpfblock = tmpfound1->fblock;
+ 		DBG_SCANCACHE("remove_cache_entry, found %p pops blocks, mark end of %d fblock's as undefined, fblock=%p\n",
+@@ -1253,8 +1254,9 @@
+ #endif
+ 	iter = mstart = scanning.start;
+ 	if (gtk_text_iter_is_start(&scanning.start)) {
++		DBG_SCANNING("start scanning at start iter\n");
+ 		scanning.siter = g_sequence_get_begin_iter(btv->scancache.foundcaches);
+-		scanning.nextfound = NULL;
++		scanning.nextfound = get_foundcache_first(btv, &scanning.siter);
+ 		scanning.curfcontext = NULL;
+ 		scanning.curfblock = NULL;
+ 		reconstruction_o = 0;
+@@ -1262,7 +1264,7 @@
+ 		/* reconstruct the context stack and the block stack */
+ 		reconstruction_o = reconstruct_scanning(btv, &iter, &scanning);
+ 		pos = 0;
+-		DBG_SCANNING("reconstructed stacks, context=%d, startstate=%d\n", scanning.context, pos);
++		DBG_SCANNING("reconstructed stacks, context=%d, startstate=%d, nextfound=%p\n", scanning.context, pos, scanning.nextfound);
+ 		/* now move the start position either to the start of the line, or to the position 
+ 		   where the stack was reconstructed, the largest offset */
+ 		gtk_text_buffer_get_iter_at_offset(btv->buffer, &iter, reconstruction_o);
+@@ -1672,16 +1674,24 @@
+ 		if (!found)
+ 			break;
+ 		
+-		if (found->charoffset_o <= prevfound_o)
++		if (found->charoffset_o < prevfound_o) {
+ 			g_warning("previous found had offset %d, the next found has offset %d, not ordered correctly?!?!!\n",found->charoffset_o, prevfound_o);
++		} else if (found->charoffset_o == prevfound_o) {
++			g_warning("previous found and the next found have offset %d, duplicate!!\n",found->charoffset_o);
++		}
+ 		prevfound_o = found->charoffset_o;
+ 		if (found->numcontextchange > 0) {
+ 			/* push context */
+ 			if (found->fcontext->parentfcontext != g_queue_peek_head(&contexts)) {
+-				g_warning("pushing context at %d:%d, parent contexts at %d:%d do not match!\n"
++				if (found->fcontext->parentfcontext == NULL) {
++					g_warning("pushing context at %d:%d on top of non-NULL stack, but parent contexts is NULL!?\n"
++									,found->fcontext->start_o, found->fcontext->end_o);
++				} else {
++					g_warning("pushing context at %d:%d, parent contexts at %d:%d do not match!\n"
+ 									,found->fcontext->start_o, found->fcontext->end_o
+ 									,((Tfoundcontext *)found->fcontext->parentfcontext)->start_o
+ 									,((Tfoundcontext *)found->fcontext->parentfcontext)->end_o);
++				}
+ 			}
+ 			g_queue_push_head(&contexts, found->fcontext);
+ 		} else {
