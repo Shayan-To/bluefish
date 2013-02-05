@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		perl.bflang2 $Revision$
+
+		Copyright (C) 2008 Olivier Sessink
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<bflang name="Perl" version="2.0" table="1591" contexts="5" matches="234">
+<header>
+	<mime type="application/x-perl"/>
+	<mime type="text/x-perl" />
+	<mime type="text/plain?pl"/>
+	<option name="show_in_menu" default="1"/>
+	<option name="Parentheses block_foldable" default="0" description="Allow folding of the Parentheses block" />
+	<highlight name="brackets" style="brackets"  />
+	<highlight name="built-in-function" style="function"  />
+	<highlight name="comment" style="comment"  />
+	<highlight name="function" style="special-function"  />
+	<highlight name="keyword" style="keyword"  />
+	<highlight name="pragma" style="preprocessor"   />
+	<highlight name="pointer" style="special-value"  />
+	<highlight name="special_keyword" style="special-keyword"  />
+	<highlight name="string" style="string"  />
+	<highlight name="value" style="value"  />
+	<highlight name="variable" style="variable"  />
+	<highlight name="warning" style="warning"  />
+</header>
+<properties>
+	<!-- <comment type="block" start="=start" end="=end" /> -->
+	<comment type="line" start="#" />
+</properties>
+<definition>
+<context symbols=" ;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;">
+
+<group  highlight="keyword">
+	<autocomplete enable="1" />
+	<element pattern="break" />
+	<element pattern="continue" />
+	<element pattern="do" />
+	<element pattern="each" />
+	<element pattern="else" />
+	<element pattern="elsif" />
+	<element pattern="eq" />
+	<element pattern="for" />
+	<element pattern="foreach" />
+	<element pattern="if" />
+	<element pattern="last" />
+	<element pattern="local" />
+	<element pattern="my" />
+	<element pattern="next" />
+	<element pattern="our" />
+	<element pattern="return" />
+	<element pattern="sub" />
+	<element pattern="unless" />
+	<element pattern="until" />
+	<element pattern="values" />
+	<element pattern="while" />
+	<element pattern="__BEGIN__" />
+	<element pattern="__END__" />
+	<element pattern="__FILE__" />
+	<element pattern="__LINE__" />
+	<element pattern="__PACKAGE__" />
+	<element pattern="BEGIN" />
+	<element pattern="STDIN" />
+	<element pattern="STDERR" />
+</group>
+<group  highlight="special_keyword">
+	<autocomplete enable="1" />
+	<element pattern="package" />
+	<element pattern="require" />
+	<element pattern="use" />
+</group>
+<group  highlight="warning">
+	<autocomplete enable="1" />
+	<element pattern="strict" />
+	<element pattern="warnings" />
+</group>
+<group  highlight="pragma">
+	<autocomplete enable="1" />
+	<element pattern="attributes" />
+	<element pattern="attrs" />
+	<element pattern="autouse" />
+	<element pattern="base" />
+	<element pattern="blib" />
+	<element pattern="caller" />
+	<element pattern="charnames" />
+	<element pattern="constant" />
+	<element pattern="diagnostics" />
+	<element pattern="fields" />
+	<element pattern="filetest" />
+	<element pattern="integer" />
+	<element pattern="less" />
+	<element pattern="lib" />
+	<element pattern="locale" />
+	<element pattern="ops" />
+	<element pattern="overload" />
+	<element pattern="re" />
+	<element pattern="sigtrap" />
+	<element pattern="subs" />
+	<element pattern="utf8" />
+	<element pattern="vars" />
+</group>
+<group  highlight="built-in-function">
+	<autocomplete enable="1" />
+	<element pattern="abs" />
+	<element pattern="accept" />
+	<element pattern="alarm" />
+	<element pattern="atan2" />
+	<element pattern="bind" />
+	<element pattern="binmode" />
+	<element pattern="bless" />
+	<element pattern="chdir" />
+	<element pattern="chmod" />
+	<element pattern="chomp" />
+	<element pattern="chop" />
+	<element pattern="chown" />
+	<element pattern="chr" />
+	<element pattern="chroot" />
+	<element pattern="close" />
+	<element pattern="closedir" />
+	<element pattern="connect" />
+	<element pattern="cos" />
+	<element pattern="crypt" />
+	<element pattern="dbmclose" />
+	<element pattern="dbmopen" />
+	<element pattern="defined" />
+	<element pattern="delete" />
+	<element pattern="die" />
+	<element pattern="dump" />
+	<element pattern="endgrent" />
+	<element pattern="endhostent" />
+	<element pattern="endnetent" />
+	<element pattern="endprotoent" />
+	<element pattern="endpwent" />
+	<element pattern="endservent" />
+	<element pattern="eof" />
+	<element pattern="eval" />
+	<element pattern="exec" />
+	<element pattern="exists" />
+	<element pattern="exit" />
+	<element pattern="exp" />
+	<element pattern="fcntl" />
+	<element pattern="fileno" />
+	<element pattern="flock" />
+	<element pattern="fork" />
+	<element pattern="format" />
+	<element pattern="formline" />
+	<element pattern="getc" />
+	<element pattern="getgrent" />
+	<element pattern="getgrgid" />
+	<element pattern="getgrnam" />
+	<element pattern="gethostbyaddr" />
+	<element pattern="gethostbyname" />
+	<element pattern="gethostent" />
+	<element pattern="getlogin" />
+	<element pattern="getnetbyaddr" />
+	<element pattern="getnetbyname" />
+	<element pattern="getnetent" />
+	<element pattern="getpeername" />
+	<element pattern="getpgrp" />
+	<element pattern="getppid" />
+	<element pattern="getpriority" />
+	<element pattern="getprotobyname" />
+	<element pattern="getprotobynumber" />
+	<element pattern="getprotoent" />
+	<element pattern="getpwent" />
+	<element pattern="getpwnam" />
+	<element pattern="getpwuid" />
+	<element pattern="getservbyname" />
+	<element pattern="getservbyport" />
+	<element pattern="getservent" />
+	<element pattern="getsockname" />
+	<element pattern="getsockopt" />
+	<element pattern="glob" />
+	<element pattern="gmtime" />
+	<element pattern="goto" />
+	<element pattern="grep" />
+	<element pattern="hex" />
+	<element pattern="import" />
+	<element pattern="index" />
+	<element pattern="int" />
+	<element pattern="ioctl" />
+	<element pattern="join" />
+	<element pattern="keys" />
+	<element pattern="kill" />
+	<element pattern="lc" />
+	<element pattern="lcfirst" />
+	<element pattern="length" />
+	<element pattern="link" />
+	<element pattern="listen" />
+	<element pattern="localtime" />
+	<element pattern="log" />
+	<element pattern="lstat" />
+	<element pattern="map" />
+	<element pattern="mkdir" />
+	<element pattern="msgctl" />
+	<element pattern="msgget" />
+	<element pattern="msgrcv" />
+	<element pattern="msgsnd" />
+	<element pattern="new" />
+	<element pattern="oct" />
+	<element pattern="open" />
+	<element pattern="opendir" />
+	<element pattern="ord" />
+	<element pattern="pack" />
+	<element pattern="pipe" />
+	<element pattern="pop" />
+	<element pattern="pos" />
+	<element pattern="print" />
+	<element pattern="printf" />
+	<element pattern="prototype" />
+	<element pattern="push" />
+	<element pattern="quotemeta" />
+	<element pattern="qw" />
+	<element pattern="rand" />
+	<element pattern="read" />
+	<element pattern="readdir" />
+	<element pattern="readlink" />
+	<element pattern="recv" />
+	<element pattern="redo" />
+	<element pattern="ref" />
+	<element pattern="rename" />
+	<element pattern="reset" />
+	<element pattern="reverse" />
+	<element pattern="rewinddir" />
+	<element pattern="rindex" />
+	<element pattern="rmdir" />
+	<element pattern="scalar" />
+	<element pattern="seek" />
+	<element pattern="seekdir" />
+	<element pattern="select" />
+	<element pattern="semctl" />
+	<element pattern="semget" />
+	<element pattern="semop" />
+	<element pattern="send" />
+	<element pattern="setgrent" />
+	<element pattern="sethostent" />
+	<element pattern="setnetent" />
+	<element pattern="setpgrp" />
+	<element pattern="setpriority" />
+	<element pattern="setprotoent" />
+	<element pattern="setpwent" />
+	<element pattern="setservent" />
+	<element pattern="setsockopt" />
+	<element pattern="shift" />
+	<element pattern="shmctl" />
+	<element pattern="shmget" />
+	<element pattern="shmread" />
+	<element pattern="shmwrite" />
+	<element pattern="shutdown" />
+	<element pattern="sin" />
+	<element pattern="sleep" />
+	<element pattern="socket" />
+	<element pattern="socketpair" />
+	<element pattern="sort" />
+	<element pattern="splice" />
+	<element pattern="split" />
+	<element pattern="sprintf" />
+	<element pattern="sqrt" />
+	<element pattern="srand" />
+	<element pattern="stat" />
+	<element pattern="study" />
+	<element pattern="substr" />
+	<element pattern="symlink" />
+	<element pattern="syscall" />
+	<element pattern="sysread" />
+	<element pattern="sysseek" />
+	<element pattern="system" />
+	<element pattern="syswrite" />
+	<element pattern="tell" />
+	<element pattern="telldir" />
+	<element pattern="tie" />
+	<element pattern="tied" />
+	<element pattern="time" />
+	<element pattern="times" />
+	<element pattern="truncate" />
+	<element pattern="uc" />
+	<element pattern="ucfirst" />
+	<element pattern="umask" />
+	<element pattern="undef" />
+	<element pattern="unlink" />
+	<element pattern="unpack" />
+	<element pattern="unshift" />
+	<element pattern="untie" />
+	<element pattern="utime" />
+	<element pattern="vec" />
+	<element pattern="wait" />
+	<element pattern="waitpid" />
+	<element pattern="wantarray" />
+	<element pattern="warn" />
+	<element pattern="write" />
+</group>
+
+<group highlight="variable" case_insens="1">
+	<!-- the next regex patterns used to start with @$?[a and %$?[a but that makes them overlap with the pointer patterns defined below -->
+	<element pattern="@$[a-z_][a-z0-9_]*" is_regex="1" />
+	<element pattern="%$[a-z_][a-z0-9_]*" is_regex="1" />
+	<element pattern="$[a-z_][a-z0-9_]*" is_regex="1" />
+	<element pattern="&amp;[a-z_][a-z0-9_]*;" is_regex="1" />
+</group>
+<group highlight="value">
+	<element pattern="0x[0-9a-fA-F]+" is_regex="1"  />
+	<element pattern="[0-9]+\.[0-9]+" is_regex="1"  />
+	<element pattern="[0-9]+" is_regex="1"  />
+</group>
+<group highlight="pointer" case_insens="1"><!-- does not yet work - use context? -->
+	<element pattern="\\@[a-z_][a-z0-9_]*" is_regex="1"  />
+	<element pattern="\\$[a-z_][a-z0-9_]*" is_regex="1"  />
+	<element pattern="\\%[a-z_][a-z0-9_]*" is_regex="1"  />
+	<element pattern="\\&amp;[a-z_][a-z0-9_]*;" is_regex="1" />
+	<element pattern="\\&amp;{[a-z_][a-z0-9_]*}()" is_regex="1" />
+</group>
+<element pattern="&#34;" highlight="string">
+	<context symbols="\&#34;" highlight="string">
+		<element pattern="\." is_regex="1"/>
+		<element pattern="&#34;" highlight="string" ends_context="1" />
+	</context>
+</element>
+<element pattern="'" highlight="string">
+	<context symbols="\'" highlight="string">
+		<element pattern="\." is_regex="1"/>
+		<element pattern="'" highlight="string" ends_context="1" />
+	</context>
+</element>
+<element id="e.lbrace" pattern="{" starts_block="1" highlight="brackets" block_name="Curly brackets block"/>
+<element pattern="}" ends_block="1" blockstartelement="e.lbrace" highlight="brackets" />
+<element id="e.lbracket" pattern="[" starts_block="1" highlight="brackets" />
+<element pattern="]" ends_block="1" blockstartelement="e.lbracket" highlight="brackets" />
+<element id="e.lparen" pattern="(" starts_block="1" highlight="brackets" block_name="Parentheses block" />
+<element pattern=")" ends_block="1" blockstartelement="e.lparen" highlight="brackets" />
+<element pattern="#[^&#10;&#13;]*" is_regex="1" highlight="comment" />
+
+</context>
+</definition>
+</bflang>

@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		asp-vbs.bflang2 $Revision: 6403 $
+
+		Copyright (C) 2008-20011 Olivier Sessink, Alex Bodnaru
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE bflang [
+	<!ENTITY i18n "dir,lang">
+	<!ENTITY univ "class,id,style,title">
+	<!ENTITY evnt "onload,onclick,ondblclick,onmousedown,onmouseup,onmouseover,onmousemove,onmouseout,onkeypress,onkeydown,onkeyup">
+	<!ENTITY css-selectors SYSTEM "css-selectors.bfinc">
+	<!ENTITY css-rules SYSTEM "css-rules.bfinc">
+	<!ENTITY all-javascript SYSTEM "all-javascript.bfinc">
+	<!ENTITY all-html SYSTEM "all-html.bfinc">
+	<!ENTITY all-vbscript SYSTEM "all-vbscript.bfinc">
+]>
+<bflang name="ASP-VBS" version="2.0" table="14086" contexts="143" matches="2905">
+<header>
+	<mime type="application/x-asp"/>
+	<option name="load_reference" default="1"/>
+	<option name="load_completion" default="1"/>
+	<option name="show_in_menu" default="1"/>
+	<option name="javascript_anchors_object" default="1" description="Anchors object" />
+	<option name="javascript_applets_object" default="1" description="Applet object" />
+	<option name="javascript_date_object" default="1" description="Date object" />
+	<option name="javascript_document_object" default="1" description="Document object" />
+	<option name="javascript_event_object" default="1" description="Event object" />
+	<option name="javascript_history_object" default="1" description="History object" />
+	<option name="javascript_location_object" default="1" description="Location object" />
+	<option name="javascript_math_object" default="1" description="Math object" />
+	<option name="javascript_navigator_object" default="1" description="Navigator object" />
+	<option name="javascript_node_object" default="1" description="Node object" />
+	<option name="javascript_screen_object" default="1" description="Screen object" />
+	<option name="javascript_string_object" default="1" description="String object" />
+	<option name="javascript_window_object" default="1" description="Window object" />
+	<option name="javascript_css_properties" default="1" description="CSS properties" />
+	<option name="autocomplete-html-entities" default="0" description="HTML entities" />
+	<!--
+	<option name="load_asp_functions" default="1" description="All asp functions" />
+	-->
+	<option name="autocomplete_tags" default="1" />
+	<highlight name="attribute-string" style="string-no-spell-check" />
+	<highlight name="asp-block-tag" style="special-value"  />
+	<highlight name="string" style="string"  />
+
+	<highlight name="asp-keyword" style="special-value"  />
+
+	<highlight name="vbs-keyword" style="keyword"  />
+	<highlight name="vbs-brackets" style="brackets"  />
+	<highlight name="vbs-type" style="type"  />
+	<highlight name="vbs-string" style="string"  />
+	<highlight name="vbs-value" style="value" />
+	<highlight name="vbs-function" style="function"  />
+	<highlight name="vbs-comment" style="comment"  />
+	<highlight name="vbs-variable" style="variable"  />
+
+	<highlight name="html-tag" style="tag"  />
+	<highlight name="html-comment" style="comment"  />
+	<highlight name="html-entity" style="value"  />
+	<highlight name="html-attribute" style="attribute" />
+	<highlight name="html-reference-external-tag" style="special-tag" />
+	<highlight name="html-table-tag" style="special-tag2" />
+	<highlight name="html-form-tag" style="special-tag3" />
+	<highlight name="html-deprecated-tag" style="warning" />
+
+	<highlight name="js-brackets" style="brackets"  />
+	<highlight name="js-comment" style="comment"  />
+	<highlight name="js-function" style="function"  />
+	<highlight name="js-keyword" style="keyword"  />
+	<highlight name="js-property" style="special-keyword"  />
+	<highlight name="js-string" style="string"  />
+	<highlight name="js-type" style="type"  />
+	<highlight name="js-value" style="value"  />
+	<highlight name="js-variable" style="variable"  />
+	<highlight name="js-css-property" style="function" />
+
+	<highlight name="css-html-media" style="special-tag" />
+	<highlight name="css-brackets" style="brackets"  />
+	<highlight name="css-comment" style="comment" />
+	<highlight name="css-html-tag" style="tag"  />
+	<highlight name="css-html-classid" style="tag" />
+	<highlight name="css-keyword" style="keyword"  />
+	<highlight name="css-property" style="special-keyword"  />
+	<highlight name="css-string" style="string" />
+	<highlight name="css-value" style="value"  />
+	<highlight name="css-pseudo-element" style="keyword" />
+	<highlight name="css-operator" style="operator" />
+</header>
+<properties>
+	<comment type="block" start="&lt;!--" end="--&gt;" />
+	<comment id="cm.cblockcomment" type="block" start="/*" end="*/" />
+	<comment id="cm.cpplinecomment" type="line" start="//" />
+	<comment id="cm.vbcomment" type="line" start="'" />
+	<comment id="cm.vbremcomment" type="line" start="rem " />
+	<default_spellcheck spell_decode_entities="1" />
+</properties>
+<definition>
+<context symbols="&gt;&lt;&amp;; &#9;&#10;&#13;%@=/">
+
+&all-html;
+
+<element id="e.asp.block.start" pattern="(&lt;%|&lt;%@|&lt;%=)" is_regex="1" starts_block="1" highlight="asp-block-tag" mayfold="1">
+	<context symbols=" ():\&#34;\',&gt;&lt;*+=-/_&#9;&#10;&#13;.%" commentid_block="none" commentid_line="cm.vbcomment">
+&all-vbscript;
+<element pattern="&#34;" highlight="vbs-string">
+	<context symbols="%&#34;" highlight="vbs-string">
+		<element pattern="&#34;" highlight="vbs-string" ends_context="1" />
+<!-- not working, yet
+		<element pattern="%&gt;" highlight="asp-block-tag" ends_context="2" ends_block="1" blockstartelement="e.asp.block.start" mayfold="1"/>
+-->
+	</context>
+</element>
+<element pattern="'" highlight="vbs-comment">
+	<context symbols="%&#10;&#13;" highlight="vbs-comment">
+		<element pattern="(&#10;|&#13;|&#13;&#10;)" is_regex="1" highlight="vbs-comment" ends_context="1" />
+		<element pattern="%&gt;" highlight="asp-block-tag" ends_context="2" ends_block="1" blockstartelement="e.asp.block.start" mayfold="1"/>
+	</context>
+</element>
+<element pattern="rem" highlight="vbs-comment" case_insens="1">
+	<context symbols="%&#10;&#13;" highlight="vbs-comment">
+		<element pattern="(&#10;|&#13;|&#13;&#10;)" is_regex="1" highlight="vbs-comment" ends_context="1" />
+		<element pattern="%&gt;" highlight="asp-block-tag" ends_context="2" ends_block="1" blockstartelement="e.asp.block.start" mayfold="1"/>
+	</context>
+</element>
+<group highlight="asp-keyword"  case_insens="1">
+	<autocomplete enable="1" />
+	<element pattern="request" />
+	<element pattern="response" />
+	<element pattern="server" />
+	<element pattern="session" />
+</group>
+
+<element pattern="%&gt;" ends_block="1" blockstartelement="e.asp.block.start" highlight="asp-block-tag" mayfold="1" ends_context="1" />
+</context>
+</element>
+
+</context>
+</definition>
+</bflang>
