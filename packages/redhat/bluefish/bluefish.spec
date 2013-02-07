@@ -1,8 +1,8 @@
 %define name	bluefish
-%define version	2.2.3
-%define release	2
-%define distro	fc17
-%define source	bluefish-2.2.3
+%define version	2.2.4
+%define release	3
+%define distro	fc18
+%define source	bluefish-2.2.4
 
 Summary: A GTK2 web development application for experienced users
 Name: %{name}
@@ -14,8 +14,9 @@ License: GPLv2+
 Group: Development/Tools
 Requires: gtk2, findutils, grep
 BuildRequires: glib2-devel, gtk2-devel
-BuildRequires: desktop-file-utils, gettext, libxml2-devel, perl-XML-Parser
-BuildRequires: enchant-devel, man, intltool, gucharmap, jing
+BuildRequires: desktop-file-utils, gettext, libxml2, perl-XML-Parser
+BuildRequires: enchant-devel, man, intltool, gucharmap, jing, libxml2-devel
+BuildRequires: gucharmap-devel, python-devel
 Requires(post): desktop-file-utils, shared-mime-info
 Requires(postun): desktop-file-utils, shared-mime-info
 BuildRoot: %{_tmppath}/%{name}-%{release}-root
@@ -95,11 +96,15 @@ xmlcatalog --noout --del 'http://bluefish.openoffice.nl/DTD' /etc/xml/catalog
 %{_mandir}/man1/*
 
 %changelog
-* Thu Jul  5 2012 Matthias Haase <matthias_haase@bennewitz.com> - 2.2.3-2
-- Update to 2.2.3 Release
-- libxml2-devel added to BuildRequires
+* Thu Feb  7 2013 Matthias Haase <matthias_haase@bennewitz.com> - 2.2.4-3
+- Added python-devel to BuildRequires
 
-* Thu Mar  1 2012  Matthias Haase <matthias_haase@bennewitz.com> - 2.2.2-2
+* Thu Feb  7 2013 Matthias Haase <matthias_haase@bennewitz.com> - 2.2.4-2
+- Update to 2.2.4 Release
+- Added libxml2-devel and gucharmap-devel to BuildRequires
+- Rebuild for Fedora 18
+
+* Thu Mar  1 2012 Matthias Haase <matthias_haase@bennewitz.com> - 2.2.2-2
 - Update to 2.2.2 Release
 - Zencoding plugin added
 
