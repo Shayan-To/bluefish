@@ -1,6 +1,12 @@
 bluefish (2.2.4-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * New upstream release.
+  * debian/patches/bz679203_fix_segfault.patch: Dropped (applied upstream).
+  * debian/patches/fix_segfault_blocksync.patch: Ditto.
+  * debian/patches/fix_segfault_scanner.patch: Ditto.
+  * debian/patches/translation_updates.patch: Ditto.
+  * debian/patches/series: Adjusted.
 
  -- Daniel Leidert <dleidert@debian.org>  Sat, 09 Feb 2013 15:04:07 +0100
 
