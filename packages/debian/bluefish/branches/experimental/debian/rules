@@ -5,94 +5,48 @@
 # Uncomment this to turn on verbose mode.
 # export DH_VERBOSE=1
 
-PACKAGE=bluefish
+PACKAGE := bluefish
 
-DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+DEB_VENDOR := $(shell dpkg-vendor --query vendor)
 
-CFLAGS  = -Wall -g
-LDFLAGS += -Wl,--as-needed
+CPPFLAGS ?= $(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS   ?= $(shell dpkg-buildflags --get CFLAGS)
+LDFLAGS  ?= $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 
-ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
-  CFLAGS += -O0
+%:
+	dh $@ --with autotools_dev,python2 --parallel
+
+override_dh_auto_test:
+override_dh_auto_configure: configure
+	dh_auto_configure -- \
+	    --with-icon-path=\$${prefix}/share/pixmaps \
+	    --with-theme-path=\$${prefix}/share/icons/hicolor \
+	    --with-freedesktop_org-menu=\$${prefix}/share/applications \
+	    --with-freedesktop_org-mime=\$${prefix}/share/mime \
+	    --with-xml-catalog=\$${sysconfdir}/xml/catalog \
+	    --disable-static \
+	    --disable-xml-catalog-update \
+	    --disable-update-databases \
+	    CPPFLAGS="$(CPPFLAGS)" \
+	    CFLAGS="$(CFLAGS)" \
+	    LDFLAGS="$(LDFLAGS)"
+
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_strip:
+	dh_strip --dbg-package=$(PACKAGE)-dbg
+
+override_dh_python2:
+	dh_python2 -pbluefish-data usr/share/bluefish/plugins/zencoding/ usr/share/bluefish/lipsum/
+
+override_dh_gencontrol:
+ifneq (,$(filter Ubuntu,$(DEB_VENDOR)))
+	dh_gencontrol -- -Vvendor:Browser='firefox | abrowser'
 else
-  CFLAGS += -O2
-  LDFLAGS += -Wl,-O1
+	dh_gencontrol -- -Vvendor:Browser='iceweasel | iceape'
 endif
 
-config.status: configure
-	dh_testdir
-	# Add here commands to configure the package.
-	[ ! -f /usr/share/misc/config.guess ] || cp -f /usr/share/misc/config.guess config.guess
-	[ ! -f /usr/share/misc/config.sub ] || cp -f /usr/share/misc/config.sub config.sub
-	[ ! -f /usr/share/gettext/config.rpath ] || cp -f /usr/share/gettext/config.rpath config.rpath
-	./configure \
-		--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) \
-		--prefix=/usr --exec-prefix=/usr \
-		--mandir=\$${prefix}/share/man \
-		--sysconfdir=/etc \
-		--with-icon-path=\$${prefix}/share/pixmaps \
-		--with-theme-path=\$${prefix}/share/icons/hicolor \
-		--with-freedesktop_org-menu=\$${prefix}/share/applications \
-		--with-freedesktop_org-mime=\$${prefix}/share/mime \
-		--with-xml-catalog=\$${sysconfdir}/xml/catalog \
-		--disable-static \
-		--disable-xml-catalog-update \
-		--disable-update-databases \
-		LDFLAGS="$(LDFLAGS)" CFLAGS="$(CFLAGS)"
-
-build: build-stamp
-build-stamp: config.status
-	dh_testdir
-	# Add here commands to compile the package.
-	$(MAKE)
-	touch $@
-
-clean:
-	dh_testdir
-	dh_testroot
-	[ ! -f Makefile ] || $(MAKE) distclean
-	dh_clean build-stamp config.guess config.sub config.rpath
-
-install: build
-	dh_testdir
-	dh_testroot
-	dh_clean -k
-	dh_installdirs
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
-	dh_install --list-missing --sourcedir=debian/tmp
-
-# Build architecture-independent files here.
-binary-indep: build install
-	dh_testdir -i
-	dh_testroot -i
-	dh_installchangelogs -i NEWS
-	dh_installdocs -i
-	dh_installmime -i
-	dh_icons -i
-	dh_compress -i
-	dh_fixperms -i
-	dh_installdeb -i
-	dh_gencontrol -i
-	dh_md5sums -i
-	dh_builddeb -i
-
-# Build architecture-dependent files here.
-binary-arch: build install
-	dh_testdir -a
-	dh_testroot -a
-	dh_installchangelogs -a NEWS
-	dh_installdocs -a
-	dh_installmenu -a
-	dh_link -a
-	dh_strip -a --dbg-package=$(PACKAGE)-dbg
-	dh_compress -a
-	dh_fixperms -a
-	dh_installdeb -a
-	dh_shlibdeps -a
-	dh_gencontrol -a
-	dh_md5sums -a
-	dh_builddeb -a
-
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install

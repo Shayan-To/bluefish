@@ -1,14 +1,119 @@
-bluefish (2.0.3~rc2-1) experimental; urgency=low
+bluefish (2.2.4-1) UNRELEASED; urgency=low
 
-  * Second release candidate for version 2.0.3.
+  * NOT RELEASED YET
+
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 09 Feb 2013 15:04:07 +0100
+
+bluefish (2.2.3-4) unstable; urgency=low
+
+  * debian/patches/fix_segfault_blocksync.patch: Added.
+    - Fix a segmentation fault in the block synchronization feature.
+  * debian/patches/fix_segfault_scanner.patch: Added.
+    - Fix segmentation faults in the language scanner feature.
+  * debian/patches/series: Added.
+
+ -- Daniel Leidert <dleidert@debian.org>  Mon, 10 Sep 2012 00:15:13 +0200
+
+bluefish (2.2.3-3) unstable; urgency=low
+
+  * debian/patches/bz679203_fix_segfault.patch: Added.
+    - Fix a segmentation fault (LP: #954879).
+  * debian/patches/translation_updates.patch: Added.
+    - Bring translations up-to-date.
+  * debian/patches/series: Adjusted.
+
+ -- Daniel Leidert <dleidert@debian.org>  Fri, 13 Jul 2012 00:30:20 +0200
+
+bluefish (2.2.3-2) unstable; urgency=low
+
+  * debian/copyright: Updated to GPL-3+ (closes: #666025).
+
+ -- Daniel Leidert <dleidert@debian.org>  Fri, 29 Jun 2012 00:48:22 +0200
+
+bluefish (2.2.3-1) unstable; urgency=low
+
+  * New upstream release.
+    - Added search keywords to .desktop file (LP: #948228).
+    - Fixed crash in highlighting engine (LP: #990716).
+    - Fixed thumbnail creation (closes: #663100).
+  * debian/control: Dropped DM-Upload-Allowed.
+    (Maintainer): Set to my new address.
+    (Suggests): Calculate browsers depending on distribution.
+    (Depends): Added python depends for newly shipped Python scripts.
+  * debian/copyright: Minor update. Link to GPLv2 text.
+  * debian/rules: Enabled hardening. Added python2 module. Calculate brwoser
+    dependencies via dpkg-vendor.
+  * debian/patches/LP810663_blacklist_from_appmenu.patch: Adjusted.
+
+ -- Daniel Leidert <dleidert@debian.org>  Wed, 27 Jun 2012 22:28:39 +0200
+
+bluefish (2.2.2-1) unstable; urgency=low
+
+  * New upstream release.
+    - Fixes various crashes (closes: #656013).
+  * debian/control (Standards-Version): Bumped to 3.9.3.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 05 Mar 2012 20:52:34 +0100
+
+bluefish (2.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: Used wrap-and-sort.
+    (Build-Depends): Increased autotools-dev version for dh addon usage.
+    (bluefish-dbg/Suggests): Added gvfs-dbg. Fixed the dependency on libc6-dbg
+    by adding dependencies to libc0.1-dbg, libc0.3-dbg and libc6.1-dbg for the
+    relevant architectures.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 23 Dec 2011 11:44:09 +0100
+
+bluefish (2.2.0-2) unstable; urgency=low
+
+  * debian/control (bluefish-dbg/Suggests): Replace libgtk2.0-0-dbg by
+    libgtk-3-0-dbg.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 25 Nov 2011 01:56:36 +0100
+
+bluefish (2.2.0-1) unstable; urgency=low
+
+  * New upstream release (closes: #623122; LP: #858992).
+  * Acknowledge NMU (closes: #643737).
+  * debian/compat: Increased dh compatibility level to 7.
+  * debian/control (Standards-Version): Bumped to 3.9.2.
+    (Build-Depends): Replaced libgtk2.0-dev, libgucharmap2-dev and
+    libgucharmap-dev by libgtk-3-dev and libgucharmap-2-90-dev. Increased
+    required debhelper version.
+    (Conflicts): Changed to Breaks to fix conflicts-with-version.
+  * debian/copyright: Minor update.
+  * debian/rules: Rewritten for debhelper 7.
+  * debian/watch: Added support for .bz2 suffix.
+  * debian/source/format: Added for format 3.0 (quilt).
+  * debian/patches/LP810663_blacklist_from_appmenu.patch: Added for Ubuntu.
+  * debian/patches/series: Added empty.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 24 Nov 2011 22:10:26 +0100
+
+bluefish (2.0.3-1.1) unstable; urgency=low
+
+  * Non-maintainer upload, for the GNOME 3 transition.
+  * Disable charmap plugin, as the GTK+ 2.0 version of libgucharmap7 is
+    going away and loading GTK+ 2.0 and 3.0 in the same process is not
+    allowed (closes: #643737).
+  * Move Build-Depends on libgucharmap2-dev to Build-Conflicts as there
+    isn't a configure switch to disable the plugin.
+
+ -- Jordi Mallach <jordi@debian.org>  Thu, 13 Oct 2011 12:19:57 +0200
+
+bluefish (2.0.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Second release candidate for version 2.0.3 (LP: #734685).
     - <img> modification window no longer always reports the original image
       width and height and instead of the imposted one (LP: #363009).
     - long page title do not longer cause window to resize over screen
       boarders (LP: #693367).
-  * debian/control (Vcs-*): Fixed for experimental.
   * debian/rules (config.status): Support cross compilation.
 
- -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 13 Feb 2011 17:46:39 +0100
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 15 Mar 2011 22:28:29 +0100
 
 bluefish (2.0.2-1) unstable; urgency=low
 
