@@ -2,6 +2,9 @@ bluefish (2.2.4-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * New upstream release.
+    - Fixes mouse controlled zoom-out issue (LP: #1020925).
+    - Fixes tabs width issue (LP: #1065625).
+  * debian/copyright: Updated.
   * debian/patches/bz679203_fix_segfault.patch: Dropped (applied upstream).
   * debian/patches/fix_segfault_blocksync.patch: Ditto.
   * debian/patches/fix_segfault_scanner.patch: Ditto.
