@@ -1,6 +1,5 @@
-bluefish (2.2.4-1) UNRELEASED; urgency=low
+bluefish (2.2.4-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * New upstream release.
     - Fixes mouse controlled zoom-out issue (LP: #1020925).
     - Fixes tabs width issue (LP: #1065625).
@@ -11,7 +10,7 @@ bluefish (2.2.4-1) UNRELEASED; urgency=low
   * debian/patches/translation_updates.patch: Ditto.
   * debian/patches/series: Adjusted.
 
- -- Daniel Leidert <dleidert@debian.org>  Sat, 09 Feb 2013 15:04:07 +0100
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 09 Feb 2013 23:43:04 +0100
 
 bluefish (2.2.3-4) unstable; urgency=low
 
