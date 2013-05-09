@@ -9,7 +9,7 @@ Comment: This package was debianized by Davide Puricelli <evo@debian.org>.
 License: GPL-3+
 
 Files: *
-Copyright: Copyright (C) 1998-2012 Olivier Sessink
+Copyright: Copyright (C) 1998-2013 Olivier Sessink
            Copyright (C) 1998-2000 Chris Mazuc
            Copyright (C) 1998-2002 Roland Steinbach
            Copyright (C) 1999 Antti-Juhani Kaijanaho

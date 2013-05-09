@@ -1,4 +1,0 @@
-fix_segfault_scanner.patch
-fix_segfault_blocksync.patch
-translation_updates.patch
-bz679203_fix_segfault.patch
