@@ -1,9 +1,9 @@
-bluefish (2.2.4-2) UNRELEASED; urgency=low
+bluefish (2.2.4-2) unstable; urgency=low
 
   * debian/control (Standards-Version): Bumped to 3.9.4.
   * debian/copyright: Updated.
 
- -- Daniel Leidert <dleidert@debian.org>  Thu, 09 May 2013 14:34:01 +0200
+ -- Daniel Leidert <dleidert@debian.org>  Thu, 09 May 2013 14:36:58 +0200
 
 bluefish (2.2.4-1) experimental; urgency=low
 
