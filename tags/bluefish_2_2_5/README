@@ -1,0 +1,51 @@
+This is the Bluefish HTML editor.
+
+It has (among others) the following major features
+
+  Customizable syntax highlighting
+  Multiple encodings support
+  Wizards for startup, tables, frames, and others
+  Dialogs for many HTML tags, with all their attributes
+  User-customizable toolbar for quick access to often used functions
+  A snippets pane, specify your own tags or sets of code, and define your own dialogs
+  Search and replace pattern support 
+  Function reference browser, including reference files for PHP and HTML
+  User customizable integration of many programs, including weblint, tidy, make
+
+Installation:
+  
+  See INSTALL file for information on how to install Bluefish
+  
+Starting Bluefish:
+  
+  run from the command line: `bluefish-unstable'
+  run `bluefish-unstable -h' for more startup options
+
+  Several features are only available if you install some other programs too.
+  This is necessary for the browser preview, checkers like weblint or tidy, ...
+
+More information:
+  
+  http://bluefish.openoffice.nl/manual/
+
+Written by:
+  
+  see AUTHORS for more information
+
+Reporting Bugs:
+  
+  Please report bugs to our mailing list or our bugtracker:
+    bluefish-dev@lists.ems.ru
+    http://bugzilla.gnome.org/enter_bug.cgi?product=bluefish
+
+  Include in the report:
+    - version of Bluefish you are using
+    - version of GTK you are using
+    - a backtrace in case of a crash/segmentation fault
+
+Contacting us:
+  
+  http://bluefish.openoffice.nl (homepage)
+  bluefish-dev@lists.ems.ru (developers list)
+  bluefish-users@lists.ems.ru (users mailing list)
+  see http://bluefish.openoffice.nl/development.html#ml

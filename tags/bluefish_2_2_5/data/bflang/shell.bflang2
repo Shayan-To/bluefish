@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		shell.bflang2 $Revision$
+ 
+		Copyright (C) 2008-2012 Olivier Sessink
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.		
+-->
+
+<bflang name="Shell" version="2.0" table="578" contexts="5" matches="187">
+<header>
+	<mime type="application/x-shellscript"/>
+	<mime type="text/x-shellscript"/>
+	<mime type="text/x-sh"/>
+	<option name="show_in_menu" default="1"/>
+	<option name="Parentheses block_foldable" default="0" description="Allow folding of the Parentheses block" />
+	<highlight name="brackets" style="brackets"  />
+	<highlight name="comment" style="comment"  />
+	<highlight name="function" style="function"  />
+	<highlight name="keyword" style="keyword"  />
+	<highlight name="string" style="string"   />
+	<highlight name="tag" style="tag"  />
+	<highlight name="value" style="value"  />
+	<highlight name="variable" style="variable"  />
+	<option name="Coreutils" default="1" description="GNU Coreutils functions" />
+</header>
+<properties>
+	<comment type="line" start="#" />
+</properties>
+
+<definition>
+<context symbols=" $;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;.">
+<group highlight="keyword" >
+	<autocomplete enable="1" />
+	<element pattern="do" />
+	<element pattern="done" />
+	<element pattern="elif" />
+	<element pattern="else" />
+	<element pattern="fi" />
+	<element pattern="for" />
+	<element pattern="if" />
+	<element pattern="in" />
+	<element pattern="select" />
+	<element pattern="until" />
+	<element pattern="while" />
+	<element pattern="case" />
+	<element pattern="esac" />
+	<element pattern="time" />
+</group>
+<group  highlight="function">
+	<autocomplete enable="1" />
+	<element pattern="alias" />
+   <element pattern="bg" />
+   <element pattern="bind" />
+   <element pattern="break" />
+   <element pattern="builtin" />
+   <element pattern="caller" />
+   <element pattern="cd" />
+   <element pattern="command" />
+   <element pattern="compgen" />
+   <element pattern="complete" />
+   <element pattern="compopt" />
+   <element pattern="continue" />
+   <element pattern="declare" />
+   <element pattern="dirs" />
+   <element pattern="disown" />
+   <element pattern="echo" />
+   <element pattern="enable" />
+   <element pattern="eval" />
+   <element pattern="exec" />
+   <element pattern="exit" />
+   <element pattern="export" />
+   <element pattern="fc" />
+   <element pattern="fg" />
+   <element pattern="function" />
+   <element pattern="getopts" />
+   <element pattern="hash" />
+   <element pattern="help" />
+   <element pattern="history" />
+   <element pattern="jobs" />
+   <element pattern="kill" />
+   <element pattern="let" />
+   <element pattern="local" />
+   <element pattern="logout" />
+   <element pattern="mapfile" />
+   <element pattern="popd" />
+   <element pattern="printf" />
+   <element pattern="pushd" />
+   <element pattern="pwd" />
+   <element pattern="read" />
+   <element pattern="readarray" />
+   <element pattern="readonly" />
+   <element pattern="return" />
+   <element pattern="set" />
+   <element pattern="shift" />
+   <element pattern="shopt" />
+   <element pattern="source" />
+   <element pattern="suspend" />
+   <element pattern="test" />
+   <element pattern="then" />
+   <element pattern="times" />
+   <element pattern="trap" />
+   <element pattern="type" />
+   <element pattern="typeset" />
+   <element pattern="ulimit" />
+   <element pattern="umask" />
+   <element pattern="unalias" />
+   <element pattern="unset" />
+   <element pattern="wait" />
+   <element pattern="coproc" />
+   <element pattern="true" />
+   <element pattern="false" />
+</group>
+
+<group  highlight="function" class="Coreutils">
+	<autocomplete enable="1" />
+	<element pattern="cat">
+		<reference>Core utils: Concatenate and write files</reference>
+	</element>
+	<element pattern="tac">
+		<reference>Core utils: Concatenate and write files in reverse</reference>
+	</element>
+	<element pattern="nl">
+		<reference>Core utils: Number lines and write files</reference>
+	</element>
+	<element pattern="od">
+		<reference>Core utils: Write files in octal or other formats</reference>
+	</element>
+	<element pattern="base64">
+		<reference>Core utils: Transform data into printable data</reference>
+	</element>
+	<element pattern="fmt">
+		<reference>Core utils: Reformat paragraph text</reference>
+	</element>
+	<element pattern="pr">
+		<reference>Core utils: Paginate or columnate files for printing</reference>
+	</element>
+	<element pattern="fold">
+		<reference>Core utils: Wrap input lines to fit in specified width</reference>
+	</element>
+	<element pattern="head">
+		<reference>Core utils: Output the first part of files</reference>
+	</element>
+	<element pattern="tail">
+		<reference>Core utils: Output the last part of files</reference>
+	</element>
+	<element pattern="split">
+		<reference>Core utils: Split a file into fixed-size pieces</reference>
+	</element>
+	<element pattern="csplit">
+		<reference>Core utils: Split a file into context-determined pieces</reference>
+	</element>
+	<element pattern="wc">
+		<reference>Core utils: Print newline, word, and byte counts</reference>
+	</element>
+	<element pattern="sum">
+		<reference>Core utils: Print checksum and block counts</reference>
+	</element>
+	<element pattern="cksum">
+		<reference>Core utils: Print CRC checksum and byte counts</reference>
+	</element>
+	<element pattern="md5sum">
+		<reference>Core utils: Print or check MD5 digests</reference>
+	</element>
+	<element pattern="sha1sum">
+		<reference> Core utils:  Print or check SHA-1 digests</reference>
+	</element>
+	<element pattern="sort">
+		<reference>Core utils: Sort text files</reference>
+	</element>
+	<element pattern="shuf">
+		<reference>Core utils: Shuffle text files</reference>
+	</element>
+	<element pattern="uniq">
+		<reference>Core utils: Uniquify files</reference>
+	</element>
+	<element pattern="comm">
+		<reference>Core utils: Compare two sorted files line by line</reference>
+	</element>
+	<element pattern="ptx">
+		<reference>Core utils: Produce a permuted index of file contents</reference>
+	</element>
+	<element pattern="tsort">
+		<reference>Core utils: Topological sort</reference>
+	</element>
+	<element pattern="cut">
+		<reference>Core utils: Print selected parts of lines</reference>
+	</element>
+	<element pattern="paste">
+		<reference>Core utils: Merge lines of files</reference>
+	</element>
+	<element pattern="join">
+		<reference>Core utils: Join lines on a common field</reference>
+	</element>
+	<element pattern="tr">
+		<reference>Core utils: Translate, squeeze, and/or delete characters</reference>
+	</element>
+	<element pattern="expand">
+		<reference>Core utils: Convert tabs to spaces</reference>
+	</element>
+	<element pattern="unexpand">
+		<reference> Core utils: Convert spaces to tabs</reference>
+	</element>
+	<element pattern="ls">
+		<reference>Core utils: List directory contents</reference>
+	</element>
+	<element pattern="dir">
+		<reference>Core utils: Briefly list directory contents</reference>
+	</element>
+	<element pattern="vdir">
+		<reference>Core utils: Verbosely list directory contents</reference>
+	</element>
+	<element pattern="dircolors">
+		<reference> Core utils: Color setup for</reference>
+	</element>
+	<element pattern="cp">
+		<reference>Core utils: Copy files and directories</reference>
+	</element>
+	<element pattern="dd">
+		<reference>Core utils: Convert and copy a file</reference>
+	</element>
+	<element pattern="install">
+		<reference> Core utils:  Copy files and set attributes</reference>
+	</element>
+	<element pattern="mv">
+		<reference>Core utils: Move (rename) files</reference>
+	</element>
+	<element pattern="rm">
+		<reference>Core utils: Remove files or directories</reference>
+	</element>
+	<element pattern="shred">
+		<reference>Core utils: Remove files more securely</reference>
+	</element>
+	<element pattern="link">
+		<reference>Core utils: Make a hard link via the link syscall</reference>
+	</element>
+	<element pattern="ln">
+		<reference>Core utils: Make links between files</reference>
+	</element>
+	<element pattern="mkdir">
+		<reference>Core utils: Make directories</reference>
+	</element>
+	<element pattern="mkfifo">
+		<reference>Core utils: Make FIFOs (named pipes)</reference>
+	</element>
+	<element pattern="mknod">
+		<reference>Core utils: Make block or character special files</reference>
+	</element>
+	<element pattern="readlink">
+		<reference> Core utils: Print value of a symlink or canonical file name</reference>
+	</element>
+	<element pattern="rmdir">
+		<reference>Core utils: Remove empty directories</reference>
+	</element>
+	<element pattern="unlink">
+		<reference>Core utils: Remove files via unlink syscall</reference>
+	</element>
+	<element pattern="chown">
+		<reference>Core utils: Change file owner and group</reference>
+	</element>
+	<element pattern="chgrp">
+		<reference>Core utils: Change group ownership</reference>
+	</element>
+	<element pattern="chmod">
+		<reference>Core utils: Change access permissions</reference>
+	</element>
+	<element pattern="touch">
+		<reference>Core utils: Change file timestamps</reference>
+	</element>
+	<element pattern="df">
+		<reference>Core utils: Report file system disk space usage</reference>
+	</element>
+	<element pattern="du">
+		<reference>Core utils: Estimate file space usage</reference>
+	</element>
+	<element pattern="stat">
+		<reference>Core utils: Report file or file system status</reference>
+	</element>
+	<element pattern="sync">
+		<reference>Core utils: Synchronize data on disk with memory</reference>
+	</element>
+	<element pattern="truncate">
+		<reference> Core utils: Shrink or extend the size of a file</reference>
+	</element>
+	<element pattern="arch">
+		<reference>Core utils: Print machine hardware name</reference>
+	</element>
+	<element pattern="basename">
+		<reference>Core utils: Strip directory and suffix from a file name</reference>
+	</element>
+	<element pattern="chcon">
+		<reference>Core utils: Change SELinux context of file</reference>
+	</element>
+	<element pattern="chroot">
+		<reference>Core utils: Run a command with a different root directory</reference>
+	</element>
+	<element pattern="date">
+		<reference>Core utils: Print or set system date and time</reference>
+	</element>
+	<element pattern="dirname">
+		<reference>Core utils: Strip last file name component</reference>
+	</element>
+	<element pattern="env">
+		<reference>Core utils: Run a command in a modified environment</reference>
+	</element>
+	<element pattern="expr">
+		<reference>Core utils: Evaluate expressions.</reference>
+	</element>
+	<element pattern="factor">
+		<reference>Core utils: Show factors of numbers.</reference>
+	</element>
+	<element pattern="groups">
+		<reference>Core utils: Print group names a user is in</reference>
+	</element>
+	<element pattern="hostid">
+		<reference>Core utils: Print numeric host identifier</reference>
+	</element>
+	<element pattern="hostname">
+		<reference>Core utils: Print or set system name</reference>
+	</element>
+	<element pattern="id">
+		<reference>Core utils: Print user identity</reference>
+	</element>
+	<element pattern="logname">
+		<reference>Core utils: Print current login name</reference>
+	</element>
+	<element pattern="mktemp">
+		<reference>Core utils: Create temporary file or directory</reference>
+	</element>
+	<element pattern="nice">
+		<reference>Core utils: Run a command with modified niceness</reference>
+	</element>
+	<element pattern="nohup">
+		<reference>Core utils: Run a command immune to hangups</reference>
+	</element>
+	<element pattern="nproc">
+		<reference>Core utils: Print the number of processors</reference>
+	</element>
+	<element pattern="pathchk">
+		<reference>Core utils: Check file name validity and portability</reference>
+	</element>
+	<element pattern="printenv">
+		<reference>Core utils: Print all or some environment variables</reference>
+	</element>
+	<element pattern="runcon">
+		<reference>Core utils: Run a command in specified SELinux context</reference>
+	</element>
+	<element pattern="seq">
+		<reference>Core utils: Print sequences of numbers.</reference>
+	</element>
+	<element pattern="sha2">
+		<reference>Core utils: Print or check SHA-2 digests.</reference>
+	</element>
+	<element pattern="sleep">
+		<reference>Core utils: Delay for a specified time</reference>
+	</element>
+	<element pattern="stdbuf">
+		<reference>Core utils: Run a command with modified I/O buffering</reference>
+	</element>
+	<element pattern="stty">
+		<reference>Core utils: Print or change terminal characteristics</reference>
+	</element>
+	<element pattern="su">
+		<reference>Core utils: Run a command with substitute user and group ID</reference>
+	</element>
+	<element pattern="tee">
+		<reference>Core utils: Redirect output to multiple files or processes</reference>
+	</element>
+	<element pattern="timeout">
+		<reference>Core utils: Run a command with a time limit</reference>
+	</element>
+	<element pattern="tty">
+		<reference>Core utils: Print file name of terminal on standard input</reference>
+	</element>
+	<element pattern="uname">
+		<reference>Core utils: Print system information</reference>
+	</element>
+	<element pattern="uptime">
+		<reference>Core utils: Print system uptime and load</reference>
+	</element>
+	<element pattern="users">
+		<reference>Core utils: Print login names of users currently logged in</reference>
+	</element>
+	<element pattern="who">
+		<reference>Core utils: Print who is currently logged in</reference>
+	</element>
+	<element pattern="whoami">
+		<reference>Core utils: Print effective user ID</reference>
+	</element>
+	<element pattern="yes">
+		<reference>Core utils: Print a string until interrupted.</reference>
+	</element>
+</group>
+
+<element id="e.lbrace" pattern="{" starts_block="1" mayfold="1" highlight="brackets" />
+<element pattern="}" ends_block="1" blockstartelement="e.lbrace" highlight="brackets" />
+<element id="e.lbracket" pattern="[" starts_block="1" mayfold="1" highlight="brackets" />
+<element pattern="]" ends_block="1" blockstartelement="e.lbracket" highlight="brackets" />
+<element id="e.lparen" pattern="(" starts_block="1" mayfold="1" highlight="brackets" block_name="Parentheses block" />
+<element pattern=")" ends_block="1" blockstartelement="e.lparen" highlight="brackets" />
+
+<element pattern="[0-9.]+" is_regex="1" highlight="value"/>
+<element pattern="\$+[!@?*#\$a-zA-Z0-9_][a-zA-Z0-9_]*" is_regex="1" case_insens="1" highlight="variable"/>
+<element pattern="\${[!@?*#\$a-zA-Z0-9_][a-zA-Z0-9_]*" is_regex="1" highlight="variable">
+<context symbols="&quot;}:-+=?">
+<element pattern=":?[-+=?]" is_regex="1" highlight="keyword"/>
+<element pattern="}" highlight="variable" ends_context="1"/>
+</context>
+</element>
+
+<element pattern="#" highlight="comment">
+<context symbols="&#10;&#13;" highlight="comment">
+	<element pattern="(&#10;|&#13;|&#13;&#10;)" is_regex="1" highlight="comment" ends_context="1"/>
+</context>
+</element>
+<element pattern="'[^']*'" is_regex="1" highlight="string"/>
+<element pattern="&quot;" highlight="string">
+<context symbols="\&quot;${} " highlight="string">
+	<element pattern="\\." is_regex="1" highlight="string" />
+	<element pattern="\$+[!@?*#${a-zA-Z0-9_][}a-zA-Z0-9_]*" is_regex="1" case_insens="1" highlight="variable"/>
+	<element pattern="&quot;" highlight="string" ends_context="1"/>
+</context>
+</element>
+
+</context>
+</definition>
+</bflang>

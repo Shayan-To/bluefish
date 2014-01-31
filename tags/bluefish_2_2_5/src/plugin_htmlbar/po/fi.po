@@ -1,0 +1,5726 @@
+# Finnish language file for Bluefish
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Juho Roukala <j.mr@luukku.com>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bluefish gtk2-port\n"
+"Report-Msgid-Bugs-To: bluefish-dev@lists.ems.ru\n"
+"POT-Creation-Date: 2014-01-31 22:52+0100\n"
+"PO-Revision-Date: 2003-12-06 14:24+0100\n"
+"Last-Translator: Juho Roukala <j.mr@luukku.com>\n"
+"Language-Team: Not a memeber <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/plugin_htmlbar/html2.c:634
+#, fuzzy
+msgid "Cascading Style Sheet Builder"
+msgstr "Limitetty tyylisivu -dialogi"
+
+#: src/plugin_htmlbar/html2.c:654
+#, fuzzy
+msgid "_Selector(s):"
+msgstr "_Valitsija:"
+
+#: src/plugin_htmlbar/html2.c:680
+msgid "_Property:"
+msgstr "_Ominaisuus:"
+
+#: src/plugin_htmlbar/html2.c:684 src/plugin_htmlbar/html_form.c:375
+#: src/plugin_htmlbar/html_form.c:541 src/plugin_htmlbar/html_form.c:636
+msgid "_Value:"
+msgstr "_Arvo:"
+
+#: src/plugin_htmlbar/html2.c:704
+#, fuzzy
+msgid "Selector(s)"
+msgstr "Valitsija:"
+
+#: src/plugin_htmlbar/html2.c:708
+msgid "Property"
+msgstr "Ominaisuus"
+
+#: src/plugin_htmlbar/html2.c:711
+msgid "Value"
+msgstr "Arvo"
+
+#: src/plugin_htmlbar/html2.c:739
+msgid " _Add "
+msgstr " _Lisää "
+
+#: src/plugin_htmlbar/html2.c:743
+msgid " _Update "
+msgstr " _Päivitä "
+
+#: src/plugin_htmlbar/html2.c:747
+msgid " _Delete "
+msgstr " P_oista "
+
+#: src/plugin_htmlbar/html2.c:1009 src/plugin_htmlbar/html2.c:1046
+msgid "_Style..."
+msgstr "_Tyyli..."
+
+#: src/plugin_htmlbar/html2.c:1130
+msgid "Bluefish: Select color"
+msgstr "Bluefish: Valitse väri"
+
+#: src/plugin_htmlbar/htmlbar.c:45
+msgid "Edit color"
+msgstr "Muokkaa väriä"
+
+#: src/plugin_htmlbar/htmlbar.c:53
+msgid "Edit tag"
+msgstr "Muokkaa tagia"
+
+#: src/plugin_htmlbar/htmlbar.c:96
+msgid "Htmlbar"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar.c:266 src/plugin_htmlbar/prefs.c:63
+msgid "HTML Features"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:968
+#, fuzzy
+msgid "T_ags"
+msgstr "/T_agit"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:969
+#, fuzzy
+msgid "_Headings"
+msgstr "Otsikko"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:970
+msgid "H_1"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:970
+#, fuzzy
+msgid "Insert H1 tag"
+msgstr "Lisää kuva"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:972
+msgid "H_2"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:972
+#, fuzzy
+msgid "Insert H2 tag"
+msgstr "Lisää kuva"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:974
+msgid "H_3"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:974
+#, fuzzy
+msgid "Insert H3 tag"
+msgstr "Lisää kuva"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:976
+msgid "H_4"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:976
+#, fuzzy
+msgid "Insert H4 tag"
+msgstr "Lisää kuva"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:978
+msgid "H_5"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:978
+#, fuzzy
+msgid "Insert H5 tag"
+msgstr "Lisää kuva"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:980
+msgid "H_6"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:980
+#, fuzzy
+msgid "Insert H6 tag"
+msgstr "Lisää kuva"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:982
+msgid "_Entities"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:983
+#, fuzzy
+msgid "_Non-breaking space"
+msgstr "Rikkumaton väli"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:984
+msgid "_Broken bar ¦"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:985
+msgid "Soft _hyphen -"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:986
+#, fuzzy
+msgid "_Format by Context"
+msgstr "/Tagit/A_siayhteysmuotoilu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:987
+#, fuzzy
+msgid "_Strong"
+msgstr "Vahvennettu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:987
+msgid "Strong"
+msgstr "Vahvennettu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:989
+#, fuzzy
+msgid "_Emphasis"
+msgstr "Vierasmerkit"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:989
+msgid "Emphasis"
+msgstr "Vierasmerkit"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:991
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1063
+#, fuzzy
+msgid "_Definition"
+msgstr "Määritelmä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:991
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1063
+msgid "Definition"
+msgstr "Määritelmä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:993
+#, fuzzy
+msgid "_Code"
+msgstr "Koodi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:993
+msgid "Code"
+msgstr "Koodi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:994
+#, fuzzy
+msgid "Sa_mple"
+msgstr "Näyte"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:994
+msgid "Sample"
+msgstr "Näyte"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:995
+#, fuzzy
+msgid "_Keyboard"
+msgstr "Näppäimistö"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:995
+msgid "Keyboard"
+msgstr "Näppäimistö"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:997
+#, fuzzy
+msgid "_Variable"
+msgstr "Muuttuja"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:997
+msgid "Variable"
+msgstr "Muuttuja"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:999
+#, fuzzy
+msgid "Ci_tation"
+msgstr "Sitaatti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:999
+msgid "Citation"
+msgstr "Sitaatti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1001
+#, fuzzy
+msgid "_Abbreviation"
+msgstr "Lyhenne"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1001
+msgid "Abbreviation"
+msgstr "Lyhenne"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1003
+#, fuzzy
+msgid "Ac_ronym"
+msgstr "Akronyymi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1003
+msgid "Acronym"
+msgstr "Akronyymi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1005
+#, fuzzy
+msgid "_Insert"
+msgstr "Lisää"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1005
+msgid "Insert"
+msgstr "Lisää"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1006
+#, fuzzy
+msgid "De_lete"
+msgstr "Poista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1006
+msgid "Delete"
+msgstr "Poista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1007
+#, fuzzy
+msgid "Format by L_ayout"
+msgstr "/Tagit/_Ulkoasumuotoilu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1008
+#, fuzzy
+msgid "_Bold"
+msgstr "Lihavoitu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1008
+msgid "Bold"
+msgstr "Lihavoitu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1010
+#, fuzzy
+msgid "_Italic"
+msgstr "Kursivoitu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1010
+msgid "Italic"
+msgstr "Kursivoitu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1012
+msgid "_Underline"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1012
+msgid "Underline"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1014
+#, fuzzy
+msgid "_Strikeout"
+msgstr "Skripti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1014
+#, fuzzy
+msgid "Strikeout"
+msgstr "Skripti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1016
+msgid "Sm_all"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1016
+msgid "Small"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1017
+msgid "Bi_g"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1017
+msgid "Big"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1018
+#, fuzzy
+msgid "Format _General"
+msgstr "/Tagit/_Yleismuotoilu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1019
+#, fuzzy
+msgid "_Paragraph"
+msgstr "Kappale"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1019 src/plugin_htmlbar/html.c:878
+msgid "Paragraph"
+msgstr "Kappale"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1021
+#, fuzzy
+msgid "_Break"
+msgstr "Rivinvaihto"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1021
+msgid "Break"
+msgstr "Rivinvaihto"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1023
+#, fuzzy
+msgid "Break clear _all"
+msgstr "Rivinvaihto ja tyhjennys"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1023
+msgid "Break and clear"
+msgstr "Rivinvaihto ja tyhjennys"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1025
+#, fuzzy
+msgid "_Non-Breaking Space"
+msgstr "Rikkumaton väli"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1025
+msgid "Non-breaking space"
+msgstr "Rikkumaton väli"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1027
+#, fuzzy
+msgid "Font Si_ze +1"
+msgstr "Fontin koko +1"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1027
+msgid "Font Size +1"
+msgstr "Fontin koko +1"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1029
+#, fuzzy
+msgid "Font _Size -1"
+msgstr "Fontin koko -1"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1029
+msgid "Font Size -1"
+msgstr "Fontin koko -1"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1031
+#, fuzzy
+msgid "Preformatted _Text"
+msgstr "Esimuotoiltu teksti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1031
+msgid "Preformatted Text"
+msgstr "Esimuotoiltu teksti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1033
+#, fuzzy
+msgid "Su_bscript"
+msgstr "Alaviite"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1033
+msgid "Subscript"
+msgstr "Alaviite"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1035
+#, fuzzy
+msgid "Su_perscript"
+msgstr "Yläviite"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1035
+msgid "Superscript"
+msgstr "Yläviite"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1037
+#, fuzzy
+msgid "_Center"
+msgstr "Keskitä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1037
+msgid "Center"
+msgstr "Keskitä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1039
+msgid "Align _right"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1039
+msgid "Right Justify"
+msgstr "Tasaus oikealle"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1041
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1042
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1124
+#, fuzzy
+msgid "_Table"
+msgstr "Taulukko"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1042
+#: src/plugin_htmlbar/html_table.c:101
+msgid "Table"
+msgstr "Taulukko"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1044
+#, fuzzy
+msgid "Table _Row"
+msgstr "Taulukon rivi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1044
+#: src/plugin_htmlbar/html_table.c:242
+msgid "Table Row"
+msgstr "Taulukon rivi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1046
+#, fuzzy
+msgid "Table _Header"
+msgstr "Taulukon otsake"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1046
+#: src/plugin_htmlbar/html_table.c:363
+msgid "Table Header"
+msgstr "Taulukon otsake"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1048
+#, fuzzy
+msgid "Table _Data"
+msgstr "Taulukon data"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1048
+#: src/plugin_htmlbar/html_table.c:361
+msgid "Table Data"
+msgstr "Taulukon data"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1050
+#, fuzzy
+msgid "Table _Caption"
+msgstr "Taulukon otsikko"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1050
+msgid "Table Caption"
+msgstr "Taulukon otsikko"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1052
+#, fuzzy
+msgid "_List"
+msgstr " Lista "
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1053
+#, fuzzy
+msgid "Unordered _List"
+msgstr "Järjestämätön lista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1053
+msgid "Unordered List"
+msgstr "Järjestämätön lista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1055
+#, fuzzy
+msgid "_Ordered List"
+msgstr "Järjestetty lista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1055
+msgid "Ordered List"
+msgstr "Järjestetty lista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1057
+#, fuzzy
+msgid "List Ite_m"
+msgstr "Listan kohta"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1057
+msgid "List Item"
+msgstr "Listan kohta"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1059
+#, fuzzy
+msgid "De_finition List"
+msgstr "Määrittelylista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1059
+msgid "Definition List"
+msgstr "Määrittelylista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1061
+#, fuzzy
+msgid "Definition _Term"
+msgstr "Määrittelytermi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1061
+msgid "Definition Term"
+msgstr "Määrittelytermi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1065
+msgid "Men_u"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1065
+#, fuzzy
+msgid "Menu"
+msgstr "Valikon hakemisto"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1066
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1067
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1155
+msgid "F_orm"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1067
+#: src/plugin_htmlbar/html_form.c:156
+msgid "Form"
+msgstr "Lomake"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1068
+#, fuzzy
+msgid "_Fieldset"
+msgstr "/_Tiedosto"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1069
+msgid "_Legend"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1070
+#, fuzzy
+msgid "L_abel"
+msgstr "Nimi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1071
+#, fuzzy
+msgid "_Input"
+msgstr "Syöte"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1072
+#, fuzzy
+msgid "_Button"
+msgstr "Painike"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1073
+#, fuzzy
+msgid "_Select"
+msgstr "Valitse"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1074
+#, fuzzy
+msgid "_Datalist"
+msgstr "Kursivoitu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1075
+#, fuzzy
+msgid "Opt_group"
+msgstr "Valintaryhmä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1076
+#, fuzzy
+msgid "Optio_n"
+msgstr "Valinta"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1077
+#, fuzzy
+msgid "_Textarea"
+msgstr "Tekstialue"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1078
+msgid "_Keygen"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1079
+#, fuzzy
+msgid "O_utput"
+msgstr "Tuloste #"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1080
+#, fuzzy
+msgid "_Progress"
+msgstr "Ominaisuus"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1081
+#, fuzzy
+msgid "_Meter"
+msgstr "Keskitä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1082
+#, fuzzy
+msgid "_Misc"
+msgstr "Sekalaiset"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1083
+#, fuzzy
+msgid "Insert Generator _META-Tag"
+msgstr "/Tagit/Sekalaiset/Lisää Generator _META-tagi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1085
+#, fuzzy
+msgid "_Span"
+msgstr "Span"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1086
+msgid "_Div"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1087
+#, fuzzy
+msgid "_Link"
+msgstr "Linkki"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1088
+#, fuzzy
+msgid "S_cript"
+msgstr "Skripti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1089
+#, fuzzy
+msgid "_Anchor"
+msgstr "Pika-ankkuri"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1090
+msgid "_Image"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1091
+#, fuzzy
+msgid "_Comment"
+msgstr "Kommentti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1091
+#, fuzzy
+msgid "HTML Comment"
+msgstr "Kommentti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1093
+#, fuzzy
+msgid "Dial_ogs"
+msgstr "Dialogi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1094
+#, fuzzy
+msgid "_General"
+msgstr "Yleistä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1095
+#, fuzzy
+msgid "_Quickstart..."
+msgstr "Pika-aloitus"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1095
+#, fuzzy
+msgid "Quickstart..."
+msgstr "Pika-aloitus"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1097
+#, fuzzy
+msgid "_Link Header..."
+msgstr "Taulukon otsake..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1097
+#, fuzzy
+msgid "Link Header..."
+msgstr "Taulukon otsake..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1099
+#, fuzzy
+msgid "_Body..."
+msgstr "Runko..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1099
+msgid "Body..."
+msgstr "Runko..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1101
+#, fuzzy
+msgid "_Script..."
+msgstr "Skripti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1101
+#, fuzzy
+msgid "Script..."
+msgstr "Skripti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1103
+msgid "_Anchor..."
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1103
+#, fuzzy
+msgid "Anchor / Hyperlink..."
+msgstr "Ankkuri..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1105
+#, fuzzy
+msgid "_E-mail..."
+msgstr "E-Mail..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1105
+#, fuzzy
+msgid "E-mail..."
+msgstr "E-Mail..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1107
+#, fuzzy
+msgid "_Rule..."
+msgstr "Väliviiva..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1107
+#, fuzzy
+msgid "Horizontal Rule..."
+msgstr "Vaakasuora viiva"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1109
+#, fuzzy
+msgid "_Font..."
+msgstr "Fontti..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1109
+msgid "Font..."
+msgstr "Fontti..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1111
+#, fuzzy
+msgid "Basef_ont..."
+msgstr "Perusfonttikoko..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1111
+#, fuzzy
+msgid "Base font..."
+msgstr "Perusfontti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1113
+#, fuzzy
+msgid "Quick_list..."
+msgstr "Pikalista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1113
+msgid "Quick List..."
+msgstr "Pikalista"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1115
+#, fuzzy
+msgid "_Meta..."
+msgstr "Meta"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1116
+#, fuzzy
+msgid "Embe_d..."
+msgstr "Upotettu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1117
+#, fuzzy
+msgid "Select _Color..."
+msgstr "Valinta..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1118
+#, fuzzy
+msgid "Insert _Time..."
+msgstr "Lisää kuva..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1119
+#, fuzzy
+msgid "Insert _Image..."
+msgstr "Lisää kuva..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1119
+msgid "Insert image..."
+msgstr "Lisää kuva..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1121
+#, fuzzy
+msgid "Insert T_humbnail..."
+msgstr "Lisää esikatselukuva..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1122
+msgid "Insert thumbnail..."
+msgstr "Lisää esikatselukuva..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1125
+#, fuzzy
+msgid "Table _Wizard..."
+msgstr "Taulukkovelho..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1125
+msgid "Table Wizard..."
+msgstr "Taulukkovelho..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1127
+#, fuzzy
+msgid "_Table..."
+msgstr "Taulukko..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1127
+msgid "Table..."
+msgstr "Taulukko..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1129
+#, fuzzy
+msgid "Table _Row..."
+msgstr "Taulukon rivi..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1129
+msgid "Table Row..."
+msgstr "Taulukon rivi..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1131
+#, fuzzy
+msgid "Table _Head..."
+msgstr "Taulukon otsake..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1131
+#, fuzzy
+msgid "Table Head..."
+msgstr "Taulukon otsake..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1133
+#, fuzzy
+msgid "Table _Data..."
+msgstr "Taulukon data..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1133
+msgid "Table Data..."
+msgstr "Taulukon data..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1135
+msgid "_CSS"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1136
+#, fuzzy
+msgid "_Create Style..."
+msgstr "Luo tyylisivu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1137
+msgid "Create stylesheet..."
+msgstr "Luo tyylisivu"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1139
+#, fuzzy
+msgid "S_pan..."
+msgstr "Span..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1139
+msgid "Span..."
+msgstr "Span..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1140
+#, fuzzy
+msgid "_Div..."
+msgstr "Div..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1140
+msgid "Div..."
+msgstr "Div..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1142
+#, fuzzy
+msgid "_Style"
+msgstr "Tyyli:"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1142
+#: src/plugin_htmlbar/html_form.c:565
+msgid "Style"
+msgstr "Tyyli"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1144
+#, fuzzy
+msgid "C_olumns..."
+msgstr "Fontti..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1144
+#, fuzzy
+msgid "Columns..."
+msgstr "Tallenna nimellä..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1146
+#, fuzzy
+msgid "_Link to Stylesheet..."
+msgstr "Linkki tyylisivuun..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1147
+#, fuzzy
+msgid "Link to Stylesheet..."
+msgstr "Linkki tyylisivuun..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1149
+#, fuzzy
+msgid "_Frame"
+msgstr "_Kehys:"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1150
+#, fuzzy
+msgid "Frame _Wizard..."
+msgstr "Kehysvelho"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1150
+msgid "Frame Wizard..."
+msgstr "Kehysvelho"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1152
+#, fuzzy
+msgid "Frame_set..."
+msgstr "Kehykset..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1152
+msgid "Frameset..."
+msgstr "Kehykset..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1154
+#, fuzzy
+msgid "_Frame..."
+msgstr "Kehys..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1154
+msgid "Frame..."
+msgstr "Kehys..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1156
+#, fuzzy
+msgid "F_orm..."
+msgstr "Lomake..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1156
+msgid "Form..."
+msgstr "Lomake..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1157
+#, fuzzy
+msgid "_Input..."
+msgstr "Tekstisyöte..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1158
+#, fuzzy
+msgid "Input B_uttons..."
+msgstr "Syötepainike..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1158
+msgid "Input Button..."
+msgstr "Syötepainike..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1160
+#, fuzzy
+msgid "Input T_ext..."
+msgstr "Tekstisyöte..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1160
+msgid "Input Text..."
+msgstr "Tekstisyöte..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1162
+#, fuzzy
+msgid "Text_area..."
+msgstr "Tekstialue..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1162
+msgid "Textarea..."
+msgstr "Tekstialue..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1164
+#, fuzzy
+msgid "_Select..."
+msgstr "Valinta..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1164
+msgid "Select..."
+msgstr "Valinta..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1166
+#, fuzzy
+msgid "O_ption..."
+msgstr "Valinnat..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1166
+msgid "Option..."
+msgstr "Valinnat..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1168
+#, fuzzy
+msgid "Option _Group..."
+msgstr "Valintaryhmä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1168
+msgid "Option group..."
+msgstr "Valintaryhmä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1170
+#, fuzzy
+msgid "_Button..."
+msgstr "Painike..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1170
+msgid "Button..."
+msgstr "Painike..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1172
+#, fuzzy
+msgid "_Edit tag under cursor..."
+msgstr "/Dialogit/_Muokkaa tagia kursorin alla..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1174
+#, fuzzy
+msgid "_Multi Thumbnail..."
+msgstr "Useita esikatselukuvia..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1174
+msgid "Multi thumbnail..."
+msgstr "Useita esikatselukuvia..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1176 src/plugin_htmlbar/html.c:1790
+msgid "Frame"
+msgstr "Kehys"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1177 src/plugin_htmlbar/html.c:1701
+msgid "Frameset"
+msgstr "Kehykset"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1179
+msgid "Noframes"
+msgstr "Ei kehyksiä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1181
+msgid "Target"
+msgstr "Kohde"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1183
+msgid "Input Hidden..."
+msgstr "Piilosyöte..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1184
+#, fuzzy
+msgid "Input Radio button..."
+msgstr "Radiosyöte..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1185
+msgid "Input Radio Button..."
+msgstr "Radiosyöte..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1186
+#, fuzzy
+msgid "Input Check box..."
+msgstr "Valintaruutusyöte..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1187
+#, fuzzy
+msgid "Input Check Box..."
+msgstr "Valintaruutusyöte..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1188
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1202
+#, fuzzy
+msgid "HTML_5"
+msgstr "HTML"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1189
+#, fuzzy
+msgid "_Article"
+msgstr "Pys_tysuuntainen"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1189
+#, fuzzy
+msgid "Article"
+msgstr "Pys_tysuuntainen"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1190
+msgid "As_ide"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1190
+msgid "Aside"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1191
+#, fuzzy
+msgid "Fig_caption"
+msgstr "Sitaatti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1191
+#, fuzzy
+msgid "Figcaption"
+msgstr "Sitaatti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1192
+msgid "Fig_ure"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1192
+msgid "Figure"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1193
+msgid "_Footer"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1193
+msgid "Footer"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1194
+#, fuzzy
+msgid "_Header"
+msgstr "_Linkki:"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1194
+#, fuzzy
+msgid "Header"
+msgstr "Taulukon otsake"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1195
+#, fuzzy
+msgid "H_group"
+msgstr "Uusi projekti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1195
+#, fuzzy
+msgid "Hgroup"
+msgstr "Uusi projekti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1196
+msgid "_Mark"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1196
+msgid "Mark"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1197
+msgid "_Nav"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1197
+msgid "Nav"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1198
+msgid "R_p"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1198
+msgid "Ruby parenthesis"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1199
+msgid "R_t"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1199
+msgid "Ruby text"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1200
+msgid "_Ruby"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1200
+msgid "Ruby"
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1201
+#, fuzzy
+msgid "_Section"
+msgstr "_Toiminto:"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1201
+#, fuzzy
+msgid "Section"
+msgstr "_Toiminto:"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1203
+msgid "Au_dio..."
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1203
+msgid "Audio..."
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1204
+msgid "_Video..."
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1204
+msgid "Video..."
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1205
+#, fuzzy
+msgid "_Canvas..."
+msgstr "Tallenna nimellä..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1205
+#, fuzzy
+msgid "Canvas..."
+msgstr "Tallenna nimellä..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1206
+#, fuzzy
+msgid "_Time..."
+msgstr "Kehys..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1206
+#, fuzzy
+msgid "Time..."
+msgstr "Kehys..."
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1207
+#, fuzzy
+msgid "Insert _Color"
+msgstr "T_ekstin väri:"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1207
+#, fuzzy
+msgid "Insert Color"
+msgstr "Lisää"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1217
+#, fuzzy
+msgid "_HTML Toolbar"
+msgstr "/Näytä/Näytä _päätyökalurivi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1348
+#, fuzzy
+msgid "Add to Quickbar"
+msgstr "Lisää pikatyökaluriville"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1348
+#, fuzzy
+msgid "Remove from Quickbar"
+msgstr "Poista pikatyökaluriviltä"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1386
+msgid "Right click any html toolbar button to add it to the Quickbar."
+msgstr ""
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1477
+#, fuzzy
+msgid "Quickbar"
+msgstr " Pikatyökalurivi "
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1480
+#, fuzzy
+msgid "Standard"
+msgstr " Normaalityökalurivi"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1485
+#, fuzzy
+msgid "HTML 5"
+msgstr "HTML"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1488
+#, fuzzy
+msgid "Formatting"
+msgstr "Muotoilumerkkijono jälkeen"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1491
+#, fuzzy
+msgid "Tables"
+msgstr "Taulukko"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1494
+#, fuzzy
+msgid "List"
+msgstr " Lista "
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1497
+#, fuzzy
+msgid "CSS"
+msgstr " CSS "
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1500
+#, fuzzy
+msgid "Forms"
+msgstr "Lomake"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1503
+#, fuzzy
+msgid "Fonts"
+msgstr "Fontti"
+
+#: src/plugin_htmlbar/htmlbar_uimanager.c:1506
+#, fuzzy
+msgid "Frames"
+msgstr "Kehyksen"
+
+#: src/plugin_htmlbar/html.c:402
+msgid "Insert Time"
+msgstr "Lisää aika"
+
+#: src/plugin_htmlbar/html.c:410
+#, c-format
+msgid "  _Time (%i:%i:%i)"
+msgstr "  _Aika (%i:%i:%i)"
+
+#: src/plugin_htmlbar/html.c:415
+msgid "  Day of the _week (Sunday)"
+msgstr "  _Viikonpäivä (sunnuntai)"
+
+#: src/plugin_htmlbar/html.c:418
+msgid "  Day of the _week (Monday)"
+msgstr "  _Viikonpäivä (maanantai)"
+
+#: src/plugin_htmlbar/html.c:421
+msgid "  Day of the _week (Tuesday)"
+msgstr "  _Viikonpäivä (tiistai)"
+
+#: src/plugin_htmlbar/html.c:424
+msgid "  Day of the _week (Wednesday)"
+msgstr "  _Viikonpäivä (keskiviikko)"
+
+#: src/plugin_htmlbar/html.c:427
+msgid "  Day of the _week (Thursday)"
+msgstr "  _Viikonpäivä (torstai)"
+
+#: src/plugin_htmlbar/html.c:430
+msgid "  Day of the _week (Friday)"
+msgstr "  _Viikonpäivä (perjantai)"
+
+#: src/plugin_htmlbar/html.c:433
+msgid "  Day of the _week (Saturday)"
+msgstr "  _Viikonpäivä (lauantai)"
+
+#: src/plugin_htmlbar/html.c:436
+msgid "You appear to have a non existant day!\n"
+msgstr "Ilmoitit päivän, jota ei ole olemassa!\n"
+
+#: src/plugin_htmlbar/html.c:445
+#, c-format
+msgid "  _Date (%i/%i/%i)"
+msgstr "  _Päivämäärä (%i/%i/%i)"
+
+#: src/plugin_htmlbar/html.c:448
+#, c-format
+msgid "  _Unix Time (%i)"
+msgstr "  _Unix-aika (%i)"
+
+#: src/plugin_htmlbar/html.c:453
+#, fuzzy, c-format
+msgid "  Unix Date _String (%s)"
+msgstr "  Unix-ajan me_rkkijono (%s"
+
+#: src/plugin_htmlbar/html.c:461
+msgid "  ISO-8601 Ti_me "
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:656
+msgid "Quick Anchor"
+msgstr "Pika-ankkuri"
+
+#: src/plugin_htmlbar/html.c:662 src/plugin_htmlbar/html_form.c:520
+msgid "Attributes"
+msgstr "Attribuutit"
+
+#: src/plugin_htmlbar/html.c:683 src/plugin_htmlbar/html.c:2697
+msgid "_HREF:"
+msgstr "_HREF:"
+
+#: src/plugin_htmlbar/html.c:689 src/plugin_htmlbar/html_form.c:200
+msgid "_Target:"
+msgstr "_Kohde:"
+
+#: src/plugin_htmlbar/html.c:693 src/plugin_htmlbar/html.c:933
+#: src/plugin_htmlbar/html.c:1324 src/plugin_htmlbar/html.c:1802
+#: src/plugin_htmlbar/html_form.c:251 src/plugin_htmlbar/html_form.c:315
+#: src/plugin_htmlbar/html_form.c:538 src/plugin_htmlbar/html_form.c:633
+#: src/plugin_htmlbar/image.c:532
+msgid "_Name:"
+msgstr "_Nimi:"
+
+#: src/plugin_htmlbar/html.c:696 src/plugin_htmlbar/quickstart.c:558
+#, fuzzy
+msgid "Titl_e:"
+msgstr "O_tsikko:"
+
+#: src/plugin_htmlbar/html.c:701 src/plugin_htmlbar/html.c:1198
+#: src/plugin_htmlbar/html.c:1341 src/plugin_htmlbar/html.c:2345
+msgid "_Language:"
+msgstr "Kie_li:"
+
+#: src/plugin_htmlbar/html.c:704 src/plugin_htmlbar/html.c:939
+#: src/plugin_htmlbar/html.c:1105 src/plugin_htmlbar/html.c:1201
+#: src/plugin_htmlbar/html.c:1347 src/plugin_htmlbar/html.c:1731
+#: src/plugin_htmlbar/html.c:1840 src/plugin_htmlbar/html.c:1939
+#: src/plugin_htmlbar/html.c:2008 src/plugin_htmlbar/html.c:2132
+#: src/plugin_htmlbar/html.c:2197 src/plugin_htmlbar/html.c:2281
+#: src/plugin_htmlbar/html.c:2368 src/plugin_htmlbar/html_form.c:204
+#: src/plugin_htmlbar/html_form.c:267 src/plugin_htmlbar/html_form.c:328
+#: src/plugin_htmlbar/html_form.c:645 src/plugin_htmlbar/html_table.c:136
+#: src/plugin_htmlbar/html_table.c:283 src/plugin_htmlbar/html_table.c:419
+#: src/plugin_htmlbar/image.c:538 src/plugin_htmlbar/image_dialog.c:428
+msgid "Custo_m:"
+msgstr "_Mukautettu:"
+
+#: src/plugin_htmlbar/html.c:706 src/plugin_htmlbar/html.c:1205
+#: src/plugin_htmlbar/html_form.c:569
+msgid "Events"
+msgstr "Tapahtumat"
+
+#: src/plugin_htmlbar/html.c:709
+msgid "OnClic_k:"
+msgstr "Na_psautettaessa:"
+
+#: src/plugin_htmlbar/html.c:712
+msgid "OnD_blClick:"
+msgstr "Ka_ksoisnapsautettaessa:"
+
+#: src/plugin_htmlbar/html.c:715
+msgid "OnMouseO_ver:"
+msgstr "Hiiri_Päällä:"
+
+#: src/plugin_htmlbar/html.c:718
+msgid "OnMouse_Down:"
+msgstr "H_iirenPainikePainetaan:"
+
+#: src/plugin_htmlbar/html.c:721
+msgid "OnMouse_Move:"
+msgstr "Hiiren_Liikkuessa:"
+
+#: src/plugin_htmlbar/html.c:724
+msgid "OnMouseOu_t:"
+msgstr "HiirenPois_tuessaPäältä:"
+
+#: src/plugin_htmlbar/html.c:727
+msgid "OnMouse_Up:"
+msgstr "HiirenPainikeN_ostetaan"
+
+#: src/plugin_htmlbar/html.c:730
+msgid "OnKeyDo_wn:"
+msgstr "_NappiPainetaan"
+
+#: src/plugin_htmlbar/html.c:733
+msgid "OnKey_Press:"
+msgstr "NappiaPai_nettaessa"
+
+#: src/plugin_htmlbar/html.c:736
+msgid "OnKe_yUp:"
+msgstr "NappiNo_stetaan"
+
+#: src/plugin_htmlbar/html.c:881
+msgid "Div"
+msgstr "Div"
+
+#: src/plugin_htmlbar/html.c:884
+msgid "Span"
+msgstr "Span"
+
+#: src/plugin_htmlbar/html.c:887
+msgid "Heading 1"
+msgstr "Otsikko 1"
+
+#: src/plugin_htmlbar/html.c:890
+msgid "Heading 2"
+msgstr "Otsikko 2"
+
+#: src/plugin_htmlbar/html.c:893
+msgid "Heading 3"
+msgstr "Otsikko 3"
+
+#: src/plugin_htmlbar/html.c:896
+msgid "Heading 4"
+msgstr "Otsikko 4"
+
+#: src/plugin_htmlbar/html.c:899
+msgid "Heading 5"
+msgstr "Otsikko 5"
+
+#: src/plugin_htmlbar/html.c:902
+msgid "Heading 6"
+msgstr "Otsikko 6"
+
+#: src/plugin_htmlbar/html.c:919
+msgid "Ali_gn:"
+msgstr "Tasau_s:"
+
+#: src/plugin_htmlbar/html.c:923 src/plugin_htmlbar/html.c:1192
+#: src/plugin_htmlbar/html.c:1931 src/plugin_htmlbar/html.c:1990
+#: src/plugin_htmlbar/html.c:2117 src/plugin_htmlbar/html.c:2273
+#: src/plugin_htmlbar/html_diag.c:487 src/plugin_htmlbar/html_table.c:127
+#: src/plugin_htmlbar/html_table.c:268 src/plugin_htmlbar/html_table.c:392
+#: src/plugin_htmlbar/image_dialog.c:408
+msgid "Cl_ass:"
+msgstr "Luokk_a:"
+
+#: src/plugin_htmlbar/html.c:927 src/plugin_htmlbar/html.c:1185
+#: src/plugin_htmlbar/html_diag.c:501 src/plugin_htmlbar/html_table.c:131
+#: src/plugin_htmlbar/html_table.c:278 src/plugin_htmlbar/html_table.c:414
+msgid "St_yle:"
+msgstr "T_yyli:"
+
+#: src/plugin_htmlbar/html.c:936 src/plugin_htmlbar/html.c:1195
+#: src/plugin_htmlbar/html_diag.c:495
+msgid "_ID:"
+msgstr "_ID:"
+
+#: src/plugin_htmlbar/html.c:1068
+msgid "Horizontal Rule"
+msgstr "Vaakasuora viiva"
+
+#: src/plugin_htmlbar/html.c:1079 src/plugin_htmlbar/image.c:555
+#: src/plugin_htmlbar/image_dialog.c:451
+msgid "_Align:"
+msgstr "_Tasaus:"
+
+#: src/plugin_htmlbar/html.c:1086 src/plugin_htmlbar/html.c:2004
+#: src/plugin_htmlbar/html.c:2108 src/plugin_htmlbar/html.c:2265
+#: src/plugin_htmlbar/image_dialog.c:376
+msgid "_Height:"
+msgstr "_Korkeus:"
+
+#. gtk_spin_button_set_numeric (GTK_SPIN_BUTTON (spin2), 1);
+#: src/plugin_htmlbar/html.c:1092 src/plugin_htmlbar/html.c:1999
+#: src/plugin_htmlbar/html.c:2103 src/plugin_htmlbar/html.c:2261
+#: src/plugin_htmlbar/image.c:517 src/plugin_htmlbar/image_dialog.c:365
+msgid "_Width:"
+msgstr "_Leveys:"
+
+#: src/plugin_htmlbar/html.c:1095
+msgid "Is _percent"
+msgstr "On _prosenttia"
+
+#: src/plugin_htmlbar/html.c:1100
+msgid "No _shading"
+msgstr "Ei _varjostusta"
+
+#: src/plugin_htmlbar/html.c:1170
+msgid "Body"
+msgstr "Runko"
+
+#: src/plugin_htmlbar/html.c:1178
+msgid "Options"
+msgstr "Valinnat"
+
+#: src/plugin_htmlbar/html.c:1211
+#, fuzzy
+msgid "On _Load:"
+msgstr "La_dattaessa:"
+
+#: src/plugin_htmlbar/html.c:1215
+#, fuzzy
+msgid "On _Unload:"
+msgstr "P_oistuttaessa:"
+
+#: src/plugin_htmlbar/html.c:1221
+msgid "Depreciated options"
+msgstr "Alemmat valinnat"
+
+#: src/plugin_htmlbar/html.c:1230
+msgid "Background _Image:"
+msgstr "Tausta_kuva:"
+
+#: src/plugin_htmlbar/html.c:1236
+msgid "Back_ground Color:"
+msgstr "Taustav_äri:"
+
+#: src/plugin_htmlbar/html.c:1242
+msgid "_Text Color:"
+msgstr "T_ekstin väri:"
+
+#: src/plugin_htmlbar/html.c:1248
+msgid "_Link Color:"
+msgstr "L_inkin väri:"
+
+#: src/plugin_htmlbar/html.c:1254
+msgid "_Visited Link Color:"
+msgstr "Käytet_yn linkin väri:"
+
+#: src/plugin_htmlbar/html.c:1260
+msgid "_Active Link Color:"
+msgstr "_Aktiivisen linkin väri:"
+
+#: src/plugin_htmlbar/html.c:1316
+msgid "Meta"
+msgstr "Meta"
+
+#: src/plugin_htmlbar/html.c:1333
+msgid "_HTTP-EQUIV:"
+msgstr "_HTTP-EQUIV:"
+
+#: src/plugin_htmlbar/html.c:1338
+msgid "Con_tent:"
+msgstr "_Sisältö:"
+
+#: src/plugin_htmlbar/html.c:1344
+msgid "_Scheme:"
+msgstr "L_uonnos:"
+
+#: src/plugin_htmlbar/html.c:1428
+msgid "Font"
+msgstr "Fontti"
+
+#: src/plugin_htmlbar/html.c:1431
+msgid "Base Font"
+msgstr "Perusfontti"
+
+#: src/plugin_htmlbar/html.c:1446
+msgid "Size"
+msgstr "Koko"
+
+#: src/plugin_htmlbar/html.c:1455
+msgid "Color"
+msgstr "Väri"
+
+#: src/plugin_htmlbar/html.c:1460
+msgid "Face"
+msgstr "Ulkoasu"
+
+#: src/plugin_htmlbar/html.c:1464
+msgid "Custom"
+msgstr "Mukautettu"
+
+#: src/plugin_htmlbar/html.c:1554
+#, fuzzy
+msgid "E-mail"
+msgstr "Email"
+
+#: src/plugin_htmlbar/html.c:1562
+msgid "_Mail to:"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:1565
+#, fuzzy
+msgid "_Copy to:"
+msgstr "Kopioi"
+
+#: src/plugin_htmlbar/html.c:1568
+msgid "Blin_d copy to:"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:1571
+msgid "with _Subject:"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:1574
+msgid "with _Body:"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:1620
+msgid "Quick List"
+msgstr "Pikalista"
+
+#: src/plugin_htmlbar/html.c:1625 src/plugin_htmlbar/wizards.c:81
+msgid "Number of _rows:"
+msgstr "Ri_vien lukumäärä:"
+
+#: src/plugin_htmlbar/html.c:1628
+msgid "Or_dered"
+msgstr "_Järjestetty"
+
+#: src/plugin_htmlbar/html.c:1629
+msgid "_Unordered"
+msgstr "Jär_jestämätön"
+
+#: src/plugin_htmlbar/html.c:1631 src/plugin_htmlbar/image_dialog.c:422
+msgid "Style:"
+msgstr "Tyyli:"
+
+#: src/plugin_htmlbar/html.c:1707 src/plugin_htmlbar/html_form.c:259
+msgid "Co_ls:"
+msgstr "Sarakkeet_:"
+
+#: src/plugin_htmlbar/html.c:1710 src/plugin_htmlbar/html_form.c:255
+msgid "_Rows:"
+msgstr "_Rivit:"
+
+#: src/plugin_htmlbar/html.c:1714
+#, fuzzy
+msgid "_Add &lt;frame&gt; elements"
+msgstr "_Lisää <frame> elementtejä"
+
+#: src/plugin_htmlbar/html.c:1798 src/plugin_htmlbar/html.c:1901
+#: src/plugin_htmlbar/html.c:2071 src/plugin_htmlbar/html.c:2254
+#: src/plugin_htmlbar/html.c:2341 src/plugin_htmlbar/image_dialog.c:326
+msgid "_Source:"
+msgstr "L_ähde:"
+
+#: src/plugin_htmlbar/html.c:1806
+msgid "Margin _Width:"
+msgstr "Reunan _leveys:"
+
+#: src/plugin_htmlbar/html.c:1810
+msgid "Margin _Height:"
+msgstr "Reunan _korkeus:"
+
+#: src/plugin_htmlbar/html.c:1819
+msgid "Scrollin_g:"
+msgstr "Vierit_ys:"
+
+#: src/plugin_htmlbar/html.c:1823
+msgid "_Frameborder:"
+msgstr "_Kehysreuna:"
+
+#: src/plugin_htmlbar/html.c:1828
+msgid "No _Resize:"
+msgstr "E_i koonmuutosta"
+
+#. Dialog construction and settings
+#: src/plugin_htmlbar/html.c:1894
+msgid "Audio"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:1905 src/plugin_htmlbar/html.c:2083
+msgid "_Autoplay:"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:1909 src/plugin_htmlbar/html.c:2088
+#, fuzzy
+msgid "C_ontrols:"
+msgstr "Sarakkeet_:"
+
+#: src/plugin_htmlbar/html.c:1913 src/plugin_htmlbar/html.c:2093
+msgid "_Loop:"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:1917 src/plugin_htmlbar/html.c:2098
+#, fuzzy
+msgid "M_ute:"
+msgstr " _Päivitä "
+
+#: src/plugin_htmlbar/html.c:1922 src/plugin_htmlbar/html.c:2122
+#, fuzzy
+msgid "_Preload:"
+msgstr "Lataa _uudelleen"
+
+#: src/plugin_htmlbar/html.c:1927 src/plugin_htmlbar/html.c:1986
+#: src/plugin_htmlbar/html.c:2113 src/plugin_htmlbar/html.c:2269
+#: src/plugin_htmlbar/html_table.c:124
+#, fuzzy
+msgid "_Id:"
+msgstr "_ID:"
+
+#: src/plugin_htmlbar/html.c:1934 src/plugin_htmlbar/html.c:1993
+#: src/plugin_htmlbar/html.c:2127 src/plugin_htmlbar/html.c:2276
+#, fuzzy
+msgid "_Style:"
+msgstr "Tyyli:"
+
+#. Dialog construction
+#: src/plugin_htmlbar/html.c:1981
+msgid "Canvas"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2063
+msgid "Video"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2078
+msgid "_Poster:"
+msgstr ""
+
+#. Dialog construction
+#: src/plugin_htmlbar/html.c:2177
+msgid "Time"
+msgstr ""
+
+#. Datetime help
+#: src/plugin_htmlbar/html.c:2182
+msgid ""
+"Datetime format (ex. YYYY-MM-DDThh:mm:ssTZD) :\n"
+"\n"
+"YYYY - year (e.g. 2009)\n"
+"MM - month (e.g. 01 for January)\n"
+"DD - day of the month (e.g. 08)\n"
+"T - a required separator\n"
+"hh - hour (e.g. 22 for 10.00pm)\n"
+"mm - minutes (e.g. 55)\n"
+"ss - seconds (e.g. 03)\n"
+"TZD - Time Zone Designator (Z denotes Zulu, also known as Greenwich Mean "
+"Time)\n"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2192
+msgid "_Datetime:"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2247
+msgid "Embed"
+msgstr "Upotettu"
+
+#: src/plugin_htmlbar/html.c:2258
+#, fuzzy
+msgid "_MIME Type:"
+msgstr "_Tyyppi"
+
+#: src/plugin_htmlbar/html.c:2323
+msgid "Script"
+msgstr "Skripti"
+
+#: src/plugin_htmlbar/html.c:2347
+msgid "(HTML4 only)"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2350
+#, fuzzy
+msgid "MIME _Type:"
+msgstr "_Tyyppi"
+
+#: src/plugin_htmlbar/html.c:2354
+#, fuzzy
+msgid "_Charset:"
+msgstr "_Kohde:"
+
+#: src/plugin_htmlbar/html.c:2356 src/plugin_htmlbar/html.c:2365
+#, fuzzy
+msgid "(HTML5)"
+msgstr "HTML"
+
+#: src/plugin_htmlbar/html.c:2359
+msgid "_Async:"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2363
+#, fuzzy
+msgid "_Defer:"
+msgstr "_ID:"
+
+#.
+#. todo check buttons:
+#. column-span: all (default none)
+#. column-fill: auto (default balance)
+#.
+#: src/plugin_htmlbar/html.c:2535
+msgid "CSS3 multi-column layout"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2542
+msgid "Auto (default) or number of columns"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2551
+msgid "Auto (default) or width"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2563
+msgid "Normal (default) or width of the gap between columns"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2581
+msgid "None (default) or style"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2587
+msgid "Medium (default) or width"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2600
+msgid "Use vendor-prefixed CSS property:"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2608
+#, fuzzy
+msgid "styles_heet"
+msgstr "Luo tyylisivu"
+
+#: src/plugin_htmlbar/html.c:2609
+msgid "Add selector(s) to create a new rule"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2611
+#, fuzzy
+msgid "style a_ttribute"
+msgstr "Attribuutit"
+
+#: src/plugin_htmlbar/html.c:2612
+msgid "Add a style attribute in tag"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2614
+msgid "style _values"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2615
+msgid "Add values in a style attribute"
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2625
+#, fuzzy
+msgid "Selecto_rs:"
+msgstr "_Valitsija:"
+
+#: src/plugin_htmlbar/html.c:2626
+msgid "Leave empty to insert declarations into an existing rule."
+msgstr ""
+
+#: src/plugin_htmlbar/html.c:2686
+msgid "Link"
+msgstr "Linkki"
+
+#: src/plugin_htmlbar/html.c:2703
+#, fuzzy
+msgid "HREF_LANG:"
+msgstr "_HREF:"
+
+#: src/plugin_htmlbar/html.c:2706
+#, fuzzy
+msgid "T_itle:"
+msgstr "O_tsikko:"
+
+#: src/plugin_htmlbar/html.c:2727 src/plugin_htmlbar/html_form.c:532
+#: src/plugin_htmlbar/html_form.c:641
+msgid "_Type:"
+msgstr "_Tyyppi"
+
+#: src/plugin_htmlbar/html.c:2749
+msgid "_Forward Relation:"
+msgstr "_Suora suhde"
+
+#: src/plugin_htmlbar/html.c:2753
+msgid "_Reverse Relation:"
+msgstr "_Käänteinen suhde"
+
+#: src/plugin_htmlbar/html.c:2765
+msgid "Media:"
+msgstr "Media:"
+
+#: src/plugin_htmlbar/html.c:2769
+msgid "L_ang:"
+msgstr "K_ieli:"
+
+#: src/plugin_htmlbar/html.c:2772
+msgid "_Custom:"
+msgstr "_Mukautettu:"
+
+#: src/plugin_htmlbar/html_form.c:174
+msgid "_Action:"
+msgstr "_Toiminto:"
+
+#: src/plugin_htmlbar/html_form.c:184
+msgid "Metho_d:"
+msgstr "Mene_telmä:"
+
+#: src/plugin_htmlbar/html_form.c:193
+msgid "_Enctype:"
+msgstr "Koo_daustapa:"
+
+#: src/plugin_htmlbar/html_form.c:245
+msgid "Text area"
+msgstr "Tekstialue"
+
+#: src/plugin_htmlbar/html_form.c:309
+msgid "Select"
+msgstr "Valitse"
+
+#: src/plugin_htmlbar/html_form.c:319 src/plugin_htmlbar/html_form.c:549
+msgid "Si_ze:"
+msgstr "Ko_ko:"
+
+#: src/plugin_htmlbar/html_form.c:323
+msgid "Multiple _Selections:"
+msgstr "Useita _Valintoja:"
+
+#: src/plugin_htmlbar/html_form.c:369
+msgid "Option"
+msgstr "Valinta"
+
+#: src/plugin_htmlbar/html_form.c:378 src/plugin_htmlbar/html_form.c:424
+msgid "_Label:"
+msgstr "_Etiketti:"
+
+#: src/plugin_htmlbar/html_form.c:382
+msgid "_Selected:"
+msgstr "V_alittu:"
+
+#: src/plugin_htmlbar/html_form.c:419
+msgid "Option group"
+msgstr "Valintaryhmä"
+
+#: src/plugin_htmlbar/html_form.c:515
+msgid "Input"
+msgstr "Syöte"
+
+#: src/plugin_htmlbar/html_form.c:544
+msgid "_Checked:"
+msgstr "Va_littu:"
+
+#: src/plugin_htmlbar/html_form.c:553
+msgid "Max _Length:"
+msgstr "Maksimi_pituus:"
+
+#: src/plugin_htmlbar/html_form.c:557
+msgid "_Accept:"
+msgstr "_Hyväksy:"
+
+#: src/plugin_htmlbar/html_form.c:560
+msgid "C_ustom:"
+msgstr "_Mukautettu:"
+
+#: src/plugin_htmlbar/html_form.c:572
+msgid "On_Focus:"
+msgstr "KunK_ohdistetaan:"
+
+#: src/plugin_htmlbar/html_form.c:575
+msgid "On_Blur:"
+msgstr "Kun_Deaktivoidaan:"
+
+#: src/plugin_htmlbar/html_form.c:578
+msgid "On_Select:"
+msgstr "Kun_Valitaan:"
+
+#: src/plugin_htmlbar/html_form.c:581
+msgid "On_Change:"
+msgstr "KunVaihde_taan:"
+
+#: src/plugin_htmlbar/html_form.c:627
+msgid "Button"
+msgstr "Painike"
+
+#: src/plugin_htmlbar/html_table.c:108
+msgid "<span color=\"#006000\">Cell _Padding:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:117
+msgid "<span color=\"#006000\">C_ell Spacing:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:144 src/plugin_htmlbar/html_table.c:253
+#: src/plugin_htmlbar/html_table.c:377
+msgid "<span color=\"#006000\">_Align:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:149 src/plugin_htmlbar/html_table.c:273
+#: src/plugin_htmlbar/html_table.c:449
+msgid "<span color=\"red\">_bgcolor:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:155
+msgid "<span color=\"#006000\">_Width:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:162
+msgid "<span color=\"#006000\">Bo_rder:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:168
+msgid "<span color=\"#A36A00\">_Border:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:183
+msgid "<span color=\"#006000\">_Frame:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:194
+msgid "<span color=\"#006000\">R_ules:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:264 src/plugin_htmlbar/html_table.c:388
+msgid "<span color=\"#006000\">_Valign:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:396
+msgid "<span color=\"#A36A00\">_Headers:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:397
+msgid "Set of space-separated IDs of th elements."
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:408
+msgid "<span color=\"#A36A00\">_Scope:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:410
+msgid "the header cell applies to cells in the same:"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:422
+msgid "Co_l Span:"
+msgstr "_Sarakkeen span:"
+
+#: src/plugin_htmlbar/html_table.c:426
+msgid "_Row Span:"
+msgstr "_Rivin span:"
+
+#: src/plugin_htmlbar/html_table.c:431
+msgid "<span color=\"red\">No _Wrap:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:437
+msgid "<span color=\"red\">_Width:</span>"
+msgstr ""
+
+#: src/plugin_htmlbar/html_table.c:444
+msgid "<span color=\"red\">_Height:</span>"
+msgstr ""
+
+#. TODO: use error info in gerror
+#: src/plugin_htmlbar/image.c:334
+#, fuzzy
+msgid "Loading image failed..."
+msgstr "Ladataan tiedostoja..."
+
+#: src/plugin_htmlbar/image.c:417
+#, fuzzy, c-format
+msgid "Loading file %s..."
+msgstr "Ladataan tiedostoja..."
+
+#: src/plugin_htmlbar/image.c:482
+msgid "Insert thumbnail"
+msgstr "Lisää esikatselukuva"
+
+#: src/plugin_htmlbar/image.c:486 src/plugin_htmlbar/image_dialog.c:344
+msgid "Preview"
+msgstr "Esikatsele"
+
+#: src/plugin_htmlbar/image.c:509
+msgid "_Image location:"
+msgstr "K_uvan sijainti:"
+
+#: src/plugin_htmlbar/image.c:524
+msgid "Hei_ght:"
+msgstr "Ko_rkeus:"
+
+#: src/plugin_htmlbar/image.c:529 src/plugin_htmlbar/image_dialog.c:417
+msgid "_Usemap:"
+msgstr "Käytä k_arttaa:"
+
+#: src/plugin_htmlbar/image.c:535
+msgid "Alternate _text:"
+msgstr "V_aihtoehtoinen teksti:"
+
+#: src/plugin_htmlbar/image.c:541 src/plugin_htmlbar/image_dialog.c:460
+msgid "_Hspace:"
+msgstr "_Vaakavälistys:"
+
+#: src/plugin_htmlbar/image.c:545 src/plugin_htmlbar/image_dialog.c:464
+msgid "_Vspace:"
+msgstr "_Pystyvälistys"
+
+#: src/plugin_htmlbar/image.c:559
+msgid "Borde_r:"
+msgstr "Reu_na"
+
+#: src/plugin_htmlbar/image.c:974
+msgid "Select files for thumbnail creation"
+msgstr "Valitse tiedostot esikatselun luomista varten"
+
+#: src/plugin_htmlbar/image.c:1016
+msgid "Scaling (%)"
+msgstr "Skaalaus (%)"
+
+#: src/plugin_htmlbar/image.c:1020 src/plugin_htmlbar/image.c:1028
+msgid "Width"
+msgstr "Leveys"
+
+#: src/plugin_htmlbar/image.c:1024 src/plugin_htmlbar/image.c:1070
+msgid "Height"
+msgstr "Korkeus"
+
+#: src/plugin_htmlbar/image.c:1053
+msgid "Multi thumbnail"
+msgstr "Monta esikatselukuvaa"
+
+#: src/plugin_htmlbar/image.c:1059
+msgid "By scaling"
+msgstr "Skaalaamalla"
+
+#: src/plugin_htmlbar/image.c:1062
+msgid "By width, keep aspect ratio"
+msgstr "Leveydellä, pidä muotosuhde"
+
+#: src/plugin_htmlbar/image.c:1065
+msgid "By height, keep aspect ratio"
+msgstr "Korkeudella, pidä muotosuhde"
+
+#: src/plugin_htmlbar/image.c:1068
+msgid "By width and height, ignore aspect ratio"
+msgstr "Leveydellä ja korkeudella, älä huomioi muotosuhdetta"
+
+#: src/plugin_htmlbar/image.c:1094
+msgid ""
+"%r: original filename  %t: thumbnail filename\n"
+"%w: original width  %h: original height\n"
+"%x: thumbnail width  %y: thumbnail height\n"
+"%b: original size (bytes)"
+msgstr ""
+"%r: alkuperäinen tiedostonimi  %t: esikatselukuvan tiedostonimi\n"
+"%w: alkuperäinen leveys  %h: alkuperäinen korkeus\n"
+"%x: esikatselukuvan leveys  %g: esikatselukuvan korkeus\n"
+"%b: alkuperäinen koko (tavua)"
+
+#: src/plugin_htmlbar/image_dialog.c:385
+#, fuzzy
+msgid "Keep aspect ratio"
+msgstr "Leveydellä, pidä muotosuhde"
+
+#: src/plugin_htmlbar/image_dialog.c:388
+#, fuzzy
+msgid "_Reset Dimensions"
+msgstr "Ulottuvuudet"
+
+#: src/plugin_htmlbar/image_dialog.c:398
+#, fuzzy
+msgid "Alternate te_xt:"
+msgstr "V_aihtoehtoinen teksti:"
+
+#: src/plugin_htmlbar/image_dialog.c:403
+#, fuzzy
+msgid "_Long description:"
+msgstr "_Kuvaus"
+
+#: src/plugin_htmlbar/image_dialog.c:412
+#, fuzzy
+msgid "I_D:"
+msgstr "_ID:"
+
+#: src/plugin_htmlbar/image_dialog.c:440
+msgid "_Use Transitional options"
+msgstr ""
+
+#: src/plugin_htmlbar/image_dialog.c:456
+#, fuzzy
+msgid "_Border:"
+msgstr "_Reuna:"
+
+#: src/plugin_htmlbar/image_dialog.c:779
+#, c-format
+msgid ""
+"\n"
+"%s"
+msgstr ""
+
+#: src/plugin_htmlbar/image_dialog.c:784
+#, c-format
+msgid ""
+"\n"
+"%d x %d pixels"
+msgstr ""
+
+#: src/plugin_htmlbar/image_dialog.c:882
+msgid ""
+"\n"
+"\n"
+"\t<b>Loading preview...</b>\t\n"
+"\n"
+msgstr ""
+
+#: src/plugin_htmlbar/image_dialog.c:984
+#, fuzzy
+msgid "Select Image"
+msgstr "Valitse tiedosto"
+
+#: src/plugin_htmlbar/image_dialog.c:991
+#, fuzzy
+msgid "All images"
+msgstr "Kuvat"
+
+#: src/plugin_htmlbar/image_dialog.c:1209
+#: src/plugin_htmlbar/image_dialog.c:1320
+#, fuzzy
+msgid "Insert Image"
+msgstr "Lisää kuva"
+
+#: src/plugin_htmlbar/quickstart.c:519
+#, fuzzy
+msgid "<b>E_xternal Style Sheet</b>"
+msgstr "<b>Yleistä</b>"
+
+#: src/plugin_htmlbar/quickstart.c:530
+#, fuzzy
+msgid "Ty_pe:"
+msgstr "_Tyyppi"
+
+#: src/plugin_htmlbar/quickstart.c:548
+#, fuzzy
+msgid "HRE_F:"
+msgstr "_HREF:"
+
+#: src/plugin_htmlbar/quickstart.c:553
+#, fuzzy
+msgid "_Media:"
+msgstr "Media:"
+
+#. TODO: add an option to place content in the style area
+#. * Possibly from a code snippet library
+#.
+#: src/plugin_htmlbar/quickstart.c:565
+#, fuzzy
+msgid "<b>Style Area</b>"
+msgstr "<b>Yleistä</b>"
+
+#: src/plugin_htmlbar/quickstart.c:569
+#, fuzzy
+msgid "Cre_ate empty style area"
+msgstr "Luo tyhjä projekti"
+
+#: src/plugin_htmlbar/quickstart.c:588
+#, fuzzy
+msgid "<b>Attributes</b>"
+msgstr "Attribuutit"
+
+#: src/plugin_htmlbar/quickstart.c:603
+#, fuzzy
+msgid "_Src:"
+msgstr "L_ähde:"
+
+#. TODO: add an option to place content in the script area
+#: src/plugin_htmlbar/quickstart.c:610
+#, fuzzy
+msgid "<b>Script Area</b>"
+msgstr "<b>Yleistä</b>"
+
+#: src/plugin_htmlbar/quickstart.c:614
+#, fuzzy
+msgid "Cre_ate empty script area"
+msgstr "Luo tyhjä projekti"
+
+#: src/plugin_htmlbar/quickstart.c:641
+msgid "Quick Start"
+msgstr "Pika-aloitus"
+
+#: src/plugin_htmlbar/quickstart.c:658
+#, fuzzy
+msgid "_DTD:"
+msgstr "Käytä _DTD:"
+
+#: src/plugin_htmlbar/quickstart.c:662 src/plugin_htmlbar/wizards.c:201
+msgid "_Title:"
+msgstr "O_tsikko:"
+
+#: src/plugin_htmlbar/quickstart.c:685
+#, fuzzy
+msgid "_Head:"
+msgstr "_Linkki:"
+
+#: src/plugin_htmlbar/quickstart.c:702
+#, fuzzy
+msgid "Open in _new document."
+msgstr "D_okumentissa"
+
+#: src/plugin_htmlbar/wizards.c:73
+msgid "Table Wizard"
+msgstr "Taulukkovelho"
+
+#: src/plugin_htmlbar/wizards.c:85
+msgid "Number of colu_mns:"
+msgstr "Sarak_keiden lukumäärä:"
+
+#: src/plugin_htmlbar/wizards.c:89
+msgid "Table rows on one _line:"
+msgstr "Taulukon rivit _yhdellä rivillä:"
+
+#: src/plugin_htmlbar/wizards.c:94
+msgid "_Indent table code:"
+msgstr "Si_sennä taulukon koodi:"
+
+#: src/plugin_htmlbar/wizards.c:190
+msgid "Frame Wizard"
+msgstr "Kehysvelho"
+
+#: src/plugin_htmlbar/wizards.c:204
+msgid "Use _DTD:"
+msgstr "Käytä _DTD:"
+
+#: src/plugin_htmlbar/wizards.c:207
+msgid "Orientation:"
+msgstr "Suuntautuminen:"
+
+#: src/plugin_htmlbar/wizards.c:210
+msgid "_Horizontal"
+msgstr "_Vaakasuuntainen"
+
+#: src/plugin_htmlbar/wizards.c:211
+msgid "_Vertical"
+msgstr "Pys_tysuuntainen"
+
+#: src/plugin_htmlbar/wizards.c:216
+msgid "Number of _Frames:"
+msgstr "Kehysten Lukum_äärä:"
+
+#: src/plugin_htmlbar/wizards.c:219
+msgid "Frame's"
+msgstr "Kehyksen"
+
+#: src/plugin_htmlbar/wizards.c:231
+msgid "Name:"
+msgstr "Nimi:"
+
+#: src/plugin_htmlbar/wizards.c:233
+msgid "Source:"
+msgstr "Lähde:"
+
+#: src/plugin_htmlbar/wizards.c:237
+msgid "Size:"
+msgstr "Koko:"
+
+#: src/plugin_htmlbar/prefs.c:66
+#, fuzzy
+msgid "<b>HTML Toolbar</b>"
+msgstr "/Näytä/Näytä _päätyökalurivi"
+
+#: src/plugin_htmlbar/prefs.c:69
+#, fuzzy
+msgid "Show toolbar in sidepanel"
+msgstr "Näytä päätyökalurivi oletuksena"
+
+#: src/plugin_htmlbar/prefs.c:70
+#, fuzzy
+msgid "Keep HTML dialogs always on top"
+msgstr "Tee HTML-dialogeista lyhytaikaisia"
+
+#: src/plugin_htmlbar/prefs.c:75
+#, fuzzy
+msgid "<b>HTML options</b>"
+msgstr "HTML-valinnat"
+
+#: src/plugin_htmlbar/prefs.c:79
+#, fuzzy
+msgid "Use _XHTML style tags (<br />)"
+msgstr "Käytä XHTML tyylisiä tageja (<br> />"
+
+#: src/plugin_htmlbar/prefs.c:81
+#, fuzzy
+msgid "Use lo_wercase HTML tags"
+msgstr "Pienikirjaimiset HTML-tagit"
+
+#: src/plugin_htmlbar/prefs.c:83
+#, fuzzy
+msgid "Use de_precated tags (e.g. <font> and <nobr>)"
+msgstr "Käytä ei-suositeltuja tageja (kuten <font> ja <nobr>)"
+
+#: src/plugin_htmlbar/prefs.c:87
+msgid "_Format according to accessibility guidelines (e.g. <strong> for <b>)"
+msgstr ""
+
+#: src/plugin_htmlbar/prefs.c:92
+msgid "<b>Auto Update Tag Options</b>"
+msgstr ""
+
+#: src/plugin_htmlbar/prefs.c:96
+#, fuzzy
+msgid "Automatically update a_uthor meta tag"
+msgstr "Automaattinen päivitä tekijä-meta"
+
+#: src/plugin_htmlbar/prefs.c:99
+#, fuzzy
+msgid "Automatically update _date meta tag"
+msgstr "Automaattinen päivitä tekijä-meta"
+
+#: src/plugin_htmlbar/prefs.c:102
+#, fuzzy
+msgid "Automatically update _generator meta tag"
+msgstr "Automaattinen päivitä tekijä-meta"
+
+#, fuzzy
+#~ msgid "_Update"
+#~ msgstr " _Päivitä "
+
+#, fuzzy
+#~ msgid "The %s %s property already exists.\n"
+#~ msgstr "Annettu hakemistopolku on jo olemassa."
+
+#, fuzzy
+#~ msgid "The %s property already exists.\n"
+#~ msgstr "Annettu hakemistopolku on jo olemassa."
+
+#, fuzzy
+#~ msgid "_Special"
+#~ msgstr "/Tagit/_Erikoiset"
+
+#, fuzzy
+#~ msgid "_Accent"
+#~ msgstr "_Hyväksy:"
+
+#, fuzzy
+#~ msgid "_Uppercase"
+#~ msgstr "Isot kirjaimet"
+
+#, fuzzy
+#~ msgid "_Lowercase"
+#~ msgstr "Pienet kirjaimet"
+
+#, fuzzy
+#~ msgid "_Pound sterling £"
+#~ msgstr "/Tagit/Erikoiset/Valuutta/P_unta £"
+
+#, fuzzy
+#~ msgid "_Math-Science"
+#~ msgstr "/Tagit/Erikoiset/_Matemaattinen-Tiede"
+
+#, fuzzy
+#~ msgid "_Multiplication sign ×"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_Tulo ×"
+
+#, fuzzy
+#~ msgid "Superscript _1 ¹"
+#~ msgstr "Yläviite"
+
+#, fuzzy
+#~ msgid "Superscript _2 ²"
+#~ msgstr "Yläviite"
+
+#, fuzzy
+#~ msgid "Superscript _3 ³"
+#~ msgstr "Yläviite"
+
+#, fuzzy
+#~ msgid "_ETH (Icelandic) Ð"
+#~ msgstr "/Tagit/Erikoiset/Ei-Latina/_ETH (islantilainen) Ð"
+
+#, fuzzy
+#~ msgid "_THORN (Icelandic) Þ"
+#~ msgstr "/Tagit/Erikoiset/Ei-Latina/_THORN (islantilainen) Þ"
+
+#, fuzzy
+#~ msgid "et_h (Icelandic) ð"
+#~ msgstr "/Tagit/Erikoiset/Ei-Latina/et_h (islantilainen) ð"
+
+#, fuzzy
+#~ msgid "_Section sign §"
+#~ msgstr "/Tagit/Erikoiset/Muut/_Pykälä §"
+
+#, fuzzy
+#~ msgid "_Copyright sign ©"
+#~ msgstr "/Tagit/Erikoiset/Muut/_Kopio-oikeudet ©"
+
+#, fuzzy
+#~ msgid "_Left angle quotes «"
+#~ msgstr "/Tagit/Erikoiset/Muut/Lainausmerkki (_vasen) «"
+
+#, fuzzy
+#~ msgid "_Right angle quotes »"
+#~ msgstr "/Tagit/Erikoiset/Muut/Lainausmerkki (o_ikea) »"
+
+#, fuzzy
+#~ msgid "Registered _trademark ®"
+#~ msgstr "/Tagit/Erikoiset/Muut/R_ekisteröity tavaramerkki ®"
+
+#, fuzzy
+#~ msgid "Inverted _exclamation ¡"
+#~ msgstr "/Tagit/Erikoiset/Muut/_Huutomerkki väärinpäin ¡"
+
+#, fuzzy
+#~ msgid "Inverted _question mark ¿"
+#~ msgstr "/Tagit/Erikoiset/Muut/K_ysymysmerkki väärinpäin ¿"
+
+#, fuzzy
+#~ msgid "_Feminine ordinal ª"
+#~ msgstr "/Tagit/Erikoiset/Muut/_Feminiiniordinaali ª"
+
+#, fuzzy
+#~ msgid "_Masculine ordinal º"
+#~ msgstr "/Tagit/Erikoiset/Muut/M_askuliiniordinaali º"
+
+#, fuzzy
+#~ msgid "_Pilcrow (paragraph sign) ¶"
+#~ msgstr "/Tagit/Erikoiset/Muut/Ka_ppaleenvaihto ¶"
+
+#, fuzzy
+#~ msgid "Spa_cing macron ¯"
+#~ msgstr "/Tagit/Erikoiset/Muut/Yl_äviiva ¯"
+
+#, fuzzy
+#~ msgid "Fo_rm"
+#~ msgstr "/Tagit/L_omake"
+
+#, fuzzy
+#~ msgid "_Form"
+#~ msgstr "Lomake"
+
+#, fuzzy
+#~ msgid "Style..."
+#~ msgstr "_Tyyli..."
+
+#, fuzzy
+#~ msgid "Figcaption "
+#~ msgstr "Sitaatti"
+
+#~ msgid " Fonts "
+#~ msgstr " Fontit "
+
+#~ msgid " Tables "
+#~ msgstr " Taulukot "
+
+#~ msgid " Frames "
+#~ msgstr " Kehykset "
+
+#~ msgid " Forms "
+#~ msgstr " Lomakkeet "
+
+#~ msgid " List "
+#~ msgstr " Lista "
+
+#~ msgid "Bo_rder:"
+#~ msgstr "_Reuna:"
+
+#~ msgid "Cell _Padding:"
+#~ msgstr "Solun t_äyte:"
+
+#~ msgid "C_ell Spacing:"
+#~ msgstr "Solun väli_stys:"
+
+#~ msgid "_Valign:"
+#~ msgstr "P_ystyryhmitys:"
+
+#~ msgid "Backgrou_nd Color:"
+#~ msgstr "Tausta_väri:"
+
+#~ msgid "_Frame:"
+#~ msgstr "_Kehys:"
+
+#~ msgid "R_ules:"
+#~ msgstr "V_iivat:"
+
+#~ msgid "No Wra_p:"
+#~ msgstr "Ei ka_tkaisua:"
+
+#, fuzzy
+#~ msgid "_Figcaption"
+#~ msgstr "Sitaatti"
+
+#, fuzzy
+#~ msgid "_Hgroup"
+#~ msgstr "Uusi projekti"
+
+#~ msgid "/Tags/_Headings"
+#~ msgstr "/Tagit/_Otsikot"
+
+#~ msgid "/Tags/Headings/H_1"
+#~ msgstr "/Tagit/Otsikot/H_1"
+
+#~ msgid "/Tags/Headings/H_2"
+#~ msgstr "/Tagit/Otsikot/H_2"
+
+#~ msgid "/Tags/Headings/H_3"
+#~ msgstr "/Tagit/Otsikot/H_3"
+
+#~ msgid "/Tags/Headings/H_4"
+#~ msgstr "/Tagit/Otsikot/H_4"
+
+#~ msgid "/Tags/Headings/H_5"
+#~ msgstr "/Tagit/Otsikot/H_5"
+
+#~ msgid "/Tags/Headings/H_6"
+#~ msgstr "/Tagit/Otsikot/H_6"
+
+#~ msgid "/Tags/Special/_Accent"
+#~ msgstr "/Tagit/Erikoiset/_Vierasmerkit"
+
+#~ msgid "/Tags/Special/Accent/_Uppercase"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/_Isot kirjaimet"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/_A-I"
+#~ msgstr "Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/_A-I"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A grave À"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Pilkullinen A (vasen); À"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A acute Á"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Pilkullinen A (oikea); Á"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A circumflex Â"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Hatullinen A; Â"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A tilde Ã"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Matoviivallinen A; Ã"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/AE ligature Æ"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/AE-sidos; Æ"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A diaeresis Ä"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Kaksoispisteellinen A; Ä"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A ring Å"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Ympyrällinen A; Å"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/C cedilla Ç"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Väkäsellinen C; Ç"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E grave È"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Pilkullinen E (vasen); È"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E acute É"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Pilkullinen E (oikea); É"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E circumflex Ê"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Hatullinen E; Ê"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E diaeresis Ë"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Kaksoispisteellinen E; Ë"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I grave Ì"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Pilkullinen I (vasen); Ì"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I acute Í"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Pilkullinen I (oikea); Í"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I circumflex Î"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Hatullinen I; Î"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I diaeresis Ï"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/Kaksoispisteellinen I; Ï"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/_J-Z"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/_J-Z"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/N tilde Ñ"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Matoviivallinen N; Ñ"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O grave Ò"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Pilkullinen O (vasen); Ò"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O acute Ó"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Pilkullinen O (oikea); Ó"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O circumflex Ô"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Hatullinen O; Ô"
+
+#, fuzzy
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/OE ligature Œ"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/OE-sidos"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O tilde Õ"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Matoviivallinen O; Õ"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O diaeresis Ö"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Kaksoispisteellinen O; Ö"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O slash Ø"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Yliviivattu O; Ø"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U grave Ù"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Pilkullinen U (vasen); Ù"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U acute Ú"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Pilkullinen U (oikea); Ú"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U circumflex Û"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Hatullinen U; Û"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U diaeresis Ü"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Kaksoispisteellinen U; Ü"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/Y acute Ý"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/Pilkullinen Y; Ý"
+
+#~ msgid "/Tags/Special/Accent/_Lowercase"
+#~ msgstr "/Tagit/Eroikoiset/Vierasmerkit/_Pienet kirjaimet"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/_A-I"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/_A-I"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a grave à"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Pilkullinen a (vasen); "
+#~ "à"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a acute á"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Pilkullinen a (oikea); "
+#~ "á"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a circumflex â"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Hatullinen a; â "
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a tilde ã"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Matoviivallinen a; ã"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a ring å"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Ympyrällinen a; å"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/ae ligature æ"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/ae-sidos; æ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a diaeresis ä"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Kaksoispisteellinen a; "
+#~ "ä"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/c cedilla ç"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Väkäsellinen c; ç"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e grave è"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Pilkullinen e (vasen); "
+#~ "è"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e acute é"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Pilkullinen e (oikea); "
+#~ "é"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e circumflex ê"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Hatullinen e; ê"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e diaeresis ë"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Kaksoispisteellinen e; "
+#~ "ë"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i grave ì"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Kaksoispisteellinen i "
+#~ "(vasen); ì"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i acute í"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Kaksoispisteellinen i "
+#~ "(oikea); í"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i circumflex î"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Hatullinen i; î"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i diaeresis ï"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/Kaksoispisteellinen i; "
+#~ "ï"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/_J-Z"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/_J-Z"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/n tilde ñ"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Matoviivallinen n; ñ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o grave ò"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Pilkullinen o (vasen); "
+#~ "ò"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o acute ó"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Pilkullinen o (oikea); "
+#~ "ó"
+
+#, fuzzy
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/oe ligature œ"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/oe-sidos"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o circumflex ô"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Hatullinen o; ô"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o tilde õ"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Matoviivallinen o; õ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o diaeresis ö"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Kaksoispisteellinen o; "
+#~ "ö"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o slash ø"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Yliviivattu o; ø"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u grave ù"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Pilkullinen u (vasen); "
+#~ "ù"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u acute ú"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Pilkullinen u (oikea); "
+#~ "ú"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u circumflex û"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Hatullinen u; û"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u diaeresis ü"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Kaksoispisteellinen u; "
+#~ "ü"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/y acute ý"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Pilkullinen y; ý"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/y diaeresis ÿ"
+#~ msgstr ""
+#~ "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/Kaksoispisteellinen y; "
+#~ "ÿ"
+
+#~ msgid "/Tags/Special/Accent/U_mlaut ¨"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/U_mlaut ¨"
+
+#~ msgid "/Tags/Special/Accent/_Acute ´"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/_Heittomerkki ´"
+
+#~ msgid "/Tags/Special/Accent/_Cedilla ¸"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/V_äkänen ¸"
+
+#~ msgid "/Tags/Special/_Currency"
+#~ msgstr "/Tagit/Erikoiset/V_aluutta"
+
+#~ msgid "/Tags/Special/Currency/_Cent sign ¢"
+#~ msgstr "/Tagit/Erikoiset/Valuutta/_Sentti ¢"
+
+#~ msgid "/Tags/Special/Currency/C_urrency sign ¤"
+#~ msgstr "/Tagit/Erikoiset/Valuutta/Va_luuttamerkki ¤"
+
+#~ msgid "/Tags/Special/Currency/_Yen sign ¥"
+#~ msgstr "/Tagit/Erikoiset/Valuutta/_Jeni ¥"
+
+#, fuzzy
+#~ msgid "/Tags/Special/Currency/_Euro €"
+#~ msgstr "/Tagit/Erikoiset/Valuutta/Eu_ro €"
+
+#~ msgid "/Tags/Special/Math-Science/Logical _not sign ¬"
+#~ msgstr "/Tagit/Erikoiset/Matemaattinen-Tiede/Loogisesti _epätosi ¬"
+
+#~ msgid "/Tags/Special/Math-Science/_Division sign ÷"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_Osamäärä ÷"
+
+#~ msgid "/Tags/Special/Math-Science/_Plus-minus sign ±"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_Plus-miinus ±"
+
+#~ msgid "/Tags/Special/Math-Science/_Less-than sign <"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_Vähemmän kuin <"
+
+#~ msgid "/Tags/Special/Math-Science/_Greater-than sign >"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_Enemmän kuin >"
+
+#~ msgid "/Tags/Special/Math-Science/Superscript _1 ¹"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_1. Potenssi ¹"
+
+#~ msgid "/Tags/Special/Math-Science/Superscript _2 ²"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_2. Potenssi ²"
+
+#~ msgid "/Tags/Special/Math-Science/Superscript _3 ³"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_3. Potenssi ³"
+
+#~ msgid "/Tags/Special/Math-Science/One _quarter ¼"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_Neljäsosa ¼"
+
+#~ msgid "/Tags/Special/Math-Science/One _half ½"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/P_uoli ½"
+
+#~ msgid "/Tags/Special/Math-Science/_Three quarters ¾"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_Kolme neljäsosaa ¾"
+
+#~ msgid "/Tags/Special/Math-Science/Deg_ree sign °"
+#~ msgstr "/Tagit/Erikoiset/Matematiikka-Tiede/_Astemerkki °"
+
+#~ msgid "/Tags/Special/_Non Latin"
+#~ msgstr "/Tagit/Erikoiset/_Ei-latina"
+
+#~ msgid "/Tags/Special/Non Latin/th_orn ÿ"
+#~ msgstr "/Tagit/Erikoiset/Ei-Latina/th_orn ÿ"
+
+#~ msgid "/Tags/Special/Non Latin/Sharp _s ß"
+#~ msgstr "/Tagit/Erikoiset/Ei-Latina/Kaksois-ä_ssä ß"
+
+#~ msgid "/Tags/Special/Non Latin/_Micro sign µ"
+#~ msgstr "/Tagit/Erikoiset/Ei-Latina/_Mikro µ"
+
+#~ msgid "/Tags/Special/_Other"
+#~ msgstr "/Tagit/Erikoiset/M_uut"
+
+#~ msgid "/Tags/Special/Other/_Non-breaking space"
+#~ msgstr "/Tagit/Erikoiset/Muut/_Rikkumaton väli"
+
+#~ msgid "/Tags/Special/Other/_Broken bar ¦"
+#~ msgstr "/Tagit/Erikoiset/Muut/Pys_tykatkoviiva ¦"
+
+#, fuzzy
+#~ msgid "/Tags/Special/Other/Soft _hyphen -"
+#~ msgstr "/Tagit/Erikoiset/Muut/Pehmeä _yhdysviiva -"
+
+#~ msgid "/Tags/Special/Other/Middle _dot ·"
+#~ msgstr "/Tagit/Erikoiset/Muut/Kes_kipiste ·"
+
+#~ msgid "/Tags/Format by layout/_Bold"
+#~ msgstr "/Tagit/Ulkoasumuotoilu/_Lihavoitu"
+
+#~ msgid "/Tags/Format by layout/_Italic"
+#~ msgstr "/Tagit/Ulkoasumuotoilu/_Kursivoitu"
+
+#~ msgid "/Tags/Format by layout/_Underline"
+#~ msgstr "/Tagit/Ulkoasumuotoilu/_Alleviivattu"
+
+#~ msgid "/Tags/Format by layout/_Strikeout"
+#~ msgstr "/Tagit/Ulkoasumuotoilu/_Yliviivattu"
+
+#~ msgid "/Tags/Format by layout/Sm_all"
+#~ msgstr "/Tagit/Ulkoasumuotoilu/_Pieni"
+
+#~ msgid "/Tags/Format by layout/Bi_g"
+#~ msgstr "/Tagit/_Ulkoasumuotoilu/_Suuri"
+
+#~ msgid "/Tags/Format by context/_Strong"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/_Vahvennettu"
+
+#~ msgid "/Tags/Format by context/_Emphasis"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/V_ierasmerkit"
+
+#~ msgid "/Tags/Format by context/_Define"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/_Määrittely"
+
+#~ msgid "/Tags/Format by context/_Code"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/_Koodi"
+
+#~ msgid "/Tags/Format by context/Sa_mple"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/M_alli"
+
+#~ msgid "/Tags/Format by context/_Keyboard"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/_Näppäimistö"
+
+#~ msgid "/Tags/Format by context/_Variable"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/M_uuttuja"
+
+#~ msgid "/Tags/Format by context/Ci_tation"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/_Sitaatti"
+
+#~ msgid "/Tags/Format by context/_Abbreviation"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/_Lyhenne"
+
+#~ msgid "/Tags/Format by context/Ac_ronym"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/_Akronyymi"
+
+#, fuzzy
+#~ msgid "/Tags/Format by context/_Insert"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/_Määrittely"
+
+#, fuzzy
+#~ msgid "/Tags/Format by context/De_lete"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/_Määrittely"
+
+#~ msgid "/Tags/Format general/_Paragraph"
+#~ msgstr "/Tagit/Yleismuotoilu/_Kappale"
+
+#~ msgid "/Tags/Format general/_Break"
+#~ msgstr "/Tagit/Yleismuotoilu/_Rivivaihto"
+
+#~ msgid "/Tags/Format general/Break clear _all"
+#~ msgstr "/Tagit/Yleismuotoilu/R_ivivaihto ja tyhjennys"
+
+#~ msgid "/Tags/Format general/_Non-Breaking Space"
+#~ msgstr "/Tagit/Yleismuotoilu/Ri_kkumaton väli"
+
+#~ msgid "/Tags/Format general/Font Si_ze +1"
+#~ msgstr "/Tagit/Yleismuotoilu/_Fontin koko +1"
+
+#~ msgid "/Tags/Format general/Font _Size -1"
+#~ msgstr "/Tagit/Yleismuotoilu/Fontin k_oko -1"
+
+#~ msgid "/Tags/Format general/Preformatted _Text"
+#~ msgstr "/Tagit/Yleismuotoilu/_Esimuotoiltu teksti"
+
+#~ msgid "/Tags/Format general/Su_bscript"
+#~ msgstr "/Tagit/Yleismuotoilu/Ala_viite"
+
+#~ msgid "/Tags/Format general/Su_perscript"
+#~ msgstr "/Tagit/Yleismuotoilu/Y_läviite"
+
+#~ msgid "/Tags/Format general/_Center"
+#~ msgstr "/Tagit/Yleismuotoilu/K_eskitä"
+
+#~ msgid "/Tags/Format general/Align _right"
+#~ msgstr "/Tagit/Yleismuotoilu/Tasaus oike_alle"
+
+#~ msgid "/Tags/_Table"
+#~ msgstr "/Tagit/Ta_ulukko"
+
+#~ msgid "/Tags/Table/_Table"
+#~ msgstr "/Tagit/Taulukko/_Taulukko"
+
+#~ msgid "/Tags/Table/Table _Row"
+#~ msgstr "/Tagit/Taulukko/Taulukon _rivi"
+
+#~ msgid "/Tags/Table/Table _Header"
+#~ msgstr "/Tagit/Taulukko/Taulukon _otsake"
+
+#~ msgid "/Tags/Table/Table _Data"
+#~ msgstr "/Tagit/Taulukko/Taulukon _data"
+
+#~ msgid "/Tags/Table/Table _Caption"
+#~ msgstr "/Tagit/Taulukko/Taulukon o_tsikko"
+
+#~ msgid "/Tags/_List"
+#~ msgstr "/Tagit/_Lista"
+
+#~ msgid "/Tags/List/Unordered _List"
+#~ msgstr "/Tagit/Lista/_Järjestämätön lista"
+
+#~ msgid "/Tags/List/_Ordered List"
+#~ msgstr "/Tagit/Lista/J_ärjestetty lista"
+
+#~ msgid "/Tags/List/List Ite_m"
+#~ msgstr "/Tagit/Lista/Listan _kohta"
+
+#~ msgid "/Tags/List/De_finition List"
+#~ msgstr "/Tagit/Lista/_Määrittelylista"
+
+#~ msgid "/Tags/List/Definition _Term"
+#~ msgstr "/Tagit/Lista/Määrittely_termi"
+
+#~ msgid "/Tags/List/_Definition"
+#~ msgstr "/Tagit/Lista/Mää_ritelmä"
+
+#~ msgid "/Tags/List/Men_u"
+#~ msgstr "/Tagit/Lista/_Valikko"
+
+#~ msgid "/Tags/Form/_Form"
+#~ msgstr "/Tagit/Lomake/Lo_make"
+
+#~ msgid "/Tags/Form/_Button"
+#~ msgstr "/Tagit/Lomake/Pa_inike"
+
+#~ msgid "/Tags/Form/_Input"
+#~ msgstr "/Tagit/Lomake/Sy_öte"
+
+#~ msgid "/Tags/Form/_Textarea"
+#~ msgstr "/Tagit/Lomake/Teksti_alue"
+
+#~ msgid "/Tags/_Misc"
+#~ msgstr "/Tagit/_Sekalaiset"
+
+#~ msgid "/Tags/Misc/_Span"
+#~ msgstr "/Tagit/Sekalaiset/_Span"
+
+#~ msgid "/Tags/Misc/_Div"
+#~ msgstr "/Tagit/Sekalaiset/_Div"
+
+#~ msgid "/Tags/Misc/_Link"
+#~ msgstr "/Tagit/Sekalaiset/_Linkki"
+
+#~ msgid "/Tags/Misc/S_cript"
+#~ msgstr "/Tagit/Sekalaiset/S_kripti"
+
+#~ msgid "/Tags/Misc/_Anchor"
+#~ msgstr "/Tagit/Sekalaiset/_Ankkuri"
+
+#~ msgid "/Tags/Misc/_Image"
+#~ msgstr "/Tagit/Sekalaiset/_Kuva"
+
+#~ msgid "/Tags/_Comment"
+#~ msgstr "/Tagit/_Kommentti"
+
+#, fuzzy
+#~ msgid "/D_ialogs"
+#~ msgstr "/D_ialogit"
+
+#~ msgid "/Dialogs/_General"
+#~ msgstr "/Dialogit/_Yleiset"
+
+#~ msgid "/Dialogs/General/_Quickstart..."
+#~ msgstr "/Dialogit/Yleiset/_Pika-aloitus..."
+
+#, fuzzy
+#~ msgid "/Dialogs/General/_Link Header..."
+#~ msgstr "/Dialogit/Yleiset/M_eta..."
+
+#~ msgid "/Dialogs/General/_Body..."
+#~ msgstr "/Dialogit/Yleiset/_Runko..."
+
+#~ msgid "/Dialogs/General/_Anchor..."
+#~ msgstr "/Dialogit/Yleiset/_Ankkuri..."
+
+#~ msgid "/Dialogs/General/_Email..."
+#~ msgstr "/Dialogit/Yleiset/E_mail..."
+
+#~ msgid "/Dialogs/General/_Rule..."
+#~ msgstr "/Dialogit/Yleiset/V_iiva..."
+
+#~ msgid "/Dialogs/General/_Font..."
+#~ msgstr "/Dialogit/Yleiset/_Fontti..."
+
+#~ msgid "/Dialogs/General/Basef_ont..."
+#~ msgstr "/Dialogit/Yleiset/Perus_fontti..."
+
+#~ msgid "/Dialogs/General/Quick_list..."
+#~ msgstr "/Dialogit/Yleiset/Pika_lista..."
+
+#~ msgid "/Dialogs/General/_Meta..."
+#~ msgstr "/Dialogit/Yleiset/M_eta..."
+
+#~ msgid "/Dialogs/General/Embe_d..."
+#~ msgstr "/Dialogit/Yleiset/_Upotettu..."
+
+#~ msgid "/Dialogs/General/Select _Color..."
+#~ msgstr "/Dialogit/Yleiset/Valitse _väri..."
+
+#~ msgid "/Dialogs/General/Insert _Time..."
+#~ msgstr "/Dialogit/Yleiset/Lisää _aika..."
+
+#~ msgid "/Dialogs/General/Insert _Image..."
+#~ msgstr "/Dialogit/Yleiset/Lisää k_uva..."
+
+#~ msgid "/Dialogs/General/Insert T_humbnail..."
+#~ msgstr "/Dialogit/Yleiset/Lisää e_sikatselukuva..."
+
+#~ msgid "/Dialogs/_Table"
+#~ msgstr "/Dialogit/Ta_ulukko"
+
+#~ msgid "/Dialogs/Table/Table _Wizard..."
+#~ msgstr "/Dialogit/Taulukko/_Taulukkovelho..."
+
+#~ msgid "/Dialogs/Table/_Table..."
+#~ msgstr "/Dialogit/Taulukko/T_aulukko..."
+
+#~ msgid "/Dialogs/Table/Table _Row..."
+#~ msgstr "/Dialogit/Taulukko/Taulukon _rivi..."
+
+#~ msgid "/Dialogs/Table/Table _Head..."
+#~ msgstr "/Dialogit/Taulukko/Taulukon _otsake..."
+
+#~ msgid "/Dialogs/Table/Table _Data..."
+#~ msgstr "/Dialogit/Taulukko/Taulukon _data..."
+
+#~ msgid "/Dialogs/_CSS"
+#~ msgstr "/Dialogit/_CSS"
+
+#~ msgid "/Dialogs/CSS/_Create Style..."
+#~ msgstr "/Dialogit/CSS/_Luo tyyli..."
+
+#~ msgid "/Dialogs/CSS/S_pan..."
+#~ msgstr "/Dialogit/CSS/_Span..."
+
+#~ msgid "/Dialogs/CSS/_Div..."
+#~ msgstr "/Dialogit/CSS/_Div..."
+
+#~ msgid "/Dialogs/CSS/_Style..."
+#~ msgstr "/Dialogit/CSS/_Tyyli..."
+
+#~ msgid "/Dialogs/CSS/_Link to Stylesheet..."
+#~ msgstr "/Dialogit/CSS/L_inkki tyylisivuun..."
+
+#~ msgid "/Dialogs/_Frame"
+#~ msgstr "/Dialogit/_Kehys"
+
+#~ msgid "/Dialogs/Frame/Frame _Wizard..."
+#~ msgstr "/Dialogit/Kehys/Kehys_velho..."
+
+#~ msgid "/Dialogs/Frame/Frame_set..."
+#~ msgstr "/Dialogit/Kehys/Kehyk_set..."
+
+#~ msgid "/Dialogs/Frame/_Frame..."
+#~ msgstr "/Dialogit/Kehys/K_ehys..."
+
+#~ msgid "/Dialogs/F_orm"
+#~ msgstr "/Dialogit/L_omake"
+
+#~ msgid "/Dialogs/Form/F_orm..."
+#~ msgstr "/Dialogit/Lomake/Lo_make..."
+
+#~ msgid "/Dialogs/Form/_Input..."
+#~ msgstr "/Dialogit/Lomake/Sy_öte..."
+
+#~ msgid "/Dialogs/Form/Input Buttons..."
+#~ msgstr "/Dialogit/Lomake/Syötepainikkeita..."
+
+#~ msgid "/Dialogs/Form/Input Text..."
+#~ msgstr "/Dialogit/Lomake/Tekstisyöte..."
+
+#~ msgid "/Dialogs/Form/Text_area..."
+#~ msgstr "/Dialogit/Lomake/Teksti_alue..."
+
+#~ msgid "/Dialogs/Form/_Select..."
+#~ msgstr "/Dialogit/Lomake/Va_lintalista..."
+
+#~ msgid "/Dialogs/Form/O_ption..."
+#~ msgstr "/Dialogit/Lomake/Vali_nta..."
+
+#~ msgid "/Dialogs/Form/Option _Group..."
+#~ msgstr "/Dialogit/Lomake/Valin_taryhmä..."
+
+#~ msgid "/Dialogs/Form/_Button..."
+#~ msgstr "/Dialogit/Lomake/Pa_inike..."
+
+#~ msgid "Move Left"
+#~ msgstr "Siirrä vasemmalle"
+
+#~ msgid "Move Right"
+#~ msgstr "Siirrä oikealle"
+
+#~ msgid "Context formatting"
+#~ msgstr "Asiayhteysmuotoilu"
+
+#~ msgid "Insert image"
+#~ msgstr "Lisää kuva"
+
+#, fuzzy
+#~ msgid "_Rel:"
+#~ msgstr "_Korvaa:"
+
+#, fuzzy
+#~ msgid "T_ype:"
+#~ msgstr "_Tyyppi"
+
+#, fuzzy
+#~ msgid "Clas_s:"
+#~ msgstr "Luokk_a:"
+
+#, fuzzy
+#~ msgid "_Hreflang:"
+#~ msgstr "Href_lang:"
+
+#, fuzzy
+#~ msgid "_Lang:"
+#~ msgstr "K_ieli:"
+
+#, fuzzy
+#~ msgid "_Accesskey:"
+#~ msgstr "_Hyväksy:"
+
+#, fuzzy
+#~ msgid "/Dialogs/_New html dialog..."
+#~ msgstr "/Dialogit/Lomake/Vali_nta..."
+
+#, fuzzy
+#~ msgid "Transitional"
+#~ msgstr "Kääntäjät"
+
+#~ msgid "/Tags/Tearoff1"
+#~ msgstr "/Tagit/Tearoff1"
+
+#~ msgid "/Tags/Headings/Tearoff1"
+#~ msgstr "/Tagit/Otsikot/Tearoff1"
+
+#~ msgid "/Tags/Special/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/A-I/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Isot kirjaimet/J-Z/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/A-I/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/Pienet kirjaimet/J-Z/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/separator"
+#~ msgstr "/Tagit/Erikoiset/Vierasmerkit/separator"
+
+#~ msgid "/Tags/Special/Currency/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/Valuutta/tearoff1"
+
+#~ msgid "/Tags/Special/Math-Science/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/Matemaattinen-Tiede/tearoff1"
+
+#~ msgid "/Tags/Special/Non Latin/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/Ei-Latina/tearoff1"
+
+#~ msgid "/Tags/Special/Other/tearoff1"
+#~ msgstr "/Tagit/Erikoiset/Muut/tearoff1"
+
+#~ msgid "/Tags/Format by layout/tearoff1"
+#~ msgstr "/Tagit/Ulkoasumuotoilu/tearoff1"
+
+#~ msgid "/Tags/Format by context/tearoff1"
+#~ msgstr "/Tagit/Asiayhteysmuotoilu/tearoff1"
+
+#~ msgid "/Tags/Format general/tearoff1"
+#~ msgstr "/Tagit/Yleismuotoilu/tearoff1"
+
+#~ msgid "/Tags/Format general/<separator>"
+#~ msgstr "/Tagit/Yleismuotoilu/<separator>"
+
+#~ msgid "/Tags/Table/tearoff1"
+#~ msgstr "/Tagit/Taulukko/tearoff1"
+
+#~ msgid "/Tags/List/tearoff1"
+#~ msgstr "/Tagit/Lista/tearoff1"
+
+#~ msgid "/Tags/Form/tearoff1"
+#~ msgstr "/Tagit/Lomake/tearoff1"
+
+#~ msgid "/Tags/Misc/tearoff1"
+#~ msgstr "/Tagit/Sekalaiset/tearoff1"
+
+#~ msgid "/Dialogs/tearoff1"
+#~ msgstr "/Dialogit/tearoff1"
+
+#~ msgid "/Dialogs/General/tearoff1"
+#~ msgstr "/Dialogit/Yleiset/tearoff1"
+
+#~ msgid "/Dialogs/Table/tearoff1"
+#~ msgstr "/Dialogit/Taulukko/tearoff1"
+
+#~ msgid "/Dialogs/CSS/tearoff1"
+#~ msgstr "/Dialogit/CSS/tearoff1"
+
+#~ msgid "/Dialogs/Frame/tearoff1"
+#~ msgstr "/Dialogit/Kehys/tearoff1"
+
+#~ msgid "/Dialogs/Form/tearoff1"
+#~ msgstr "/Dialogit/Lomake/tearoff1"
+
+#~ msgid "/Dialogs/sep1"
+#~ msgstr "/Dialogit/sep1"
+
+#~ msgid "_Email address:"
+#~ msgstr "Sähk_öpostiosoite:"
+
+#~ msgid "UrlEncoded _subject:"
+#~ msgstr "UrlKoodattu _aihe:"
+
+#~ msgid "UrlEncoded _body:"
+#~ msgstr "UrlKoodattu _runko:"
+
+#~ msgid "_Href:"
+#~ msgstr "_Linkki:"
+
+#, fuzzy
+#~ msgid "Hre_f:"
+#~ msgstr "_Linkki:"
+
+#, fuzzy
+#~ msgid "/View/View _HTML Bar"
+#~ msgstr "/Näytä/Näytä _HTML-työkalurivi"
+
+#~ msgid ""
+#~ "Bluefish is an editor for experienced web designers and programmers. It "
+#~ "supports many programming and markup languages, but focuses on editing "
+#~ "dynamic and interactive websites. Bluefish is an open source development "
+#~ "project, released under the GPL license.\n"
+#~ "\n"
+#~ "For more information, visit the Bluefish Website at http://bluefish."
+#~ "openoffice.nl/\n"
+#~ "\n"
+#~ "This version of bluefish was compiled with the following options:\n"
+#~ msgstr ""
+#~ "Bluefish on editori edistyneille web-suunnittelijoille ja ohjelmoijille. "
+#~ "Se tukee useita ohjelmointi- ja merkkikieliä, mutta keskittyy dynaamisten "
+#~ "ja vuorovaikutteisten web-sivustojen muokkaukseen. Bluefish on avoimeen "
+#~ "lähdekoodiin perustuva kehitysprojekti, joka on julkaistu GPL-lisenssin "
+#~ "alaisena.\n"
+#~ "\n"
+#~ "Lisätietoja varten käy Bluefish:n Internet-sivustolla osoitteessa http://"
+#~ "bluefish.openoffice.nl/\n"
+#~ "\n"
+#~ "Tämä Bluefish-versio käännettiin seuraavien valintojen kanssa:\n"
+
+#~ msgid ""
+#~ "Project leader:\n"
+#~ "  Olivier Sessink <olivier@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Developers for this release:\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Jim Hayward\n"
+#~ "   <jimhayward@linuxexperience.net>\n"
+#~ "  Oskar Świda\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "  Eugene Morenko(More)\n"
+#~ "   <more@irpin.com>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "\n"
+#~ "Developers for previous releases:\n"
+#~ "  Chris Mazuc\n"
+#~ "  Neil Millar\n"
+#~ "  Gero Takke\n"
+#~ "  Bo Forslund\n"
+#~ "  David Arno\n"
+#~ "  Pablo De Napoli\n"
+#~ "  Santiago Capel Torres\n"
+#~ "  Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "  Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "  Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "  Antti-Juhani Kaijanaho\n"
+#~ "\n"
+#~ "Documentation:\n"
+#~ "  Scott White\n"
+#~ "   <wwsw3@earthlink.net>\n"
+#~ "  Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "  Anita Lewis\n"
+#~ "   <ajreiki@highstream.net>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "  Daniel Blair\n"
+#~ "   <joecamel@realcoders.org>\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Denny Reeh\n"
+#~ "\n"
+#~ "Package Maintainers:\n"
+#~ "  Debian:   Davide Puricelli\n"
+#~ "   <evo@debian.org>\n"
+#~ "  Redhat:   Matthias Haase\n"
+#~ "   <matthias_haase@bennewitz.com>\n"
+#~ "  Mandrake: Todd Lyons\n"
+#~ "   <todd@mrball.net>\n"
+#~ "  Fink: Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "If you know of anyone missing from this list, please let us know\n"
+#~ "<bluefish@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Thanks to all who helped making this software available.\n"
+#~ msgstr ""
+#~ "Projektin johtaja:\n"
+#~ "  Olivier Sessink <olivier@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Tämän julkaisun kehittäjät:\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Jim Hayward\n"
+#~ "   <jimhayward@linuxexperience.net>\n"
+#~ "  Oskar Świda\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "  Eugene Morenko(More)\n"
+#~ "   <more@irpin.com>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "\n"
+#~ "Edellisten julkaisujen kehittäjät:\n"
+#~ "  Chris Mazuc\n"
+#~ "  Neil Millar\n"
+#~ "  Gero Takke\n"
+#~ "  Bo Forslund\n"
+#~ "  David Arno\n"
+#~ "  Pablo De Napoli\n"
+#~ "  Santiago Capel Torres\n"
+#~ "  Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "  Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "  Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "  Antti-Juhani Kaijanaho\n"
+#~ "\n"
+#~ "Dokumentaatio:\n"
+#~ "  Scott White\n"
+#~ "   <wwsw3@earthlink.net>\n"
+#~ "  Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "  Anita Lewis\n"
+#~ "   <ajreiki@highstream.net>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "  Daniel Blair\n"
+#~ "   <joecamel@realcoders.org>\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Denny Reeh\n"
+#~ "\n"
+#~ "Pakettien ylläpitäjät:\n"
+#~ "  Debian:   Davide Puricelli\n"
+#~ "   <evo@debian.org>\n"
+#~ "  Redhat:   Matthias Haase\n"
+#~ "   <matthias_haase@bennewitz.com>\n"
+#~ "  Mandrake: Todd Lyons\n"
+#~ "   <todd@mrball.net>\n"
+#~ "  Fink: Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "Jos huomaat jonkun puuttuvan tästä listasta, kerro siitä meille\n"
+#~ "<bluefish@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Kiitos kaikille, jotka auttoivat tämän ohjelman luomisessa.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Current translators:\n"
+#~ "\n"
+#~ "  Brazilian Portuguese: Anderson Rocha\n"
+#~ "   <anderson@maxlinux.com.br>\n"
+#~ "\n"
+#~ "  Bulgarian: Peio Popov\n"
+#~ "   <peio@peio.org>\n"
+#~ "\n"
+#~ "  Chinese: Ting Yang (Dormouse)\n"
+#~ "   <mouselinux@163.com>\n"
+#~ "\n"
+#~ "  Chinese, Traditional: OLS3\n"
+#~ "   <ols3@lxer.idv.tw>\n"
+#~ "\n"
+#~ "  Danish: Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "\n"
+#~ "  Finnish: Juho Roukala\n"
+#~ "   <j.mr@luukku.com>\n"
+#~ "\n"
+#~ "  French: Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "  German: Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "\n"
+#~ "  Hungarian: Péter Sáska\n"
+#~ "   <sasek@ccsystem.hu>\n"
+#~ "\n"
+#~ "  Italian: Stefano Canepa\n"
+#~ "   <sc@linux.it>\n"
+#~ "\n"
+#~ "  Japanese: Takeshi Hamasaki\n"
+#~ "   <hma@syd.odn.ne.jp>\n"
+#~ "\n"
+#~ "  Norwegian: Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "\n"
+#~ "  Polish: Oskar Swida\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "\n"
+#~ "  Portuguese: Lopo Pizarro\n"
+#~ "   <lopopizarro@netcabo.pt>\n"
+#~ "\n"
+#~ "  Russian: Eugene Rupakov\n"
+#~ "   <rupakov@jet.msk.su>\n"
+#~ "\n"
+#~ "  Serbian: Marko Milenović\n"
+#~ "   <raven@sbb.co.yu>\n"
+#~ "\n"
+#~ "  Spanish: Walter Oscar Echarri\n"
+#~ "   <wecharri@arnet.com.ar>\n"
+#~ "\n"
+#~ "  Swedish: David Smeringe\n"
+#~ "   <david.smeringe@telia.com>\n"
+#~ "\n"
+#~ "  Tamil: Murugapandian Barathee\n"
+#~ "   <barathee@yahoo.com>\n"
+#~ "\n"
+#~ "  Turkish: Oğuz Eren\n"
+#~ "   <ogzeren@gmail.com>\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Nykyiset kääntäjät:\n"
+#~ "\n"
+#~ "  Brasilian portugali - Anderson Rocha\n"
+#~ "   <anderson@maxlinux.com.br>\n"
+#~ "\n"
+#~ "  Bulgaria - Peio Popov\n"
+#~ "   <peio@peio.org>\n"
+#~ "\n"
+#~ "  Espanja - Walter Oscar Echarri\n"
+#~ "   <wecharri@arnet.com.ar>\n"
+#~ "\n"
+#~ "  Italia - Stefano Canepa\n"
+#~ "   <sc@linux.it>\n"
+#~ "\n"
+#~ "  Kiina - Ting Yang (Dormouse)\n"
+#~ "   <mouselinux@163.com>\n"
+#~ "\n"
+#~ "  Norja - Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "\n"
+#~ "  Portugali - Lopo Pizarro\n"
+#~ "   <lopopizarro@netcabo.pt>\n"
+#~ "\n"
+#~ "  Puola - Oskar Swida\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "\n"
+#~ "  Ranska - Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "  Ruotsi - David Smeringe\n"
+#~ "   <david.smeringe@telia.com>\n"
+#~ "\n"
+#~ "  Saksa - Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "\n"
+#~ "  Serbia - Marko Milenović\n"
+#~ "   <raven@sbb.co.yu>\n"
+#~ "\n"
+#~ "  Suomi - Juho Roukala\n"
+#~ "   <j.mr@luukku.com>\n"
+#~ "\n"
+#~ "  Tamil - Murugapandian Barathee\n"
+#~ "   <barathee@yahoo.com>\n"
+#~ "\n"
+#~ "  Tanska - Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "\n"
+#~ "  Unkari - Péter Sáska\n"
+#~ "   <sasek@ccsystem.hu>\n"
+#~ "\n"
+#~ "  Venäjä - Eugene Rupakov\n"
+#~ "   <rupakov@jet.msk.su>\n"
+#~ "\n"
+
+#~ msgid "About Bluefish"
+#~ msgstr "Tietoja: Bluefish"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "Authors"
+#~ msgstr "Tekijät"
+
+#~ msgid "Authentication required"
+#~ msgstr "Vaaditaan tunnistus"
+
+#~ msgid "Authentication is required for %s."
+#~ msgstr "Vaaditaan tunnistus: %s."
+
+#~ msgid "Username:"
+#~ msgstr "Käyttäjänimi:"
+
+#~ msgid "Password:"
+#~ msgstr "Salasana:"
+
+#~ msgid ""
+#~ "Bluefish has trouble reading the filenames. Try to set the environment "
+#~ "variable G_BROKEN_FILENAMES=1\n"
+#~ msgstr ""
+#~ "Bluefish ei voi ongelmitta lukea tiedostonimiä. Yritä asettaa ympäristö- "
+#~ "muuttuja G_BROKEN_FILENAMES=1\n"
+
+#~ msgid "Check Spelling"
+#~ msgstr "Tarkista kieliasu"
+
+#~ msgid "Checking"
+#~ msgstr "Tarkistetaan"
+
+#~ msgid "_Misspelled word:"
+#~ msgstr "_Väärinkirjoitettu sana:"
+
+#~ msgid "Change _to:"
+#~ msgstr "Vaihda _tähän:"
+
+#~ msgid "I_gnore"
+#~ msgstr "_Ohita"
+
+#~ msgid "_Replace"
+#~ msgstr "_Korvaa"
+
+#~ msgid "I_n selection"
+#~ msgstr "V_alitussa alueessa"
+
+#~ msgid "personal dictionary"
+#~ msgstr "henkilökohtainen sanakirja"
+
+#~ msgid "session dictionary"
+#~ msgstr "istunnon sanakirja"
+
+#~ msgid "Dictionary:"
+#~ msgstr "Sanakirja:"
+
+#~ msgid "_Add"
+#~ msgstr "_Lisää"
+
+#~ msgid "Language:"
+#~ msgstr "Kieli:"
+
+#~ msgid "Set defa_ult"
+#~ msgstr "_Aseta oletus"
+
+#~ msgid "Filter:"
+#~ msgstr "Suodin:"
+
+#~ msgid "no filter"
+#~ msgstr "ei suodatusta"
+
+#~ msgid "html filter"
+#~ msgstr "html-suodatus"
+
+#~ msgid ""
+#~ "\n"
+#~ "Usage: %s [options] [filenames ...]\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Käyttö: %s [valinnat] [tiedostonimet ...]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Currently accepted options are:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Tällä hetkellä hyväksyttyjä valintoja ovat:\n"
+
+#~ msgid "-s           skip root check\n"
+#~ msgstr "-s           ohita juuren tarkistus\n"
+
+#~ msgid "-v           current version\n"
+#~ msgstr "-v           nykyinen versio\n"
+
+#~ msgid "-n           open new window\n"
+#~ msgstr "-n           avaa uusi ikkuna\n"
+
+#~ msgid "-p filename  open project\n"
+#~ msgstr "-p tiedostonimi  avaa projekti\n"
+
+#~ msgid "-h           this help screen\n"
+#~ msgstr "-h           tämä apuruutu\n"
+
+#~ msgid "parsing highlighting file..."
+#~ msgstr "jäsennetään korostustiedostoa..."
+
+#~ msgid "compiling highlighting patterns..."
+#~ msgstr "käännetään korostusmalleja..."
+
+#~ msgid "parsing custom menu file..."
+#~ msgstr "jäsennetään muotoiltavaa valikkotiedostoa"
+
+#~ msgid "creating main gui..."
+#~ msgstr "luodaan graafisen käyttöliittymän pääosia"
+
+#~ msgid "showing main gui..."
+#~ msgstr "näytetään graafisen käyttöliittymän pääosat"
+
+#~ msgid "Bluefish tip:"
+#~ msgstr "Bluefish-vinkki:"
+
+#~ msgid ""
+#~ "This message is shown since you do not have any items in the Quickbar.\n"
+#~ "\n"
+#~ "If you right-click a button in the HTML toolbars you can add buttons to "
+#~ "the Quickbar."
+#~ msgstr ""
+#~ "Tämä viesti näytetään, koska pikatyökalurivisi on tyhjä.\n"
+#~ "\n"
+#~ "Voit lisätä pikatyökaluriville painikkeita HTML-työkaluriveiltä hiiren "
+#~ "oikealla painikkeella."
+
+#~ msgid "Temporary"
+#~ msgstr "Väliaikainen"
+
+#~ msgid "Do you really want to delete all bookmarks for %s?"
+#~ msgstr "Haluatko varmasti poistaa kaikki kirjanmerkit: %s?"
+
+#~ msgid "Delete bookmarks?"
+#~ msgstr "Poista kirjanmerkit?"
+
+#~ msgid "Do you really want to delete %s?"
+#~ msgstr "Haluatko varmasti poistaa %s?"
+
+#~ msgid "Delete permanent bookmark."
+#~ msgstr "Poista pysyvä kirjanmerkki."
+
+#~ msgid "Edit bookmark"
+#~ msgstr "Muokkaa kirjanmerkkiä"
+
+#~ msgid "Goto bookmark"
+#~ msgstr "Siirry kirjanmerkkiin"
+
+#~ msgid "Edit"
+#~ msgstr "Muokkaa"
+
+#~ msgid "Delete all in document"
+#~ msgstr "Poista kaikki dokumentissa"
+
+#~ msgid "Delete all"
+#~ msgstr "Poista kaikki"
+
+#, fuzzy
+#~ msgid "Error adding bookmark"
+#~ msgstr "Muokkaa kirjanmerkkiä"
+
+#, fuzzy
+#~ msgid "Cannot add bookmarks to unsaved files."
+#~ msgstr "Nimettömiin tiedostoihin ei voi lisätä kirjanmerkkejä."
+
+#, fuzzy
+#~ msgid "Can't add bookmark"
+#~ msgstr "Lisää kirjanmerkki"
+
+#~ msgid "You already have a bookmark here!"
+#~ msgstr "Sinulla on jo tässä kirjanmerkki!"
+
+#~ msgid "Delete all bookmarks."
+#~ msgstr "Poista kaikki kirjanmerkit."
+
+#~ msgid "File size changed in file\n"
+#~ msgstr "Tiedostokoko muuttunut tiedostossa\n"
+
+#~ msgid "Bookmarks positions could be incorrect. Delete bookmarks?"
+#~ msgstr ""
+#~ "Kirjanmerkkien sijainnit saattavat olla vääriä. Poista kirjanmerkit?"
+
+#~ msgid "/Document/Highlight Syntax"
+#~ msgstr "/Dokumentti/Korostussyntaksi"
+
+#~ msgid "Name: "
+#~ msgstr "Nimi: "
+
+#~ msgid ""
+#~ "\n"
+#~ "Type: "
+#~ msgstr ""
+#~ "\n"
+#~ "Tyyppi: "
+
+#~ msgid ""
+#~ "\n"
+#~ "Encoding: "
+#~ msgstr ""
+#~ "\n"
+#~ "Koodaus: "
+
+#~ msgid ""
+#~ "\n"
+#~ "Size (on disk): "
+#~ msgstr ""
+#~ "\n"
+#~ "Koko (levyllä): "
+
+#~ msgid " bytes"
+#~ msgstr " tavua"
+
+#~ msgid ""
+#~ "\n"
+#~ "Permissions: "
+#~ msgstr ""
+#~ "\n"
+#~ "Oikeudet: "
+
+#~ msgid ""
+#~ "\n"
+#~ "Last modified: "
+#~ msgstr ""
+#~ "\n"
+#~ "Viimeksi muutettu: "
+
+#~ msgid "Untitled %d"
+#~ msgstr "Nimetön %d"
+
+#, fuzzy
+#~ msgid " Ln: %d, Col: %d"
+#~ msgstr " Rivi %d, Sarake %d"
+
+#~ msgid "  %s, %s"
+#~ msgstr "  %s, %s"
+
+#~ msgid "Cannot display file, unknown characters found."
+#~ msgstr "Tiedostoa ei voida näyttää, löydettiin tuntemattomia merkkejä."
+
+#~ msgid "Replace"
+#~ msgstr "Korvaa"
+
+#~ msgid "Find"
+#~ msgstr "Etsi"
+
+#~ msgid "Delete bookmark"
+#~ msgstr "Poista kirjanmerkki"
+
+#~ msgid "Add bookmark"
+#~ msgstr "Lisää kirjanmerkki"
+
+#~ msgid "_Abort save"
+#~ msgstr "_Keskeytä tallennus"
+
+#~ msgid "_Continue save in UTF-8"
+#~ msgstr "_Jatka tallennusta UTF-8 -muodossa"
+
+#~ msgid ""
+#~ "Failed to convert %s to character encoding %s. Encoding failed on "
+#~ "character '%s' at line %d column %d\n"
+#~ "\n"
+#~ "Continue saving in UTF-8 encoding?"
+#~ msgstr ""
+#~ "Ei voitu kääntää: %s merkistökoodaukselle %s. Koodaus epäonnistui "
+#~ "merkissä '%s' rivillä %d sarakkeessa %d\n"
+#~ "\n"
+#~ "Jatka tallentamalla UTF-8 -koodaukselle?"
+
+#~ msgid "File encoding conversion failure"
+#~ msgstr "Virhe tiedoston koodauksen muutoksessa"
+
+#~ msgid "Previously: "
+#~ msgstr "Ennen:"
+
+#~ msgid "No filename"
+#~ msgstr "Ei tiedostonimeä"
+
+#~ msgid "Unable to open file"
+#~ msgstr "Tiedostoa ei voitu avata"
+
+#~ msgid "_Ignore"
+#~ msgstr "_Hylkää"
+
+#~ msgid ""
+#~ "Filename: %s\n"
+#~ "\n"
+#~ "New modification time is: %s\n"
+#~ "Old modification time is: %s"
+#~ msgstr ""
+#~ "Tiedosto: %s\n"
+#~ "\n"
+#~ "Uusi muokattu-aika on: %s\n"
+#~ "Vanha muokattu-aika on: %s"
+
+#~ msgid "File has been modified by another process\n"
+#~ msgstr "Toinen prosessi on muokannut tiedostoa\n"
+
+#, fuzzy
+#~ msgid "_Close"
+#~ msgstr "Sulje"
+
+#, fuzzy
+#~ msgid "File "
+#~ msgstr "Tiedosto #"
+
+#~ msgid "Select file to insert"
+#~ msgstr "Valitse lisättävä tiedosto"
+
+#~ msgid "No file to insert"
+#~ msgstr "Ei lisättävää tiedostoa"
+
+#~ msgid "Statistics: %d lines, %d words, %d characters"
+#~ msgstr "Tilastoja: %d riviä, %d sanaa, %d merkkiä"
+
+#, fuzzy
+#~ msgid "New directory"
+#~ msgstr "/U_usi hakemisto"
+
+#, fuzzy
+#~ msgid "New file"
+#~ msgstr "/_Uusi tiedosto"
+
+#~ msgid "Could not rename\n"
+#~ msgstr "Ei voitu uudelleennimetä\n"
+
+#~ msgid "Are you sure you want to delete \"%s\" ?"
+#~ msgstr "Oletko varma että haluat poistaa \"%s\" ?"
+
+#~ msgid "If you delete this file, it will be permanently lost."
+#~ msgstr "Jos poistat tämän tiedoston, se katoaa lopullisesti."
+
+#~ msgid "Could not delete \n"
+#~ msgstr "Ei voitu poistaa \n"
+
+#~ msgid "/_Open"
+#~ msgstr "/Av_aa"
+
+#~ msgid "/Open _Advanced..."
+#~ msgstr "/Avaa _edistyneesti..."
+
+#~ msgid "/Rena_me"
+#~ msgstr "/Uudelleenni_meä"
+
+#~ msgid "/_Delete"
+#~ msgstr "/Po_ista"
+
+#~ msgid "/New _File"
+#~ msgstr "/_Uusi tiedosto"
+
+#~ msgid "/_New Directory"
+#~ msgstr "/U_usi hakemisto"
+
+#~ msgid "/_Refresh"
+#~ msgstr "/_Päivitä"
+
+#, fuzzy
+#~ msgid "/Show Full _Tree"
+#~ msgstr "Näytä koko puu"
+
+#~ msgid "/_Set as basedir"
+#~ msgstr "/_Aseta perushakemistoksi"
+
+#, fuzzy
+#~ msgid "/Follow active document"
+#~ msgstr "/Siirry/_Viimeinen dokumentti"
+
+#, fuzzy
+#~ msgid "/Show hidden files"
+#~ msgstr "Näytä piilotiedostot"
+
+#, fuzzy
+#~ msgid "/Show backup files"
+#~ msgstr "Näytä varmuuskopiotiedostot"
+
+#~ msgid "Filter"
+#~ msgstr "Suodin"
+
+#~ msgid "All files"
+#~ msgstr "Kaikki tiedostot"
+
+#~ msgid "Error creating path"
+#~ msgstr "Virhe luotaessa hakemistoa"
+
+#~ msgid "File name"
+#~ msgstr "Tiedoston nimi"
+
+#~ msgid "Directory name"
+#~ msgstr "Hakemiston nimi"
+
+#~ msgid "Opening directory..."
+#~ msgstr "Avataan hakemistoa..."
+
+#~ msgid "Show hidden files"
+#~ msgstr "Näytä piilotiedostot"
+
+#~ msgid "Show backup files"
+#~ msgstr "Näytä varmuuskopiotiedostot"
+
+#~ msgid "Show full tree"
+#~ msgstr "Näytä koko puu"
+
+#~ msgid "Follow focus"
+#~ msgstr "Seuraa kohdistinta"
+
+#~ msgid "_Skip"
+#~ msgstr "_Ohita"
+
+#~ msgid "_Overwrite"
+#~ msgstr "_Ylikirjoita"
+
+#, fuzzy
+#~ msgid "%s already exists, overwrite?"
+#~ msgstr "Tiedosto %s on olemassa ja avoinna, ylikirjoita?"
+
+#, fuzzy
+#~ msgid "Overwrite file?"
+#~ msgstr "_Ylikirjoita"
+
+#~ msgid "Select basedir"
+#~ msgstr "Valitse perushakemisto"
+
+#~ msgid "Advanced open file selector"
+#~ msgstr "Edistynyt tiedoston avaaja."
+
+#~ msgid "<b>General</b>"
+#~ msgstr "<b>Yleistä</b>"
+
+#~ msgid "Base_dir:"
+#~ msgstr "Perus_hakemisto:"
+
+#~ msgid "_Browse..."
+#~ msgstr "_Selaa..."
+
+#, fuzzy
+#~ msgid "_Pattern:"
+#~ msgstr "Ku_vio:"
+
+#~ msgid "_Recursive:"
+#~ msgstr "_Rekursiivinen:"
+
+#~ msgid "<b>Contains</b>"
+#~ msgstr "<b>Sisältää</b>"
+
+#~ msgid "Pa_ttern:"
+#~ msgstr "Ku_vio:"
+
+#~ msgid "Is rege_x:"
+#~ msgstr "O_n säänn. lauseke:"
+
+#~ msgid "Select files"
+#~ msgstr "Valitse tiedostoja"
+
+#~ msgid "Open URL"
+#~ msgstr "Avaa URL"
+
+#~ msgid "<b>Open URL</b>"
+#~ msgstr "<b>Avaa URL</b>"
+
+#~ msgid "_Continue save"
+#~ msgstr "_Jatka tallennusta"
+
+#~ msgid ""
+#~ "A backupfile for %s could not be created. If you continue, this file will "
+#~ "be overwritten."
+#~ msgstr ""
+#~ "Tiedostolle %s ei voitu luoda varmuuskopiota. Jos jatkat, tämä tiedosto "
+#~ "ylikirjoitetaan."
+
+#~ msgid "File backup failure"
+#~ msgstr "Tiedoston varmuuskopiointi epäonnistui."
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not save file:\n"
+#~ "\""
+#~ msgstr ""
+#~ "Ei voitu kirjoittaa tiedostoa:\n"
+#~ "\""
+
+#, fuzzy
+#~ msgid "File save failed!\n"
+#~ msgstr "Tiedoston tallennus keskeytyi.\n"
+
+#, fuzzy
+#~ msgid "File %s is modified on disk, overwrite?"
+#~ msgstr "Tiedosto %s on olemassa ja avoinna, ylikirjoita?"
+
+#, fuzzy
+#~ msgid "Failed to check if %s is modified on disk"
+#~ msgstr "Tiedostoa muutettu levytarkistuksen aikana "
+
+#, fuzzy
+#~ msgid "File modified on disk"
+#~ msgstr "Tiedostoa muutettu levytarkistuksen aikana "
+
+#~ msgid "Move/rename %s to"
+#~ msgstr "Siirrä/uudelleennimeä %s"
+
+#~ msgid "Save %s as"
+#~ msgstr "Tallenna %s nimellä"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Peruuta"
+
+#~ msgid "File %s exists and is opened, overwrite?"
+#~ msgstr "Tiedosto %s on olemassa ja avoinna, ylikirjoita?"
+
+#~ msgid "The file you have selected is being edited in Bluefish."
+#~ msgstr "Valitsemaasi tiedostoa muokataan Bluefishillä."
+
+#~ msgid "A file named \"%s\" already exists."
+#~ msgstr "Tiedosto nimeltä \"%s\" on jo olemassa."
+
+#~ msgid "Do you want to replace the existing file?"
+#~ msgstr "Haluatko korvata olemassaolevan tiedoston?"
+
+#, fuzzy
+#~ msgid ""
+#~ "File:\n"
+#~ "\""
+#~ msgstr "Suodin:"
+
+#~ msgid "Do_n't save"
+#~ msgstr "_Älä tallenna"
+
+#~ msgid "Save changes to \"%s\" before closing?."
+#~ msgstr "Tallenna muutokset \"%s\" ennen sulkemista?"
+
+#~ msgid "If you don't save your changes they will be lost."
+#~ msgstr "Jos et tallenna tekemiäsi muutoksia, ne katoavat."
+
+#~ msgid "Choose per _File"
+#~ msgstr "Valitse _tiedostot erikseen"
+
+#~ msgid "Close _All"
+#~ msgstr "S_ulje kaikki"
+
+#~ msgid "_Save All"
+#~ msgstr "T_allenna kaikki"
+
+#~ msgid "Multiple open files have been changed."
+#~ msgstr "Useita avoimia tiedostoja on muokattu."
+
+#, fuzzy
+#~ msgid "Cannot load reference file %s\n"
+#~ msgstr "Lue viitetiedostot uudelleen"
+
+#, fuzzy
+#~ msgid "Bad root element in reference file"
+#~ msgstr "Lue viitetiedostot uudelleen"
+
+#, fuzzy
+#~ msgid "Bad reference"
+#~ msgstr "Muokkaa asetuksia"
+
+#, fuzzy
+#~ msgid "Loading reference"
+#~ msgstr "Muokkaa asetuksia"
+
+#, fuzzy
+#~ msgid "Unloading reference"
+#~ msgstr "Funktioviittaus"
+
+#, fuzzy
+#~ msgid "Identifier"
+#~ msgstr "Keskitä"
+
+#, fuzzy
+#~ msgid "Kind"
+#~ msgstr "Etsi"
+
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "_Tyyppi"
+
+#, fuzzy
+#~ msgid "Default value"
+#~ msgstr "Oletushakemisto"
+
+#, fuzzy
+#~ msgid "Input type"
+#~ msgstr "Infotyyppi"
+
+#~ msgid "Description"
+#~ msgstr "Kuvaus"
+
+#, fuzzy
+#~ msgid "Values"
+#~ msgstr "Arvo"
+
+#, fuzzy
+#~ msgid "Insert syntax"
+#~ msgstr "Lisää kuva"
+
+#, fuzzy
+#~ msgid "Insert text"
+#~ msgstr "Lisää aika"
+
+#, fuzzy
+#~ msgid "Help"
+#~ msgstr "/_Apua"
+
+#, fuzzy
+#~ msgid "Add property"
+#~ msgstr "Ominaisuus"
+
+#, fuzzy
+#~ msgid "Add definition ref"
+#~ msgstr "Määrittelytermi"
+
+#, fuzzy
+#~ msgid "Select font for reference view"
+#~ msgstr "Lue viitetiedostot uudelleen"
+
+#, fuzzy
+#~ msgid "Set reference colors"
+#~ msgstr "Muokkaa asetuksia"
+
+#~ msgid "Attributes/Parameters"
+#~ msgstr "Attribuutit/Määritteet"
+
+#~ msgid "Notes"
+#~ msgstr "Huomautukset"
+
+#, fuzzy
+#~ msgid "Examples"
+#~ msgstr "Näyte"
+
+#, fuzzy
+#~ msgid "Links"
+#~ msgstr "Linkki"
+
+#~ msgid "Error"
+#~ msgstr "Virhe"
+
+#, fuzzy
+#~ msgid ""
+#~ "Perhaps you didn't load a library, or you did not select a library to "
+#~ "search in."
+#~ msgstr ""
+#~ "Et tainnut ladata viittausta tai et valinnut viittausta josta hakea."
+
+#, fuzzy
+#~ msgid "Element %s not found"
+#~ msgstr "Viittausta ei löytynyt"
+
+#, fuzzy
+#~ msgid "Element search"
+#~ msgstr "Viittaushaku"
+
+#, fuzzy
+#~ msgid "New library"
+#~ msgstr "/U_usi hakemisto"
+
+#, fuzzy
+#~ msgid "Library name"
+#~ msgstr "Hakemiston nimi"
+
+#, fuzzy
+#~ msgid "Delete library?"
+#~ msgstr "Poista kirjanmerkit?"
+
+#, fuzzy
+#~ msgid "Reference not loaded."
+#~ msgstr "Viittausta ei löytynyt"
+
+#, fuzzy
+#~ msgid "New note"
+#~ msgstr "Uusi projekti"
+
+#, fuzzy
+#~ msgid "Title"
+#~ msgstr "O_tsikko:"
+
+#, fuzzy
+#~ msgid "Text"
+#~ msgstr "Tekstialue"
+
+#, fuzzy
+#~ msgid "New description def"
+#~ msgstr "Kuvaus"
+
+#, fuzzy
+#~ msgid "Description text"
+#~ msgstr "Kuvaus"
+
+#, fuzzy
+#~ msgid "New values def"
+#~ msgstr "Uusi Bluefish -ikkuna"
+
+#, fuzzy
+#~ msgid "Definitions"
+#~ msgstr "Määritelmä"
+
+#, fuzzy
+#~ msgid "New property"
+#~ msgstr "Uusi projekti"
+
+#, fuzzy
+#~ msgid "No name"
+#~ msgstr "Ei tiedostonimeä"
+
+#, fuzzy
+#~ msgid "Delete definition?"
+#~ msgstr "Määritelmä"
+
+#, fuzzy
+#~ msgid "Delete group"
+#~ msgstr " Poista "
+
+#, fuzzy
+#~ msgid "Delete group?"
+#~ msgstr " Poista "
+
+#, fuzzy
+#~ msgid "Do you really want to delete current entity?"
+#~ msgstr "Haluatko varmasti poistaa %s?"
+
+#~ msgid "Show info window"
+#~ msgstr "Näytä info-ikkuna"
+
+#~ msgid "Rescan reference files"
+#~ msgstr "Lue viitetiedostot uudelleen"
+
+#, fuzzy
+#~ msgid "Set view font"
+#~ msgstr "Valitse fontti"
+
+#, fuzzy
+#~ msgid "Delete library"
+#~ msgstr "Poista kirjanmerkki"
+
+#, fuzzy
+#~ msgid "Note"
+#~ msgstr "Huomautukset"
+
+#, fuzzy
+#~ msgid "Property definition"
+#~ msgstr "Määritelmä"
+
+#, fuzzy
+#~ msgid "Description definition"
+#~ msgstr "Kuvaus"
+
+#, fuzzy
+#~ msgid "Values definition"
+#~ msgstr "Määritelmä"
+
+#, fuzzy
+#~ msgid "Element"
+#~ msgstr "Tapahtumat"
+
+#, fuzzy
+#~ msgid "Delete definition"
+#~ msgstr "Määritelmä"
+
+#, fuzzy
+#~ msgid "Delete entity"
+#~ msgstr "Poista valikon kohta"
+
+#~ msgid "Close"
+#~ msgstr "Sulje"
+
+#~ msgid "Left doubleclick action"
+#~ msgstr "Vasemman kaksoisnapsautuksen toiminta"
+
+#~ msgid "Info type"
+#~ msgstr "Infotyyppi"
+
+#~ msgid "Reference search"
+#~ msgstr "Viittaushaku"
+
+#~ msgid "Reference not found"
+#~ msgstr "Viittausta ei löytynyt"
+
+#~ msgid ""
+#~ "Perhaps you didn't load a reference, or you did not select a reference to "
+#~ "search in."
+#~ msgstr ""
+#~ "Et tainnut ladata viittausta tai et valinnut viittausta josta hakea."
+
+#~ msgid "Search"
+#~ msgstr "Etsi"
+
+#~ msgid "%d of %d"
+#~ msgstr "%d %d:sta"
+
+#~ msgid "Show hidden"
+#~ msgstr "Näytä piilotiedostot"
+
+#~ msgid "Filebrowser"
+#~ msgstr "Tiedostoselain"
+
+#~ msgid "Function reference"
+#~ msgstr "Funktioviittaus"
+
+#~ msgid "Bookmarks"
+#~ msgstr "Kirjanmerkit"
+
+#~ msgid "New"
+#~ msgstr "Uusi"
+
+#~ msgid "Open..."
+#~ msgstr "Avaa..."
+
+#~ msgid "Save"
+#~ msgstr "Tallenna"
+
+#~ msgid "Save As..."
+#~ msgstr "Tallenna nimellä..."
+
+#~ msgid "Cut"
+#~ msgstr "Leikkaa"
+
+#~ msgid "Paste"
+#~ msgstr "Liitä"
+
+#~ msgid "Find..."
+#~ msgstr "Etsi..."
+
+#~ msgid "Replace..."
+#~ msgstr "Korvaa..."
+
+#~ msgid "Undo"
+#~ msgstr "Kumoa"
+
+#~ msgid "Redo"
+#~ msgstr "Tee uudelleen"
+
+#~ msgid "Shift Left"
+#~ msgstr "Siirrä vasemmalle"
+
+#~ msgid "Shift Right"
+#~ msgstr "Siirrä oikealle"
+
+#~ msgid "Spellcheck..."
+#~ msgstr "Tarkista kieliasu..."
+
+#~ msgid "View in browser"
+#~ msgstr "Esikatsele selaimessa"
+
+#~ msgid "Preferences..."
+#~ msgstr "Asetukset..."
+
+#~ msgid "New Bluefish Window"
+#~ msgstr "Uusi Bluefish -ikkuna"
+
+#~ msgid "Stand by..."
+#~ msgstr "Valmiustila"
+
+#~ msgid "Goto line"
+#~ msgstr "Siirry riville"
+
+#~ msgid "_Line number:"
+#~ msgstr "_Rivinumero:"
+
+#~ msgid "From _selection"
+#~ msgstr "Valinna_sta"
+
+#~ msgid "Keep _dialog"
+#~ msgstr "Pidä _dialogi"
+
+#~ msgid "starting bluefish"
+#~ msgstr "bluefish käynnistyy"
+
+#~ msgid "Syntax highlighting error for "
+#~ msgstr "Syntaksikorostuksen virhe: "
+
+#~ msgid "compiling pattern '%s': %s at offset %d"
+#~ msgstr "käännetään mallia '%s': %s paikassa %d"
+
+#~ msgid "studying pattern '%s': %s"
+#~ msgstr "lukee mallia '%s': %s"
+
+#~ msgid "compiling 2nd pattern '%s': %s at offset %d"
+#~ msgstr "kääntää toista mallia '%s': %s paikassa %d"
+
+#~ msgid "studying 2nd pattern '%s': %s"
+#~ msgstr "lukee toista mallia '%s': %s"
+
+#~ msgid "/File/tearoff1"
+#~ msgstr "/Tiedosto/tearoff1"
+
+#~ msgid "/File/_New"
+#~ msgstr "/Tiedosto/_Uusi"
+
+#~ msgid "/File/New _Window"
+#~ msgstr "/Tiedosto/Uusi _ikkuna"
+
+#~ msgid "/File/_Open..."
+#~ msgstr "/Tiedosto/_Avaa..."
+
+#~ msgid "/File/Open _recent"
+#~ msgstr "/Tiedosto/Avaa _viimeisin"
+
+#~ msgid "/File/Open recent/tearoff1"
+#~ msgstr "/Tiedosto/Avaa viimeisin/tearoff1"
+
+#~ msgid "/File/Open Ad_vanced..."
+#~ msgstr "/Tiedosto/Avaa e_distyneesti..."
+
+#~ msgid "/File/Open _URL..."
+#~ msgstr "/Tiedosto/Avaa U_RL..."
+
+#~ msgid "/File/Open _from selection"
+#~ msgstr "/Tiedosto/Avaa v_alinnasta"
+
+#~ msgid "/File/sep1"
+#~ msgstr "/Tiedosto/sep1"
+
+#~ msgid "/File/_Save"
+#~ msgstr "/Tiedosto/Ta_llenna"
+
+#~ msgid "/File/Save _As..."
+#~ msgstr "/Tiedosto/Tallenna _nimellä..."
+
+#~ msgid "/File/Sav_e All"
+#~ msgstr "/Tiedosto/Tallenna _kaikki"
+
+#~ msgid "/File/Rever_t to Saved"
+#~ msgstr "/Tiedosto/_Palauta tallennettuun"
+
+#~ msgid "/File/sep2"
+#~ msgstr "/Tiedosto/sep2"
+
+#~ msgid "/File/_Insert..."
+#~ msgstr "/Tiedosto/_Lisää..."
+
+#~ msgid "/File/Rena_me..."
+#~ msgstr "/Tiedosto/U_udelleennimeä..."
+
+#~ msgid "/File/sep3"
+#~ msgstr "/Tiedosto/sep3"
+
+#~ msgid "/File/_Close"
+#~ msgstr "/Tiedosto/_Sulje"
+
+#~ msgid "/File/Close A_ll"
+#~ msgstr "/Tiedosto/Sul_je kaikki"
+
+#~ msgid "/File/Close Win_dow"
+#~ msgstr "/Tiedosto/Sulj_e ikkuna"
+
+#~ msgid "/File/sep4"
+#~ msgstr "/Tiedosto/sep4"
+
+#~ msgid "/File/_Quit"
+#~ msgstr "/Tiedosto/L_opeta"
+
+#, fuzzy
+#~ msgid "/File/sep5"
+#~ msgstr "/Tiedosto/sep1"
+
+#~ msgid "/_Edit"
+#~ msgstr "/_Muokkaa"
+
+#~ msgid "/Edit/Tearoff1"
+#~ msgstr "/Muokkaa/Tearoff1"
+
+#~ msgid "/Edit/_Undo"
+#~ msgstr "/Muokkaa/_Kumoa"
+
+#~ msgid "/Edit/_Redo"
+#~ msgstr "/Muokkaa/_Tee uudelleen"
+
+#~ msgid "/Edit/Undo All"
+#~ msgstr "/Muokkaa/Kumoa kaikki"
+
+#~ msgid "/Edit/Redo All"
+#~ msgstr "/Muokkaa/Tee kaikki uudelleen"
+
+#~ msgid "/Edit/sep1"
+#~ msgstr "/Muokkaa/sep1"
+
+#~ msgid "/Edit/Cu_t"
+#~ msgstr "/Muokkaa/_Leikkaa"
+
+#~ msgid "/Edit/_Copy"
+#~ msgstr "/Muokkaa/K_opioi"
+
+#~ msgid "/Edit/_Paste"
+#~ msgstr "/Muokkaa/L_iitä"
+
+#~ msgid "/Edit/sep2"
+#~ msgstr "/Muokkaa/sep2"
+
+#~ msgid "/Edit/Select _All"
+#~ msgstr "/Muokkaa/Valitse _kaikki"
+
+#~ msgid "/Edit/sep3"
+#~ msgstr "/Muokkaa/sep3"
+
+#~ msgid "/Edit/_Find..."
+#~ msgstr "/Muokkaa/_Etsi..."
+
+#~ msgid "/Edit/Find A_gain"
+#~ msgstr "/Muokkaa/Etsi _uudelleen"
+
+#~ msgid "/Edit/Find from selection"
+#~ msgstr "/Muokkaa/Etsi valinnasta"
+
+#~ msgid "/Edit/R_eplace..."
+#~ msgstr "/Muokkaa/Ko_rvaa..."
+
+#~ msgid "/Edit/Replace Agai_n"
+#~ msgstr "/Muokkaa/Korvaa uu_delleen"
+
+#~ msgid "/Edit/Replace special"
+#~ msgstr "/Muokkaa/Korvaa erityisesti"
+
+#~ msgid "/Tools/Tearoff1"
+#~ msgstr "/Muokkaa/Korvaa erityisesti/Tearoff1"
+
+#~ msgid "/Tools/_ASCII to HTML Entities"
+#~ msgstr "/Muokkaa/Korvaa erityisesti/_ASCII:sta HTML-kokonaisuuksiin"
+
+#~ msgid "/Tools/_ISO8859 to HTML Entities"
+#~ msgstr "/Muokkaa/Korvaa erityisesti/_ISO8859:stä HTML-kokonaisuuksiin"
+
+#~ msgid "/Tools/_Both Types to HTML Entities"
+#~ msgstr "/Muokkaa/Korvaa erityisesti/Mo_lemmat tyypit HTML-kokonaisuuksiin"
+
+#~ msgid "/Tools/To _Uppercase"
+#~ msgstr "/Muokkaa/Korvaa erityisesti/I_soiksi kirjaimiksi"
+
+#~ msgid "/Tools/To _Lowercase"
+#~ msgstr "/Muokkaa/Korvaa erityisesti/P_ieniksi kirjaimiksi"
+
+#~ msgid "/Edit/sep4"
+#~ msgstr "/Muokkaa/sep4"
+
+#~ msgid "/Edit/S_hift Right"
+#~ msgstr "/Muokkaa/Siirr_ä oikealle"
+
+#~ msgid "/Edit/Shift _Left"
+#~ msgstr "/Muokkaa/Siirrä _vasemmalle"
+
+#~ msgid "/Edit/sep5"
+#~ msgstr "/Muokkaa/sep5"
+
+#~ msgid "/Document/Add _Bookmark"
+#~ msgstr "/Muokkaa/Li_sää kirjanmerkki"
+
+#~ msgid "/Edit/sep6"
+#~ msgstr "/Muokkaa/sep6"
+
+#~ msgid "/Edit/Save Sett_ings"
+#~ msgstr "/Muokkaa/T_allenna asetukset"
+
+#~ msgid "/Edit/Save Shortcut _Keys"
+#~ msgstr "/Muokkaa/Tallenna _pikanäppäimet"
+
+#~ msgid "/Edit/Preference_s"
+#~ msgstr "/Muokkaa/_Ominaisuudet"
+
+#~ msgid "/_View"
+#~ msgstr "/_Näytä"
+
+#~ msgid "/View/tearoff1"
+#~ msgstr "/Näytä/tearoff1"
+
+#~ msgid "/View/View _Custom Menu"
+#~ msgstr "/Näytä/Näytä _muotoiltava valikko"
+
+#~ msgid "/View/View _Sidebar"
+#~ msgstr "/Näytä/Näytä _sivupaneeli"
+
+#~ msgid "/_Document"
+#~ msgstr "/_Dokumentti"
+
+#~ msgid "/Document/tearoff1"
+#~ msgstr "/Dokumentti/tearoff1"
+
+#~ msgid "/Document/_Increase Tabsize"
+#~ msgstr "/Dokumentti/_Suurenna sarkainkokoa"
+
+#~ msgid "/Document/_Decrease Tabsize"
+#~ msgstr "/Dokumentti/_Pienennä sarkainkokoa"
+
+#~ msgid "/Document/_Auto Indent"
+#~ msgstr "/Dokumentti/_Automaattinen sisennys"
+
+#~ msgid "/Document/sep1"
+#~ msgstr "/Dokumentti/sep1"
+
+#~ msgid "/Document/Auto Close H_TML tags"
+#~ msgstr "/Dokumentti/Sulje HTML-tagit automaattisesti"
+
+#~ msgid "/Document/_Wrap"
+#~ msgstr "/Dokumentti/_Katkaisu"
+
+#~ msgid "/Document/_Line Numbers"
+#~ msgstr "/Dokumentti/_Rivinumerot"
+
+#~ msgid "/Document/sep2"
+#~ msgstr "/Dokumentti/sep2"
+
+#~ msgid "/Document/_Highlight Syntax"
+#~ msgstr "/Dokumentti/K_orostussyntaksi"
+
+#~ msgid "/Document/_Update Highlighting"
+#~ msgstr "/Dokumentti/P_äivitä korostus"
+
+#~ msgid "/Document/sep3"
+#~ msgstr "/Dokumentti/sep3"
+
+#~ msgid "/Document/Document Ty_pe"
+#~ msgstr "/Dokumentti/Dokumentin t_yyppi"
+
+#~ msgid "/Document/Document Type/tearoff1"
+#~ msgstr "/Dokumentti/Dokumentin tyyppi/tearoff1"
+
+#~ msgid "/Document/Character _Encoding"
+#~ msgstr "/Dokumentti/_Merkistökoodaus"
+
+#~ msgid "/Document/Character Encoding/tearoff1"
+#~ msgstr "/Dokumentti/Merkistökoodaus/tearoff1"
+
+#~ msgid "/Document/sep4"
+#~ msgstr "/Dokumentti/sep4"
+
+#~ msgid "/Document/Check _Spelling..."
+#~ msgstr "/Dokumentti/Tarkista _kieliasu"
+
+#~ msgid "/Document/_Floating window"
+#~ msgstr "/Dokumentti/K_elluva ikkuna"
+
+#~ msgid "/Document/Word _Count"
+#~ msgstr "/Dokumentti/Sana_määrä"
+
+#, fuzzy
+#~ msgid "/Document/sep5"
+#~ msgstr "/Dokumentti/sep1"
+
+#, fuzzy
+#~ msgid "/Document/Move left"
+#~ msgstr "/Dokumentti/_Automaattinen sisennys"
+
+#, fuzzy
+#~ msgid "/Document/Move right"
+#~ msgstr "/Dokumentti/sep1"
+
+#~ msgid "/_Go"
+#~ msgstr "/_Siirry"
+
+#~ msgid "/Go/tearoff1"
+#~ msgstr "/Siirry/tearoff1"
+
+#~ msgid "/Go/_Previous document"
+#~ msgstr "/Siirry/E_dellinen dokumentti"
+
+#~ msgid "/Go/_Next document"
+#~ msgstr "/Siirry/S_euraava dokumentti"
+
+#~ msgid "/Go/sep1"
+#~ msgstr "/Siirry/sep1"
+
+#~ msgid "/Go/_First document"
+#~ msgstr "/Siirry/_Ensimmäinen dokumentti"
+
+#~ msgid "/Go/L_ast document"
+#~ msgstr "/Siirry/_Viimeinen dokumentti"
+
+#~ msgid "/Go/Goto _Line"
+#~ msgstr "/Siirry/Siirry _riville"
+
+#~ msgid "/Go/Goto _Selection"
+#~ msgstr "/Siirry/Siirry va_lintaan"
+
+#~ msgid "/_Project"
+#~ msgstr "/_Projekti"
+
+#~ msgid "/Project/tearoff1"
+#~ msgstr "/Projekti/tearoff1"
+
+#~ msgid "/Project/_New Project"
+#~ msgstr "/Projekti/_Uusi projekti"
+
+#~ msgid "/Project/_Open Project..."
+#~ msgstr "/Projekti/_Avaa projekti..."
+
+#~ msgid "/Project/Open _recent"
+#~ msgstr "/Projekti/Avaa _viimeaikaisia"
+
+#~ msgid "/Project/Open recent/tearoff1"
+#~ msgstr "/Projekti/Avaa viimeisin/tearoff1"
+
+#~ msgid "/Project/sep1"
+#~ msgstr "/Projekti/sep1"
+
+#~ msgid "/Project/_Save"
+#~ msgstr "/Projekti/_Tallenna"
+
+#~ msgid "/Project/Save _as..."
+#~ msgstr "/Projekti/T_allenna nimellä..."
+
+#~ msgid "/Project/Save & _close"
+#~ msgstr "/Projekti/Tallenna & _sulje"
+
+#~ msgid "/Project/sep2"
+#~ msgstr "/Projekti/sep2"
+
+#~ msgid "/Project/E_dit Project Options..."
+#~ msgstr "/Projekti/_Muokkaa projektin valintoja"
+
+#~ msgid "/E_xternal"
+#~ msgstr "/_Ulkopuolinen"
+
+#~ msgid "/External/tearoff1"
+#~ msgstr "/Ulkopuolinen/tearoff1"
+
+#~ msgid "/_Help"
+#~ msgstr "/_Apua"
+
+#~ msgid "/Help/_About..."
+#~ msgstr "/Apua/_Tietoja..."
+
+#~ msgid "/Document/Document Type"
+#~ msgstr "/Dokumentti/Dokumentin tyyppi"
+
+#~ msgid "/Project/Open recent"
+#~ msgstr "/Projekti/Avaa viimeisin"
+
+#~ msgid "/File/Open recent"
+#~ msgstr "/Tiedosto/Avaa viimeisin"
+
+#~ msgid "/Windows"
+#~ msgstr "/Ikkunat"
+
+#, fuzzy
+#~ msgid "Could not view file in browser."
+#~ msgstr "Tiedostoa \"%s\" ei löytynyt."
+
+#~ msgid "/External/Outputbox/"
+#~ msgstr "/Ulkopuolinen/Tulostelaatikko/"
+
+#~ msgid "/External/Commands/"
+#~ msgstr "/Ulkopuolinen/Komennot/"
+
+#~ msgid "/External/Browsers/"
+#~ msgstr "/Ulkopuolinen/Selaimet/"
+
+#~ msgid "/External"
+#~ msgstr "/Ulkopuolinen"
+
+#~ msgid "/External/Browsers"
+#~ msgstr "/Ulkopuolinen/Selaimet"
+
+#~ msgid "/External/Commands"
+#~ msgstr "/Ulkopuolinen/Komennot"
+
+#~ msgid "/External/Outputbox"
+#~ msgstr "/Ulkopuolinen/Tulostelaatikko"
+
+#~ msgid "/Document/Character Encoding"
+#~ msgstr "/Dokumentti/Merkistökoodaus"
+
+#~ msgid "This custom search and replace requires a selection"
+#~ msgstr "Tämä muotoiltava Etsi ja korvaa vaatii valinnan"
+
+#~ msgid "/_Custom menu"
+#~ msgstr "/Muotoilta_va valikko"
+
+#~ msgid "/Custom menu/sep"
+#~ msgstr "/Muotoiltava valikko/sep"
+
+#~ msgid "/Custom menu/Edit custom menu..."
+#~ msgstr "/Muotoiltava valikko/_Editoi muotoiltavaa valikkoa"
+
+#~ msgid "/Custom menu/Reset"
+#~ msgstr "/Muotoiltava valikko/Nollaa"
+
+#~ msgid "/Custom menu/Load new"
+#~ msgstr "/Muotoiltava valikko/Lataa uusi"
+
+#~ msgid "Search Pattern"
+#~ msgstr "Etsi malli"
+
+#~ msgid "Replace String"
+#~ msgstr "Korvaa merkkijono"
+
+#~ msgid "Formatstring Before"
+#~ msgstr "Muotoilumerkkijono ennen"
+
+#~ msgid "The menupath you want to update does not exist yet"
+#~ msgstr "Valikkohakemistoa, jonka haluat päivittää, ei ole vielä olemassa"
+
+#~ msgid "Try 'add' instead."
+#~ msgstr "Yritä sen sijaan 'lisää'."
+
+#~ msgid "The menupath you want to add already exists."
+#~ msgstr "Valikkohakemisto, jonka haluat lisätä, on jo olemassa."
+
+#~ msgid "The menupath should start with a / character"
+#~ msgstr "Valikkohakemiston tulisi alkaa / merkillä"
+
+#~ msgid "Custom Menu Editor"
+#~ msgstr "Muotoiltavan valikon editori"
+
+#~ msgid "Add New Menu Entry"
+#~ msgstr "Lisää uusi valikon kohta"
+
+#~ msgid "Apply Changes"
+#~ msgstr "Hyväksy muutokset"
+
+#~ msgid "Delete Menu Entry"
+#~ msgstr "Poista valikon kohta"
+
+#~ msgid "Close Discards Changes"
+#~ msgstr "Sulkeminen hylkää muutokset"
+
+#~ msgid "Save Changes and Exit"
+#~ msgstr "Tallenna muutokset ja lopeta"
+
+#~ msgid "_Menu Path:"
+#~ msgstr "_Valikon hakemisto:"
+
+#~ msgid "Number of _Variables:"
+#~ msgstr "_Muuttujien lukumäärä:"
+
+#~ msgid "Variables"
+#~ msgstr "Muuttujat"
+
+#~ msgid "Custom Dialo_g"
+#~ msgstr "Muokattu dialo_gi"
+
+#~ msgid "Custom Replace"
+#~ msgstr "Muokattu korvaus"
+
+#~ msgid "in current document"
+#~ msgstr "tämänhetkisessä dokumentissa"
+
+#~ msgid "from cursor"
+#~ msgstr "kursorista"
+
+#~ msgid "in selection"
+#~ msgstr "valinnasta"
+
+#~ msgid "in all open documents"
+#~ msgstr "kaikista avoimista dokumenteista"
+
+#~ msgid "Matc_hing:"
+#~ msgstr "Va_staavat:"
+
+#~ msgid "normal"
+#~ msgstr "normaali"
+
+#~ msgid "posix regular expressions"
+#~ msgstr "posix säännölliset lausekkeet"
+
+#~ msgid "perl regular expressions"
+#~ msgstr "perl säännölliset lausekkeet"
+
+#~ msgid "Case Se_nsitive"
+#~ msgstr "Ta_rkka kirjainmuoto"
+
+#~ msgid "Untitled"
+#~ msgstr "Nimetön"
+
+#~ msgid "Select font"
+#~ msgstr "Valitse fontti"
+
+#~ msgid "Extensions"
+#~ msgstr "Laajennukset"
+
+#~ msgid "Update chars"
+#~ msgstr "Päivitä merkit"
+
+#~ msgid "Icon"
+#~ msgstr "Ikoni"
+
+#~ msgid "Editable"
+#~ msgstr "Muokattava"
+
+#~ msgid "Content regex"
+#~ msgstr "Sisältö regex"
+
+#~ msgid "Auto close tags mode"
+#~ msgstr "Sulje tagit automaattisesti -tila"
+
+#~ msgid "Inverse filter"
+#~ msgstr "Käänteinen suodatus"
+
+#~ msgid "Filetypes in filter"
+#~ msgstr "Tiedostotyypit suotimessa"
+
+#~ msgid "filetype"
+#~ msgstr "tiedostotyyppi"
+
+#~ msgid "Reset"
+#~ msgstr "Nollaa"
+
+#~ msgid "Pattern name"
+#~ msgstr "Mallin nimi"
+
+#~ msgid "Pattern"
+#~ msgstr "Malli"
+
+#~ msgid "Start pattern and end pattern"
+#~ msgstr "Aloitusmalli ja lopetusmalli"
+
+#~ msgid "Only start pattern"
+#~ msgstr "Vain aloitusmalli"
+
+#~ msgid "Subpattern from parent"
+#~ msgstr "Alamalli alkuperäisestä"
+
+#~ msgid "Start pattern"
+#~ msgstr "Aloitusmalli"
+
+#~ msgid "End pattern"
+#~ msgstr "Lopetusmalli"
+
+#~ msgid "Case sensitive matching"
+#~ msgstr "Tarkkaa kirjainmuotoa vastaava"
+
+#~ msgid "Parentmatch"
+#~ msgstr "Alkuperäisvastaavuus"
+
+#~ msgid "Foreground color"
+#~ msgstr "Edusväri"
+
+#~ msgid "Background color"
+#~ msgstr "Taustaväri"
+
+#~ msgid "don't change weight"
+#~ msgstr "älä muuta muotoilua"
+
+#~ msgid "force non-bold weight"
+#~ msgstr "pakota ei-lihavoitu muotoilu"
+
+#~ msgid "force bold weight"
+#~ msgstr "pakota lihavoitu muotoilu"
+
+#~ msgid "don't change style"
+#~ msgstr "älä muuta tyyliä"
+
+#~ msgid "force non-italic style"
+#~ msgstr "pakota ei-kursivoitu tyyli"
+
+#~ msgid "force italic style"
+#~ msgstr "pakota kursivoitu tyyli"
+
+#~ msgid "Command"
+#~ msgstr "Komento"
+
+#~ msgid ""
+#~ "%s for current filename (any command)\n"
+#~ "%i for input and %f for output filename (filters)"
+#~ msgstr ""
+#~ "%s tarkoittaa tämänhetkistä tiedostonimeä (mikä tahansa komento)\n"
+#~ "%i tarkoittaa syötettä ja %f tulosteen tiedostonimeä (suotimet)"
+
+#~ msgid "File #"
+#~ msgstr "Tiedosto #"
+
+#~ msgid "Line #"
+#~ msgstr "Rivi #"
+
+#~ msgid "Show all output"
+#~ msgstr "Näytä koko tuloste"
+
+#~ msgid "left"
+#~ msgstr "vasen"
+
+#~ msgid "right"
+#~ msgstr "oikea"
+
+#~ msgid "top"
+#~ msgstr "ylä"
+
+#~ msgid "bottom"
+#~ msgstr "ala"
+
+#~ msgid "no check"
+#~ msgstr "ei tarkistusta"
+
+#~ msgid "check mtime and size"
+#~ msgstr "tarkista m-aika ja koko"
+
+#~ msgid "check mtime"
+#~ msgstr "tarkista m-aika"
+
+#~ msgid "check size"
+#~ msgstr "tarkista koko"
+
+#~ msgid "Edit preferences"
+#~ msgstr "Muokkaa asetuksia"
+
+#~ msgid "Editor"
+#~ msgstr "Editori"
+
+#~ msgid "Editor options"
+#~ msgstr "Valintaeditori"
+
+#~ msgid "Tab width"
+#~ msgstr "Sarkaimen pituus"
+
+#~ msgid "Use spaces to indent, not tabs"
+#~ msgstr "Käytä välejä sisennykseen, älä sarkaimia"
+
+#~ msgid "Word wrap default"
+#~ msgstr "Sanakatkaisu tavanomainen"
+
+#~ msgid "Line numbers by default"
+#~ msgstr "Rivinumerointi tavanomaisesti"
+
+#~ msgid "Highlight syntax by default"
+#~ msgstr "Korostussyntaksi tavanomaisesti"
+
+#~ msgid "Highlight # lines"
+#~ msgstr "Korosta # riviä"
+
+#~ msgid "Undo history size"
+#~ msgstr "Kumoushistorian koko"
+
+#~ msgid "Clear undo history on save"
+#~ msgstr "Tyhjennä kumoushistoria tallennettaessa"
+
+#~ msgid "Bookmark options"
+#~ msgstr "Kirjanmerkkien valinnat"
+
+#~ msgid "Make permanent by default"
+#~ msgstr "Tee pysyvä oletuksena"
+
+#~ msgid "full path"
+#~ msgstr "koko polku"
+
+#~ msgid "path from basedir"
+#~ msgstr "polku perushakemistosta"
+
+#~ msgid "filename"
+#~ msgstr "tiedostonimi"
+
+#~ msgid "Bookmarks filename display"
+#~ msgstr "Kirjanmerkkien tiedostonimen näyttö"
+
+#~ msgid "Files"
+#~ msgstr "Tiedostot"
+
+#~ msgid "Encoding"
+#~ msgstr "Koodaus"
+
+#~ msgid "Default character set"
+#~ msgstr "Tavanomainen merkistö"
+
+#~ msgid "Auto set <meta> encoding tag on change"
+#~ msgstr "Automaattisesti aseta <meta> koodaustagi muutettaessa"
+
+#~ msgid "Backup"
+#~ msgstr "Varmuuskopio"
+
+#~ msgid "Create backup on save"
+#~ msgstr "Luo varmuuskopio tallennettaessa"
+
+#~ msgid "Backup file suffix"
+#~ msgstr "Varmuuskopion tiedostopääte"
+
+#~ msgid "save"
+#~ msgstr "tallenna"
+
+#~ msgid "abort"
+#~ msgstr "keskeytä"
+
+#~ msgid "ask"
+#~ msgstr "kysy"
+
+#~ msgid "Action on backup failure"
+#~ msgstr "Toiminta varmuuskopioinnin epäonnistuessa"
+
+#~ msgid "Remove backupfile on close"
+#~ msgstr "Poista varmuuskopio suljettaessa"
+
+#~ msgid "Allow multi instances of a file"
+#~ msgstr "Hyväksy useita avoimia instansseja samasta tiedostosta"
+
+#~ msgid "Open files in already running bluefish window"
+#~ msgstr "Avaa tiedostot olemassaolevaan bluefish -ikkunaan"
+
+#~ msgid "File modified on disk check "
+#~ msgstr "Tiedostoa muutettu levytarkistuksen aikana "
+
+#~ msgid "Number of files in 'Open recent'"
+#~ msgstr "Tiedostojen lukumäärä kohdassa 'Viimeksi avattu'"
+
+#~ msgid "File browser"
+#~ msgstr "Tiedostoselain"
+
+#~ msgid "Default basedir"
+#~ msgstr "Oletushakemisto"
+
+#~ msgid "Use separate file and directory view"
+#~ msgstr "Käytä erillistä tiedosto- ja hakemistonäkymää"
+
+#~ msgid "Unknown icon"
+#~ msgstr "Tuntematon ikoni"
+
+#~ msgid "Directory icon"
+#~ msgstr "Hakemistoikoni"
+
+#~ msgid "User interface"
+#~ msgstr "Käyttöulkoasu"
+
+#~ msgid "Restore last used dimensions"
+#~ msgstr "Tallenna viimeksikäytetyt ulottuvuudet"
+
+#~ msgid "Initial sidebar width"
+#~ msgstr "Sisäänrakennetun sivupaneelin leveys"
+
+#~ msgid "Initial window height"
+#~ msgstr "Sisäänrakennetun ikkunan korkeus"
+
+#~ msgid "Initial window width"
+#~ msgstr "Sisäänrakennetun ikkunan leveys"
+
+#~ msgid "External browsers in submenu"
+#~ msgstr "Ulkopuoliset selaimet alavalikossa"
+
+#~ msgid "External commands in submenu"
+#~ msgstr "Ulkopuoliset komennot alavalikossa"
+
+#~ msgid "External outputbox in submenu"
+#~ msgstr "Ulkopuolinen tulostelaatikko alavalikossa"
+
+#~ msgid "Notebook tab font (leave empty for gtk default)"
+#~ msgstr "Muistion tab-fontti (jätä tyhjäksi gtk-oletusta varten)"
+
+#~ msgid "Document notebook tab position"
+#~ msgstr "Dokumentin muistio-tabin sijainti"
+
+#~ msgid "Sidebar notebook tab position"
+#~ msgstr "Sivupaneelin muistio-tabin sijainti"
+
+#~ msgid "Sidebar location"
+#~ msgstr "Sivupaneelin sijainti"
+
+#~ msgid "Thumbnails"
+#~ msgstr "Esikatselukuvat"
+
+#~ msgid "Thumbnail suffix"
+#~ msgstr "Esikatselukuvien pääte"
+
+#~ msgid "Thumbnail filetype"
+#~ msgstr "Esikatselukuvien tiedostotyyppi"
+
+#~ msgid "Filetypes"
+#~ msgstr "Tiedostotyypit"
+
+#~ msgid "Filefilters"
+#~ msgstr "Tiedostosuotimet"
+
+#~ msgid "Syntax highlighting"
+#~ msgstr "Syntaksikorostus"
+
+#~ msgid "Patterns"
+#~ msgstr "Mallit"
+
+#~ msgid "External programs"
+#~ msgstr "Ulkopuoliset ohjelmat"
+
+#~ msgid "Browsers"
+#~ msgstr "Selaimet"
+
+#~ msgid "Utilities and filters"
+#~ msgstr "Hyödyt ja suotimet"
+
+#~ msgid "Output parsers"
+#~ msgstr "Tulosteen jäsentäjät"
+
+#~ msgid "Outputbox"
+#~ msgstr "Tulostelaatikko"
+
+#~ msgid "Servers"
+#~ msgstr "Serverit"
+
+#~ msgid "Remote servers"
+#~ msgstr "Etäpalvelimet"
+
+#~ msgid "Zope compatibility mode"
+#~ msgstr "Zope-yhteensopivuustila"
+
+#~ msgid "New project"
+#~ msgstr "Uusi projekti"
+
+#~ msgid "Enter Bluefish project filename"
+#~ msgstr "Syötä Bluefish-projektin tiedostonimi"
+
+#~ msgid "Select Bluefish project filename"
+#~ msgstr "Valitse Bluefish-projektin tiedostonimi"
+
+#, fuzzy
+#~ msgid "Save current project?"
+#~ msgstr "Luo tyhjä projekti"
+
+#~ msgid "Create New Project"
+#~ msgstr "Luo uusi projekti"
+
+#~ msgid "Edit Project"
+#~ msgstr "Muokkaa projektia"
+
+#~ msgid "This project contains %d files"
+#~ msgstr "Tämä projekti sisältää %d tiedostoa"
+
+#~ msgid "Project _Name:"
+#~ msgstr "Projektin _nimi:"
+
+#~ msgid "_Basedir:"
+#~ msgstr "Perus_hakemisto:"
+
+#~ msgid "_Preview URL:"
+#~ msgstr "_Esikatsele URL:"
+
+#~ msgid "_Template:"
+#~ msgstr "_Mallipohja:"
+
+#~ msgid "_Word wrap by default"
+#~ msgstr "_Sanakatkaisu oletuksena"
+
+#~ msgid "Create _Project"
+#~ msgstr "_Luo projekti"
+
+#~ msgid "Create project"
+#~ msgstr "Luo projekti"
+
+#~ msgid "Create project with currently opened documents"
+#~ msgstr "Luo projekti tällä hetkellä avatuilla dokumenteilla"
+
+#~ msgid "Create empty project"
+#~ msgstr "Luo tyhjä projekti"
+
+#~ msgid "Galeon"
+#~ msgstr "Galeon"
+
+#~ msgid "Mozilla"
+#~ msgstr "Mozilla"
+
+#~ msgid "Opera"
+#~ msgstr "Opera"
+
+#~ msgid "Netscape"
+#~ msgstr "Netscape"
+
+#~ msgid "Gnome default"
+#~ msgstr "Gnomen oletus"
+
+#~ msgid "make"
+#~ msgstr "make"
+
+#~ msgid "weblint HTML checker"
+#~ msgstr "weblint HTML-tarkastaja"
+
+#~ msgid "tidy HTML validator"
+#~ msgstr "tidy HTML-vahvistaja"
+
+#~ msgid "javac"
+#~ msgstr "javac"
+
+#~ msgid "xmllint XML checker"
+#~ msgstr "xmllint XML-tarkastaja"
+
+#~ msgid "php"
+#~ msgstr "php"
+
+#~ msgid "Dos2Unix filter"
+#~ msgstr "Dos2Unix suodin"
+
+#~ msgid "Tidy cleanup filter"
+#~ msgstr "Tidy puhdistussuodin"
+
+#~ msgid "C programming"
+#~ msgstr "C-ohjelmointi"
+
+#~ msgid "All web files"
+#~ msgstr "Kaikki web-tiedostot"
+
+#~ msgid "Java programming"
+#~ msgstr "Java-ohjelmointi"
+
+#~ msgid "Hide objectfiles"
+#~ msgstr "Piilota objektitiedostot"
+
+#~ msgid "Untitled Project"
+#~ msgstr "Nimetön projekti"
+
+#~ msgid "Regular expression error: "
+#~ msgstr "Säännöllinen lauseke -virhe: "
+
+#~ msgid "Search failed"
+#~ msgstr "Etsintä epäonnistui"
+
+#~ msgid "Regular expression error: %s at offset %d"
+#~ msgstr "Säännöllinen lauseke -virhe: %s paikassa %d"
+
+#~ msgid "Confirm replace"
+#~ msgstr "Vahvista korvaus"
+
+#~ msgid "Replace selected text?"
+#~ msgstr "Korvaa valittu teksti?"
+
+#~ msgid "Replace _all"
+#~ msgstr "Korvaa k_aikki"
+
+#~ msgid "Search: no match found"
+#~ msgstr "Etsi: ei löytynyt vastaavuuksia"
+
+#~ msgid "_Search for: "
+#~ msgstr "Etsi _mitä: "
+
+#~ msgid "_Replace with: "
+#~ msgstr "Korvaa m_illä: "
+
+#~ msgid "\\0 refers to the first subsearch_pattern, \\1 to the second etc."
+#~ msgstr "\\0 viittaa ensimmäiseen alaetsintäkuvioon, \\1 toiseen jne."
+
+#~ msgid "Beginning of document till end"
+#~ msgstr "Dokumentin alusta loppuun"
+
+#~ msgid "Current position till end"
+#~ msgstr "Nykyisestä sijainnista loppuun"
+
+#~ msgid "Beginning of selection till end of selection"
+#~ msgstr "Valitun alueen alusta valitun alueen loppuun"
+
+#~ msgid "All opened files begin till end"
+#~ msgstr "Kaikki avatut tiedostot alusta loppuun"
+
+#~ msgid "Disabled"
+#~ msgstr "Poista käytöstä"
+
+#~ msgid "POSIX type"
+#~ msgstr "POSIX-tyyppi"
+
+#~ msgid "PERL type"
+#~ msgstr "PERL-tyyppi"
+
+#~ msgid "Starts at:"
+#~ msgstr "Alkaa mistä:"
+
+#~ msgid "Regular expression:"
+#~ msgstr "Säännöllinen lauseke:"
+
+#~ msgid "Normal"
+#~ msgstr "Normaali"
+
+#~ msgid "Replace type:"
+#~ msgstr "Korvauksen tyyppi:"
+
+#~ msgid "_Patterns contain backslash escape sequences (\\n, \\t)"
+#~ msgstr "_Mallit sisältävät kenoviivallisia pakotoimintoja (\\n, \\t)"
+
+#~ msgid "_Match case"
+#~ msgstr "_Tarkka kirjainasu"
+
+#~ msgid "O_verlap searches"
+#~ msgstr "Limittäin olevat haut"
+
+#~ msgid "Prompt _before replace"
+#~ msgstr "Varmista _ennen korvausta"
+
+#~ msgid "Replace o_nce"
+#~ msgstr "Ko_rvaa kerran"
+
+#~ msgid "Bookmark results"
+#~ msgstr "Tee tuloksista kirjanmerkkejä"
+
+#~ msgid " Add "
+#~ msgstr " Lisää "
+
+#~ msgid " Update "
+#~ msgstr " Päivitä "
+
+#~ msgid " Delete "
+#~ msgstr " Poista "
+
+#~ msgid " Up "
+#~ msgstr " Ylös "
+
+#~ msgid " Down "
+#~ msgstr " Alas "
+
+#~ msgid " Sort "
+#~ msgstr " Järjestä "
+
+#~ msgid "This bookmark is set in a file that no longer exists."
+#~ msgstr "Tämä kirjanmerkki on asetettu tiedostoon jota ei ole enää olemassa."
+
+#~ msgid "Are you sure?"
+#~ msgstr "Oletko varma?"
+
+#~ msgid "Could not read file:\n"
+#~ msgstr "Tiedostoa ei voitu lukea:\n"
+
+#~ msgid "Opening file "
+#~ msgstr "Avataan tiedostoa "
+
+#~ msgid "Saving file"
+#~ msgstr "Tallennetaan tiedostoa"
+
+#~ msgid ""
+#~ "File: %s\n"
+#~ "\n"
+#~ "New modification time: %s\n"
+#~ "Old modification time: %s"
+#~ msgstr ""
+#~ "Tiedosto: %s\n"
+#~ "\n"
+#~ "Uusi muokattu-aika: %s\n"
+#~ "Vanha muokattu-aika: %s"
+
+#~ msgid "File has been modified by another process."
+#~ msgstr "Toinen prosessi on muokannut tiedostoa."
+
+#~ msgid "Saving %s"
+#~ msgstr "Tallentaa %s"
+
+#~ msgid ""
+#~ "Could not backup file:\n"
+#~ "\""
+#~ msgstr ""
+#~ "Ei voitu varmuuskopioida tiedostoa:\n"
+#~ "\""
+
+#~ msgid "File save error"
+#~ msgstr "Tiedoston tallennusvirhe"
+
+#~ msgid ""
+#~ "These files could not opened:\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Seuraavia tiedostoja ei voitu avata:\n"
+#~ "\n"
+
+#~ msgid "Unable to open file(s)\n"
+#~ msgstr "Tiedosto(j)a ei voitu avata\n"
+
+#~ msgid "searching files..."
+#~ msgstr "etsitään tiedostoja..."
+
+#~ msgid "grep {contains} `find {basedir} -name '{file type}'`"
+#~ msgstr "grep {sisältää} `find {perushakemisto} -name '{tiedoston tyyppi}'`"
+
+#~ msgid "_File Type:"
+#~ msgstr "_Tiedoston tyyppi:"
+
+#~ msgid "Loading %d file(s)..."
+#~ msgstr "Ladataan %d tiedosto(a)..."
+
+#~ msgid "No matching files found"
+#~ msgstr "Vastaavia tiedostoja ei löytynyt"
+
+#~ msgid "Select file"
+#~ msgstr "Valitse tiedosto"
+
+#~ msgid "_Doctype:"
+#~ msgstr "_Dokumentin tyyppi:"
+
+#~ msgid "Header tags:"
+#~ msgstr "Otsaketagit:"
+
+#~ msgid "Loading file(s)..."
+#~ msgstr "Ladataan tiedosto(j)a..."
+
+#~ msgid "The filename was:\n"
+#~ msgstr "Tiedostonimi oli:\n"
+
+#~ msgid "Could not open file\n"
+#~ msgstr "Ei voitu avata tiedostoa\n"
+
+#~ msgid "Could not view file in browser, the file does not yet have a name\n"
+#~ msgstr ""
+#~ "Ei voitu esikatsella tiedostoa selaimessa, tiedostolla ei ole vielä "
+#~ "nimeä\n"
+
+#~ msgid "These files were not opened:\n"
+#~ msgstr "Seuraavia tiedostoja ei avattu:\n"
+
+#~ msgid "Show sidebar by default"
+#~ msgstr "Näytä sivupaneeli oletuksena"
+
+#~ msgid "Show custom menu by default"
+#~ msgstr "Näytä muotoiltava valikko oletuksena"
+
+#~ msgid "Show HTML toolbar by default"
+#~ msgstr "Näytä HTML-työkalurivi oletuksena"
+
+#~ msgid "Do you want to save the project?"
+#~ msgstr "Haluatko tallentaa projektin?"

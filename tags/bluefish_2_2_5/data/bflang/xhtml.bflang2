@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		xhtml.bflang2 $Revision$
+
+		Copyright (C) 2008-2012 Olivier Sessink
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE bflang [
+	<!ENTITY xml "xml:lang">
+	<!ENTITY i18n "dir,lang">
+	<!ENTITY univ "class,id,style,title">
+	<!ENTITY evnt "onclick,ondblclick,onmousedown,onmouseup,onmouseover,onmousemove,onmouseout,onkeypress,onkeydown,onkeyup">
+	<!-- <!ENTITY all-xhtml SYSTEM "all-xhtml.bfinc"> -->
+	<!ENTITY css-selectors SYSTEM "css-selectors.bfinc">
+	<!ENTITY css-rules SYSTEM "css-rules.bfinc">
+	<!ENTITY all-javascript SYSTEM "all-javascript.bfinc">
+]>
+<bflang name="XHTML" version="2.0" table="20599" contexts="234" matches="3628">
+<header>
+	<mime type="application/xhtml+xml"/>
+	<option name="load_reference" default="1"/>
+	<option name="load_completion" default="1"/>
+	<option name="show_in_menu" default="1"/>
+	<option name="autocomplete_tags" default="1" />
+	<option name="stretch_tag_block" default="1" />
+	<option name="attribute_string_is_block" default="0" description="Show tag attributes as block"/>
+	<option name="autocomplete_javascript_var" default="1" description="autocomplete javascript variables"/>
+	<option name="javascript_object_methods" default="1" description="Autocomplete Javascript object methods" />
+	<option name="javascript_css_properties" default="1" description="CSS properties" />
+	<highlight name="attribute-string" style="string-no-spell-check" />
+	<highlight name="tag" style="tag" />
+	<highlight name="reference-external-tag" style="special-tag" />
+	<highlight name="table-tag" style="special-tag2" />
+	<highlight name="form-tag" style="special-tag3" />
+	<highlight name="attribute" style="attribute" />
+	<highlight name="string" style="string" />
+	<highlight name="entity" style="value" />
+	<highlight name="brackets" style="brackets" />
+	<highlight name="js-keyword" style="keyword" />
+	<highlight name="js-brackets" style="brackets" />
+	<highlight name="js-type" style="type" />
+	<highlight name="js-comment" style="comment" />
+	<highlight name="js-css-property" style="function" />
+	<highlight name="js-string" style="string" />
+	<highlight name="js-value" style="value" />
+	<highlight name="js-variable" style="variable" />
+	<highlight name="js-function" style="function" />
+	<highlight name="js-property" style="special-function" />
+	<highlight name="css-brackets" style="brackets" />
+	<highlight name="css-comment" style="comment" />
+	<highlight name="css-html-tag" style="tag" />
+	<highlight name="css-html-classid" style="tag" />
+	<highlight name="css-html-media" style="special-tag" />
+	<highlight name="css-keyword" style="keyword" />
+	<highlight name="css-property" style="special-keyword" />
+	<highlight name="css-draft-property" style="special-tag3" />
+	<highlight name="css-string" style="string" />
+	<highlight name="css-value" style="value" />
+	<highlight name="css-pseudo-element" style="keyword" />
+	<highlight name="css-operator" style="operator" />
+	<highlight name="html-comment" style="comment" />
+</header>
+<properties>
+	<comment id="cm.htmlcomment" type="block" start="&lt;!--" end="--&gt;" />
+	<comment id="cm.cblockcomment" type="block" start="/*" end="*/" />
+	<comment id="cm.cpplinecomment" type="line" start="//" />
+	<comment id="cm.scriptcomment" type="line" start="#" />
+
+	<default_spellcheck enabled="1" spell_decode_entities="1" />
+</properties>
+
+<definition>
+<context symbols="&gt;&lt;&amp;; &#9;&#10;&#13;-" commentid_block="cm.htmlcomment" commentid_line="none">
+<tag name="html" attributes="xmlns,version,&i18n;,&xml;" attribhighlight="attribute" highlight="tag" >
+	<autocomplete append=" xmlns=&quot;http://www.w3.org/1999/xhtml&quot; &gt;&#10;&#10;&lt;/html&gt;" backup_cursor="8" />
+</tag>
+
+<tag name="head" attributes="profile,&i18n;" highlight="tag" >
+	<context symbols="&gt;&lt;&amp;; &#9;&#10;&#13;">
+	<tag name="meta" highlight="tag" attributes="name,http-equiv,content,scheme,lang" attribhighlight="attribute"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1" >
+		<autocomplete append=" /&gt;" />
+	</tag>
+	<tag name="title" highlight="tag" attributes="&i18n;"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1" >
+		<autocomplete append=" /&gt;" />
+	</tag>
+	<tag name="base" highlight="tag" attributes="href,target"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1" >
+		<autocomplete append=" /&gt;" />
+	</tag>
+
+<element id="e.html.comment" pattern="&lt;!--" highlight="html-comment" starts_block="1">
+	<context symbols="-&gt; &#9;&#10;&#13;" highlight="html-comment">
+		<element pattern="--&gt;" ends_block="1" blockstartelement="e.html.comment" highlight="html-comment" mayfold="1" ends_context="1" />
+	</context>
+</element>
+<element id="e.html.entity" pattern="&amp;[a-z0-9#]+;" is_regex="1" highlight="entity" />
+
+<tag id="t.xhtml.script" name="script" highlight="tag" attributes="charset,defer,language,src,type"  attribhighlight="attribute">
+	<autocomplete append=" type=&quot;text/javascript&quot; &gt;" />
+<context symbols=" ;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;." default_spellcheck="0">
+	<element pattern="(" id="e.xhtml.js.lparen" starts_block="1" highlight="js-brackets" />
+	<element pattern=")" highlight="js-brackets" ends_block="1" blockstartelement="e.xhtml.js.lparen" />
+	<element pattern="{" id="e.xhtml.js.lbrace" starts_block="1" highlight="js-brackets" />
+	<element pattern="}" highlight="js-brackets" ends_block="1" blockstartelement="e.xhtml.js.lbrace" />
+	<element pattern="[" id="e.xhtml.js.lbracket" starts_block="1" highlight="js-brackets" />
+	<element pattern="]" highlight="js-brackets" ends_block="1" blockstartelement="e.xhtml.js.lbracket" />
+	&all-javascript;
+	<element pattern="//" highlight="js-comment">
+		<context symbols="&#10;&#13;&gt;&lt; " highlight="js-comment">
+			<element pattern="(&#10;|&#13;|&#13;&#10;)" is_regex="1" highlight="js-comment" ends_context="1" />
+			<element pattern="&lt;/script&gt;" highlight="tag" ends_context="3" ends_block="1" blockstartelement="t.xhtml.script"/>
+		</context>
+	</element>
+	<element id="e.xhtml.js.blockcomment" pattern="/*" starts_block="1" highlight="js-comment">
+		<context symbols="*/&#9;&#10;&#13;&gt;&lt; " highlight="js-comment">
+			<element pattern="*/" ends_block="1" blockstartelement="e.xhtml.js.blockcomment" highlight="js-comment" mayfold="1" ends_context="1" />
+			<element pattern="&lt;/script&gt;" highlight="tag" ends_context="3" ends_block="1" blockstartelement="t.xhtml.script"/>
+		</context>
+	</element>
+	<element idref="e.html.comment"/>
+</context>
+</tag>
+<tag name="style" highlight="tag" attributes="type,src" attribhighlight="attribute"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1" >
+	<autocomplete append=" /&gt;" />
+	<context id="c.html.css.main" symbols=" &#9;&#10;&#13;{}./*&lt;&gt;:+~[]," default_spellcheck="0">
+		<element idref="e.html.comment"/>
+		<element id="e.xhtml.css.lcomment" pattern="/*" starts_block="1" highlight="css-comment">
+			<context symbols="*/&#9;&#10;&#13;" highlight="css-comment">
+				<element pattern="*/" ends_block="1" blockstartelement="e.xhtml.css.lcomment" highlight="css-comment" ends_context="1" />
+			</context>
+		</element>
+		&css-selectors;
+		<group highlight="css-html-media">
+			<element pattern="@media">
+			<context symbols=" &#9;&#10;&#13;{}.;,">
+				<group highlight="css-html-media" >
+					<autocomplete enable="1" />
+					<element pattern="all" />
+					<element pattern="aural" />
+					<element pattern="braille" />
+					<element pattern="embossed" />
+					<element pattern="handheld" />
+					<element pattern="print" />
+					<element pattern="projection" />
+					<element pattern="screen" />
+					<element pattern="tty" />
+					<element pattern="tv" />
+					<element id="e.css.media.group.lbrace" pattern="{" starts_block="1" highlight="css-brackets">
+						<context idref="c.html.css.main" />
+					</element>
+				</group>
+			</context>
+			</element>
+			<element pattern="}" ends_block="1" highlight="css-brackets" blockstartelement="e.css.media.group.lbrace" ends_context="2" />
+		</group>
+		<element id="e.css.lbrace" pattern="{" starts_block="1" highlight="brackets">
+			<context symbols=" &#9;&#10;&#13;{}.:&quot;';">
+				<element id="e.css.lcomment" pattern="/*" starts_block="1" highlight="css-comment">
+					<context symbols="*/&#9;&#10;&#13;" highlight="css-comment">
+						<element pattern="*/" ends_block="1" blockstartelement="e.css.lcomment" highlight="css-comment" mayfold="1" ends_context="1" />
+					</context>
+				</element>
+				&css-rules;
+				<element pattern="&lt;/style&gt;" highlight="tag" ends_context="3" />
+				<element pattern="}" ends_block="1" blockstartelement="e.css.lbrace" highlight="brackets" ends_context="1" />
+			</context>
+		</element>
+	</context>
+</tag>
+
+	<tag name="link" highlight="tag" attributes="class,href,id,media,rel,rev,style,title,type" attribhighlight="attribute"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1" >
+		<autocomplete append=" /&gt;" />
+	</tag>
+
+	</context>
+</tag>
+
+<tag name="body" highlight="tag"   attributes="alink,background,bgcolor,link,onload,onunload,text,vlink,&univ;,&i18n;">
+	<autocomplete append="&gt;&#10;&#10;&lt;/body&gt;" backup_cursor="8" />
+	<context symbols="&gt;&lt;&amp;; &#9;&#10;&#13;">
+		<tag idref="t.xhtml.script" />
+		<group highlight="reference-external-tag" attribhighlight="attribute"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+			<autocomplete append="&gt;" />
+			<tag name="a" attributes="accesskey,charset,coords,href,hreflang,name,onblur,onfocus,rel,rev,shape,tabindex,target,type,&univ;,&i18n;,&evnt;" >
+				<autocomplete append=" href=&#34;&#34; &gt;" />
+			</tag>
+			<tag name="img" attributes="align,alt,border,height,hspace,ismap,longdesc,name,src,usemap,vspace,width,&univ;,&i18n;,&evnt;" >
+				<autocomplete append=" src=&#34;&#34; alt=&#34;&#34; /&gt;" />
+				<reference>The img tag inserts an image into a document</reference>
+			</tag>
+			<tag name="object" attributes="align,archive,border,classid,codebase,codetype,data,declare,height,hspace,name,standby,tabindex,type,usemap,vspace,width,&univ;,&i18n;,&evnt;" />
+			<tag name="param" attributes="id,name,value,valuetype,type" >
+				<autocomplete append=" name=&#34;&#34; &gt;" />
+			</tag>
+		</group>
+		<group highlight="tag" attribhighlight="attribute"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+			<autocomplete append="&gt;" />
+			<tag name="abbr" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="acronym" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="address" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="area" attributes="&univ;,&i18n;,&evnt;,alt,accesskey,coords,href,nohref,onblur,onfocus,shape,tabindex,target"/>
+			<tag name="b" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="bdo" attributes="&univ;,&i18n;"/>
+			<tag name="big" attributes="&univ;,&i18n;"/>
+			<tag name="blockquote" attributes="&univ;,&i18n;,&evnt;,cite"/>
+			<tag name="br" attributes="&univ;" >
+				<autocomplete append=" /&gt;" />
+			</tag>
+			<tag name="button" attributes="&univ;,&i18n;,&evnt;,accesskey,disabled,name,onblur,onfocus,tabindex,type,value"/>
+			<tag name="cite" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="code" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="col" attributes="&univ;,&i18n;,&evnt;,align,char,charoff,span,valign,width"/>
+			<tag name="colgroup" attributes="&univ;,&i18n;,&evnt;,align,char,charoff,span,valign,width"/>
+			<tag name="del" attributes="&univ;,&i18n;,&evnt;,cite,datetime"/>
+			<tag name="dd" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="dfn" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="div" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="dl" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="dt" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="em" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="i" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="ins" attributes="&univ;,&i18n;,&evnt;,cite,datetime"/>
+			<tag name="h1" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="h2" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="h3" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="h4" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="h5" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="h6" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="hr" attributes="&univ;" >
+				<autocomplete append=" /&gt;" />
+			</tag>
+			<tag name="kbd" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="li" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="noscript" attributes="&univ;,&i18n;,&evnt;,&xml;"/>
+			<tag name="ol" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="p" attributes="&univ;,&evnt;"/>
+			<tag name="pre" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="q" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="samp" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="span" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="strong" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="sub" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="sup" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="u" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="ul" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="var" attributes="&univ;,&i18n;,&evnt;"/>
+		</group>
+		<group highlight="form-tag" attribhighlight="attribute"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+			<tag name="fieldset" attributes="&univ;,&i18n;,&evnt;"/>
+			<tag name="form" attributes="&univ;,&i18n;,&evnt;,accept,accept-charset,action,enctype,method,onsubmit,onreset"/>
+			<tag name="input" attributes="&univ;,&i18n;,&evnt;,type,name,value,checked,disabled,readonly,size,maxlength,src,alt,usemap,onselect,onchange,accept,accesskey,tabindex,onfocus,onblur" no_close="1">
+				<autocomplete append=" /&gt;" backup_cursor="2" />
+			</tag>
+			<tag name="label" attributes="&univ;,&i18n;,&evnt;,accesskey,for,onfocus,onblur"/>
+			<tag name="legend" attributes="&univ;,&i18n;,&evnt;,accesskey"/>
+			<tag name="optgroup" attributes="&univ;,&i18n;,&evnt;,disabled,label"/>
+			<tag name="option" attributes="&univ;,&i18n;,&evnt;,selected,disabled,label,value"/>
+			<tag name="select" attributes="&univ;,&i18n;,&evnt;,name,size,multiple,disabled,tabindex,onfocus,onblur,onchange"/>
+			<tag name="textarea" attributes="&univ;,&i18n;,&evnt;,name,rows,cols,disabled,readonly,onselect,onchange"/>
+		</group>
+		<group highlight="table-tag" attribhighlight="attribute"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+			<autocomplete append="&gt;" />
+			<tag name="table" attributes="align,border,bgcolor,cellpadding,cellspacing,frame,rules,summary,width,&univ;,&i18n;,&evnt;" >
+				<autocomplete append=" summary=&quot;&quot; &gt;" />
+			</tag>
+			<tag name="caption" attributes="align,&univ;,&i18n;,&evnt;" />
+			<tag name="td" attributes="abbr,align,axis,bgcolor,char,charoff,colspan,headers,height,nowrap,rowspan,scope,valign,width,&univ;,&i18n;,&evnt;" />
+			<tag name="th" attributes="abbr,align,axis,bgcolor,char,charoff,colspan,headers,height,nowrap,rowspan,scope,valign,width,&univ;,&i18n;,&evnt;" />
+			<tag name="tr" attributes="align,bgcolor,char,charoff,valign,&univ;,&i18n;,&evnt;" />
+			<tag name="tbody" attributes="align,char,charoff,valign,&univ;,&i18n;,&evnt;" />
+			<tag name="tfoot" attributes="align,char,charoff,valign,&univ;,&i18n;,&evnt;" />
+			<tag name="thead" attributes="align,char,charoff,valign,&univ;,&i18n;,&evnt;" />
+		</group>
+		<element idref="e.html.comment" />
+		<element idref="e.html.entity"/>
+	</context>
+</tag>
+</context>
+</definition>
+</bflang>
