@@ -1,6 +1,7 @@
-bluefish (2.2.4-3) UNRELEASED; urgency=low
+bluefish (2.2.5-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * New upstream release.
   * debian/control (Standards-Version): Bumped to 3.9.5.
   * debian/upstream-signing-key.pgp: Added upstream keyring.
   * debian/watch: Added signature URL.
