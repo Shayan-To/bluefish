@@ -3,7 +3,7 @@ bluefish (2.2.5-1) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * New upstream release.
   * debian/control (Standards-Version): Bumped to 3.9.5.
-  * debian/upstream-signing-key.pgp: Added upstream keyring.
+  * debian/upstream/signing-key.pgp: Added upstream keyring.
   * debian/watch: Added signature URL.
   * debian/source/include-binaries: Added debian/upstream-signing-key.pgp.
 
