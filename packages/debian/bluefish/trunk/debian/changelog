@@ -1,8 +1,7 @@
-bluefish (2.2.5-1) UNRELEASED; urgency=low
+bluefish (2.2.5-1) unstable; urgency=low
 
-  * NOT RELEASED YET
   * New upstream release.
-    - Fixes some sort of PHP highlighting bug (LP: #1242387, #1263967).
+    - Fixes a highlighting bug (LP: #1242387, #1263967).
   * debian/control (Standards-Version): Bumped to 3.9.5.
     (Build-Depends): Added dh-autoreconf and some GTK related version info.
   * debian/copyright: Fixed unversioned-copyright-format-uri.
@@ -11,7 +10,7 @@ bluefish (2.2.5-1) UNRELEASED; urgency=low
   * debian/watch: Added signature URL.
   * debian/source/include-binaries: Added debian/upstream-signing-key.pgp.
 
- -- Daniel Leidert <dleidert@debian.org>  Sun, 19 Jan 2014 01:59:28 +0100
+ -- Daniel Leidert <dleidert@debian.org>  Tue, 11 Feb 2014 16:52:23 +0100
 
 bluefish (2.2.4-2) unstable; urgency=low
 
