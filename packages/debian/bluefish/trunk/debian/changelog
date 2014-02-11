@@ -2,8 +2,12 @@ bluefish (2.2.5-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * New upstream release.
+    - Fixes some sort of PHP highlighting bug (LP: #1242387, #1263967).
   * debian/control (Standards-Version): Bumped to 3.9.5.
-  * debian/upstream/signing-key.pgp: Added upstream keyring.
+    (Build-Depends): Added dh-autoreconf and some GTK related version info.
+  * debian/copyright: Fixed unversioned-copyright-format-uri.
+  * debian/rules: Use the autoreconf addon (closes: #737671).
+  * debian/upstream-signing-key.pgp: Added upstream keyring.
   * debian/watch: Added signature URL.
   * debian/source/include-binaries: Added debian/upstream-signing-key.pgp.
 
