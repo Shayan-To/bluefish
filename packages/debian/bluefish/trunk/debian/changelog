@@ -1,3 +1,9 @@
+bluefish (2.2.5-2) UNRELEASED; urgency=low
+
+  * 
+
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 15 Feb 2014 12:11:19 +0100
+
 bluefish (2.2.5-1) unstable; urgency=low
 
   * New upstream release.
