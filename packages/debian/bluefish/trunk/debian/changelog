@@ -1,3 +1,9 @@
+bluefish (2.2.5-3) UNRELEASED; urgency=low
+
+  * 
+
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 15 Feb 2014 14:07:18 +0100
+
 bluefish (2.2.5-2) unstable; urgency=low
 
   * debian/bluefish.install: Added appdata file.
