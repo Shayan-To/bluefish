@@ -1,4 +1,4 @@
-bluefish (2.2.5-2) UNRELEASED; urgency=low
+bluefish (2.2.5-2) unstable; urgency=low
 
   * debian/bluefish.install: Added appdata file.
   * debian/control (Vcs-Browser, Vcs-Svn): Fixed URLs.
@@ -6,7 +6,7 @@ bluefish (2.2.5-2) UNRELEASED; urgency=low
   * debian/rules (override_dh_installchangelogs): Dropped as ChangeLog is now
     used.
 
- -- Daniel Leidert <dleidert@debian.org>  Sat, 15 Feb 2014 12:11:19 +0100
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 15 Feb 2014 13:42:42 +0100
 
 bluefish (2.2.5-1) unstable; urgency=low
 
