@@ -19,8 +19,8 @@ Build-Depends: debhelper (>> 7.0.50~),
                zlib1g-dev
 Standards-Version: 3.9.5
 Homepage: http://bluefish.openoffice.nl
-Vcs-Browser: http://bluefish.svn.sourceforge.net/viewvc/bluefish/packages/debian/bluefish/trunk/
-Vcs-Svn: https://bluefish.svn.sourceforge.net/svnroot/bluefish/packages/debian/bluefish/trunk/
+Vcs-Browser: http://sourceforge.net/p/bluefish/code/HEAD/tree/packages/debian/bluefish/trunk/
+Vcs-Svn: svn://svn.code.sf.net/p/bluefish/code/packages/debian/bluefish/trunk/
 
 Package: bluefish
 Architecture: any

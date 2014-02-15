@@ -1,4 +1,5 @@
 usr/bin
+usr/share/appdata
 usr/share/applications
 usr/share/man
 ../../debian/bluefish.xpm usr/share/pixmaps/

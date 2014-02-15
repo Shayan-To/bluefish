@@ -9,7 +9,7 @@ Comment: This package was debianized by Davide Puricelli <evo@debian.org>.
 License: GPL-3+
 
 Files: *
-Copyright: Copyright (C) 1998-2013 Olivier Sessink
+Copyright: Copyright (C) 1998-2014 Olivier Sessink
            Copyright (C) 1998-2000 Chris Mazuc
            Copyright (C) 1998-2002 Roland Steinbach
            Copyright (C) 1999 Antti-Juhani Kaijanaho
@@ -18,7 +18,7 @@ Copyright: Copyright (C) 1998-2013 Olivier Sessink
            Copyright (C) 2003,2007 Oskar Świda
            Copyright (C) 2004 Eugene Morenko
            Copyright (C) 2004 Salvador Fandino
-           Copyright (C) 2005-2011 James Hayward
+           Copyright (C) 2005-2012 James Hayward
            Copyright (C) 2006,2009-2011 Daniel Leidert
 Comment: Partial code copyright:
  src/gtk_easy.c:
@@ -30,9 +30,44 @@ Comment: Partial code copyright:
   But many others also contributed code.
 License: GPL-3+
 
+Files: data/cssmin.py
+Copyright: Copyright (C) 2010 Zachary Voase
+License: Expat
+
+Files: data/jsbeautify data/jsbeautifier/**
+Copyright: Copyright (C) 2007-2013 Einar Lielmanis and contributors
+License: Expat
+
+Files: data/jsmin.py
+Copyright: Copyright (C) 2013 Dave St.Germain
+License: Expat
+
+Files: src/plugin_zencoding/zencoding/**
+Copyright: Copyright (C) 2012 Sergey Chikuyonok <serge.che@gmail.com>
+License: Expat
+
 Files: debian/*
 Copyright: Copyright (C) 2005-2013 Daniel Leidert <dleidert@debian.org>
 License: GPL-3+
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
 
 License: GPL-3+
  This program is free software: you can redistribute it and/or modify
