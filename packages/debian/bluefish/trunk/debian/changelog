@@ -3,8 +3,8 @@ bluefish (2.2.5-2) UNRELEASED; urgency=low
   * debian/bluefish.install: Added appdata file.
   * debian/control (Vcs-Browser, Vcs-Svn): Fixed URLs.
   * debian/copyright: Updated. Added missing plugin information.
-  * debian/rules (override_dh_install): Exclude libtool .la files.
-    (override_dh_installchangelogs): Dropped as ChangeLog is now used.
+  * debian/rules (override_dh_installchangelogs): Dropped as ChangeLog is now
+    used.
 
  -- Daniel Leidert <dleidert@debian.org>  Sat, 15 Feb 2014 12:11:19 +0100
 
