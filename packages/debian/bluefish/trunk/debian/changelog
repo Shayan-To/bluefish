@@ -1,10 +1,10 @@
-bluefish (2.2.5-3) UNRELEASED; urgency=low
+bluefish (2.2.5-3) unstable; urgency=low
 
   * debian/control (Description): Major update.
     (Suggests): Added csstidy, dos2unix, pylint and php-codesniffer.
   * debian/copyright: Added missing information about lorem-impsum-generator.
 
- -- Daniel Leidert <dleidert@debian.org>  Sat, 15 Feb 2014 14:07:18 +0100
+ -- Daniel Leidert <dleidert@debian.org>  Sun, 16 Feb 2014 12:08:39 +0100
 
 bluefish (2.2.5-2) unstable; urgency=low
 
