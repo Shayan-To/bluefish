@@ -53,7 +53,7 @@ Description: advanced Gtk+ text editor for web and software development
   - Zencoding or Emmet support
   - Bookmarks panel
  .
- but is still leightweight and fast.
+ but is still lightweight and fast.
  .
  For validation of CSS/HTML/XML documents you need csstidy, tidy, weblint
  and/or xmllint. For preview to work, you need a web browser that can view
@@ -80,7 +80,7 @@ Description: advanced Gtk+ text editor (plugins)
   - Zencoding or Emmet support
   - Bookmarks panel
  .
- but is still leightweight and fast.
+ but is still lightweight and fast.
  .
  This package contains the plugins. You will need it for the HTML dialogs,
  snippets, charmaps etc. So it's basically necessary.
@@ -110,7 +110,7 @@ Description: advanced Gtk+ text editor (data)
   - Zencoding or Emmet support
   - Bookmarks panel
  .
- but is still leightweight and fast.
+ but is still lightweight and fast.
  .
  This package contains the architecture independent data for the application
  and its plugins.
@@ -150,7 +150,7 @@ Description: advanced Gtk+ text editor (debugging symbols)
   - Zencoding or Emmet support
   - Bookmarks panel
  .
- but is still leightweight and fast.
+ but is still lightweight and fast.
  .
  This package contains the debugging symbols. It is recommended to
  if you suffer a crash. Then use the gdb program to create a useful
