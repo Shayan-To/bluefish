@@ -1,4 +1,4 @@
-bluefish (2.2.5-4) UNRELEASED; urgency=low
+bluefish (2.2.5-4) UNRELEASED; urgency=medium
 
   * debian/control (Description): Fixed typo.
 
