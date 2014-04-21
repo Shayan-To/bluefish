@@ -1,0 +1,79 @@
+Project leader:
+  Olivier Sessink <olivier@bluefish.openoffice.nl>
+
+Developers for this release: 
+  Olivier Sessink <olivier@bluefish.openoffice.nl>
+  Andrius <andriusr@yahoo.com>
+  Jim Hayward <jimhayward@linuxexperience.net>
+  Daniel Leidert <daniel.leidert@wgdd.de>
+  Shawn Novak <kernel86@gmail.com>
+  Frédéric Falsetti <falsetti@clansco.org>
+
+Developers for previous releases:
+  Oskar Świda
+  Eugene Morenko(More)
+  Alastair Porter
+  Chris Mazuc
+  Neil Millar
+  Gero Takke
+  Bo Forslund
+  David Arno
+  Pablo De Napoli
+  Santiago Capel Torres
+  Rasmus Toftdahl Olesen <rto@pohldata.dk>
+  Roland Steinbach <roland@netzblick.de>
+  Christian Tellefsen <chris@tellefsen.net>
+  Antti-Juhani Kaijanaho
+  Yanike Mann <yanikem@gmail.com>
+
+Translators:
+  Basque (EU)                   Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+  Brazilian Portuguese (PT_BR)  Matheus Cunha Motta <esfingemetal@gmail.com>
+  Catalan (CA):					Mònica Ramírez Arceda <monica@probeta.net>
+  Chinese (ZH_CN)               ZhiFeng Ma <mzf9527@gmail.com>
+  Czech (CS)                    Marek Černocký <marek@manet.cz>
+  Danish (DA)                   Flemming Christensen <fc@stromata.dk>
+  Dutch (NL)                    Olivier Sessink <olivier@bluefish.openoffice.nl>
+  French (FR)                   Frédéric Falsetti <falsetti@clansco.org>
+  Galician (GL)                 Xose M. Lamas <correo.xmgz@gmail.com>
+  German (DE)                   Daniel Leidert <daniel.leidert@wgdd.de>
+  Hungarian (HU)                Balázs Úr <urbalazs@gmail.com>
+  Italian (IT)                  Roberto Bellingeri <bellingeri@netguru.it>
+  Japanese (JA)                 Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>
+  Norwegian (NB)                Christian Tellefsen <chris@tellefsen.net>
+  Nynorsk (NN)                  Yngve Spjeld Landro <l10n@landro.net>
+  Polish (PL)                   Quick-Master SI <dawajpoczte@gmail.com>
+  Russian (RU)                  Fr. Br. George <george@altlinux.org>
+  Spanish (ES)                  Daniel Mustieles <daniel.mustieles@gmail.com>
+  Ukrainian (UK)                Yuri Chornoivan <yurchor@ukr.net>
+
+Previous translators (translations outdated):
+  Bulgarian (BG):                Peio Popov <peio(at)peio.org>
+  Catalan (CA):                  Jordi Sánchez <parki(at)softhome.net>
+  Chinese Traditional (zh_TW):   OLS3 <ols3@lxer.idv.tw>
+  Finnish (FI):                  Juho Roukala <j.mr@luukku.com>
+  Greek (EL):                    Constantin Fabrikezis <phi-kappa(at)tiscali.fr>
+  Korean (KO):                   Taehun Kang 강태헌 <u4800330@anu.edu.au>
+  Portuguese (PT):               Lopo Pizarro <lopopizarro@netcabo.pt>
+  Serbian (SR):                  Marko Milenović <raven@sbb.co.yu>
+  Swedish (SV):                  David Smeringe <david.smeringe@telia.com>
+  Tamil (TA):                    Murugapandian Barathee <barathee@yahoo.com>
+  Turkish (TR):                  Oğuz Eren <ogzeren@gmail.com>
+
+Documentation: 
+  Scott White     <wwsw3@earthlink.net>
+  Michèle Garoche <michele.garoche@easyconnect.fr>
+  Anita Lewis     <ajreiki@highstream.net>
+  Alastair Porter <alastair@linuxexperience.com>
+  Daniel Blair    <joecamel@realcoders.org>
+  Olivier Sessink <olivier@bluefish.openoffice.nl>
+  Denny Reeh
+
+Package Maintainers:
+  Debian/Ubuntu:   Daniel Leidert <daniel.leidert@wgdd.de>
+            thanks to Davide Puricelli <evo(at)debian.org> for the former maintainership
+  Redhat/Fedora:   Matthias Haase <matthias_haase(at)bennewitz.com>
+  Windows:  Shawn Novak <kernel86@gmail.com> and
+            Daniel Leidert <daniel.leidert@wgdd.de>
+  Native OSX: Olivier Sessink <olivier@bluefish.openoffice.nl>
+  Fink:     Michèle Garoche <michele.garoche@easyconnect.fr>
