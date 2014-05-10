@@ -1,5 +1,6 @@
-bluefish (2.2.5-4) UNRELEASED; urgency=medium
+bluefish (2.2.6-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * debian/control (Description): Fixed typo.
 
  -- Daniel Leidert <dleidert@debian.org>  Mon, 24 Feb 2014 21:36:17 +0100
