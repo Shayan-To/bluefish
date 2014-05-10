@@ -1,9 +1,11 @@
-bluefish (2.2.6-1) UNRELEASED; urgency=medium
+bluefish (2.2.6-1) unstable; urgency=medium
 
   * New upstream release.
+    - Fixes a serious segmentation fault (LP: #1300648, #1317650).
+    - Improves handling of image files in the filebrowser (LP: #1248595).
   * debian/control (Description): Fixed typo.
 
- -- Daniel Leidert <dleidert@debian.org>  Mon, 24 Feb 2014 21:36:17 +0100
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 10 May 2014 23:13:37 +0200
 
 bluefish (2.2.5-3) unstable; urgency=low
 
