@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		javascript.bflang2 $Revision$
+ 
+		Copyright (C) 2008-2012 Olivier Sessink
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.		
+-->
+<!DOCTYPE bflang [
+	<!ENTITY all-javascript SYSTEM "all-javascript.bfinc">
+	<!ENTITY JQuery SYSTEM "JQuery.bfinc">
+]>
+
+<bflang name="Javascript" version="2.0" table="3476" contexts="10" matches="778">
+<header>
+	<mime type="application/javascript"/>
+	<option name="load_reference" default="1"/>
+	<option name="load_completion" default="1"/>
+	<option name="show_in_menu" default="1"/>
+	<option name="autocomplete_with_newlines" default="0" description="autocomplete with newlines"/>
+	<option name="autocomplete_javascript_var" default="1" description="autocomplete javascript variables"/>
+	<option name="javascript_object_methods" default="1" description="Autocomplete Javascript object methods" />
+	<option name="javascript_css_properties" default="1" description="CSS properties" />
+	<option name="JQuery" default="0" description="include JQuery syntax" />
+	<highlight name="js-brackets" style="brackets"  />
+	<highlight name="js-comment" style="comment"  />
+	<highlight name="js-css-property" style="function"  />
+	<highlight name="js-function" style="function"  />
+	<highlight name="js-keyword" style="keyword"  />
+	<highlight name="js-property" style="special-keyword"  />
+	<highlight name="js-special-keyword" style="special-keyword"  />
+	<highlight name="js-string" style="string"  />
+	<highlight name="js-type" style="type"  />
+	<highlight name="js-value" style="value"  />
+	<highlight name="js-variable" style="variable"  />
+</header>
+<properties>
+	<comment id="cm.cblockcomment" type="block" start="/*" end="*/" />
+	<comment id="cm.cpplinecomment" type="line" start="//" />
+	<smartindent characters="{" />
+	<smartoutdent characters="}" />
+</properties>
+
+<definition>
+	<context symbols=" ;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;." commentid_line="cm.cpplinecomment"  commentid_block="cm.cblockcomment">
+		<element pattern="(" id="e.html.js.lparen" starts_block="1" highlight="js-brackets" />
+		<element pattern=")" highlight="js-brackets" ends_block="1" blockstartelement="e.html.js.lparen" />
+		<element pattern="{" id="e.html.js.lbrace" starts_block="1" highlight="js-brackets" block_name="Curly brackets block"/>
+		<element pattern="}" highlight="js-brackets" ends_block="1" blockstartelement="e.html.js.lbrace" />
+		<element pattern="[" id="e.html.js.lbracket" starts_block="1" highlight="js-brackets" />
+		<element pattern="]" highlight="js-brackets" ends_block="1" blockstartelement="e.html.js.lbracket" />
+		&all-javascript;
+		<group class="JQuery">
+			&JQuery;
+		</group>
+		<element id="e.bcomment" pattern="/*" starts_block="1" highlight="js-comment" block_name="C style comment">
+			<context symbols="*/&#9;&#10;&#13; " highlight="js-comment">
+				<element pattern="*/" ends_block="1" blockstartelement="e.bcomment" highlight="js-comment" ends_context="1" />
+			</context>
+		</element>
+		<element pattern="//" highlight="js-comment">
+			<context symbols="&#10;&#13;&#9; " highlight="js-comment">
+				<element pattern="(&#10;|&#13;|&#13;&#10;)" is_regex="1" highlight="js-comment" ends_context="1" />
+			</context>
+		</element>
+	</context>
+</definition>
+</bflang>
