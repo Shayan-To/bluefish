@@ -2496,7 +2496,7 @@ fb2_update_settings_from_session(Tbfwin * bfwin, Tdocument *active_doc)
 		DEBUG_MSG("fb2_update_settings_from_session, set basedir %s\n", tmp);
 		if (tmp && tmp[0]) {
 			GtkTreePath *fs_path, *filter_path;
-			GFile *uri = g_file_new_for_uri(strip_trailing_slash((gchar *) tmp));
+			GFile *uri = g_file_new_for_uri(strcmp(tmp,"file:///")==0?tmp:strip_trailing_slash((gchar *) tmp));
 			DEBUG_MSG("fb2_update_settings_from_session, set basedir %p\n",uri);
 			fb2_set_basedir(fb2, uri);
 			fb2_set_dirmenu(fb2, uri, FALSE);
