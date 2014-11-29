@@ -16,6 +16,9 @@ LDFLAGS  ?= $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 %:
 	dh $@ --with autoreconf,python2 --parallel
 
+override_dh_autoreconf:
+	/bin/bash $(CURDIR)/autogen.sh -c
+
 override_dh_auto_test:
 override_dh_auto_configure: configure
 	dh_auto_configure -- \
