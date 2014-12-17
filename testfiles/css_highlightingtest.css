@@ -1,0 +1,10 @@
+
+#main-content a:visited:before {
+   content:  "\2713 ";
+}
+
+body {
+	background-color: red;
+	color: #ffffff;
+}
+
