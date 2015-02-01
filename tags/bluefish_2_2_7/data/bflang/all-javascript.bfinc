@@ -1,0 +1,1718 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+		Bluefish HTML Editor
+		all-javascript.bfinc $Revision$
+ 
+		Copyright (C) 2008-2014 Olivier Sessink
+
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.		
+-->
+
+<!-- JavaScript Keywords -->
+<bfinc>
+
+<element pattern="&#34;" id="e.jscript.dquot" highlight="js-string">
+	<context symbols="\&#34;" highlight="js-string">
+		<element pattern="\\." is_regex="1" highlight="js-string" />
+		<element pattern="&#34;" highlight="js-string" ends_context="1" />
+	</context>
+</element>
+<element pattern="'" id="e.jscript.squot" highlight="js-string">
+	<context symbols="\'" highlight="js-string">
+		<element pattern="\\." is_regex="1" highlight="js-string" />
+		<element pattern="'" highlight="js-string" ends_context="1" />
+	</context>
+</element>
+
+
+<group highlight="js-keyword" >
+	<autocomplete enable="1" />
+	<element pattern="break" />
+	<element pattern="case">
+		<autocomplete append=" :" backup_cursor="1" />
+	</element>
+	<element pattern="catch" >
+		<autocomplete append=" () {&#10;&#9;&#10;}" backup_cursor="8" class="autocomplete_with_newlines"/>
+		<autocomplete append=" () {" backup_cursor="4" notclass="autocomplete_with_newlines"/>
+	</element>
+	<element pattern="continue" />
+	<element pattern="default" />
+	<element pattern="delete" />
+	<element pattern="do">
+		<autocomplete append=" {&#10;&#9;&#10;}" backup_cursor="2" class="autocomplete_with_newlines"/>
+		<autocomplete append=" {" notclass="autocomplete_with_newlines"/>
+	</element>
+	<element pattern="else" >
+		<autocomplete append=" {&#10;&#9;&#10;}" backup_cursor="2" class="autocomplete_with_newlines"/>
+		<autocomplete append=" {" notclass="autocomplete_with_newlines"/>
+	</element>
+	<element pattern="finally" />
+	<element pattern="for">
+		<autocomplete append=" () {&#10;&#9;&#10;}" backup_cursor="7" class="autocomplete_with_newlines"/>
+		<autocomplete append=" () {" backup_cursor="3" notclass="autocomplete_with_newlines"/>
+	</element>
+	<element pattern="function">
+		<autocomplete append=" () {&#10;&#9;&#10;}" backup_cursor="8" class="autocomplete_with_newlines"/>
+		<autocomplete append=" () {" backup_cursor="4" notclass="autocomplete_with_newlines"/>
+	</element>
+	<element pattern="if">
+		<autocomplete append=" () {&#10;&#9;&#10;}" backup_cursor="7" class="autocomplete_with_newlines"/>
+		<autocomplete append=" () {" backup_cursor="3" notclass="autocomplete_with_newlines"/>
+	</element>
+	<element pattern="in" />
+	<element pattern="instanceof" />
+	<element pattern="new" />
+	<element pattern="return" />
+	<element pattern="switch">
+		<autocomplete append="() {&#10;&#9;&#10;}" backup_cursor="7" class="autocomplete_with_newlines"/>
+		<autocomplete append="() {" backup_cursor="3" notclass="autocomplete_with_newlines"/>
+	</element>
+	<element pattern="this" />
+	<element pattern="throw" />
+	<element pattern="try" >
+		<autocomplete append=" {&#10;&#9;&#10;}" backup_cursor="2" class="autocomplete_with_newlines"/>
+		<autocomplete append=" {" notclass="autocomplete_with_newlines"/>
+	</element>
+	<element pattern="var" identifier_mode="1"  identifier_jump="1" identifier_autocomp="option:autocomplete_javascript_var"/>
+	<element pattern="void" />
+	<element pattern="while" >
+		<autocomplete append=" ()" backup_cursor="1"/>
+	</element>
+	<element pattern="with" />
+</group>
+<!-- ECMA-262 reserved words -->
+<group highlight="js-keyword" >
+	<autocomplete enable="1" />
+	<element pattern="abstract" />
+	<element pattern="boolean" />
+	<element pattern="byte" />
+	<element pattern="char" />
+	<element pattern="class" />
+	<element pattern="const" />
+	<element pattern="debugger" />
+	<element pattern="double" />
+	<element pattern="enum" />
+	<element pattern="export" />
+	<element pattern="extends" />
+	<element pattern="final" />
+	<element pattern="float" />
+	<element pattern="goto" />
+	<element pattern="implements" />
+	<element pattern="import" />
+	<element pattern="int" />
+	<element pattern="interface" />
+	<element pattern="long" />
+	<element pattern="native" />
+	<element pattern="package" />
+	<element pattern="private" />
+	<element pattern="protected" />
+	<element pattern="prototype" />
+	<element pattern="public" />
+	<element pattern="short" />
+	<element pattern="static" />
+	<element pattern="super" />
+	<element pattern="synchronized" />
+	<element pattern="throws" />
+	<element pattern="transient" />
+	<element pattern="volatile" />
+</group>
+<group highlight="js-function" >
+	<autocomplete append="()" backup_cursor="1" />
+	<element pattern="arguments"/>
+	<element pattern="acrity"/>
+	<element pattern="apply"/>
+	<element pattern="call"/>
+	<element pattern="caller"/>
+	<element pattern="decodeURI"/>
+	<element pattern="decodeURIComponent"/>
+	<element pattern="encodeURI"/>
+	<element pattern="encodeURIComponent"/>
+<!--	<element pattern="escape"/> -->
+	<element pattern="eval"/>
+<!-- 	<element pattern="exec"/> -->
+	<element pattern="hasOwnProperty"/>
+	<element pattern="isFinite"/>
+	<element pattern="isNaN"/>
+	<element pattern="isPrototypeOf"/>
+	<element pattern="parseFloat"/>
+	<element pattern="parseInt"/>
+	<element pattern="propertyIsEnumerable"/>
+<!--	<element pattern="unescape"/> -->
+	<group class="javascript_object_methods">
+<!-- reference: https://developer.mozilla.org/en-US/docs/Web/API/Window -->
+	<element pattern="addEventListener">
+		<reference><i>EventTarget.addEventListener(type, listener[, useCapture])</i> Registers the specified listener on the EventTarget it's called on. The event target may be an Element in a document, the Document itself, a Window, or any other object that supports events (such as XMLHttpRequest).</reference>
+	</element>
+	<element pattern="alert">
+		<reference><i>Window.alert(message)</i> Displays an alert dialog with the optional specified content and an OK button.</reference>
+	</element>
+	<element pattern="atob">
+		<reference><i>Window.atob(encodedData)</i> Decodes a string of data which has been encoded using base-64 encoding.</reference>
+	</element>
+	<element pattern="back">
+		<reference><i>Window.back()</i> Returns the window to the previous item in the history.</reference>
+	</element>
+	<element pattern="blur">
+		<reference><i>Window.blur()</i> Shifts focus away from the window.</reference>
+	</element>
+	<element pattern="btoa">
+		<reference><i>Window.btoa(stringToEncode)</i> Creates a base-64 encoded ASCII string from a string of binary data.</reference>
+	</element>
+	<element pattern="clearInterval">
+		<reference><i>Window.clearInterval(intervalID)</i> Cancels repeated action which was set up using setInterval.</reference>
+	</element>
+	<element pattern="clearTimeout">
+		<reference><i>Window.clearTimeout(timeoutID)</i> Clears the delay set by window.setTimeout().</reference>
+	</element>
+	<element pattern="close">
+		<reference><i>Window.close()</i> Closes the current window, or a referenced window.</reference>
+	</element>
+	<element pattern="confirm">
+		<reference><i>Window.confirm(message)</i> Displays a modal dialog with an optional message and two buttons, OK and Cancel.</reference>
+	</element>
+	<element pattern="dump">
+		<reference><i>Window.dump(message)</i> Prints messages to the (native) console.</reference>
+	</element>
+	<element pattern="escape">
+		<reference><i>Window.escape(regular string)</i> Encodes a string, replacing all characters except for ASCII digits, lower and upper case letters, and the characters * + - . / @ _ with a hexadecimal escape sequence.</reference>
+	</element>
+	<element pattern="focus">
+		<reference><i>Window.focus()</i> Makes a request to bring the window to the front. It may fail due to user settings and the window isn't guaranteed to be frontmost before this method returns.</reference>
+	</element>
+	<element pattern="forward">
+		<reference><i>Window.forward()</i> Moves the window one document forward in the history.</reference>
+	</element>
+	<element pattern="getComputedStyle">
+		<reference><i>Window.getComputedStyle(element[, pseudoElt])</i> getComputedStyle() gives the final used values of all the CSS properties of an element.</reference>
+	</element>
+	<element pattern="getSelection">
+		<reference><i>Window.getSelection()</i> Returns a selection object representing the range of text selected by the user.</reference>
+	</element>
+	<element pattern="matchMedia">
+		<reference><i>Window.matchMedia(mediaQueryString)</i> Returns a new MediaQueryList object representing the parsed results of the specified media query string.</reference>
+	</element>
+	<element pattern="moveBy">
+		<reference><i>Window.moveBy(deltaX, deltaY)</i> Moves the current window by a specified amount.</reference>
+	</element>
+	<element pattern="moveTo">
+		<reference><i>Window.moveTo(x, y)</i> Moves the window to the specified coordinates.</reference>
+	</element>
+	<element pattern="open">
+		<reference><i>Window.open(strUrl, strWindowName[, strWindowFeatures])</i> Loads a resource in a new browsing context or an existing one.</reference>
+	</element>
+	<element pattern="openDialog">
+		<reference><i>Window.openDialog(url, name, features, arg1, arg2, ...)</i> window.openDialog is an extension to window.open. It behaves the same, except that it can optionally take one or more parameters past windowFeatures, and windowFeatures itself is treated a little differently.</reference>
+	</element>
+	<element pattern="postMessage">
+		<reference><i>Window.postMessage(message, targetOrigin, [transfer])</i> The Window.postMessage method safely enable cross-origin communication. Normally, scripts on different pages are only allowed to access each other if and only if the pages which executed them are at locations with the same protocol (usually both http), port number (80 being the default for http), and host (modulo document.domain being set by both pages to the same value). window.postMessage provides a controlled mechanism to circumvent this restriction in a way which is secure when properly used.</reference>
+	</element>
+	<element pattern="print">
+		<reference><i>Window.print()</i> Opens the Print Dialog to print the current document.</reference>
+	</element>
+	<element pattern="prompt">
+		<reference><i>Window.prompt(text, value)</i> Displays a dialog with an optional message prompting the user to input some text.</reference>
+	</element>
+	<element pattern="resizeBy">
+		<reference><i>Window.resizeBy(xDelta, yDelta)</i> Resizes the current window by a certain amount.</reference>
+	</element>
+	<element pattern="resizeTo">
+		<reference><i>Window.resizeTo(iWidth, iHeight)</i> Dynamically resizes window.</reference>
+	</element>
+	<element pattern="scroll">
+		<reference><i>Window.scroll(x-coord,y-coord)</i> Scrolls the window to a particular place in the document.</reference>
+	</element>
+	<element pattern="scrollBy">
+		<reference><i>Window.scrollBy(X,Y)</i> Scrolls the document in the window by the given amount.</reference>
+	</element>
+	<element pattern="scrollByLines">
+		<reference><i>Window.scrollByLines(lines)</i> Scrolls the document by the given number of lines.</reference>
+	</element>
+	<element pattern="scrollByPages">
+		<reference><i>Window.scrollByPages(pages)</i> Scrolls the current document by the specified number of pages.</reference>
+	</element>
+	<element pattern="scrollTo">
+		<reference><i>Window.scrollTo(x-coord,y-coord)</i> Scrolls to a particular set of coordinates in the document.</reference>
+	</element>
+	<element pattern="setInterval">
+		<reference>
+		<i>window.setInterval(func, delay[, param1, param2, ...])</i>
+		<i>window.setInterval(code, delay);</i> Calls a function or executes a code snippet repeatedly, with a fixed time delay between each call to that function.</reference>
+	</element>
+	<element pattern="setTimeout">
+		<reference>
+		<i>Window.setTimeout(func, delay[, param1, param2, ...])</i>
+		<i>Window.setTimeout(code, delay)</i> Calls a function or executes a code snippet after a specified delay.</reference>
+	</element>
+	<element pattern="showModalDialog">
+		<reference><i>Window.showModalDialog(uri[, arguments])</i> Creates and displays a modal dialog box containing a specified HTML document.</reference>
+	</element>
+	<element pattern="sizeToContent">
+		<reference><i>Window.sizeToContent()</i> Sizes the window according to its content.</reference>
+	</element>
+	<element pattern="stop">
+		<reference><i>Window.stop()</i> This method stops window loading.</reference>
+	</element>
+	<element pattern="unescape">
+		<reference><i>Window.unescape(escaped)</i> Decodes a value that has been encoded in hexadecimal (e.g., a cookie) including characters not escaped by window.escape.</reference>
+	</element>
+
+		<group class="javascript_object_methods">
+<!-- 			<element pattern="captureEvents"/> -->
+<!-- 			<element pattern="close"/> -->
+			<element pattern="createAttribute"/>
+			<element pattern="createElement"/>
+			<element pattern="createTextNode"/>
+			<element pattern="getElementById" />
+			<element pattern="getElementsByName"/>
+			<element pattern="getElementsByTagName" />
+			<element pattern="getElementsByClassName" />
+			<element pattern="querySelector" />
+			<element pattern="querySelectorAll" />
+<!-- 			<element pattern="getSelection"/> -->
+<!-- 			<element pattern="handleEvent"/> -->
+<!-- 			<element pattern="open"/> -->
+<!-- 			<element pattern="releaseEvents"/> -->
+			<element pattern="routeEvents"/>
+			<element pattern="write"/>
+			<element pattern="writeln"/>
+<!-- 			<element pattern="back"/> -->
+<!-- 			<element pattern="forward"/> -->
+			<element pattern="go"/>
+		</group>
+
+	</group>
+	<!-- Array -->
+	<group>
+<!-- 		<element pattern="concat"/> -->
+		<element pattern="join"/>
+		<element pattern="pop"/>
+		<element pattern="push"/>
+		<element pattern="reverse"/>
+		<element pattern="shift"/>
+<!-- 		<element pattern="slice"/> -->
+		<element pattern="splice"/>
+		<element pattern="sort"/>
+		<element pattern="unshift"/>
+	</group>
+	<!-- Date -->
+	<group class="javascript_object_methods">
+		<element pattern="getDate">
+			<reference><i>DateObj.getDate()</i> returns the day of the month (1-31) for the specified date according to local time</reference>
+		</element>
+		<element pattern="getDay">
+			<reference><i>DateObj.getDay()</i> returns the day of the week (0-6) for the specified date according to local time</reference>
+		</element>
+		<element pattern="getFullYear">
+			<reference><i>DateObj.getFullYear()</i> returns the year (4 digits for 4-digit years) of the specified date according to local time</reference>
+		</element>
+		<element pattern="getHours">
+			<reference><i>DateObj.getHours()</i> returns the hour (0-23) in the specified date according to local time</reference>
+		</element>
+		<element pattern="getMilliseconds">
+			<reference><i>DateObj.getMilliseconds()</i> returns the milliseconds (0-999) in the specified date according to local time</reference>
+		</element>
+		<element pattern="getMinutes">
+			<reference><i>DateObj.getMinutes()</i> returns the minutes (0-59) in the specified date according to local time</reference>
+		</element>
+		<element pattern="getMonth">
+			<reference><i>Date.getMonth()</i> returns the month (0-11) in the specified date according to local time</reference>
+		</element>
+		<element pattern="getSeconds">
+			<reference><i>Date.getSeconds()</i> returns the seconds (0-59) in the specified date according to local time</reference>
+		</element>
+		<element pattern="getTime">
+			<reference><i>DateObj.getTime()</i> returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC (negative for prior times)</reference>
+		</element>
+		<element pattern="getTimezoneOffset">
+			<reference><i>DateObj.getTimezoneOffset</i> returns the time-zone offset in minutes for the current locale</reference>
+		</element>
+		<element pattern="getUTCDate">
+			<reference><i>DateObj.getUTCDate()</i> returns the day (date) of the month (1-31) in the specified date according to universal time</reference>
+		</element>
+		<element pattern="getUTCDay">
+			<reference><i>Date.getUTCDay</i> returns the day of the week (0-6) in the specified date according to universal time</reference>
+		</element>
+		<element pattern="getUTCFullYear">
+			<reference><i>DateObj.getUTCFullYear()</i> returns the year (4 digits for 4-digit years) in the specified date according to universal time</reference>
+		</element>
+		<element pattern="getUTCHours">
+			<reference><i>Date.getUTCHours()</i> returns the hours (0-23) in the specified date according to universal time</reference>
+		</element>
+		<element pattern="getUTCMilliseconds">
+			<reference><i>DateObj.getUTCMilliseconds</i> returns the milliseconds (0-999) in the specified date according to universal time</reference>
+		</element>
+		<element pattern="getUTCMinutes">
+			<reference><i>DateObj.getUTCMinutes()</i> returns the minutes (0-59) in the specified date according to universal time</reference>
+		</element>
+		<element pattern="getUTCMonth">
+			<reference><i>DateObj.getUTCMonth()</i> returns the month (0-11) in the specified date according to universal time</reference>
+		</element>
+		<element pattern="getUTCSeconds">
+			<reference><i>DateObj.getUTCSeconds</i> returns the seconds (0-59) in the specified date according to universal time</reference>
+		</element>
+		<element pattern="setDate">
+			<reference><i>DateObj.setDate(dayValue)</i> sets the day of the month (1-31) for a specified date according to local time</reference>
+		</element>
+		<element pattern="setFullYear">
+			<reference><i>DateObj.setFullYear(yearValue[, monthValue[, dayValue]]) </i> sets the full year (4 digits for 4-digit years) for a specified date according to local time</reference>
+		</element>
+		<element pattern="setHours">
+			<reference><i>DateObj.setHours(hoursValue[, minutesValue[, secondsValue[, msValue]]])</i> sets the hours (0-23) for a specified date according to local time</reference>
+		</element>
+		<element pattern="setMilliseconds">
+			<reference><i>DateObj.setMilliseconds(millisecondsValue)</i> sets the milliseconds (0-999) for a specified date according to local time</reference>
+		</element>
+		<element pattern="setMinutes">
+			<reference><i>DateObj.setMinutes(minutesValue[, secondsValue[, msValue]]) </i> sets the minutes (0-59) for a specified date according to local time</reference>
+		</element>
+		<element pattern="setMonth">
+			<reference><i>DateObj.setMonth(monthValue[, dayValue]) </i> sets the month (0-11) for a specified date according to local time</reference>
+		</element>
+		<element pattern="setSeconds">
+			<reference><i>DateObj.setSeconds(secondsValue[, msValue])</i> sets the seconds (0-59) for a specified date according to local time</reference>
+		</element>
+		<element pattern="setTime">
+			<reference><i>DateObj.setTime(timeValue)</i> sets the Date object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC, allowing for negative numbers for times prior</reference>
+		</element>
+		<element pattern="setUTCDate">
+			<reference><i>DateObj.setUTCDate(dayValue)</i> sets the day of the month (1-31) for a specified date according to universal time</reference>
+		</element>
+		<element pattern="setUTCFullYear">
+			<reference><i>DateObj.setUTCFullYear(yearValue[, monthValue[, dayValue]]) </i> sets the full year (4 digits for 4-digit years) for a specified date according to universal time</reference>
+		</element>
+		<element pattern="setUTCHours">
+			<reference><i>DateObj.setUTCHours(hoursValue[, minutesValue[, secondsValue[, msValue]]])</i> sets the hour (0-23) for a specified date according to universal time</reference>
+		</element>
+		<element pattern="setUTCMilliseconds">
+			<reference><i>DateObj.setUTCMilliseconds(millisecondsValue)</i> sets the milliseconds (0-999) for a specified date according to universal time</reference>
+		</element>
+		<element pattern="setUTCMinutes">
+			<reference><i>DateObj.setUTCMinutes(minutesValue[, secondsValue[, msValue]])</i> sets the minutes (0-59) for a specified date according to universal time</reference>
+		</element>
+		<element pattern="setUTCMonth">
+			<reference><i>DateObj.setUTCMonth(monthValue[, dayValue])</i> sets the month (0-11) for a specified date according to universal time</reference>
+		</element>
+		<element pattern="setUTCSeconds">
+			<reference><i>DateObj.setUTCSeconds(secondsValue[, msValue])</i> sets the seconds (0-59) for a specified date according to universal time</reference>
+		</element>
+		<element pattern="toDateString">
+			<reference><i>DateObj.toDateString()</i> returns the "date" portion of the Date as a human-readable string</reference>
+		</element>
+		<element pattern="toISOString">
+			<reference><i>DateObj.toISOString()</i>Converts a date to a string following the ISO 8601 Extended Format</reference>
+		</element>
+		<element pattern="toLocaleString">
+			<reference><i>DateObj.toLocaleString([locales [, options]])</i> returns a string with a language sensitive representation of this date. Overrides the Object.toLocaleString method</reference>
+		</element>
+		<element pattern="toLocaleTimeString">
+			<reference><i>DateObj.toLocaleTimeString([locales [, options]])</i> returns a string with a language sensitive representation of the time portion of this date</reference>
+		</element>
+		<element pattern="Date.toString">
+			<reference><i>DateObj.toString()</i> returns a string representing the specified Date object. Overrides the Object.prototype.toString method</reference>
+		</element>
+		<element pattern="toTimeString">
+			<reference><i>DateObj.toTimeString()</i> returns the "time" portion of the Date as a human-readable string</reference>
+		</element>
+		<element pattern="toUTCString">
+			<reference><i>DateObj.toUTCString()</i>Converts a date to a string, using the universal time convention</reference>
+		</element>
+		<element pattern="Date.valueOf">
+			<reference><i>DateObj.valueOf()</i> returns the primitive value of a Date object. Overrides the Object.prototype.valueOf method</reference>
+		</element>
+	</group>
+	<!-- Math -->
+	<group class="javascript_object_methods">
+	<element pattern="Math.abs">
+		<reference>Returns the absolute value of a number.</reference>
+	</element>
+	<element pattern="Math.acos">
+		<reference>Returns the arccosine of a number (angles in radians).</reference>
+	</element>
+	<element pattern="Math.asin">
+		<reference>Returns the arcsine of a number (angles in radians).</reference>
+	</element>
+	<element pattern="Math.atan">
+		<reference>Returns the arctangent of a number (angles in radians).</reference>
+	</element>
+	<element pattern="Math.atan2">
+		<reference>Returns the arctangent of the quotient of its arguments (angles in radians).</reference>
+	</element>
+	<element pattern="Math.ceil">
+		<reference>Returns the smallest integer greater than or equal to a number.</reference>
+	</element>
+	<element pattern="Math.cos">
+		<reference>Returns the cosine of a number (angles in radians).</reference>
+	</element>
+	<element pattern="Math.exp">
+		<reference>Returns Enumber, where number is the argument, and E is Euler's constant (2.718...), the base of the natural logarithm.</reference>
+	</element>
+	<element pattern="Math.floor">
+		<reference>Returns the largest integer less than or equal to a number.</reference>
+	</element>
+	<element pattern="Math.log">
+		<reference>Returns the natural logarithm (loge, also ln) of a number.</reference>
+	</element>
+	<element pattern="Math.max">
+		<reference>Returns the largest of zero or more numbers.</reference>
+	</element>
+	<element pattern="Math.min">
+		<reference>Returns the smallest of zero or more numbers.</reference>
+	</element>
+	<element pattern="Math.pow">
+		<reference>Returns base to the exponent power, that is, baseexponent.</reference>
+	</element>
+	<element pattern="Math.random">
+		<reference>Returns a pseudo-random number between 0 and 1.</reference>
+	</element>
+	<element pattern="Math.round">
+		<reference>Returns the value of a number rounded to the nearest integer.</reference>
+	</element>
+	<element pattern="Math.sin">
+		<reference>Returns the sine of a number (angles in radians).</reference>
+	</element>
+	<element pattern="Math.sqrt">
+		<reference>Returns the positive square root of a number.</reference>
+	</element>
+	<element pattern="Math.tan">
+		<reference>Returns the tangent of a number (angles in radians).</reference>
+	</element>
+	</group>
+	<!-- Node -->
+	<group class="javascript_object_methods">
+		<element pattern="appendChild"/>
+		<element pattern="appendData"/>
+		<element pattern="cloneNode"/>
+		<element pattern="deleteData"/>
+		<element pattern="getAttribute"/>
+		<element pattern="getAttributeNode"/>
+<!-- 		<element pattern="getElementsByTagName"/> -->
+		<element pattern="hasChildNodes"/>
+		<element pattern="insertBefore"/>
+		<element pattern="insertData"/>
+		<element pattern="removeAttribute"/>
+		<element pattern="removeAttributeNode"/>
+		<element pattern="removeChild"/>
+		<element pattern="replaceChild"/>
+		<element pattern="replaceData"/>
+		<element pattern="setAttribute"/>
+		<element pattern="setAttributeNode"/>
+	</group>
+	<!-- navigator -->
+	<element pattern="javaEnabled" class="javascript_object_methods"/>
+	<!-- number -->
+	<group>
+		<element pattern="toExponential"/>
+		<element pattern="toFixed"/>
+		<element pattern="toPrecision"/>
+	</group>
+
+	<group class="javascript_object_methods">
+		<element pattern="reload" />
+<!-- 		<element pattern="replace" /> -->
+	</group>
+</group>
+	<!-- string -->
+<group class="javascript_object_methods" highlight="js-function" >
+	<autocomplete append="()" backup_cursor="1" />
+<!-- reference: https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String -->
+	<element pattern="charAt">
+		<reference><i>String.charAt(index)</i> Returns the character at the specified index.
+		</reference>
+	</element>
+	<element pattern="charCodeAt">
+		<reference><i>String.charCodeAt(index)</i> Returns a number indicating the Unicode value of the character at the given index.
+		</reference>
+	</element>
+	<element pattern="concat">
+		<reference><i>String.concat(string2, string3[, ..., stringN])</i> Combines the text of two strings and returns a new string.
+		<b>It is strongly recommended that the string concatenation operators (+, +=) be used instead of this method for perfomance reasons!</b>
+		</reference>
+	</element>
+	<element pattern="indexOf">
+		<reference><i>String.indexOf(searchValue[, fromIndex])</i> Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
+		</reference>
+	</element>
+	<element pattern="lastIndexOf">
+		<reference><i>String.lastIndexOf(searchValue[, fromIndex])</i> Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.
+		</reference>
+	</element>
+	<element pattern="localeCompare">
+		<reference><i>string.localeCompare(compareString [, locales [, options]])</i> Returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order.
+		</reference>
+	</element>
+	<element pattern="slice">
+		<reference><i>String.slice(beginslice[, endSlice])</i> Extracts a section of a string and returns a new string.
+		</reference>
+	</element>
+	<element pattern="split">
+		<reference><i>String.split([separator][, limit])</i> Splits a String object into an array of strings by separating the string into substrings.
+		</reference>
+	</element>
+	<element pattern="substr">
+		<reference><i>String.substr(start[, length])</i> Returns the characters in a string beginning at the specified location through the specified number of characters.
+		</reference>
+	</element>
+	<element pattern="substring">
+		<reference><i>String.substring(indexA[, indexB])</i> Returns the characters in a string between two indexes into the string.
+		</reference>
+	</element>
+	<element pattern="toLocaleLowerCase">
+		<reference><i>String.toLocaleLowerCase()</i> The characters within a string are converted to lower case while respecting the current locale. For most languages, this will return the same as toLowerCase.
+		</reference>
+	</element>
+	<element pattern="toLocaleUpperCase">
+		<reference><i>String.toLocaleUpperCase()</i> The characters within a string are converted to upper case while respecting the current locale. For most languages, this will return the same as toUpperCase.
+		</reference>
+	</element>
+	<element pattern="toLowerCase">
+		<reference><i>String.toLowerCase()</i> Returns the calling string value converted to lower case.
+		</reference>
+	</element>
+	<element pattern="toString">
+		<reference><i>String.toString()</i> Returns a string representing the specified object. Overrides the Object.prototype.toString method.
+		</reference>
+	</element>
+	<element pattern="toUpperCase">
+		<reference><i>String.toUpperCase()</i> Returns the calling string value converted to uppercase.
+		</reference>
+	</element>
+	<element pattern="trim">
+		<reference><i>String.trim()</i> Trims whitespace from the beginning and end of the string. trim does not affect the value of the string itself.
+		</reference>
+	</element>
+	<element pattern="valueOf">
+		<reference><i>String.valueOf</i> Returns the primitive value of the specified object. Overrides the Object.prototype.valueOf method.
+		</reference>
+	</element>
+	<element pattern="replace" id="e.js.replace">
+		<autocomplete append="(,)" backup_cursor="2" />
+		<reference><i>String.replace(regexp|substr, newSubStr|function)</i> Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
+		</reference>
+	</element>
+	<element pattern="match">
+		<reference><i>String.match(regexp)</i> Used to match a regular expression against a string.
+		</reference>
+	</element>
+	<element pattern="search">
+		<reference><i>String.search(regexp)</i> Executes the search for a match between a regular expression and a specified string.
+		</reference>
+	</element>
+</group>
+<group highlight="js-function" >
+	<autocomplete append="()" backup_cursor="1" />
+	<element pattern="exec" >
+	</element>
+	<element pattern="test" >
+	</element>
+	<element pattern="compile" >
+	</element>
+</group>
+<group highlight="js-property" >
+	<autocomplete enable="1" />
+	<group class="javascript_object_methods">
+<!-- reference: https://developer.mozilla.org/en-US/docs/Web/API/Window -->
+		<element pattern="applicationCache">
+			<reference><i>window.applicationCache</i> An OfflineResourceList object providing access to the offline resources for the window.</reference>
+		</element>
+		<element pattern="dialogArguments">
+			<reference><i>window.dialogArguments</i> Gets the arguments passed to the window (if it's a dialog box) at the time window.showModalDialog() was called. This is an nsIArray.</reference>
+		</element>
+		<element pattern="window">
+			<reference><i>window.document</i> Returns a reference to the document that the window contains.</reference>
+		</element>
+		<element pattern="frameElement">window
+			<reference><i>window.frameElement</i> Returns the element in which the window is embedded, or null if the window is not embedded.</reference>
+		</element>
+		<element pattern="frames">
+			<reference><i>window.frames</i> Returns an array of the subframes in the current window.</reference>
+		</element>
+		<element pattern="fullScreen">
+			<reference><i>window.fullScreen</i> This property indicates whether the window is displayed in full screen or not.</reference>
+		</element>
+		<element pattern="history">
+			<reference><i>window.history</i> Returns a reference to the history object.</reference>
+		</element>
+		<element pattern="innerHeight">
+			<reference><i>window.innerHeight</i> Gets the height of the content area of the browser window including, if rendered, the horizontal scrollbar.</reference>
+		</element>
+		<element pattern="innerWidth">
+			<reference><i>window.innerWidth</i> Gets the width of the content area of the browser window including, if rendered, the vertical scrollbar.</reference>
+		</element>
+		<element pattern="length">
+			<reference><i>window.length</i> Returns the number of frames in the window. See also window.frames.</reference>
+		</element>
+		<element pattern="location">
+			<reference><i>window.location</i> Gets/sets the location, or current URL, of the window object.
+			<i>document.location</i> Returns the URI of the current document.
+			<b>Return Type:</b> Location
+			<b>Availability:</b> All</reference>
+		</element>
+		<element pattern="locationbar">
+			<reference><i>window.locationbar</i> Returns the locationbar object, whose visibility can be toggled in the window.</reference>
+		</element>
+		<element pattern="localStorage">
+			<reference><i>window.localStorage</i> Returns a reference to the local storage object used to store data that may only be accessed by the origin that created it.</reference>window
+		</element>
+		<element pattern="menubar">
+			<reference><i>window.menubar</i> Returns the menubar object, whose visibility can be toggled in the window.</reference>
+		</element>
+		<element pattern="messageManager">
+			<reference><i>window.messageManager</i> Returns the message manager object for this window.</reference>
+		</element>
+		<element pattern="name">
+			<reference><i>window.name</i> Gets/sets the name of the window.</reference>
+		</element>
+		<element pattern="navigator">
+			<reference><i>window.navigator</i> Returns a reference to the navigator object.</reference>
+		</element>
+		<element pattern="opener">
+			<reference><i>window.opener</i> Returns a reference to the window that opened this current window.</reference>
+		</element>
+		<element pattern="outerHeight">
+			<reference><i>window.outerHeight</i> Gets the height of the outside of the browser window.</reference>
+		</element>
+		<element pattern="outerWidth">
+			<reference><i>window.outerWidth</i> Gets the width of the outside of the browser window.</reference>
+		</element>
+		<element pattern="pageXOffset">
+			<reference><i>window.pageXOffset</i> An alias for window.scrollX.</reference>
+		</element>
+		<element pattern="pageYOffset">
+			<reference><i>window.pageYOffset</i> An alias for window.scrollY</reference>
+		</element>
+		<element pattern="parent">
+			<reference><i>window.parent</i> Returns a reference to the parent of the current window or subframe.</reference>
+		</element>
+		<element pattern="performance">
+			<reference><i>window.performance</i> Provides a hosting area for performance related attributes.</reference>
+		</element>
+		<element pattern="personalbar">
+			<reference><i>window.personalbar</i> Returns the personalbar object, whose visibility can be toggled in the window.</reference>
+		</element>
+		<element pattern="returnValue ">
+			<reference><i>window.returnValue </i> The return value to be returned to the function that called  window.showModalDialog() to display the window as a modal dialog.</reference>
+		</element>
+		<element pattern="screen">
+			<reference><i>window.screen</i> Returns a reference to the screen object associated with the window.</reference>
+		</element>
+		<element pattern="availTop">
+			<reference><i>window.screen.availTop</i> Specifies the y-coordinate of the first pixel that is not allocated to permanent or semipermanent user interface features.</reference>
+		</element>
+		<element pattern="availLeft">
+			<reference><i>window.screen.availLeft</i> Returns the first available pixel available from the left side of the screen.</reference>
+		</element>
+		<element pattern="availHeight">
+			<reference><i>window.screen.availHeight</i> Specifies the height of the screen, in pixels, minus permanent or semipermanent user interface features displayed by the operating system, such as the Taskbar on Windows.</reference>
+		</element>
+		<element pattern="availWidth">
+			<reference><i>window.screen.availWidth</i> Returns the amount of horizontal space in pixels available to the window.</reference>
+		</element>
+		<element pattern="colorDepth">
+			<reference><i>window.screen.colorDepth</i> Returns the color depth of the screen.</reference>
+		</element>
+		<element pattern="height">
+			<reference><i>window.screen.height</i> Returns the height of the screen in pixels.</reference>
+		</element>
+		<element pattern="left">
+			<reference><i>window.screen.left</i> Returns the current distance in pixels from the left side of the screen.</reference>
+		</element>
+		<element pattern="pixelDepth">
+			<reference><i>window.screen.pixelDepth</i> Gets the bit depth of the screen.</reference>
+		</element>
+<!--		<element pattern="top">
+			<reference><i>window.screen.top</i> Returns the distance from the top of the screen.</reference>
+		</element> -->
+		<element pattern="width">
+			<reference><i>window.screen.width</i> Returns the width of the screen.</reference>
+		</element>
+		<element pattern="screenX">
+			<reference>
+			<i>window.screenX</i> Returns the horizontal distance of the left border of the user's browser from the left side of the screen.
+			<i>MouseEvent.screenX</i> Read only. long
+				 The X coordinate of the mouse pointer in global (screen) coordinates.</reference>
+		</element>
+		<element pattern="screenY">
+			<reference>
+			<i>window.screenY</i> Returns the vertical distance of the top border of the user's browser from the top side of the screen.
+			<i>MouseEvent.screenY</i> Read only. long
+				 The Y coordinate of the mouse pointer in global (screen) coordinates.</reference>
+		</element>
+		<element pattern="scrollbars">
+			<reference><i>window.scrollbars</i> Returns the scrollbars object, whose visibility can be toggled in the window.</reference>
+		</element>
+		<element pattern="scrollMaxX">
+			<reference><i>window.scrollMaxX</i> The maximum offset that the window can be scrolled to horizontally.
+		    (i.e., the document width minus the viewport width)</reference>
+		</element>
+		<element pattern="scrollMaxY">
+			<reference><i>window.scrollMaxY</i> The maximum offset that the window can be scrolled to vertically (i.e., the document height minus the viewport height).</reference>
+		</element>
+		<element pattern="scrollX">
+			<reference><i>window.scrollX</i> Returns the number of pixels that the document has already been scrolled horizontally.</reference>
+		</element>
+		<element pattern="scrollY">
+			<reference><i>window.scrollY</i> Returns the number of pixels that the document has already been scrolled vertically.</reference>
+		</element>
+		<element pattern="self">
+			<reference><i>window.self</i> Returns an object reference to the window object itself.</reference>
+		</element>
+		<element pattern="sessionStorage">
+			<reference><i>window.sessionStorage</i> A storage object for storing data within a single page session.</reference>
+		</element>
+		<element pattern="sidebar">
+			<reference><i>window.sidebar</i> Returns a reference to the window object of the sidebar.</reference>
+		</element>
+		<element pattern="status">
+			<reference><i>window.status</i> Gets/sets the text in the statusbar at the bottom of the browser.</reference>
+		</element>
+		<element pattern="statusbar">
+			<reference><i>window.statusbar</i> Returns the statusbar object, whose visibility can be toggled in the window.</reference>
+		</element>
+		<element pattern="toolbar">
+			<reference><i>window.toolbar</i> Returns the toolbar object, whose visibility can be toggled in the window.</reference>
+		</element>
+		<element pattern="top">
+			<reference><i>window.top</i>
+			Read only
+			Returns a reference to the topmost window in the window hierarchy.
+			 <i>window.screen.top</i> 
+			 Returns the distance from the top of the screen.</reference>
+		</element>
+		<element pattern="document"/>
+<!--		<element pattern="window.window">
+			<reference><i>window.window</i> Returns a reference to the current window.</reference>
+		</element> -->
+<!--		<element pattern="window[">
+		<autocomplete append="]" backup_cursor="1" />
+			<reference><i>window[]</i> Returns a reference to the window object in the frames. See window.frames for more details.</reference>
+		</element> -->
+
+		<group class="javascript_object_methods">
+<!-- reference: https://developer.mozilla.org/en-US/docs/Web/API/Document -->
+	<element pattern="activeElement">
+				<reference><i>document.activeElement</i> Returns the currently focused element
+				<b>Return Type:</b> Element
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="anchors">
+				<reference><i>document.anchors</i> Returns a list of all of the anchors in the document.
+				<b>Return Type:</b> HTMLCollection
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="async">
+				<reference><i>document.async</i> Used with document.load to indicate an asynchronous request.
+				<b>Return Type:</b> n/a
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="body">
+				<reference><i>document.body</i> Returns the BODY node of the current document.
+				<b>Return Type:</b> HTMLBodyElement
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="characterSet">
+				<reference><i>document.characterSet</i> Returns the character set being used by the document.
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="compatMode">
+				<reference><i>document.compatMode</i> Indicates whether the document is rendered in Quirks or Strict mode.
+				<b>Return Type:</b> String
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="contentType">
+				<reference><i>document.contentType</i> Returns the Content-Type from the MIME Header of the current document.
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="cookie">
+				<reference><i>document.cookie</i> Returns a semicolon-separated list of the cookies for that document or sets a single cookie.
+				<b>Return Type:</b> String
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="defaultView">
+				<reference><i>document.defaultView</i> Returns a reference to the window object.
+				<b>Return Type:</b> Window
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="designMode">
+				<reference><i>document.designMode</i> Gets/sets WYSYWIG editing capability of Midas. It can only be used for HTML documents.
+				<b>Return Type:</b> String
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="dir">
+				<reference><i>document.dir</i> Gets/sets directionality (rtl/ltr) of the document
+				<b>Return Type:</b> String
+				<b>Availability:</b> ?
+				</reference>
+			</element>
+			<element pattern="doctype">
+				<reference><i>document.doctype</i> Returns the Document Type Definition (DTD) of the current document.
+				<b>Return Type:</b> DocumentType
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="documentElement">
+				<reference><i>document.documentElement</i> Returns the Element that is a direct child of document. For HTML documents, this is normally the HTML element.
+				<b>Return Type:</b> Element
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="documentURI">
+				<reference><i>document.documentURI</i> Returns the document location.
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="domain">
+				<reference><i>document.domain</i> Returns the domain of the current document.
+				<b>Return Type:</b> String
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="forms">
+				<reference><i>document.forms</i> Returns a list of the FORM elements within the current document.
+				<b>Return Type:</b> HTMLCollection
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="head">
+				<reference><i>document.head</i> Returns the HEAD node of the current document.
+				<b>Return Type:</b> HTMLHeadElement
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="images">
+				<reference><i>document.images</i> Returns a list of the images in the current document.
+				<b>Return Type:</b> HTMLCollection
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="implementation">
+				<reference><i>document.implementation</i> Returns the DOM implementation associated with the current document.
+				<b>Return Type:</b> DOMImplementation
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="inputEncoding">
+				<reference><i>document.inputEncoding</i> Returns the encoding used when the document was parsed.
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="lastModified">
+				<reference><i>document.lastModified</i> Returns the date on which the document was last modified.
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="lastStyleSheetSet">
+				<reference><i>document.lastStyleSheetSet</i> Returns the name of the style sheet set that was last enabled. Has the value null until the style sheet is changed by setting the value of selectedStyleSheetSet.
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="links">
+				<reference><i>document.links</i> Returns a list of all the hyperlinks in the document.
+				<b>Return Type:</b> HTMLCollection
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+<!--			<element pattern="location">
+				<reference><i>document.location</i> Returns the URI of the current document.
+				<b>Return Type:</b> Location
+				<b>Availability:</b> All
+				</reference>
+			</element> -->
+			<element pattern="plugins">
+				<reference><i>document.plugins</i> Returns a list of the available plugins.
+				<b>Return Type:</b> HTMLCollection
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="preferredStyleSheetSet">
+				<reference><i>document.preferredStyleSheetSet</i> Returns the preferred style sheet set as specified by the page author.
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="readyState">
+				<reference><i>document.readyState</i> Returns loading status of the document
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="referrer">
+				<reference><i>document.referrer</i> Returns the URI of the page that linked to this page.
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="scripts">
+				<reference><i>document.scripts</i> Returns all the &amp;lt;script&amp;gt; elements on the document.
+				<b>Return Type:</b> HTMLCollection
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<element pattern="selectedStyleSheetSet">
+				<reference><i>document.selectedStyleSheetSet</i> Returns which style sheet set is currently in use.
+				<b>Return Type:</b> String
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="styleSheets">
+				<reference><i>document.styleSheets</i> Returns a list of the stylesheet objects on the current document.
+				<b>Return Type:</b> StyleSheetList
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="styleSheetSets">
+				<reference><i>document.styleSheetSets</i> Returns a list of the style sheet sets available on the document.
+				<b>Return Type:</b> StringList
+				<b>Availability:</b> All
+				</reference>
+			</element>
+			<element pattern="URL">
+				<reference><i>document.URL</i> Returns a string containing the URL of the current document.
+				<b>Return Type:</b> String
+				<b>Availability:</b> HTML
+				</reference>
+			</element>
+			<group class="javascript_object_methods">
+<!-- 				<element pattern="name"/> -->
+<!--				<element pattern="length"/> -->
+				<element pattern="text"/>
+				<element pattern="x"/>
+				<element pattern="y"/>
+			</group>
+<!-- 			<element pattern="length" class="javascript_object_methods"/> -->
+			<group class="javascript_object_methods">
+<!-- reference: https://developer.mozilla.org/en-US/docs/Web/API/Node -->
+				<element pattern="baseURI">
+					<reference><i>Node.baseURI</i>
+						Read only
+						Returns a DOMString representing the base URL. The concept of base URL changes from one language to another; in HTML, it corresponds to the protocol, the domain name and the directory structure, that is all until the last '/'.
+					</reference>
+				</element>
+				<element pattern="childNodes">
+					<reference><i>Node.childNodes</i>
+						Read only
+						Returns a live NodeList containing all the children of this node. NodeList being live means that if the children of the Node change, the NodeList object is automatically updated.
+					</reference>
+				</element>
+				<element pattern="firstChild">
+					<reference><i>Node.firstChild</i>
+						Read only
+						Returns a Node representing the first direct child node of the node, or null if the node has no child.
+					</reference>
+				</element>
+				<element pattern="lastChild">
+					<reference><i>Node.lastChild</i>
+						Read only
+						Returns a Node representing the last direct child node of the node, or null if the node has no child.
+					</reference>
+				</element>
+				<element pattern="nextSibling">
+					<reference><i>Node.nextSibling</i>
+						Read only
+						Returns a Node representing the next node in the tree, or null if there isn't such node.
+					</reference>
+				</element>
+				<element pattern="nodeName">
+					<reference><i>Node.nodeName</i>
+						Read only
+						Returns a DOMString containing the name of the Node. The structure of the name will differ with the name type. E.g. An HTMLElement will contain the name of the corresponding tag, like 'audio' for an HTMLAudioElement, a Text node will have the '#text' string, or a Document node will have the '#document' string.
+					</reference>
+				</element>
+				<element pattern="nodeType">
+					<reference><i>Node.nodeType</i>
+						Read only
+						Returns an unsigned short representing the type of the node. 
+					</reference>
+				</element>
+				<element pattern="nodeValue">
+					<reference><i>Node.nodeValue</i>
+						Is a DOMString representing the value of an object. For most Node type, this returns null and any set operation is ignored. For nodes of type TEXT_NODE (Text objects), COMMENT_NODE (Comment objects), and PROCESSING_INSTRUCTION_NODE (ProcessingInstruction objects), the value corresponds to the text data contained in the object.
+					</reference>
+				</element>
+				<element pattern="ownerDocument">
+					<reference><i>Node.ownerDocument</i>
+						Read only
+						Returns the Document that this node belongs to. If no document is associated with it, returns null.
+					</reference>
+				</element>
+				<element pattern="parentNode">
+					<reference><i>Node.parentNode</i>
+						Read only
+						Returns a Node that is the parent of this node. If there is no such node, like if this node is the top of the tree or if doesn't participate in a tree, this property returns null.
+					</reference>
+				</element>
+				<element pattern="parentElement">
+					<reference><i>Node.parentElement</i>
+						Read only
+						Returns an Element that is the parent of this node. If the node has no parent, or if that parent is not an Element, this property returns null.
+					</reference>
+				</element>
+				<element pattern="previousSibling">
+					<reference><i>Node.previousSibling</i>
+						Read only
+						Returns a Node representing the previous node in the tree, or null if there isn't such node.
+					</reference>
+				</element>
+				<element pattern="textContent">
+					<reference><i>Node.textContent</i>
+						Is a DOMString representing the textual content of an element and all its descendants.
+					</reference>
+				</element>
+			</group>
+		</group>
+		<group class="javascript_object_methods">
+<!-- reference: https://developer.mozilla.org/en-US/docs/Web/API/Event -->
+		  <element pattern="bubbles">
+				<reference><i>event.bubbles</i> A boolean indicating whether the event bubbles up through the DOM or not.</reference>
+			</element>
+		  <element pattern="cancelable">
+				<reference><i>event.cancelable</i> A boolean indicating whether the event is cancelable.</reference>
+			</element>
+		  <element pattern="currentTarget">
+				<reference><i>event.currentTarget</i> A reference to the currently registered target for the event.</reference>
+			</element>
+		  <element pattern="defaultPrevented">
+				<reference><i>event.defaultPrevented</i> Indicates whether or not event.preventDefault() has been called on the event.</reference>
+			</element>
+		  <element pattern="eventPhase">
+				<reference><i>event.eventPhase</i> Indicates which phase of the event flow is being processed.</reference>
+			</element>
+		  <element pattern="target">
+				<reference><i>event.target</i> A reference to the target to which the event was originally dispatched.</reference>
+			</element>
+		  <element pattern="timeStamp">
+				<reference><i>event.timeStamp</i> The time that the event was created.</reference>
+			</element>
+		  <element pattern="type">
+				<reference><i>event.type</i> The name of the event (case-insensitive).</reference>
+			</element>
+		  <element pattern="isTrusted">
+				<reference><i>event.isTrusted</i> Indicates whether or not the event was initiated by the browser (after a user click for instance) or by a script (using an event creation method, like >event.initEvent)</reference>
+			</element>	
+			<element pattern="clipboardData">
+				<reference>Read only
+					    <i>ClipboardEvent.clipboardData</i> Is a DataTransfer object containing the data affected by the user-initialed cut, copy, or paste operation, along with its MIME type.</reference>
+			</element>
+			<element pattern="lengthComputable">
+				<reference>Read only
+					    <i>ProgressEvent.lengthComputable</i> Is a Boolean flag indicating if the total work to be done, and the amount of work already done, by the underlying process is calculable. In other words, it tells if the progress is measurable or not.</reference>
+			</element>
+			<element pattern="loaded">
+				<reference>Read only
+					    <i>ProgressEvent.loaded</i> Is an unsigned long long representing the amount of work already performed by the underlying process. The ratio of work done can be calculated with the property and ProgressEvent.total. When downloading a resource using HTTP, this only represent the part of the content itself, not headers and other overhead.</reference>
+			</element>
+			<element pattern="total">
+				<reference>Read only
+					    <i>ProgressEvent.total</i> Is an unsigned long long representing the total amount of work that the underlying process is in the progress of performing. When downloading a resource using HTTP, this only represent the content itself, not headers and other overhead.</reference>
+			</element>
+<!-- see also animationName CSS property -->
+
+			<element pattern="elapsedTime">
+				<reference>Read only
+					    <i>TransitionEvent.elapsedTime</i> Is a float giving the amount of time the transtion has been running, in seconds, when this event fired. This value is not affected by the transition-delay property.
+					    <i>AnimationEvent.elapsedTime</i> Is a float giving the amount of time the animation has been running, in seconds, when this event fired, excluding any time the animation was paused. For an "animationstart" event, elapsedTime is 0.0 unless there was a negative value for animation-delay, in which case the event will be fired with elapsedTime containing  (-1 * delay).</reference>
+			</element>
+			<element pattern="pseudoElement">
+				<reference>Read only
+					    <i>TransitionEvent.pseudoElement</i> Is a DOMString, starting with '::', containing the name of the pseudo-element the animation runs on. If the transition doesn't run on a pseudo-element but on the element, an empty string: ''.
+					    <i>AnimationEvent.pseudoElement</i> (Gecko only yet) Is a DOMString, starting with '::', containing the name of the pseudo-element the animation runs on. If the animation doesn't run on a pseudo-element but on the element, an empty string: ''.</reference>
+			</element>
+			<element pattern="UserProximityEvent.near">
+				<reference><i></i>Indicates if the device has sensed a nearby physical object.</reference>
+			</element>
+			<element pattern="message">
+				<reference>Read only
+					    <i>ErrorEvent.message</i> Is a DOMString containing a human-readable error message describing the problem.</reference>
+			</element>
+			<element pattern="filename">
+				<reference>Read only
+					    <i>ErrorEvent.filename</i> Is a DOMString containing the name of the script file in which the error occurred.</reference>
+			</element>
+			<element pattern="lineno">
+				<reference>Read only
+					    <i>ErrorEvent.lineno</i> Is an integer containing the line number of the script file on which the error occurred.</reference>
+			</element>
+			<element pattern="column">
+				<reference>Read only
+					    <i>ErrorEvent.column</i> Is an integer containing the column number of the script file on which the error occurred.</reference>
+			</element>
+			<element pattern="data">
+				<reference>Read only
+					    <i>BlobEvent.data</i> Is a Blob representing the data associated with the event. The event is fired on the EventTarget because of something happening on that specific Blob.</reference>
+			</element>
+			<element pattern="DeviceLightEvent.value">
+				<reference><i>DeviceLightEvent.value</i> The level of the ambient light in lux.</reference>
+			</element>
+			<element pattern="acceleration">
+				<reference>Read only
+					    <i>DeviceMotionEvent.acceleration</i> An object giving the acceleration of the device on the three axis X, Y and Z. Acceleration is expressed in m/s².</reference>
+			</element>
+			<element pattern="accelerationIncludingGravity">
+				<reference>Read only
+					    <i>DeviceMotionEvent.accelerationIncludingGravity</i> An object giving the acceleration of the device on the three axis X, Y and Z with the effect of gravity. Acceleration is expressed in m/s².</reference>
+			</element>
+			<element pattern="rotationRate">
+				<reference>Read only
+					    <i>DeviceMotionEvent.rotationRate</i> An object giving the rate of change of the device's orientation on the three orientation axis alpha, beta and gamma. Rotation rate is express in degrees per seconds.</reference>
+			</element>
+			<element pattern="interval">
+				<reference>Read only
+					    <i>DeviceMotionEvent.interval</i> A number representing the interval of time, in milliseconds, at which data are obtain from the device.</reference>
+			</element>
+			<element pattern="absolute">
+				<reference>Read only
+					    <i>DeviceOrientationEvent.absolute</i> A boolean that indicates whether or not the device is providing orientation data absolutely.</reference>
+			</element>
+			<element pattern="alpha">
+				<reference>Read only
+					    <i>DeviceOrientationEvent.alpha</i> A number representing the motion of the device around the z axis, express in degrees with values ranging from 0 to 360</reference>
+			</element>
+			<element pattern="beta">
+				<reference>Read only
+					    <i>DeviceOrientationEvent.beta</i> A number representing the motion of the device around the x axis, express in degrees with values ranging from -180 to 180. This represents a front to back motion of the device.</reference>
+			</element>
+			<element pattern="gamma">
+				<reference>Read only
+					    <i>DeviceOrientationEvent.gamma</i> A number representing the motion of the device around the y axis, express in degrees with values ranging from -90 to 90. This represents a left to right motion of the device.</reference>
+			</element>
+			<element pattern="max">
+				<reference>Read only
+					    <i>DeviceProximityEvent.max</i> The maximum sensing distance the sensor is able to report, in centimeters.</reference>
+			</element>
+			<element pattern="min">
+				<reference>Read only
+					    <i>DeviceProximityEvent.min</i> The minimum sensing distance the sensor is able to report, in centimeters. Ususally zero.</reference>
+			</element>
+			<element pattern="value">
+				<reference>Read only
+					    <i>DeviceProximityEvent.value</i> The current device proximity, in centimeters.</reference>
+			</element>
+			<element pattern="relatedTarget">
+				<reference>Read only
+					    <i>FocusEvent.relatedTarget</i> Is an EventTarget representing a secondary target for this event. As in some cases (like when tabbing in or out a page), this property may be set to null for security reasons.
+					    <i>MouseEvent.relatedTarget</i> Read only. EventTarget
+				 The secondary target for the event, if there is one.</reference>
+			</element>
+<!--MouseEvent  -->
+<!--see also window.screenX, window.screenY -->
+			<element pattern="clientX">
+				<reference>MouseEvent.clientX<i> Read only. long</i>
+				 The X coordinate of the mouse pointer in local (DOM content) coordinates.
+				</reference>
+			</element>
+			<element pattern="clientY">
+				<reference>MouseEvent.clientY<i> Read only. long</i>
+				 The Y coordinate of the mouse pointer in local (DOM content) coordinates.
+				</reference>
+			</element>
+			<element pattern="ctrlKey">
+				<reference>MouseEvent.ctrlKey<i> Read only. boolean</i>
+				 true if the control key was down when the mouse event was fired.
+				</reference>
+			</element>
+			<element pattern="shiftKey">
+				<reference>MouseEvent.shiftKey<i> Read only. boolean</i>
+				 true if the shift key was down when the mouse event was fired.
+				</reference>
+			</element>
+			<element pattern="altKey">
+				<reference>MouseEvent.altKey<i> Read only. boolean</i>
+				 true  if the alt key was down when the mouse event was fired.
+				</reference>
+			</element>
+			<element pattern="metaKey">
+				<reference>MouseEvent.metaKey<i> Read only. boolean</i>
+				 true if the meta key was down when the mouse event was fired.
+				</reference>
+			</element>
+			<element pattern="button">
+				<reference>MouseEvent.button<i> Read only. unsigned short</i>
+				 The button number that was pressed when the mouse event was fired. 
+		        Left button=0, middle button=1 (if present), right button=2. For mice configured for left handed use in which the button actions are reversed the values are instead read from right to left. 
+				</reference>
+			</element>
+			<element pattern="buttons">
+				<reference>MouseEvent.buttons<i> Read only. unsigned short</i>
+				 The buttons being pressed when the mouse event was fired. 
+				 Left button=1, Right button=2, Middle (wheel) button=4, 4th button (typically, "Browser Back" button)=8, 5th button (typically, "Browser Forward" button)=16. If two or more buttons are pressed, returns the logical sum of the values. E.g., if Left button and Right button are pressed, returns 3 (=1 | 2).    
+				</reference>
+			</element>
+<!--			<element pattern="relatedTarget"> -->
+
+		</group>
+<!-- 		<element pattern="length" class="javascript_object_methods"/> -->
+		<group class="javascript_object_methods">
+			<element pattern="hash"/>
+			<element pattern="host"/>
+			<element pattern="hostname"/>
+			<element pattern="href"/>
+			<element pattern="pathname"/>
+			<element pattern="port"/>
+			<element pattern="protocol"/>
+<!-- 			<element pattern="search"/> -->
+		</group>
+	</group>
+	<group class="javascript_object_methods">
+		<element pattern="E"/>
+		<element pattern="LN2"/>
+		<element pattern="LN10"/>
+		<element pattern="LOG2E"/>
+		<element pattern="LOG10E"/>
+		<element pattern="PI"/>
+		<element pattern="SQRT1_2"/>
+		<element pattern="SQRT2"/>
+	</group>
+	<group class="javascript_object_methods">
+		<element pattern="appCodeName"/>
+		<element pattern="appName"/>
+		<element pattern="appVersion"/>
+		<element pattern="cookieEnabled"/>
+		<element pattern="language"/>
+		<element pattern="platform"/>
+		<element pattern="userAgent"/>
+		<group>
+			<element pattern="description"/>
+			<element pattern="enabledPlugin"/>
+<!-- 			<element pattern="length"/> -->
+			<element pattern="suffixes"/>
+<!-- 			<element pattern="type"/> -->
+		</group>
+		<group>
+<!-- 			<element pattern="description"/> -->
+<!-- 			<element pattern="length"/> -->
+<!-- 			<element pattern="name"/> -->
+		</group>
+	</group>
+<!--	<group class="javascript_object_methods">
+		<element pattern="availHeight"/>
+		<element pattern="availWidth"/>
+		<element pattern="colorDepth"/>
+		<element pattern="height"/>
+		<element pattern="pixelDepth"/>
+		<element pattern="width"/>
+	</group> -->
+<!-- 	<element pattern="length" class="javascript_object_methods"/> -->
+</group>
+<!-- JavaScript Objects -->
+<group highlight="js-type" >
+	<autocomplete enable="1" />
+	<element pattern="Array"/>
+	<element pattern="Boolean"/>
+	<element pattern="Date"/>
+	<element pattern="Error"/>
+	<element pattern="EvalError"/>
+	<element pattern="Function"/>
+	<element pattern="Number"/>
+	<element pattern="Object"/>
+	<element pattern="RangeError"/>
+	<element pattern="RegExp"/>
+	<element pattern="String"/>
+	<element pattern="SyntaxError"/>
+	<element pattern="TypeError"/>
+	<element pattern="URIError"/>
+</group>
+<!-- These objects appear to be case insensitive -->
+<group highlight="js-variable" >
+	<autocomplete enable="1" />
+	<element pattern="global"/>
+	<group class="javascript_object_methods">
+<!--		<element pattern="navigator"/> -->
+		<element pattern="mimeTypes"/>
+		<!--<element pattern="plugins"/>-->
+<!--		<element pattern="screen"/> -->
+<!--		<element pattern="window"/> -->
+<!--		<element pattern="document"/> -->
+		<!--<element pattern="anchors"/>-->
+		<element pattern="applets"/>
+		<element pattern="node"/>
+		<element pattern="event"/>
+<!--		<element pattern="history"/> -->
+		<!--<element pattern="location"/>-->
+	</group>
+</group>
+<group class="javascript_css_properties" >
+	<autocomplete enable="1" />
+	<element pattern="style" highlight="js-css-property"/>
+<!--	<element pattern="getComputedStyle" highlight="js-function" >
+		<autocomplete append="()" backup_cursor="1" />
+	</element> -->
+	<group highlight="js-css-property">
+		<element pattern="alignContent" />
+		<element pattern="alignItems" />
+		<element pattern="alignSelf" />
+		<element pattern="animation" />
+		<element pattern="animationDelay" />
+		<element pattern="animationDirection" />
+		<element pattern="animationDuration" />
+		<element pattern="animationFillMode" />
+		<element pattern="animationIterationCount" />
+		<element pattern="animationName">
+			<reference>
+				<i>TransitionEvent.animationName</i> (Read only) Is a DOMString containing the name CSS property associated with the transition.
+				<i>AnimationEvent.animationName</i> (Read only) Is a DOMString containing the value of the animation-name CSS property associated with the transition.</reference>
+			</element>
+		<element pattern="animationPlayState" />
+		<element pattern="animationTimingFunction" />
+		<element pattern="azimuth" />
+		<element pattern="backfaceVisibility" />
+		<element pattern="background" />
+		<element pattern="backgroundAttachment" />
+		<element pattern="backgroundClip" />
+		<element pattern="backgroundColor" />
+		<element pattern="backgroundImage" />
+		<element pattern="backgroundOrigin" />
+		<element pattern="backgroundPosition" />
+		<element pattern="backgroundRepeat" />
+		<element pattern="backgroundSize" />
+		<element pattern="border" />
+		<element pattern="borderBottom" />
+		<element pattern="borderBottomColor" />
+		<element pattern="borderBottomLeftRadius" />
+		<element pattern="borderBottomRightRadius" />
+		<element pattern="borderBottomStyle" />
+		<element pattern="borderBottomWidth" />
+		<element pattern="borderCollapse" />
+		<element pattern="borderColor" />
+		<element pattern="borderImage" />
+		<element pattern="borderImageOutset" />
+		<element pattern="borderImageRepeat" />
+		<element pattern="borderImageSlice" />
+		<element pattern="borderImageSource" />
+		<element pattern="borderImageWidth" />
+		<element pattern="borderLeft" />
+		<element pattern="borderLeftColor" />
+		<element pattern="borderLeftStyle" />
+		<element pattern="borderLeftWidth" />
+		<element pattern="borderRadius" />
+		<element pattern="borderRight" />
+		<element pattern="borderRightColor" />
+		<element pattern="borderRightStyle" />
+		<element pattern="borderRightWidth" />
+		<element pattern="borderSpacing" />
+		<element pattern="borderStyle" />
+		<element pattern="borderTop" />
+		<element pattern="borderTopColor" />
+		<element pattern="borderTopLeftRadius" />
+		<element pattern="borderTopRightRadius" />
+		<element pattern="borderTopStyle" />
+		<element pattern="borderTopWidth" />
+		<element pattern="borderWidth" />
+		<element pattern="bottom" />
+		<element pattern="boxDecorationBreak" />
+		<element pattern="boxShadow" />
+		<element pattern="boxSizing" />
+		<element pattern="breakAfter" />
+		<element pattern="breakBefore" />
+		<element pattern="breakInside" />
+		<element pattern="captionSide" />
+		<element pattern="clear" />
+		<element pattern="clip" />
+		<element pattern="clipPath" />
+		<element pattern="clipRule" />
+		<element pattern="color" />
+		<element pattern="colorInterpolation" />
+		<element pattern="colorInterpolationFilters" />
+		<element pattern="colorRendering" />
+		<element pattern="columnCount" />
+		<element pattern="columnFill" />
+		<element pattern="columnGap" />
+		<element pattern="columnRule" />
+		<element pattern="columnRuleColor" />
+		<element pattern="columnRuleStyle" />
+		<element pattern="columnRuleWidth" />
+		<element pattern="columns" />
+		<element pattern="columnSpan" />
+		<element pattern="columnWidth" />
+		<element pattern="content" />
+		<element pattern="counterIncrement" />
+		<element pattern="counterReset" />
+		<element pattern="crop" />
+		<element pattern="cue" />
+		<element pattern="cueAfter" />
+		<element pattern="cueBefore" />
+		<element pattern="cursor" />
+		<element pattern="direction" />
+		<element pattern="display" />
+		<element pattern="elevation" />
+		<element pattern="emptyCells" />
+		<element pattern="enableBackground" />
+		<element pattern="fill" />
+		<element pattern="fillOpacity" />
+		<element pattern="fillRule" />
+		<element pattern="filter" />
+		<element pattern="fit" />
+		<element pattern="fitPosition" />
+		<element pattern="flex" />
+		<element pattern="flexBasis" />
+		<element pattern="flexDirection" />
+		<element pattern="flexFlow" />
+		<element pattern="flexGrow" />
+		<element pattern="flexShrink" />
+		<element pattern="flexWrap" />
+		<element pattern="floodColor" />
+		<element pattern="floodOpacity" />
+		<element pattern="font" />
+		<element pattern="fontFamily" />
+		<element pattern="fontFeatureSettings" />
+		<element pattern="fontKerning" />
+		<element pattern="fontLanguageOverride" />
+		<element pattern="fontSize" />
+		<element pattern="fontSizeAdjust" />
+		<element pattern="fontStretch" />
+		<element pattern="fontStyle" />
+		<element pattern="fontSynthesis" />
+		<element pattern="fontVariant" />
+		<element pattern="fontVariantAlternates" />
+		<element pattern="fontVariantCaps" />
+		<element pattern="fontVariantEastAsian" />
+		<element pattern="fontVariantLigatures" />
+		<element pattern="fontVariantNumeric" />
+		<element pattern="fontVariantPosition" />
+		<element pattern="fontWeight" />
+		<element pattern="glyphOrientationHorizontal" />
+		<element pattern="glyphOrientationVedocumentrtical" />
+		<element pattern="gridCell" />
+		<element pattern="gridColumn" />
+		<element pattern="gridColumnAlign" />
+		<element pattern="gridColumns" />
+		<element pattern="gridColumnSizing" />
+		<element pattern="gridColumnSpan" />
+		<element pattern="gridFlow" />
+		<element pattern="gridRow" />
+		<element pattern="gridRowAlign" />
+		<element pattern="gridRows" />
+		<element pattern="gridRowSizing" />
+		<element pattern="gridRowSpan" />
+		<element pattern="gridTemplate" />
+		<element pattern="hangingPunctuation" />
+<!-- 		<element pattern="height" /> -->
+		<element pattern="hyphens" />
+		<element pattern="icon" />
+		<element pattern="imageOrientation" />
+		<element pattern="imageRendering" />
+		<element pattern="innerHTML"/>
+		<element pattern="imeMode" />
+		<element pattern="justifyContent" />
+		<element pattern="kerning" />
+<!--		<element pattern="left" /> -->
+		<element pattern="letterSpacing" />
+		<element pattern="lightingColor" />
+		<element pattern="lineBreak" />
+		<element pattern="lineHeight" />
+		<element pattern="listStyle" />
+		<element pattern="listStyleImage" />
+		<element pattern="listStylePosition" />
+		<element pattern="listStyleType" />
+		<element pattern="margin" />
+		<element pattern="marginBottom" />
+		<element pattern="marginLeft" />
+		<element pattern="marginRight" />
+		<element pattern="marginTop" />
+		<element pattern="marker" />
+		<element pattern="markerEnd" />
+		<element pattern="markerMid" />
+		<element pattern="markerOffset" />
+		<element pattern="markerStart" />
+		<element pattern="marks" />
+		<element pattern="marqueeDirection" />
+		<element pattern="marqueeLoop" />
+		<element pattern="marqueeSpeed" />
+		<element pattern="marqueeStyle" />
+		<element pattern="mask" />
+		<element pattern="maxHeight" />
+		<element pattern="maxWidth" />
+		<element pattern="maxZoom" />
+		<element pattern="minHeight" />
+		<element pattern="minWidth" />
+		<element pattern="minZoom" />
+		<element pattern="navDown" />
+		<element pattern="navIndex" />
+		<element pattern="navLeft" />
+		<element pattern="navRight" />
+		<element pattern="navUp" />
+		<element pattern="opacity"><reference>CSS3</reference></element>
+		<element pattern="order" />
+		<element pattern="orientation" />
+		<element pattern="orphans" />
+		<element pattern="outline" />
+		<element pattern="outlineColor" />
+		<element pattern="outlineOffset"><reference>CSS3</reference></element>
+		<element pattern="outlineStyle" />
+		<element pattern="outlineWidth" />
+		<element pattern="overflow" />
+		<element pattern="overflowStyle" />
+		<element pattern="overflowWrap" />
+		<element pattern="overflowX"><reference>CSS3</reference></element>
+		<element pattern="overflowY"><reference>CSS3</reference></element>
+		<element pattern="padding" />
+		<element pattern="paddingBottom" />
+		<element pattern="paddingLeft" />
+		<element pattern="paddingRight" />
+		<element pattern="paddingTop" />
+		<element pattern="page" />
+		<element pattern="pageBreakAfter" />
+		<element pattern="pageBreakBefore" />
+		<element pattern="pageBreakInside" />
+		<element pattern="pagePolicy" />
+		<element pattern="pause" />
+		<element pattern="pauseAfter" />
+		<element pattern="pauseBefore" />
+		<element pattern="perspective" />
+		<element pattern="perspectiveOrigin" />
+		<element pattern="pitch" />
+		<element pattern="pitchRange" />
+		<element pattern="pitchEvents" />
+		<element pattern="position" />
+		<element pattern="quotes" />
+		<element pattern="resize" />
+		<element pattern="rest" />
+		<element pattern="restAfter" />
+		<element pattern="restBefore" />
+		<element pattern="richness" />
+		<element pattern="right" />
+		<element pattern="rotation" />
+		<element pattern="rotationPoint" />
+		<element pattern="rubyAlign" />
+		<element pattern="rubyOverhang" />
+		<element pattern="rubyPosition" />
+		<element pattern="rubySpan" />
+		<element pattern="size" />
+		<element pattern="speak" />
+		<element pattern="speakAs" />
+		<element pattern="speakHeader" />
+		<element pattern="speakNumeral" />
+		<element pattern="speakPunctuation" />
+		<element pattern="speechRate" />
+		<element pattern="src" />
+		<element pattern="stopColor" />
+		<element pattern="stopOpacity" />
+		<element pattern="stress" />
+		<element pattern="stroke" />
+		<element pattern="strokeDasharray" />
+		<element pattern="strokeDashoffset" />
+		<element pattern="strokeLinecap" />
+		<element pattern="strokeLinejoin" />
+		<element pattern="strokeMiterlimit" />
+		<element pattern="strokeOpacity" />
+		<element pattern="strokeWidth" />
+		<element pattern="tableLayout" />
+		<element pattern="tabSize" />
+		<element pattern="textAlign" />
+		<element pattern="textAlignLast" />
+		<element pattern="textAnchor" />
+		<element pattern="textDecoration" />
+		<element pattern="textDecorationColor" />
+		<element pattern="textDecorationLine" />
+		<element pattern="textDecorationSkip" />
+		<element pattern="textDecorationStyle" />
+		<element pattern="textEmphasis" />
+		<element pattern="textEmphasisColor" />
+		<element pattern="textEmphasisPosition" />
+		<element pattern="textEmphasisStyle" />
+		<element pattern="textIndent" />
+		<element pattern="textJustify" />
+		<element pattern="textOverflow" />
+		<element pattern="textRendering" />
+		<element pattern="textShadow" />
+		<element pattern="textSpaceCollapse" />
+		<element pattern="textTransform" />
+		<element pattern="textUnderlinePosition" />
+		<element pattern="textWrap" />
+<!--		<element pattern="top" /> -->
+		<element pattern="transform" />
+		<element pattern="transformOrigin" />
+		<element pattern="transformStyle" />
+		<element pattern="transition" />
+		<element pattern="transitionDelay" />
+		<element pattern="transitionDuration" />
+		<element pattern="transitionProperty" />
+		<element pattern="transitionTimingFunction" />
+		<element pattern="unicodeBidi" />
+		<element pattern="unicodeRange" />
+		<element pattern="userSelect" />
+		<element pattern="userZoom" />
+		<element pattern="verticalAlign" />
+		<element pattern="visibility" />
+		<element pattern="voiceBalance" />
+		<element pattern="voiceDuration" />
+		<element pattern="voiceFamily" />
+		<element pattern="voicePitch" />
+		<element pattern="voiceRange" />
+		<element pattern="voiceRate" />
+		<element pattern="voiceStress" />
+		<element pattern="voiceVolume" />
+		<element pattern="volume" />
+		<element pattern="whiteSpace" />
+		<element pattern="widows" />
+<!-- 		<element pattern="width" /> -->
+		<element pattern="wordBreak" />
+		<element pattern="wordSpacing" />
+		<element pattern="wordWrap"><reference>CSS3</reference></element>
+		<element pattern="zIndex" />
+		<element pattern="zoom" />
+	</group>
+</group>
+
+<group highlight="js-value" >
+	<autocomplete enable="1" />
+	<element pattern="false" />
+	<element pattern="Infinity" />
+	<element pattern="MAX_VALUE"/>
+	<element pattern="MIN_VALUE" />
+	<element pattern="NaN" />
+	<element pattern="NEGATIVE_INFINITY" />
+	<element pattern="null" />
+	<element pattern="POSITIVE_INFINITY" />
+	<element pattern="true" />
+</group>
+<!-- javascript regex patterns goes here, at the end of the file -->
+<element id="js.regex" pattern="(=|+|-)[ &#9;&#10;&#13;]*/" is_regex="1" starts_block="1" highlight="js-brackets">
+	<context symbols=".;/\ " highlight="js-string" >
+		<element pattern="\\." is_regex="1" highlight="js-string" />
+		<element pattern="/[gimyxu]*" is_regex="1" highlight="js-brackets" ends_block="1" blockstartelement="js.regex" ends_context="1"/>
+	</context>
+</element>
+<element id="js.replace.regex" pattern="\([ #&#9;&#10;&#13;]*/" is_regex="1" highlight="js-brackets" starts_block="1">
+	<context symbols="/\ ),;.#&#9;&#10;&#13;" highlight="js-string">
+		<element pattern="\\." is_regex="1" highlight="js-string" />
+		<element pattern="/[gimyxu]*" is_regex="1" highlight="js-brackets" ends_block="1" blockstartelement="js.replace.regex" ends_context="1" />
+	</context>
+</element>  
+
+<element pattern="[0-9]+\.[0-9]+" is_regex="1" highlight="js-value" />
+<element pattern="-[0-9]+\.[0-9]+" is_regex="1" highlight="js-value" />
+<element pattern="0[xX][0-9a-fA-F][0-9a-fA-F]*" is_regex="1" highlight="js-value" /> 
+<element pattern="-0[xX][0-9a-fA-F][0-9a-fA-F]*" is_regex="1" highlight="js-value" /> 
+<element pattern="-[0-9]\.[0-9]+e\+[0-9]+" is_regex="1" highlight="js-value" />
+<element pattern="[0-9]\.[0-9]+e\+[0-9]+" is_regex="1" highlight="js-value" />
+<element pattern="[0-9]+" is_regex="1" highlight="js-value" />
+<element pattern="-[0-9]+" is_regex="1" highlight="js-value" />
+
+
+</bfinc>

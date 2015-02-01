@@ -1,0 +1,607 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		smarty.bflang2 $Revision: 6414 $
+
+		Copyright (C) 2008-20011 Olivier Sessink
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE bflang [
+	<!ENTITY i18n "dir,lang">
+	<!ENTITY univ "class,id,style,title">
+	<!ENTITY evnt "onload,onclick,ondblclick,onmousedown,onmouseup,onmouseover,onmousemove,onmouseout,onkeypress,onkeydown,onkeyup">
+	<!ENTITY css-selectors SYSTEM "css-selectors.bfinc">
+	<!ENTITY css-rules SYSTEM "css-rules.bfinc">
+	<!ENTITY all-javascript SYSTEM "all-javascript.bfinc">
+	<!ENTITY all-html SYSTEM "all-html.bfinc">
+	<!ENTITY JQuery SYSTEM "JQuery.bfinc">
+	<!ENTITY all-php SYSTEM "all-php.bfinc">
+	<!ENTITY s-univ '<element pattern="&quot;" highlight="string">
+			<context symbols="\&quot;" highlight="string">
+				<element pattern="\\." is_regex="1" highlight="string" />
+				<element pattern="&quot;" highlight="string" ends_context="1" />
+			</context>
+		</element>
+		<element pattern="&#39;" highlight="string">
+			<context symbols="\&#39;" highlight="string">
+				<element pattern="\\." is_regex="1" highlight="string" />
+				<element pattern="&#39;" highlight="string" ends_context="1" />
+			</context>
+		</element>
+		<element pattern="$[A-Za-z0-9-_\.]*" is_regex="1" highlight="smarty-variable" />
+		<element pattern="(true|false)" is_regex="1" highlight="smarty-variable" />
+		<element pattern="[0123456789]+" is_regex="1" highlight="smarty-value" />
+		'>
+]>
+
+<bflang name="Smarty template" version="2.0" table="61634" contexts="358" matches="10868">
+<header>
+	<mime type="application/x-smarty" />
+	<option name="load_reference" default="1"/>
+	<option name="load_completion" default="1"/>
+	<option name="show_in_menu" default="0"/>
+	<option name="load_php_functions" default="1" description="All php functions" />
+	<option name="autocomplete_tags" default="1" />
+	<option name="attribute_string_is_block" default="0" description="Show tag attributes as block"/>
+	<option name="javascript_object_methods" default="1" description="Autocomplete Javascript object methods" />
+	<option name="sql-in-php-string" default="1" description="scan for sql in php strings" />
+	<option name="javascript_css_properties" default="1" description="CSS properties" />
+	<option name="autocomplete-html-entities" default="0" description="HTML entities" />
+	<option name="Parentheses block_foldable" default="0" description="Allow folding of the Parentheses block" />
+	<option name="autocomplete_PHP_variable" default="1" description="Auto-complete PHP variables" />
+	<option name="autocomplete_PHP_function" default="1" description="Auto-complete PHP functions" />
+	<option name="JQuery" default="0" description="include JQuery syntax" />
+	<highlight name="attribute-string" style="string-no-spell-check" />
+	<highlight name="html-tag" style="tag" />
+	<highlight name="html-reference-external-tag" style="special-tag" />
+	<highlight name="html-table-tag" style="special-tag2" />
+	<highlight name="html-form-tag" style="special-tag3" />
+	<highlight name="html-deprecated-tag" style="warning" />
+	<highlight name="html-attribute" style="attribute" />
+	<highlight name="html-string" style="string" />
+	<highlight name="html-entity" style="value" />
+	<highlight name="html-brackets" style="brackets" />
+	<highlight name="html-comment" style="comment" />
+
+	<highlight name="js-keyword" style="keyword" />
+	<highlight name="js-brackets" style="brackets" />
+	<highlight name="js-type" style="type" />
+	<highlight name="js-comment" style="comment" />
+	<highlight name="js-string" style="string" />
+	<highlight name="js-value" style="value" />
+	<highlight name="js-function" style="function" />
+	<highlight name="js-variable" style="variable" />
+   <highlight name="js-property" style="special-function" />
+	<highlight name="js-css-property" style="function" />
+
+
+	<highlight name="css-brackets" style="brackets" />
+	<highlight name="css-comment" style="comment" />
+	<highlight name="css-html-tag" style="tag" />
+	<highlight name="css-html-classid" style="tag" />
+	<highlight name="css-html-media" style="special-tag" />
+	<highlight name="css-keyword" style="keyword" />
+	<highlight name="css-property" style="special-keyword" />
+	<highlight name="css-draft-property" style="special-tag3" />
+	<highlight name="css-string" style="string" />
+	<highlight name="css-value" style="value" />
+	<highlight name="css-pseudo-element" style="keyword" />
+	<highlight name="css-operator" style="operator" />
+
+	<highlight name="smarty-comment" style="comment" />
+	<highlight name="smarty-value" style="value" />
+	<highlight name="smarty-tag" style="special-type" />
+	<highlight name="smarty-variable" style="variable" />
+	<highlight name="smarty-attribute" style="attribute" />
+
+	<highlight name="php-block-tag" style="special-value" />
+	<highlight name="string" style="string" />
+	<highlight name="brackets" style="brackets" />
+	<highlight name="php-keyword" style="keyword" />
+	<highlight name="php-value" style="value" />
+	<highlight name="php-function" style="function" />
+	<highlight name="php-comment" style="comment" />
+	<highlight name="php-variable" style="variable" />
+	<highlight name="php-string-sql-keyword" style="special-keyword" />
+</header>
+<properties>
+	<default_spellcheck enabled="1" spell_decode_entities="1" />
+	<comment id="cm.cblockcomment" type="block" start="/*" end="*/" />
+	<comment id="cm.cpplinecomment" type="line" start="//" />
+
+</properties>
+<definition>
+<context symbols="{}&gt;&lt;&amp;; &#9;&#10;&#13;/">
+
+<element pattern="{literal}" highlight="smarty-tag">
+	<context symbols="}&gt;&lt;&amp;; &#9;&#10;&#13;/">
+		&all-html;
+		<element pattern="{/literal}" ends_context="1" highlight="smarty-tag" />
+	</context>
+</element>
+
+
+<!-- comments -->
+<element pattern="{*" highlight="smarty-tag">
+	<context symbols="*}&gt;&lt;&amp;; &#9;&#10;&#13;" highlight="smarty-comment">
+		<element pattern="*}" highlight="smarty-tag" ends_context="1" />
+	</context>
+</element>
+
+<!-- assign -->
+<element pattern="{assign" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;" >
+		<element pattern="var" highlight="smarty-attribute" />
+		<element pattern="value" highlight="smarty-attribute" />
+		&s-univ;
+		<element id="e.s.end" pattern="}" ends_context="1" highlight="smarty-tag" />
+	</context>
+</element>
+
+<!-- include -->
+<element pattern="{include" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="file" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- if/else/ flow control loop -->
+<element pattern="{if" highlight="smarty-tag" starts_block="1" id="e.smarty.if">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+<element pattern="{elseif" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+<element pattern="{else}" highlight="smarty-tag" />
+<element pattern="{/if}" highlight="smarty-tag" ends_block="1" blockstartelement="e.smarty.if" />
+
+<!-- section/sectionelse flow control loop -->
+<element pattern="{section" highlight="smarty-tag" starts_block="1" id="e.smarty.section">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="name" highlight="smarty-attribute" />
+		<element pattern="loop" highlight="smarty-attribute" />
+		<element pattern="start" highlight="smarty-attribute" />
+		<element pattern="step" highlight="smarty-attribute" />
+		<element pattern="max" highlight="smarty-attribute" />
+		<element pattern="show" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+<element pattern="{sectionelse}" highlight="smarty-tag" />
+<element pattern="{/section}" highlight="smarty-tag" ends_block="1" blockstartelement="e.smarty.section" />
+
+<!-- foreach/foreachelse flow control loop -->
+<element pattern="{foreach" highlight="smarty-tag" starts_block="1" id="e.smarty.foreach">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="name" highlight="smarty-attribute" />
+		<element pattern="key" highlight="smarty-attribute" />
+		<element pattern="from" highlight="smarty-attribute" />
+		<element pattern="item" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+<element pattern="{foreachelse}" highlight="smarty-tag" />
+<element pattern="{/foreach}" highlight="smarty-tag" ends_block="1" blockstartelement="e.smarty.foreach" />
+
+
+<!-- capture -->
+<element pattern="{capture" highlight="smarty-tag" starts_block="1" id="e.smarty.capture">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="name" highlight="smarty-attribute" />
+		<element pattern="assign" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+<element pattern="{/capture}" highlight="smarty-tag" ends_block="1" blockstartelement="e.smarty.capture" />
+
+<!-- config_load -->
+<element pattern="{config_load" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="file" highlight="smarty-attribute" />
+		<element pattern="section" highlight="smarty-attribute" />
+		<element pattern="scope" highlight="smarty-attribute" />
+		<element pattern="global" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- include_php -->
+<element pattern="{include_php" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="file" highlight="smarty-attribute" />
+		<element pattern="once" highlight="smarty-attribute" />
+		<element pattern="assign" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- insert -->
+<element pattern="{insert" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="name" highlight="smarty-attribute" />
+		<element pattern="assign" highlight="smarty-attribute" />
+		<element pattern="script" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<element pattern="{[lr]delim}" is_regex="1" highlight="smarty-tag" />
+
+<!-- PHP inclusion -->
+<element pattern="{php}" highlight="smarty-tag" starts_block="1" id="e.smarty.php">
+	<context symbols="'&#34;(){}[];#:.,/?!$^*-+=&gt;&lt;&amp; &#9;&#10;&#13;" highlight="php-block-tag">
+		&all-php;
+		<element id="e.php.lbrace" pattern="{" starts_block="1" mayfold="1" highlight="brackets" />
+		<element pattern="}" ends_block="1" blockstartelement="e.php.lbrace" highlight="brackets" />
+		<element id="e.php.lbracket" pattern="[" starts_block="1" mayfold="1" highlight="brackets" />
+		<element pattern="]" ends_block="1" blockstartelement="e.php.lbracket" highlight="brackets" />
+		<element id="e.php.lparen" pattern="(" starts_block="1" mayfold="1" highlight="brackets" block_name="Parentheses block" />
+		<element pattern=")" ends_block="1" blockstartelement="e.php.lparen" highlight="brackets" />
+		<element id="e.php.lcomment" pattern="/*" starts_block="1" highlight="php-comment">
+			<context symbols="*/&#9;&#10;&#13;" highlight="php-comment">
+				<element pattern="*/" ends_block="1" blockstartelement="e.php.lcomment" highlight="php-comment" mayfold="1" ends_context="1" />
+			</context>
+		</element>
+		<element id="e.php.variable" pattern="$[a-zA-Z_][a-zA-Z0-9_]*" is_regex="1" case_insens="1" highlight="php-variable"/>
+		<element pattern="{/php}" highlight="smarty-tag" ends_context="1" ends_block="1" blockstartelement="e.smarty.php" />
+		<element pattern="//" highlight="php-comment">
+			<context symbols="?&gt;&#10;&#13;" highlight="php-comment">
+				<element pattern="(&#10;|&#13;|&#13;&#10;)" is_regex="1" ends_context="1" />
+				<element pattern="?&gt;" ends_context="2" ends_block="1" blockstartelement="e.smarty.php" highlight="php-block-tag" mayfold="1" />
+			</context>
+		</element>
+	</context>
+</element>
+
+<element pattern="{/?strip}" is_regex="1" highlight="smarty-tag" />
+
+<!-- counter -->
+<element pattern="{counter" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="name" highlight="smarty-attribute" />
+		<element pattern="assign" highlight="smarty-attribute" />
+		<element pattern="start" highlight="smarty-attribute" />
+		<element pattern="skip" highlight="smarty-attribute" />
+		<element pattern="direction" highlight="smarty-attribute" />
+		<element pattern="print" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- cycle -->
+<element pattern="{cycle" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="name" highlight="smarty-attribute" />
+		<element pattern="values" highlight="smarty-attribute" />
+		<element pattern="print" highlight="smarty-attribute" />
+		<element pattern="advance" highlight="smarty-attribute" />
+		<element pattern="delimiter" highlight="smarty-attribute" />
+		<element pattern="assign" highlight="smarty-attribute" />
+		<element pattern="reset" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- eval -->
+<element pattern="{eval" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="assign" highlight="smarty-attribute" />
+		<element pattern="var" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- fetch -->
+<element pattern="{fetch" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="assign" highlight="smarty-attribute" />
+		<element pattern="file" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- html_checkboxes -->
+<element pattern="{html_checkboxes" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="name" highlight="smarty-attribute" />
+		<element pattern="values" highlight="smarty-attribute" />
+		<element pattern="output" highlight="smarty-attribute" />
+		<element pattern="selected" highlight="smarty-attribute" />
+		<element pattern="options" highlight="smarty-attribute" />
+		<element pattern="separator" highlight="smarty-attribute" />
+		<element pattern="assign" highlight="smarty-attribute" />
+		<element pattern="labels" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- html_image -->
+<element pattern="{html_image" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="file" highlight="smarty-attribute" />
+		<element pattern="height" highlight="smarty-attribute" />
+		<element pattern="width" highlight="smarty-attribute" />
+		<element pattern="basedir" highlight="smarty-attribute" />
+		<element pattern="alt" highlight="smarty-attribute" />
+		<element pattern="href" highlight="smarty-attribute" />
+		<element pattern="path_prefix" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- html_options -->
+<element pattern="{html_options" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="values" highlight="smarty-attribute" />
+		<element pattern="output" highlight="smarty-attribute" />
+		<element pattern="selected" highlight="smarty-attribute" />
+		<element pattern="options" highlight="smarty-attribute" />
+		<element pattern="name" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- html_radios -->
+<element pattern="{html_radios" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="values" highlight="smarty-attribute" />
+		<element pattern="output" highlight="smarty-attribute" />
+		<element pattern="selected" highlight="smarty-attribute" />
+		<element pattern="options" highlight="smarty-attribute" />
+		<element pattern="separator" highlight="smarty-attribute" />
+		<element pattern="assign" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- html_select_date -->
+<element pattern="{html_select_date" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="prefix" highlight="smarty-attribute" />
+		<element pattern="time" highlight="smarty-attribute" />
+		<element pattern="start_year" highlight="smarty-attribute" />
+		<element pattern="end_year" highlight="smarty-attribute" />
+		<element pattern="display_days" highlight="smarty-attribute" />
+		<element pattern="display_months" highlight="smarty-attribute" />
+		<element pattern="display_years" highlight="smarty-attribute" />
+		<element pattern="month_format" highlight="smarty-attribute" />
+		<element pattern="day_format" highlight="smarty-attribute" />
+		<element pattern="day_value_format" highlight="smarty-attribute" />
+		<element pattern="year_as_text" highlight="smarty-attribute" />
+		<element pattern="reverse_years" highlight="smarty-attribute" />
+		<element pattern="field_array" highlight="smarty-attribute" />
+		<element pattern="day_size" highlight="smarty-attribute" />
+		<element pattern="monty_size" highlight="smarty-attribute" />
+		<element pattern="year_size" highlight="smarty-attribute" />
+		<element pattern="all_extra" highlight="smarty-attribute" />
+		<element pattern="day_extra" highlight="smarty-attribute" />
+		<element pattern="month_extra" highlight="smarty-attribute" />
+		<element pattern="year_extra" highlight="smarty-attribute" />
+		<element pattern="field_order" highlight="smarty-attribute" />
+		<element pattern="field_separator" highlight="smarty-attribute" />
+		<element pattern="month_value_format" highlight="smarty-attribute" />
+		<element pattern="year_empty" highlight="smarty-attribute" />
+		<element pattern="month_empty" highlight="smarty-attribute" />
+		<element pattern="day_empty" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- html_select_time -->
+<element pattern="{html_select_time" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="prefix" highlight="smarty-attribute" />
+		<element pattern="time" highlight="smarty-attribute" />
+		<element pattern="display_hours" highlight="smarty-attribute" />
+		<element pattern="display_minutes" highlight="smarty-attribute" />
+		<element pattern="display_seconds" highlight="smarty-attribute" />
+		<element pattern="display_meridian" highlight="smarty-attribute" />
+		<element pattern="use_24_hours" highlight="smarty-attribute" />
+		<element pattern="minute_interval" highlight="smarty-attribute" />
+		<element pattern="second_interval" highlight="smarty-attribute" />
+		<element pattern="field_array" highlight="smarty-attribute" />
+		<element pattern="all_extra" highlight="smarty-attribute" />
+		<element pattern="hour_extra" highlight="smarty-attribute" />
+		<element pattern="minute_extra" highlight="smarty-attribute" />
+		<element pattern="second_extra" highlight="smarty-attribute" />
+		<element pattern="meridian_extra" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- html_table -->
+<element pattern="{html_table" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="loop" highlight="smarty-attribute" />
+		<element pattern="cols" highlight="smarty-attribute" />
+		<element pattern="rows" highlight="smarty-attribute" />
+		<element pattern="inner" highlight="smarty-attribute" />
+		<element pattern="caption" highlight="smarty-attribute" />
+		<element pattern="table_attr" highlight="smarty-attribute" />
+		<element pattern="th_attr" highlight="smarty-attribute" />
+		<element pattern="tr_attr" highlight="smarty-attribute" />
+		<element pattern="td_attr" highlight="smarty-attribute" />
+		<element pattern="trailpad" highlight="smarty-attribute" />
+		<element pattern="hdir" highlight="smarty-attribute" />
+		<element pattern="vdir" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- mailto -->
+<element pattern="{mailto" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="address" highlight="smarty-attribute" />
+		<element pattern="text" highlight="smarty-attribute" />
+		<element pattern="encode" highlight="smarty-attribute" />
+		<element pattern="cc" highlight="smarty-attribute" />
+		<element pattern="bcc" highlight="smarty-attribute" />
+		<element pattern="subject" highlight="smarty-attribute" />
+		<element pattern="newsgroups" highlight="smarty-attribute" />
+		<element pattern="followupto" highlight="smarty-attribute" />
+		<element pattern="extra" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- math -->
+<element pattern="{math" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="equation" highlight="smarty-attribute" />
+		<element pattern="format" highlight="smarty-attribute" />
+		<element pattern="var" highlight="smarty-attribute" />
+		<element pattern="assign" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- popup -->
+<element pattern="{popup" highlight="smarty-tag" >
+	<autocomplete enable="1" />
+	<reference>popup - create a JavaScript popup window</reference>
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="text" highlight="smarty-attribute" >
+			<autocomplete enable="1" />
+		</element>
+		<element pattern="trigger" highlight="smarty-attribute" >
+			<autocomplete enable="1" />
+		</element>
+		<element pattern="sticky" highlight="smarty-attribute" />
+		<element pattern="caption" highlight="smarty-attribute" />
+		<element pattern="fgcolor" highlight="smarty-attribute" />
+		<element pattern="bgcolor" highlight="smarty-attribute" />
+		<element pattern="textcolor" highlight="smarty-attribute" />
+		<element pattern="capcolor" highlight="smarty-attribute" />
+		<element pattern="closecolor" highlight="smarty-attribute" />
+		<element pattern="textfont" highlight="smarty-attribute" />
+		<element pattern="captionfont" highlight="smarty-attribute" />
+		<element pattern="closefont" highlight="smarty-attribute" />
+		<element pattern="textsize" highlight="smarty-attribute" />
+		<element pattern="captionsize" highlight="smarty-attribute" />
+		<element pattern="closesize" highlight="smarty-attribute" />
+		<element pattern="width" highlight="smarty-attribute" />
+		<element pattern="height" highlight="smarty-attribute" />
+		<element pattern="left" highlight="smarty-attribute" />
+		<element pattern="right" highlight="smarty-attribute" />
+		<element pattern="center" highlight="smarty-attribute" />
+		<element pattern="above" highlight="smarty-attribute" />
+		<element pattern="below" highlight="smarty-attribute" />
+		<element pattern="border" highlight="smarty-attribute" />
+		<element pattern="offsetx" highlight="smarty-attribute" />
+		<element pattern="offsety" highlight="smarty-attribute" />
+		<element pattern="fgbackground" highlight="smarty-attribute" />
+		<element pattern="bgbackground" highlight="smarty-attribute" />
+		<element pattern="closetext" highlight="smarty-attribute" />
+		<element pattern="noclose" highlight="smarty-attribute" />
+		<element pattern="status" highlight="smarty-attribute" />
+		<element pattern="autostatus" highlight="smarty-attribute" />
+		<element pattern="autostatuscap" highlight="smarty-attribute" />
+		<element pattern="inarray" highlight="smarty-attribute" />
+		<element pattern="caparray" highlight="smarty-attribute" />
+		<element pattern="capicon" highlight="smarty-attribute" />
+		<element pattern="snapx" highlight="smarty-attribute" />
+		<element pattern="snapy" highlight="smarty-attribute" />
+		<element pattern="fixx" highlight="smarty-attribute" />
+		<element pattern="fixy" highlight="smarty-attribute" />
+		<element pattern="background" highlight="smarty-attribute" />
+		<element pattern="padx" highlight="smarty-attribute" />
+		<element pattern="pady" highlight="smarty-attribute" />
+		<element pattern="fullhtml" highlight="smarty-attribute" />
+		<element pattern="frame" highlight="smarty-attribute" />
+		<element pattern="function" highlight="smarty-attribute" />
+		<element pattern="delay" highlight="smarty-attribute" />
+		<element pattern="hauto" highlight="smarty-attribute" />
+		<element pattern="vauto" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+<element pattern="{popup_init"  highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="src" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- textformat -->
+<element pattern="{textformat" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		<element pattern="style" highlight="smarty-attribute" />
+		<element pattern="indent" highlight="smarty-attribute" />
+		<element pattern="indent_first" highlight="smarty-attribute" />
+		<element pattern="indent_char" highlight="smarty-attribute" />
+		<element pattern="wrap" highlight="smarty-attribute" />
+		<element pattern="wrap_char" highlight="smarty-attribute" />
+		<element pattern="wrap_cut" highlight="smarty-attribute" />
+		<element pattern="assign" highlight="smarty-attribute" />
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+
+
+<!-- Catch-all stanza for custom plugins, etc.  Must be next to last. -->
+<element pattern="{[^ &#9;}\$]+" is_regex="1" highlight="smarty-tag">
+	<context symbols="};\&quot;=' &#9;&#10;&#13;">
+		&s-univ;
+		<element pattern="[a-zA-Z_-\.]+[a-zA-Z0-9_-\.]+" is_regex="1" highlight="smarty-attribute" />
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+<!-- Standalone smarty variable inclusion. Must be last.  -->
+<element pattern="{" highlight="smarty-tag">
+	<context symbols="};\&quot;='$&#9;&#10;&#13;">
+		&s-univ;
+		<element idref="e.s.end" />
+	</context>
+</element>
+
+
+&all-html;
+
+</context>
+</definition>
+</bflang>
