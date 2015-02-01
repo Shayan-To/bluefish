@@ -8,3 +8,8 @@ body {
 	color: #ffffff;
 }
 
+@media print
+  {
+  p.test {font-family:times,serif;font-size:10px;}
+  }
+
