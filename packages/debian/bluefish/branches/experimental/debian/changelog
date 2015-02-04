@@ -1,6 +1,8 @@
 bluefish (2.2.7-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.9.6.
+    (Vcs-Svn, Vcs-Browser): Fixed accordingly for experimental.
 
  -- Daniel Leidert <dleidert@debian.org>  Wed, 04 Feb 2015 22:11:19 +0100
 
