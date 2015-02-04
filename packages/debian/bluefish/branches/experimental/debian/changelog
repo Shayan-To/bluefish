@@ -1,4 +1,4 @@
-bluefish (2.2.7-1) UNRELEASED; urgency=medium
+bluefish (2.2.7-1) experimental; urgency=medium
 
   * New upstream release.
   * debian/control (Standards-Version): Bumped to 3.9.6.
@@ -9,7 +9,7 @@ bluefish (2.2.7-1) UNRELEASED; urgency=medium
     upstream.
   * debian/patches/series: Adjusted accordingly.
 
- -- Daniel Leidert <dleidert@debian.org>  Wed, 04 Feb 2015 22:11:19 +0100
+ -- Daniel Leidert <dleidert@debian.org>  Wed, 04 Feb 2015 22:36:09 +0100
 
 bluefish (2.2.6-2) unstable; urgency=medium
 
