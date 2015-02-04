@@ -1,3 +1,9 @@
+bluefish (2.2.7-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Daniel Leidert <dleidert@debian.org>  Wed, 04 Feb 2015 22:11:19 +0100
+
 bluefish (2.2.6-2) unstable; urgency=medium
 
   * debian/rules: Added override_dh_autoreconf target and run the upstream
