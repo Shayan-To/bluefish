@@ -1,0 +1,15 @@
+Author: Daniel Leidert <dleidert@debian.org>
+Description: Fix the chromium browser command.
+Bug-Debian: https://bugs.debian.org/752234
+
+--- a/src/rcfile.c
++++ b/src/rcfile.c
+@@ -858,7 +858,7 @@
+ 										 NULL));
+ 	defaults =
+ 		g_list_prepend(defaults,
+-					  array_from_arglist(_("Chromium"), "chromium-browser '%p'&", "0", NULL));
++					  array_from_arglist(_("Chromium"), "chromium '%p'&", "0", NULL));
+ 	defaults =
+ 		g_list_prepend(defaults,
+ 					  array_from_arglist(_("Konqueror"), "konqueror '%p'&", "0", NULL));
