@@ -17,10 +17,10 @@ Build-Depends: debhelper (>> 7.0.50~),
                python (>> 2.6.6-3~),
                python-dev,
                zlib1g-dev
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://bluefish.openoffice.nl
-Vcs-Browser: http://sourceforge.net/p/bluefish/code/HEAD/tree/packages/debian/bluefish/trunk/
-Vcs-Svn: svn://svn.code.sf.net/p/bluefish/code/packages/debian/bluefish/trunk/
+Vcs-Browser: http://sourceforge.net/p/bluefish/code/HEAD/tree/packages/debian/bluefish/branches/experimental/
+Vcs-Svn: svn://svn.code.sf.net/p/bluefish/code/packages/debian/bluefish/branches/experimental/
 
 Package: bluefish
 Architecture: any
