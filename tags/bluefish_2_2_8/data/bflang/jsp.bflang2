@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		jsp.bflang2 $Revision$
+ 
+		Copyright (C) 2008 Olivier Sessink
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.		
+-->
+
+<bflang name="JSP" version="3" contexts="45" matches="353">
+<header>
+	<mime type="application/x-jsp"/>
+	<option name="show_in_menu" default="1"/>
+	<option name="load_reference" default="1"/>
+	<option name="load_completion" default="1"/>
+	<option name="autocomplete_tags" default="1" />
+	<option name="Parentheses block_foldable" default="0" description="Allow folding of the Parentheses block" />
+	<highlight name="attribute-string" style="string-no-spell-check" />
+	<highlight name="attribute" style="attribute"  />
+	<highlight name="brackets" style="brackets"  />
+	<highlight name="comment" style="comment"  />
+	<highlight name="keyword" style="keyword"  />
+	<highlight name="preprocessor" style="preprocessor" />
+	<highlight name="region" style="special-value"  />
+	<highlight name="special-keyword" style="special-keyword"  />
+	<highlight name="storage" style="special-keyword"  />
+	<highlight name="string" style="string"  />
+	<highlight name="tag" style="tag"  />
+	<highlight name="type" style="type"  />
+	<highlight name="value" style="value"  />
+</header>
+<properties>
+	<comment type="block" start="/*" end="*/" />
+	<comment type="line" start="//" />
+	<smartindent characters="{" />
+	<smartoutdent characters="}" />
+</properties>
+
+<definition>
+<context symbols="&gt;&lt;&amp;; &#9;&#10;&#13;">
+<group highlight="tag" attribhighlight="attribute"  attrib_autocomplete_append="=&quot;&quot;">
+	<autocomplete append="&gt;" />
+<tag name="html" />
+<tag name="head" />
+<tag name="meta" attributes="name,http-equiv,content" >
+	<autocomplete append=" /&gt;" />
+</tag>
+<tag name="title" >
+	<autocomplete append="&gt; &lt;/title&gt;" />
+</tag>
+<tag name="script" attributes="type,src" >
+	<autocomplete append=" /&gt;" />
+</tag>
+<tag name="link" attributes="rel,type,href" >
+	<autocomplete append=" /&gt;" />
+</tag>
+<tag name="body" />
+<tag name="div" attributes="style,class,id,align" />
+<tag name="p" attributes="style,class,id,align" />
+<tag name="span" attributes="style,class,id,align" />
+<tag name="img" highlight="storage" attributes="src,width,height,align,valign,border,alt" >
+	<autocomplete append=" src=&#34;&#34; width=&#34;&#34; height=&#34;&#34; alt=&#34;&#34; style=&#34;border:0;&#34; /&gt;" />
+</tag>
+<tag name="i" attributes="style,class,id" />
+<tag name="b" attributes="style,class,id" />
+<tag name="em" attributes="style,class,id" />
+<tag name="strong" attributes="style,class,id" />
+<tag name="u" attributes="style,class,id" />
+<tag name="a" highlight="storage" attributes="style,class,id,href,target" >
+	<autocomplete append=" href=&#34;&#34; &gt;" />
+</tag>
+<tag name="table" attributes="style,class,id" />
+<tag name="th" attributes="style,class,id" />
+<tag name="tr" attributes="style,class,id" />
+<tag name="td" attributes="style,class,id" />
+<tag name="ul" attributes="style,class,id" />
+<tag name="ol" attributes="style,class,id" />
+<tag name="li" attributes="style,class,id" />
+<tag name="h1" attributes="style,class,id" />
+<tag name="h2" attributes="style,class,id" />
+<tag name="h3" attributes="style,class,id" />
+<tag name="h4" attributes="style,class,id" />
+<tag name="h5" attributes="style,class,id" />
+<tag name="h6" attributes="style,class,id" />
+<tag name="br" attributes="style,class,id" >
+	<autocomplete append=" /&gt;" />
+</tag>
+<tag name="kbd" attributes="style,class,id" />
+<tag name="form" attributes="style,class,id,action,method,enctype,target" />
+<tag name="input" attributes="style,class,id,type,name,value,size,maxlength,checked" />
+<tag name="select" attributes="style,class,id,name,size,multiple" />
+<tag name="textarea" attributes="style,class,id,name,rows,cols" />
+<tag name="option" attributes="style,class,id,value,label,selected" />
+<tag name="optgroup" attributes="style,class,id,label" />
+</group>
+
+<element id="e.jsp.open" pattern="&lt;%" starts_block="1" highlight="region">
+	<context symbols=" ;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;">
+<group  highlight="keyword">
+	<autocomplete enable="1" /> 
+<element pattern="assert" />
+<element pattern="break" />
+<element pattern="case" />
+<element pattern="catch" />
+<element pattern="class" />
+<element pattern="continue" />
+<element pattern="default" />
+<element pattern="do" />
+<element pattern="else" />
+<element pattern="finally" />
+<element pattern="for" />
+<element pattern="goto" />
+<element pattern="if" />
+<element pattern="new" />
+<element pattern="return" />
+<element pattern="super" />
+<element pattern="switch" />
+<element pattern="throw" />
+<element pattern="throws" />
+<element pattern="try" />
+<element pattern="where" />
+<element pattern="while" />
+
+</group>
+<group  highlight="tag">
+	<autocomplete enable="1" />
+<element pattern="abstract" />
+<element pattern="final" />
+<element pattern="native" />
+<element pattern="private" />
+<element pattern="protected" />
+<element pattern="public" />
+<element pattern="static" />
+<element pattern="transient" />
+<element pattern="synchronized" />
+<element pattern="volatile" />
+<element pattern="extends" />
+<element pattern="implements" />
+</group>
+<group  highlight="storage">
+	<autocomplete enable="1" />
+<element pattern="int" />
+<element pattern="boolean" />
+<element pattern="double" />
+<element pattern="void" />
+<element pattern="float" />
+<element pattern="long" />
+</group>
+<element pattern="String"  highlight="storage" >
+	<autocomplete enable="1" />
+</element>
+<element pattern="Rectangle"  highlight="storage" >
+	<autocomplete enable="1" />
+</element>
+<element pattern="Color"  highlight="storage" >
+	<autocomplete enable="1" />
+</element>
+
+<element pattern="import" is_regex="1" highlight="tag">
+	<context symbols=";" highlight="tag">
+		<element pattern=";" highlight="string" ends_context="1" />
+	</context>
+</element>
+
+<element pattern="&#34;" highlight="string">
+	<context symbols="\&#34;" highlight="string">
+		<element pattern="\&#34;" highlight="string" />
+		<element pattern="&#34;" highlight="string" ends_context="1" />
+	</context>
+</element>
+<element pattern="'" highlight="string">
+	<context symbols="\'" highlight="string">
+		<element pattern="\\." is_regex="1" highlight="string" />
+		<element pattern="'" highlight="string" ends_context="1" />
+	</context>
+</element>
+		<element id="e.lbrace" pattern="{" starts_block="1" highlight="brackets" block_name="Curly brackets block"/>
+		<element pattern="}" ends_block="1" blockstartelement="e.lbrace" highlight="brackets" />
+		<element id="e.lbracket" pattern="[" starts_block="1" highlight="brackets" />
+		<element pattern="]" ends_block="1" blockstartelement="e.lbracket" highlight="brackets" />
+		<element id="e.lparen" pattern="(" starts_block="1" highlight="brackets" block_name="Parentheses block" />
+		<element pattern=")" ends_block="1" blockstartelement="e.lparen" highlight="brackets" />
+		<element  id="e.lcomment" pattern="/*" starts_block="1" highlight="comment">
+			<context symbols="*/&#9;&#10;&#13;" highlight="comment">
+				<element pattern="*/" ends_block="1" blockstartelement="e.lcomment" highlight="comment" ends_context="1" />
+			</context>
+		</element>
+		<element pattern="true" highlight="value"/>
+		<element pattern="false" highlight="value"/>
+		<element pattern="null" highlight="value"/>
+		<element pattern="[0-9.]+" is_regex="1" highlight="value"/>
+		<element pattern="//[^&#10;&#13;]*" is_regex="1" highlight="comment"/>
+		<element pattern="%&gt;" ends_block="1" blockstartelement="e.jsp.open" ends_context="1"/>		
+	</context>
+
+	
+</element>
+</context>
+</definition>
+</bflang>

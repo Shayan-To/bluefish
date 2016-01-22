@@ -1,0 +1,155 @@
+The complete VCS changelog can be obtained from our subversion repository
+using the `svn2cl' utility. The release changelogs are also available from
+our homepage: http://bluefish.openoffice.nl.
+
+* 2.2.8 *
+
+Bluefish 2.2.8 is a bugfix release with some small improvements and more
+poloshed existing features.  It fixes a few serious but rarely occuring
+bugs.  Options defined in the language definition files are now translated. 
+Various default settings have been improved, most notably the command to
+launch Firefox for preview.  The looks on newer gtk versions have been
+restored.  CSS can now be compressed and decompressed.  The installers for
+Windows and OSX have improvements, and there have been some OSX and Windows
+specific fixes.  Character encoding detection has been improved. 
+Auto-completion for HTML attributes has been improved.
+
+* 2.2.7 *
+
+Bluefish 2.2.7 is mostly a bug fix release. It fixes rare crashes in the
+autocompletion, the filebrowser, the htmlbar plugin preferences, and in
+file-load-cancel, fixes a rare case of broken syntax highlighting after
+multiple search/replace actions. It furthermore displays better
+error/warning output when parsing language files. It also finally fixes
+javascript regex syntax highlighting. The loading of files with corrupt
+encoding has been improved, and project loading over sftp has been improved. 
+Various HTML5 tags have been added, and HTML5 is the default now for php,
+cfml and other languages that can include html syntax. Saving and loading
+of UTF-16 encoded files was broken and has been fixes. Various languages
+have better support, such as javascript, css, html, pascal/deplhi, and html
+has improved autocompletion. On OSX the keys for tab switching no longer
+confict with some keyboard layouts, and behavior at shutdown was improved. 
+The upload/download feature has a new option to ignore backup files.  The
+home/end keys now work better on wrapped tekst.  And finally the search and
+replace dialog correctly shows the number of results when searching in files
+on disk.
+
+* 2.2.6 *
+
+Bluefish 2.2.6 is mostly a bug fix release. This release fixes a critical bug
+(segfault) in filebrowser that could be triggered if the root directory was set
+as basedir. It also has a fix for a specific CSS-in-HTML-tag highlighting issue.
+The filter code furthermore caused a segfault if the command did not exist. The
+Windows version finally supports open in running process. Next to these bugs
+many small issues have been resolved. Development checks are now only enabled if
+Bluefish is compiled from svn, not if compiled from tarball. Various language
+files have small improvements, most notably C, Javascript and CSS. Several
+translations have been updated. A corner case for a new document from a template
+that does not exist was fixed. The "open" submenu now opens SVG files from the
+filebrowser instead of inserting an image tag. The included cssmin and jsbeatify
+have been updated. A syntax scanning issue when replacing large chunks of text
+was fixed, he "Report bug" link was broken, a new "conditional" option to the
+language file that makes re-using certain blocks of language files easier was
+added, and error reporting in outputbox was improved. On OSX filebrowser icons
+and the "open file" dialog size have been improved.
+
+* 2.2.5 *
+
+Bluefish 2.2.5 is a minor bug fix release but has also quite some new features.
+The syntax scanning engine is faster after small changes to the text. The
+filebrowser is also much faster with less memory usage, with various fixes and
+new features. Projects now store the active document and active line numbers.
+Indenting is improved in auto-completion and the smart indenting. Bookmarks and
+paste special also have been improved. On OSX there are many improvements, such
+as Mavericks support, Retina display support, working system hotkeys, native
+input methods (Japanese, Chinese, etc.), opening files from the finder and
+Widget bindings on MacOSX are moved to Cmd+C|V|X|A and working. Furthermore
+almost all syntax highlighting has been improved, most notable jquery in
+javascript, HTML5, and HTML5 in PHP files. There are also many bug fixes, such
+as in wrap text on right margin, in the replace engine, the jsmin licence, the
+split lines feature, the auto-recovery and many obscure bugs. Last bluefish now
+has an appdata file.
+
+* 2.2.4 *
+
+Bluefish 2.2.4 is mostly a minor bugfix release, but it carries many small
+improvements. It has various fixes for the tab-width on gtk 3.6, the blocksync
+feature, scrollwheel-zoom, language syntax detection and character encoding
+detection, toggle comment, split view, better ui language detection on OSX and
+Windows, and several more. The performance of Bluefish has been improved in a
+couple of ways, most notably the auto-completion popup speed. New features
+include more simple search options, paste special (to paste for example images
+from Libreoffice), control-tab to switch to the most recent document, save as
+copy, and pylint, cssmin, jsmin, csstidy and php_beautifier integration. Various
+language syntax definition files have also been improved. With this release the
+minimum required gtk version is bumped to 2.20.
+
+* 2.2.3 *
+
+Bluefish 2.2.3 has mostly many minor bugfixes and many minor enhancements. There
+are only few major changes: a corrupted state in the syntax scanner that could
+lead to a segfault was fixed, code folding had major fixes and improvements,
+search had major fixes, and a lorem ipsum generator was added. The GUI was
+restructured in some areas, and some shortcut key combinations were added. Some
+visibility features were added such as a bigger cursor and cursor highlighting,
+and some options were improved such as zoom and the custom colors. External
+commands had some changes such as better cursor positioning after a filter has
+been used, user supplied arguments for external commands, and an option to
+restore the default settings. On the multiplatform front: the broken shortcut
+key S was fixed on OSX, and file recovery was fixed on Windows. On the web front
+some dialogs were added for HTML5, the thumbnail generator was fixed, and insert
+color, path and relative path have been added. Many language files were
+improved, and more user configurable options have been added to most language
+files. You can now select a block of text by dragging the mouse in the margin,
+and move the selected block with <ctrl><up> and <ctrl><down>.
+
+
+* 2.2.2 *
+
+Bluefish 2.2.2 is largely a bug fix release with some very minor new features. A
+regression in the search functionality was fixed, that caused a segfault if a
+document with search results was closed. Multiple replace with search results
+directly next to each other corrupting the text was also fixed. The broken
+cursor positioning that ruined the Zencoding plugin was also fixed. On the
+multiplatform front: on Windows handling of the profile directory with non-ascii
+characters was fixed and on MacOSX image browsing in the image dialog was fixed.
+Two GTK-3 related bugs where fixed: the CSS dialog was unusable on GTK-3 and the
+right margin indicator was positioned wrong. Next to the major fixes several
+small memory leaks where fixed. Next to the bug fixes some small improvements
+where made. Startup is slightly faster using more threads during startup and
+improving the document recovery. The annoying scrolling of the side bar
+filebrowser in 'treeview' mode was fixed, descriptions of language options where
+fixed, and some menu strings, some HTML5 options where improved, accelerators
+and shortcut keys got improved and translations got better. The new features:
+duplicate line and delete line, and the Catalan translation.
+
+* 2.2.1 *
+
+Bluefish 2.2.1 is mostly a bug fix release, but it has one major new feature:
+Zencoding support (requires python). The bug fixes include a fix to build on
+Gtk+-2.22, many translations are better up-to-date, a fix for PCRE regular
+expression searching, several layout fixes for Gtk+-3.2, several obscure
+segfault fixes, a fix for autocompletion of variables in PHP, <img> dialog
+fixes, and some memory-leak fixes.
+
+* 2.2.0 *
+
+Bluefish 2.2.0 is a new major release and the start for the 2.2 series. Under
+the hood Bluefish 2.2.0 has a massive number of changes: Bluefish now works with
+gtk-3 (gtk-2 is still supported), and the syntax scanner had a major overhaul to
+make it faster, which is especially noticeable when working on large files.
+
+Another big change in Bluefish 2.2.0 is the new search and replace function. It
+has been completely redesigned: the simple search function is now integrated in
+the main window, and the new function supports both search and replace in files
+on disk (next to already opened documents). Other new features include a toggle
+comment function that is context-aware (add <!-- --> comments in html code, use
+// comments in javascript code, etc.) and a select block feature that
+automatically selects the current context block and can be used multiple times
+to select the parent blocks. Another new feature of the syntax recognition is
+the autocompletion of user-defined functions, and a jump function that will
+bring you immediately the the definition of a function.
+
+Next to all the new features many existing features have been improved and
+polished. Support for new languages has been added, such as Google Go, Vala and
+Ada. See the introduction to Bluefish 2.2.0 movie for a good overview.

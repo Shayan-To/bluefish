@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+		Bluefish HTML Editor
+		all-html.bfinc $Revision$
+
+		Copyright (C) 2008-2015 Olivier Sessink
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<bfinc>
+
+
+<context id="__internal__.e.tag.attribute.string.d.context" symbols="&quot;&lt; " highlight="string">
+	<element pattern="&quot;" ends_context="1" highlight="string" />
+	<group class="is_PHP">
+		<group class="php_short_open_tag">
+			<element idref="e.php.short.open" />
+		</group>
+		<group notclass="php_short_open_tag">
+			<element idref="e.php.open" />
+		</group>
+	</group>
+</context>
+
+<context id="__internal__.e.tag.attribute.string.s.context" symbols="'&lt; " highlight="string">
+	<element pattern="'" ends_context="1" highlight="string" />
+	<group class="is_PHP">
+		<group class="php_short_open_tag">
+			<element idref="e.php.short.open" />
+		</group>
+		<group notclass="php_short_open_tag">
+			<element idref="e.php.open" />
+		</group>
+	</group>
+</context>
+
+
+<element id="e.html.lcomment" pattern="&lt;!--" highlight="html-comment" starts_block="1" block_name="HTML comment">
+	<context symbols="-&gt; &#9;&#10;&#13;" highlight="html-comment">
+		<element pattern="--&gt;" ends_block="1" blockstartelement="e.html.lcomment" highlight="html-comment" ends_context="1" />
+		<group class="is_ASP-VBS">
+			<element pattern="#include" highlight="asp-keyword" case_insens="1" />
+		</group>
+		<group class="is_PHP">
+			<group class="php_short_open_tag">
+				<element idref="e.php.short.open" />
+			</group>
+			<group notclass="php_short_open_tag">
+				<element idref="e.php.open" />
+			</group>
+		</group>
+	</context>
+</element>
+
+<tag id="t.html.style" name="style" highlight="html-tag" case_insens="1" sgml_shorttag="1" attributes="media,title,type" attribhighlight="html-attribute"   attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+	<autocomplete append=" type=&quot;text/css&quot;&gt;&#10;&#10;&lt;/style&gt;" backup_cursor="9" />
+	<context id="c.html.css.main" symbols=" &#9;&#10;&#13;{}./*&lt;&gt;:+~[]," commentid_block="cm.cblockcomment" commentid_line="none" default_spellcheck="0">
+		<element idref="e.html.lcomment"/>
+		<element id="e.html.css.lcomment" pattern="/*" starts_block="1" highlight="css-comment">
+			<context symbols="*/&#9;&#10;&#13;" highlight="css-comment">
+				<element pattern="*/" ends_block="1" blockstartelement="e.html.css.lcomment" highlight="css-comment" ends_context="1" />
+			</context>
+		</element>
+		&css-selectors;
+		<group highlight="css-html-media">
+			<element pattern="@media">
+			<context symbols=" &#9;&#10;&#13;{}.;,">
+				<group highlight="css-html-media" >
+					<autocomplete enable="1" />
+					<element pattern="all" />
+					<element pattern="aural" />
+					<element pattern="braille" />
+					<element pattern="embossed" />
+					<element pattern="handheld" />
+					<element pattern="print" />
+					<element pattern="projection" />
+					<element pattern="screen" />
+					<element pattern="tty" />
+					<element pattern="tv" />
+					<element id="e.css.media.group.lbrace" pattern="{" starts_block="1" highlight="css-brackets">
+						<context idref="c.html.css.main" />
+					</element>
+				</group>
+			</context>
+			</element>
+			<!-- the next pattern ends 2 contexts because the context c.html.css.main can be called recursively by a media selector -->
+			<element pattern="}" ends_block="1" highlight="css-brackets" blockstartelement="e.css.media.group.lbrace" ends_context="2" />
+		</group>
+		<element id="e.css.lbrace" pattern="{" starts_block="1" highlight="css-brackets">
+			<context id="c.css.about2include_css-rules" symbols=" &#9;&#10;&#13;{}.:&quot;';/*">
+				<element id="e.css.lcomment" pattern="/*" starts_block="1" highlight="css-comment">
+					<context symbols="*/&#9;&#10;&#13;" highlight="css-comment">
+						<element pattern="*/" ends_block="1" blockstartelement="e.css.lcomment" highlight="css-comment" ends_context="1" />
+					</context>
+				</element>
+				&css-rules;
+				<element id="end-style-tag" pattern="&lt;/style&gt;" highlight="html-tag" ends_context="3" condition_mode="1" condition_relation="2" condition_contextref="c.html.css.main"/>
+				<element pattern="}" ends_block="1" blockstartelement="e.css.lbrace" highlight="css-brackets" ends_context="1" />
+			</context>
+		</element>
+	</context>
+	<attribute name="accesskey"><reference>Specifies a shortcut key to activate/focus an element</reference></attribute>
+	<attribute name="class"><reference>Every HTML element may have a class attribute specified.
+The attribute, if specified, must have a value that is a set of space-separated 
+tokens representing the various classes that the element belongs to.</reference></attribute>
+	<attribute name="contenteditable" values="true,false"><reference>Specifies whether the content of an element is editable or not</reference></attribute>
+	<attribute name="contextmenu"><reference>Specifies a context menu for an element. The context menu appears when a user right-clicks on the element </reference></attribute>
+	<attribute name="dir" values="ltr,rtl,auto">
+		<reference>The dir attribute specifies the element's text directionality. The attribute is an enumerated attribute with the following keywords and states:
+The ltr keyword indicates that the contents of the element are explicitly directionally isolated left-to-right text.
+The rtl keyword indicates that the contents of the element are explicitly directionally isolated right-to-left text.
+The auto keyword indicates that the contents of the element are explicitly directionally isolated text, but that the direction is to be determined programmatically using the contents of the element.</reference></attribute>
+	<attribute name="draggable" values="true,false,auto"><reference>Since HTML5: Specifies whether an element is draggable or not</reference></attribute>
+	<attribute name="dropzone" values="copy,move,link"><reference>Since HTML5: The dropzone attribute specifies whether the dragged data is copied, moved, or linked, when it is dropped on an element.</reference></attribute>
+	<attribute name="hidden"><reference>Browsers should not display elements that have the hidden attribute specified.</reference></attribute>
+	<attribute name="id"><reference>Specifies a unique id for an element</reference></attribute>
+	<attribute name="lang"><reference>The lang attribute specifies the primary language for the element's contents and for any of the element's attributes that contain text. Its value must be a valid BCP 47 language tag, or the empty string. Setting the attribute to the empty string indicates that the primary language is unknown.</reference></attribute>
+	<attribute name="spellcheck" values="true,false" ><reference>The spellcheck attribute is an enumerated attribute whose keywords are the empty string, true and false. The empty string and the true keyword map to the true state.</reference></attribute>
+	<attribute name="translate" values="yes,no" ><reference>The translate attribute is an enumerated attribute that is used to specify whether an element's attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.</reference></attribute>
+
+</tag>
+
+<!-- the following context can only be defined *after* the <style> tag, because
+certain elements that are referred to in
+css-rules are defined in the inner context for <style>  -->
+<context id="c.html.attrib.style" symbols=" ;:'&quot;">
+	<element pattern="'" highlight="string">
+		<context id="c.html.attrib.style.inner" symbols=" ;:'&quot;">
+			<element pattern="'" ends_context="2"  highlight="string"/>
+			<element pattern="&quot;" ends_context="2"  highlight="string"/>
+			&css-rules;
+		</context>
+	</element>
+	<element pattern="&quot;"  highlight="string">
+		<context idref="c.html.attrib.style.inner"/>
+	</element>
+</context>
+
+<element id="e.html.doctype" pattern="&lt;!DOCTYPE" highlight="html-tag">
+	<context symbols="&#34;&gt;&lt;" highlight="html-tag">
+		<element pattern="&#34;[^&#34;]*&#34;" highlight="attribute-string" is_regex="1" />
+		<element pattern="&gt;" ends_context="1"  highlight="html-tag" />
+	</context>
+</element>
+<group attribhighlight="html-attribute" attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+<tag name="html" block_name="html-block" case_insens="1" sgml_shorttag="1" attributes="version" highlight="html-tag" >
+	<autocomplete append="&gt;&#10;&#10;&lt;/html&gt;" backup_cursor="8" />
+	<reference>Defines an HTML document</reference>
+	<attribute name="manifest"><reference>Since HTML5: Specifies the address of the document's cache manifest (for offline browsing)</reference></attribute>
+	<attribute name="xmlns" values="http://www.w3.org/1999/xhtml"><reference>Specifies the XML namespace attribute (If you need your content to conform to XHTML)</reference></attribute>
+	<attribute name="lang"><reference>Specifies the language of the element's content</reference></attribute>
+	<attribute name="dir" values="ltr,rtl,auto">
+		<reference>The dir attribute specifies the element's text directionality. The attribute is an enumerated attribute with the following keywords and states:
+The ltr keyword indicates that the contents of the element are explicitly directionally isolated left-to-right text.
+The rtl keyword indicates that the contents of the element are explicitly directionally isolated right-to-left text.
+The auto keyword indicates that the contents of the element are explicitly directionally isolated text, but that the direction is to be determined programmatically using the contents of the element.</reference>
+		</attribute>
+</tag>
+<tag name="head" case_insens="1" sgml_shorttag="1" attributes="&univ;" highlight="html-tag" >
+	<autocomplete append="&gt;&#10;&#10;&lt;/head&gt;" backup_cursor="8" />
+	<reference>Defines the header information about the document</reference>
+	<attribute name="profile"><reference>Specifies a URL to a document that contains a set of rules. The rules can be read by browsers to clearly understand the information in the &lt;meta&gt; tag's content attribute. This is no longer used in HTML5.</reference></attribute>
+</tag>
+<tag name="frameset" case_insens="1" sgml_shorttag="1" attributes="&univ;,cols,onload,onunload,rows">
+	<reference>Defines a frameset</reference>
+</tag>
+<tag name="base" highlight="html-tag" case_insens="1" sgml_shorttag="1" no_close="1" attributes="&univ;" attribhighlight="html-attribute" >
+	<autocomplete append="href=&quot;&quot; target=&quot;&quot; /&gt;" backup_cursor="14"/>
+	<reference>Defines a default address or a default target for all links on a page</reference>
+	<attribute name="href"><reference>Specifies a hyperlink target.
+A relative URL - points to another file within a web site (like href="example.html")
+A link to an element with a specified id within the page (like href="#top")
+Another protocol (like https://, ftp://, mailto:, file:, etc..)
+A script (like href="javascript:alert('Example');")</reference></attribute>
+	<attribute name="target"><reference>Specifies a target for hyperlinks and forms.
+	Use _blank, _parent, _self, _top or any framename.</reference></attribute>
+</tag>
+<tag name="meta" highlight="html-tag" case_insens="1" sgml_shorttag="1" no_close="1" attributes="&univ;,content,scheme" attribhighlight="html-attribute"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+	<autocomplete append=" /&gt;" backup_cursor="2"/>
+	<reference>Defines metadata about an HTML document</reference>
+	<attribute name="http-equiv" values="content-type,default-style,refresh"><reference>Provides an HTTP header for the information/value of the content attribute</reference></attribute>
+	<attribute name="name"><reference>Specifies a name for the metadata.
+There are 5 names specified in the HTML5 spec:
+application-name, author, description, generator, and keywords
+However, there are many extensions.
+	</reference></attribute>
+	<attribute name="charset"><reference>HTML5 has a new attribute, charset, which makes it easier to define charset:
+    HTML 4.01: &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+    HTML5: &lt;meta charset=&quot;UTF-8&quot;&gt;
+</reference></attribute>
+</tag>
+<tag name="title" highlight="html-tag" case_insens="1" sgml_shorttag="1" attributes="&univ;" attribhighlight="html-attribute">
+	<reference>Defines the title of a document</reference>
+</tag>
+
+<tag id="t.html.script" name="script" highlight="html-tag" case_insens="1" sgml_shorttag="1" attributes="&univ;,charset,defer,event,language,for,src,type" attribhighlight="html-attribute" >
+	<autocomplete append=" type=&quot;text/javascript&quot; &gt;&#10;&#10;&lt;/script&gt;" backup_cursor="10" />
+	<context symbols=" ;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;." commentid_line="cm.cpplinecomment"  commentid_block="cm.cblockcomment" default_spellcheck="0">
+		<element pattern="(" id="e.html.js.lparen" starts_block="1" highlight="js-brackets" block_name="Javascript Parentheses block"/>
+		<element pattern=")" highlight="js-brackets" ends_block="1" blockstartelement="e.html.js.lparen" />
+		<element pattern="{" id="e.html.js.lbrace" starts_block="1" highlight="js-brackets" block_name="Javascript Curly brackets block" />
+		<element pattern="}" highlight="js-brackets" ends_block="1" blockstartelement="e.html.js.lbrace" />
+		<element pattern="[" id="e.html.js.lbracket" starts_block="1" highlight="js-brackets" block_name="Javascript Square brackets block" />
+		<element pattern="]" highlight="js-brackets" ends_block="1" blockstartelement="e.html.js.lbracket" />
+		&all-javascript;
+		<group class="JQuery">
+			&JQuery;
+		</group>
+		<element pattern="//" highlight="js-comment">
+			<context symbols="&#10;&#13;&gt;&lt; " highlight="js-comment">
+				<element pattern="(&#10;|&#13;|&#13;&#10;)" is_regex="1" highlight="js-comment" ends_context="1" />
+				<element id="end-script-js-comment" pattern="&lt;/script&gt;" highlight="html-tag" ends_context="2" case_insens="1" ends_block="1" blockstartelement="t.html.script"/>
+			</context>
+		</element>
+		<element id="e.html.js.blockcomment" pattern="/*" starts_block="1" highlight="js-comment" block_name="Javascript block comment">
+			<context symbols="*/&#9;&#10;&#13;&gt;&lt; " highlight="js-comment">
+				<element pattern="*/" ends_block="1" blockstartelement="e.html.js.blockcomment" highlight="js-comment" ends_context="1" />
+				<element id="end-script-js-blockcomment" pattern="&lt;/script&gt;" highlight="html-tag" case_insens="1" ends_context="2" ends_block="1" blockstartelement="t.html.script"/>
+			</context>
+		</element>
+		<!--<element idref="e.html.lcomment"/>-->
+	</context>
+</tag>
+
+<tag name="link" highlight="html-tag" case_insens="1" sgml_shorttag="1" no_close="1" attributes="&univ;&evnt;,crossorigin,charset,href,rev,target" attribhighlight="html-attribute"  attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1" >
+	<autocomplete append=" /&gt;" backup_cursor="2"/>
+	<reference>Defines the relationship between a document and an external resource </reference>
+	<attribute name="hreflang" values="aa,ab,af,am,ar,as,ay,az,ba,be,bg,bh,bi,bn,bo,br,ca,co,cs,cy,da,de,dz,el,en,eo,es,et,eu,fa,fi,fj,fo,fr,fy,ga,gd,gl,gn,gu,ha,hi,hr,hu,hy,ia,ie,ik,in,is,it,iw,ja,ji,jw,ka,kk,kl,km,kn,ko,ks,ku,ky,la,ln,lo,lt,lv,mg,mi,mk,ml,mn,mo,mr,ms,mt,my,na,ne,nl,no,oc,om,or,pa,pl,ps,pt,qu,rm,rn,ro,ru,rw,sa,sd,sg,sh,si,sk,sl,sm,sn,so,sq,sr,ss,st,su,sv,sw,ta,te,tg,th,ti,tk,tl,tn,to,tr,ts,tt,tw,uk,ur,uz,vi,vo,wo,xh,yo,zh,zu,">
+<reference>A two-letter language code that specifies the language of the linked document.
+Only valid if the href attribute is set.</reference></attribute>
+	<attribute name="media"><reference>The media attribute specifies what media/device the target URL is optimized for. Values can be combined with 'and' 'not' or ',' (as or):
+all 	Default. Suitable for all devices
+aural 	Speech synthesizers
+braille 	Braille feedback devices
+handheld 	Handheld devices (small screen, limited bandwidth)
+projection 	Projectors
+print 	Print preview mode/printed pages
+screen 	Computer screens
+tty 	Teletypes and similar media using a fixed-pitch character grid
+tv 	Television type devices (low resolution, limited scroll ability)	
+width 	Specifies the width of the targeted display area.
+"min-" and "max-" prefixes can be used.
+Example: media="screen and (min-width:500px)"
+height 	Specifies the height of the  targeted display area. "min-" and "max-" prefixes can be used.
+Example: media="screen and (max-height:700px)"
+device-width 	Specifies the width of the target display/paper.
+"min-" and "max-" prefixes can be used.
+Example: media="screen and (device-width:500px)"
+device-height 	Specifies the height of the target display/paper.
+"min-" and "max-" prefixes can be used.
+Example: media="screen and (device-height:500px)"
+orientation 	Specifies the orientation of the target display/paper.
+Possible values: "portrait" or "landscape"
+Example: media="all and (orientation: landscape)"
+aspect-ratio 	Specifies the width/height ratio of the targeted display area.
+"min-" and "max-" prefixes can be used.
+Example: media="screen and (aspect-ratio:16/9)"
+device-aspect-ratio 	Specifies the device-width/device-height ratio of the target display/paper.
+"min-" and "max-" prefixes can be used.
+Example: media="screen and (aspect-ratio:16/9)"
+color 	Specifies the bits per color of target display.
+"min-" and "max-" prefixes can be used.
+Example: media="screen and (color:3)"
+color-index 	Specifies the number of colors the target display can handle.
+"min-" and "max-" prefixes can be used.
+Example: media="screen and (min-color-index:256)"
+monochrome 	Specifies the bits per pixel in a monochrome frame buffer.
+"min-" and "max-" prefixes can be used.
+Example: media="screen and (monochrome:2)"
+resolution 	Specifies the pixel density (dpi or dpcm) of the target display/paper.
+"min-" and "max-" prefixes can be used.
+Example: media="print and (resolution:300dpi)"
+scan 	Specifies scanning method of a tv display.
+Possible values are "progressive" and "interlace".
+Example: media="tv and (scan:interlace)"
+grid 	Specifies if the output device is grid or bitmap.
+Possible values are "1" for grid, and "0" otherwise.
+Example: media="handheld and (grid:1)"</reference></attribute>
+<attribute name="rel" values="alternate,archives,author,bookmark,external,first,help,icon,last,license,next,nofollow,noreferrer,pingback,prefetch,prev,search,sidebar,stylesheet,tag,up"><reference>The rel attribute specifies the relationship between the current document and the linked document.
+This is only valid if the href attribute is present.
+alternate 	Links to an alternate version of the document (i.e. print page, translated or mirror)
+author 	Links to the author of the document
+bookmark 	Permanent URL used for bookmarking
+help 	Links to a help document
+license 	Links to copyright information for the document
+next 	The next document in a selection
+nofollow 	Links to an unendorsed document, like a paid link.
+("nofollow" is used by Google, to specify that the Google search spider should not follow that link)
+noreferrer 	Specifies that the browser should not send a HTTP referer header if the user follows the hyperlink
+prefetch 	Specifies that the target document should be cached
+prev 	The previous document in a selection
+search 	Links to a search tool for the document
+tag 	A tag (keyword) for the current document</reference></attribute>
+<attribute name="type" ><reference>The Internet media type (also called MIME type) of the linked document.
+Only valid if the href attribute is set.</reference></attribute>
+</tag>
+<tag name="body" highlight="html-tag" case_insens="1" sgml_shorttag="1"   attributes="alink,background,bgcolor,link,onload,onunload,text,vlink,&univ;" attribhighlight="html-attribute">
+	<autocomplete append="&gt;&#10;&#10;&lt;/body&gt;" backup_cursor="8" />
+	<reference>Defines the document's body</reference>
+</tag>
+</group>
+<group highlight="html-reference-external-tag" attribhighlight="html-attribute" attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+	<autocomplete enable="1" />
+	<tag name="a" case_insens="1" sgml_shorttag="1" attributes="charset,coords,href,hreflang,name,onblur,onfocus,rel,rev,shape,target,type,&univ;,&evnt;" >
+		<autocomplete append=" href=&#34;&#34; &gt;" />
+		<reference>The a tag defines an anchor, but it is usually referred to as a link or a hyperlink. An anchor can be used in two ways:
+1. To create a link to another document, by using the href attribute &lt;a href=&quot;http://example/&quot;&gt;text to click on&lt;/a&gt;
+2. To create a bookmark inside a document, by using the name attribute &lt;a name=&quot;foo&quot;&gt;&lt;/a&gt;
+</reference>
+	</tag>
+	<tag name="img" case_insens="1" sgml_shorttag="1" no_close="1" attributes="&univ;,&evnt;,align,alt,border,height,hspace,ismap,longdesc,name,src,usemap,vspace,width" >
+		<autocomplete append=" src=&#34;&#34; alt=&#34;&#34; /&gt;" backup_cursor="11"  class="self_close_singleton_tags" />
+		<autocomplete append=" src=&#34;&#34; alt=&#34;&#34;&gt;" backup_cursor="9" notclass="self_close_singleton_tags" />
+		<reference>The img tag inserts an image into a document.
+It is mostly used as &lt;img src=&quot;example.jpg&quot; width=&quot;100&quot; height=&quot;100&quot; alt=&quot;text to show when image isnot loaded&quot;/&gt;
+		</reference>
+	</tag>
+	<tag name="object" case_insens="1" sgml_shorttag="1" attributes="align,archive,border,classid,codebase,codetype,data,declare,height,hspace,name,standby,type,usemap,vspace,width,&univ;,&evnt;">
+		<reference>Defines an embedded object</reference>
+	</tag>
+	<tag name="param" case_insens="1" sgml_shorttag="1" no_close="1" attributes="id,name,type,value,valuetype" >
+		<autocomplete append=" name=&#34;&#34; &gt;" />
+	</tag>
+</group>
+
+<group class="deprecated_in_html5" highlight="html-tag" attribhighlight="html-attribute" attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+
+	<tag name="acronym" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;">
+		<reference>Defines an acronym. DEPRECATED in HTML5.</reference>
+	</tag>
+	<tag name="big" case_insens="1" sgml_shorttag="1" attributes="&univ;">
+		<reference>Renders content as bigger text. DEPRECATED in HTML5.</reference>
+	</tag>
+	<tag name="tt" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;">
+		<reference>Defines teletype text. DEPRECATED in HTML5.
+If &lt;tt&gt; was used for marking up keyboard input, consider the &lt;kbd&gt; element; 
+for variables, consider the &lt;var&gt; element; 
+for computer code, consider the &lt;code&gt; element; 
+and for computer output, consider the &lt;samp&gt; element, 
+or use CSS instead.</reference>
+	</tag>
+
+</group>
+
+<group highlight="html-tag" attribhighlight="html-attribute" attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+	<autocomplete enable="1" />
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+below this line we have tags that re-use the attributes_id="t.html.attribs.univ_and_global" defined for tag abbr
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<tag name="abbr" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_id="t.html.attribs.univ_and_global">
+		<reference>Defines an abbreviation</reference>
+	</tag>
+	<tag name="b" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Render content in bold face</reference>
+	</tag>
+	<tag name="bdo" case_insens="1" sgml_shorttag="1" attributes="&univ;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines/overrides the text direction (right-to-left or left-to-right)</reference>
+	</tag>
+	<tag name="cite" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a citation</reference>
+	</tag>
+	<tag name="code" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines computer code text</reference>
+	</tag>
+	<tag name="dd" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a definition list definition</reference>
+	</tag>
+	<tag name="dfn" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a definition term</reference>
+	</tag>
+	<tag name="dt" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a definition list term</reference>
+	</tag>
+	<tag name="em" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines emphasized text</reference>
+	</tag>
+	<tag name="address" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines an (real world) address</reference>
+	</tag>
+	<tag name="dl" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a definition list or description list.
+The &lt;dl&gt; tag is used in conjunction with &lt;dt&gt; (defines terms/names) and &lt;dd&gt; (describes each term/name).</reference>
+	</tag>
+	<tag name="i" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines italic text.
+Use the &lt;i&gt; element only when there is not a more appropriate semantic element, such as:
+    &lt;em&gt; (emphasized text)
+    &lt;strong&gt; (important text)
+    &lt;mark&gt; (marked/highlighted text)
+    &lt;cite&gt; (the title of a work)
+    &lt;dfn&gt; (a definition term)
+</reference>
+	</tag>
+	<tag name="kbd" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines keyboard text</reference>
+	</tag>
+	<tag name="noscript" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global" >
+		<reference>Defines alternate content for users that have scripts disabled.
+The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;.
+When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements.
+The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user&apos;s browser.</reference>
+	</tag>
+	<tag name="samp" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines sample computer code</reference>
+	</tag>
+	<tag name="small" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Renders as smaller text</reference>
+	</tag>
+	<tag name="span" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines an inline section of the document - it provides no visual change by itself</reference>
+	</tag>
+	<tag name="strong" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines strong emphasized text</reference>
+	</tag>
+	<tag name="sub" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines subscripted text</reference>
+	</tag>
+	<tag name="sup" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines superscripted text</reference>
+	</tag>
+	<tag name="var" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a variable part of a text</reference>
+	</tag>
+	<tag name="section"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a section in the document</reference>
+	</tag>
+	<tag name="summary"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a visible heading for a &lt;details&gt; element</reference>
+	</tag>
+	<tag name="nav"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines navigation links in the document</reference>
+	</tag>
+	<tag name="article"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines an article in the document</reference>
+	</tag>
+	<tag name="aside"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines content aside from the page content</reference>
+	</tag>
+	<tag name="bdi"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a part of text that might be formatted in a different direction from other text</reference>
+	</tag>
+	<tag name="details"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines additional details that the user can view or hide</reference>
+	</tag>
+	<tag name="dialog"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a dialog box or window</reference>
+	</tag>
+	<tag name="main"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines the main content of a document
+<b>Categories:</b> flow
+<b>Parents:</b> flow
+<b>Children:</b> flow
+<b>Interface:</b> HTMLElement</reference>
+	</tag>
+	<tag name="menuitem"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a command/menu item that the user can invoke from a popup menu</reference>
+	</tag>
+	<tag name="meter"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a scalar measurement within a known range (a gauge)</reference>
+	</tag>
+	<tag name="hgroup"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>The hgroup element is typically used to group a set of one or more h1-h6 elements.
+To group, for example, a section title and an accompanying subtitle.</reference>
+	</tag>
+	<tag name="header"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a header for the document or a section</reference>
+	</tag>
+	<tag name="footer"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a footer for the document or a section</reference>
+	</tag>
+	<tag name="figcaption"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a caption for a &lt;figure&gt; element</reference>
+	</tag>
+	<tag name="figure"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines self-contained content, like illustrations, diagrams, photos, code listings, etc.</reference>
+	</tag>
+	<tag name="mark"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines marked or highlighted text. Usually displayed with yellow highlighted background.</reference>
+	</tag>
+	<tag name="ruby"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a ruby annotation (for East Asian typography)</reference>
+	</tag>
+	<tag name="rp"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines what to show in browsers that do not support ruby annotations</reference>
+	</tag>
+	<tag name="rt"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines an explanation/pronunciation of characters (for East Asian typography)</reference>
+	</tag>
+	<tag name="wbr"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Word Break Opportunity. Defines a possible line-break</reference>
+	</tag>
+	<tag name="datalist"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines pre-defined options for input controls (a form element). For example:
+&lt;input list=&quot;browsers&quot;&gt;
+&lt;datalist id=&quot;browsers&quot;&gt;
+  &lt;option value=&quot;Internet Explorer&quot;&gt;
+  &lt;option value=&quot;Firefox&quot;&gt;
+  &lt;option value=&quot;Chrome&quot;&gt;
+  &lt;option value=&quot;Opera&quot;&gt;
+  &lt;option value=&quot;Safari&quot;&gt;
+&lt;/datalist&gt; 
+		</reference>
+	</tag>
+	<tag name="keygen"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines a key-pair generator field (for forms)</reference>
+	</tag>
+	<tag name="output"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>Defines the result of a calculation</reference>
+	</tag>
+	<tag name="track"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>The &lt;track&gt; tag specifies text tracks for media elements (&lt;audio&gt; and &lt;video&gt;).
+This element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing.</reference>
+	</tag>
+	<tag name="source"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_idref="t.html.attribs.univ_and_global">
+		<reference>The &lt;source&gt; tag is used to specify multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;.
+The &lt;source&gt; tag allows you to specify alternative video/audio files which the browser may choose from, based on its media type or codec support.</reference>
+	</tag>
+
+<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+above this line we have tags that re-use the attributes_id="t.html.attribs.univ_and_global" 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	<tag name="area" case_insens="1" sgml_shorttag="1" no_close="1" attributes="&univ;,&evnt;,href,nohref,target">
+		<reference>Defines a click-able area inside an image-map</reference>
+		<attribute name="alt"><reference>Specifies an alternate text. For the area tag this is required if the href attribute is present</reference></attribute>
+		<attribute name="coords"><reference>Specify the coordinates.  
+For a square left,top,right,bottom.
+For a circle the x,y of the center and the radius.
+For a polygon this is a sequence of x,y coordinates. </reference></attribute>
+		<attribute name="shape" values="default,rect,circle,poly"><reference>The shape attribute is used together with the coords attribute to specify the size, shape, and placement of an area.</reference></attribute>
+
+
+<!--<attribute name="" values=""><reference></reference></attribute>-->
+	</tag>
+
+<!-- next tags use the same attributes from blockquote --> 
+	<tag name="blockquote" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;" attributes_id="t.html.attribs.blockquote">
+		<reference>Defines a long quotation quoted from another source.
+Browsers usually indent &lt;blockquote&gt; elements.</reference>
+<attribute name="cite" ><reference>Specifies the URL source of the quotation or reference.</reference></attribute>
+	</tag>
+	<tag name="q" case_insens="1" sgml_shorttag="1" attributes_idref="t.html.attribs.blockquote">
+		<reference>Defines a short quotation.
+Browsers normally insert quotation marks around the quotation.</reference>
+	</tag>	
+<!-- previous tags use the same attributes from blockquote -->
+
+
+<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+below this line we have tags that re-use the attributes_id="t.html.attribs.univ_and_global_align"
+that have a deprecated align attribute 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<tag name="div" block_name="DIV block" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align" attributes_id="t.html.attribs.univ_and_global_align">
+	<reference>Defines a block section in a document - it provides no visual change by itself</reference>
+</tag>
+<tag name="h1" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align" attributes_idref="t.html.attribs.univ_and_global_align">
+	<reference>Defines a HTML heading.
+&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</reference>
+</tag>
+<tag name="h2" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align" attributes_idref="t.html.attribs.univ_and_global_align">
+	<reference>Defines a HTML heading.
+&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</reference>
+</tag>
+<tag name="h3" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align" attributes_idref="t.html.attribs.univ_and_global_align">
+	<reference>Defines a HTML heading.
+&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</reference>
+</tag>
+<tag name="h4" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align" attributes_idref="t.html.attribs.univ_and_global_align">
+	<reference>Defines a HTML heading.
+&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</reference>
+</tag>
+<tag name="h5" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align" attributes_idref="t.html.attribs.univ_and_global_align">
+	<reference>Defines a HTML heading.
+&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</reference>
+</tag>
+<tag name="h6" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align" attributes_idref="t.html.attribs.univ_and_global_align">
+	<reference>Defines a HTML heading.
+&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</reference>
+</tag>
+	<tag name="p" block_name="Paragraph block" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align" attributes_idref="t.html.attribs.univ_and_global_align">
+		<reference>Defines a paragraph</reference>
+	</tag>
+<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+above this line we have tags that re-use the attributes_id="t.html.attribs.univ_and_global_align"
+that have a deprecated align attribute 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<tag name="del" case_insens="1" sgml_shorttag="1"  attributes="&univ;,&evnt;,cite" attributes_id="t.html.attribs.del">
+		<reference>Defines deleted text, you can define the date and time of the change with attribute datetime.</reference>
+		<attribute name="datetime" ><reference>Specifies the date and time. For example:
+datetime="1914" means the year 1914
+datetime="1914-12-20" means 20 December 1914
+datetime="1914-12-20 08:30:45" with minutes and seconds
+datetime="08:00" means 8am</reference></attribute>
+	</tag>
+	<tag name="ins" case_insens="1" sgml_shorttag="1"  attributes="&univ;,&evnt;,cite,datetime" attributes_idref="t.html.attribs.del">
+		<reference>Defines inserted text, you can define the date and time of the change with attribute datetime.</reference>
+	</tag>
+<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<tag name="video"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,width,height,src">
+		<reference>The &lt;video&gt; tag specifies video, such as a movie clip or other video streams.
+Currently, there are 3 supported video formats for the &lt;video&gt; element: MP4, WebM, and Ogg.
+See also &lt;track&gt; and &lt;source&gt;.</reference>
+	<attribute name="poster"><reference>Specifies an image URL to be shown while the video is downloading, or until the user hits the play button</reference></attribute>
+	<attribute name="autoplay"><reference>Specifies that the audio/video will start playing as soon as it is ready</reference></attribute>
+	<attribute name="controls"><reference>The controls attribute is a boolean attribute.
+When present, it specifies that audio/video controls should be displayed.</reference></attribute>
+	<attribute name="loop"><reference>The loop attribute is a boolean attribute.
+When present, it specifies that the video will start over again, every time it is finished.</reference></attribute>
+<attribute name="muted"><reference>The muted attribute is a boolean attribute.
+When present, it specifies that the audio output should be muted.</reference></attribute>
+<attribute name="preload" values="none,auto,metadata"><reference>The preload attribute specifies if and how the author thinks that the video should be loaded when the page loads.
+The preload attribute allows the author to provide a hint to the browser about what he/she thinks will lead to the best user experience. This attribute may be ignored in some instances.</reference></attribute>
+	</tag>
+<tag name="audio"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,autoplay,controls,loop,muted,preload,src">
+	<reference>The &lt;audio&gt; tag defines sound, such as music or other audio streams.
+Currently, there are 3 supported file formats for the &lt;audio&gt; element: MP3, Wav, and Ogg.
+See also &lt;track&gt; and &lt;source&gt;.</reference>
+</tag>
+<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	<tag name="br" case_insens="1" sgml_shorttag="1" no_close="1"  attributes="&univ;,clear">
+		<autocomplete append=" /&gt;" class="self_close_singleton_tags" />
+		<autocomplete append="&gt;" notclass="self_close_singleton_tags" />
+		<reference>Defines a single line break</reference>
+	</tag>
+	<tag name="button" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,disabled,name,onblur,onfocus,type,value">
+		<reference>Defines a push button</reference>
+	</tag>
+	<tag name="col" case_insens="1" sgml_shorttag="1" no_close="1" attributes="&univ;,&evnt;,align,char,charoff,span,valign,width">
+		<reference>Defines attribute values for one or more columns in a table</reference>
+	</tag>
+	<tag name="colgroup" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align,char,charoff,span,valign,width">
+		<reference>Defines a column group in a table for formatting</reference>
+	</tag>
+	<tag name="hr" case_insens="1" sgml_shorttag="1" no_close="1"  attributes="&univ;,align,noshade,size,width" >
+		<autocomplete append=" /&gt;" class="self_close_singleton_tags" />
+		<autocomplete append="&gt;" notclass="self_close_singleton_tags" />
+		<reference>Defines a horizontal line</reference>
+	</tag>
+	<tag name="li" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,type,value">
+		<reference>Defines a list item.
+The &lt;li&gt; tag is used in ordered lists(&lt;ol&gt;), unordered lists (&lt;ul&gt;), and in menu lists (&lt;menu&gt;).
+The type attribute is deprecated in HTML5, use the CSS list-style-type property.
+For ol lists only, the value attribute specifies the value of a list item. The following list items will increment from that number.</reference>
+	</tag>
+	<tag name="map" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,name">
+		<reference>Defines an image-map with clickable areas</reference>
+	</tag>
+	<tag name="ol" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,compact,start,type">
+		<reference>Defines an ordered list</reference>
+	</tag>
+	<tag name="pre" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,width">
+		<reference>Defines preformatted text, displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks</reference>
+	</tag>
+	<tag name="ul" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,compact,type">
+		<reference>Defines an unordered (bulleted) list.
+All attributes have been deprecated in HTML5.</reference>
+	</tag>
+
+	<tag name="time"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,datetime">
+		<reference>Defines a date/time.
+By setting the datetime attribute you make it machine readable, such that a browser may add it to a calendar.</reference>
+	</tag>
+	<tag name="canvas"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,width,height">
+		<reference>The &lt;canvas&gt; tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+The &lt;canvas&gt; tag is only a container for graphics, you must use a script to actually draw the graphics.</reference>
+	</tag>
+	<tag name="progress"  case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,value,max">
+		<reference>Defines the progress of a task
+<b>Categories:</b>flow; phrasing; labelable
+<b>Parents:</b>phrasing
+<b>Children:</b>phrasing*
+<b>Interface:</b> HTMLProgressElement</reference>
+	</tag>
+
+</group>
+
+<context id="attribute.string" symbols="&quot;' ">
+	<element pattern="&quot;" highlight="string">
+		<context symbols="&quot; &lt;" highlight="string">
+			<element pattern="&quot;" ends_context="2" highlight="string" />
+			<group class="is_PHP">
+				<group class="php_short_open_tag">
+					<element idref="e.php.short.open" />
+				</group>
+				<group notclass="php_short_open_tag">
+					<element idref="e.php.open" />
+				</group>
+			</group>
+		</context>
+	</element>
+	<element pattern="'" highlight="string">
+		<context symbols="' &lt;" highlight="string">
+			<element pattern="'" ends_context="2" highlight="string" />
+			<group class="is_PHP">
+				<group class="php_short_open_tag">
+					<element idref="e.php.short.open" />
+				</group>
+				<group notclass="php_short_open_tag">
+					<element idref="e.php.open" />
+				</group>
+			</group>
+		</context>
+	</element>
+</context>
+
+<context id="attribute.string.style" symbols=" ;:'&quot;">
+	<element pattern='"' ends_context="1" />
+	<element pattern="'" ends_context="1" />
+	&css-rules;
+</context>
+
+<context id="attribute.string.dir" symbols=" ;:'&quot;">
+	<element pattern="ltr" ><autocomplete enable="1" /><reference>Left to right direction</reference></element>
+	<element pattern="rtl" ><autocomplete enable="1" /><reference>Right to left direction</reference></element>
+	<element pattern="auto" ><autocomplete enable="1" /><reference>Auto direction</reference></element>
+	<element pattern="&quot;" highlight="string">
+		<context symbols="&quot; &lt;" highlight="string">
+			<element pattern="ltr" ><autocomplete enable="1" /><reference>Left to right direction</reference></element>
+			<element pattern="rtl" ><autocomplete enable="1" /><reference>Right to left direction</reference></element>
+			<element pattern="auto" ><autocomplete enable="1" /><reference>Auto direction</reference></element>
+			<element pattern="&quot;" ends_context="2" highlight="string" />
+			<group class="is_PHP">
+				<group class="php_short_open_tag">
+					<element idref="e.php.short.open" />
+				</group>
+				<group notclass="php_short_open_tag">
+					<element idref="e.php.open" />
+				</group>
+			</group>
+		</context>
+	</element>
+	<element pattern="'" highlight="string">
+		<context symbols="' &lt;" highlight="string">
+			<element pattern="ltr" ><autocomplete enable="1" /><reference>Left to right direction</reference></element>
+			<element pattern="rtl" ><autocomplete enable="1" /><reference>Right to left direction</reference></element>
+			<element pattern="auto" ><autocomplete enable="1" /><reference>Auto direction</reference></element>
+			<element pattern="'" ends_context="2" highlight="string" />
+			<group class="is_PHP">
+				<group class="php_short_open_tag">
+					<element idref="e.php.short.open" />
+				</group>
+				<group notclass="php_short_open_tag">
+					<element idref="e.php.open" />
+				</group>
+			</group>
+		</context>
+	</element>
+</context>
+
+<group highlight="html-deprecated-tag" attribhighlight="html-attribute" attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+	<autocomplete enable="1" />
+	<tag name="applet" case_insens="1" sgml_shorttag="1" attributes="&univ;,align,alt,archive,code,codebase,height,hspace,name,object,vspace,width">
+		<reference>Defines an embedded Java applet (<b>deprecated</b>)</reference>
+	</tag>
+	<tag name="basefont" case_insens="1" sgml_shorttag="1" attributes="id,color,face,size">
+		<reference>Defines the default font face, size and color for the text in a document (<b>deprecated</b>)</reference>
+	</tag>
+	<tag name="center" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;">
+		<reference>Center text (<b>deprecated</b>). Use style=&quot;text-align: center;&quot; instead.</reference>
+	</tag>
+	<tag name="dir" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,compact">
+		<reference>Defines a list of directory titles (<b>deprecated</b>)</reference>
+	</tag>
+	<tag name="font" case_insens="1" sgml_shorttag="1" attributes="&univ;,color,face,size">
+		<reference>Defines font face, color and size for text (<b>deprecated</b>)</reference>
+	</tag>
+	<tag name="isindex" case_insens="1" sgml_shorttag="1" attributes="class,dir,id,lang,prompt,style,title">
+		<reference>Defines an input control</reference>
+	</tag>
+	<tag name="menu" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,compact">
+		<reference>Defines a list of menu choices (<b>deprecated</b>)</reference>
+	</tag>
+	<tag name="s" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;">
+		<reference>Render strike-through style text (<b>deprecated</b>)</reference>
+	</tag>
+	<tag name="strike" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;">
+		<reference>Render strike-through style text (<b>deprecated</b>)</reference>
+	</tag>
+	<tag name="u" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;">
+		<reference>Defines underlined text (<b>deprecated</b>)</reference>
+	</tag>
+</group>
+
+<group highlight="html-deprecated-tag" attribhighlight="html-attribute" attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+	<autocomplete enable="1" />
+	<tag name="frame" case_insens="1" sgml_shorttag="1" attributes="&univ;,frameborder,longdesc,marginwidth,marginheight,name,noresize,scrolling,src">
+		<reference>Defines a particular window (frame) within a frameset</reference>
+	</tag>
+	<tag name="noframes" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;">
+		<reference>Defines content for browsers not able to handle/show frames</reference>
+	</tag>
+	<tag name="iframe" case_insens="1" sgml_shorttag="1" attributes="&univ;,align,frameborder,height,longdesc,marginwidth,marginheight,name,scrolling,src,width">
+		<reference>Defines an inline frame that contains another document</reference>
+	</tag>
+</group>
+
+<group highlight="html-form-tag" attribhighlight="html-attribute" attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+	<autocomplete enable="1" />
+	<tag name="fieldset" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;">
+		<reference>Defines a border around elements in a form</reference>
+	<attribute name="disabled" ><reference>When present, it specifies that a group of related form elements (a fieldset) should be disabled.</reference></attribute>
+	<attribute name="form" ><reference>The form attribute specifies one or more forms the form item belongs to.
+The value of this attribute must be the id attribute of a &lt;form&gt; element in the same document.</reference></attribute>
+<attribute name="name" ><reference>Specifies a name
+The name is used to reference elements in a JavaScript, or to reference form data after a form is submitted.</reference></attribute>
+	</tag>
+	<tag name="form" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,accept,accept-charset,action,autocomplete,enctype,method,name,novalidate,target">
+		<reference>Defines an HTML form for user input. The action attribute defines where a submit will be sent to. The form tag usually surrounds other form elements such as input, textarea and buttons.
+A simple example is:
+&lt;form action=&quot;form_action.php&quot; method=&quot;get&quot;&gt;
+First name: &lt;input type=&quot;text&quot; name=&quot;fname&quot; /&gt;&lt;br /&gt;
+Last name: &lt;input type=&quot;text&quot; name=&quot;lname&quot; /&gt;&lt;br /&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+&lt;/form&gt;
+		</reference>
+	</tag>
+	<tag name="input" case_insens="1" sgml_shorttag="1" no_close="1" attributes="&univ;,&evnt;,accept,align,alt,checked,disabled,form,formaction,formenctype,formmethod,formnovalidate,formtarget,height,list,max,maxlength,min,multiple,name,pattern,placeholder,readonly,required,size,src,step,value,width" >
+		<autocomplete append=" /&gt;" backup_cursor="2" />
+		<reference>Defines an input control for a form. The input field has many forms depending on the type attribute.
+&lt;input type=&quot;button&quot; name=&quot;foo&quot; value=&quot;title&quot; /&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;foo&quot; value=&quot;title&quot; checked=&quot;checked&quot; /&gt;
+&lt;input type=&quot;file&quot; name=&quot;foo&quot; value=&quot;title&quot; accept=&quot;text/plain&quot; /&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;foo&quot; value=&quot;title&quot; /&gt;
+&lt;input type=&quot;image&quot; name=&quot;foo&quot; value=&quot;title&quot; src=&quot;submit.png&quot; alt=&quot;Submit&quot; /&gt;
+&lt;input type=&quot;password&quot; name=&quot;foo&quot; value=&quot;title&quot; /&gt;
+&lt;input type=&quot;radio&quot; name=&quot;foo&quot; value=&quot;title&quot; /&gt;
+&lt;input type=&quot;reset&quot; name=&quot;foo&quot; value=&quot;title&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;foo&quot; value=&quot;title&quot; /&gt;
+&lt;input type=&quot;text&quot; name=&quot;foo&quot; value=&quot;title&quot; maxlenght=&quot;50&quot; /&gt;
+		</reference>
+		<!-- adding an id to an attribute disables auto re-use for this specific case -->
+<attribute name="type" id="t.html.input.type" values="button,checkbox,color,date,datetime,datetime-local,email,file,hidden,image,month,number,password,radio,range,reset,search,submit,tel,text,time,url,week"><reference>
+button 	Defines a clickable button (mostly used with a JavaScript to activate a script)
+checkbox 	Defines a checkbox
+color 	Defines a color picker
+date 	Defines a date control (year, month and day (no time))
+datetime 	The input type datetime has been removed from the HTML standard. Use datetime-local instead.
+datetime-local 	Defines a date and time control (year, month, day, hour, minute, second, and fraction of a second (no time zone)
+email 	Defines a field for an e-mail address
+file 	Defines a file-select field and a "Browse..." button (for file uploads)
+hidden 	Defines a hidden input field
+image 	Defines an image as the submit button
+month 	Defines a month and year control (no time zone)
+number 	Defines a field for entering a number
+password 	Defines a password field (characters are masked)
+radio 	Defines a radio button
+range 	Defines a control for entering a number whose exact value is not important (like a slider control)
+reset 	Defines a reset button (resets all form values to default values)
+search 	Defines a text field for entering a search string
+submit 	Defines a submit button
+tel 	Defines a field for entering a telephone number
+text 	Default. Defines a single-line text field (default width is 20 characters)
+time 	Defines a control for entering a time (no time zone)
+url 	Defines a field for entering a URL
+week 	Defines a week and year control (no time zone)
+</reference></attribute>
+<attribute name="autofocus" ><reference>Specifies that the element should automatically get focus when the page loads</reference></attribute>
+<attribute name="autocomplete" values="on,off"><reference>Specifies whether an element should have autocomplete enabled</reference></attribute>
+	</tag>
+	<tag name="label" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,for,form">
+<reference>Defines a label for an input element.
+The for attribute of the &lt;label&gt; tag should be equal to the id attribute of the related element to bind them together. </reference>
+	</tag>
+	<tag name="legend" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,align">
+		<reference>Defines a caption for a fieldset element</reference>
+	</tag>
+	<tag name="optgroup" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,disabled,label">
+		<reference>	Defines a group of related options in a select (drop-down) list.
+If you have a long list of options, groups of related options are easier to handle for a user.</reference>
+	</tag>
+	<tag name="option" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,disabled,label,selected,value">
+		<reference>Defines an option in a select list.
+The &lt;option&gt; tag can be used without any attributes, but you usually need the value attribute, which indicates what is sent to the server.
+</reference>
+	</tag>
+	<tag name="select" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,autofocus,disabled,form,multiple,name,required,size">
+		<reference>Defines a select list (drop-down list)
+&lt;select name=&quot;favourite&quot;&gt;
+  &lt;option value=&quot;vi&quot;&gt;Vi&lt;/option&gt;
+  &lt;option value=&quot;joe&quot;&gt;Joe&lt;/option&gt;
+  &lt;option value=&quot;bluefish&quot; selected=&quot;selected&quot;&gt;Bluefish&lt;/option&gt;
+  &lt;option value=&quot;gedit&quot;&gt;Gedit&lt;/option&gt;
+&lt;/select&gt;
+</reference>
+	</tag>
+	<tag name="textarea" case_insens="1" sgml_shorttag="1" attributes="&univ;,&evnt;,autofocus,cols,disabled,form,maxlength,name,placeholder,readonly,required,rows,wrap">
+		<reference>Defines a multi-line text input control
+&lt;textarea rows=&quot;2&quot; cols=&quot;20&quot;&gt;
+Initial text here.
+&lt;/textarea&gt;
+</reference>
+	</tag>
+</group>
+
+<group highlight="html-table-tag" attribhighlight="html-attribute" attrib_autocomplete_append="=&quot;&quot;" attrib_autocomplete_backup_cursor="1">
+	<autocomplete enable="1" />
+	<tag name="table" case_insens="1" sgml_shorttag="1" attributes="align,border,bgcolor,cellpadding,cellspacing,frame,rules,summary,sortable,width,&univ;,&evnt;" >
+		<autocomplete append=" summary=&quot;&quot; &gt;&#10;&#10;&lt;/table&gt;" backup_cursor="9" />
+		<reference>Defines a table.
+The &quot;align&quot;, &quot;bgcolor&quot;, &quot;border&quot;, &quot;cellpadding&quot;, &quot;cellspacing&quot;, &quot;frame&quot;, &quot;rules&quot;, &quot;summary&quot;, and &quot;width&quot; attributes are not supported in HTML5.</reference>
+	</tag>
+	<tag name="caption" case_insens="1" sgml_shorttag="1" attributes="align,&univ;,&evnt;" >
+		<reference>Defines a table caption</reference>
+	</tag>
+	<tag name="td" case_insens="1" sgml_shorttag="1" attributes="abbr,align,axis,bgcolor,char,charoff,headers,height,nowrap,scope,valign,width,&univ;,&evnt;" >
+		<reference>Defines a cell in a table.
+All attributes except for rowspan, colspan and headers are deprecated in HTML5.</reference>
+<attribute name="colspan"><reference>Specifies the number of columns a cell should span. 
+Note: colspan="0" tells the browser to span the cell to the last column of the column group (colgroup)</reference></attribute>
+<attribute name="rowspan"><reference>Specifies the number of rows a cell should span.
+Note: rowspan="0" tells the browser to span the cell to the last row of the table section (thead, tbody, or tfoot)</reference></attribute>
+	</tag>
+	<tag name="th" case_insens="1" sgml_shorttag="1" attributes="abbr,align,axis,bgcolor,char,charoff,colspan,headers,height,nowrap,rowspan,scope,valign,width,&univ;,&evnt;" >
+		<reference>Defines a header cell in a table.
+All attributes except for abbr, rowspan, colspan, headers, scope and sorted are deprecated in HTML5.
+</reference>
+	</tag>
+	<tag name="tr" case_insens="1" sgml_shorttag="1" attributes="align,bgcolor,char,charoff,valign,&univ;,&evnt;" >
+		<reference>Defines a row in a table.
+All attributes have been deprecated in HTML5.
+</reference>
+	</tag>
+	<tag name="tbody" case_insens="1" sgml_shorttag="1" attributes="align,char,charoff,valign,&univ;,&evnt;" >
+		<reference>Groups the body content in a table. 
+The &lt;tbody&gt; element is used in conjunction with the &lt;thead&gt; and &lt;tfoot&gt; elements to specify each part of a table (body, header, footer).
+Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.
+All attributes have been deprecated in HTML5.</reference>
+	</tag>
+	<tag name="tfoot" case_insens="1" sgml_shorttag="1" attributes="align,char,charoff,valign,&univ;,&evnt;" >
+		<reference>Groups the footer content in a table. 
+The &lt;tfoot&gt; element is used in conjunction with the &lt;body&gt; and &lt;thead&gt; elements to specify each part of a table (body, header, footer).
+Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.
+All attributes have been deprecated in HTML5.</reference>
+	</tag>
+	<tag name="thead" case_insens="1" sgml_shorttag="1" attributes="align,char,charoff,valign,&univ;,&evnt;" >
+		<reference>Groups the header content in a table. 
+The &lt;thead&gt; element is used in conjunction with the &lt;body&gt; and &lt;tfoot&gt; elements to specify each part of a table (body, header, footer).
+Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.
+All attributes have been deprecated in HTML5.</reference>
+	</tag>
+</group>
+
+<group class="autocomplete-html-entities" highlight="html-entity" >
+	<autocomplete enable="1" />
+<element pattern="&amp;OElig;" />
+<element pattern="&amp;oelig;" />
+<element pattern="&amp;Scaron;" />
+<element pattern="&amp;scaron;" />
+<element pattern="&amp;Yuml;" />
+<element pattern="&amp;circ;" />
+<element pattern="&amp;tilde;" />
+<element pattern="&amp;ensp;" />
+<element pattern="&amp;emsp;" />
+<element pattern="&amp;thinsp;" />
+<element pattern="&amp;zwnj;" />
+<element pattern="&amp;zwj;" />
+<element pattern="&amp;lrm;" />
+<element pattern="&amp;rlm;" />
+<element pattern="&amp;ndash;" />
+<element pattern="&amp;mdash;" />
+<element pattern="&amp;lsquo;" />
+<element pattern="&amp;rsquo;" />
+<element pattern="&amp;sbquo;" />
+<element pattern="&amp;ldquo;" />
+<element pattern="&amp;rdquo;" />
+<element pattern="&amp;bdquo;" />
+<element pattern="&amp;dagger;" />
+<element pattern="&amp;Dagger;" />
+<element pattern="&amp;permil;" />
+<element pattern="&amp;lsaquo;" />
+<element pattern="&amp;rsaquo;" />
+<element pattern="&amp;euro;" />
+<element pattern="&amp;fnof;" />
+<element pattern="&amp;Alpha;" />
+<element pattern="&amp;Beta;" />
+<element pattern="&amp;Gamma;" />
+<element pattern="&amp;Delta;" />
+<element pattern="&amp;Epsilon;" />
+<element pattern="&amp;Zeta;" />
+<element pattern="&amp;Eta;" />
+<element pattern="&amp;Theta;" />
+<element pattern="&amp;Iota;" />
+<element pattern="&amp;Kappa;" />
+<element pattern="&amp;Lambda;" />
+<element pattern="&amp;Mu;" />
+<element pattern="&amp;Nu;" />
+<element pattern="&amp;Xi;" />
+<element pattern="&amp;Omicron;" />
+<element pattern="&amp;Pi;" />
+<element pattern="&amp;Rho;" />
+<element pattern="&amp;Sigma;" />
+<element pattern="&amp;Tau;" />
+<element pattern="&amp;Uplsilon;" />
+<element pattern="&amp;Phi;" />
+<element pattern="&amp;Chi;" />
+<element pattern="&amp;Psi;" />
+<element pattern="&amp;Omega;" />
+<element pattern="&amp;alpha;" />
+<element pattern="&amp;beta;" />
+<element pattern="&amp;gamma;" />
+<element pattern="&amp;delta;" />
+<element pattern="&amp;epsilon;" />
+<element pattern="&amp;zeta;" />
+<element pattern="&amp;eta;" />
+<element pattern="&amp;theta;" />
+<element pattern="&amp;iota;" />
+<element pattern="&amp;kappa;" />
+<element pattern="&amp;lambda;" />
+<element pattern="&amp;mu;" />
+<element pattern="&amp;nu;" />
+<element pattern="&amp;xi;" />
+<element pattern="&amp;omicron;" />
+<element pattern="&amp;pi;" />
+<element pattern="&amp;rho;" />
+<element pattern="&amp;sigmaf;" />
+<element pattern="&amp;sigma;" />
+<element pattern="&amp;tau;" />
+<element pattern="&amp;upsilon;" />
+<element pattern="&amp;phi;" />
+<element pattern="&amp;chi;" />
+<element pattern="&amp;psi;" />
+<element pattern="&amp;omega;" />
+<element pattern="&amp;thetasym;" />
+<element pattern="&amp;upsih;" />
+<element pattern="&amp;piv;" />
+<element pattern="&amp;bull;" />
+<element pattern="&amp;hellip;" />
+<element pattern="&amp;prime;" />
+<element pattern="&amp;Prime;" />
+<element pattern="&amp;oline;" />
+<element pattern="&amp;frasl;" />
+<element pattern="&amp;weierp;" />
+<element pattern="&amp;image;" />
+<element pattern="&amp;real;" />
+<element pattern="&amp;trade;" />
+<element pattern="&amp;alefsym;" />
+<element pattern="&amp;larr;" />
+<element pattern="&amp;uarr;" />
+<element pattern="&amp;rarr;" />
+<element pattern="&amp;darr;" />
+<element pattern="&amp;harr;" />
+<element pattern="&amp;crarr;" />
+<element pattern="&amp;lArr;" />
+<element pattern="&amp;uArr;" />
+<element pattern="&amp;rArr;" />
+<element pattern="&amp;dArr;" />
+<element pattern="&amp;hArr;" />
+<element pattern="&amp;forall;" />
+<element pattern="&amp;part;" />
+<element pattern="&amp;exist;" />
+<element pattern="&amp;empty;" />
+<element pattern="&amp;nabla;" />
+<element pattern="&amp;isin;" />
+<element pattern="&amp;notin;" />
+<element pattern="&amp;ni;" />
+<element pattern="&amp;prod;" />
+<element pattern="&amp;sum;" />
+<element pattern="&amp;minus;" />
+<element pattern="&amp;lowast;" />
+<element pattern="&amp;radic;" />
+<element pattern="&amp;prop;" />
+<element pattern="&amp;infin;" />
+<element pattern="&amp;ang;" />
+<element pattern="&amp;and;" />
+<element pattern="&amp;or;" />
+<element pattern="&amp;cap;" />
+<element pattern="&amp;cup;" />
+<element pattern="&amp;int;" />
+<element pattern="&amp;there4;" />
+<element pattern="&amp;sim;" />
+<element pattern="&amp;cong;" />
+<element pattern="&amp;asymp;" />
+<element pattern="&amp;ne;" />
+<element pattern="&amp;equiv;" />
+<element pattern="&amp;le;" />
+<element pattern="&amp;ge;" />
+<element pattern="&amp;sub;" />
+<element pattern="&amp;sup;" />
+<element pattern="&amp;nsub;" />
+<element pattern="&amp;sube;" />
+<element pattern="&amp;supe;" />
+<element pattern="&amp;oplus;" />
+<element pattern="&amp;otimes;" />
+<element pattern="&amp;perp;" />
+<element pattern="&amp;sdot;" />
+<element pattern="&amp;lceil;" />
+<element pattern="&amp;rceil;" />
+<element pattern="&amp;lfloor;" />
+<element pattern="&amp;rfloor;" />
+<element pattern="&amp;lang;" />
+<element pattern="&amp;rang;" />
+<element pattern="&amp;loz;" />
+<element pattern="&amp;spades;" />
+<element pattern="&amp;clubs;" />
+<element pattern="&amp;hearts;" />
+<element pattern="&amp;diams;" />
+<element pattern="&amp;iexcl;" />
+<element pattern="&amp;cent;" />
+<element pattern="&amp;pound;" />
+<element pattern="&amp;curren;" />
+<element pattern="&amp;yen;" />
+<element pattern="&amp;brvbar;" />
+<element pattern="&amp;sect;" />
+<element pattern="&amp;uml;" />
+<element pattern="&amp;copy;" />
+<element pattern="&amp;ordf;" />
+<element pattern="&amp;laquo;" />
+<element pattern="&amp;not;" />
+<element pattern="&amp;shy;" />
+<element pattern="&amp;reg;" />
+<element pattern="&amp;macr;" />
+<element pattern="&amp;deg;" />
+<element pattern="&amp;plusmn;" />
+<element pattern="&amp;sup2;" />
+<element pattern="&amp;sup3;" />
+<element pattern="&amp;acute;" />
+<element pattern="&amp;micro;" />
+<element pattern="&amp;para;" />
+<element pattern="&amp;middot;" />
+<element pattern="&amp;cedil;" />
+<element pattern="&amp;sup1;" />
+<element pattern="&amp;ordm;" />
+<element pattern="&amp;raquo;" />
+<element pattern="&amp;frac14;" />
+<element pattern="&amp;frac12;" />
+<element pattern="&amp;frac34;" />
+<element pattern="&amp;iquest;" />
+<element pattern="&amp;Agrave;" />
+<element pattern="&amp;Aacute;" />
+<element pattern="&amp;Acirc;" />
+<element pattern="&amp;Atilde;" />
+<element pattern="&amp;Auml;" />
+<element pattern="&amp;Aring;" />
+<element pattern="&amp;AElig;" />
+<element pattern="&amp;Ccedil;" />
+<element pattern="&amp;Egrave;" />
+<element pattern="&amp;Eacute;" />
+<element pattern="&amp;Ecirc;" />
+<element pattern="&amp;Euml;" />
+<element pattern="&amp;Igrave;" />
+<element pattern="&amp;Iacute;" />
+<element pattern="&amp;Icirc;" />
+<element pattern="&amp;Iuml;" />
+<element pattern="&amp;ETH;" />
+<element pattern="&amp;Ntilde;" />
+<element pattern="&amp;Ograve;" />
+<element pattern="&amp;Oacute;" />
+<element pattern="&amp;Ocirc;" />
+<element pattern="&amp;Otilde;" />
+<element pattern="&amp;Ouml;" />
+<element pattern="&amp;times;" />
+<element pattern="&amp;Oslash;" />
+<element pattern="&amp;Ugrave;" />
+<element pattern="&amp;Uacute;" />
+<element pattern="&amp;Ucirc;" />
+<element pattern="&amp;Uuml;" />
+<element pattern="&amp;Yacute;" />
+<element pattern="&amp;THORN;" />
+<element pattern="&amp;szlig;" />
+<element pattern="&amp;agrave;" />
+<element pattern="&amp;aacute;" />
+<element pattern="&amp;acirc;" />
+<element pattern="&amp;atilde;" />
+<element pattern="&amp;auml;" />
+<element pattern="&amp;aring;" />
+<element pattern="&amp;aelig;" />
+<element pattern="&amp;ccedil;" />
+<element pattern="&amp;egrave;" />
+<element pattern="&amp;eacute;" />
+<element pattern="&amp;ecirc;" />
+<element pattern="&amp;euml;" />
+<element pattern="&amp;igrave;" />
+<element pattern="&amp;iacute;" />
+<element pattern="&amp;icirc;" />
+<element pattern="&amp;iuml;" />
+<element pattern="&amp;eth;" />
+<element pattern="&amp;ntilde;" />
+<element pattern="&amp;ograve;" />
+<element pattern="&amp;oacute;" />
+<element pattern="&amp;ocirc;" />
+<element pattern="&amp;otilde;" />
+<element pattern="&amp;ouml;" />
+<element pattern="&amp;divide;" />
+<element pattern="&amp;oslash;" />
+<element pattern="&amp;ugrave;" />
+<element pattern="&amp;uacute;" />
+<element pattern="&amp;ucirc;" />
+<element pattern="&amp;uuml;" />
+<element pattern="&amp;yacute;" />
+<element pattern="&amp;thorn;" />
+<element pattern="&amp;yuml;" />
+<element pattern="&amp;nbsp;" />
+<element pattern="&amp;quot;" />
+<element pattern="&amp;amp;" />
+<element pattern="&amp;lt;" />
+<element pattern="&amp;gt;" />
+<element pattern="&amp;apos;" />
+
+<element pattern="&amp;#[a-z0-9]+;" is_regex="1" >
+	<autocomplete enable="0" />
+</element>
+</group>
+<group notclass="autocomplete-html-entities">
+<element pattern="&amp;[a-z0-9#]+;" is_regex="1" highlight="html-entity" />
+</group>
+
+<!-- - - - - - - - - - - - - - - - - - - for debugging purposes one tag has been worked out in <element -->  
+<!--
+<element id="&lt;h6" pattern="&lt;h6" highlight="tag" starts_block="1">
+	<context symbols="&gt;\&quot;=' &#9;&#10;&#13;" id="h6.attributes">
+		<group highlight="attribute"><autocomplete append="=&quot;&quot;" backup_cursor="1" />
+		<element pattern="style[ &#9;&#10;&#13;]*=[ &#9;&#10;&#13;]*" highlight="attribute" is_regex="1">
+			<autocomplete string="style=&quot;&quot;" backup_cursor="1" />
+			<reference>the style attribute may contain CSS code</reference>
+			<context idref="c.html.attrib.style" />
+		</element>
+		<element pattern="class" highlight="attribute">
+			<reference>Every HTML element may have a class attribute specified.
+The attribute, if specified, must have a value that is a set of space-separated tokens representing the various classes that the element belongs to.</reference>
+		</element>
+		<element pattern="id" highlight="attribute">
+			<reference>The id attribute specifies its element's unique identifier (ID).
+The value must be unique amongst all the IDs in the element's home subtree and must contain at least one character. The value must not contain any space characters.</reference>
+		</element>
+		<element pattern="accesskey" highlight="attribute"><reference>All HTML elements may have the accesskey content attribute set. The accesskey attribute's value is used by the user agent as a guide for creating a keyboard shortcut that activates or focuses the element.
+If specified, the value must be an ordered set of unique space-separated tokens that are case-sensitive, each of which must be exactly one Unicode code point in length.</reference></element>
+		<element pattern="contenteditable[ &#9;&#10;&#13;]*=[ &#9;&#10;&#13;]*" highlight="attribute" is_regex="1" >
+			<autocomplete string="contenteditable=&quot;&quot;" backup_cursor="1" trigger_new_autocomp_popup="1" />
+			<context symbols="&gt;\&quot;=' &#9;&#10;&#13;">
+				<group highlight="string">
+					<autocomplete enable="1" />
+					<element pattern="true" ends_context="1" />
+					<element pattern="'true'"  ends_context="1"/>
+					<element pattern="&quot;true&quot;"  ends_context="1" />
+					<element pattern="false"  ends_context="1"/>
+					<element pattern="'false'"  ends_context="1"/>
+					<element pattern="&quot;false&quot;"  ends_context="1"/>
+					<element pattern="(&quot;[^&quot;]*&quot;|'[^']*')" is_regex="1" ends_context="1"><autocomplete enable="0" /></element>
+				</group>
+			</context>
+		</element>
+		<element pattern="dir[ &#9;&#10;&#13;]*=[ &#9;&#10;&#13;]*" highlight="attribute" is_regex="1" >
+		<reference>The dir attribute specifies the element's text directionality. The attribute is an enumerated attribute with the following keywords and states:
+The ltr keyword indicates that the contents of the element are explicitly directionally isolated left-to-right text.
+The rtl keyword indicates that the contents of the element are explicitly directionally isolated right-to-left text.
+The auto keyword indicates that the contents of the element are explicitly directionally isolated text, but that the direction is to be determined programmatically using the contents of the element.</reference>
+			<autocomplete string="dir=&quot;&quot;" backup_cursor="1" trigger_new_autocomp_popup="1" />
+			<context symbols="&gt;\&quot;=' &#9;&#10;&#13;">
+				<group highlight="string">
+					<autocomplete enable="1" />
+					<element pattern="ltr" ends_context="1" />
+					<element pattern="'ltr'"  ends_context="1"/>
+					<element pattern="&quot;ltr&quot;"  ends_context="1" />
+					<element pattern="rtl"  ends_context="1"/>
+					<element pattern="'rtl'"  ends_context="1"/>
+					<element pattern="&quot;rtl&quot;"  ends_context="1"/>
+					<element pattern="auto"  ends_context="1"/>
+					<element pattern="'auto'"  ends_context="1"/>
+					<element pattern="&quot;auto&quot;"  ends_context="1"/>
+					<element pattern="(&quot;[^&quot;]*&quot;|'[^']*')" is_regex="1" ends_context="1"><autocomplete enable="0" /></element>
+				</group>
+			</context>
+		</element>
+		<element pattern="lang" ><reference>The lang attribute specifies the primary language for the element's contents and for any of the element's attributes that contain text. Its value must be a valid BCP 47 language tag, or the empty string. Setting the attribute to the empty string indicates that the primary language is unknown.</reference></element>
+		<element pattern="spellcheck[ &#9;&#10;&#13;]*=[ &#9;&#10;&#13;]*" highlight="attribute" is_regex="1" >
+		<reference>The spellcheck attribute is an enumerated attribute whose keywords are the empty string, true and false. The empty string and the true keyword map to the true state.</reference>
+			<autocomplete string="spellcheck=&quot;&quot;" backup_cursor="1" trigger_new_autocomp_popup="1" />
+			<context symbols="&gt;\&quot;=' &#9;&#10;&#13;">
+				<group highlight="string">
+					<autocomplete enable="1" />
+					<element pattern="true" ends_context="1" />
+					<element pattern="'true'"  ends_context="1"/>
+					<element pattern="&quot;true&quot;"  ends_context="1" />
+					<element pattern="false"  ends_context="1"/>
+					<element pattern="'false'"  ends_context="1"/>
+					<element pattern="&quot;false&quot;"  ends_context="1"/>
+					<element pattern="(&quot;[^&quot;]*&quot;|'[^']*')" is_regex="1" ends_context="1"><autocomplete enable="0" /></element>
+				</group>
+			</context>
+		</element>
+		<element pattern="tabindex" ><reference>The tabindex content attribute allows authors to control whether an element is supposed to be focusable, whether it is supposed to be reachable using sequential focus navigation, and what is to be the relative order of the element for the purposes of sequential focus navigation.
+The tabindex attribute, if specified, must have a value that is a valid integer.</reference></element>
+		<element pattern="title" ><reference>The title attribute represents advisory information for the element, such as would be appropriate for a tooltip.</reference></element>
+		<element pattern="translate[ &#9;&#10;&#13;]*=[ &#9;&#10;&#13;]*" highlight="attribute" is_regex="1" >
+		<reference>The translate attribute is an enumerated attribute that is used to specify whether an element's attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.</reference>
+			<autocomplete string="translate=&quot;&quot;" backup_cursor="1" trigger_new_autocomp_popup="1" />
+			<context symbols="&gt;\&quot;=' &#9;&#10;&#13;">
+				<group highlight="string">
+					<autocomplete enable="1" />
+					<element pattern="yes" ends_context="1" />
+					<element pattern="'yes'"  ends_context="1"/>
+					<element pattern="&quot;yes&quot;"  ends_context="1" />
+					<element pattern="no"  ends_context="1"/>
+					<element pattern="'no'"  ends_context="1"/>
+					<element pattern="&quot;no&quot;"  ends_context="1"/>
+					<element pattern="(&quot;[^&quot;]*&quot;|'[^']*')" is_regex="1" ends_context="1"><autocomplete enable="0" /></element>
+				</group>
+			</context>
+		</element>
+		</group>
+		<element pattern="hidden" highlight="attribute"><autocomplete enable="1" /><reference>All HTML elements may have the hidden content attribute set. The hidden attribute is a boolean attribute. When specified on an element, it indicates that the element is not yet, or is no longer, directly relevant to the page's current state, or that it is being used to declare content to be reused by other parts of the page as opposed to being directly accessed by the user. User agents should not render elements that have the hidden attribute specified.</reference></element>
+		
+		<element id="__internal_tag_string_d__" pattern="&quot;[^&quot;]*&quot;" is_regex="1" highlight="string" />
+		<element id="__internal_tag_string_s__" pattern="'[^']*'" is_regex="1" highlight="string" />
+		<element pattern="&gt;" ends_context="1" highlight="tag">
+			<autocomplete string="&gt;&lt;/h6&gt;" backup_cursor="5" condition_relation="0" condition_mode="3" condition_blockstartidref="&lt;h6" />
+			<autocomplete string="&gt;&lt;/h5&gt;" backup_cursor="5" condition_relation="0" condition_mode="3" condition_blockstartidref="&lt;h5" />
+			</element>
+		
+	</context>
+</element>
+<element pattern="&lt;/h6&gt;" highlight="tag" ends_block="1" blockstartelement="&lt;h6" />
+
+<element id="&lt;h5" pattern="&lt;h5" highlight="tag" starts_block="1">
+	<context idref="h6.attributes" />
+</element>
+<element pattern="&lt;/h5&gt;" highlight="tag" ends_block="1" blockstartelement="&lt;h5" />
+-->
+
+<!--<element id="tag.var" pattern="&lt;var" highlight="html-tag" case_insens="1" starts_block="1">
+<reference>Defines a variable part of a text</reference>
+<context symbols=" &gt;'&quot;">
+	<element pattern="&gt;" ends_context="1" highlight="html-tag"/>
+	<element pattern="/&gt;" ends_context="1" highlight="html-tag" ends_block="1" blockstartelement="tag.var" />
+	<element pattern="style[ ]*=[ ]*['&quot;]" is_regex="1" highlight="html-attribute" case_insens="1">
+		<autocomplete string="style=&quot;&quot;" backup_cursor="1" />
+		<context idref="attribute.string.style" />
+	</element>
+	<element pattern="id[ ]*=" highlight="html-attribute" case_insens="1" is_regex="1">
+		<autocomplete string="id=&quot;&quot;" backup_cursor="1" />
+		<context idref="attribute.string" />
+	</element>
+	<element pattern="lang[ ]*=" highlight="html-attribute" case_insens="1" is_regex="1">
+		<autocomplete string="lang=&quot;&quot;" backup_cursor="1" />
+		<context idref="attribute.string" />
+	</element>
+	<element pattern="class[ ]*=" highlight="html-attribute" case_insens="1" is_regex="1">
+		<reference>specifies one or more classnames for an element (refers to a class in a style sheet)</reference>
+		<autocomplete string="class=&quot;&quot;" backup_cursor="1" />
+		<context idref="attribute.string" />
+	</element>
+	<element pattern="dir[ ]*=" highlight="html-attribute" case_insens="1" is_regex="1">
+		<reference>specifies the text direction of the element's content</reference>
+		<autocomplete string="dir=&quot;&quot;" backup_cursor="1" />
+		<context idref="attribute.string.dir" />
+	</element>
+</context>
+</element>
+<element pattern="&lt;/var&gt;" highlight="html-tag" ends_block="1" blockstartelement="tag.var" />
+-->
+
+
+
+</bfinc>

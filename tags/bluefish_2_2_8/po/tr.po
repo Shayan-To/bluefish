@@ -1,0 +1,7401 @@
+# translation of tr.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
+#
+#: ../src/xmlstrings.h:1
+msgid ""
+msgstr ""
+"Project-Id-Version: Bluefish SVN\n"
+"Report-Msgid-Bugs-To: bluefish-dev@lists.ems.ru\n"
+"POT-Creation-Date: 2015-09-25 11:01+0200\n"
+"PO-Revision-Date: 2005-04-11 22:07+0300\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9\n"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:1
+msgid ""
+"Bluefish is a powerful editor targeted towards programmers and web "
+"developers, with many options to write websites, scripts and programming "
+"code. Bluefish supports many programming and markup languages and has many "
+"features, but is still a very fast and lightweight application."
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:2
+msgid "A selection of the features:"
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:3
+msgid ""
+"Well done syntax highlighting which for example supports languages inside "
+"languages (e.g. Javascript inside HTML inside PHP)"
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:4
+msgid ""
+"All kind of powerful editor features like auto indenting and auto completion "
+"for many functions and libraries in many programming languages"
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:5
+#, fuzzy
+msgid "Project support"
+msgstr "/Proje/sep1"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:6
+msgid "Support for remote files over ftp, sftp, webdav, etc"
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:7
+msgid "Powerful search and replace engine"
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:8
+msgid "Customizable integration of external programs such as lint, make, etc"
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:9
+msgid "Snippets plugin to automate often used code"
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:10
+msgid "Code-aware in-line spell checking"
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:11
+msgid "Zencoding or Emmet support"
+msgstr ""
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:12
+#, fuzzy
+msgid "Bookmarks panel"
+msgstr "Yerimleri"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:13
+msgid ""
+"If you are an occasional coder who is in need for a simple to learn editor, "
+"or a heavy coder who dislikes heavy IDE's like eclipse or netbeans, Bluefish "
+"is your editor of choice!"
+msgstr ""
+
+#: ../desktop-data/bluefish.desktop.in.h:1 ../src/bluefish.c:91
+#, fuzzy
+msgid "Bluefish Editor"
+msgstr "Bluefish ipucu:"
+
+#: ../desktop-data/bluefish.desktop.in.h:2
+msgid "Web Development Editor"
+msgstr ""
+
+#: ../desktop-data/bluefish.desktop.in.h:3
+msgid "programming;code;html;php;python;"
+msgstr ""
+
+#: ../desktop-data/bluefish.xml.in.h:1
+#, fuzzy
+msgid "Bluefish project file"
+msgstr "Bluefish projesi adını giriniz"
+
+#: ../desktop-data/bluefish.xml.in.h:2
+#, fuzzy
+msgid "Bluefish language definition file"
+msgstr "Tanım"
+
+#: ../src/bftextview2.c:1827
+#, fuzzy
+msgid "Collapse all"
+msgstr "Tümünü _Kapat"
+
+#: ../src/bftextview2.c:1830
+msgid "Expand all"
+msgstr ""
+
+#: ../src/bftextview2.c:1838
+#, fuzzy, c-format
+msgid "Collapse %s"
+msgstr "Tümünü _Kapat"
+
+#: ../src/bftextview2.c:1848
+#, c-format
+msgid "Expand %s"
+msgstr ""
+
+#: ../src/bftextview2_spell.c:826
+#, fuzzy
+msgid "Spell check language"
+msgstr "Yazım Denetimi..."
+
+#: ../src/bftextview2_spell.c:859
+#, fuzzy
+msgid "Add to dictionary"
+msgstr "Kişisel Araç Çubuğuna Ekle"
+
+#: ../src/bftextview2_spell.c:862
+#, fuzzy
+msgid "Ignore spelling"
+msgstr "Yazım Denetimi"
+
+#: ../src/bftextview2_spell.c:877
+msgid "Insert special characters as entities"
+msgstr ""
+
+#: ../src/bfwin.c:232
+msgid "Filebrowser"
+msgstr "Dosya yöneticisi"
+
+#: ../src/bfwin.c:234
+msgid "Bookmarks"
+msgstr "Yerimleri"
+
+#: ../src/bfwin.c:1002
+#, fuzzy
+msgid "Goto Line:"
+msgstr "Satıra Git"
+
+#: ../src/bfwin.c:1013
+#, fuzzy
+msgid "Find:"
+msgstr "Bul"
+
+#: ../src/bfwin.c:1024 ../src/snr3.c:1526
+#, fuzzy
+msgid "Regular expression (pcre)"
+msgstr "Düzenli ifade:"
+
+#: ../src/bfwin.c:1027
+#, fuzzy
+msgid "Case sensitive"
+msgstr "Büyük / Küçük Harf Duyarlı"
+
+#: ../src/bfwin.c:1030
+#, fuzzy
+msgid "Dot character matches newlines"
+msgstr "Varsayılan karakter seti"
+
+#: ../src/bfwin.c:1033
+#, fuzzy
+msgid "Pattern contains backslash escaped sequences"
+msgstr "_Şablonlar ters kesme kaçış işareti içerir (\\n, \\t)"
+
+#: ../src/bfwin.c:1045
+#, fuzzy
+msgid "Advanced"
+msgstr "/A_rama ile Aç..."
+
+#: ../src/bfwin.c:1519
+msgid "New Bluefish Window"
+msgstr "Yeni Pencere"
+
+#. Fake-label (for notebook_hide() and _show() ;)
+#: ../src/bfwin.c:1585
+msgid "Stand by..."
+msgstr "Beklemeye Al..."
+
+#: ../src/bfwin_uimanager.c:761
+msgid "Leave Fullscreen"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:761
+msgid "Fullscreen"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:819
+#, fuzzy
+msgid "_File"
+msgstr "/_Dosya"
+
+#: ../src/bfwin_uimanager.c:820
+#, fuzzy
+msgid "New From Template"
+msgstr "/Dosya/_Seçili yerde aç"
+
+#: ../src/bfwin_uimanager.c:821 ../src/bfwin_uimanager.c:831
+#, fuzzy
+msgid "Open _Recent"
+msgstr "/Dosya/Son _Kullanılanlar"
+
+#: ../src/bfwin_uimanager.c:822
+#, fuzzy
+msgid "_Edit"
+msgstr "/Dü_zenle"
+
+#: ../src/bfwin_uimanager.c:823
+#, fuzzy
+msgid "_View"
+msgstr "/_Görünüm"
+
+#: ../src/bfwin_uimanager.c:824
+#, fuzzy
+msgid "_Document"
+msgstr "/_Doküman"
+
+#: ../src/bfwin_uimanager.c:825
+#, fuzzy
+msgid "_Tab Size"
+msgstr "/Doküman/Sekme Aralığını _Büyült"
+
+#: ../src/bfwin_uimanager.c:826
+#, fuzzy
+msgid "_Font Size"
+msgstr "Yazıtipini Büyüt"
+
+#: ../src/bfwin_uimanager.c:827
+#, fuzzy
+msgid "Language M_ode"
+msgstr "Dil:"
+
+#: ../src/bfwin_uimanager.c:828
+#, fuzzy
+msgid "Character _Encoding"
+msgstr "/Doküman/_Yazıtipi Düzeni"
+
+#: ../src/bfwin_uimanager.c:829
+#, fuzzy
+msgid "_Go"
+msgstr "/_Git"
+
+#: ../src/bfwin_uimanager.c:830
+#, fuzzy
+msgid "_Project"
+msgstr "/_Proje"
+
+#: ../src/bfwin_uimanager.c:832
+#, fuzzy
+msgid "_Tools"
+msgstr "/_Harici"
+
+#: ../src/bfwin_uimanager.c:833
+#, fuzzy
+msgid "_Commands"
+msgstr "Komut"
+
+#: ../src/bfwin_uimanager.c:834
+#, fuzzy
+msgid "_Filters"
+msgstr "Filtrele"
+
+#: ../src/bfwin_uimanager.c:835
+#, fuzzy
+msgid "_Output parsers"
+msgstr "Çıktı ayrıştırıcıları"
+
+#: ../src/bfwin_uimanager.c:836
+msgid "For_mat"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:837
+#, fuzzy
+msgid "_Insert"
+msgstr "Ekle"
+
+#: ../src/bfwin_uimanager.c:838
+#, fuzzy
+msgid "Con_vert"
+msgstr "İçe_rik:"
+
+#: ../src/bfwin_uimanager.c:842
+msgid "_New"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:842 ../src/filebrowser2.c:898
+#: ../src/filebrowser2.c:900 ../src/filebrowser2.c:1288
+msgid "New file"
+msgstr "Yeni dosya"
+
+#: ../src/bfwin_uimanager.c:843
+#, fuzzy
+msgid "New _Window"
+msgstr "/Dosya/Yeni _Pencere"
+
+#: ../src/bfwin_uimanager.c:843
+#, fuzzy
+msgid "New window"
+msgstr "/Dosya/Yeni _Pencere"
+
+#: ../src/bfwin_uimanager.c:845
+#, fuzzy
+msgid "Close Win_dow"
+msgstr "/Dosya/Pen_cereyi Kapat"
+
+#: ../src/bfwin_uimanager.c:845
+#, fuzzy
+msgid "Close window"
+msgstr "/Dosya/Pen_cereyi Kapat"
+
+#: ../src/bfwin_uimanager.c:846
+#, fuzzy
+msgid "_Open..."
+msgstr "Aç..."
+
+#: ../src/bfwin_uimanager.c:846
+#, fuzzy
+msgid "Open file"
+msgstr "Yeni dosya"
+
+#: ../src/bfwin_uimanager.c:847
+#, fuzzy
+msgid "Open Ad_vanced..."
+msgstr "/A_rama ile Aç..."
+
+#: ../src/bfwin_uimanager.c:847 ../src/filebrowser2.c:1284
+#, fuzzy
+msgid "Open advanced"
+msgstr "/A_rama ile Aç..."
+
+#: ../src/bfwin_uimanager.c:849
+#, fuzzy
+msgid "Open _from Selection"
+msgstr "/Dosya/_Seçili yerde aç"
+
+#: ../src/bfwin_uimanager.c:849
+#, fuzzy
+msgid "Open from Selection"
+msgstr "/Dosya/_Seçili yerde aç"
+
+#: ../src/bfwin_uimanager.c:851
+#, fuzzy
+msgid "_Print..."
+msgstr "Ebeveyn"
+
+#: ../src/bfwin_uimanager.c:851
+#, fuzzy
+msgid "Print"
+msgstr "Ebeveyn"
+
+#: ../src/bfwin_uimanager.c:852
+#, fuzzy
+msgid "_Quit"
+msgstr "/Dosya/_Çık"
+
+#: ../src/bfwin_uimanager.c:852
+#, fuzzy
+msgid "Quit Bluefish"
+msgstr "Bluefish Hakkında"
+
+#: ../src/bfwin_uimanager.c:853
+#, fuzzy
+msgid "Preference_s..."
+msgstr "Tercihler..."
+
+#: ../src/bfwin_uimanager.c:853
+#, fuzzy
+msgid "Edit Preferences"
+msgstr "Tercihler"
+
+#: ../src/bfwin_uimanager.c:855
+#, fuzzy
+msgid "Select _All"
+msgstr "/Düzenle/Tümünü _Seç"
+
+#: ../src/bfwin_uimanager.c:855
+#, fuzzy
+msgid "Select all"
+msgstr "Dosya seç"
+
+#: ../src/bfwin_uimanager.c:856
+#, fuzzy
+msgid "Add Boo_kmark"
+msgstr "Yerimi ekle"
+
+#: ../src/bfwin_uimanager.c:856 ../src/document.c:2310
+msgid "Add bookmark"
+msgstr "Yerimi ekle"
+
+#: ../src/bfwin_uimanager.c:858
+msgid "_Add or Remove..."
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:858
+#, fuzzy
+msgid "Add or remove character encoding"
+msgstr "/Doküman/Yazıtipi Düzeni"
+
+#: ../src/bfwin_uimanager.c:860
+#, fuzzy
+msgid "Floati_ng Window"
+msgstr "/Doküman/_Uçan Pencereler (Bu ne ya?)"
+
+#: ../src/bfwin_uimanager.c:860
+#, fuzzy
+msgid "Open current document in floating window"
+msgstr "seçili dokümanda"
+
+#: ../src/bfwin_uimanager.c:862 ../src/bfwin_uimanager.c:868
+msgid "_Increase"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:862
+msgid "Increase document font size"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:864 ../src/bfwin_uimanager.c:870
+msgid "_Decrease"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:864
+#, fuzzy
+msgid "Decrease document font size"
+msgstr "/Doküman/Doküman _Tipi"
+
+#: ../src/bfwin_uimanager.c:866 ../src/bfwin_uimanager.c:872
+#, fuzzy
+msgid "_Reset"
+msgstr "Sıfırla"
+
+#: ../src/bfwin_uimanager.c:866
+#, fuzzy
+msgid "Reset document font size"
+msgstr "/Doküman/Doküman _Tipi"
+
+#: ../src/bfwin_uimanager.c:868
+msgid "Increase document tab size"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:870
+#, fuzzy
+msgid "Decrease document tab size"
+msgstr "/Doküman/Sekme Aralığını _Büyült"
+
+#: ../src/bfwin_uimanager.c:872
+#, fuzzy
+msgid "Reset document tab size"
+msgstr "/Doküman/Sekme Aralığını _Büyült"
+
+#: ../src/bfwin_uimanager.c:875
+#, fuzzy
+msgid "Rescan Synta_x & Spelling"
+msgstr "/Doküman/_Vurgulama Uygula"
+
+#: ../src/bfwin_uimanager.c:875 ../src/bfwin_uimanager.c:878
+#, fuzzy
+msgid "Rescan document highlighting"
+msgstr "/Doküman/_Vurgulamayı Güncelle"
+
+#: ../src/bfwin_uimanager.c:878
+#, fuzzy
+msgid "Rescan Synta_x"
+msgstr "/Doküman/_Vurgulama Uygula"
+
+#: ../src/bfwin_uimanager.c:881
+#, fuzzy
+msgid "_New Project..."
+msgstr "Yeni proje"
+
+#: ../src/bfwin_uimanager.c:881 ../src/project.c:231
+msgid "New project"
+msgstr "Yeni proje"
+
+#: ../src/bfwin_uimanager.c:882
+#, fuzzy
+msgid "_Open Project..."
+msgstr "/Proje/Proje _Aç..."
+
+#: ../src/bfwin_uimanager.c:882
+#, fuzzy
+msgid "Open project"
+msgstr "Yeni proje"
+
+#: ../src/bfwin_uimanager.c:883
+msgid "_Synchronize Text Block"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:883 ../src/blocksync.c:295
+msgid "Synchronize text block"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:885
+#, fuzzy
+msgid "_Toggle Comment"
+msgstr "/Doküman/Kelime _Sayısı"
+
+#: ../src/bfwin_uimanager.c:885
+#, fuzzy
+msgid "Toggle comment"
+msgstr "/Doküman/Kelime _Sayısı"
+
+#: ../src/bfwin_uimanager.c:887
+#, fuzzy
+msgid "Select _Block"
+msgstr "Etiket"
+
+#: ../src/bfwin_uimanager.c:887
+msgid "Select block, use multiple times to select parent blocks "
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:889
+#, fuzzy
+msgid "D_uplicate Line"
+msgstr "Dosyaları seç"
+
+#: ../src/bfwin_uimanager.c:889
+#, fuzzy
+msgid "Duplicate the current line"
+msgstr "Vurgulama yap"
+
+#: ../src/bfwin_uimanager.c:891
+#, fuzzy
+msgid "_Delete Line"
+msgstr "Dosyaları seç"
+
+#: ../src/bfwin_uimanager.c:891
+#, fuzzy
+msgid "Delete the current line"
+msgstr "Vurgulama yap"
+
+#: ../src/bfwin_uimanager.c:893
+#, fuzzy
+msgid "_Word Count"
+msgstr "/Doküman/Kelime _Sayısı"
+
+#: ../src/bfwin_uimanager.c:893
+#, fuzzy
+msgid "Word count"
+msgstr "/Doküman/Kelime _Sayısı"
+
+#: ../src/bfwin_uimanager.c:894 ../src/doc_extern_tools.c:47
+msgid "Lorem Ipsum generator"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:895
+#, fuzzy
+msgid "Insert Relative Filename"
+msgstr "dosya adı"
+
+#: ../src/bfwin_uimanager.c:896
+#, fuzzy
+msgid "Insert Absolute Filename"
+msgstr "dosya adı"
+
+#: ../src/bfwin_uimanager.c:897
+#, fuzzy
+msgid "Indenting to S_paces"
+msgstr "/Düzenle/Özel Değiştirme/_ASCII --> HTML Nesneleri"
+
+#: ../src/bfwin_uimanager.c:897
+#, fuzzy
+msgid "Indenting to spaces"
+msgstr "/Düzenle/Özel Değiştirme/_ASCII --> HTML Nesneleri"
+
+#: ../src/bfwin_uimanager.c:899
+#, fuzzy
+msgid "Indenting to T_abs"
+msgstr "/Düzenle/Özel Değiştirme/Her İkisi --> HTML Nesneleri"
+
+#: ../src/bfwin_uimanager.c:899
+#, fuzzy
+msgid "Indenting to tabs"
+msgstr "/Düzenle/Özel Değiştirme/Her İkisi --> HTML Nesneleri"
+
+#: ../src/bfwin_uimanager.c:901
+#, fuzzy
+msgid "_Join Lines Together"
+msgstr "/Harici/tearoff1"
+
+#: ../src/bfwin_uimanager.c:901
+#, fuzzy
+msgid "Join lines together"
+msgstr "/Harici/tearoff1"
+
+#: ../src/bfwin_uimanager.c:903
+#, fuzzy
+msgid "Split Lines on Right _Margin"
+msgstr "/Harici/tearoff1"
+
+#: ../src/bfwin_uimanager.c:903
+#, fuzzy
+msgid "Split lines on right margin"
+msgstr "/Harici/tearoff1"
+
+#: ../src/bfwin_uimanager.c:905
+msgid "Merge Lines Into Col_umns"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:905
+msgid "Merge lines into columns"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:907
+#, fuzzy
+msgid "Rewrap _Lines"
+msgstr "/Harici/tearoff1"
+
+#: ../src/bfwin_uimanager.c:907
+#, fuzzy
+msgid "Rewrap lines"
+msgstr "/Harici/tearoff1"
+
+#: ../src/bfwin_uimanager.c:908
+#, fuzzy
+msgid "Strip T_railing Whitespace"
+msgstr "/Düzenle/Özel Değiştirme/_Büyük Harfe Çevir"
+
+#: ../src/bfwin_uimanager.c:908
+#, fuzzy
+msgid "Strip trailing whitespace"
+msgstr "/Düzenle/Özel Değiştirme/_Büyük Harfe Çevir"
+
+#: ../src/bfwin_uimanager.c:910
+msgid "Javascript beautifier"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:911
+#, fuzzy
+msgid "Preview in browser"
+msgstr "Tarayıcıda aç"
+
+#: ../src/bfwin_uimanager.c:916
+msgid "_Full Screen"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:916
+msgid "Full screen"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:918
+#, fuzzy
+msgid "_Main Toolbar"
+msgstr "/Görünüm/_Ana Araç Çubuğunu Göster"
+
+#: ../src/bfwin_uimanager.c:918
+#, fuzzy
+msgid "Show main toolbar"
+msgstr "Ana araç çubuğunu göster"
+
+#: ../src/bfwin_uimanager.c:920
+#, fuzzy
+msgid "_Side Pane"
+msgstr "/Görünüm/Kenar _Paneli Göster"
+
+#: ../src/bfwin_uimanager.c:920
+#, fuzzy
+msgid "Show side pane"
+msgstr "Gizlileri göster"
+
+#: ../src/bfwin_uimanager.c:921
+#, fuzzy
+msgid "_Output Pane"
+msgstr "Çıktı #"
+
+#: ../src/bfwin_uimanager.c:921
+#, fuzzy
+msgid "Show output pane"
+msgstr "Tüm çıktıyı göster"
+
+#: ../src/bfwin_uimanager.c:923
+#, fuzzy
+msgid "Status_bar"
+msgstr "/Görünüm/Kenar _Paneli Göster"
+
+#: ../src/bfwin_uimanager.c:923
+#, fuzzy
+msgid "Show statusbar"
+msgstr "/Görünüm/Kenar _Paneli Göster"
+
+#: ../src/bfwin_uimanager.c:925
+#, fuzzy
+msgid "Auto _Completion Popup"
+msgstr "/Doküman/Kodları _Hizala"
+
+#: ../src/bfwin_uimanager.c:925
+#, fuzzy
+msgid "Show auto completion popup"
+msgstr "/Doküman/Kodları _Hizala"
+
+#: ../src/bfwin_uimanager.c:927
+#, fuzzy
+msgid "_Auto Indent"
+msgstr "/Doküman/Kodları _Hizala"
+
+#: ../src/bfwin_uimanager.c:927
+#, fuzzy
+msgid "Auto indent"
+msgstr "Sola Kaydır"
+
+#: ../src/bfwin_uimanager.c:928
+#, fuzzy
+msgid "Highlight Block _Delimiters"
+msgstr "Vurgulama satırı #"
+
+#: ../src/bfwin_uimanager.c:929
+#, fuzzy
+msgid "Highlight block delimiters"
+msgstr "Vurgulama satırı #"
+
+#: ../src/bfwin_uimanager.c:930
+#, fuzzy
+msgid "_Highlight Syntax"
+msgstr "Vurgulama yap"
+
+#: ../src/bfwin_uimanager.c:930
+#, fuzzy
+msgid "Highlight syntax"
+msgstr "Vurgulama yap"
+
+#: ../src/bfwin_uimanager.c:932
+#, fuzzy
+msgid "Show _Blocks"
+msgstr "/Doküman/Kelime _Sayısı"
+
+#: ../src/bfwin_uimanager.c:932
+#, fuzzy
+msgid "Show blocks"
+msgstr "Yedek dosyalarını göster"
+
+#: ../src/bfwin_uimanager.c:933
+#, fuzzy
+msgid "Show Line N_umbers"
+msgstr "Satır _Numarası:"
+
+#: ../src/bfwin_uimanager.c:933
+#, fuzzy
+msgid "Show line numbers"
+msgstr "Satır _Numarası:"
+
+#: ../src/bfwin_uimanager.c:935
+#, fuzzy
+msgid "Show Right _Margin"
+msgstr "/Doküman/Sa_ğa Kay"
+
+#: ../src/bfwin_uimanager.c:935
+#, fuzzy
+msgid "Show right margin"
+msgstr "Kişisel menüyü göster"
+
+#: ../src/bfwin_uimanager.c:937
+msgid "Show Split _View"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:937
+msgid "Show split view"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:939
+#, fuzzy
+msgid "Show V_isible Spacing"
+msgstr "/Doküman/sep1"
+
+#: ../src/bfwin_uimanager.c:939
+#, fuzzy
+msgid "Show visible spacing"
+msgstr "/Doküman/sep1"
+
+#: ../src/bfwin_uimanager.c:941
+msgid "_Wrap Text"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:941
+msgid "Wrap text"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:945 ../src/document.c:2097 ../src/document.c:3493
+msgid "_Close"
+msgstr "_Kapat"
+
+#: ../src/bfwin_uimanager.c:945
+#, fuzzy
+msgid "Close current file"
+msgstr "Dosya saklama hatası!\n"
+
+#: ../src/bfwin_uimanager.c:947
+#, fuzzy
+msgid "Close A_ll"
+msgstr "Tümünü _Kapat"
+
+#: ../src/bfwin_uimanager.c:947
+#, fuzzy
+msgid "Close all files"
+msgstr "Dosya saklama hatası!\n"
+
+#: ../src/bfwin_uimanager.c:949 ../src/bfwin_uimanager.c:1025
+#: ../src/file_dialogs.c:1455
+#, fuzzy
+msgid "_Save"
+msgstr "Sakla"
+
+#: ../src/bfwin_uimanager.c:949
+#, fuzzy
+msgid "Save current file"
+msgstr "Boş bir proje yarat"
+
+#: ../src/bfwin_uimanager.c:951 ../src/bfwin_uimanager.c:1026
+#, fuzzy
+msgid "Save _as..."
+msgstr "Farklı Sakla..."
+
+#: ../src/bfwin_uimanager.c:951
+#, fuzzy
+msgid "Save file as"
+msgstr "%s dosyasını farklı kaydet :"
+
+#: ../src/bfwin_uimanager.c:953
+#, fuzzy
+msgid "Sav_e All"
+msgstr "_Tümünü Sakla"
+
+#: ../src/bfwin_uimanager.c:953
+#, fuzzy
+msgid "Save all files"
+msgstr "Tüm dosyalar"
+
+#: ../src/bfwin_uimanager.c:954
+#, fuzzy
+msgid "Rever_t to Saved"
+msgstr "/Dosya/Kaydedilene _Dön"
+
+#: ../src/bfwin_uimanager.c:954
+msgid "Reload current file"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:956
+#, fuzzy
+msgid "Save a cop_y..."
+msgstr "Farklı Sakla..."
+
+#: ../src/bfwin_uimanager.c:956
+#, fuzzy
+msgid "Save a copy"
+msgstr "/Proje/Kaydet ve Ka_pat"
+
+#: ../src/bfwin_uimanager.c:957
+#, fuzzy
+msgid "_Insert..."
+msgstr "/Dosya/_Ekle..."
+
+#: ../src/bfwin_uimanager.c:957
+#, fuzzy
+msgid "Insert file"
+msgstr "Zaman Ekle"
+
+#. Required to move here to disable sensitivity on OSX
+#: ../src/bfwin_uimanager.c:958
+#, fuzzy
+msgid "Rena_me..."
+msgstr "/_Yeniden Adlandır"
+
+#: ../src/bfwin_uimanager.c:958
+#, fuzzy
+msgid "Rename file"
+msgstr "Yeni dosya"
+
+#: ../src/bfwin_uimanager.c:959
+#, fuzzy
+msgid "_Indent"
+msgstr "Sağa Kaydır"
+
+#: ../src/bfwin_uimanager.c:959
+msgid "Indent"
+msgstr "Sağa Kaydır"
+
+#: ../src/bfwin_uimanager.c:960
+#, fuzzy
+msgid "Unin_dent"
+msgstr "Sola Kaydır"
+
+#: ../src/bfwin_uimanager.c:960
+msgid "Unindent"
+msgstr "Sola Kaydır"
+
+#: ../src/bfwin_uimanager.c:962
+#, fuzzy
+msgid "F_irst Bookmark"
+msgstr "Yerimi Tanımı"
+
+#: ../src/bfwin_uimanager.c:962
+#, fuzzy
+msgid "Goto first bookmark"
+msgstr "Yerimi Tanımı"
+
+#: ../src/bfwin_uimanager.c:964
+#, fuzzy
+msgid "L_ast Bookmark"
+msgstr "Yerimi Tanımı"
+
+#: ../src/bfwin_uimanager.c:964
+#, fuzzy
+msgid "Goto last bookmark"
+msgstr "Yerimi Tanımı"
+
+#: ../src/bfwin_uimanager.c:966
+#, fuzzy
+msgid "N_ext Bookmark"
+msgstr "Yerimini sil"
+
+#: ../src/bfwin_uimanager.c:966
+#, fuzzy
+msgid "Goto next bookmark"
+msgstr "Yerimini sil"
+
+#: ../src/bfwin_uimanager.c:968
+#, fuzzy
+msgid "P_revious Bookmark"
+msgstr "Yerimi Tanımı"
+
+#: ../src/bfwin_uimanager.c:969 ../src/bfwin_uimanager.c:982
+#, fuzzy
+msgid "Goto previous document"
+msgstr "/Git/Bir _Önceki Doküman"
+
+#: ../src/bfwin_uimanager.c:970
+#, fuzzy
+msgid "Move Tab _Left"
+msgstr "Sola Kaydır"
+
+#: ../src/bfwin_uimanager.c:970
+#, fuzzy
+msgid "Move current tab left"
+msgstr "Yazı rengi seç"
+
+#: ../src/bfwin_uimanager.c:972
+#, fuzzy
+msgid "Move Tab _Right"
+msgstr "Sağa Kaydır"
+
+#: ../src/bfwin_uimanager.c:972
+#, fuzzy
+msgid "Move current tab right"
+msgstr "Boş bir proje yarat"
+
+#: ../src/bfwin_uimanager.c:974
+#, fuzzy
+msgid "_Recent Document"
+msgstr "/Git/Bir _Sonraki Doküman"
+
+#: ../src/bfwin_uimanager.c:974
+#, fuzzy
+msgid "Goto most recent document"
+msgstr "/Git/So_n Doküman"
+
+#: ../src/bfwin_uimanager.c:976
+#, fuzzy
+msgid "_First Document"
+msgstr "/Git/_İlk Doküman"
+
+#: ../src/bfwin_uimanager.c:976
+#, fuzzy
+msgid "Goto first document"
+msgstr "/Git/_İlk Doküman"
+
+#: ../src/bfwin_uimanager.c:978
+#, fuzzy
+msgid "_Last Document"
+msgstr "/Git/So_n Doküman"
+
+#: ../src/bfwin_uimanager.c:978
+#, fuzzy
+msgid "Goto last document"
+msgstr "/Git/So_n Doküman"
+
+#: ../src/bfwin_uimanager.c:980
+#, fuzzy
+msgid "_Next Document"
+msgstr "/Git/Bir _Sonraki Doküman"
+
+#: ../src/bfwin_uimanager.c:980
+#, fuzzy
+msgid "Goto next document"
+msgstr "/Git/Bir _Sonraki Doküman"
+
+#: ../src/bfwin_uimanager.c:982
+#, fuzzy
+msgid "_Previous Document"
+msgstr "/Git/Bir _Önceki Doküman"
+
+#: ../src/bfwin_uimanager.c:984
+#, fuzzy
+msgid "_Goto Line"
+msgstr "Satıra Git"
+
+#: ../src/bfwin_uimanager.c:984
+#, fuzzy
+msgid "Goto line"
+msgstr "Satıra Git"
+
+#: ../src/bfwin_uimanager.c:985
+#, fuzzy
+msgid "Goto Line Number from _Clipboard"
+msgstr "/Git/Se_çili Alan"
+
+#: ../src/bfwin_uimanager.c:986
+#, fuzzy
+msgid "Goto line number in clipboard or selection"
+msgstr "/Git/Se_çili Alan"
+
+#: ../src/bfwin_uimanager.c:987
+#, fuzzy
+msgid "_Jump to Reference"
+msgstr "İşlev başvurusu"
+
+#: ../src/bfwin_uimanager.c:987
+#, fuzzy
+msgid "Jump to reference"
+msgstr "İşlev başvurusu"
+
+#: ../src/bfwin_uimanager.c:990 ../src/bfwin_uimanager.c:993
+msgid "Jump to Matching Block Boundary"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:999
+msgid "Cu_t"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:999
+msgid "Cut"
+msgstr "Kes"
+
+#: ../src/bfwin_uimanager.c:1000
+#, fuzzy
+msgid "_Copy"
+msgstr "Kopyala"
+
+#: ../src/bfwin_uimanager.c:1000
+msgid "Copy"
+msgstr "Kopyala"
+
+#: ../src/bfwin_uimanager.c:1001
+#, fuzzy
+msgid "_Paste"
+msgstr "Yapıştır"
+
+#: ../src/bfwin_uimanager.c:1001
+msgid "Paste"
+msgstr "Yapıştır"
+
+#: ../src/bfwin_uimanager.c:1002
+#, fuzzy
+msgid "Paste Specia_l"
+msgstr "/Etiketler/_Özel"
+
+#: ../src/bfwin_uimanager.c:1002
+#, fuzzy
+msgid "Paste Special"
+msgstr "/Etiketler/_Özel"
+
+#: ../src/bfwin_uimanager.c:1006
+#, fuzzy
+msgid "_Find"
+msgstr "Bul"
+
+#: ../src/bfwin_uimanager.c:1006
+#, fuzzy
+msgid "Show find bar"
+msgstr "Ana araç çubuğunu göster"
+
+#: ../src/bfwin_uimanager.c:1007
+#, fuzzy
+msgid "Find A_gain"
+msgstr "/Düzenle/Sonrekini Bu_l"
+
+#: ../src/bfwin_uimanager.c:1007
+#, fuzzy
+msgid "Find again"
+msgstr "/Düzenle/Sonrekini Bu_l"
+
+#: ../src/bfwin_uimanager.c:1008
+#, fuzzy
+msgid "Find from Clip_board"
+msgstr "_Seçili Alanda"
+
+#: ../src/bfwin_uimanager.c:1008
+#, fuzzy
+msgid "Find from clipboard or selection"
+msgstr "_Seçili Alanda"
+
+#: ../src/bfwin_uimanager.c:1011 ../src/bfwin_uimanager.c:1014
+#, fuzzy
+msgid "Ad_vanced Find & Replace..."
+msgstr "Değiştir"
+
+#: ../src/bfwin_uimanager.c:1011 ../src/bfwin_uimanager.c:1014
+#, fuzzy
+msgid "Advanced Find and Replace"
+msgstr "Değiştir"
+
+#: ../src/bfwin_uimanager.c:1023
+#, fuzzy
+msgid "Save & _close"
+msgstr "/Proje/Kaydet ve Ka_pat"
+
+#: ../src/bfwin_uimanager.c:1023
+#, fuzzy
+msgid "Save & close project"
+msgstr "Boş bir proje yarat"
+
+#: ../src/bfwin_uimanager.c:1025
+#, fuzzy
+msgid "Save project"
+msgstr "Yeni proje"
+
+#: ../src/bfwin_uimanager.c:1026
+#, fuzzy
+msgid "Save project as"
+msgstr "Yeni proje"
+
+#: ../src/bfwin_uimanager.c:1027
+#, fuzzy
+msgid "_Edit Project Options..."
+msgstr "/Proje/Proje _Ayarları..."
+
+#: ../src/bfwin_uimanager.c:1027
+#, fuzzy
+msgid "Edit project options"
+msgstr "Projeyi Düzenle"
+
+#: ../src/bfwin_uimanager.c:1032
+#, fuzzy
+msgid "_Undo"
+msgstr "Geri Al"
+
+#: ../src/bfwin_uimanager.c:1032
+msgid "Undo"
+msgstr "Geri Al"
+
+#: ../src/bfwin_uimanager.c:1033
+#, fuzzy
+msgid "U_ndo All"
+msgstr "/Düzenle/Tümünü Ge_ri Al"
+
+#: ../src/bfwin_uimanager.c:1033
+#, fuzzy
+msgid "Undo All"
+msgstr "/Düzenle/Tümünü Ge_ri Al"
+
+#: ../src/bfwin_uimanager.c:1034
+#, fuzzy
+msgid "_Redo"
+msgstr "Tekrarla"
+
+#: ../src/bfwin_uimanager.c:1034
+msgid "Redo"
+msgstr "Tekrarla"
+
+#: ../src/bfwin_uimanager.c:1035
+#, fuzzy
+msgid "R_edo All"
+msgstr "/Düzenle/Tümünü Yi_nele"
+
+#: ../src/bfwin_uimanager.c:1035
+#, fuzzy
+msgid "Redo All"
+msgstr "/Düzenle/Tümünü Yi_nele"
+
+#: ../src/bfwin_uimanager.c:1060
+#, c-format
+msgid "Always use this syntax for files of type %s ?"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:1227
+#, fuzzy
+msgid "Open _URL..."
+msgstr "/Dosya/_URL aç..."
+
+#: ../src/bfwin_uimanager.c:1237
+msgid "Upload _/ Download..."
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:1250
+#, fuzzy
+msgid "_Spell Check"
+msgstr "Yazım Denetimi..."
+
+#: ../src/bfwin_uimanager.c:1717
+#, fuzzy
+msgid "Text area to filter"
+msgstr "Metin alanı"
+
+#: ../src/bfwin_uimanager.c:1718
+msgid "All text"
+msgstr ""
+
+#: ../src/bfwin_uimanager.c:1719
+#, fuzzy
+msgid "Selected text only"
+msgstr "Yazıtipi seçiniz"
+
+#: ../src/bfwin_uimanager.c:1721
+msgid "Never ask again"
+msgstr ""
+
+#: ../src/blocksync.c:87
+msgid ""
+"Select the block to sync to other pages. Include the start-of-block and end-"
+"of-block markers in your selection."
+msgstr ""
+
+#: ../src/blocksync.c:92
+msgid "To proceed with the current selection click forward."
+msgstr ""
+
+#: ../src/blocksync.c:121
+msgid ""
+"Below is the block, including start and end marker. Please <b>select the "
+"start marker</b> in the text below."
+msgstr ""
+
+#: ../src/blocksync.c:156
+msgid "Please <b>select the end marker</b> in the text below."
+msgstr ""
+
+#: ../src/blocksync.c:194
+#, c-format
+msgid ""
+"Will replace the text between <i>%s</i> and <i>%s</i> in all documents "
+"opened in this window.\n"
+"<b>Proceed?</b>"
+msgstr ""
+
+#: ../src/blocksync.c:225
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Please select the block of text to "
+"synchronize.</span>"
+msgstr ""
+
+#: ../src/blocksync.c:239 ../src/blocksync.c:259
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">This marker exists more than once "
+"in the block.</span>"
+msgstr ""
+
+#: ../src/blocksync.c:245
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Select the text that marks the "
+"start of the block.</span>"
+msgstr ""
+
+#: ../src/blocksync.c:265
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Select the text that marks the end "
+"of the block.</span>"
+msgstr ""
+
+#: ../src/bluefish.c:91
+msgid "Visit us at http://bluefish.openoffice.nl"
+msgstr ""
+
+#: ../src/bluefish.c:370
+#, fuzzy
+msgid "Open in existing window."
+msgstr "seçili dokümanda"
+
+#: ../src/bluefish.c:372
+#, fuzzy
+msgid "Open in new window."
+msgstr "seçili dokümanda"
+
+#: ../src/bluefish.c:374
+msgid "Print version information."
+msgstr ""
+
+#: ../src/bluefish.c:401
+msgid " [FILE(S)]"
+msgstr ""
+
+#: ../src/bluefish.c:412
+#, c-format
+msgid ""
+"Error parsing command line options. %s\n"
+"Please run: %s -?\n"
+msgstr ""
+
+#: ../src/bookmark.c:548 ../src/bookmark.c:569
+msgid "_Name:"
+msgstr "_Ad:"
+
+#: ../src/bookmark.c:555 ../src/bookmark.c:573
+msgid "_Description:"
+msgstr "_Tanım:"
+
+#: ../src/bookmark.c:558
+#, fuzzy
+msgid "_Temporary"
+msgstr "Geçici"
+
+#: ../src/bookmark.c:575
+msgid "Temporary"
+msgstr "Geçici"
+
+#: ../src/bookmark.c:748
+#, c-format
+msgid "Do you really want to delete %s?"
+msgstr "%s silinsin mi?"
+
+#: ../src/bookmark.c:751
+msgid "Delete permanent bookmark."
+msgstr "Kalıcı Yerimi Siliniyor."
+
+#: ../src/bookmark.c:777
+msgid "Delete all bookmarks."
+msgstr "Tüm yerimleri Siliniyor."
+
+#: ../src/bookmark.c:815
+#, c-format
+msgid "Do you really want to delete all bookmarks for %s?"
+msgstr "%s dosyasındaki tüm yerimlerini silmek istediğinizden emin misiniz?"
+
+#: ../src/bookmark.c:817
+msgid "Delete bookmarks?"
+msgstr "Yerimleri siliniyor."
+
+#: ../src/bookmark.c:838 ../src/bookmark.c:899
+msgid "Edit bookmark"
+msgstr "Yerimi Tanımı"
+
+#: ../src/bookmark.c:895
+#, fuzzy
+msgid "Bookmark menu"
+msgstr "Sonuçlarda _yerimi yarat"
+
+#: ../src/bookmark.c:896
+#, fuzzy
+msgid "Show Bookmark"
+msgstr "Git"
+
+#: ../src/bookmark.c:897
+#, fuzzy
+msgid "Show File"
+msgstr "Dosya adı yok"
+
+#: ../src/bookmark.c:898
+#, fuzzy
+msgid "Bookmark search menu"
+msgstr "Yerimleri"
+
+#: ../src/bookmark.c:899
+#, fuzzy
+msgid "_Edit..."
+msgstr "/Dü_zenle"
+
+#: ../src/bookmark.c:901 ../src/filebrowser2.c:1287
+#, fuzzy
+msgid "_Delete"
+msgstr "/_Sil"
+
+#: ../src/bookmark.c:901 ../src/document.c:2306
+msgid "Delete bookmark"
+msgstr "Yerimini sil"
+
+#: ../src/bookmark.c:902
+#, fuzzy
+msgid "Delete All"
+msgstr "Tümünü sil"
+
+#: ../src/bookmark.c:902
+#, fuzzy
+msgid "Delete all bookmarks"
+msgstr "Tüm yerimleri Siliniyor."
+
+#: ../src/bookmark.c:904
+#, fuzzy
+msgid "Delete All in Document"
+msgstr "Tüm Dokümanda Sil"
+
+#: ../src/bookmark.c:905
+#, fuzzy
+msgid "Delete all bookmarks in document"
+msgstr "Tüm Dokümanda Sil"
+
+#: ../src/bookmark.c:910
+#, fuzzy
+msgid "Permanent by default"
+msgstr "Yerimlerini kalıcı yap"
+
+#: ../src/bookmark.c:915
+#, fuzzy
+msgid "By Name"
+msgstr "Ad"
+
+#: ../src/bookmark.c:916
+#, fuzzy
+msgid "By Full Path"
+msgstr "tam adres"
+
+#: ../src/bookmark.c:917
+msgid "By Full URI"
+msgstr ""
+
+#: ../src/bookmark.c:921 ../src/bookmark.c:927
+#, fuzzy
+msgid "Content"
+msgstr "İçe_rik:"
+
+#: ../src/bookmark.c:922 ../src/bookmark.c:928 ../src/preferences.c:621
+#: ../src/preferences.c:1686 ../src/preferences.c:1688
+#: ../src/preferences.c:1789
+msgid "Name"
+msgstr "Ad"
+
+#: ../src/bookmark.c:923 ../src/bookmark.c:929
+#, fuzzy
+msgid "Name & Content"
+msgstr "İçe_rik:"
+
+#: ../src/bookmark.c:1261
+#, fuzzy
+msgid "First bookmark"
+msgstr "Yerimi Tanımı"
+
+#: ../src/bookmark.c:1265
+#, fuzzy
+msgid "Previous bookmark"
+msgstr "Yerimi Tanımı"
+
+#: ../src/bookmark.c:1269
+#, fuzzy
+msgid "Next bookmark"
+msgstr "Yerimini sil"
+
+#: ../src/bookmark.c:1273
+#, fuzzy
+msgid "Last bookmark"
+msgstr "Yerimi Tanımı"
+
+#: ../src/bookmark.c:2037
+#, fuzzy
+msgid "Can't add bookmark"
+msgstr "Yerimi ekle"
+
+#: ../src/bookmark.c:2037
+msgid "You already have a bookmark here!"
+msgstr "Burada zaten bir yerimi var!"
+
+#: ../src/document.c:518
+msgid "Name: "
+msgstr "Ad: "
+
+#: ../src/document.c:545
+#, fuzzy
+msgid ""
+"\n"
+"Language mode: "
+msgstr "Dil:"
+
+#: ../src/document.c:549
+msgid ""
+"\n"
+"Encoding: "
+msgstr ""
+"\n"
+"Yazıtipi Düzeni: "
+
+#: ../src/document.c:561
+#, fuzzy
+msgid ""
+"\n"
+"Mime type: "
+msgstr "Dosyatipleri"
+
+#: ../src/document.c:569
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Permissions: %s\n"
+"Uid: %u Gid: %u"
+msgstr ""
+"\n"
+"İzinler: "
+
+#: ../src/document.c:586
+msgid ""
+"\n"
+"Size (on disk): "
+msgstr ""
+"\n"
+"Diskte Kapladığı Alan: "
+
+#: ../src/document.c:595
+msgid ""
+"\n"
+"Last modified: "
+msgstr ""
+"\n"
+"Son Değişiklik: "
+
+#: ../src/document.c:663
+#, c-format
+msgid "Untitled %d"
+msgstr "Adsız %d"
+
+#: ../src/document.c:846
+#, c-format
+msgid "Changed tab width to %d"
+msgstr ""
+
+#: ../src/document.c:1024
+#, fuzzy, c-format
+msgid "Document %s is already open in another Bluefish window."
+msgstr "Dosyaları zaten açık olan bluefish penceresinde aç"
+
+#: ../src/document.c:1026
+msgid "Move to this window"
+msgstr ""
+
+#: ../src/document.c:1026
+msgid "Open readonly"
+msgstr ""
+
+#: ../src/document.c:1027
+msgid "Do not open"
+msgstr ""
+
+#: ../src/document.c:1381
+#, fuzzy, c-format
+msgid " Ln: %d, Col: %d, Char: %d"
+msgstr " Satır %d, Sütun %d"
+
+#: ../src/document.c:1384
+#, fuzzy, c-format
+msgid " Ln: %d, Col: %d"
+msgstr " Satır %d, Sütun %d"
+
+#: ../src/document.c:1407
+msgid " OVR"
+msgstr ""
+
+#: ../src/document.c:1407
+msgid " INS"
+msgstr ""
+
+#: ../src/document.c:1409
+msgid " RO"
+msgstr ""
+
+#: ../src/document.c:1428
+#, fuzzy
+msgid "Unknown"
+msgstr "Bilinmeyen dosya simgesi"
+
+#: ../src/document.c:2016
+#, fuzzy
+msgid "_No"
+msgstr "/_Git"
+
+#: ../src/document.c:2016
+msgid "_Split"
+msgstr ""
+
+#: ../src/document.c:2019
+msgid "File contains very long lines. Split these lines?"
+msgstr ""
+
+#: ../src/document.c:2021
+msgid ""
+"The lines in this file are longer than Bluefish can handle with reasonable "
+"performance. This split function, however, is unaware of any language "
+"syntax, and may replace spaces or tabs with newlines in any location, or "
+"insert newlines if no spaces or tabs are found."
+msgstr ""
+
+#: ../src/document.c:2097
+#, fuzzy
+msgid "_Convert"
+msgstr "İçe_rik:"
+
+#: ../src/document.c:2101
+#, c-format
+msgid ""
+"File '%s' is not a valid text file.\n"
+"The file might be corrupted, truncated, or in an unexpected encoding."
+msgstr ""
+
+#: ../src/document.c:2106
+msgid ""
+"Bluefish can convert this file into a valid one by replacing illegal symbols "
+"with spaces. Convert?"
+msgstr ""
+
+#: ../src/document.c:2118
+#, c-format
+msgid ""
+"File is opened in read-only mode since it differs from original one.\n"
+"%lu characters were replaced by space"
+msgstr ""
+
+#: ../src/document.c:2121
+msgid "Use 'Save As' to save it with different name and make editable"
+msgstr ""
+
+#: ../src/document.c:2316
+msgid "Exit fullscreen"
+msgstr ""
+
+#. if (main_v->props.backup_abort_action == 2)
+#. we have to ask the user
+#. we have to ask the user what to do
+#: ../src/document.c:2516 ../src/file_dialogs.c:450 ../src/file_dialogs.c:488
+msgid "_Abort save"
+msgstr "_Vazgeç"
+
+#: ../src/document.c:2516
+msgid "_Continue save in UTF-8"
+msgstr "UTF-8 ile _Sakla"
+
+#: ../src/document.c:2529
+#, c-format
+msgid ""
+"Failed to convert %s to character encoding %s. Encoding failed on character "
+"'%s' at line %d column %d\n"
+"\n"
+"Continue saving in UTF-8 encoding?"
+msgstr ""
+"%s Yazıtipi düzeni %s olarak değiştirilemedi. %s karakteri hata aldı: %d. "
+"satır, %d.sütun\n"
+"\n"
+"UTF-8 düzeninde saklamaya devam edilsin mi?"
+
+#: ../src/document.c:2534
+msgid "File encoding conversion failure"
+msgstr "Yazıtipi düzeni hatası"
+
+#: ../src/document.c:2711
+msgid "Previously: "
+msgstr "Önceki: "
+
+#: ../src/document.c:3409
+msgid "Unable to open file"
+msgstr "Dosya açılamadı"
+
+#: ../src/document.c:3421
+#, fuzzy, c-format
+msgid ""
+"If you revert \"%s\" to your last saved copy, your current changes will be "
+"permanently lost."
+msgstr "Dosya silme işlemi geri alınamaz."
+
+#: ../src/document.c:3425
+#, fuzzy
+msgid "Revert changes to last saved copy?"
+msgstr "Çıkmadan önce %s dosyası saklansın mı?"
+
+#: ../src/document.c:3493
+msgid "_Retry"
+msgstr "_Tekrar Dene"
+
+#: ../src/document.c:3493
+msgid "Retry _all failed"
+msgstr ""
+
+#: ../src/document.c:3493
+#, fuzzy
+msgid "Close all _failed"
+msgstr "Dosya saklama hatası!\n"
+
+#: ../src/document.c:3498
+msgid "File "
+msgstr "Dosya "
+
+#: ../src/document.c:3498
+msgid " failed to load."
+msgstr " yüklenemedi."
+
+#: ../src/document.c:3502
+msgid "File failed to load\n"
+msgstr "Dosya yüklenemedi\n"
+
+#: ../src/document.c:3629
+msgid "Select file to insert"
+msgstr "Eklenecek dosyayı seçiniz"
+
+#: ../src/document.c:3638
+msgid "No file to insert"
+msgstr "Eklenecek dosya yok"
+
+#: ../src/document.c:3730
+#, fuzzy
+msgid "Save pasted image as"
+msgstr "%s dosyasını farklı kaydet :"
+
+#: ../src/document.c:3832
+msgid "Paste special"
+msgstr ""
+
+#: ../src/document.c:3838
+msgid "No compatible clipboard data found"
+msgstr ""
+
+#: ../src/document.c:3843
+msgid "Paste as _HTML"
+msgstr ""
+
+#: ../src/document.c:3848
+msgid "Paste as HTML with _JPG"
+msgstr ""
+
+#: ../src/document.c:3858
+#, fuzzy
+msgid "Paste as plain text"
+msgstr "Resim ekle"
+
+#: ../src/document.c:3953
+#, c-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/document.c:3954
+#, fuzzy, c-format
+msgid "%d word"
+msgid_plural "%d words"
+msgstr[0] "%d / %d"
+msgstr[1] "%d / %d"
+
+#: ../src/document.c:3955
+#, c-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/document.c:3957
+#, fuzzy
+msgid "Selection statistics: "
+msgstr "Başlangıç:"
+
+#: ../src/document.c:3957
+#, fuzzy
+msgid "Statistics: "
+msgstr "Başlangıç:"
+
+#: ../src/doc_text_tools.c:400
+#, fuzzy
+msgid "Lines into columns"
+msgstr "Sütu_n sayısı:"
+
+#: ../src/doc_text_tools.c:412
+#, fuzzy
+msgid "Number of columns:"
+msgstr "Sütu_n sayısı:"
+
+#: ../src/doc_text_tools.c:416
+msgid "Spread lines horizontally"
+msgstr ""
+
+#: ../src/doc_text_tools.c:423
+msgid "Column separator:"
+msgstr ""
+
+#: ../src/doc_text_tools.c:427
+msgid "Fill empty entries:"
+msgstr ""
+
+#: ../src/doc_extern_tools.c:63
+#, fuzzy
+msgid "Number of _paragraphs:"
+msgstr "Değişken Adedi:"
+
+#: ../src/doc_extern_tools.c:68
+#, fuzzy
+msgid "Number of _sentences:"
+msgstr "Sütu_n sayısı:"
+
+#: ../src/doc_extern_tools.c:71 ../src/doc_extern_tools.c:86
+#, fuzzy
+msgid "Insert plain text"
+msgstr "Resim ekle"
+
+#: ../src/doc_extern_tools.c:71 ../src/doc_extern_tools.c:86
+#, fuzzy
+msgid "Insert in <li>"
+msgstr "Zaman Ekle"
+
+#: ../src/doc_extern_tools.c:71 ../src/doc_extern_tools.c:86
+#, fuzzy
+msgid "Insert in <p>"
+msgstr "Zaman Ekle"
+
+#: ../src/doc_extern_tools.c:81
+#, fuzzy
+msgid "Number of paragraphs"
+msgstr "Değişken Adedi:"
+
+#: ../src/doc_extern_tools.c:84
+#, fuzzy
+msgid "Number of sentences"
+msgstr "Sütu_n sayısı:"
+
+#: ../src/doc_extern_tools.c:134
+msgid "Javascript Beautify"
+msgstr ""
+
+#: ../src/doc_extern_tools.c:148
+#, fuzzy
+msgid "_Indent size:"
+msgstr "Sağa Kaydır"
+
+#: ../src/doc_extern_tools.c:151 ../src/doc_extern_tools.c:178
+msgid "Use _tabs to indent, not spaces"
+msgstr ""
+
+#: ../src/doc_extern_tools.c:154 ../src/doc_extern_tools.c:183
+msgid "Do not _preserve existing line breaks"
+msgstr ""
+
+#: ../src/doc_extern_tools.c:156 ../src/doc_extern_tools.c:184
+msgid "More _jslint-compatible output"
+msgstr ""
+
+#: ../src/doc_extern_tools.c:159 ../src/doc_extern_tools.c:186
+msgid "_Decode printable chars encoded in \\\\xNN notation"
+msgstr ""
+
+#: ../src/doc_extern_tools.c:164 ../src/doc_extern_tools.c:173
+#, fuzzy
+msgid "Beautify only in _selection"
+msgstr "seçili alanda"
+
+#: ../src/doc_extern_tools.c:179
+#, fuzzy
+msgid "_Indent size"
+msgstr "Sağa Kaydır"
+
+#: ../src/encodings_dialog.c:287
+msgid "_Available encodings:"
+msgstr ""
+
+#: ../src/encodings_dialog.c:333 ../src/encodings_dialog.c:385
+msgid "Description"
+msgstr "Tanım"
+
+#: ../src/encodings_dialog.c:339 ../src/encodings_dialog.c:390
+msgid "Encoding"
+msgstr "Yazıtipi Düzeni"
+
+#: ../src/encodings_dialog.c:362
+#, fuzzy
+msgid "Encodings in _menu:"
+msgstr ""
+"\n"
+"Yazıtipi Düzeni: "
+
+#: ../src/encodings_dialog.c:436
+msgid "Add or remove document encodings"
+msgstr ""
+
+#: ../src/external_commands.c:463
+msgid "Supply extra arguments"
+msgstr ""
+
+#: ../src/external_commands.c:468
+#, c-format
+msgid "Supply arguments to define %%a in '%s'"
+msgstr ""
+
+#: ../src/external_commands.c:749
+msgid "Internal error."
+msgstr ""
+
+#: ../src/external_commands.c:752
+msgid ""
+"This command requires the current document to have a file name. Please save "
+"your document first."
+msgstr ""
+
+#: ../src/external_commands.c:755
+msgid ""
+"This command requires the current document to be a local file. Please save "
+"your document to a local file."
+msgstr ""
+
+#: ../src/external_commands.c:758
+msgid ""
+"External commands cannot have an output defined. Please fix this command in "
+"the preferences."
+msgstr ""
+
+#: ../src/external_commands.c:761
+msgid ""
+"This command has multiple inputs. Please fix this command in the preferences."
+msgstr ""
+
+#: ../src/external_commands.c:764
+msgid ""
+"This command has multiple outputs. Please fix this command in the "
+"preferences."
+msgstr ""
+
+#: ../src/external_commands.c:768
+#, c-format
+msgid ""
+"Failed to create a command for %s.\n"
+"%s"
+msgstr ""
+
+#: ../src/external_commands.c:770
+msgid "Failed to create a command"
+msgstr ""
+
+#: ../src/external_commands.c:792 ../src/external_commands.c:809
+#, c-format
+msgid "The command %s exited with error code %d. %s"
+msgstr ""
+
+#: ../src/external_commands.c:795 ../src/external_commands.c:813
+msgid "Probably this application is not installed on your system."
+msgstr ""
+
+#: ../src/external_commands.c:798
+msgid "Command returned error code"
+msgstr ""
+
+#: ../src/filebrowser2.c:748
+msgid "Set documentroot and webroot"
+msgstr ""
+
+#: ../src/filebrowser2.c:757
+msgid ""
+"The <i>documentroot</i> is the place where Bluefish finds the file,\n"
+"the <i>webroot</i> is the location where those same files can be viewed on "
+"the webserver"
+msgstr ""
+
+#: ../src/filebrowser2.c:764
+#, fuzzy
+msgid "Documentroot"
+msgstr "/_Doküman"
+
+#: ../src/filebrowser2.c:775
+msgid "Webroot"
+msgstr ""
+
+#: ../src/filebrowser2.c:788 ../src/file_dialogs.c:776
+#, c-format
+msgid "Move/rename %s to"
+msgstr "%s dosyasını taşı / yeniden adlandır"
+
+#: ../src/filebrowser2.c:799
+msgid "Could not rename\n"
+msgstr "Dosya adı değiştirilemedi\n"
+
+#: ../src/filebrowser2.c:873 ../src/filebrowser2.c:1289
+msgid "New directory"
+msgstr "Yeni dizin"
+
+#. Do we really need to display the full path here?
+#. *
+#. * Having the filename in the both the primary and secondary text seems to be redundant.
+#. * Set back to just the primary text for now.
+#. *
+#. * --> Sometimes you can have a file in many directories (e.g. Makefile.in, index.html)
+#. * and then this might give you more indication if this is indeed the file you wanted to delete
+#.
+#: ../src/filebrowser2.c:983
+#, fuzzy, c-format
+msgid ""
+"Are you sure you want to delete\n"
+"\"%s\"?"
+msgstr "\"%s\" dosyasını silmek istediğinizden emin misiniz?"
+
+#: ../src/filebrowser2.c:984
+#, fuzzy, c-format
+msgid "If you delete %s, it will be permanently lost."
+msgstr "Dosya silme işlemi geri alınamaz."
+
+#: ../src/filebrowser2.c:1282
+#, fuzzy
+msgid "File Browser menu"
+msgstr "Dosya yöneticisi"
+
+#: ../src/filebrowser2.c:1283
+#, fuzzy
+msgid "_Open"
+msgstr "/_Aç"
+
+#: ../src/filebrowser2.c:1283
+#, fuzzy
+msgid "Open"
+msgstr "/_Aç"
+
+#: ../src/filebrowser2.c:1284
+#, fuzzy
+msgid "Open _Advanced..."
+msgstr "/A_rama ile Aç..."
+
+#: ../src/filebrowser2.c:1286
+#, fuzzy
+msgid "Rena_me"
+msgstr "/_Yeniden Adlandır"
+
+#: ../src/filebrowser2.c:1286
+#, fuzzy
+msgid "Rename"
+msgstr "/_Yeniden Adlandır"
+
+#: ../src/filebrowser2.c:1287
+#, fuzzy
+msgid "Delete"
+msgstr "/_Sil"
+
+#: ../src/filebrowser2.c:1288
+#, fuzzy
+msgid "New _File"
+msgstr "/Ye_ni Dosya"
+
+#: ../src/filebrowser2.c:1289
+#, fuzzy
+msgid "_New Directory"
+msgstr "/Yeni _Dizin"
+
+#: ../src/filebrowser2.c:1291
+#, fuzzy
+msgid "_Refresh"
+msgstr "/_Yenile"
+
+#: ../src/filebrowser2.c:1291
+#, fuzzy
+msgid "Refresh"
+msgstr "/_Yenile"
+
+#: ../src/filebrowser2.c:1292
+#, fuzzy
+msgid "_Set as base dir"
+msgstr "/_Çalışma dizini olarak seç"
+
+#: ../src/filebrowser2.c:1292
+#, fuzzy
+msgid "Set as base directory"
+msgstr "/_Çalışma dizini olarak seç"
+
+#: ../src/filebrowser2.c:1294
+#, fuzzy
+msgid "Set as document root"
+msgstr "/Git/Bir _Sonraki Doküman"
+
+#: ../src/filebrowser2.c:1296
+#, fuzzy
+msgid "Show Full _Tree"
+msgstr "/_Tüm Ağacı Göster"
+
+#: ../src/filebrowser2.c:1296
+#, fuzzy
+msgid "Show full tree"
+msgstr "/_Tüm Ağacı Göster"
+
+#: ../src/filebrowser2.c:1298
+#, fuzzy
+msgid "View Mode"
+msgstr "/_Görünüm"
+
+#: ../src/filebrowser2.c:1299
+msgid "Filter"
+msgstr "Filtrele"
+
+#: ../src/filebrowser2.c:1300
+#, fuzzy
+msgid "New Filter"
+msgstr "Yeni dosya"
+
+#: ../src/filebrowser2.c:1300 ../src/filefilter.c:549
+#, fuzzy
+msgid "New filter"
+msgstr "Yeni dosya"
+
+#: ../src/filebrowser2.c:1301
+#, fuzzy
+msgid "Edit Filter"
+msgstr "html filtresi"
+
+#: ../src/filebrowser2.c:1301 ../src/filefilter.c:554
+#, fuzzy
+msgid "Edit filter"
+msgstr "html filtresi"
+
+#: ../src/filebrowser2.c:1302
+#, fuzzy
+msgid "Delete Filter"
+msgstr "Dosyaları seç"
+
+#: ../src/filebrowser2.c:1302
+#, fuzzy
+msgid "Delete filter"
+msgstr "Dosyaları seç"
+
+#: ../src/filebrowser2.c:1306
+#, fuzzy
+msgid "Follow Active Document"
+msgstr "/Seçili dokümanı izle"
+
+#: ../src/filebrowser2.c:1306
+#, fuzzy
+msgid "Follow active document"
+msgstr "/Seçili dokümanı izle"
+
+#: ../src/filebrowser2.c:1308
+#, fuzzy
+msgid "Show Backup Files"
+msgstr "Yedek dosyalarını göster"
+
+#: ../src/filebrowser2.c:1308 ../src/gtk_easy.c:1340
+msgid "Show backup files"
+msgstr "Yedek dosyalarını göster"
+
+#: ../src/filebrowser2.c:1310
+#, fuzzy
+msgid "Show Hidden Files"
+msgstr "/Gizli dosyaları göster"
+
+#: ../src/filebrowser2.c:1310
+#, fuzzy
+msgid "Show hidden files"
+msgstr "/Gizli dosyaları göster"
+
+#: ../src/filebrowser2.c:1315
+msgid "Dual"
+msgstr ""
+
+#: ../src/filebrowser2.c:1316
+msgid "Flat"
+msgstr ""
+
+#: ../src/filebrowser2.c:1317
+msgid "Tree"
+msgstr ""
+
+#: ../src/filebrowser2.c:2359
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"which is the equivalent of\n"
+"<b>%s%s</b>"
+msgstr ""
+
+#: ../src/file.c:875
+#, c-format
+msgid "Still loading %d file, finished %s"
+msgid_plural "Still loading %d files, finished %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/file.c:883
+#, c-format
+msgid "All files loaded, finished %s, %d document open"
+msgid_plural "All files loaded, finished %s, %d documents open"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/file.c:1445
+#, c-format
+msgid "Finished advanced open, %d document open."
+msgid_plural "Finished advanced open, %d documents open."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/file.c:1625
+msgid "_Skip"
+msgstr "_Geç"
+
+#: ../src/file.c:1625 ../src/file_dialogs.c:624 ../src/file_dialogs.c:645
+#: ../src/project.c:339
+msgid "_Overwrite"
+msgstr "_Üstüne yaz"
+
+#: ../src/file.c:1629
+#, fuzzy, c-format
+msgid "%s cannot be copied, it already exists, overwrite?"
+msgstr "%s zaten var, üstüne yazılsın mı?"
+
+#: ../src/file.c:1631
+msgid "Overwrite file?"
+msgstr "Üstüne yazılsın mı?"
+
+#: ../src/file_autosave.c:291
+#, fuzzy
+msgid "Autosave in progress..."
+msgstr "Saklanıyor!"
+
+#: ../src/file_dialogs.c:109
+#, fuzzy
+msgid "Started open advanced..."
+msgstr "/A_rama ile Aç..."
+
+#: ../src/file_dialogs.c:120
+msgid "Select basedir"
+msgstr "Çalışma dizini seç"
+
+#: ../src/file_dialogs.c:142
+msgid "Advanced open file selector"
+msgstr "Arama ile dosya aç"
+
+#: ../src/file_dialogs.c:159
+#, fuzzy
+msgid "<b>Files</b>"
+msgstr "<b>Özellikler</b>"
+
+#: ../src/file_dialogs.c:168
+#, fuzzy
+msgid "Base _Dir:"
+msgstr "Çalışma_dizini:"
+
+#: ../src/file_dialogs.c:184
+msgid "_Pattern:"
+msgstr "_Şablon:"
+
+#: ../src/file_dialogs.c:192
+msgid "Pattern matches _full path:"
+msgstr ""
+
+#: ../src/file_dialogs.c:196
+msgid "_Recursive:"
+msgstr "_Alt dizinler:"
+
+#: ../src/file_dialogs.c:200
+#, fuzzy
+msgid "Ma_x recursion:"
+msgstr "_Alt dizinler:"
+
+#: ../src/file_dialogs.c:209
+msgid "<b>Contains</b>"
+msgstr "<b>İçerik Araması</b>"
+
+#: ../src/file_dialogs.c:214
+msgid "Pa_ttern:"
+msgstr "Şa_blon:"
+
+#: ../src/file_dialogs.c:218
+msgid "Is rege_x:"
+msgstr "Dü_zenli İfade:"
+
+#: ../src/file_dialogs.c:287 ../src/file_dialogs.c:307
+msgid "Select files"
+msgstr "Dosyaları seç"
+
+#: ../src/file_dialogs.c:367
+msgid "Open URL"
+msgstr "URL aç"
+
+#: ../src/file_dialogs.c:450 ../src/file_dialogs.c:488
+msgid "_Continue save"
+msgstr "_Sakla"
+
+#: ../src/file_dialogs.c:454
+#, c-format
+msgid ""
+"A backupfile for %s could not be created. If you continue, this file will be "
+"overwritten."
+msgstr ""
+"%s için yedek dosyası oluşturulamadı. Saklarsanız, dosyanın üzerine "
+"yazılacaktır."
+
+#: ../src/file_dialogs.c:458
+msgid "File backup failure"
+msgstr "Dosya yedekleme hatası"
+
+#: ../src/file_dialogs.c:474
+#, fuzzy
+msgid "Could not save file "
+msgstr ""
+"Dosya saklanamadı:\n"
+"\""
+
+#: ../src/file_dialogs.c:509 ../src/file_dialogs.c:1496
+#, fuzzy
+msgid "File changed on disk\n"
+msgstr "Dosya boyutunda değişiklik var\n"
+
+#: ../src/file_dialogs.c:624 ../src/file_dialogs.c:645
+#: ../src/file_dialogs.c:964 ../src/project.c:339
+msgid "_Cancel"
+msgstr "_İptal"
+
+#: ../src/file_dialogs.c:625
+#, fuzzy, c-format
+msgid "File %s exists and is open, overwrite?"
+msgstr "%s dosyası var ve açık. Üstüne yazılsın mı?"
+
+#: ../src/file_dialogs.c:628
+msgid "The file you have selected is being edited in Bluefish."
+msgstr "Seçtiğiniz dosya Bluefish içerisinde açıktır."
+
+#: ../src/file_dialogs.c:646 ../src/project.c:341
+#, c-format
+msgid "A file named \"%s\" already exists."
+msgstr "%s dosyası zaten var."
+
+#: ../src/file_dialogs.c:649 ../src/project.c:345
+msgid "Do you want to replace the existing file?"
+msgstr "Mevcut dosya değiştirilsin mi?"
+
+#: ../src/file_dialogs.c:756
+msgid ""
+"File:\n"
+"\""
+msgstr ""
+"Dosya:\n"
+"\""
+
+#: ../src/file_dialogs.c:757
+#, fuzzy
+msgid "\" save is in progress"
+msgstr "Saklanıyor!"
+
+#: ../src/file_dialogs.c:759
+msgid "Save in progress!"
+msgstr "Saklanıyor!"
+
+#: ../src/file_dialogs.c:772
+msgid "Save"
+msgstr "Sakla"
+
+#: ../src/file_dialogs.c:774
+#, c-format
+msgid "Save %s as"
+msgstr "%s dosyasını farklı kaydet :"
+
+#: ../src/file_dialogs.c:778
+#, fuzzy, c-format
+msgid "Save copy of %s"
+msgstr "Yeni proje"
+
+#: ../src/file_dialogs.c:935
+msgid "Close _Without Saving"
+msgstr ""
+
+#: ../src/file_dialogs.c:938
+#, fuzzy, c-format
+msgid "Save changes to \"%s\" before closing?"
+msgstr "Çıkmadan önce %s dosyası saklansın mı?"
+
+#: ../src/file_dialogs.c:941 ../src/file_dialogs.c:968
+msgid "If you don't save your changes they will be lost."
+msgstr "Saklamazsanız değişiklikler kaybolacaktır."
+
+#: ../src/file_dialogs.c:951
+msgid "_Reopen"
+msgstr ""
+
+#: ../src/file_dialogs.c:953
+#, fuzzy, c-format
+msgid "Project \"%s\" failed to load"
+msgstr " yüklenemedi."
+
+#: ../src/file_dialogs.c:955
+#, fuzzy
+msgid "Do you want to reopen project from another location?"
+msgstr "Proje kaydedilsin mi?"
+
+#: ../src/file_dialogs.c:964
+msgid "Choose per _File"
+msgstr "Her _Dosya İçin Sor"
+
+#: ../src/file_dialogs.c:964
+msgid "Close _All"
+msgstr "Tümünü _Kapat"
+
+#: ../src/file_dialogs.c:964
+msgid "_Save All"
+msgstr "_Tümünü Sakla"
+
+#: ../src/file_dialogs.c:967
+#, fuzzy
+msgid "One or more open files have been changed."
+msgstr "Açık dosyaların birden fazlası değiştirilmiş."
+
+#: ../src/file_dialogs.c:1288
+#, c-format
+msgid "<span color=\"red\">%d failure</span>"
+msgid_plural "<span color=\"red\">%d failures</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/file_dialogs.c:1297
+msgid "incomplete finished"
+msgstr ""
+
+#: ../src/file_dialogs.c:1299
+msgid "completed"
+msgstr ""
+
+#: ../src/file_dialogs.c:1357
+msgid "Upload / Download"
+msgstr ""
+
+#: ../src/file_dialogs.c:1360
+#, fuzzy
+msgid "Upload"
+msgstr "_Tekrar yükle"
+
+#: ../src/file_dialogs.c:1360
+msgid "Download"
+msgstr ""
+
+#: ../src/file_dialogs.c:1367
+#, fuzzy
+msgid "Local directory"
+msgstr "Yeni dizin"
+
+#: ../src/file_dialogs.c:1373
+#, fuzzy
+msgid "Remote directory"
+msgstr "Yeni dizin"
+
+#: ../src/file_dialogs.c:1378
+#, fuzzy
+msgid "Delete deprecated files"
+msgstr "Dosyaları seç"
+
+#: ../src/file_dialogs.c:1382
+#, fuzzy
+msgid "Include hidden files"
+msgstr "Gizli dosyaları göster"
+
+#: ../src/file_dialogs.c:1385
+#, fuzzy
+msgid "Include backup files"
+msgstr "Dosya yedekleme hatası"
+
+#. g_print("oldtimestr=%s, newtimestr=%s\n",oldtimestr,newtimestr);
+#: ../src/file_dialogs.c:1432
+#, fuzzy, c-format
+msgid ""
+"Filename:%s changed on disk.\n"
+"\n"
+"Original modification time was %s\n"
+"New modification time is %s\n"
+"Original size was %s bytes\n"
+"New size is %s bytes"
+msgstr ""
+"Dosya adı: %s\n"
+"\n"
+"Son değişiklik zamanı: %s\n"
+"Önceki değişiklik zamanı: %s"
+
+#: ../src/file_dialogs.c:1455
+#, fuzzy
+msgid "_Unset file name"
+msgstr "dosya adı"
+
+#. file is deleted on disk, what do we do now ?
+#: ../src/file_dialogs.c:1457
+#, fuzzy, c-format
+msgid "File name: %s"
+msgstr "Dosya adı"
+
+#: ../src/file_dialogs.c:1460
+#, fuzzy
+msgid "File disappeared from disk\n"
+msgstr "Dosya değişmiş"
+
+#: ../src/file_dialogs.c:1479
+msgid "_Ignore"
+msgstr "_Dikkate alma"
+
+#: ../src/file_dialogs.c:1479
+msgid "_Reload"
+msgstr "_Tekrar yükle"
+
+#: ../src/file_dialogs.c:1479
+#, fuzzy
+msgid "Check and reload all documents"
+msgstr "tüm açık dokümanlarda"
+
+#. build a list of filters
+#: ../src/filefilter.c:250 ../src/gtk_easy.c:1351 ../src/preferences.c:2440
+msgid "All files"
+msgstr "Tüm dosyalar"
+
+#: ../src/filefilter.c:639
+msgid "Hide files that match the filter"
+msgstr ""
+
+#: ../src/filefilter.c:643
+#, fuzzy
+msgid "Add pattern"
+msgstr "Bitiş metni"
+
+#: ../src/filefilter.c:649 ../src/filefilter.c:661
+#, fuzzy
+msgid "Mime type"
+msgstr "Dosyatipleri"
+
+#: ../src/filefilter.c:652 ../src/filefilter.c:664
+msgid "Icon"
+msgstr "Simge"
+
+#: ../src/gtk_easy.c:970
+#, c-format
+msgid "%d of %d"
+msgstr "%d / %d"
+
+#: ../src/gtk_easy.c:1051
+msgid "Select File"
+msgstr "Dosya seç"
+
+#: ../src/gtk_easy.c:1401
+#, fuzzy
+msgid "Character _Encoding:"
+msgstr "/Doküman/_Yazıtipi Düzeni"
+
+#: ../src/gtk_easy.c:1421
+#, fuzzy
+msgid "Automatic detection"
+msgstr "Yazar meta etiketini otomatik olarak güncelle"
+
+#: ../src/gtk_easy.c:1510
+msgid "<b>Keystroke choice</b>"
+msgstr ""
+
+#: ../src/gtk_easy.c:1518
+msgid ""
+"\n"
+"Press requested key combination.\n"
+"Please use Ctrl, Shift, Alt key with any other key.\n"
+"<i>Esc to cancel, Delete to remove the accelerator.</i>"
+msgstr ""
+
+#: ../src/gtk_easy.c:1543
+msgid "Press shortcut key combination"
+msgstr ""
+
+#: ../src/outputbox.c:247
+#, fuzzy
+msgid "Filename"
+msgstr "Dosya adı"
+
+#: ../src/outputbox.c:249
+#, fuzzy
+msgid "Line"
+msgstr "Satır #"
+
+#: ../src/outputbox.c:251
+#, fuzzy
+msgid "Output"
+msgstr "Çıktı #"
+
+#: ../src/outputbox.c:481
+#, c-format
+msgid "Failed to compile output parser pattern %s: %s"
+msgstr ""
+
+#: ../src/preferences.c:321
+msgid "Untitled"
+msgstr "Adsız"
+
+#: ../src/preferences.c:523
+#, fuzzy
+msgid "_Mime type:"
+msgstr "Dosyatipleri"
+
+#: ../src/preferences.c:535 ../src/preferences.c:537
+#, fuzzy
+msgid "None"
+msgstr "Notlar"
+
+#: ../src/preferences.c:539
+#, fuzzy
+msgid "_Template:"
+msgstr "_Şablon:"
+
+#: ../src/preferences.c:542 ../src/snr3.c:1586
+#, fuzzy
+msgid "<b>Options</b>"
+msgstr "<b>İçerik Araması</b>"
+
+#: ../src/preferences.c:546
+#, fuzzy
+msgid "Enable a_uto-completion"
+msgstr "Tablo Tanımı"
+
+#: ../src/preferences.c:548
+msgid "Enable _block folding"
+msgstr ""
+
+#: ../src/preferences.c:550
+msgid "Display block stack in statusbar"
+msgstr ""
+
+#: ../src/preferences.c:552
+#, fuzzy
+msgid "Highlight block _delimiters"
+msgstr "Vurgulama satırı #"
+
+#: ../src/preferences.c:554
+#, fuzzy
+msgid "_Highlight current line"
+msgstr "Vurgulama yap"
+
+#: ../src/preferences.c:556
+#, fuzzy
+msgid "Show line _numbers"
+msgstr "Satır _Numarası:"
+
+#: ../src/preferences.c:560
+#, fuzzy
+msgid "Show _right margin indicator"
+msgstr "Kişisel menüyü göster"
+
+#: ../src/preferences.c:562 ../src/preferences.c:2504
+msgid "Smart auto indentin_g"
+msgstr ""
+
+#: ../src/preferences.c:564
+msgid "Wra_p lines"
+msgstr ""
+
+#: ../src/preferences.c:566
+#, fuzzy
+msgid "Enable syntax scanning"
+msgstr "Ölçekli"
+
+#: ../src/preferences.c:568
+#, fuzzy
+msgid "Show _visible spacing"
+msgstr "/Doküman/sep1"
+
+#: ../src/preferences.c:572
+#, fuzzy
+msgid "_Enable spell check"
+msgstr "Yazım Denetimi..."
+
+#: ../src/preferences.c:577
+#, fuzzy
+msgid "<b>Tab Stops</b>"
+msgstr "<b>İçerik Araması</b>"
+
+#: ../src/preferences.c:582
+#, fuzzy
+msgid "Tab _width:"
+msgstr "Sekme genişliği"
+
+#: ../src/preferences.c:585
+#, fuzzy
+msgid "Insert _spaces instead of tabs"
+msgstr "Yazı düzeni için sekme yerine boşluk kullan"
+
+#: ../src/preferences.c:622 ../src/preferences.c:1341
+#: ../src/preferences.c:1500
+#, fuzzy
+msgid "Enabled"
+msgstr "Değiştirilebilir"
+
+#: ../src/preferences.c:624
+msgid "Path to plugin"
+msgstr ""
+
+#: ../src/preferences.c:901
+#, fuzzy
+msgid "Extension"
+msgstr "Uzantı"
+
+#: ../src/preferences.c:903
+#, fuzzy
+msgid "Mime-Type"
+msgstr "Dosyatipleri"
+
+#: ../src/preferences.c:1131
+msgid ""
+"<small>Text styles are applied on top of each other. If multiple styles are "
+"applied to the same text, the top-most style in this list has the highest "
+"priority. Use drag and drop to re-order the text styles.</small>"
+msgstr ""
+
+#: ../src/preferences.c:1142 ../src/preferences.c:1342
+#: ../src/preferences.c:1502
+msgid "Label"
+msgstr "Tanım"
+
+#: ../src/preferences.c:1157 ../src/preferences.c:2618
+msgid "Foreground color"
+msgstr "Önplan rengi"
+
+#: ../src/preferences.c:1158 ../src/preferences.c:2619
+#, fuzzy
+msgid "_Foreground color:"
+msgstr "Önplan rengi"
+
+#: ../src/preferences.c:1159 ../src/preferences.c:2622
+msgid "Background color"
+msgstr "Arkaplan rengi"
+
+#: ../src/preferences.c:1160 ../src/preferences.c:2623
+#, fuzzy
+msgid "_Background color:"
+msgstr "Arkaplan rengi"
+
+#: ../src/preferences.c:1164
+#, fuzzy
+msgid "_Normal weight"
+msgstr "kalın yazı kullan"
+
+#: ../src/preferences.c:1166
+#, fuzzy
+msgid "Bold _weight"
+msgstr "kalın yazı kullan"
+
+#: ../src/preferences.c:1168
+#, fuzzy
+msgid "Normal st_yle"
+msgstr "italik yazı kullan"
+
+#: ../src/preferences.c:1171
+#, fuzzy
+msgid "_Italic style"
+msgstr "italik yazı kullan"
+
+#: ../src/preferences.c:1173
+#, fuzzy
+msgid "_Spell check"
+msgstr "Yazım Denetimi..."
+
+#: ../src/preferences.c:1215 ../src/preferences.c:1379
+#: ../src/preferences.c:1532 ../src/preferences.c:1724
+#: ../src/preferences.c:1820
+#, fuzzy
+msgid "Add entry"
+msgstr "Özellik"
+
+#: ../src/preferences.c:1217 ../src/preferences.c:1381
+#: ../src/preferences.c:1534 ../src/preferences.c:1726
+#: ../src/preferences.c:1822
+#, fuzzy
+msgid "Delete entry"
+msgstr "Madde sil"
+
+#: ../src/preferences.c:1318
+#, c-format
+msgid ""
+"<small><b>Input options</b>\n"
+"start with a | to send the input to the standard input\n"
+"%f local filename (available for local files)\n"
+"%i temporary filename for input, equals %f if the document is not modified "
+"and local\n"
+"<b>Other options</b>\n"
+"%a additional arguments that will be asked when this filter is activated\n"
+"%c local directory of file (available for local files)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+
+#: ../src/preferences.c:1344 ../src/preferences.c:1504
+#: ../src/preferences.c:1698
+msgid "Command"
+msgstr "Komut"
+
+#: ../src/preferences.c:1347
+#, fuzzy
+msgid "Default browser"
+msgstr "Varsayılan çalışma dizini"
+
+#: ../src/preferences.c:1383 ../src/preferences.c:1536
+#: ../src/preferences.c:1728
+#, fuzzy
+msgid "Update defaults"
+msgstr "_Varsayılan Yap"
+
+#: ../src/preferences.c:1385 ../src/preferences.c:1538
+#: ../src/preferences.c:1730
+#, fuzzy
+msgid "Reset all"
+msgstr "Dosya seç"
+
+#: ../src/preferences.c:1475
+msgid ""
+"<small><b>Input options</b>\n"
+"start with a | to send the input to the standard input\n"
+"%f local filename (requires local file, cannot operate on selection)\n"
+"%i temporary filename for input\n"
+"<b>Output options</b>\n"
+"end with a | to read the output from the standard output\n"
+"%o temporary filename\n"
+"%t temporary filename for both input and output (for in-place-editing "
+"filters, cannot operate on selection)\n"
+"<b>Other options</b>\n"
+"%a additional arguments that will be asked when this filter is activated\n"
+"%c local directory of file (requires local file)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+
+#: ../src/preferences.c:1660
+#, c-format
+msgid ""
+"<small><b>Input options</b>\n"
+"start with a | to send the input to the standard input\n"
+"%f local filename (available for local files)\n"
+"%i temporary filename for input, equals %f if the document is not modified "
+"and local\n"
+"<b>Output options</b>\n"
+"end with a | to read the output from the standard output\n"
+"%o temporary filename\n"
+"<b>Other options</b>\n"
+"%a additional arguments that will be asked when this filter is activated\n"
+"%c local directory of file (available for local files)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+
+#: ../src/preferences.c:1690
+msgid "Pattern"
+msgstr "Şablon"
+
+#: ../src/preferences.c:1692
+msgid "File #"
+msgstr "Dosya #"
+
+#: ../src/preferences.c:1694
+msgid "Line #"
+msgstr "Satır #"
+
+#: ../src/preferences.c:1696
+msgid "Output #"
+msgstr "Çıktı #"
+
+#: ../src/preferences.c:1791
+#, fuzzy
+msgid "File"
+msgstr "Dosya "
+
+#: ../src/preferences.c:1969
+msgid "A restart is needed to see the effect of these options"
+msgstr ""
+
+#. 1=text
+#: ../src/preferences.c:1981
+#, fuzzy
+msgid "Option name"
+msgstr "Seçenek"
+
+#. 2=boolean
+#: ../src/preferences.c:1983
+#, fuzzy
+msgid "value"
+msgstr "Değer"
+
+#. 1=text
+#: ../src/preferences.c:2000
+#, fuzzy
+msgid "Highlight name"
+msgstr "Vurgulama yap"
+
+#: ../src/preferences.c:2005
+#, fuzzy
+msgid "Textstyle"
+msgstr "Metin alanı"
+
+#: ../src/preferences.c:2167 ../src/preferences.c:2862
+#, fuzzy
+msgid "Auto"
+msgstr "Yazarlar"
+
+#: ../src/preferences.c:2431
+#, fuzzy
+msgid "Delayed"
+msgstr "Sil"
+
+#: ../src/preferences.c:2431
+msgid "Immediately"
+msgstr ""
+
+#: ../src/preferences.c:2432
+#, fuzzy
+msgid "Continue save"
+msgstr "_Sakla"
+
+#: ../src/preferences.c:2432
+#, fuzzy
+msgid "Abort save"
+msgstr "_Vazgeç"
+
+#: ../src/preferences.c:2432
+msgid "Ask what to do"
+msgstr ""
+
+#: ../src/preferences.c:2433 ../src/preferences.c:2440
+#: ../src/preferences.c:2447
+#, fuzzy
+msgid "Never"
+msgstr "Sunucular"
+
+#: ../src/preferences.c:2433
+msgid "Periodically and during save"
+msgstr ""
+
+#: ../src/preferences.c:2433
+msgid "Only during save"
+msgstr ""
+
+#: ../src/preferences.c:2435
+#, fuzzy
+msgid "Nothing"
+msgstr "_Gölgeleme Yok"
+
+#: ../src/preferences.c:2435
+#, fuzzy
+msgid "Modified time and file size"
+msgstr "değişiklik zamanını ve boyutu sına"
+
+#: ../src/preferences.c:2435
+msgid "Modified time"
+msgstr ""
+
+#: ../src/preferences.c:2435
+#, fuzzy
+msgid "File size"
+msgstr "Dosya "
+
+#: ../src/preferences.c:2436 ../src/preferences.c:2437
+msgid "left"
+msgstr "sol"
+
+#: ../src/preferences.c:2436 ../src/preferences.c:2437
+msgid "right"
+msgstr "sağ"
+
+#: ../src/preferences.c:2436
+msgid "top"
+msgstr "üst"
+
+#: ../src/preferences.c:2436
+msgid "bottom"
+msgstr "alt"
+
+#: ../src/preferences.c:2438
+msgid "Recently opened"
+msgstr ""
+
+#: ../src/preferences.c:2438
+msgid "Recently closed"
+msgstr ""
+
+#: ../src/preferences.c:2440
+#, fuzzy
+msgid "Only project files"
+msgstr "Bluefish projesi adını giriniz"
+
+#: ../src/preferences.c:2444
+msgid "All"
+msgstr ""
+
+#: ../src/preferences.c:2444
+msgid "All except spaces"
+msgstr ""
+
+#: ../src/preferences.c:2444
+msgid "All trailing"
+msgstr ""
+
+#: ../src/preferences.c:2444
+msgid "All except non-trailing spaces"
+msgstr ""
+
+#: ../src/preferences.c:2447
+msgid "Always"
+msgstr ""
+
+#: ../src/preferences.c:2447
+msgid "Smart"
+msgstr ""
+
+#: ../src/preferences.c:2458
+msgid "Edit preferences"
+msgstr "Tercihler"
+
+#.
+#. *  Initial document settings
+#.
+#: ../src/preferences.c:2482
+msgid "<b>Non Project Defaults</b>"
+msgstr ""
+
+#: ../src/preferences.c:2484
+#, fuzzy
+msgid "Initial document settings"
+msgstr "Pencere yüksekliği"
+
+#: ../src/preferences.c:2496
+#, fuzzy
+msgid "Editor settings"
+msgstr "Editör tercihleri"
+
+#: ../src/preferences.c:2499
+#, fuzzy
+msgid "<b>Editor settings</b>"
+msgstr "Editör tercihleri"
+
+#: ../src/preferences.c:2507
+msgid "Smart Home/_End cursor positioning"
+msgstr ""
+
+#: ../src/preferences.c:2511
+#, fuzzy
+msgid "_Tab key indents selection"
+msgstr "seçili alanda"
+
+#: ../src/preferences.c:2517
+#, fuzzy
+msgid "Automatically insert closing brackets"
+msgstr "Etiketleri otomatik kapatma modu"
+
+#: ../src/preferences.c:2524
+msgid "Right _margin/split line end position:"
+msgstr ""
+
+#: ../src/preferences.c:2527
+#, fuzzy
+msgid "Wrap lines on right margin indicator"
+msgstr "Kişisel menüyü göster"
+
+#: ../src/preferences.c:2533
+#, fuzzy
+msgid "Visible _whitespace mode:"
+msgstr "_Açılmış Bağlantı Rengi:"
+
+#: ../src/preferences.c:2536
+#, fuzzy
+msgid "<b>Undo</b>"
+msgstr "<b>Genel</b>"
+
+#: ../src/preferences.c:2541
+msgid "_Number of actions in history:"
+msgstr ""
+
+#: ../src/preferences.c:2544
+#, fuzzy
+msgid "Clear _history on save"
+msgstr "Kaydederken Geri Al tarihçesini sil"
+
+#: ../src/preferences.c:2549
+#, fuzzy
+msgid "Auto-completion & Reference"
+msgstr "İşlev başvurusu"
+
+#: ../src/preferences.c:2555
+#, fuzzy
+msgid "<b>Auto-completion</b>"
+msgstr "<b>İçerik Araması</b>"
+
+#: ../src/preferences.c:2561
+msgid "Show _pop-up window:"
+msgstr ""
+
+#: ../src/preferences.c:2565
+msgid "Minimum matching length for auto-completion:"
+msgstr ""
+
+#: ../src/preferences.c:2570
+msgid "Shortcut _key combination:"
+msgstr ""
+
+#: ../src/preferences.c:2573
+#, fuzzy
+msgid "<b>Reference Information</b>"
+msgstr "Başvuru bulunamadı"
+
+#: ../src/preferences.c:2576
+#, fuzzy
+msgid "_Load reference data from language files"
+msgstr "Dil:"
+
+#: ../src/preferences.c:2579
+#, fuzzy
+msgid "Show references in auto-completion _pop-up window"
+msgstr "/Doküman/Kodları _Hizala"
+
+#: ../src/preferences.c:2582
+msgid "Show references if mouse is over text editor"
+msgstr ""
+
+#: ../src/preferences.c:2591 ../src/preferences.c:2968
+msgid "Font & Colors"
+msgstr ""
+
+#: ../src/preferences.c:2597
+#, fuzzy
+msgid "<b>Font &amp; Cursor</b>"
+msgstr "<b>İçerik Araması</b>"
+
+#: ../src/preferences.c:2601
+#, fuzzy
+msgid "_Editor font:"
+msgstr "_Varsayılan Yap"
+
+#: ../src/preferences.c:2609
+msgid "Cursor / font size ratio (%):"
+msgstr ""
+
+#: ../src/preferences.c:2611 ../src/preferences.c:2994
+#, fuzzy
+msgid "<b>Colors</b>"
+msgstr "<b>Özellikler</b>"
+
+#: ../src/preferences.c:2615
+msgid "Use system wide color settings"
+msgstr ""
+
+#: ../src/preferences.c:2626
+#, fuzzy
+msgid "Cursor color"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:2627
+#, fuzzy
+msgid "C_ursor color:"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:2630
+#, fuzzy
+msgid "Selection background color"
+msgstr "Arkaplan rengi"
+
+#: ../src/preferences.c:2631
+#, fuzzy
+msgid "_Selection background color:"
+msgstr "Arkaplan rengi"
+
+#: ../src/preferences.c:2636
+#, fuzzy
+msgid "Highlight cursor position"
+msgstr "Vurgulama yap"
+
+#: ../src/preferences.c:2638
+#, fuzzy
+msgid "Cursor highlight color"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:2639
+#, fuzzy
+msgid "_Cursor highlight color:"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:2644
+#, fuzzy
+msgid "Current line color"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:2645
+#, fuzzy
+msgid "Cu_rrent line color:"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:2648
+msgid "Visible whitespace color"
+msgstr ""
+
+#: ../src/preferences.c:2649
+#, fuzzy
+msgid "_Visible whitespace color:"
+msgstr "_Açılmış Bağlantı Rengi:"
+
+#: ../src/preferences.c:2661
+msgid "Text styles"
+msgstr ""
+
+#: ../src/preferences.c:2663
+#, fuzzy
+msgid "<b>Text Styles</b>"
+msgstr "<b>İçerik Araması</b>"
+
+#: ../src/preferences.c:2676
+msgid "Files"
+msgstr "Dosyalar"
+
+#: ../src/preferences.c:2679
+#, fuzzy
+msgid "<b>Encoding</b>"
+msgstr "Yazıtipi Düzeni"
+
+#: ../src/preferences.c:2695
+#, fuzzy
+msgid "_Default character set for new files:"
+msgstr "Varsayılan karakter seti"
+
+#: ../src/preferences.c:2701
+#, fuzzy
+msgid "Auto set <meta> _HTML tag on encoding change"
+msgstr "Yazıtipi düzeni meta etiketini otomatik olarak güncelle"
+
+#: ../src/preferences.c:2705 ../src/preferences.c:2851
+#, fuzzy
+msgid "<b>Misc</b>"
+msgstr "<b>Özellikler</b>"
+
+#: ../src/preferences.c:2708
+#, fuzzy
+msgid "Strip trailing spaces on save"
+msgstr "/Düzenle/Özel Değiştirme/_Büyük Harfe Çevir"
+
+#: ../src/preferences.c:2714
+#, fuzzy
+msgid "Open co_mmandline files in running bluefish process"
+msgstr "Dosyaları zaten açık olan bluefish penceresinde aç"
+
+#: ../src/preferences.c:2719
+#, fuzzy
+msgid "Open commandline files in new _window"
+msgstr "Dosyaları zaten açık olan bluefish penceresinde aç"
+
+#: ../src/preferences.c:2726
+#, fuzzy
+msgid "Check if file is modified on disk:"
+msgstr "%s dosyasının değişiklik kontrolü yapılamadı"
+
+#: ../src/preferences.c:2732
+msgid "File properties to check on dis_k for modifications:"
+msgstr ""
+
+#: ../src/preferences.c:2736
+msgid "Show warning for files with very long lines"
+msgstr ""
+
+#: ../src/preferences.c:2746
+msgid "Backup & Recovery"
+msgstr ""
+
+#: ../src/preferences.c:2749
+#, fuzzy
+msgid "<b>Backup</b>"
+msgstr "Yedek"
+
+#: ../src/preferences.c:2751
+#, fuzzy
+msgid "Create _backup file during file save"
+msgstr "Kaydederken yedekle"
+
+#: ../src/preferences.c:2756
+#, fuzzy
+msgid "_Remove backup file on close"
+msgstr "Kapatırken yedek dosyasını sil"
+
+#: ../src/preferences.c:2761
+#, fuzzy
+msgid "If back_up fails:"
+msgstr "Yedek dosyalarını göster"
+
+#: ../src/preferences.c:2768
+msgid "<b>Document Recovery</b>"
+msgstr ""
+
+#: ../src/preferences.c:2770
+msgid "_Enable recovery of modified documents"
+msgstr ""
+
+#: ../src/preferences.c:2774
+msgid "_Frequency to store changes (seconds):"
+msgstr ""
+
+#: ../src/preferences.c:2788 ../src/preferences.c:2789
+msgid "File Associations"
+msgstr ""
+
+#: ../src/preferences.c:2807
+#, fuzzy
+msgid "Templates"
+msgstr "_Şablon:"
+
+#: ../src/preferences.c:2810
+#, fuzzy
+msgid "<b>Templates</b>"
+msgstr "_Şablon:"
+
+#: ../src/preferences.c:2823
+msgid "User interface"
+msgstr "Kullanıcı arayüzü"
+
+#: ../src/preferences.c:2826
+#, fuzzy
+msgid "<b>Layout</b>"
+msgstr "<b>İçerik Araması</b>"
+
+#: ../src/preferences.c:2832
+#, fuzzy
+msgid "Document _tab position:"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:2837
+msgid "Maximum filename length shown in tab (0 is no limit)"
+msgstr ""
+
+#: ../src/preferences.c:2843
+#, fuzzy
+msgid "_Sidebar position:"
+msgstr "Kenar paneli yeri"
+
+#: ../src/preferences.c:2849
+#, fuzzy
+msgid "Sidebar tab _position:"
+msgstr "Kenar paneli not defteri sekme yeri"
+
+#: ../src/preferences.c:2853
+msgid "Hide toolbars on full-screen"
+msgstr ""
+
+#: ../src/preferences.c:2862
+#, fuzzy
+msgid "User interface _language:"
+msgstr "Kullanıcı arayüzü"
+
+#: ../src/preferences.c:2865
+#, fuzzy
+msgid "<b>Recent Files</b>"
+msgstr "<b>Özellikler</b>"
+
+#: ../src/preferences.c:2870
+msgid "Recent files _shows:"
+msgstr ""
+
+#: ../src/preferences.c:2875
+#, fuzzy
+msgid "_Number of files in 'Open recent' menu:"
+msgstr "Son kullanılanlar listesi uzunluğu"
+
+#: ../src/preferences.c:2880
+msgid "_Register recent files with your desktop:"
+msgstr ""
+
+#: ../src/preferences.c:2891
+#, fuzzy
+msgid "Shortcut keys"
+msgstr "/Düzenle/Kısayo_l Tuşlarını Kaydet"
+
+#: ../src/preferences.c:2896
+#, fuzzy
+msgid "<b>Shortcut keys</b>"
+msgstr "<b>İçerik Araması</b>"
+
+#: ../src/preferences.c:2900
+msgid "_Switch between tabs with <Alt>+0..9"
+msgstr ""
+
+#: ../src/preferences.c:2903
+msgid "_Switch between tabs with <Command>+0..9"
+msgstr ""
+
+#: ../src/preferences.c:2908
+msgid "Save menu accelerators on exit"
+msgstr ""
+
+#: ../src/preferences.c:2911
+msgid "Save user customised menu accelerators now"
+msgstr ""
+
+#: ../src/preferences.c:2915
+msgid "Reset menu accelerators to application defaults"
+msgstr ""
+
+#: ../src/preferences.c:2927
+msgid "Dimensions"
+msgstr "Boyutlar"
+
+#: ../src/preferences.c:2930
+#, fuzzy
+msgid "<b>Dimensions</b>"
+msgstr "Boyutlar"
+
+#: ../src/preferences.c:2932
+msgid "_Leave dimensions to window manager"
+msgstr ""
+
+#: ../src/preferences.c:2939
+#, fuzzy
+msgid "_Restore last used dimensions"
+msgstr "Son kullanılan boyutlara dön"
+
+#: ../src/preferences.c:2947
+#, fuzzy
+msgid "Initial _sidebar width:"
+msgstr "Kenar paneli genişliği"
+
+#: ../src/preferences.c:2951
+#, fuzzy
+msgid "Initial window _height:"
+msgstr "Pencere yüksekliği"
+
+#: ../src/preferences.c:2954
+#, fuzzy
+msgid "Initial window _width:"
+msgstr "Pencere genişliği"
+
+#: ../src/preferences.c:2961
+msgid "_Limit window title length"
+msgstr ""
+
+#: ../src/preferences.c:2974
+#, fuzzy
+msgid "<b>Document tab</b>"
+msgstr "<b>İçerik Araması</b>"
+
+#: ../src/preferences.c:2979
+msgid "_Use system document tab font"
+msgstr ""
+
+#: ../src/preferences.c:2984
+#, fuzzy
+msgid "_Document tab font:"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:2998
+#, fuzzy
+msgid "Document error tab color"
+msgstr "Doküman not defteri sekme yeri"
+
+#: ../src/preferences.c:3000
+msgid "Document tab _error color:"
+msgstr ""
+
+#: ../src/preferences.c:3004
+#, fuzzy
+msgid "Document loading tab color"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:3006
+#, fuzzy
+msgid "Document tab loadin_g color:"
+msgstr "Yazı rengi seç"
+
+#: ../src/preferences.c:3010
+#, fuzzy
+msgid "Document modified tab color"
+msgstr "Doküman not defteri sekme yeri"
+
+#: ../src/preferences.c:3012
+msgid "Document tab _modified color:"
+msgstr ""
+
+#. arr = array_from_arglist(_("Java programming"),"1", "java:image:jsp", NULL);
+#. main_v->globses.filefilters = g_list_append(main_v->globses.filefilters, arr);
+#: ../src/preferences.c:3025 ../src/rcfile.c:1438
+msgid "Images"
+msgstr "Resimler"
+
+#: ../src/preferences.c:3028
+#, fuzzy
+msgid "<b>Thumbnails</b>"
+msgstr "Resim Bağlantıları"
+
+#: ../src/preferences.c:3034
+#, fuzzy
+msgid "Thumbnail _filetype:"
+msgstr "Resim bağlantısı dosyatipi"
+
+#: ../src/preferences.c:3038
+#, fuzzy
+msgid "Thumbnail _suffix:"
+msgstr "Resim bağlantısı uzantısı"
+
+#: ../src/preferences.c:3051
+#, fuzzy
+msgid "External commands"
+msgstr "/Harici/Komutlar"
+
+#: ../src/preferences.c:3053
+#, fuzzy
+msgid "<b>External Commands</b>"
+msgstr "/Harici/Komutlar"
+
+#: ../src/preferences.c:3066
+#, fuzzy
+msgid "External filters"
+msgstr "Harici uygulamalar"
+
+#: ../src/preferences.c:3069
+#, fuzzy
+msgid "<b>External Filters</b>"
+msgstr "Harici uygulamalar"
+
+#: ../src/preferences.c:3082
+msgid "Output parsers"
+msgstr "Çıktı ayrıştırıcıları"
+
+#: ../src/preferences.c:3084
+#, fuzzy
+msgid "<b>Output Parsers</b>"
+msgstr "Çıktı ayrıştırıcıları"
+
+#: ../src/preferences.c:3097
+msgid "Plugins"
+msgstr ""
+
+#: ../src/preferences.c:3099
+#, fuzzy
+msgid "<b>Plugins</b>"
+msgstr "<b>Özellikler</b>"
+
+#: ../src/preferences.c:3121
+#, fuzzy
+msgid "Language support"
+msgstr "Dil:"
+
+#: ../src/project.c:311
+msgid "Enter Bluefish project filename"
+msgstr "Bluefish projesi adını giriniz"
+
+#: ../src/project.c:494
+msgid "Select Bluefish project filename"
+msgstr "Bluefish proje dosyasını seçiniz"
+
+#: ../src/project.c:657
+msgid "Create New Project"
+msgstr "Yeni Proje Yarat"
+
+#: ../src/project.c:660
+msgid "Edit Project"
+msgstr "Projeyi Düzenle"
+
+#: ../src/project.c:685
+#, fuzzy, c-format
+msgid "This project contains %d file"
+msgid_plural "This project contains %d files"
+msgstr[0] "Bu proje %d adet dosya içeriyor"
+msgstr[1] "Bu proje %d adet dosya içeriyor"
+
+#: ../src/project.c:698
+msgid "Project _Name:"
+msgstr "Proje _Adı:"
+
+#. pred->entries[template] = entry_with_text(pred->project->template, 255);
+#. bf_mnemonic_label_tad_with_alignment(_("_Template:"), pred->entries[template], 1, 0.5, table, 0, 1, 3, 4);
+#. but = file_but_new(pred->entries[template], 1, NULL);
+#. gtk_table_attach_defaults(GTK_TABLE(table), pred->entries[template], 2, 3, 3, 4);
+#. gtk_table_attach_defaults(GTK_TABLE(table), but, 3, 4, 3, 4);
+#: ../src/project.c:706
+msgid "<b>Project Defaults</b>"
+msgstr ""
+
+#: ../src/project.c:720
+msgid "Create _Project"
+msgstr "_Proje Yarat"
+
+#: ../src/project.c:769
+msgid "Create project"
+msgstr "Proje yarat"
+
+#: ../src/project.c:774
+msgid "Create project with currently opened documents"
+msgstr "Açık dokümanlarla bir proje yarat"
+
+#: ../src/project.c:776
+msgid "Create empty project"
+msgstr "Boş bir proje yarat"
+
+#: ../src/rcfile.c:701 ../src/rcfile.c:729
+msgid "php"
+msgstr "php"
+
+#: ../src/rcfile.c:707
+msgid "make"
+msgstr "make"
+
+#: ../src/rcfile.c:711
+msgid "weblint HTML checker"
+msgstr "weblint HTML sınayıcı"
+
+#: ../src/rcfile.c:716
+msgid "tidy HTML validator"
+msgstr "tidy HTML sınayıcı"
+
+#: ../src/rcfile.c:720
+msgid "javac"
+msgstr "javac"
+
+#: ../src/rcfile.c:724
+msgid "xmllint XML checker"
+msgstr "xmllint XML sınayıcı"
+
+#: ../src/rcfile.c:733
+msgid "php syntax check"
+msgstr ""
+
+#: ../src/rcfile.c:737
+#, fuzzy
+msgid "perl syntax check"
+msgstr "Yazım Denetimi..."
+
+#: ../src/rcfile.c:741
+msgid "php codesniffer"
+msgstr ""
+
+#: ../src/rcfile.c:745
+msgid "pylint"
+msgstr ""
+
+#: ../src/rcfile.c:758
+#, fuzzy
+msgid "Sort"
+msgstr " Sırala "
+
+#: ../src/rcfile.c:761
+msgid "Sort / Uniq"
+msgstr ""
+
+#: ../src/rcfile.c:764
+#, fuzzy
+msgid "Reverse lines"
+msgstr "Ge_ri İlişki:"
+
+#: ../src/rcfile.c:767
+#, fuzzy
+msgid "Dos2unix"
+msgstr "Dos2Unix filtresi"
+
+#: ../src/rcfile.c:769
+#, fuzzy
+msgid "Tidy HTML"
+msgstr "HTML"
+
+#: ../src/rcfile.c:771
+#, fuzzy
+msgid "Tidy convert to XHTML"
+msgstr "HTML"
+
+#: ../src/rcfile.c:774
+#, fuzzy
+msgid "Tidy HTML (perltidy)"
+msgstr "HTML"
+
+#: ../src/rcfile.c:777
+msgid "Strip empty lines"
+msgstr ""
+
+#: ../src/rcfile.c:780
+#, fuzzy
+msgid "Render HTML to text"
+msgstr "Zaman Ekle"
+
+#: ../src/rcfile.c:783
+msgid "PHP Beautifier"
+msgstr ""
+
+#: ../src/rcfile.c:787 ../src/rcfile.c:794
+msgid "Javascript Minify with jsmin"
+msgstr ""
+
+#: ../src/rcfile.c:790 ../src/rcfile.c:797
+#, fuzzy
+msgid "Toggle CSS compression"
+msgstr "/Doküman/Kelime _Sayısı"
+
+#: ../src/rcfile.c:801
+#, fuzzy
+msgid "CSS tidy"
+msgstr " CSS "
+
+#: ../src/rcfile.c:813
+msgid "Windows XP Firefox"
+msgstr ""
+
+#: ../src/rcfile.c:818
+msgid "Windows XP Internet Explorer"
+msgstr ""
+
+#: ../src/rcfile.c:823
+msgid "Windows XP Opera"
+msgstr ""
+
+#: ../src/rcfile.c:827
+msgid "Windows XP Safari"
+msgstr ""
+
+#: ../src/rcfile.c:831
+msgid "Windows 7 Firefox 32-bit"
+msgstr ""
+
+#: ../src/rcfile.c:836
+msgid "Windows 7 Internet Explorer 32-bit"
+msgstr ""
+
+#: ../src/rcfile.c:841
+msgid "Windows 7 Internet Explorer 64-bit"
+msgstr ""
+
+#: ../src/rcfile.c:847
+msgid "Safari"
+msgstr ""
+
+#: ../src/rcfile.c:850 ../src/rcfile.c:866
+msgid "Firefox"
+msgstr ""
+
+#: ../src/rcfile.c:853
+#, fuzzy
+msgid "Google Chrome"
+msgstr "/Doküman/Kelime _Sayısı"
+
+#: ../src/rcfile.c:856 ../src/rcfile.c:874
+msgid "Chromium"
+msgstr ""
+
+#: ../src/rcfile.c:859 ../src/rcfile.c:870
+msgid "Opera"
+msgstr "Opera"
+
+#: ../src/rcfile.c:862 ../src/rcfile.c:889
+msgid "chmod a+x"
+msgstr ""
+
+#: ../src/rcfile.c:877
+msgid "Konqueror"
+msgstr ""
+
+#: ../src/rcfile.c:880
+msgid "Epiphany"
+msgstr ""
+
+#: ../src/rcfile.c:883
+msgid "Kazehakase"
+msgstr ""
+
+#: ../src/rcfile.c:886
+msgid "Links2 (graphics)"
+msgstr ""
+
+#: ../src/rcfile.c:938
+#, fuzzy
+msgid "C Header"
+msgstr "Tablo Başlığı"
+
+#: ../src/rcfile.c:941
+msgid "C Header GPL"
+msgstr ""
+
+#: ../src/rcfile.c:944
+#, fuzzy
+msgid "XHTML 1.0"
+msgstr "HTML"
+
+#: ../src/rcfile.c:947
+#, fuzzy
+msgid "HTML 5"
+msgstr "HTML"
+
+#: ../src/rcfile.c:950
+msgid "PHP"
+msgstr ""
+
+#: ../src/rcfile.c:953
+msgid "LaTex Book"
+msgstr ""
+
+#: ../src/rcfile.c:956
+msgid "LaTex Presentation"
+msgstr ""
+
+#: ../src/rcfile.c:1323
+msgid "Untitled Project"
+msgstr "Adsız Proje"
+
+#: ../src/rcfile.c:1430
+msgid "C programming"
+msgstr "C programlama"
+
+#: ../src/rcfile.c:1434
+#, fuzzy
+msgid "Web files"
+msgstr "Tüm ağ dosyaları"
+
+#: ../src/rcfile.c:1441
+msgid "Hide objectfiles"
+msgstr "Nesne dosyalarını gizle"
+
+#: ../src/snr3.c:678
+msgid "<i>Replace started</i>"
+msgstr ""
+
+#: ../src/snr3.c:683
+msgid "<i>Search started</i>"
+msgstr ""
+
+#: ../src/snr3.c:701
+msgid "<span foreground=\"red\"><b>No selection, aborted search</b></span>"
+msgstr ""
+
+#. display warning that not all documents have yet finished loading
+#: ../src/snr3.c:710
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Some documents are still loading</"
+"span>"
+msgstr ""
+
+#: ../src/snr3.c:844
+msgid "<span foreground=\"red\">Empty search string</span>"
+msgstr ""
+
+#: ../src/snr3.c:894
+#, fuzzy, c-format
+msgid "<i>Replaced %d entry</i>"
+msgid_plural "<i>Replaced %d entries</i>"
+msgstr[0] "<b>Özellikler</b>"
+msgstr[1] "<b>Özellikler</b>"
+
+#: ../src/snr3.c:896
+#, fuzzy, c-format
+msgid "<i>Found %d entry</i>"
+msgid_plural "<i>Found %d entries</i>"
+msgstr[0] "<b>Özellikler</b>"
+msgstr[1] "<b>Özellikler</b>"
+
+#: ../src/snr3.c:1184
+#, c-format
+msgid "<i>Found %d result in %d of the %d searched documents</i>"
+msgid_plural "<i>Found %d results in %d of the %d searched documents</i>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/snr3.c:1188
+#, c-format
+msgid "<i>Found %d result from character %d to %d</i>"
+msgid_plural "<i>Found %d results from character %d to %d</i>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/snr3.c:1191
+#, fuzzy, c-format
+msgid "<i>Found %d result in the active document</i>"
+msgid_plural "<i>Found %d results in the active document</i>"
+msgstr[0] "<b>Özellikler</b>"
+msgstr[1] "<b>Özellikler</b>"
+
+#: ../src/snr3.c:1419
+msgid "No (more) results"
+msgstr ""
+
+#: ../src/snr3.c:1517
+#, fuzzy
+msgid "Active document"
+msgstr "D_okümanda"
+
+#: ../src/snr3.c:1518
+msgid "Forward from cursor position"
+msgstr ""
+
+#: ../src/snr3.c:1519
+#, fuzzy
+msgid "Current selection"
+msgstr "_Seçili Alanda"
+
+#: ../src/snr3.c:1520
+#, fuzzy
+msgid "All open documents"
+msgstr "tüm açık dokümanlarda"
+
+#: ../src/snr3.c:1521
+#, fuzzy
+msgid "Files on disk"
+msgstr "Dosya boyutunda değişiklik var\n"
+
+#: ../src/snr3.c:1525 ../src/snr3.c:1530
+msgid "Normal"
+msgstr "Normal"
+
+#: ../src/snr3.c:1531
+msgid "Uppercase"
+msgstr "Büyük harf"
+
+#: ../src/snr3.c:1532
+msgid "Lowercase"
+msgstr "Küçük harf"
+
+#: ../src/snr3.c:1539
+#, fuzzy
+msgid "Find and Replace"
+msgstr "Değiştir"
+
+#: ../src/snr3.c:1558
+#, fuzzy
+msgid "<b>_Search for</b>"
+msgstr "_Aranan:"
+
+#: ../src/snr3.c:1581
+#, fuzzy
+msgid "<b>Replace _with</b>"
+msgstr "_Değiştir: "
+
+#: ../src/snr3.c:1596
+#, fuzzy
+msgid "Match Patter_n: "
+msgstr "Şablon ara"
+
+#: ../src/snr3.c:1608
+#, fuzzy
+msgid "Replace T_ype: "
+msgstr "Değiştirme tipi:"
+
+#: ../src/snr3.c:1621
+msgid "Sco_pe: "
+msgstr ""
+
+#: ../src/snr3.c:1631
+#, fuzzy
+msgid "Filename pattern: "
+msgstr "Dosya adı"
+
+#: ../src/snr3.c:1637
+#, fuzzy
+msgid "Recursion level: "
+msgstr "_Alt dizinler:"
+
+#: ../src/snr3.c:1643
+#, fuzzy
+msgid "Basedir: "
+msgstr "_Çalışma dizini:"
+
+#: ../src/snr3.c:1663
+#, fuzzy
+msgid "Case sensitive _matching"
+msgstr "Büyük/küçük harf duyarlı"
+
+#: ../src/snr3.c:1665
+msgid "Only match if case (upper/lower) is identical."
+msgstr ""
+
+#: ../src/snr3.c:1669
+#, fuzzy
+msgid "Pattern contains escape-se_quences"
+msgstr "_Şablonlar ters kesme kaçış işareti içerir (\\n, \\t)"
+
+#: ../src/snr3.c:1672
+#, fuzzy
+msgid "Pattern contains backslash escaped characters such as \\n \\t etc."
+msgstr "_Şablonlar ters kesme kaçış işareti içerir (\\n, \\t)"
+
+#: ../src/snr3.c:1676
+msgid "Dot character in regex pattern matches newlines"
+msgstr ""
+
+#: ../src/snr3.c:1679
+msgid ""
+"The . character will match everything including newlines, use for multiline "
+"matching."
+msgstr ""
+
+#: ../src/snr3.c:1701
+#, fuzzy
+msgid "Replace _All"
+msgstr "_Tümünü değiştir"
+
+#: ../src/snr3.c:1703
+msgid "_Replace"
+msgstr "_Değiştir"
+
+#: ../src/snr3.c:1707
+#, fuzzy
+msgid "_Find All"
+msgstr "Bul"
+
+#: ../src/snr3.c:1709
+#, fuzzy
+msgid "B_ookmark All"
+msgstr "Yerimleri"
+
+#: ../src/undo_redo.c:555 ../src/undo_redo.c:697
+#, fuzzy
+msgid "Undo in _all documents"
+msgstr "tüm açık dokümanlarda"
+
+#: ../src/undo_redo.c:555 ../src/undo_redo.c:697
+#, fuzzy
+msgid "Undo only _this document"
+msgstr "D_okümanda"
+
+#: ../src/undo_redo.c:558 ../src/undo_redo.c:700
+msgid "Undo this change in all documents?"
+msgstr ""
+
+#: ../src/undo_redo.c:559 ../src/undo_redo.c:701
+msgid "This change concerns multiple documents."
+msgstr ""
+
+#: ../src/xmlstrings.h:2
+msgid "Allow folding of C style comments"
+msgstr ""
+
+#: ../src/xmlstrings.h:3
+msgid "Allow folding of Curly brackets block"
+msgstr ""
+
+#: ../src/xmlstrings.h:4
+msgid "Allow folding of Javascript Curly brackets block"
+msgstr ""
+
+#: ../src/xmlstrings.h:5
+msgid "Allow folding of Javascript Parentheses block"
+msgstr ""
+
+#: ../src/xmlstrings.h:6
+msgid "Allow folding of Javascript Square brackets block"
+msgstr ""
+
+#: ../src/xmlstrings.h:7
+msgid "Allow folding of Parentheses block"
+msgstr ""
+
+#: ../src/xmlstrings.h:8
+msgid "Allow folding of PHP blocks"
+msgstr ""
+
+#: ../src/xmlstrings.h:9
+msgid "Allow folding of Square brackets block"
+msgstr ""
+
+#: ../src/xmlstrings.h:10
+msgid "Allow folding of the Parentheses block"
+msgstr ""
+
+#: ../src/xmlstrings.h:11
+msgid "Allow to fold the the root html tag"
+msgstr ""
+
+#: ../src/xmlstrings.h:12
+msgid "All php functions"
+msgstr ""
+
+#: ../src/xmlstrings.h:13
+msgid "All wordpress functions"
+msgstr ""
+
+#: ../src/xmlstrings.h:14
+msgid "Autocomplete function names with semicolon"
+msgstr ""
+
+#: ../src/xmlstrings.h:15
+#, fuzzy
+msgid "Autocomplete HTML entities"
+msgstr "İşlev başvurusu"
+
+#: ../src/xmlstrings.h:16
+msgid "Autocomplete Javascript object methods"
+msgstr ""
+
+#: ../src/xmlstrings.h:17
+msgid "autocomplete javascript variables"
+msgstr ""
+
+#: ../src/xmlstrings.h:18
+#, fuzzy
+msgid "Auto-complete PHP functions"
+msgstr "İşlev başvurusu"
+
+#: ../src/xmlstrings.h:19
+msgid "Auto-complete PHP variables"
+msgstr ""
+
+#: ../src/xmlstrings.h:20
+msgid "Autocomplete tags"
+msgstr ""
+
+#: ../src/xmlstrings.h:21
+msgid "autocomplete with newlines"
+msgstr ""
+
+#: ../src/xmlstrings.h:22
+#, fuzzy
+msgid "CSS properties"
+msgstr "Özellik"
+
+#: ../src/xmlstrings.h:23
+msgid "Enable the PHP short open tag"
+msgstr ""
+
+#: ../src/xmlstrings.h:24
+msgid "GNU Coreutils functions"
+msgstr ""
+
+#: ../src/xmlstrings.h:25
+#, fuzzy
+msgid "HTML entities"
+msgstr "HTML seçenekleri"
+
+#: ../src/xmlstrings.h:26
+msgid "include JQuery syntax"
+msgstr ""
+
+#: ../src/xmlstrings.h:27
+msgid "Javascript CSS properties"
+msgstr ""
+
+#: ../src/xmlstrings.h:28
+msgid "Load all php functions"
+msgstr ""
+
+#: ../src/xmlstrings.h:29
+#, fuzzy
+msgid "Load auto-completion information"
+msgstr "/Doküman/Kodları _Hizala"
+
+#: ../src/xmlstrings.h:30
+#, fuzzy
+msgid "Load completion data"
+msgstr "/Doküman/Kodları _Hizala"
+
+#: ../src/xmlstrings.h:31
+msgid "Load glib types and functions"
+msgstr ""
+
+#: ../src/xmlstrings.h:32
+msgid "Load GObject functions"
+msgstr ""
+
+#: ../src/xmlstrings.h:33
+msgid "Load GTK+ functions"
+msgstr ""
+
+#: ../src/xmlstrings.h:34
+#, fuzzy
+msgid "Load reference data"
+msgstr "Başvuru yükleniyor"
+
+#: ../src/xmlstrings.h:35
+#, fuzzy
+msgid "Load reference information"
+msgstr "Başvuru bulunamadı"
+
+#: ../src/xmlstrings.h:36
+msgid "Load standard C library functions "
+msgstr ""
+
+#: ../src/xmlstrings.h:37
+msgid "Load XSLT 2.0 support."
+msgstr ""
+
+#: ../src/xmlstrings.h:38
+msgid "Methods in javadoc but not in references"
+msgstr ""
+
+#: ../src/xmlstrings.h:39
+msgid "scan for sql in php strings"
+msgstr ""
+
+#: ../src/xmlstrings.h:40
+msgid "Scan for sql in strings"
+msgstr ""
+
+#: ../src/xmlstrings.h:41
+msgid "Self-close tags such as br, hr, and img with /&gt;"
+msgstr ""
+
+#: ../src/xmlstrings.h:42
+msgid "Show a string as a block"
+msgstr ""
+
+#: ../src/xmlstrings.h:43
+msgid "Show tag attributes as block"
+msgstr ""
+
+#: ../src/xmlstrings.h:44
+msgid "Show this language in the menu"
+msgstr ""
+
+#: ../src/xmlstrings.h:45
+msgid "Tag block-start includes all attributes"
+msgstr ""
+
+#, fuzzy
+#~ msgid "_Outputbox"
+#~ msgstr "Giden kutusu"
+
+#~ msgid "Cannot display file, unknown characters found."
+#~ msgstr "Dosya bilinmeyen karakterler içerdiği için gösterilemiyor."
+
+#, fuzzy
+#~ msgid "_Language:"
+#~ msgstr "_Dil:"
+
+#, fuzzy
+#~ msgid "Fo_rmat"
+#~ msgstr "Form"
+
+#, fuzzy
+#~ msgid "Goto _Line"
+#~ msgstr "Satıra Git"
+
+#, fuzzy
+#~ msgid "Error adding bookmark"
+#~ msgstr "Yerimi Tanımı"
+
+#, fuzzy
+#~ msgid "Cannot add bookmarks to unsaved files."
+#~ msgstr "Adlandırılmamış bir dosyada yerimi eklenemez."
+
+#, fuzzy
+#~ msgid "_Username:"
+#~ msgstr "Kullanıcı Adı:"
+
+#, fuzzy
+#~ msgid "_Domain:"
+#~ msgstr "Dikey Hi_zalama"
+
+#, fuzzy
+#~ msgid "_Password:"
+#~ msgstr "Şifre:"
+
+#, fuzzy
+#~ msgid "Save _As..."
+#~ msgstr "Farklı Sakla..."
+
+#, fuzzy
+#~ msgid "_Unindent"
+#~ msgstr "Sola Kaydır"
+
+#, fuzzy
+#~ msgid "_Find..."
+#~ msgstr "Bul..."
+
+#, fuzzy
+#~ msgid "R_eplace..."
+#~ msgstr "Değiştir..."
+
+#~ msgid "Replace"
+#~ msgstr "Değiştir"
+
+#~ msgid "<b>Open URL</b>"
+#~ msgstr "<b>URL aç</b>"
+
+#~ msgid "_Browse..."
+#~ msgstr "_Gözat..."
+
+#~ msgid "HTML"
+#~ msgstr "HTML"
+
+#, fuzzy
+#~ msgid "Use lo_wercase HTML tags"
+#~ msgstr "HTML etiketlerini küçük harfe çevir"
+
+#, fuzzy
+#~ msgid "Use de_precated tags (e.g. <font> and <nobr>)"
+#~ msgstr "Eskimiş etiketleri kullan (örn. '<font>' ve '<nobr>')"
+
+#, fuzzy
+#~ msgid "Use _XHTML style tags (<br />)"
+#~ msgstr "XHTML stil etiketlerini kullan (<br />)"
+
+#, fuzzy
+#~ msgid "<b>Auto Update Tag Options</b>"
+#~ msgstr "<b>İçerik Araması</b>"
+
+#, fuzzy
+#~ msgid "Automatically update a_uthor meta tag"
+#~ msgstr "Yazar meta etiketini otomatik olarak güncelle"
+
+#, fuzzy
+#~ msgid "Automatically update _date meta tag"
+#~ msgstr "Yazar meta etiketini otomatik olarak güncelle"
+
+#, fuzzy
+#~ msgid "Automatically update _generator meta tag"
+#~ msgstr "Yazar meta etiketini otomatik olarak güncelle"
+
+#, fuzzy
+#~ msgid "_Tab position:"
+#~ msgstr "Tablo Tanımı"
+
+#, fuzzy
+#~ msgid "_Make HTML dialogs transient"
+#~ msgstr "HTML araçlarını geçici yap"
+
+#, fuzzy
+#~ msgid "<b>Sidebar</b>"
+#~ msgstr "<b>Özellikler</b>"
+
+#, fuzzy
+#~ msgid "L_ocation:"
+#~ msgstr "_Resim Yeri:"
+
+#, fuzzy
+#~ msgid "Tab _position:"
+#~ msgstr "Tablo Tanımı"
+
+#~ msgid "Mozilla"
+#~ msgstr "Mozilla"
+
+#~ msgid "Galeon"
+#~ msgstr "Galeon"
+
+#, fuzzy
+#~ msgid "/Edit/Preferences"
+#~ msgstr "/Düzenle/_Tercihler"
+
+#, fuzzy
+#~ msgid "Find From Selection"
+#~ msgstr "/Düzenle/Seçili Ala_nda Bul"
+
+#, fuzzy
+#~ msgid "Replace Agai_n"
+#~ msgstr "/Düzenle/Sonrakini Değiş_tir"
+
+#, fuzzy
+#~ msgid "Replace again"
+#~ msgstr "Değiştir"
+
+#, fuzzy
+#~ msgid "%d document open."
+#~ msgid_plural "%d documents open."
+#~ msgstr[0] "D_okümanda"
+#~ msgstr[1] "D_okümanda"
+
+#, fuzzy
+#~ msgid "Advanced open: Finished searching files. "
+#~ msgstr "Arama ile dosya aç"
+
+#, fuzzy
+#~ msgid "The parent window"
+#~ msgstr "Ayrıntılı bilgi"
+
+#~ msgid "Regular expression error: "
+#~ msgstr "Düzenli ifade hatası: "
+
+#~ msgid "Search failed"
+#~ msgstr "Arama başarısız"
+
+#, fuzzy
+#~ msgid "Regular expression error: %s"
+#~ msgstr "Düzenli ifade hatası: "
+
+#, fuzzy
+#~ msgid "Regular expression error: %s at offset %d"
+#~ msgstr "Düzenli ifade hatası: %s - %d"
+
+#, fuzzy
+#~ msgid "replaced %d"
+#~ msgid_plural "replaced %d"
+#~ msgstr[0] "Değiştir"
+#~ msgstr[1] "Değiştir"
+
+#, fuzzy
+#~ msgid "Selection"
+#~ msgstr "Yazıtipi seçiniz"
+
+#, fuzzy
+#~ msgid "All open files"
+#~ msgstr "Tüm ağ dosyaları"
+
+#, fuzzy
+#~ msgid "POSIX style regular expression"
+#~ msgstr "perl düzenli ifadeleri"
+
+#, fuzzy
+#~ msgid "PERL style regular expression"
+#~ msgstr "perl düzenli ifadeleri"
+
+#, fuzzy
+#~ msgid "<b>_Options</b>"
+#~ msgstr "<b>İçerik Araması</b>"
+
+#, fuzzy
+#~ msgid "What to replace with."
+#~ msgstr "_Değiştir: "
+
+#, fuzzy
+#~ msgid "Allow o_verlapping matches"
+#~ msgstr "Aramaları _örtüştür"
+
+#, fuzzy
+#~ msgid "Select matc_hes"
+#~ msgstr "Dosyaları seç"
+
+#, fuzzy
+#~ msgid "/Edit"
+#~ msgstr "/Dü_zenle"
+
+#, fuzzy
+#~ msgid "/Show file/By name"
+#~ msgstr "Dosya adı yok"
+
+#, fuzzy
+#~ msgid "/Show file/By full path"
+#~ msgstr "Tüm ağacı göster"
+
+#, fuzzy
+#~ msgid "/Show file/By full uri"
+#~ msgstr "Tüm ağacı göster"
+
+#, fuzzy
+#~ msgid "/Show bookmark/Name"
+#~ msgstr "Git"
+
+#, fuzzy
+#~ msgid "/Name"
+#~ msgstr "Ad"
+
+#~ msgid "/Show backup files"
+#~ msgstr "/Yedek dosyalarını göster"
+
+#~ msgid "New"
+#~ msgstr "Yeni"
+
+#~ msgid "Close"
+#~ msgstr "Kapat"
+
+#, fuzzy
+#~ msgid "/File/Quit"
+#~ msgstr "/Dosya/_Çık"
+
+#~ msgid "/File/_New"
+#~ msgstr "/Dosya/_Yeni"
+
+#~ msgid "/File/_Open..."
+#~ msgstr "/Dosya/_Aç..."
+
+#~ msgid "/File/Open Ad_vanced..."
+#~ msgstr "/Dosya/A_rama ile aç..."
+
+#~ msgid "/File/_Save"
+#~ msgstr "/Dosya/_Kaydet"
+
+#~ msgid "/File/Save _As..."
+#~ msgstr "/Dosya/_Farklı Kaydet"
+
+#~ msgid "/File/Rena_me..."
+#~ msgstr "/Dosya/Yeniden _Adlandır..."
+
+#~ msgid "/File/Sav_e All"
+#~ msgstr "/Dosya/Tümünü Kaydet"
+
+#~ msgid "/File/_Close"
+#~ msgstr "/Dosya/Ka_pat"
+
+#~ msgid "/File/Close A_ll"
+#~ msgstr "/Dosya/Tümünü Kapa_t"
+
+#~ msgid "/File/Run Python Script"
+#~ msgstr "/Dosya/Python _Betiği Çalıştır"
+
+#~ msgid "/Edit/_Undo"
+#~ msgstr "/Düzenle/_Geri Al"
+
+#~ msgid "/Edit/_Redo"
+#~ msgstr "/Düzenle/_Yinele"
+
+#~ msgid "/Edit/Cu_t"
+#~ msgstr "/Düzenle/Ke_s"
+
+#~ msgid "/Edit/_Copy"
+#~ msgstr "/Düzenle/_Kopyala"
+
+#~ msgid "/Edit/_Paste"
+#~ msgstr "/Düzenle/Ya_pıştır"
+
+#~ msgid "/Edit/_Find..."
+#~ msgstr "/Düzenle/_Bul"
+
+#~ msgid "/Edit/R_eplace..."
+#~ msgstr "/Düzenle/_Değiştir..."
+
+#~ msgid "/Edit/_Indent"
+#~ msgstr "/Düzenle/Sa_ğa Kaydır"
+
+#~ msgid "/Edit/_Unindent"
+#~ msgstr "/Düzenle/So_la Kaydır"
+
+#~ msgid "/Edit/Preference_s"
+#~ msgstr "/Düzenle/_Tercihler"
+
+#~ msgid "/Document/_Wrap"
+#~ msgstr "/Doküman/Met_ni Kaydır"
+
+#~ msgid "/Document/_Line Numbers"
+#~ msgstr "/Doküman/Satır _Numaraları"
+
+#, fuzzy
+#~ msgid "/Document/Highlight block delimiters"
+#~ msgstr "/Doküman/_Vurgulama Uygula"
+
+#, fuzzy
+#~ msgid "/Document/Split view"
+#~ msgstr "/Doküman/Met_ni Kaydır"
+
+#, fuzzy
+#~ msgid "/Document/_Spell Check"
+#~ msgstr "/Doküman/Met_ni Kaydır"
+
+#, fuzzy
+#~ msgid "/Document/Tab Size/_Increase"
+#~ msgstr "/Doküman/Sekme Aralığını _Büyült"
+
+#, fuzzy
+#~ msgid "/Document/Tab Size/_Decrease"
+#~ msgstr "/Doküman/Sekme Aralığını _Küçült"
+
+#, fuzzy
+#~ msgid "/Document/Tab Size/_Reset"
+#~ msgstr "/Doküman/Sekme Aralığını _Büyült"
+
+#, fuzzy
+#~ msgid "/Document/Font Size/_Increase"
+#~ msgstr "/Doküman/Sekme Aralığını _Büyült"
+
+#, fuzzy
+#~ msgid "/Document/Font Size/_Decrease"
+#~ msgstr "/Doküman/Sekme Aralığını _Küçült"
+
+#, fuzzy
+#~ msgid "/Document/Font Size/_Reset"
+#~ msgstr "/Doküman/Doküman _Tipi"
+
+#~ msgid "/Document/_Highlight Syntax"
+#~ msgstr "/Doküman/_Vurgulama Uygula"
+
+#, fuzzy
+#~ msgid "/Document/Language _Mode"
+#~ msgstr "/Doküman/Vurgulama"
+
+#~ msgid "/Document/Character _Encoding"
+#~ msgstr "/Doküman/_Yazıtipi Düzeni"
+
+#, fuzzy
+#~ msgid "/Document/Character Encoding/_Add or Remove..."
+#~ msgstr "/Doküman/Yazıtipi Düzeni"
+
+#, fuzzy
+#~ msgid "/Document/Add Boo_kmark"
+#~ msgstr "/Düzenle/_Yerimi Ekle"
+
+#, fuzzy
+#~ msgid "/Document/Move Left"
+#~ msgstr "/Doküman/So_la kay"
+
+#, fuzzy
+#~ msgid "/Document/Move Right"
+#~ msgstr "/Doküman/Sa_ğa Kay"
+
+#, fuzzy
+#~ msgid "/Go/F_irst Bookmark"
+#~ msgstr "Yerimi Tanımı"
+
+#, fuzzy
+#~ msgid "/Go/P_revious Bookmark"
+#~ msgstr "/Git/Bir _Önceki Doküman"
+
+#, fuzzy
+#~ msgid "/Go/N_ext Bookmark"
+#~ msgstr "Git"
+
+#, fuzzy
+#~ msgid "/Go/Last _Bookmark"
+#~ msgstr "Git"
+
+#~ msgid "/Go/Goto _Line"
+#~ msgstr "/Git/_Satır"
+
+#~ msgid "/Project/_New Project"
+#~ msgstr "/Proje/_Yeni Proje"
+
+#, fuzzy
+#~ msgid "/Project/Open _Recent"
+#~ msgstr "/Proje/_Son kullanılanlar"
+
+#~ msgid "/Project/_Save"
+#~ msgstr "/Proje/_Kaydet"
+
+#~ msgid "/Project/Save _as..."
+#~ msgstr "/Proje/_Farklı Kaydet..."
+
+#, fuzzy
+#~ msgid "/Tools/_Commands"
+#~ msgstr "/Harici/Komutlar"
+
+#, fuzzy
+#~ msgid "/Tools/_Outputbox"
+#~ msgstr "/Harici/Giden Kutusu"
+
+#, fuzzy
+#~ msgid "/Tools/_Filters"
+#~ msgstr "/Harici/tearoff1"
+
+#, fuzzy
+#~ msgid "/Document/Language Mode"
+#~ msgstr "/Doküman/Vurgulama"
+
+#, fuzzy
+#~ msgid "No default browser found"
+#~ msgstr "Varsayılan çalışma dizini"
+
+#~ msgid "Select font"
+#~ msgstr "Yazıtipi seçiniz"
+
+#, fuzzy
+#~ msgid ""
+#~ "Document tab font \n"
+#~ "(leave empty for gtk default)"
+#~ msgstr "Not defteri sekme yazıtipi (gtk için boç bırakın, varsayılan)"
+
+#, fuzzy
+#~ msgid "Default mime type for new files"
+#~ msgstr "Varsayılan karakter seti"
+
+#, fuzzy
+#~ msgid "Default template"
+#~ msgstr "Varsayılan çalışma dizini"
+
+#~ msgid "_Word wrap by default"
+#~ msgstr "Met_ni kaydır"
+
+#, fuzzy
+#~ msgid "Generic editor settings"
+#~ msgstr "Editör tercihleri"
+
+#~ msgid "Font"
+#~ msgstr "Yazıtipi"
+
+#, fuzzy
+#~ msgid "Non-project initial document settings"
+#~ msgstr "Pencere yüksekliği"
+
+#, fuzzy
+#~ msgid "HTML toolbar / menu options"
+#~ msgstr "HTML araç çubuğunu göster"
+
+#~ msgid "Misc"
+#~ msgstr "Çeşitli"
+
+#~ msgid "General"
+#~ msgstr "Genel"
+
+#, fuzzy
+#~ msgid "/Goto"
+#~ msgstr "/_Git"
+
+#~ msgid "File has been modified by another process\n"
+#~ msgstr "Dosya Bluefish dışında değiştirilmiş\n"
+
+#, fuzzy
+#~ msgid "File %s has been modified on disk, overwrite?"
+#~ msgstr "%s dosyası değişmiş, üstüne yazılsın mı?"
+
+#, fuzzy
+#~ msgid "Failed to check if %s has been modified on disk"
+#~ msgstr "%s dosyasının değişiklik kontrolü yapılamadı"
+
+#, fuzzy
+#~ msgid "starting up..."
+#~ msgstr "bluefish başlatılıyor"
+
+#~ msgid "starting bluefish"
+#~ msgstr "bluefish başlatılıyor"
+
+#, fuzzy
+#~ msgid "Highlight matching block begin-end"
+#~ msgstr "Met_ni kaydır"
+
+#, fuzzy
+#~ msgid "Startup options"
+#~ msgstr "Editör tercihleri"
+
+#, fuzzy
+#~ msgid "Bluefish Editor (SVN)"
+#~ msgstr "Bluefish ipucu:"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "File type: "
+#~ msgstr "Dosyatipleri"
+
+#~ msgid "  %s, %s"
+#~ msgstr "  %s, %s"
+
+#~ msgid "File save failed!\n"
+#~ msgstr "Dosya saklama hatası!\n"
+
+#, fuzzy
+#~ msgid "POSIX"
+#~ msgstr "POSIX tipi"
+
+#, fuzzy
+#~ msgid "PERL"
+#~ msgstr "PERL tipi"
+
+#, fuzzy
+#~ msgid "_Use escape chars"
+#~ msgstr "Güncelleme karakterleri"
+
+#~ msgid "Statistics: %d lines, %d words, %d characters"
+#~ msgstr "İstatistik: %d satır, %d kelime, %d karakter"
+
+#, fuzzy
+#~ msgid "Spellcheck"
+#~ msgstr "Yazım Denetimi..."
+
+#, fuzzy
+#~ msgid "Word wrap"
+#~ msgstr "Metni kaydır"
+
+#, fuzzy
+#~ msgid "reading language files..."
+#~ msgstr "arayüz hazırlanıyor..."
+
+#, fuzzy
+#~ msgid "building file browser ..."
+#~ msgstr ""
+#~ "Dosya saklanamadı:\n"
+#~ "\""
+
+#~ msgid "creating main gui..."
+#~ msgstr "arayüz hazırlanıyor..."
+
+#~ msgid "showing main gui..."
+#~ msgstr "arayüz gösteriliyor..."
+
+#, fuzzy
+#~ msgid "/Project/Open Recent"
+#~ msgstr "/Proje/_Son kullanılanlar"
+
+#, fuzzy
+#~ msgid "/File/Open Recent"
+#~ msgstr "/Dosya/Son _Kullanılanlar"
+
+#, fuzzy
+#~ msgid "/Tools/Filters"
+#~ msgstr "/Harici/tearoff1"
+
+#, fuzzy
+#~ msgid "/Tools"
+#~ msgstr "/_Harici"
+
+#~ msgid "/Tools/Commands"
+#~ msgstr "/Harici/Komutlar"
+
+#~ msgid "/Tools/Outputbox"
+#~ msgstr "/Harici/Giden Kutusu"
+
+#~ msgid ""
+#~ "Bluefish has trouble reading the filenames. Try to set the environment "
+#~ "variable G_BROKEN_FILENAMES=1\n"
+#~ msgstr ""
+#~ "Bluefish dosya adlarını okuyamıyor. G_BROKEN_FILENAMES çevre değişkenine "
+#~ "1 atamayı deneyin.\n"
+
+#~ msgid "Checking"
+#~ msgstr "Denetleniyor"
+
+#~ msgid "_Misspelled word:"
+#~ msgstr "_Bulunan:"
+
+#~ msgid "Change _to:"
+#~ msgstr "D_eğiştir:"
+
+#~ msgid "I_gnore"
+#~ msgstr "_Geç"
+
+#~ msgid "In _document"
+#~ msgstr "D_okümanda"
+
+#~ msgid "personal dictionary"
+#~ msgstr "kişisel sözlük"
+
+#~ msgid "session dictionary"
+#~ msgstr "oturum sözlüğü"
+
+#~ msgid "Dictionary:"
+#~ msgstr "Sözlük:"
+
+#, fuzzy
+#~ msgid "_Add Word"
+#~ msgstr " _Ekle "
+
+#~ msgid "Filter:"
+#~ msgstr "Filtre:"
+
+#~ msgid "no filter"
+#~ msgstr "filtre yok"
+
+#~ msgid "html filter"
+#~ msgstr "html filtresi"
+
+#, fuzzy
+#~ msgid "Skip root check."
+#~ msgstr "-s           root kontrolünü geç\n"
+
+#, fuzzy
+#~ msgid "setting up bookmarks ..."
+#~ msgstr "Tüm yerimleri Siliniyor."
+
+#~ msgid "/Edit/Replace special"
+#~ msgstr "/Düzenle/Özel Değiştirme"
+
+#, fuzzy
+#~ msgid "/Tools/Block sync"
+#~ msgstr "/Düzenle/Özel Değiştirme"
+
+#~ msgid "/Edit/Save Sett_ings"
+#~ msgstr "/Düzenle/A_yarları Kaydet"
+
+#~ msgid "/Tools/Check _Spelling..."
+#~ msgstr "/Doküman/Yazım _Denetimi..."
+
+#~ msgid "/Windows"
+#~ msgstr "/Pencereler"
+
+#~ msgid "/Tools/Outputbox/"
+#~ msgstr "/Harici/Giden Kutusu/"
+
+#~ msgid "/Tools/Commands/"
+#~ msgstr "/Harici/Komutlar/"
+
+#, fuzzy
+#~ msgid "/Tools/Filters/"
+#~ msgstr "/Harici/Tarayıcılar/"
+
+#~ msgid "/External"
+#~ msgstr "/Harici"
+
+#, fuzzy
+#~ msgid "File and directory view"
+#~ msgstr "Dosya ve dizin görüntülerini ayır"
+
+#, fuzzy
+#~ msgid "Bluefish Project"
+#~ msgstr "Bluefish projesi adını giriniz"
+
+#~ msgid "_Line number:"
+#~ msgstr "Satır _Numarası:"
+
+#~ msgid "Keep _dialog"
+#~ msgstr "Diyalog Kutusunu _Kapatma"
+
+#~ msgid "/Document/Auto Close H_TML tags"
+#~ msgstr "/Doküman/Etiketleri _Kapat"
+
+#, fuzzy
+#~ msgid "/Document/Show _symbols"
+#~ msgstr "/Doküman/Kelime _Sayısı"
+
+#~ msgid "Editor"
+#~ msgstr "Editör"
+
+#~ msgid "Syntax highlighting"
+#~ msgstr "Yazım vutgulama"
+
+#~ msgid "parsing highlighting file..."
+#~ msgstr "vurgulama dosyası işleniyor..."
+
+#~ msgid "compiling highlighting patterns..."
+#~ msgstr "vurgulama şablonları derleniyor..."
+
+#~ msgid "don't change weight"
+#~ msgstr "yazı ağırluğını değiştirme"
+
+#~ msgid "force non-bold weight"
+#~ msgstr "kalın yazı kullanma"
+
+#~ msgid "don't change style"
+#~ msgstr "stili değiştirme"
+
+#~ msgid "force non-italic style"
+#~ msgstr "italik yazı kullanma"
+
+#~ msgid "Line numbers by default"
+#~ msgstr "Satır numaralarını göster"
+
+#, fuzzy
+#~ msgid "Block folding view by default"
+#~ msgstr "Met_ni kaydır"
+
+#, fuzzy
+#~ msgid "Symbols view by default"
+#~ msgstr "Kenar panelini göster"
+
+#, fuzzy
+#~ msgid "Tag autoclose by default"
+#~ msgstr "Kenar panelini göster"
+
+#~ msgid "Undo history size"
+#~ msgstr "Geri Al tarihçe boyutu"
+
+#, fuzzy
+#~ msgid "Backup file prefix"
+#~ msgstr "Yedek dosyası uzantısı"
+
+#~ msgid "Backup file suffix"
+#~ msgstr "Yedek dosyası uzantısı"
+
+#, fuzzy
+#~ msgid "whole document"
+#~ msgstr "D_okümanda"
+
+#, fuzzy
+#~ msgid "Load network DTD by default"
+#~ msgstr "Met_ni kaydır"
+
+#~ msgid " Add "
+#~ msgstr " Ekle "
+
+#~ msgid " Update "
+#~ msgstr " Güncelle "
+
+#~ msgid " Delete "
+#~ msgstr " Sil "
+
+#~ msgid " Up "
+#~ msgstr " Yukarı "
+
+#~ msgid " Down "
+#~ msgstr " Aşağı "
+
+#~ msgid " Sort "
+#~ msgstr " Sırala "
+
+#~ msgid "_Preview URL:"
+#~ msgstr "_Önizleme URL'i:"
+
+#~ msgid "Bookmarks positions could be incorrect. Delete bookmarks?"
+#~ msgstr "Yerimleri düzgün çalışmayabilir. Yerimleri silinsin mi?"
+
+#, fuzzy
+#~ msgid "Show files in filter"
+#~ msgstr "Filtredeki dosyatipleri"
+
+#~ msgid "Use separate file and directory view"
+#~ msgstr "Dosya ve dizin görüntülerini ayır"
+
+#~ msgid "Remote servers"
+#~ msgstr "Uzak sunucular"
+
+#~ msgid "Zope compatibility mode"
+#~ msgstr "Zope uyumluluk modu"
+
+#~ msgid "parsing custom menu file..."
+#~ msgstr "kişisel menü dosyası işleniyor..."
+
+#~ msgid "Cannot load reference file %s\n"
+#~ msgstr "%s başvuru dosyası yüklenemedi.\n"
+
+#~ msgid ""
+#~ "Bad root element in reference file %s\n"
+#~ "Should be <ref> or <r> and found %s"
+#~ msgstr ""
+#~ "%s başvuru dosyasında hatalı kök etiketi.\n"
+#~ "<ref> veya <r> yerine %s bulundu."
+
+#, fuzzy
+#~ msgid "Cannot load reference file, perhaps it is not well-formed."
+#~ msgstr "%s başvuru dosyası yüklenemedi.\n"
+
+#, fuzzy
+#~ msgid "Bad root element in reference file"
+#~ msgstr ""
+#~ "%s başvuru dosyasında hatalı kök etiketi.\n"
+#~ "<ref> veya <r> yerine %s bulundu."
+
+#~ msgid "Bad reference"
+#~ msgstr "Hatalı başvuru"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is probably an old reference file. \n"
+#~ "Please update it to the new format."
+#~ msgstr ""
+#~ "Başvuru dosyası güncel olmayabilir.\n"
+#~ "Lütfen güncelleyin."
+
+#, fuzzy
+#~ msgid "Unloading reference"
+#~ msgstr "Başvuru yükleniyor"
+
+#~ msgid " Freeing reference memory "
+#~ msgstr "Başvuru hafızası boşaltılıyor "
+
+#, fuzzy
+#~ msgid "Identifier"
+#~ msgstr "Ortala"
+
+#, fuzzy
+#~ msgid "Kind"
+#~ msgstr "Bul"
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "_Tip:"
+
+#, fuzzy
+#~ msgid "Input type"
+#~ msgstr "Bilgi penceresinde"
+
+#, fuzzy
+#~ msgid "Values"
+#~ msgstr "Değer"
+
+#, fuzzy
+#~ msgid "Help"
+#~ msgstr "/_Yardım"
+
+#, fuzzy
+#~ msgid "Add ref definition"
+#~ msgstr "Tanım Liste Maddesi (dt)"
+
+#~ msgid "TAG: "
+#~ msgstr "ETİKET: "
+
+#~ msgid "PARENT TAGS: "
+#~ msgstr "ANA ETIKETLER: "
+
+#~ msgid "FUNCTION: "
+#~ msgstr "İŞLEV: "
+
+#~ msgid "RETURNS: "
+#~ msgstr "DÖNÜŞ DEĞERİ: "
+
+#~ msgid "DEPENDENCIES: "
+#~ msgstr "BAĞIMLILIKLAR: "
+
+#, fuzzy
+#~ msgid "PROPERTY: "
+#~ msgstr "PARÇACIK: "
+
+#, fuzzy
+#~ msgid "VAR: "
+#~ msgstr "ETİKET: "
+
+#, fuzzy
+#~ msgid "SNIPPET: "
+#~ msgstr "PARÇACIK: "
+
+#~ msgid "PARAMS:\n"
+#~ msgstr "PARAMETRELER:\n"
+
+#~ msgid "ATTRIBUTES:\n"
+#~ msgstr "ÖZELLİKLER:\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "NOTES:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "NOTLAR:\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "EXAMPLES:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Örnekler:\n"
+
+#~ msgid ""
+#~ "SEE ALSO:\n"
+#~ " "
+#~ msgstr ""
+#~ "BKZ.:\n"
+#~ " "
+
+#~ msgid "Error"
+#~ msgstr "Hata"
+
+#~ msgid ""
+#~ "Perhaps you didn't load a library, or you did not select a library to "
+#~ "search in."
+#~ msgstr ""
+#~ "Bir kütüphane yüklemediniz, veya arama yapılacak kütüphaneyi seçmediniz."
+
+#~ msgid "Element %s not found"
+#~ msgstr "%s maddesi bulunamadı"
+
+#~ msgid "Element search"
+#~ msgstr "Madde ara"
+
+#, fuzzy
+#~ msgid "New library"
+#~ msgstr "Kütüphane sil"
+
+#, fuzzy
+#~ msgid "Library name"
+#~ msgstr "Dizin adı"
+
+#, fuzzy
+#~ msgid "Delete library?"
+#~ msgstr "Kütüphane sil"
+
+#, fuzzy
+#~ msgid "Reference not loaded."
+#~ msgstr "Başvuru bulunamadı"
+
+#, fuzzy
+#~ msgid "Bad element"
+#~ msgstr "Madde ekle"
+
+#, fuzzy
+#~ msgid "New note"
+#~ msgstr "Yeni proje"
+
+#, fuzzy
+#~ msgid "Title"
+#~ msgstr "_Başlık:"
+
+#, fuzzy
+#~ msgid "New group"
+#~ msgstr "Yeni proje"
+
+#, fuzzy
+#~ msgid "New description def"
+#~ msgstr "Tanım"
+
+#, fuzzy
+#~ msgid "Description text"
+#~ msgstr "Tanım"
+
+#, fuzzy
+#~ msgid "New values def"
+#~ msgstr "Yeni Pencere"
+
+#, fuzzy
+#~ msgid "Definitions"
+#~ msgstr "Tanım"
+
+#, fuzzy
+#~ msgid "New property"
+#~ msgstr "Yeni proje"
+
+#, fuzzy
+#~ msgid "New element"
+#~ msgstr "Madde ekle"
+
+#, fuzzy
+#~ msgid "No name"
+#~ msgstr "Dosya adı yok"
+
+#, fuzzy
+#~ msgid "Delete definition?"
+#~ msgstr "Tanım"
+
+#, fuzzy
+#~ msgid "Delete group"
+#~ msgstr " Sil "
+
+#, fuzzy
+#~ msgid "Delete group?"
+#~ msgstr " Sil "
+
+#, fuzzy
+#~ msgid "Do you really want to delete current entity?"
+#~ msgstr "%s silinsin mi?"
+
+#~ msgid "Show"
+#~ msgstr "Göster"
+
+#~ msgid "Attributes/Parameters"
+#~ msgstr "Özellikler/Parametreler"
+
+#~ msgid "Notes"
+#~ msgstr "Notlar"
+
+#~ msgid "Examples"
+#~ msgstr "Örnekler"
+
+#~ msgid "Links"
+#~ msgstr "Bağlantılar"
+
+#, fuzzy
+#~ msgid "Rescan directories"
+#~ msgstr "Referans dosyalarını yenile"
+
+#~ msgid "Edit"
+#~ msgstr "Düzenle"
+
+#~ msgid "Delete library"
+#~ msgstr "Kütüphane sil"
+
+#, fuzzy
+#~ msgid "New entity"
+#~ msgstr "Yeni dizin"
+
+#, fuzzy
+#~ msgid "Property definition"
+#~ msgstr "Tanım"
+
+#, fuzzy
+#~ msgid "Description definition"
+#~ msgstr "Tanım"
+
+#, fuzzy
+#~ msgid "Element"
+#~ msgstr "Madde ekle"
+
+#, fuzzy
+#~ msgid "Delete definition"
+#~ msgstr "Tanım"
+
+#~ msgid "/View/View _Custom Menu"
+#~ msgstr "/Görünüm/_Özel Menüyü Göster"
+
+#~ msgid "This custom search and replace requires a selection"
+#~ msgstr "Bu değiştirme aracı seçili alan üzerinde çalışır"
+
+#~ msgid "/_Custom menu"
+#~ msgstr "/_Kişisel Menü"
+
+#~ msgid "/Custom menu/Edit custom menu..."
+#~ msgstr "/Kişisel Menü/Düzenle..."
+
+#~ msgid "/Custom menu/Reset"
+#~ msgstr "/Kişisel Menü/Sıfırla"
+
+#~ msgid "/Custom menu/Load new"
+#~ msgstr "/Kişisel Menü/Yeni yükle"
+
+#~ msgid "Search Pattern"
+#~ msgstr "Şablon ara"
+
+#~ msgid "Formatstring Before"
+#~ msgstr "Önünde"
+
+#~ msgid "Formatstring After"
+#~ msgstr "Ardında"
+
+#~ msgid "The menupath you want to update does not exist yet"
+#~ msgstr "Güncellemek istediğiniz menü adresi bulunamadı"
+
+#~ msgid "Try 'add' instead."
+#~ msgstr "Ekle tuşunu deneyin."
+
+#~ msgid "The menupath you want to add already exists."
+#~ msgstr "Eklemek istediğiniz menü adresi zaten vardır."
+
+#~ msgid "The menupath should start with a / character"
+#~ msgstr "Menü adresi / karakteri ile başlamalıdır."
+
+#~ msgid "Custom Menu Editor"
+#~ msgstr "Kişisel Menü Editörü"
+
+#~ msgid "Add New Menu Entry"
+#~ msgstr "Yeni Madde Ekle"
+
+#~ msgid "Apply Changes"
+#~ msgstr "Uygula"
+
+#~ msgid "Delete Menu Entry"
+#~ msgstr "Maddeyi Sil"
+
+#~ msgid "Close Discards Changes"
+#~ msgstr "Saklamadan Çık"
+
+#~ msgid "Save Changes and Exit"
+#~ msgstr "Sakla ve Çık"
+
+#~ msgid "_Menu Path:"
+#~ msgstr "_Menü Adresi:"
+
+#~ msgid "Menu path"
+#~ msgstr "Menü adresi"
+
+#~ msgid "Variables"
+#~ msgstr "Değişkenler"
+
+#~ msgid "Custom Dialo_g"
+#~ msgstr "Özel _Düzenleme Aracı"
+
+#~ msgid "Custom Replace"
+#~ msgstr "Özel De_ğiştirme Aracı"
+
+#~ msgid "_Replace:"
+#~ msgstr "De_ğiştir:"
+
+#~ msgid "from cursor"
+#~ msgstr "imleçten sonrası"
+
+#~ msgid "Matc_hing:"
+#~ msgstr "A_ranan:"
+
+#~ msgid "normal"
+#~ msgstr "normal"
+
+#~ msgid "posix regular expressions"
+#~ msgstr "posix düzenli ifadeleri"
+
+#, fuzzy
+#~ msgid "Reference library"
+#~ msgstr "Başvuru arama"
+
+#, fuzzy
+#~ msgid "Info foreground color"
+#~ msgstr "Önplan rengi"
+
+#~ msgid ""
+#~ "Bluefish is an editor for experienced web designers and programmers. It "
+#~ "supports many programming and markup languages, but focuses on editing "
+#~ "dynamic and interactive websites. Bluefish is an open source development "
+#~ "project, released under the GPL license.\n"
+#~ "\n"
+#~ "For more information, visit the Bluefish Website at http://bluefish."
+#~ "openoffice.nl/\n"
+#~ "\n"
+#~ "This version of bluefish was compiled with the following options:\n"
+#~ msgstr ""
+#~ "Bluefish, deneyimli web tasarımcıları ve yazılımcılar için hazırlanmış "
+#~ "bir editördür. Bir çok programlama ve işaretleme diline destek verir; "
+#~ "ancak birincil hedefi etkileşimli ve dinamik web sitesi tasarımıdır. "
+#~ "Bluefish, bir açık kaynak geliştirme projesidir, ve GPL lisansı ile "
+#~ "kullanıma sunulmuştur.\n"
+#~ "Daha fazla bilgi için Bluefish web sitesini ziyaret edebilirsiniz: http://"
+#~ "bluefish.openoffice.nl/ \n"
+#~ "Bluefish'in bu versiyonu aşağıdaki seçenekler ile derlenmiştir: \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Project leader:\n"
+#~ "  Olivier Sessink <olivier@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Developers for this release:\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Jim Hayward\n"
+#~ "   <jimhayward@linuxexperience.net>\n"
+#~ "  Daniel Leidert\n"
+#~ "   <daniel.leidert@wgdd.de>\n"
+#~ "  Oskar Świda\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "  Eugene Morenko(More)\n"
+#~ "   <more@irpin.com>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "\n"
+#~ "Developers for previous releases:\n"
+#~ "  Chris Mazuc\n"
+#~ "  Neil Millar\n"
+#~ "  Gero Takke\n"
+#~ "  Bo Forslund\n"
+#~ "  David Arno\n"
+#~ "  Pablo De Napoli\n"
+#~ "  Santiago Capel Torres\n"
+#~ "  Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "  Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "  Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "  Antti-Juhani Kaijanaho\n"
+#~ "\n"
+#~ "Documentation:\n"
+#~ "  Scott White\n"
+#~ "   <wwsw3@earthlink.net>\n"
+#~ "  Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "  Anita Lewis\n"
+#~ "   <ajreiki@highstream.net>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "  Daniel Blair\n"
+#~ "   <joecamel@realcoders.org>\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Denny Reeh\n"
+#~ "\n"
+#~ "Package Maintainers:\n"
+#~ "  Debian:   Daniel Leidert\n"
+#~ "   <daniel.leidert@wgdd.de>\n"
+#~ "  Redhat:   Matthias Haase\n"
+#~ "   <matthias_haase@bennewitz.com>\n"
+#~ "  Mandrake: Todd Lyons\n"
+#~ "   <todd@mrball.net>\n"
+#~ "  Fink: Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "If you know of anyone missing from this list, please let us know\n"
+#~ "<bluefish@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Thanks to all who helped making this software available.\n"
+#~ msgstr ""
+#~ "Proje Lideri:\n"
+#~ "  Olivier Sessink <olivier@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Bu Versiyonda Yazılım Geliştirme:\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Jim Hayward\n"
+#~ "   <jimhayward@linuxexperience.net>\n"
+#~ "  Oskar Świda\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "  Eugene Morenko(More)\n"
+#~ "   <more@irpin.com>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "\n"
+#~ "Daha Önceki Versiyonlarda Yazılım Geliştirme:\n"
+#~ "  Chris Mazuc\n"
+#~ "  Neil Millar\n"
+#~ "  Gero Takke\n"
+#~ "  Bo Forslund\n"
+#~ "  David Arno\n"
+#~ "  Pablo De Napoli\n"
+#~ "  Santiago Capel Torres\n"
+#~ "  Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "  Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "  Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "  Antti-Juhani Kaijanaho\n"
+#~ "\n"
+#~ "Dokümantasyon:\n"
+#~ "  Scott White\n"
+#~ "   <wwsw3@earthlink.net>\n"
+#~ "  Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "  Anita Lewis\n"
+#~ "   <ajreiki@highstream.net>\n"
+#~ "  Alastair Porter\n"
+#~ "   <alastair@linuxexperience.com>\n"
+#~ "  Daniel Blair\n"
+#~ "   <joecamel@realcoders.org>\n"
+#~ "  Olivier Sessink\n"
+#~ "   <olivier@bluefish.openoffice.nl>\n"
+#~ "  Denny Reeh\n"
+#~ "\n"
+#~ "Kurulum Paketleri:\n"
+#~ "  Debian:   Davide Puricelli\n"
+#~ "   <evo@debian.org>\n"
+#~ "  Redhat:   Matthias Haase\n"
+#~ "   <matthias_haase@bennewitz.com>\n"
+#~ "  Mandrake: Todd Lyons\n"
+#~ "   <todd@mrball.net>\n"
+#~ "  Fink: Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "Bu listede bir eksik görüyorsanız lütfen bize bildirin:\n"
+#~ "<bluefish@bluefish.openoffice.nl>\n"
+#~ "\n"
+#~ "Bu uygulamaya destek veren herkese teşekkürler..\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Current translators:\n"
+#~ "\n"
+#~ "  Brazilian Portuguese: Anderson Rocha\n"
+#~ "   <anderson@maxlinux.com.br>\n"
+#~ "\n"
+#~ "  Bulgarian: Peio Popov\n"
+#~ "   <peio@peio.org>\n"
+#~ "\n"
+#~ "  Chinese: Ting Yang (Dormouse)\n"
+#~ "   <mouselinux@163.com>\n"
+#~ "\n"
+#~ "  Chinese, Traditional: OLS3\n"
+#~ "   <ols3@lxer.idv.tw>\n"
+#~ "\n"
+#~ "  Danish: Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "\n"
+#~ "  Finnish: Juho Roukala\n"
+#~ "   <j.mr@luukku.com>\n"
+#~ "\n"
+#~ "  French: Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "  German: Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "\n"
+#~ "  Hungarian: Péter Sáska\n"
+#~ "   <sasek@ccsystem.hu>\n"
+#~ "\n"
+#~ "  Italian: Stefano Canepa\n"
+#~ "   <sc@linux.it>\n"
+#~ "\n"
+#~ "  Japanese: Takeshi Hamasaki\n"
+#~ "   <hma@syd.odn.ne.jp>\n"
+#~ "\n"
+#~ "  Norwegian: Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "\n"
+#~ "  Polish: Oskar Swida\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "\n"
+#~ "  Portuguese: Lopo Pizarro\n"
+#~ "   <lopopizarro@netcabo.pt>\n"
+#~ "\n"
+#~ "  Russian: Eugene Rupakov\n"
+#~ "   <rupakov@jet.msk.su>\n"
+#~ "\n"
+#~ "  Serbian: Marko Milenović\n"
+#~ "   <raven@sbb.co.yu>\n"
+#~ "\n"
+#~ "  Spanish: Walter Oscar Echarri\n"
+#~ "   <wecharri@arnet.com.ar>\n"
+#~ "\n"
+#~ "  Swedish: David Smeringe\n"
+#~ "   <david.smeringe@telia.com>\n"
+#~ "\n"
+#~ "  Tamil: Murugapandian Barathee\n"
+#~ "   <barathee@yahoo.com>\n"
+#~ "\n"
+#~ "  Turkish: Oğuz Eren\n"
+#~ "   <ogzeren@gmail.com>\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Çevirmenler:\n"
+#~ "\n"
+#~ "  Almanca - Roland Steinbach\n"
+#~ "   <roland@netzblick.de>\n"
+#~ "\n"
+#~ "  Bulgarca - Peio Popov\n"
+#~ "   <peio@peio.org>\n"
+#~ "\n"
+#~ "  Çince - Ting Yang (Dormouse)\n"
+#~ "   <mouselinux@163.com>\n"
+#~ "\n"
+#~ "  Danca - Rasmus Toftdahl Olesen\n"
+#~ "   <rto@pohldata.dk>\n"
+#~ "\n"
+#~ "  Fince - Juho Roukala\n"
+#~ "   <j.mr@luukku.com>\n"
+#~ "\n"
+#~ "  Fransızca - Michèle Garoche\n"
+#~ "   <michele.garoche@easyconnect.fr>\n"
+#~ "\n"
+#~ "  İspanyolca - Walter Oscar Echarri\n"
+#~ "   <wecharri@arnet.com.ar>\n"
+#~ "\n"
+#~ "  İsveççe - David Smeringe\n"
+#~ "   <david.smeringe@telia.com>\n"
+#~ "\n"
+#~ "  İtalyanca - Stefano Canepa\n"
+#~ "   <sc@linux.it>\n"
+#~ "\n"
+#~ "  Lehçe - Oskar Swida\n"
+#~ "   <swida@aragorn.pb.bialystok.pl>\n"
+#~ "\n"
+#~ "  Macarca - Péter Sáska\n"
+#~ "   <sasek@ccsystem.hu>\n"
+#~ "\n"
+#~ "  Norveççe - Christian Tellefsen\n"
+#~ "   <chris@tellefsen.net>\n"
+#~ "\n"
+#~ "  Portekizce - Lopo Pizarro\n"
+#~ "   <lopopizarro@netcabo.pt>\n"
+#~ "\n"
+#~ "  Portekizce (Brezilya) - Anderson Rocha\n"
+#~ "   <anderson@maxlinux.com.br>\n"
+#~ "\n"
+#~ "  Rusça - Eugene Rupakov\n"
+#~ "   <rupakov@jet.msk.su>\n"
+#~ "\n"
+#~ "  Sırpça - Marko Milenović\n"
+#~ "   <raven@sbb.co.yu>\n"
+#~ "\n"
+#~ "  Tamil - Murugapandian Barathee\n"
+#~ "   <barathee@yahoo.com>\n"
+#~ "\n"
+
+#~ msgid "Info"
+#~ msgstr "Bilgi"
+
+#~ msgid "Translators"
+#~ msgstr "Çevirmenler"
+
+#, fuzzy
+#~ msgid "Authentication required"
+#~ msgstr "Giriş yapmanız gerekmektedir"
+
+#, fuzzy
+#~ msgid "Authentication is required for %s."
+#~ msgstr "%s için giriş yapmanız gerekmektedir."
+
+#~ msgid "Username:"
+#~ msgstr "Kullanıcı Adı:"
+
+#~ msgid "Password:"
+#~ msgstr "Şifre:"
+
+#~ msgid "_Add"
+#~ msgstr "_Ekle"
+
+#~ msgid ""
+#~ "\n"
+#~ "Usage: %s [options] [filenames ...]\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Kullanım: %s [seçenekler] [dosyalar ...]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Currently accepted options are:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Şu anki seçenekler:\n"
+
+#~ msgid "-v           current version\n"
+#~ msgstr "-v           versiyon\n"
+
+#~ msgid "-n           open new window\n"
+#~ msgstr "-n           yeni pencere aç\n"
+
+#~ msgid "-p filename  open project\n"
+#~ msgstr "-p dosyaadi  proje aç\n"
+
+#~ msgid "-h           this help screen\n"
+#~ msgstr "-h           bu yardım sayfasını görüntüle\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Type: "
+#~ msgstr ""
+#~ "\n"
+#~ "Tip: "
+
+#~ msgid " bytes"
+#~ msgstr " byte"
+
+#~ msgid "Syntax highlighting error for "
+#~ msgstr "Vurgulama hatası - "
+
+#, fuzzy
+#~ msgid "compiling pattern '%s': %s at offset %d"
+#~ msgstr "Birinci şablon : '%s' derleniyor: %s %d'de."
+
+#, fuzzy
+#~ msgid "studying pattern '%s': %s"
+#~ msgstr "Birinci şablon : '%s' çalışıyor: %s"
+
+#, fuzzy
+#~ msgid "compiling 2nd pattern '%s': %s at offset %d"
+#~ msgstr "İkinci şablon : '%s' derleniyor: %s %d'de."
+
+#, fuzzy
+#~ msgid "studying 2nd pattern '%s': %s"
+#~ msgstr "İkinci şablon : '%s' çalışıyor: %s"
+
+#, fuzzy
+#~ msgid "Update chars"
+#~ msgstr "Güncelleme karakterleri"
+
+#~ msgid "Editable"
+#~ msgstr "Değiştirilebilir"
+
+#, fuzzy
+#~ msgid "Content regex"
+#~ msgstr "Düzenli İfade"
+
+#, fuzzy
+#~ msgid "Inverse filter"
+#~ msgstr "Ters filtre"
+
+#~ msgid "filetype"
+#~ msgstr "dosya tipi"
+
+#~ msgid "Pattern name"
+#~ msgstr "Şablon adı"
+
+#~ msgid "Start pattern and end pattern"
+#~ msgstr "Başlangıç metni ve bitiş metni"
+
+#~ msgid "Only start pattern"
+#~ msgstr "Sadece başlangıç metni"
+
+#~ msgid "Subpattern from parent"
+#~ msgstr "Şablonu ebeveynden al"
+
+#~ msgid "Start pattern"
+#~ msgstr "Başlangıç metni"
+
+#~ msgid "no check"
+#~ msgstr "sınama"
+
+#~ msgid "check mtime"
+#~ msgstr "değişiklik zamanını sına"
+
+#~ msgid "check size"
+#~ msgstr "boyutu sına"
+
+#~ msgid "save"
+#~ msgstr "kaydet"
+
+#~ msgid "abort"
+#~ msgstr "iptal"
+
+#~ msgid "ask"
+#~ msgstr "sor"
+
+#~ msgid "Action on backup failure"
+#~ msgstr "Yedekleme hatası eylemi"
+
+#~ msgid "File modified on disk check "
+#~ msgstr "Dosyanın değiştirilmiş olup olmadığını sına"
+
+#~ msgid "Directory icon"
+#~ msgstr "Dizin simgesi"
+
+#, fuzzy
+#~ msgid "File filters"
+#~ msgstr "Dosya filtreleri"
+
+#~ msgid "Patterns"
+#~ msgstr "Şablonlar"
+
+#~ msgid "Java programming"
+#~ msgstr "Java programlama"
+
+#, fuzzy
+#~ msgid "_Case sensitive matching"
+#~ msgstr "Büyük/küçük harf duyarlı"
+
+#~ msgid "/File/tearoff1"
+#~ msgstr "/Dosya/tearoff1"
+
+#~ msgid "/File/Open recent/tearoff1"
+#~ msgstr "/Dosya/Son kullanılanlar/tearoff1"
+
+#~ msgid "/File/sep1"
+#~ msgstr "/Dosya/sep1"
+
+#~ msgid "/File/sep2"
+#~ msgstr "/Dosya/sep2"
+
+#~ msgid "/File/sep3"
+#~ msgstr "/Dosya/sep3"
+
+#~ msgid "/File/sep4"
+#~ msgstr "/Dosya/sep4"
+
+#~ msgid "/File/sep5"
+#~ msgstr "/Dosya/sep5"
+
+#~ msgid "/Edit/Tearoff1"
+#~ msgstr "/Düzenle/Tearoff1"
+
+#~ msgid "/Edit/sep1"
+#~ msgstr "/Düzenle/sep1"
+
+#~ msgid "/Edit/sep2"
+#~ msgstr "/Düzenle/sep2"
+
+#~ msgid "/Edit/sep3"
+#~ msgstr "/Düzenle/sep3"
+
+#~ msgid "/Tools/Tearoff1"
+#~ msgstr "/Düzenle/Özel Değiştirme/Tearoff1"
+
+#~ msgid "/Tools/_ISO8859 to HTML Entities"
+#~ msgstr "/Düzenle/Özel Değiştirme/_ISO8859 --> HTML Nesneleri"
+
+#~ msgid "/Tools/To _Lowercase"
+#~ msgstr "/Düzenle/Özel Değiştirme/_Küçük Harfe Çevir"
+
+#~ msgid "/Edit/sep4"
+#~ msgstr "/Düzenle/sep4"
+
+#~ msgid "/Edit/sep5"
+#~ msgstr "/Düzenle/sep5"
+
+#~ msgid "/Edit/sep6"
+#~ msgstr "/Düzenle/sep6"
+
+#~ msgid "/View/tearoff1"
+#~ msgstr "/Görünüm/tearoff1"
+
+#~ msgid "/Document/tearoff1"
+#~ msgstr "/Doküman/tearoff1"
+
+#~ msgid "/Document/sep2"
+#~ msgstr "/Doküman/sep2"
+
+#~ msgid "/Document/sep3"
+#~ msgstr "/Doküman/sep3"
+
+#~ msgid "/Document/Document Type/tearoff1"
+#~ msgstr "/Doküman/Doküman Tipi/tearoff1"
+
+#~ msgid "/Document/Character Encoding/tearoff1"
+#~ msgstr "/Doküman/Yazıtipi Düzeni/tearoff1"
+
+#~ msgid "/Document/sep4"
+#~ msgstr "/Doküman/sep4"
+
+#~ msgid "/Document/sep5"
+#~ msgstr "/Doküman/sep5"
+
+#~ msgid "/Go/tearoff1"
+#~ msgstr "/Git/tearoff1"
+
+#~ msgid "/Go/sep1"
+#~ msgstr "/Git/sep1"
+
+#~ msgid "/Project/tearoff1"
+#~ msgstr "/Proje/tearoff1"
+
+#~ msgid "/Project/Open recent/tearoff1"
+#~ msgstr "/Proje/Son kullanılanlar/tearoff1"
+
+#~ msgid "/Project/sep2"
+#~ msgstr "/Proje/sep2"
+
+#~ msgid "/Tools/tearoff1"
+#~ msgstr "/Harici/tearoff1"
+
+#~ msgid "/_Help"
+#~ msgstr "/_Yardım"
+
+#~ msgid "/Help/_About..."
+#~ msgstr "/Yardım/_Hakkında..."
+
+#~ msgid "/Custom menu/sep"
+#~ msgstr "/Kişisel Menü/sep"
+
+#~ msgid "Notebook tab font (leave empty for gtk default)"
+#~ msgstr "Not defteri sekme yazıtipi (gtk için boç bırakın, varsayılan)"
+
+#, fuzzy
+#~ msgid "General scanner preferences"
+#~ msgstr "Referans dosyalarını yenile"
+
+#~ msgid "Confirm replace"
+#~ msgstr "Değiştirme onayı"
+
+#~ msgid "Replace selected text?"
+#~ msgstr "Seçili metin değiştirilsin mi?"
+
+#~ msgid "Search: no match found"
+#~ msgstr "Arama: uygun metin bulunamadı"
+
+#~ msgid "\\0 refers to the first subsearch_pattern, \\1 to the second etc."
+#~ msgstr "\\0 ilk arama şablonunu, \\1 ikincisini gösterir vs."
+
+#~ msgid "Beginning of document till end"
+#~ msgstr "Dokümanın tamamı"
+
+#~ msgid "Current position till end"
+#~ msgstr "İmleçten sonrası"
+
+#~ msgid "Beginning of selection till end of selection"
+#~ msgstr "Seçili alan içerisinde"
+
+#~ msgid "All opened files begin till end"
+#~ msgstr "Tüm açık dosyalarda"
+
+#~ msgid "Disabled"
+#~ msgstr "Geçersiz"
+
+#~ msgid "_Match case"
+#~ msgstr "_Büyük/küçük Harf Duyarlı"
+
+#~ msgid "Prompt _before replace"
+#~ msgstr "Değiştirmeden önce _sor"
+
+#~ msgid "Replace o_nce"
+#~ msgstr "Bir _kere değiştir"
+
+#~ msgid ""
+#~ "This message is shown since you do not have any items in the Quickbar.\n"
+#~ "\n"
+#~ "If you right-click a button in the HTML toolbars you can add buttons to "
+#~ "the Quickbar."
+#~ msgstr ""
+#~ "Kişisel Araç Çubuğunuza eklenmiş hiçbir araç yok.\n"
+#~ "HTML araç çubuklarındaki araçlar üzerinde sağ tuşla tıklayarak "
+#~ "istediğiniz aracı Kişisel Araç Çubuğu'na ekleyebilirsiniz."
+
+#~ msgid "Edit color"
+#~ msgstr "Rengi değiştir"
+
+#~ msgid "Edit tag"
+#~ msgstr "Etiketi değiştir"
+
+#~ msgid "Could not delete \n"
+#~ msgstr "Silinemedi \n"
+
+#~ msgid "Error creating path"
+#~ msgstr "Dosya adresi yaratılamadı"
+
+#~ msgid "The specified pathname already exists."
+#~ msgstr "Verilen dosya adresi zaten var."
+
+#~ msgid "Directory name"
+#~ msgstr "Dizin adı"
+
+#~ msgid "Opening directory..."
+#~ msgstr "Dizin açılıyor..."
+
+#~ msgid "Follow focus"
+#~ msgstr "Seçili nesneyi odakla"
+
+#~ msgid "Do_n't save"
+#~ msgstr "Sakla_madan Çık"
+
+#~ msgid ""
+#~ "Bad root element in reference file %s\n"
+#~ "Should be <ref>or <r> and found %s"
+#~ msgstr ""
+#~ "%s başvuru dosyasında hatalı kök etiketi.\n"
+#~ "<ref> veya <r> yerine %s bulundu."
+
+#~ msgid "Select font for reference view"
+#~ msgstr "Başvuru bölümü için yazıtipi seçiniz"
+
+#~ msgid "Set reference colors"
+#~ msgstr "Başvuru renklerini seçiniz"
+
+#~ msgid "Settings"
+#~ msgstr "Ayarlar"
+
+#~ msgid "Set view font"
+#~ msgstr "Yazıtipi seç"
+
+#~ msgid "Dialog"
+#~ msgstr "Diyalog"
+
+#~ msgid "Options"
+#~ msgstr "Seçenekler"
+
+#~ msgid "Left doubleclick action"
+#~ msgstr "Sol çift tıklama eylemi"
+
+#~ msgid "Info type"
+#~ msgstr "Bilgi penceresinde"
+
+#~ msgid ""
+#~ "Perhaps you didn't load a reference, or you did not select a reference to "
+#~ "search in."
+#~ msgstr ""
+#~ "Bir başvuru yüklemediniz, veya arama yapılacak başvuruyu seçmediniz."
+
+#~ msgid "Search"
+#~ msgstr "Ara"
+
+#~ msgid "QuickStart..."
+#~ msgstr "Hızlı Başlangıç..."
+
+#~ msgid "Body..."
+#~ msgstr "Gövde (body) ..."
+
+#~ msgid "Bold"
+#~ msgstr "Kalın (b)"
+
+#~ msgid "Italic"
+#~ msgstr "İtalik (i)"
+
+#~ msgid "Paragraph"
+#~ msgstr "Paragraf (p)"
+
+#~ msgid "Break"
+#~ msgstr "Satır (br)"
+
+#~ msgid "Break and clear"
+#~ msgstr "Satır/temizle (br clear)"
+
+#~ msgid "Non-breaking space"
+#~ msgstr "boşluk (nbsp)"
+
+#~ msgid "Anchor..."
+#~ msgstr "Bağlantı (a) ..."
+
+#~ msgid "Rule..."
+#~ msgstr "Yatay Çizgi (hr) ..."
+
+#~ msgid "Center"
+#~ msgstr "Ortala"
+
+#~ msgid "Right Justify"
+#~ msgstr "Sağa Dayalı"
+
+#~ msgid "Comment"
+#~ msgstr "Yorum"
+
+#~ msgid "E-Mail..."
+#~ msgstr "E-Mail..."
+
+#~ msgid "Font..."
+#~ msgstr "Yazıtipi (font) ..."
+
+#~ msgid "Base Font Size..."
+#~ msgstr "Varsayılan Yazıtipi (basefont) ..."
+
+#~ msgid "Font Size -1"
+#~ msgstr "Yazıtipini Küçült"
+
+#~ msgid "Preformatted Text"
+#~ msgstr "Biçimlendirilmiş Yazı (pre)"
+
+#~ msgid "Subscript"
+#~ msgstr "Alt yazı (sub)"
+
+#~ msgid "Superscript"
+#~ msgstr "Üst yazı (sup)"
+
+#~ msgid "Strong"
+#~ msgstr "Kuvvetli (strong)"
+
+#~ msgid "Emphasis"
+#~ msgstr "Vurgulu (em)"
+
+#~ msgid "Heading 1"
+#~ msgstr "Başlık 1 (h1)"
+
+#~ msgid "Heading 2"
+#~ msgstr "Başlık 2 (h2)"
+
+#~ msgid "Heading 3"
+#~ msgstr "Başlık 3 (h3)"
+
+#~ msgid "Heading 4"
+#~ msgstr "Başlık 4 (h4)"
+
+#~ msgid "Heading 5"
+#~ msgstr "Başlık 5 (h5)"
+
+#~ msgid "Heading 6"
+#~ msgstr "Başlık 6 (h6)"
+
+#~ msgid "Table Wizard..."
+#~ msgstr "Tablo Sihirbazı..."
+
+#~ msgid "Table..."
+#~ msgstr "Tablo (table) ..."
+
+#~ msgid "Table Row..."
+#~ msgstr "Tablo Satırı (tr) ... "
+
+#~ msgid "Table Header..."
+#~ msgstr "Tablo Başlığı (th) ..."
+
+#~ msgid "Table Data..."
+#~ msgstr "Tablo Hücresi (td) ..."
+
+#~ msgid "Table"
+#~ msgstr "Tablo"
+
+#~ msgid "Table Row"
+#~ msgstr "Tablo Satırı"
+
+#~ msgid "Table Data"
+#~ msgstr "Tablo Hücresi"
+
+#~ msgid "Frame Wizard..."
+#~ msgstr "Çerçeve Sihirbazı..."
+
+#~ msgid "Frameset..."
+#~ msgstr "Çerçeve seti (frameset) ..."
+
+#~ msgid "Frame..."
+#~ msgstr "Çerçeve (frame) ..."
+
+#~ msgid "Frameset"
+#~ msgstr "Çerçeve seti (frameset)"
+
+#~ msgid "Frame"
+#~ msgstr "Çerçeve (frame)"
+
+#~ msgid "Noframes"
+#~ msgstr "Çerçevesiz (noframe)"
+
+#~ msgid "Target"
+#~ msgstr "Varsayılan Hedef"
+
+#~ msgid "Form..."
+#~ msgstr "Form..."
+
+#~ msgid "Input Button..."
+#~ msgstr "Giriş Düğmesi (button) ..."
+
+#~ msgid "Input Text..."
+#~ msgstr "Metin Kutusu (text) ... "
+
+#~ msgid "Input Hidden..."
+#~ msgstr "Gizli Metin Kutusu (hidden) ..."
+
+#~ msgid "Textarea..."
+#~ msgstr "Metin Alanı (textarea) ..."
+
+#~ msgid "Input Radio Button..."
+#~ msgstr "Radyo Düğmesi (radio) ..."
+
+#~ msgid "Input Check Box..."
+#~ msgstr "Onay kutusu (checkbox) ..."
+
+#~ msgid "Select..."
+#~ msgstr "Seçenek Listesi (select) ..."
+
+#~ msgid "Option..."
+#~ msgstr "Seçenek (option) ..."
+
+#~ msgid "Option group..."
+#~ msgstr "Seçenek Grubu (optgroup) ..."
+
+#~ msgid "Button..."
+#~ msgstr "Düğme (button) ..."
+
+#~ msgid "Quick List..."
+#~ msgstr "Liste..."
+
+#~ msgid "Unordered List"
+#~ msgstr "Sırasız Liste (ul)"
+
+#~ msgid "Ordered List"
+#~ msgstr "Sıralı Liste (ol)"
+
+#~ msgid "List Item"
+#~ msgstr "Liste Maddesi (li)"
+
+#~ msgid "Definition List"
+#~ msgstr "Tanım Listesi"
+
+#~ msgid "Definition Term"
+#~ msgstr "Tanım Liste Maddesi (dt)"
+
+#~ msgid "Definition"
+#~ msgstr "Tanım"
+
+#~ msgid "Create stylesheet..."
+#~ msgstr "Stil Sayfası Yarat"
+
+#~ msgid "Span..."
+#~ msgstr "Span..."
+
+#~ msgid "Div..."
+#~ msgstr "Div..."
+
+#~ msgid "Style"
+#~ msgstr "Stil"
+
+#~ msgid "Link to stylesheet..."
+#~ msgstr "Stil sayfasına bağlantı"
+
+#~ msgid "Insert image..."
+#~ msgstr "Resim Ekle (img) ..."
+
+#~ msgid "Insert thumbnail..."
+#~ msgstr "Resim Bağlantısı Ekle..."
+
+#~ msgid "Multi thumbnail..."
+#~ msgstr "Çoklu Resim Bağlantısı..."
+
+#~ msgid "Code"
+#~ msgstr "Kod (code)"
+
+#~ msgid "Sample"
+#~ msgstr "Örnek (samp)"
+
+#~ msgid "Keyboard"
+#~ msgstr "Klavye (kbd)"
+
+#~ msgid "Variable"
+#~ msgstr "Değişken (var)"
+
+#~ msgid "Citation"
+#~ msgstr "Kaynakça (cite)"
+
+#~ msgid "Abbreviation"
+#~ msgstr "Kısaltma (abbr)"
+
+#~ msgid "Acronym"
+#~ msgstr "Kısaltma (acronym)"
+
+#~ msgid "Remove from quickbar"
+#~ msgstr "Kişisel Araç Çubuğundan Çıkart"
+
+#~ msgid " Quick bar "
+#~ msgstr " Kişisel "
+
+#~ msgid "Heading"
+#~ msgstr "Başlık"
+
+#~ msgid " Standard bar "
+#~ msgstr " Standart "
+
+#~ msgid "Context formatting"
+#~ msgstr "Yapısal Biçimlendirme"
+
+#~ msgid " Fonts "
+#~ msgstr " Yazıtipi "
+
+#~ msgid " Tables "
+#~ msgstr " Tablolar "
+
+#~ msgid " Frames "
+#~ msgstr " Çerçeveler "
+
+#~ msgid " Forms "
+#~ msgstr " Formlar "
+
+#~ msgid " List "
+#~ msgstr " Listeler "
+
+#~ msgid "Cascading StyleSheet dialog"
+#~ msgstr "CSS düzenleme"
+
+#~ msgid "_Selector:"
+#~ msgstr "_Etiket:"
+
+#~ msgid "_Property:"
+#~ msgstr "_Özellik:"
+
+#~ msgid "_Value:"
+#~ msgstr "_Değer:"
+
+#~ msgid "Property"
+#~ msgstr "Özellik"
+
+#~ msgid " _Update "
+#~ msgstr " _Güncelle "
+
+#~ msgid " _Delete "
+#~ msgstr " _Sil "
+
+#~ msgid "_Style..."
+#~ msgstr "_Stil..."
+
+#~ msgid "Bluefish: Select color"
+#~ msgstr "Bluefish: Renk seçimi"
+
+#~ msgid "  _Time (%i:%i:%i)"
+#~ msgstr "  _Zaman (%i:%i:%i)"
+
+#~ msgid "  Day of the _week (Sunday)"
+#~ msgstr "  Haftanın _Günü (Pazar)"
+
+#~ msgid "  Day of the _week (Monday)"
+#~ msgstr "  Haftanın _Günü (Pazartesi)"
+
+#~ msgid "  Day of the _week (Tuesday)"
+#~ msgstr "  Haftanın _Günü (Salı)"
+
+#~ msgid "  Day of the _week (Wednesday)"
+#~ msgstr "  Haftanın _Günü (Çarşamba)"
+
+#~ msgid "  Day of the _week (Thursday)"
+#~ msgstr "  Haftanın _Günü (Perşembe)"
+
+#~ msgid "  Day of the _week (Friday)"
+#~ msgstr "  Haftanın _Günü (Cuma)"
+
+#~ msgid "  Day of the _week (Saturday)"
+#~ msgstr "  Haftanın _Günü (Cumartesi)"
+
+#~ msgid "You appear to have a non existant day!\n"
+#~ msgstr "Varolmayan bir gün seçtiniz!\n"
+
+#~ msgid "  _Date (%i/%i/%i)"
+#~ msgstr "  Tarih (%i/%i/%i)"
+
+#~ msgid "  _Unix Time (%i)"
+#~ msgstr "  _Unix Tarihi (%i)"
+
+#~ msgid "  Unix Date _String (%s"
+#~ msgstr "  Unix Tarih _İfadesi (%s"
+
+#~ msgid "Quick Anchor"
+#~ msgstr "Bağlantı"
+
+#~ msgid "Attributes"
+#~ msgstr "Özellikler"
+
+#~ msgid "_HREF:"
+#~ msgstr "_HREF:"
+
+#~ msgid "_Target:"
+#~ msgstr "_Hedef:"
+
+#~ msgid "Custo_m:"
+#~ msgstr "Ö_zel:"
+
+#~ msgid "Events"
+#~ msgstr "Olaylar"
+
+#~ msgid "OnClic_k:"
+#~ msgstr "_Tek Tıklayınca:"
+
+#~ msgid "OnD_blClick:"
+#~ msgstr "_Çift Tıklayınca"
+
+#~ msgid "OnMouseO_ver:"
+#~ msgstr "Fare Üzerine_Gelince:"
+
+#~ msgid "OnMouse_Down:"
+#~ msgstr "Fare Tuşu _Basılınca:"
+
+#~ msgid "OnMouse_Move:"
+#~ msgstr "Fare _Hareket Edince:"
+
+#~ msgid "OnMouseOu_t:"
+#~ msgstr "Fare Te_rkedince:"
+
+#~ msgid "OnMouse_Up:"
+#~ msgstr "Fare Tuşu _Bırakılınca:"
+
+#~ msgid "OnKeyDo_wn:"
+#~ msgstr "T_uş Basılınca:"
+
+#~ msgid "OnKey_Press:"
+#~ msgstr "Tuş Bası_lıp Bırakılınca:"
+
+#~ msgid "OnKe_yUp:"
+#~ msgstr "Tuş Bı_rakılınca"
+
+#~ msgid "Div"
+#~ msgstr "Div"
+
+#~ msgid "Span"
+#~ msgstr "Span"
+
+#~ msgid "Ali_gn:"
+#~ msgstr "_Hizalama"
+
+#~ msgid "Cl_ass:"
+#~ msgstr "_Sınıf:"
+
+#~ msgid "St_yle:"
+#~ msgstr "S_til:"
+
+#~ msgid "_ID:"
+#~ msgstr "_Ad:"
+
+#~ msgid "Horizontal Rule"
+#~ msgstr "Yatay Çizgi"
+
+#~ msgid "_Align:"
+#~ msgstr "_Hizalama:"
+
+#~ msgid "_Height:"
+#~ msgstr "_Yükseklik:"
+
+#~ msgid "_Width:"
+#~ msgstr "_Genişlik:"
+
+#~ msgid "Is _percent"
+#~ msgstr "_Yüzde Değeri"
+
+#~ msgid "Body"
+#~ msgstr "Body"
+
+#~ msgid "On_Load:"
+#~ msgstr "_Yüklenince"
+
+#~ msgid "On_UnLoad:"
+#~ msgstr "_Çıkılınca"
+
+#~ msgid "Depreciated options"
+#~ msgstr "Eski seçenekler"
+
+#~ msgid "Background _Image:"
+#~ msgstr "Arkaplan _Resmi:"
+
+#~ msgid "Back_ground Color:"
+#~ msgstr "Arkaplan R_engi:"
+
+#~ msgid "_Text Color:"
+#~ msgstr "_Metin Rengi:"
+
+#~ msgid "_Link Color:"
+#~ msgstr "_Bağlantı Rengi:"
+
+#~ msgid "_Active Link Color:"
+#~ msgstr "A_ktif Bağlantı Rengi:"
+
+#~ msgid "Meta"
+#~ msgstr "Meta"
+
+#~ msgid "_HTTP-EQUIV:"
+#~ msgstr "_HTTP-EQUIV:"
+
+#~ msgid "_Scheme:"
+#~ msgstr "_Şema:"
+
+#~ msgid "Base Font"
+#~ msgstr "Varsayılan Yazıtipi"
+
+#~ msgid "Size"
+#~ msgstr "Boyut"
+
+#~ msgid "Color"
+#~ msgstr "Renk"
+
+#~ msgid "Face"
+#~ msgstr "Tip"
+
+#~ msgid "Custom"
+#~ msgstr "Özel"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "_Email address:"
+#~ msgstr "_Email adresi:"
+
+#~ msgid "UrlEncoded _subject:"
+#~ msgstr "Email Konusu:"
+
+#~ msgid "UrlEncoded _body:"
+#~ msgstr "Email İçeriği:"
+
+#~ msgid "Quick List"
+#~ msgstr "Liste"
+
+#~ msgid "_Rows:"
+#~ msgstr "_Satır:"
+
+#~ msgid "Or_dered"
+#~ msgstr "Sıra_lı"
+
+#~ msgid "_Unordered"
+#~ msgstr "Sıra_sız"
+
+#~ msgid "Style:"
+#~ msgstr "Stil:"
+
+#~ msgid "Co_ls:"
+#~ msgstr "Sü_tun:"
+
+#~ msgid "_Add <frame> elements"
+#~ msgstr "Çerçeveleri _Ekle"
+
+#~ msgid "_Source:"
+#~ msgstr "_Kaynak:"
+
+#~ msgid "Margin _Width:"
+#~ msgstr "Kenar Boşluğu _Genişliği:"
+
+#~ msgid "Margin _Height:"
+#~ msgstr "Kenar Boşluğu _Yüksekliği"
+
+#~ msgid "Scrollin_g:"
+#~ msgstr "_Kaydırma Çubuğu:"
+
+#~ msgid "_Frameborder:"
+#~ msgstr "Kenar Ka_lınlığı"
+
+#~ msgid "No _Resize:"
+#~ msgstr "Boyutlandırmaya Kapalı:"
+
+#~ msgid "Embed"
+#~ msgstr "Gömük"
+
+#~ msgid "Bo_rder:"
+#~ msgstr "Kenar:"
+
+#, fuzzy
+#~ msgid "Script"
+#~ msgstr "Script"
+
+#~ msgid "_Type:"
+#~ msgstr "_Tip:"
+
+#~ msgid "Link"
+#~ msgstr "Bağlantı"
+
+#~ msgid "_Href:"
+#~ msgstr "_Href:"
+
+#~ msgid "Href_lang:"
+#~ msgstr "Href_Dili:"
+
+#, fuzzy
+#~ msgid "_Forward Relation:"
+#~ msgstr "İ_leri İlişki:"
+
+#~ msgid "Media:"
+#~ msgstr "Medya:"
+
+#~ msgid "L_ang:"
+#~ msgstr "_Dil:"
+
+#~ msgid "_Custom:"
+#~ msgstr "_Özel:"
+
+#~ msgid "_Action:"
+#~ msgstr "_Eylem:"
+
+#~ msgid "Metho_d:"
+#~ msgstr "_Metod:"
+
+#, fuzzy
+#~ msgid "_Enctype:"
+#~ msgstr "_Şfireleme:"
+
+#~ msgid "Select"
+#~ msgstr "Seçenek listesi"
+
+#~ msgid "Si_ze:"
+#~ msgstr "_Boyut:"
+
+#~ msgid "Multiple _Selections:"
+#~ msgstr "_Çoklu Seçim:"
+
+#~ msgid "_Label:"
+#~ msgstr "_Etiket:"
+
+#~ msgid "_Selected:"
+#~ msgstr "_Seçili:"
+
+#~ msgid "Option group"
+#~ msgstr "Seçenek grubu"
+
+#~ msgid "Input"
+#~ msgstr "Giriş"
+
+#~ msgid "_Checked:"
+#~ msgstr "_İşaretli:"
+
+#~ msgid "Max _Length:"
+#~ msgstr "Maks _Uzunluk:"
+
+#~ msgid "_Accept:"
+#~ msgstr "_Kabul:"
+
+#~ msgid "C_ustom:"
+#~ msgstr "_Özel:"
+
+#~ msgid "On_Focus:"
+#~ msgstr "_Odaklanınca:"
+
+#~ msgid "On_Blur:"
+#~ msgstr "Odak _Kaybolunca:"
+
+#~ msgid "On_Select:"
+#~ msgstr "_Seçilince:"
+
+#~ msgid "On_Change:"
+#~ msgstr "Seçim _Değişince:"
+
+#~ msgid "Button"
+#~ msgstr "Düğme"
+
+#~ msgid "Cell _Padding:"
+#~ msgstr "Hücre _Aralığı:"
+
+#~ msgid "C_ell Spacing:"
+#~ msgstr "Hücre _Boşluğu:"
+
+#~ msgid "Backgrou_nd Color:"
+#~ msgstr "Arka_plan Rengi:"
+
+#~ msgid "_Frame:"
+#~ msgstr "_Çerçeve:"
+
+#~ msgid "R_ules:"
+#~ msgstr "Ku_rallar:"
+
+#~ msgid "Co_l Span:"
+#~ msgstr "Sütunlara _Yayma:"
+
+#~ msgid "_Row Span:"
+#~ msgstr "Sa_tırlara Yayma:"
+
+#~ msgid "No Wra_p:"
+#~ msgstr "Alt satıra geç_mesin:"
+
+#~ msgid "Insert thumbnail"
+#~ msgstr "Resim bağlantısı ekle"
+
+#~ msgid "Insert image"
+#~ msgstr "Resim ekle"
+
+#~ msgid "Preview"
+#~ msgstr "Önizleme"
+
+#~ msgid "Hei_ght:"
+#~ msgstr "Yü_kseklik:"
+
+#~ msgid "_Usemap:"
+#~ msgstr "_Harita adı:"
+
+#~ msgid "Alternate _text:"
+#~ msgstr "Alternatif _metin:"
+
+#~ msgid "_Hspace:"
+#~ msgstr "Yatay aralama:"
+
+#~ msgid "_Vspace:"
+#~ msgstr "Dikey a_ralama:"
+
+#~ msgid "Borde_r:"
+#~ msgstr "Sı_nır"
+
+#~ msgid "Select files for thumbnail creation"
+#~ msgstr "Bağlantısı yaratılacak resimleri seçin"
+
+#~ msgid "Scaling (%)"
+#~ msgstr "_Ölçekleme (%)"
+
+#~ msgid "Width"
+#~ msgstr "Genişlik"
+
+#~ msgid "Height"
+#~ msgstr "Yükseklik"
+
+#~ msgid "Multi thumbnail"
+#~ msgstr "Çoklu resim bağlantısı"
+
+#~ msgid "By width, keep aspect ratio"
+#~ msgstr "Genişliğe göre, aynı ölçekte"
+
+#~ msgid "By height, keep aspect ratio"
+#~ msgstr "Yüksekliğe göre, aynı ölçekte"
+
+#~ msgid "By width and height, ignore aspect ratio"
+#~ msgstr "Yükseklik ve genişliğe göre, farklı ölçekte"
+
+#~ msgid ""
+#~ "%r: original filename  %t: thumbnail filename\n"
+#~ "%w: original width  %h: original height\n"
+#~ "%x: thumbnail width  %y: thumbnail height\n"
+#~ "%b: original size (bytes)"
+#~ msgstr ""
+#~ "%r: orijinal dosya adı  %t: resim bağlantısı dosya adı\n"
+#~ "%w: orijinal genişlik  %h: orijinal yükseklik\n"
+#~ "%x: resim bağlantısı genişliği  %y: resim bağlantısı yüksekliği\n"
+#~ "%b: orijinal boyut (byte)"
+
+#~ msgid "/View/View _HTML Toolbar"
+#~ msgstr "/Görünüm/_HTML Araç Çubuğunu Göster"
+
+#~ msgid "/_Tags"
+#~ msgstr "/Görünüm/_Etiketler"
+
+#~ msgid "/Tags/Tearoff1"
+#~ msgstr "/Etiketler/Tearoff1"
+
+#~ msgid "/Tags/_Headings"
+#~ msgstr "/Etiketler/_Başlıklar"
+
+#~ msgid "/Tags/Headings/Tearoff1"
+#~ msgstr "/Etiketler/Başlıklar/Tearoff1"
+
+#~ msgid "/Tags/Headings/H_1"
+#~ msgstr "/Etiketler/Başlıklar/H_1"
+
+#~ msgid "/Tags/Headings/H_2"
+#~ msgstr "/Etiketler/Başlıklar/H_2"
+
+#~ msgid "/Tags/Headings/H_3"
+#~ msgstr "/Etiketler/Başlıklar/H_3"
+
+#~ msgid "/Tags/Headings/H_4"
+#~ msgstr "/Etiketler/Başlıklar/H_4"
+
+#~ msgid "/Tags/Headings/H_5"
+#~ msgstr "/Etiketler/Başlıklar/H_5"
+
+#~ msgid "/Tags/Headings/H_6"
+#~ msgstr "/Etiketler/Başlıklar/H_6"
+
+#~ msgid "/Tags/Special/tearoff1"
+#~ msgstr "/Etiketler/Özel/tearoff1"
+
+#~ msgid "/Tags/Special/_Accent"
+#~ msgstr "/Etiketler/Özel/_Özel Karakterler"
+
+#~ msgid "/Tags/Special/Accent/tearoff1"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/_Uppercase"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/_Büyük Harf"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/_A-I"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/_A-I"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/tearoff1"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A grave À"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/A grave À"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A acute Á"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/A acute Á"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A circumflex Â"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/A circumflex Â"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A tilde Ã"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/A tilde Ã"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/AE ligature Æ"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/AE ligature Æ"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A diaeresis Ä"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/A diaeresis Ä"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/A ring Å"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/A ring Å"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/C cedilla Ç"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/C cedilla Ç"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E grave È"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/E grave È"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E acute É"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/E acute É"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E circumflex Ê"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/E circumflex Ê"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/E diaeresis Ë"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/E diaeresis Ë"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I grave Ì"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/I grave Ì"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I acute Í"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/I acute Í"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I circumflex Î"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/I circumflex Î"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/A-I/I diaeresis Ï"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/A-I/I diaeresis Ï"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/_J-Z"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/_J-Z"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/tearoff1"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/N tilde Ñ"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/N tilde Ñ"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O grave Ò"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/O grave Ò"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O acute Ó"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/O acute Ó"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O circumflex Ô"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/O circumflex Ô"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/OE ligature"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/OE ligature"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O tilde Õ"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/O tilde Õ"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O diaeresis Ö"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/O diaeresis Ö"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/O slash Ø"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/O slash Ø"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U grave Ù"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/U grave Ù"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U acute Ú"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/U acute Ú"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U circumflex Û"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/U circumflex Û"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/U diaeresis Ü"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/U diaeresis Ü"
+
+#~ msgid "/Tags/Special/Accent/Uppercase/J-Z/Y acute Ý"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Büyük Harf/J-Z/Y acute Ý"
+
+#~ msgid "/Tags/Special/Accent/_Lowercase"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/_Küçük Harf"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/_A-I"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/_A-I"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/tearoff1"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a grave à"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/a grave à"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a acute á"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/a acute á"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a circumflex â"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/a circumflex â"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a tilde ã"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/a tilde ã"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a ring å"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/a ring å"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/ae ligature æ"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/ae ligature æ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/a diaeresis ä"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/a diaeresis ä"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/c cedilla ç"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/c cedilla ç"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e grave è"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/e grave è"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e acute é"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/e acute é"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e circumflex ê"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/e circumflex ê"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/e diaeresis ë"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/e diaeresis ë"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i grave ì"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/i grave ì"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i acute í"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/i acute í"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i circumflex î"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/i circumflex î"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/A-I/i diaeresis ï"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/A-I/i diaeresis ï"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/_J-Z"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/_J-Z"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/tearoff1"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/tearoff1"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/n tilde ñ"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/n tilde ñ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o grave ò"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/o grave ò"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o acute ó"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/o acute ó"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/oe ligature æ"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/oe ligature æ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o circumflex ô"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/o circumflex ô"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o tilde õ"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/o tilde õ"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o diaeresis ö"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/o diaeresis ö"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/o slash ø"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/o slash ø"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u grave ù"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/u grave ù"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u acute ú"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/u acute ú"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u circumflex û"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/u circumflex û"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/u diaeresis ü"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/u diaeresis ü"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/y acute ý"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/y acute ý"
+
+#~ msgid "/Tags/Special/Accent/Lowercase/J-Z/y diaeresis ÿ"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/Küçük Harf/J-Z/y diaeresis ÿ"
+
+#~ msgid "/Tags/Special/Accent/separator"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/separator"
+
+#~ msgid "/Tags/Special/Accent/U_mlaut ¨"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/U_mlaut ¨"
+
+#~ msgid "/Tags/Special/Accent/_Acute ´"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/_Acute ´"
+
+#~ msgid "/Tags/Special/Accent/_Cedilla ¸"
+#~ msgstr "/Etiketler/Özel/Özel Karakterler/_Cedilla ¸"
+
+#~ msgid "/Tags/Special/_Currency"
+#~ msgstr "/Etiketler/Özel/_Para Birimleri"
+
+#~ msgid "/Tags/Special/Currency/tearoff1"
+#~ msgstr "/Etiketler/Özel/Para Birimleri/tearoff1"
+
+#~ msgid "/Tags/Special/Currency/_Cent sign ¢"
+#~ msgstr "/Etiketler/Özel/Para Birimleri/_Cent ¢"
+
+#~ msgid "/Tags/Special/Currency/_Pound sterling £"
+#~ msgstr "/Etiketler/Özel/Para Birimleri/_Pound sterling £"
+
+#~ msgid "/Tags/Special/Currency/C_urrency sign ¤"
+#~ msgstr "/Etiketler/Özel/Para Birimleri/_Para Birimi İşareti ¤"
+
+#~ msgid "/Tags/Special/Currency/_Yen sign ¥"
+#~ msgstr "/Etiketler/Özel/Para Birimleri/_Yen ¥"
+
+#~ msgid "/Tags/Special/Currency/_Euro "
+#~ msgstr "/Etiketler/Özel/Para Birimleri/_Avro "
+
+#~ msgid "/Tags/Special/_Math-Science"
+#~ msgstr "/Etiketler/Özel/_Matematik-Bilim"
+
+#~ msgid "/Tags/Special/Math-Science/tearoff1"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/tearoff1"
+
+#~ msgid "/Tags/Special/Math-Science/Logical _not sign ¬"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/Mantıksal Olumsuz İşareti ¬"
+
+#~ msgid "/Tags/Special/Math-Science/_Multiplication sign ×"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/_Çarpım İşareti ×"
+
+#~ msgid "/Tags/Special/Math-Science/_Division sign ÷"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/_Bölüm İşareti ÷"
+
+#~ msgid "/Tags/Special/Math-Science/_Plus-minus sign ±"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/_Artı-eksi İşareti ±"
+
+#~ msgid "/Tags/Special/Math-Science/_Less-than sign <"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/_Küçüktür İşareti <"
+
+#~ msgid "/Tags/Special/Math-Science/_Greater-than sign >"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/_Büyüktür İşareti >"
+
+#~ msgid "/Tags/Special/Math-Science/Superscript _1 ¹"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/Üzeri _1 ¹"
+
+#~ msgid "/Tags/Special/Math-Science/Superscript _2 ²"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/Üzeri _2 ²"
+
+#~ msgid "/Tags/Special/Math-Science/Superscript _3 ³"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/Üzeri _3 ³"
+
+#~ msgid "/Tags/Special/Math-Science/One _quarter ¼"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/_Çeyrek ¼"
+
+#~ msgid "/Tags/Special/Math-Science/One _half ½"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/_Yarım ½"
+
+#~ msgid "/Tags/Special/Math-Science/_Three quarters ¾"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/_Üç Çeyrek ¾"
+
+#~ msgid "/Tags/Special/Math-Science/Deg_ree sign °"
+#~ msgstr "/Etiketler/Özel/Matematik-Bilim/_Derece İşareti °"
+
+#~ msgid "/Tags/Special/_Non Latin"
+#~ msgstr "/Etiketler/Özel/Latin _Harici"
+
+#~ msgid "/Tags/Special/Non Latin/tearoff1"
+#~ msgstr "/Etiketler/Özel/Latin Harici/tearoff1"
+
+#~ msgid "/Tags/Special/Non Latin/_ETH (Icelandic) Ð"
+#~ msgstr "/Etiketler/Özel/Latin Harici/_ETH (İzlanda) Ð"
+
+#~ msgid "/Tags/Special/Non Latin/_THORN (Icelandic) Þ"
+#~ msgstr "/Etiketler/Özel/Latin Harici/_THORN (İzlanda) Þ"
+
+#~ msgid "/Tags/Special/Non Latin/et_h (Icelandic) ð"
+#~ msgstr "/Etiketler/Özel/Latin Harici/et_h (İzlanda) ð"
+
+#~ msgid "/Tags/Special/Non Latin/th_orn ÿ"
+#~ msgstr "/Etiketler/Özel/Latin Harici/th_orn ÿ"
+
+#~ msgid "/Tags/Special/Non Latin/Sharp _s ß"
+#~ msgstr "/Etiketler/Özel/Latin Harici/Sharp _s ß"
+
+#~ msgid "/Tags/Special/Non Latin/_Micro sign µ"
+#~ msgstr "/Etiketler/Özel/Latin Harici/_Micro işareti µ"
+
+#~ msgid "/Tags/Special/_Other"
+#~ msgstr "/Etiketler/Özel/_Diğer"
+
+#~ msgid "/Tags/Special/Other/tearoff1"
+#~ msgstr "/Etiketler/Özel/Diğer/tearoff1"
+
+#~ msgid "/Tags/Special/Other/_Non-breaking space"
+#~ msgstr "/Etiketler/Özel/Diğer/_Boşluk (nbsp)"
+
+#~ msgid "/Tags/Special/Other/_Section sign §"
+#~ msgstr "/Etiketler/Özel/Diğer/_Bölüm İşareti §"
+
+#~ msgid "/Tags/Special/Other/_Copyright sign ©"
+#~ msgstr "/Etiketler/Özel/Diğer/_Copyright işareti ©"
+
+#~ msgid "/Tags/Special/Other/_Left angle quotes «"
+#~ msgstr "/Etiketler/Özel/Diğer/So_l Tırnak «"
+
+#~ msgid "/Tags/Special/Other/_Right angle quotes »"
+#~ msgstr "/Etiketler/Özel/Diğer/Sa_ğ Tırnak »"
+
+#~ msgid "/Tags/Special/Other/Registered _trademark ®"
+#~ msgstr "/Etiketler/Özel/Diğer/Tescilli Ma_rka ®"
+
+#~ msgid "/Tags/Special/Other/Inverted _exclamation ¡"
+#~ msgstr "/Etiketler/Özel/Diğer/Ters _Ünlem ¡"
+
+#~ msgid "/Tags/Special/Other/Inverted _question mark ¿"
+#~ msgstr "/Etiketler/Özel/Diğer/Ters _Soru işareti ¿"
+
+#, fuzzy
+#~ msgid "/Tags/Special/Other/_Feminine ordinal ª"
+#~ msgstr "/Etiketler/Özel/Diğer/_Dişil ª"
+
+#~ msgid "/Tags/Special/Other/_Masculine ordinal º"
+#~ msgstr "/Etiketler/Özel/Diğer/Eril º"
+
+#~ msgid "/Tags/Special/Other/_Pilcrow (paragraph sign) ¶"
+#~ msgstr "/Etiketler/Özel/Diğer/Paragraf işareti ¶"
+
+#~ msgid "/Tags/Special/Other/_Broken bar ¦"
+#~ msgstr "/Etiketler/Özel/Diğer/Kesikli Dik Çizgi ¦"
+
+#~ msgid "/Tags/Special/Other/Soft _hypen -"
+#~ msgstr "/Etiketler/Özel/Diğer/Tre -"
+
+#~ msgid "/Tags/Special/Other/Spa_cing macron ¯"
+#~ msgstr "/Etiketler/Özel/Diğer/Makron ¯"
+
+#~ msgid "/Tags/Special/Other/Middle _dot ·"
+#~ msgstr "/Etiketler/Özel/Diğer/Ortalı Nokta ·"
+
+#~ msgid "/Tags/_Format by layout"
+#~ msgstr "/Etiketler/Özel/Diğer/_Görsel Biçimlendirme"
+
+#~ msgid "/Tags/Format by layout/tearoff1"
+#~ msgstr "/Etiketler/Görsel Biçimlendirme/tearoff1"
+
+#~ msgid "/Tags/Format by layout/_Bold"
+#~ msgstr "/Etiketler/Görsel Biçimlendirme/_Kalın (b)"
+
+#~ msgid "/Tags/Format by layout/_Italic"
+#~ msgstr "/Etiketler/Görsel Biçimlendirme/_İtalik"
+
+#~ msgid "/Tags/Format by layout/_Underline"
+#~ msgstr "/Etiketler/Görsel Biçimlendirme/_Alt çizgi"
+
+#~ msgid "/Tags/Format by layout/_Strikeout"
+#~ msgstr "/Etiketler/Görsel Biçimlendirme/_Üst Çizgi"
+
+#~ msgid "/Tags/Format by layout/Sm_all"
+#~ msgstr "/Etiketler/Görsel Biçimlendirme/Kü_çük"
+
+#~ msgid "/Tags/Format by layout/Bi_g"
+#~ msgstr "/Etiketler/Görsel Biçimlendirme/Bü_yük"
+
+#~ msgid "/Tags/F_ormat by context"
+#~ msgstr "/Etiketler/_Yapısal Biçimlendirme"
+
+#~ msgid "/Tags/Format by context/tearoff1"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/tearoff1"
+
+#~ msgid "/Tags/Format by context/_Strong"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/_Kuvvetli"
+
+#~ msgid "/Tags/Format by context/_Emphasis"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/_Vurgulu"
+
+#~ msgid "/Tags/Format by context/_Define"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/_Tanım (dfn)"
+
+#~ msgid "/Tags/Format by context/_Code"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/_Kod (code)"
+
+#~ msgid "/Tags/Format by context/Sa_mple"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/Örnek (samp)"
+
+#~ msgid "/Tags/Format by context/_Keyboard"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/Klavye (kbd)"
+
+#~ msgid "/Tags/Format by context/_Variable"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/Değişken (var)"
+
+#~ msgid "/Tags/Format by context/Ci_tation"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/Kaynakça (cite)"
+
+#~ msgid "/Tags/Format by context/_Abbreviation"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/Kısaltma (abbr)"
+
+#~ msgid "/Tags/Format by context/Ac_ronym"
+#~ msgstr "/Etiketler/Yapısal Biçimlendirme/Kısaltma (acronym)"
+
+#~ msgid "/Tags/Format _general"
+#~ msgstr "/Etiketler/_Genel Biçimlendirme"
+
+#~ msgid "/Tags/Format general/tearoff1"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/tearoff1"
+
+#~ msgid "/Tags/Format general/_Paragraph"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/_Paragraf (p)"
+
+#~ msgid "/Tags/Format general/_Break"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/_Satır (br)"
+
+#~ msgid "/Tags/Format general/Break clear _all"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/Satır- _temizle (br clear)"
+
+#~ msgid "/Tags/Format general/_Non-Breaking Space"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/boşluk (nbsp)"
+
+#~ msgid "/Tags/Format general/<separator>"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/<seperator>"
+
+#~ msgid "/Tags/Format general/Font Si_ze +1"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/Yazıtipini _Büyült"
+
+#~ msgid "/Tags/Format general/Font _Size -1"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/Yazıtipini _Küçült"
+
+#~ msgid "/Tags/Format general/Preformatted _Text"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/Biçimlendirilmiş _Yazı (pre)"
+
+#~ msgid "/Tags/Format general/Su_bscript"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/_Alt Yazı"
+
+#~ msgid "/Tags/Format general/Su_perscript"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/_Üst Yazı"
+
+#~ msgid "/Tags/Format general/_Center"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/_Ortala"
+
+#~ msgid "/Tags/Format general/Align _right"
+#~ msgstr "/Etiketler/Genel Biçimlendirme/Sa_ğa Dayalı"
+
+#~ msgid "/Tags/_Table"
+#~ msgstr "/Etiketler/_Tablo"
+
+#~ msgid "/Tags/Table/tearoff1"
+#~ msgstr "/Etiketler/Tablo/tearoff1"
+
+#~ msgid "/Tags/Table/_Table"
+#~ msgstr "/Etiketler/Tablo/_Tablo (table)"
+
+#~ msgid "/Tags/Table/Table _Row"
+#~ msgstr "/Etiketler/Tablo/Tablo _Satırı (tr)"
+
+#~ msgid "/Tags/Table/Table _Header"
+#~ msgstr "/Etiketler/Tablo/Tablo _Başlığı (th)"
+
+#~ msgid "/Tags/Table/Table _Data"
+#~ msgstr "/Etiketler/Tablo/Tablo _Hücresi (td)"
+
+#~ msgid "/Tags/Table/Table _Caption"
+#~ msgstr "/Etiketler/Tablo/Tablo Ta_nımı (caption)"
+
+#~ msgid "/Tags/_List"
+#~ msgstr "/Etiketler/_Liste"
+
+#~ msgid "/Tags/List/tearoff1"
+#~ msgstr "/Etiketler/Liste/tearoff1"
+
+#~ msgid "/Tags/List/Unordered _List"
+#~ msgstr "/Etiketler/Liste/Sıra_sız Liste (ul)"
+
+#~ msgid "/Tags/List/_Ordered List"
+#~ msgstr "/Etiketler/Liste/Sıra_lı Liste (ol)"
+
+#~ msgid "/Tags/List/List Ite_m"
+#~ msgstr "/Etiketler/Liste/Liste _Maddesi (li)"
+
+#~ msgid "/Tags/List/De_finition List"
+#~ msgstr "/Etiketler/Liste/_Tanım Listesi"
+
+#~ msgid "/Tags/List/Definition _Term"
+#~ msgstr "/Etiketler/Liste/Tanım Liste Ma_ddesi (dt)"
+
+#~ msgid "/Tags/List/_Definition"
+#~ msgstr "/Etiketler/Liste/Tanım Liste _Açıklaması (dd)"
+
+#~ msgid "/Tags/List/Men_u"
+#~ msgstr "/Etiketler/Liste/Men_u"
+
+#~ msgid "/Tags/Fo_rm"
+#~ msgstr "/Etiketler/_Form"
+
+#~ msgid "/Tags/Form/tearoff1"
+#~ msgstr "/Etiketler/Form/tearoff1"
+
+#~ msgid "/Tags/Form/_Form"
+#~ msgstr "/Etiketler/Form/_Form"
+
+#~ msgid "/Tags/Form/_Button"
+#~ msgstr "/Etiketler/Form/Giriş _Düğmesi (Button)"
+
+#~ msgid "/Tags/Form/_Input"
+#~ msgstr "/Etiketler/Form/_Giriş (input)"
+
+#~ msgid "/Tags/Form/_Textarea"
+#~ msgstr "/Etiketler/Form/Metin Alanı (textarea)"
+
+#~ msgid "/Tags/_Misc"
+#~ msgstr "/Etiketler/_Çeşitli"
+
+#~ msgid "/Tags/Misc/tearoff1"
+#~ msgstr "/Etiketler/Çeşitli/tearoff1"
+
+#~ msgid "/Tags/Misc/Insert Generator _META-Tag"
+#~ msgstr "/Etiketler/Çeşitli/Kullanılan Editör META Etiketi"
+
+#~ msgid "/Tags/Misc/_Span"
+#~ msgstr "/Etiketler/Çeşitli/Bi_çimlendirme Grubu (span)"
+
+#~ msgid "/Tags/Misc/_Div"
+#~ msgstr "/Etiketler/Çeşitli/_Bölüm (div)"
+
+#~ msgid "/Tags/Misc/_Link"
+#~ msgstr "/Etiketler/Çeşitli/_Dosya bağlantısı (link)"
+
+#~ msgid "/Tags/Misc/S_cript"
+#~ msgstr "/Etiketler/Çeşitli/Be_tik (script)"
+
+#~ msgid "/Tags/Misc/_Anchor"
+#~ msgstr "/Etiketler/Çeşitli/_Bağlantı (a)"
+
+#~ msgid "/Tags/Misc/_Image"
+#~ msgstr "/Etiketler/Çeşitli/_Resim (img)"
+
+#~ msgid "/Tags/_Comment"
+#~ msgstr "/Etiketler/_Açıklama"
+
+#~ msgid "/Dial_ogs"
+#~ msgstr "/_Araçlar"
+
+#~ msgid "/Dialogs/tearoff1"
+#~ msgstr "/Araçlar/tearoff1"
+
+#~ msgid "/Dialogs/_General"
+#~ msgstr "/Araçlar/_Genel"
+
+#~ msgid "/Dialogs/General/tearoff1"
+#~ msgstr "/Araçlar/Genel/tearoff1"
+
+#~ msgid "/Dialogs/General/_Quickstart..."
+#~ msgstr "/Araçlar/Genel/_Hızlı Başlangıç..."
+
+#~ msgid "/Dialogs/General/_Body..."
+#~ msgstr "/Araçlar/Genel/_Gövde (body) ..."
+
+#~ msgid "/Dialogs/General/_Anchor..."
+#~ msgstr "/Araçlar/Genel/_Bağlantı (a) ..."
+
+#~ msgid "/Dialogs/General/_Email..."
+#~ msgstr "/Araçlar/Genel/_E-posta ..."
+
+#~ msgid "/Dialogs/General/_Rule..."
+#~ msgstr "/Araçlar/Genel/_Yatay Çizgi (hr) ..."
+
+#~ msgid "/Dialogs/General/_Font..."
+#~ msgstr "/Araçlar/Genel/_Yazıtipi (font) ..."
+
+#~ msgid "/Dialogs/General/Basef_ont..."
+#~ msgstr "/Araçlar/Genel/_Varsayılan Yazıtipi (basefont) ..."
+
+#~ msgid "/Dialogs/General/Quick_list..."
+#~ msgstr "/Araçlar/Genel/_Liste..."
+
+#~ msgid "/Dialogs/General/_Meta..."
+#~ msgstr "/Araçlar/Genel/_Meta ..."
+
+#~ msgid "/Dialogs/General/Embe_d..."
+#~ msgstr "/Araçlar/Genel/_Gömük Nesne (embed) ..."
+
+#~ msgid "/Dialogs/General/Select _Color..."
+#~ msgstr "/Araçlar/Genel/_Renk Seçimi..."
+
+#~ msgid "/Dialogs/General/Insert _Time..."
+#~ msgstr "/Araçlar/Genel/_Zaman Ekle..."
+
+#~ msgid "/Dialogs/General/Insert _Image..."
+#~ msgstr "/Araçlar/Genel/_Resim Ekle (img) ..."
+
+#~ msgid "/Dialogs/General/Insert T_humbnail..."
+#~ msgstr "/Araçlar/Genel/Resim Ba_ğlantısı Ekle..."
+
+#~ msgid "/Dialogs/_Table"
+#~ msgstr "/Araçlar/_Tablo"
+
+#~ msgid "/Dialogs/Table/tearoff1"
+#~ msgstr "/Araçlar/Tablo/tearoff1"
+
+#~ msgid "/Dialogs/Table/Table _Wizard..."
+#~ msgstr "/Araçlar/Tablo/Tablo _Sihirbazı..."
+
+#~ msgid "/Dialogs/Table/_Table..."
+#~ msgstr "/Araçlar/Tablo/_Tablo (table) ..."
+
+#~ msgid "/Dialogs/Table/Table _Row..."
+#~ msgstr "/Araçlar/Tablo/Tablo _Satırı (tr) ..."
+
+#~ msgid "/Dialogs/Table/Table _Head..."
+#~ msgstr "/Araçlar/Tablo/Tablo _Başlığı (th) ..."
+
+#~ msgid "/Dialogs/Table/Table _Data..."
+#~ msgstr "/Araçlar/Tablo/Tablo _Hücresi (td) ..."
+
+#~ msgid "/Dialogs/_CSS"
+#~ msgstr "/Araçlar/_CSS"
+
+#~ msgid "/Dialogs/CSS/tearoff1"
+#~ msgstr "/Araçlar/CSS/tearoff1"
+
+#~ msgid "/Dialogs/CSS/_Create Style..."
+#~ msgstr "/Araçlar/CSS/Stil _Yarat ..."
+
+#~ msgid "/Dialogs/CSS/S_pan..."
+#~ msgstr "/Araçlar/CSS/Bi_çimlendirme Grubu (span) ..."
+
+#~ msgid "/Dialogs/CSS/_Div..."
+#~ msgstr "/Araçlar/CSS/Bölüm (div) ..."
+
+#~ msgid "/Dialogs/CSS/_Style..."
+#~ msgstr "/Araçlar/CSS/Stil..."
+
+#~ msgid "/Dialogs/CSS/_Link to Stylesheet..."
+#~ msgstr "/Araçlar/CSS/Stil Sayfası _Bağlantısı..."
+
+#~ msgid "/Dialogs/_Frame"
+#~ msgstr "/Araçlar/_Çerçeve"
+
+#~ msgid "/Dialogs/Frame/tearoff1"
+#~ msgstr "/Araçlar/Çerçeve/tearoff1"
+
+#~ msgid "/Dialogs/Frame/Frame _Wizard..."
+#~ msgstr "/Araçlar/Çerçeve/Çerçeve _Sihirbazı..."
+
+#~ msgid "/Dialogs/Frame/Frame_set..."
+#~ msgstr "/Araçlar/Çerçeve/Çerçeve _Grubu (frameset) ..."
+
+#~ msgid "/Dialogs/Frame/_Frame..."
+#~ msgstr "/Araçlar/Çerçeve/Çerçeve (frame) ..."
+
+#~ msgid "/Dialogs/F_orm"
+#~ msgstr "/Araçlar/_Form"
+
+#~ msgid "/Dialogs/Form/tearoff1"
+#~ msgstr "/Araçlar/Form/tearoff1"
+
+#~ msgid "/Dialogs/Form/F_orm..."
+#~ msgstr "/Araçlar/Form/_Form..."
+
+#~ msgid "/Dialogs/Form/_Input..."
+#~ msgstr "/Araçlar/Form/_Giriş (input) ..."
+
+#~ msgid "/Dialogs/Form/Input Buttons..."
+#~ msgstr "/Araçlar/Form/Giriş _Düğmesi (button) ..."
+
+#~ msgid "/Dialogs/Form/Input Text..."
+#~ msgstr "/Araçlar/Form/Metin Kutusu (text) ..."
+
+#~ msgid "/Dialogs/Form/Text_area..."
+#~ msgstr "/Araçlar/Form/Metin _Alanı (textarea) ..."
+
+#~ msgid "/Dialogs/Form/_Select..."
+#~ msgstr "/Araçlar/Form/Seçenek _Listesi (select) ..."
+
+#~ msgid "/Dialogs/Form/O_ption..."
+#~ msgstr "/Araçlar/Form/_Seçenek (option) ..."
+
+#~ msgid "/Dialogs/Form/Option _Group..."
+#~ msgstr "/Araçlar/Form/Seçenek _Grubu (optgroup) ..."
+
+#~ msgid "/Dialogs/Form/_Button..."
+#~ msgstr "/Araçlar/Form/Dü_ğme (button) ..."
+
+#~ msgid "/Dialogs/sep1"
+#~ msgstr "/Araçlar/sep1"
+
+#~ msgid "/Dialogs/_Edit tag under cursor..."
+#~ msgstr "/Araçlar/Seçili _etiketi düzenle..."
+
+#~ msgid "/Tools/Browsers"
+#~ msgstr "/Harici/Tarayıcılar"
+
+#~ msgid "%s for current filename (any command)\n"
+#~ msgstr "----- SAHALAR:\n"
+
+#~ msgid "----- METHODS:\n"
+#~ msgstr "----- METOTLAR:\n"
+
+#~ msgid "Left - Insert, Right - Dialog"
+#~ msgstr "Sol Tuş - Ekle, Sağ Tuş - Diyalog"
+
+#~ msgid "Left - Dialog, Right - Insert"
+#~ msgstr "Sol Tuş - Diyalog, Sağ Tuş - Ekle"
+
+#~ msgid "Create library"
+#~ msgstr "Kütüphane yarat"
+
+#~ msgid "Modify element"
+#~ msgstr "Maddeyi düzenle"
+
+#~ msgid "Could not view file in browser, the file does not yet have a name\n"
+#~ msgstr "Tarayıcıda gösterilemiyor, dosya henüz kaydedilmemiş.\n"

@@ -1,0 +1,14 @@
+SUBDIRS = win32
+
+all: installer
+
+config: config.status
+config.status: configure $(SUBDIRS)/config.nsis
+	$< CONFIG_SITE=$(SUBDIRS)/config.nsis --disable-rpath
+
+clean:
+	$(MAKE) -C $(SUBDIRS) -f Makefile.mingw $@
+	[ ! -f Makefile ] || $(MAKE) distclean
+
+installer: config
+	$(MAKE) -C $(SUBDIRS) -f Makefile.mingw $@

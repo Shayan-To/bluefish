@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		cpp.bflang2 $Revision$
+ 
+		P15 Olivier Sessink
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.		
+-->
+
+<bflang name="C++" version="3" contexts="7" matches="92">
+<header>
+	<mime type="text/x-c++src"/>
+	<mime type="text/x-c++hdr"/>
+	<mime type="application/x-c++src"/>
+	<mime type="application/x-c++hdr"/>
+	<option name="load_reference" default="1"/>
+	<option name="load_completion" default="1"/>
+	<option name="show_in_menu" default="1"/>
+	<option name="Parentheses block_foldable" default="0" description="Allow folding of the Parentheses block" />
+	<highlight name="keyword" style="keyword" />
+	<highlight name="storage-keyword" style="special-keyword" />
+	<highlight name="brackets" style="brackets" />
+	<highlight name="data-type" style="special-type" />
+	<highlight name="comment" style="comment" />
+	<highlight name="string" style="string" />
+	<highlight name="value" style="value" />
+	<highlight name="preprocessor" style="preprocessor" />
+	<highlight name="overloaded-operator" style="operator" />
+</header>
+<properties>
+	<comment type="block" start="/*" end="*/" />
+	<comment type="line" start="//" />
+	<smartindent characters="{" />
+	<smartoutdent characters="}" />
+</properties>
+<definition>
+	<context symbols=" ;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;">
+
+	<group highlight="keyword" >
+		<autocomplete enable="1" />
+	<element pattern="asm" />
+	<element pattern="break" />
+	<element pattern="case" />
+	<element pattern="catch" />
+	<element pattern="class" />
+	<element pattern="const_cast" />
+	<element pattern="continue" />
+	<element pattern="default" />
+	<element pattern="delete" />
+	<element pattern="do" />
+	<element pattern="dynamic_cast" />
+	<element pattern="else" />
+	<element pattern="enum" />
+	<element pattern="for" />
+	<element pattern="friend" />
+	<element pattern="goto" />
+	<element pattern="if" />
+	<element pattern="namespace" />
+	<element pattern="new" />
+	<element pattern="operator" />
+	<element pattern="private" />
+	<element pattern="protected" />
+	<element pattern="public" />
+	<element pattern="reinterpret_cast" />
+	<element pattern="return" />
+	<element pattern="sizeof" />
+	<element pattern="static_cast" />
+	<element pattern="struct" />
+	<element pattern="switch" />
+	<element pattern="template" />
+	<element pattern="typeid" />
+	<element pattern="typename" />
+	<element pattern="typedef" />
+	<element pattern="union" />
+	<element pattern="using" />
+	<element pattern="virtual" />
+	<element pattern="while" />
+	</group>
+
+	<group highlight="storage-keyword" >
+		<autocomplete enable="1" />
+	<element pattern="auto" />
+	<element pattern="const" />
+	<element pattern="extern" />
+	<element pattern="inline" />
+	<element pattern="mutable" />	
+	<element pattern="register" />
+	<element pattern="static" />
+	<element pattern="volatile" />
+	</group>
+
+	<group highlight="data-type" >
+		<autocomplete enable="1" />
+		<element pattern="bool"/>
+		<element pattern="char"><reference><b></b> <b>char</b> is the character storage type, which is 1 byte (8bits)</reference></element>
+		<element pattern="double"><reference><b></b> double is the big floating point storage type, which is 4 or 8 byte (32 or 64bits)</reference></element>
+		<element pattern="explicit" />
+		<element pattern="export" />
+		<element pattern="float"><reference><b></b> float is the floating point storage type, which is 2 or 4 bytes (16 or 32bits)</reference></element>
+		<element pattern="int"><reference><b></b> <b>int</b> is the integer storage type, minimal 2 bytes but usually 4 bytes (32bits)</reference></element>		
+		<element pattern="long"><reference><b></b> a <b>long</b> int is minimally 4 bytes (32bits), on 64bit architectures it is 8 bytes (64 bits). A <b>long long</b> int is minimally 8 bytes, and 16 bytes on 64bit architectures. A <b>long</b> double might be 64 or 128 bits.</reference></element>
+		<element pattern="signed"><reference><b></b> <b>signed</b> means if the storage can have negative numbers or only positive numbers</reference></element>
+		<element pattern="short"><reference><b></b> a <b>short</b> int is 2 bytes (16bits)</reference></element>
+		<element pattern="unsigned"/>
+		<element pattern="void"><reference><b></b> <b>void</b> is the default storage type for a pointer, 16 bits on 16 bit architecture, 32 bits on 32 bit architecture, 64 bits on 64 bit architecture</reference></element>
+		<element pattern="wchar_t" />
+	</group>
+	
+	<group highlight="preprocessor" >
+		<autocomplete enable="1" />
+		<element pattern="#include" />
+		<element pattern="#if" />
+		<element pattern="#else" /> 
+		<element pattern="#endif" />
+		<element pattern="#ifdef" />
+		<element pattern="#ifndef" />
+		<element pattern="#define" />
+		<element pattern="#pragma" />
+	</group>	
+	
+	<element pattern="true"  highlight="value" >
+		<autocomplete enable="1" />
+	</element>	
+	<element pattern="false"  highlight="value" >
+		<autocomplete enable="1" />
+	</element>	
+	<element pattern="NULL"  highlight="value" >
+		<autocomplete enable="1" />
+	</element>
+
+	<element id="e.double_quote" pattern="&#34;" highlight="string">
+		<context symbols="\&#34;nrt" highlight="string">
+			<element pattern="\\." is_regex="1" highlight="string" />
+			<element pattern="&#34;" highlight="string" ends_context="1" />
+		</context>
+	</element>
+	<element id="e.single_quote" pattern="'" highlight="string">
+		<context symbols="\'" highlight="string">
+			<element pattern="\\." is_regex="1" highlight="string" />
+			<element pattern="'" highlight="string" ends_context="1" />
+		</context>
+	</element>
+
+	<element id="e.lbrace" pattern="{" starts_block="1" highlight="brackets" block_name="Curly brackets block"/>
+	<element pattern="}" ends_block="1" blockstartelement="e.lbrace" highlight="brackets" />
+	<element id="e.lbracket" pattern="[" starts_block="1" highlight="brackets" />
+	<element pattern="]" ends_block="1" blockstartelement="e.lbracket" highlight="brackets" />
+	<element id="e.lparen" pattern="(" starts_block="1" highlight="brackets" block_name="Parentheses block" />
+	<element id="e.rparen" pattern=")" ends_block="1" blockstartelement="e.lparen" highlight="brackets" />
+
+	<element id="e.lcomment" pattern="/*" starts_block="1" highlight="comment" block_name="C style comment">
+		<context symbols="*/&#9;&#10;&#13;" highlight="comment">
+			<element pattern="*/" ends_block="1" blockstartelement="e.lcomment" highlight="comment" ends_context="1" />
+		</context>
+	</element>
+	<element pattern="//[^&#10;&#13;]*" is_regex="1" highlight="comment"/>
+
+	<element id="e.number" pattern="[0-9.]+" is_regex="1" highlight="value"/>
+
+	<element pattern="cin">
+		<context symbols="&gt; ;()">
+			<element pattern="&gt;&gt;" highlight="overloaded-operator" />
+			<element idref="e.lparen" />
+			<element idref="e.rparen" />
+			<element idref="e.number" />
+			<element pattern=";" ends_context="1" />
+		</context>
+	</element>
+	
+	<element pattern="cout">
+		<context symbols="&lt; ;&#34;&#39;()">
+			<element pattern="&lt;&lt;" highlight="overloaded-operator" />
+			<element idref="e.single_quote" />
+			<element idref="e.double_quote" />
+			<element idref="e.lparen" />
+			<element idref="e.rparen" />
+			<element idref="e.number" />
+			<element pattern=";" ends_context="1" />
+		</context>
+	</element>
+
+	</context>
+</definition>
+</bflang>

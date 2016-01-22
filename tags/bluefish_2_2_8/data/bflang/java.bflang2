@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<!--
+		Bluefish HTML Editor
+		java.bflang2 $Revision$
+ 
+		Copyright (C) 2008-2015 Olivier Sessink
+
+	    This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.		
+-->
+
+<bflang name="Java" version="3" contexts="5" matches="96">
+<header>
+	<mime type="text/x-java"/>
+	<option name="load_reference" default="1"/>
+	<option name="load_completion" default="1"/>
+	<option name="show_in_menu" default="1"/>
+	<option name="Parentheses block_foldable" default="0" description="Allow folding of Parentheses block"/>
+	<highlight name="keyword" style="keyword" />
+	<highlight name="OO-keyword" style="special-keyword" />
+	<highlight name="brackets" style="brackets" />
+	<highlight name="type" style="type" />
+	<highlight name="class-type" style="tag" />
+	<highlight name="collections" style="special-tag2" />
+	<highlight name="comment" style="comment" />
+	<highlight name="string" style="string" />
+	<highlight name="value" style="value"  />
+	<highlight name="imports" style="preprocessor" />
+</header>
+<properties>
+	<comment type="block" start="/*" end="*/" />
+	<comment type="line" start="//" />
+	<smartindent characters="{" />
+	<smartoutdent characters="}" />
+</properties>
+
+<definition>
+<context symbols=" ;(){}[]:\&#34;\\',&gt;&lt;*&amp;^%!+=-|/?#&#9;&#10;&#13;">
+
+<group  highlight="keyword">
+	<autocomplete enable="1" /> 
+	<element pattern="assert" />
+	<element pattern="break" />
+	<element pattern="case" />
+	<element pattern="catch" />
+	<element pattern="const" />
+	<element pattern="continue" />
+	<element pattern="do" />
+	<element pattern="else" />
+	<element pattern="finally" />
+	<element pattern="for" />
+	<element pattern="goto" />
+	<element pattern="if" />
+	<element pattern="package" />
+	<element pattern="return" />
+	<element pattern="strictfp" />
+	<element pattern="switch" />
+	<element pattern="throw" />
+	<element pattern="throws" />
+	<element pattern="try" />
+	<element pattern="where" />
+	<element pattern="while" />
+</group>
+
+<group  highlight="OO-keyword">
+	<autocomplete enable="1" />
+	<element pattern="abstract" />
+	<element pattern="class" />
+	<element pattern="default" />
+	<element pattern="extends" />
+	<element pattern="final" />
+	<element pattern="implements" />
+	<element pattern="instanceof" />
+	<element pattern="interface" />
+	<element pattern="native" />
+	<element pattern="new" />
+	<element pattern="private" />
+	<element pattern="protected" />
+	<element pattern="public" />
+	<element pattern="static" />
+	<element pattern="super" />
+	<element pattern="synchronized" />
+	<element pattern="this" />
+	<element pattern="transient" />
+	<element pattern="volatile" />
+</group>
+
+<group  highlight="type">
+	<autocomplete enable="1" />
+	<element pattern="boolean" />
+	<element pattern="byte" />
+	<element pattern="char" />
+	<element pattern="double" />
+	<element pattern="enum" />
+	<element pattern="float" />
+	<element pattern="int" />
+	<element pattern="long" />
+	<element pattern="short" />
+	<element pattern="void" />
+</group>
+
+<group  highlight="class-type">
+	<autocomplete enable="1" />
+	<element pattern="BigDecimal" />	
+	<element pattern="BigInteger" />
+	<element pattern="Boolean" />
+	<element pattern="Byte" />
+	<element pattern="Character" />
+	<element pattern="Double" />
+	<element pattern="Float" />
+	<element pattern="Integer" />
+	<element pattern="Long" />
+	<element pattern="Short" />
+	<element pattern="String" />
+</group>
+
+<group    highlight="collections">
+	<autocomplete append="&lt;&gt;" backup_cursor="1" />
+	<element pattern="ArrayList" />
+	<element pattern="LinkedList" />
+	<element pattern="ArrayDeque" />
+	<element pattern="HashSet" />
+	<element pattern="TreeSet" />
+	<element pattern="EnumSet" />
+	<element pattern="LinkedHashSet" />
+	<element pattern="PriorityQueue" />
+	<element pattern="HashMap" />
+	<element pattern="TreeMap" />
+	<element pattern="EnumMap" />
+	<element pattern="LinkedHashMap" />
+	<element pattern="WeakHashMap" />
+	<element pattern="IdentityHashMap" />
+</group>
+
+<element pattern="import"  highlight="imports" >
+	<autocomplete enable="1" />
+</element>
+
+<element pattern="&#34;" highlight="string">
+	<context symbols="\&#34;" highlight="string">
+		<element pattern="\&#34;" highlight="string" />
+		<element pattern="&#34;" highlight="string" ends_context="1" />
+	</context>
+</element>
+<element pattern="'" highlight="string">
+	<context symbols="\'" highlight="string">
+		<element pattern="\\." is_regex="1" highlight="string" />
+		<element pattern="'" highlight="string" ends_context="1" />
+	</context>
+</element>
+
+<element id="e.lbrace" pattern="{" starts_block="1" highlight="brackets" block_name="Curly brackets block"/>
+<element pattern="}" ends_block="1" blockstartelement="e.lbrace" highlight="brackets" />
+<element id="e.lbracket" pattern="[" starts_block="1" highlight="brackets" />
+<element pattern="]" ends_block="1" blockstartelement="e.lbracket" highlight="brackets" />
+<element id="e.lparen" pattern="(" starts_block="1" highlight="brackets" block_name="Parentheses block" />
+<element pattern=")" ends_block="1" blockstartelement="e.lparen" highlight="brackets" />
+
+<element pattern="//[^&#10;&#13;]*" is_regex="1" highlight="comment"/>
+<element id="e.lcomment" pattern="/*" starts_block="1" highlight="comment" block_name="C style comment">
+	<context symbols="*/&#9;&#10;&#13;" highlight="comment">
+		<element pattern="*/" ends_block="1" blockstartelement="e.lcomment" highlight="comment" ends_context="1" />
+	</context>
+</element>
+
+<element pattern="true"  highlight="value">
+	<autocomplete enable="1" />
+</element>
+<element pattern="false"  highlight="value">
+	<autocomplete enable="1" />
+</element>
+<element pattern="null"  highlight="value">
+	<autocomplete enable="1" />
+</element>
+<element pattern="[0-9.]+" is_regex="1" highlight="value"/>
+		
+</context>
+</definition>
+</bflang>

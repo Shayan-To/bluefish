@@ -1,0 +1,4139 @@
+# translation of bluefish-unstable.pot to Dutch
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# Olav Sliekers <idunno@mysun.com>, 2001.
+# Dutch translation of Bluefish
+# Copyright (C) 2001, 2007 Free Software Foundation, Inc.
+# elve <elve@savage-elve.net>, 2007, 2009, 2010.
+# Olivier <olivier@bluefish.openoffice.nl>, 2011, 2012, 2002, 2013, 2014, 2015.
+#
+#: ../src/xmlstrings.h:1
+msgid ""
+msgstr ""
+"Project-Id-Version: Bluefish 2.2.4\n"
+"Report-Msgid-Bugs-To: bluefish-dev@lists.ems.ru\n"
+"POT-Creation-Date: 2015-11-07 21:47+0100\n"
+"PO-Revision-Date: 2015-11-08 13:53+0100\n"
+"Last-Translator: Olivier <olivier@bluefish.openoffice.nl>\n"
+"Language-Team: Dutch; Flemish <>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:1
+msgid ""
+"Bluefish is a powerful editor targeted towards programmers and web "
+"developers, with many options to write websites, scripts and programming "
+"code. Bluefish supports many programming and markup languages and has many "
+"features, but is still a very fast and lightweight application."
+msgstr ""
+"Bluefish is een krachtige editor gericht op programmeurs en web "
+"ontwikkelaars, met veel extra's om websites, scripts and code te schrijven. "
+"Bluefish ondersteunt vele programmeer- en opmaak-talen en heeft veel "
+"mogelijkheden, terwijl het nog steeds een snelle en lichtgewicht applicatie "
+"is."
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:2
+msgid "A selection of the features:"
+msgstr "Een selectie van de mogelijkheden:"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:3
+msgid ""
+"Well done syntax highlighting which for example supports languages inside "
+"languages (e.g. Javascript inside HTML inside PHP)"
+msgstr ""
+"Goede syntax highlighting die bijvoorbeeld de ene taal in de andere taal "
+"ondersteunt (bijv. Javascript in HTML in PHP)"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:4
+msgid ""
+"All kind of powerful editor features like auto indenting and auto completion "
+"for many functions and libraries in many programming languages"
+msgstr ""
+"Allerlei krachtige editor opties zoals auto-indenting en auto-afmaken voor "
+"vele functies en bibliotheken in vele programmeertalen"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:5
+msgid "Project support"
+msgstr "Project ondersteuning"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:6
+msgid "Support for remote files over ftp, sftp, webdav, etc"
+msgstr ""
+"Ondersteuning voor bestanden op servers elders via ftp, sftp, webdav, etc."
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:7
+msgid "Powerful search and replace engine"
+msgstr "Krachtige zoek en vervang mogelijkheden"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:8
+msgid "Customizable integration of external programs such as lint, make, etc"
+msgstr ""
+"Configureerbare integratie met externe programmatuur zoals lint, make, etc."
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:9
+msgid "Snippets plugin to automate often used code"
+msgstr "Een \"Snippets\" plugin om veelgebruikte code te automatiseren"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:10
+msgid "Code-aware in-line spell checking"
+msgstr "Spellingscontrole die rekening houdt met programmeercode"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:11
+msgid "Zencoding or Emmet support"
+msgstr "Zencoding of Emmet ondersteuning"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:12
+msgid "Bookmarks panel"
+msgstr "Bladwĳzers"
+
+#: ../desktop-data/bluefish.appdata.xml.in.h:13
+msgid ""
+"If you are an occasional coder who is in need for a simple to learn editor, "
+"or a heavy coder who dislikes heavy IDE's like eclipse or netbeans, Bluefish "
+"is your editor of choice!"
+msgstr ""
+"Als een incidentele programmeur bent die een makkelijk te leren editor "
+"zoekt, of een professionele programmeur die niet van zware IDE's zoals "
+"Eclipse of Netbeans houdt, Bluefish is de editor van jouw keuze!"
+
+#: ../desktop-data/bluefish.desktop.in.h:1 ../src/bluefish.c:91
+msgid "Bluefish Editor"
+msgstr "Bluefish Editor"
+
+#: ../desktop-data/bluefish.desktop.in.h:2
+msgid "Web Development Editor"
+msgstr "Web Ontwikkeling Editor"
+
+#: ../desktop-data/bluefish.desktop.in.h:3
+msgid "programming;code;html;php;python;"
+msgstr "programming;code;html;php;python;"
+
+#: ../desktop-data/bluefish.xml.in.h:1
+msgid "Bluefish project file"
+msgstr "Bluefish project bestand"
+
+#: ../desktop-data/bluefish.xml.in.h:2
+msgid "Bluefish language definition file"
+msgstr "Bluefish taal definitie bestand"
+
+#: ../src/bftextview2.c:1827
+msgid "Collapse all"
+msgstr "Alles inklappen"
+
+#: ../src/bftextview2.c:1830
+msgid "Expand all"
+msgstr "Alles uitklappen"
+
+# c-format
+#: ../src/bftextview2.c:1838
+#, c-format
+msgid "Collapse %s"
+msgstr "%s Inklappen"
+
+# c-format
+#: ../src/bftextview2.c:1848
+#, c-format
+msgid "Expand %s"
+msgstr "%s Uitklappen"
+
+#: ../src/bftextview2_spell.c:826
+msgid "Spell check language"
+msgstr "Spelling taal"
+
+#: ../src/bftextview2_spell.c:859
+msgid "Add to dictionary"
+msgstr "Voeg toe aan woordenboek"
+
+#: ../src/bftextview2_spell.c:862
+msgid "Ignore spelling"
+msgstr "Negeer spelling"
+
+#: ../src/bftextview2_spell.c:877
+msgid "Insert special characters as entities"
+msgstr "Speciale karakters als entiteiten invoegen"
+
+#: ../src/bfwin.c:232
+msgid "Filebrowser"
+msgstr "Bestands beheerder"
+
+#: ../src/bfwin.c:234
+msgid "Bookmarks"
+msgstr "Bladwĳzers"
+
+#: ../src/bfwin.c:1002
+msgid "Goto Line:"
+msgstr "Ga naar regel:"
+
+#: ../src/bfwin.c:1013
+msgid "Find:"
+msgstr "Zoek:"
+
+#: ../src/bfwin.c:1024 ../src/snr3.c:1526
+msgid "Regular expression (pcre)"
+msgstr "Reguliere expressie (pcre)"
+
+#: ../src/bfwin.c:1027
+msgid "Case sensitive"
+msgstr "Hoofdletter gevoelig zoeken"
+
+#: ../src/bfwin.c:1030
+msgid "Dot character matches newlines"
+msgstr "Punt karakter in reguliere expressie pakt regeleinden"
+
+#: ../src/bfwin.c:1033
+msgid "Pattern contains backslash escaped sequences"
+msgstr "Patroon bevat escape combinaties"
+
+#: ../src/bfwin.c:1045
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: ../src/bfwin.c:1519
+msgid "New Bluefish Window"
+msgstr "Nieuw Bluefish Venster"
+
+#. Fake-label (for notebook_hide() and _show() ;)
+#: ../src/bfwin.c:1585
+msgid "Stand by..."
+msgstr "Stand by..."
+
+#: ../src/bfwin_uimanager.c:761
+msgid "Leave Fullscreen"
+msgstr "Volledige schermvulling verlaten"
+
+#: ../src/bfwin_uimanager.c:761
+msgid "Fullscreen"
+msgstr "Volledige schermvulling"
+
+#: ../src/bfwin_uimanager.c:819
+msgid "_File"
+msgstr "_Bestand"
+
+#: ../src/bfwin_uimanager.c:820
+msgid "New From Template"
+msgstr "Open van sjabloon"
+
+#: ../src/bfwin_uimanager.c:821 ../src/bfwin_uimanager.c:831
+msgid "Open _Recent"
+msgstr "_Recent geopend"
+
+#: ../src/bfwin_uimanager.c:822
+msgid "_Edit"
+msgstr "Be_werken"
+
+#: ../src/bfwin_uimanager.c:823
+msgid "_View"
+msgstr "B_eeld"
+
+#: ../src/bfwin_uimanager.c:824
+msgid "_Document"
+msgstr "_Document"
+
+#: ../src/bfwin_uimanager.c:825
+msgid "_Tab Size"
+msgstr "_Tabgrootte"
+
+#: ../src/bfwin_uimanager.c:826
+msgid "_Font Size"
+msgstr "_Lettergrootte"
+
+#: ../src/bfwin_uimanager.c:827
+msgid "Language M_ode"
+msgstr "Taal _Mode"
+
+#: ../src/bfwin_uimanager.c:828
+msgid "Character _Encoding"
+msgstr "_Karakter Codering"
+
+#: ../src/bfwin_uimanager.c:829
+msgid "_Go"
+msgstr "_Ga"
+
+#: ../src/bfwin_uimanager.c:830
+msgid "_Project"
+msgstr "_Project"
+
+#: ../src/bfwin_uimanager.c:832
+msgid "_Tools"
+msgstr "E_xtra"
+
+#: ../src/bfwin_uimanager.c:833
+msgid "_Commands"
+msgstr "_Commando's"
+
+#: ../src/bfwin_uimanager.c:834
+msgid "_Filters"
+msgstr "_Filters"
+
+#: ../src/bfwin_uimanager.c:835
+msgid "_Output parsers"
+msgstr "_Uitvoer parser"
+
+#: ../src/bfwin_uimanager.c:836
+msgid "For_mat"
+msgstr "Op_maken"
+
+#: ../src/bfwin_uimanager.c:837
+msgid "_Insert"
+msgstr "_Invoegen"
+
+#: ../src/bfwin_uimanager.c:838
+msgid "Con_vert"
+msgstr "Omzetten"
+
+#: ../src/bfwin_uimanager.c:842
+msgid "_New"
+msgstr "_Nieuw"
+
+#: ../src/bfwin_uimanager.c:842 ../src/filebrowser2.c:898
+#: ../src/filebrowser2.c:900 ../src/filebrowser2.c:1288
+msgid "New file"
+msgstr "Nieuw bestand"
+
+#: ../src/bfwin_uimanager.c:843
+msgid "New _Window"
+msgstr "Nieuw _Venster"
+
+#: ../src/bfwin_uimanager.c:843
+msgid "New window"
+msgstr "Nieuw Venster"
+
+#: ../src/bfwin_uimanager.c:845
+msgid "Close Win_dow"
+msgstr "Sluit _Venster"
+
+#: ../src/bfwin_uimanager.c:845
+msgid "Close window"
+msgstr "Sluit Venster"
+
+#: ../src/bfwin_uimanager.c:846
+msgid "_Open..."
+msgstr "_Openen..."
+
+#: ../src/bfwin_uimanager.c:846
+msgid "Open file"
+msgstr "Open bestand"
+
+#: ../src/bfwin_uimanager.c:847
+msgid "Open Ad_vanced..."
+msgstr "_Geavanceerd Openen..."
+
+#: ../src/bfwin_uimanager.c:847 ../src/filebrowser2.c:1284
+msgid "Open advanced"
+msgstr "Geavanceerd Openen"
+
+#: ../src/bfwin_uimanager.c:849
+msgid "Open _from Selection"
+msgstr "Open van _Selectie"
+
+#: ../src/bfwin_uimanager.c:849
+msgid "Open from Selection"
+msgstr "Open van Selectie"
+
+#: ../src/bfwin_uimanager.c:851
+msgid "_Print..."
+msgstr "_Print..."
+
+#: ../src/bfwin_uimanager.c:851
+msgid "Print"
+msgstr "Print"
+
+#: ../src/bfwin_uimanager.c:852
+msgid "_Quit"
+msgstr "A_fsluiten"
+
+#: ../src/bfwin_uimanager.c:852
+msgid "Quit Bluefish"
+msgstr "Bluefish afsluiten"
+
+#: ../src/bfwin_uimanager.c:853
+msgid "Preference_s..."
+msgstr "Voorkeuren..."
+
+#: ../src/bfwin_uimanager.c:853
+msgid "Edit Preferences"
+msgstr "Voorkeuren aanpassen"
+
+#: ../src/bfwin_uimanager.c:855
+msgid "Select _All"
+msgstr "_Alles Selecteren"
+
+#: ../src/bfwin_uimanager.c:855
+msgid "Select all"
+msgstr "_Alles Selecteren"
+
+#: ../src/bfwin_uimanager.c:856
+msgid "Add Boo_kmark"
+msgstr "_Bladwĳzer Toevoegen"
+
+#: ../src/bfwin_uimanager.c:856 ../src/document.c:2310
+msgid "Add bookmark"
+msgstr "Bladwĳzer toevoegen"
+
+#: ../src/bfwin_uimanager.c:858
+msgid "_Add or Remove..."
+msgstr "Voeg toe of verwijder..."
+
+#: ../src/bfwin_uimanager.c:858
+msgid "Add or remove character encoding"
+msgstr "Verwijder of voeg coderingen toe"
+
+#: ../src/bfwin_uimanager.c:860
+msgid "Floati_ng Window"
+msgstr "_Zwevend venster"
+
+#: ../src/bfwin_uimanager.c:860
+msgid "Open current document in floating window"
+msgstr "Huidig document in zwevend venster."
+
+#: ../src/bfwin_uimanager.c:862 ../src/bfwin_uimanager.c:868
+msgid "_Increase"
+msgstr "Vergroten"
+
+#: ../src/bfwin_uimanager.c:862
+msgid "Increase document font size"
+msgstr "Vergroot font grootte"
+
+#: ../src/bfwin_uimanager.c:864 ../src/bfwin_uimanager.c:870
+msgid "_Decrease"
+msgstr "Verkleinen"
+
+#: ../src/bfwin_uimanager.c:864
+msgid "Decrease document font size"
+msgstr "Verklein font grootte"
+
+#: ../src/bfwin_uimanager.c:866 ../src/bfwin_uimanager.c:872
+msgid "_Reset"
+msgstr "Herstellen"
+
+#: ../src/bfwin_uimanager.c:866
+msgid "Reset document font size"
+msgstr "Reset font grootte"
+
+#: ../src/bfwin_uimanager.c:868
+msgid "Increase document tab size"
+msgstr "Vergroot Tab Grootte"
+
+#: ../src/bfwin_uimanager.c:870
+msgid "Decrease document tab size"
+msgstr "Verklein Tab Grootte"
+
+#: ../src/bfwin_uimanager.c:872
+msgid "Reset document tab size"
+msgstr "Herstel Tab Grootte"
+
+#: ../src/bfwin_uimanager.c:875
+msgid "Rescan Synta_x & Spelling"
+msgstr "Synta_x en Spelling Verversen"
+
+#: ../src/bfwin_uimanager.c:875 ../src/bfwin_uimanager.c:878
+msgid "Rescan document highlighting"
+msgstr "Ververs syntax herkenning"
+
+#: ../src/bfwin_uimanager.c:878
+msgid "Rescan Synta_x"
+msgstr "Synta_x verversen"
+
+#: ../src/bfwin_uimanager.c:881
+msgid "_New Project..."
+msgstr "_Nieuw Project..."
+
+#: ../src/bfwin_uimanager.c:881 ../src/project.c:231
+msgid "New project"
+msgstr "Nieuw project"
+
+#: ../src/bfwin_uimanager.c:882
+msgid "_Open Project..."
+msgstr "_Open Project..."
+
+#: ../src/bfwin_uimanager.c:882
+msgid "Open project"
+msgstr "Open project"
+
+#: ../src/bfwin_uimanager.c:883
+msgid "_Synchronize Text Block"
+msgstr "Synchroniseer tekst blok"
+
+#: ../src/bfwin_uimanager.c:883 ../src/blocksync.c:295
+msgid "Synchronize text block"
+msgstr "Synchroniseer tekst blok"
+
+#: ../src/bfwin_uimanager.c:885
+msgid "_Toggle Comment"
+msgstr "Schakel Commen_taar"
+
+#: ../src/bfwin_uimanager.c:885
+msgid "Toggle comment"
+msgstr "Schakel commentaar"
+
+#: ../src/bfwin_uimanager.c:887
+msgid "Select _Block"
+msgstr "Selecteer _Blok"
+
+#: ../src/bfwin_uimanager.c:888
+msgid "Select block, use multiple times to select parent blocks "
+msgstr "Selecteer blok, herhaal om omsluitend blok te selecteren"
+
+#: ../src/bfwin_uimanager.c:890
+msgid "D_uplicate Line"
+msgstr "Regel D_upliceren"
+
+#: ../src/bfwin_uimanager.c:890
+msgid "Duplicate the current line"
+msgstr "Actieve regel dupliceren"
+
+#: ../src/bfwin_uimanager.c:892
+msgid "_Delete Line"
+msgstr "Regel verwĳderen"
+
+#: ../src/bfwin_uimanager.c:892
+msgid "Delete the current line"
+msgstr "Actieve regel verwijderen"
+
+#: ../src/bfwin_uimanager.c:894
+msgid "_Word Count"
+msgstr "Aantal _Woorden"
+
+#: ../src/bfwin_uimanager.c:894
+msgid "Word count"
+msgstr "Aantal woorden"
+
+#: ../src/bfwin_uimanager.c:895 ../src/doc_extern_tools.c:47
+msgid "Lorem Ipsum generator"
+msgstr "Lorem Ipsum generator"
+
+#: ../src/bfwin_uimanager.c:897
+msgid "Insert Relative Filename"
+msgstr "Relatieve bestandsnaam invoegen"
+
+#: ../src/bfwin_uimanager.c:899
+msgid "Insert Absolute Filename"
+msgstr "Absolute bestandsnaam invoegen"
+
+#: ../src/bfwin_uimanager.c:901
+msgid "Indenting to S_paces"
+msgstr "Inspringen naar S_paties"
+
+#: ../src/bfwin_uimanager.c:901
+msgid "Indenting to spaces"
+msgstr "Inspringen naar Spaties"
+
+#: ../src/bfwin_uimanager.c:903
+msgid "Indenting to T_abs"
+msgstr "Inspringen naar T_abs"
+
+#: ../src/bfwin_uimanager.c:903
+msgid "Indenting to tabs"
+msgstr "Inspringen naar Tabs"
+
+#: ../src/bfwin_uimanager.c:905
+msgid "_Join Lines Together"
+msgstr "Regels Sa_menvoegen"
+
+#: ../src/bfwin_uimanager.c:905
+msgid "Join lines together"
+msgstr "Regels Sa_menvoegen"
+
+#: ../src/bfwin_uimanager.c:907
+msgid "Split Lines on Right _Margin"
+msgstr "Regels S_plitsen op Rechtermarge"
+
+#: ../src/bfwin_uimanager.c:907
+msgid "Split lines on right margin"
+msgstr "Regels Splitsen op Rechtermarge"
+
+#: ../src/bfwin_uimanager.c:909
+msgid "Merge Lines Into Col_umns"
+msgstr "Voeg Samen In _Kolommen"
+
+#: ../src/bfwin_uimanager.c:909
+msgid "Merge lines into columns"
+msgstr "Voeg Samen In _Kolommen"
+
+#: ../src/bfwin_uimanager.c:911
+msgid "Rewrap _Lines"
+msgstr "Regelomloop herzien"
+
+#: ../src/bfwin_uimanager.c:911
+msgid "Rewrap lines"
+msgstr "Regelomloop herzien"
+
+#: ../src/bfwin_uimanager.c:912
+msgid "Strip T_railing Whitespace"
+msgstr "Verwijder _naloopspaties"
+
+#: ../src/bfwin_uimanager.c:912
+msgid "Strip trailing whitespace"
+msgstr "Verwijder _naloopspaties"
+
+#: ../src/bfwin_uimanager.c:914
+msgid "Javascript beautifier"
+msgstr "Javascript opschonen"
+
+#: ../src/bfwin_uimanager.c:916
+msgid "Preview in browser"
+msgstr "Voorbeeld in Browser"
+
+#: ../src/bfwin_uimanager.c:921
+msgid "_Full Screen"
+msgstr "_Volledige schermvulling"
+
+#: ../src/bfwin_uimanager.c:921
+msgid "Full screen"
+msgstr "Volledige schermvulling"
+
+#: ../src/bfwin_uimanager.c:923
+msgid "_Main Toolbar"
+msgstr "_Hoofd-Werkbalk"
+
+#: ../src/bfwin_uimanager.c:923
+msgid "Show main toolbar"
+msgstr "Hoofd Werkbalk"
+
+#: ../src/bfwin_uimanager.c:925
+msgid "_Side Pane"
+msgstr "_Zĳpaneel"
+
+#: ../src/bfwin_uimanager.c:925
+msgid "Show side pane"
+msgstr "Zĳpaneel"
+
+#: ../src/bfwin_uimanager.c:926
+msgid "_Output Pane"
+msgstr "_Uitvoerpaneel"
+
+#: ../src/bfwin_uimanager.c:926
+msgid "Show output pane"
+msgstr "Toon uitvoer paneel"
+
+#: ../src/bfwin_uimanager.c:928
+msgid "Status_bar"
+msgstr "_Statusbalk"
+
+#: ../src/bfwin_uimanager.c:928
+msgid "Show statusbar"
+msgstr "Statusbalk"
+
+#: ../src/bfwin_uimanager.c:930
+msgid "Auto _Completion Popup"
+msgstr "Auto _completeren popup"
+
+#: ../src/bfwin_uimanager.c:930
+msgid "Show auto completion popup"
+msgstr "Toon auto-completering popup"
+
+#: ../src/bfwin_uimanager.c:932
+msgid "_Auto Indent"
+msgstr "Auto _Inspringen"
+
+#: ../src/bfwin_uimanager.c:932
+msgid "Auto indent"
+msgstr "Automatisch _Inspringen"
+
+#: ../src/bfwin_uimanager.c:933
+msgid "Highlight Block _Delimiters"
+msgstr "Blok Uiteinden _Oplichten"
+
+#: ../src/bfwin_uimanager.c:934
+msgid "Highlight block delimiters"
+msgstr "Blok Uiteinden Oplichten"
+
+#: ../src/bfwin_uimanager.c:935
+msgid "_Highlight Syntax"
+msgstr "Synta_x Weergeven"
+
+#: ../src/bfwin_uimanager.c:935
+msgid "Highlight syntax"
+msgstr "Syntax Weergeven"
+
+#: ../src/bfwin_uimanager.c:937
+msgid "Show _Blocks"
+msgstr "Toon _blokken"
+
+#: ../src/bfwin_uimanager.c:937
+msgid "Show blocks"
+msgstr "Toon _blokken"
+
+#: ../src/bfwin_uimanager.c:938
+msgid "Show Line N_umbers"
+msgstr "_Regelnummers Weergeven"
+
+#: ../src/bfwin_uimanager.c:938
+msgid "Show line numbers"
+msgstr "Regelnummers Weergeven"
+
+#: ../src/bfwin_uimanager.c:940
+msgid "Show Right _Margin"
+msgstr "Toon Rechter_marge"
+
+#: ../src/bfwin_uimanager.c:940
+msgid "Show right margin"
+msgstr "Toon Rechtermarge"
+
+#: ../src/bfwin_uimanager.c:942
+msgid "Show Split _View"
+msgstr "_Gesplitst Beeld"
+
+#: ../src/bfwin_uimanager.c:942
+msgid "Show split view"
+msgstr "Gesplitst Beeld"
+
+#: ../src/bfwin_uimanager.c:944
+msgid "Show V_isible Spacing"
+msgstr "Zichtbare _Witruimte"
+
+#: ../src/bfwin_uimanager.c:944
+msgid "Show visible spacing"
+msgstr "Zichtbare Witruimte"
+
+#: ../src/bfwin_uimanager.c:946
+msgid "_Wrap Text"
+msgstr "Regel _Omloop"
+
+#: ../src/bfwin_uimanager.c:946
+msgid "Wrap text"
+msgstr "Regel omloop inschakelen"
+
+#: ../src/bfwin_uimanager.c:950 ../src/document.c:2097 ../src/document.c:3493
+msgid "_Close"
+msgstr "Sluiten"
+
+#: ../src/bfwin_uimanager.c:950
+msgid "Close current file"
+msgstr "Alle gefaalde documenten sluiten"
+
+#: ../src/bfwin_uimanager.c:952
+msgid "Close A_ll"
+msgstr "A_lles sluiten"
+
+#: ../src/bfwin_uimanager.c:952
+msgid "Close all files"
+msgstr "Alle documenten sluiten"
+
+#: ../src/bfwin_uimanager.c:954 ../src/bfwin_uimanager.c:1041
+#: ../src/file_dialogs.c:1455
+msgid "_Save"
+msgstr "Opslaan"
+
+#: ../src/bfwin_uimanager.c:954
+msgid "Save current file"
+msgstr "Huidig bestand opslaan"
+
+#: ../src/bfwin_uimanager.c:956 ../src/bfwin_uimanager.c:1042
+msgid "Save _as..."
+msgstr "Opslaan _als..."
+
+#: ../src/bfwin_uimanager.c:956
+msgid "Save file as"
+msgstr "Bestand opslaan als"
+
+#: ../src/bfwin_uimanager.c:958
+msgid "Sav_e All"
+msgstr "All_es opslaan"
+
+#: ../src/bfwin_uimanager.c:958
+msgid "Save all files"
+msgstr "Alle bestanden opslaan"
+
+#: ../src/bfwin_uimanager.c:960
+msgid "Rever_t to Saved"
+msgstr "_Terug naar Opgeslagen"
+
+#: ../src/bfwin_uimanager.c:960
+msgid "Reload current file"
+msgstr "Huidig bestand herladen"
+
+#: ../src/bfwin_uimanager.c:962
+msgid "Save a cop_y..."
+msgstr "Kopie opslaan..."
+
+#: ../src/bfwin_uimanager.c:962
+msgid "Save a copy"
+msgstr "Kopie opslaan"
+
+#: ../src/bfwin_uimanager.c:964
+msgid "_Insert..."
+msgstr "_Invoegen..."
+
+#: ../src/bfwin_uimanager.c:964
+msgid "Insert file"
+msgstr "Bestand invoegen"
+
+#. Required to move here to disable sensitivity on OSX
+#: ../src/bfwin_uimanager.c:965
+msgid "Rena_me..."
+msgstr "_Hernoemen..."
+
+#: ../src/bfwin_uimanager.c:965
+msgid "Rename file"
+msgstr "Bestand hernoemen"
+
+#: ../src/bfwin_uimanager.c:966
+msgid "_Indent"
+msgstr "Rechts _Inspringen"
+
+#: ../src/bfwin_uimanager.c:966
+msgid "Indent"
+msgstr "Rechts Inspringen"
+
+#: ../src/bfwin_uimanager.c:967
+msgid "Unin_dent"
+msgstr "Verspring _Links"
+
+#: ../src/bfwin_uimanager.c:967
+msgid "Unindent"
+msgstr "Verspring Links"
+
+#: ../src/bfwin_uimanager.c:969
+msgid "F_irst Bookmark"
+msgstr "Eerste _Bladwĳzer"
+
+#: ../src/bfwin_uimanager.c:969
+msgid "Goto first bookmark"
+msgstr "Naar eerste bladwĳzer"
+
+#: ../src/bfwin_uimanager.c:971
+msgid "L_ast Bookmark"
+msgstr "L_aatste Bladwĳzer"
+
+#: ../src/bfwin_uimanager.c:971
+msgid "Goto last bookmark"
+msgstr "Naar laatste bladwĳzer"
+
+#: ../src/bfwin_uimanager.c:973
+msgid "N_ext Bookmark"
+msgstr "Volgende Blad_wĳzer"
+
+#: ../src/bfwin_uimanager.c:973
+msgid "Goto next bookmark"
+msgstr "Naar volgende bladwĳzer"
+
+#: ../src/bfwin_uimanager.c:975
+msgid "P_revious Bookmark"
+msgstr "Vorige Bla_dwijzer"
+
+#: ../src/bfwin_uimanager.c:976 ../src/bfwin_uimanager.c:992
+msgid "Goto previous document"
+msgstr "Naar vorig document"
+
+#: ../src/bfwin_uimanager.c:977
+msgid "Move Tab _Left"
+msgstr "Verschuif Tabblad naar _Links"
+
+#: ../src/bfwin_uimanager.c:977
+msgid "Move current tab left"
+msgstr "Verschuif Tabblad naar Rechts"
+
+#: ../src/bfwin_uimanager.c:979
+msgid "Move Tab _Right"
+msgstr "Verschuif Tabblad naar _Rechts"
+
+#: ../src/bfwin_uimanager.c:979
+msgid "Move current tab right"
+msgstr "Huidige tabblad naar rechts verplaatsen"
+
+#: ../src/bfwin_uimanager.c:981
+msgid "_Recent Document"
+msgstr "_Recent Document"
+
+#: ../src/bfwin_uimanager.c:981
+msgid "Goto most recent document"
+msgstr "Ga naar meest recente document"
+
+#: ../src/bfwin_uimanager.c:983
+msgid "_First Document"
+msgstr "_Eerste Document"
+
+#: ../src/bfwin_uimanager.c:984
+msgid "Goto first document"
+msgstr "Naar eerste document"
+
+#: ../src/bfwin_uimanager.c:986
+msgid "_Last Document"
+msgstr "_Laatste Document"
+
+#: ../src/bfwin_uimanager.c:987
+msgid "Goto last document"
+msgstr "Naar laatste document"
+
+#: ../src/bfwin_uimanager.c:989
+msgid "_Next Document"
+msgstr "Vol_gende Document"
+
+#: ../src/bfwin_uimanager.c:989
+msgid "Goto next document"
+msgstr "Naar volgende document"
+
+#: ../src/bfwin_uimanager.c:991
+msgid "_Previous Document"
+msgstr "Vori_ge document"
+
+#: ../src/bfwin_uimanager.c:994
+msgid "_Goto Line"
+msgstr "_Ga naar regel"
+
+#: ../src/bfwin_uimanager.c:994
+msgid "Goto line"
+msgstr "Ga naar regel"
+
+#: ../src/bfwin_uimanager.c:995
+msgid "Goto Line Number from _Clipboard"
+msgstr "Ga Naar Regelnummer uit _Klembord"
+
+#: ../src/bfwin_uimanager.c:996
+msgid "Goto line number in clipboard or selection"
+msgstr "Ga naar regelnummer in klembord of selectie"
+
+#: ../src/bfwin_uimanager.c:997
+msgid "_Jump to Reference"
+msgstr "_Spring naar Referentie"
+
+#: ../src/bfwin_uimanager.c:997
+msgid "Jump to reference"
+msgstr "Spring naar referentie"
+
+#: ../src/bfwin_uimanager.c:1000 ../src/bfwin_uimanager.c:1001
+#: ../src/bfwin_uimanager.c:1004 ../src/bfwin_uimanager.c:1005
+msgid "Jump to Matching Block Boundary"
+msgstr "Spring naar bijbehorende blok markering"
+
+#: ../src/bfwin_uimanager.c:1011
+msgid "Cu_t"
+msgstr "K_nippen"
+
+#: ../src/bfwin_uimanager.c:1011
+msgid "Cut"
+msgstr "Knippen"
+
+#: ../src/bfwin_uimanager.c:1012
+msgid "_Copy"
+msgstr "_Kopieren"
+
+#: ../src/bfwin_uimanager.c:1012
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: ../src/bfwin_uimanager.c:1013
+msgid "_Paste"
+msgstr "_Plakken"
+
+#: ../src/bfwin_uimanager.c:1013
+msgid "Paste"
+msgstr "Plakken"
+
+#: ../src/bfwin_uimanager.c:1014
+msgid "Paste Specia_l"
+msgstr "Plakken Speciaa_l"
+
+#: ../src/bfwin_uimanager.c:1014
+msgid "Paste Special"
+msgstr "Plakken Speciaal"
+
+#: ../src/bfwin_uimanager.c:1019
+msgid "_Find"
+msgstr "_Zoek"
+
+#: ../src/bfwin_uimanager.c:1019
+msgid "Show find bar"
+msgstr "Zoekbalk Weergeven"
+
+#: ../src/bfwin_uimanager.c:1020
+msgid "Find A_gain"
+msgstr "Herhaal zoeken"
+
+#: ../src/bfwin_uimanager.c:1020
+msgid "Find again"
+msgstr "Opnieuw zoeken"
+
+#: ../src/bfwin_uimanager.c:1021
+msgid "Find from Clip_board"
+msgstr "Zoek van Klembord"
+
+#: ../src/bfwin_uimanager.c:1022
+msgid "Find from clipboard or selection"
+msgstr "Zoek van klembord of selectie"
+
+#: ../src/bfwin_uimanager.c:1025 ../src/bfwin_uimanager.c:1029
+msgid "Ad_vanced Find & Replace..."
+msgstr "Geavanceerd Zoeken & _Vervangen..."
+
+#: ../src/bfwin_uimanager.c:1026 ../src/bfwin_uimanager.c:1030
+msgid "Advanced Find and Replace"
+msgstr "Geavanceerd Zoeken en Vervangen"
+
+#: ../src/bfwin_uimanager.c:1039
+msgid "Save & _close"
+msgstr "Opslaan & sl_uiten"
+
+#: ../src/bfwin_uimanager.c:1039
+msgid "Save & close project"
+msgstr "Project opslaan en sluiten"
+
+#: ../src/bfwin_uimanager.c:1041
+msgid "Save project"
+msgstr "Project opslaan"
+
+#: ../src/bfwin_uimanager.c:1042
+msgid "Save project as"
+msgstr "Project opslaan als"
+
+#: ../src/bfwin_uimanager.c:1043
+msgid "_Edit Project Options..."
+msgstr "Project _Voorkeuren..."
+
+#: ../src/bfwin_uimanager.c:1043
+msgid "Edit project options"
+msgstr "Project Voorkeuren"
+
+#: ../src/bfwin_uimanager.c:1048
+msgid "_Undo"
+msgstr "_Ongedaan maken"
+
+#: ../src/bfwin_uimanager.c:1048
+msgid "Undo"
+msgstr "Ongedaan maken"
+
+#: ../src/bfwin_uimanager.c:1049
+msgid "U_ndo All"
+msgstr "Alles _Ongedaan Maken"
+
+#: ../src/bfwin_uimanager.c:1049
+msgid "Undo All"
+msgstr "Alles Ongedaan Maken"
+
+#: ../src/bfwin_uimanager.c:1050
+msgid "_Redo"
+msgstr "Op_nieuw"
+
+#: ../src/bfwin_uimanager.c:1050
+msgid "Redo"
+msgstr "Opnieuw"
+
+#: ../src/bfwin_uimanager.c:1051
+msgid "R_edo All"
+msgstr "A_lles Opnieuw"
+
+#: ../src/bfwin_uimanager.c:1051
+msgid "Redo All"
+msgstr "Alles Opnieuw"
+
+#: ../src/bfwin_uimanager.c:1078
+#, c-format
+msgid "Always use this syntax for files of type %s ?"
+msgstr "Altijd deze syntax gebruiken voor %s ?"
+
+#: ../src/bfwin_uimanager.c:1252
+msgid "Open _URL..."
+msgstr "Open _URL..."
+
+#: ../src/bfwin_uimanager.c:1262
+msgid "Upload _/ Download..."
+msgstr "Upload _/ Download..."
+
+#: ../src/bfwin_uimanager.c:1275
+msgid "_Spell Check"
+msgstr "_Spellingscontrole"
+
+#: ../src/bfwin_uimanager.c:1750
+msgid "Text area to filter"
+msgstr "Te filteren tekst"
+
+#: ../src/bfwin_uimanager.c:1751
+msgid "All text"
+msgstr "Alle tekst"
+
+#: ../src/bfwin_uimanager.c:1752
+msgid "Selected text only"
+msgstr "Alleen geselecteerde tekst"
+
+#: ../src/bfwin_uimanager.c:1754
+msgid "Never ask again"
+msgstr "Nooit meer vragen"
+
+#: ../src/blocksync.c:87
+msgid ""
+"Select the block to sync to other pages. Include the start-of-block and end-"
+"of-block markers in your selection."
+msgstr ""
+"Selecteer het blok dat gesynchroniseerd moet worden, inclusief de blok-start "
+"en blok-einde markeringen"
+
+#: ../src/blocksync.c:92
+msgid "To proceed with the current selection click forward."
+msgstr "Om verder te gaan met de huidige selectie klik volgende."
+
+#: ../src/blocksync.c:121
+msgid ""
+"Below is the block, including start and end marker. Please <b>select the "
+"start marker</b> in the text below."
+msgstr ""
+"Hieronder is het blok, inclusief the start en eind markering. <b>Selecteer "
+"de start markering</b> in de tekst hieronder."
+
+#: ../src/blocksync.c:156
+msgid "Please <b>select the end marker</b> in the text below."
+msgstr "<b>Selecteer de eind markering</b> in the tekst hieronder."
+
+#: ../src/blocksync.c:194
+#, c-format
+msgid ""
+"Will replace the text between <i>%s</i> and <i>%s</i> in all documents "
+"opened in this window.\n"
+"<b>Proceed?</b>"
+msgstr ""
+"Tekst tussen <i>%s</i> en <i>%s</i> zal in alle documenten in dit venster "
+"vervangen worden.\n"
+"<b>Doorgaan?</b>"
+
+#: ../src/blocksync.c:225
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Please select the block of text to "
+"synchronize.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">Selecteer het blok tekst dat "
+"gesynchroniseerd moet worden.</span>"
+
+#: ../src/blocksync.c:239 ../src/blocksync.c:259
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">This marker exists more than once "
+"in the block.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">Deze markering komt meerdere keren "
+"voor in het blok tekst.</span>"
+
+#: ../src/blocksync.c:245
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Select the text that marks the "
+"start of the block.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">Selecteer de tekst die de start van "
+"het blok markeert.</span>"
+
+#: ../src/blocksync.c:265
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Select the text that marks the end "
+"of the block.</span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">Selecteer de tekst die het eind van "
+"het blok markeert.</span>"
+
+#: ../src/bluefish.c:91
+msgid "Visit us at http://bluefish.openoffice.nl"
+msgstr "Bezoek ons op http://bluefish.openoffice.nl"
+
+#: ../src/bluefish.c:370
+msgid "Open in existing window."
+msgstr "Open in bestaand venster."
+
+#: ../src/bluefish.c:372
+msgid "Open in new window."
+msgstr "Open in nieuw venster."
+
+#: ../src/bluefish.c:374
+msgid "Print version information."
+msgstr "Print versie informatie."
+
+#: ../src/bluefish.c:401
+msgid " [FILE(S)]"
+msgstr " [FILE(S)]"
+
+#: ../src/bluefish.c:412
+#, c-format
+msgid ""
+"Error parsing command line options. %s\n"
+"Please run: %s -?\n"
+msgstr ""
+"Fout bij het lezen van de commandoopdracht. %s\n"
+"Probeer: %s -?\n"
+
+#: ../src/bookmark.c:548 ../src/bookmark.c:569
+msgid "_Name:"
+msgstr "Naam:"
+
+#: ../src/bookmark.c:555 ../src/bookmark.c:573
+msgid "_Description:"
+msgstr "Beschrĳving:"
+
+#: ../src/bookmark.c:558
+msgid "_Temporary"
+msgstr "_Tĳdelĳk"
+
+#: ../src/bookmark.c:575
+msgid "Temporary"
+msgstr "Tĳdelĳk"
+
+#: ../src/bookmark.c:748
+#, c-format
+msgid "Do you really want to delete %s?"
+msgstr "Weet u zeker dat u %s wilt verwĳderen ?"
+
+#: ../src/bookmark.c:751
+msgid "Delete permanent bookmark."
+msgstr "Verwĳder permanente bladwĳzer."
+
+#: ../src/bookmark.c:777
+msgid "Delete all bookmarks."
+msgstr "Verwĳder alle bladwĳzers."
+
+#: ../src/bookmark.c:815
+#, c-format
+msgid "Do you really want to delete all bookmarks for %s?"
+msgstr "Weet u zeker dat u alle bladwĳzers voor %s wilt verwĳderen ?"
+
+#: ../src/bookmark.c:817
+msgid "Delete bookmarks?"
+msgstr "Bladwĳzers verwĳderen ?"
+
+#: ../src/bookmark.c:838 ../src/bookmark.c:899
+msgid "Edit bookmark"
+msgstr "Bladwĳzer bewerken"
+
+#: ../src/bookmark.c:895
+msgid "Bookmark menu"
+msgstr "Bladwĳzer menu"
+
+#: ../src/bookmark.c:896
+msgid "Show Bookmark"
+msgstr "Toon Bladwĳzer"
+
+#: ../src/bookmark.c:897
+msgid "Show File"
+msgstr "Toon bestand"
+
+#: ../src/bookmark.c:898
+msgid "Bookmark search menu"
+msgstr "Bladwĳzer zoek menu"
+
+#: ../src/bookmark.c:899
+msgid "_Edit..."
+msgstr "Be_werken"
+
+#: ../src/bookmark.c:901 ../src/filebrowser2.c:1287
+msgid "_Delete"
+msgstr "Verwĳderen"
+
+#: ../src/bookmark.c:901 ../src/document.c:2306
+msgid "Delete bookmark"
+msgstr "Verwĳder bladwĳzer"
+
+#: ../src/bookmark.c:902
+msgid "Delete All"
+msgstr "Verwĳder alles"
+
+#: ../src/bookmark.c:902
+msgid "Delete all bookmarks"
+msgstr "Verwĳder alle bladwĳzers."
+
+#: ../src/bookmark.c:904
+msgid "Delete All in Document"
+msgstr "Verwĳder Alles in document"
+
+#: ../src/bookmark.c:905
+msgid "Delete all bookmarks in document"
+msgstr "Verwĳder alle bladwĳzers in document"
+
+#: ../src/bookmark.c:910
+msgid "Permanent by default"
+msgstr "Standaard permanent"
+
+#: ../src/bookmark.c:915
+msgid "By Name"
+msgstr "Met naam"
+
+#: ../src/bookmark.c:916
+msgid "By Full Path"
+msgstr "Met volledig pad"
+
+#: ../src/bookmark.c:917
+msgid "By Full URI"
+msgstr "Met volledige URI"
+
+#: ../src/bookmark.c:921 ../src/bookmark.c:927
+msgid "Content"
+msgstr "Inhoud"
+
+#: ../src/bookmark.c:922 ../src/bookmark.c:928 ../src/preferences.c:621
+#: ../src/preferences.c:1686 ../src/preferences.c:1688
+#: ../src/preferences.c:1789
+msgid "Name"
+msgstr "Naam"
+
+#: ../src/bookmark.c:923 ../src/bookmark.c:929
+msgid "Name & Content"
+msgstr "Naam & Inhoud"
+
+#: ../src/bookmark.c:1261
+msgid "First bookmark"
+msgstr "Eerste bladwĳzer"
+
+#: ../src/bookmark.c:1265
+msgid "Previous bookmark"
+msgstr "Vorige bladwĳzer bewerken"
+
+#: ../src/bookmark.c:1269
+msgid "Next bookmark"
+msgstr "Volgende bladwĳzer"
+
+#: ../src/bookmark.c:1273
+msgid "Last bookmark"
+msgstr "Laatste bladwĳzer"
+
+#: ../src/bookmark.c:2037
+msgid "Can't add bookmark"
+msgstr "Kan bladwĳzer niet toevoegen"
+
+#: ../src/bookmark.c:2037
+msgid "You already have a bookmark here!"
+msgstr "U heeft daar al een bladwĳzer!"
+
+#: ../src/document.c:518
+msgid "Name: "
+msgstr "Naam: "
+
+#: ../src/document.c:545
+msgid ""
+"\n"
+"Language mode: "
+msgstr ""
+"\n"
+"Taal mode: "
+
+#: ../src/document.c:549
+msgid ""
+"\n"
+"Encoding: "
+msgstr ""
+"\n"
+"Codering: "
+
+#: ../src/document.c:561
+msgid ""
+"\n"
+"Mime type: "
+msgstr ""
+"\n"
+"Mime type: "
+
+#: ../src/document.c:569
+#, c-format
+msgid ""
+"\n"
+"Permissions: %s\n"
+"Uid: %u Gid: %u"
+msgstr ""
+"\n"
+"Permissie's:%s\n"
+"UID:%u GID:%u"
+
+#: ../src/document.c:586
+msgid ""
+"\n"
+"Size (on disk): "
+msgstr ""
+"\n"
+"Grootte (op schĳf): "
+
+#: ../src/document.c:595
+msgid ""
+"\n"
+"Last modified: "
+msgstr ""
+"\n"
+"Laatste wĳziging: "
+
+#: ../src/document.c:663
+#, c-format
+msgid "Untitled %d"
+msgstr "Naamloos %d"
+
+#: ../src/document.c:846
+#, c-format
+msgid "Changed tab width to %d"
+msgstr "Tab-grootte veranderd naar %d"
+
+#: ../src/document.c:1024
+#, c-format
+msgid "Document %s is already open in another Bluefish window."
+msgstr "Document %s is al geopend in een ander Bluefish venster."
+
+#: ../src/document.c:1026
+msgid "Move to this window"
+msgstr "Verplaats naar dit venster"
+
+#: ../src/document.c:1026
+msgid "Open readonly"
+msgstr "Open alleen-lezen"
+
+#: ../src/document.c:1027
+msgid "Do not open"
+msgstr "Niet openen"
+
+#: ../src/document.c:1381
+#, c-format
+msgid " Ln: %d, Col: %d, Char: %d"
+msgstr " Ln: %d, Kol: %d, Char: %d"
+
+#: ../src/document.c:1384
+#, c-format
+msgid " Ln: %d, Col: %d"
+msgstr " Ln: %d, Kol:%d"
+
+#: ../src/document.c:1407
+msgid " OVR"
+msgstr " OVR"
+
+#: ../src/document.c:1407
+msgid " INS"
+msgstr " INS"
+
+#: ../src/document.c:1409
+msgid " RO"
+msgstr " RO"
+
+#: ../src/document.c:1428
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: ../src/document.c:2016
+msgid "_No"
+msgstr "_Nee"
+
+#: ../src/document.c:2016
+msgid "_Split"
+msgstr "Op_splitsen"
+
+#: ../src/document.c:2019
+msgid "File contains very long lines. Split these lines?"
+msgstr "Het bestand bevat zeer lange regels. Opsplitsen?"
+
+#: ../src/document.c:2021
+msgid ""
+"The lines in this file are longer than Bluefish can handle with reasonable "
+"performance. This split function, however, is unaware of any language "
+"syntax, and may replace spaces or tabs with newlines in any location, or "
+"insert newlines if no spaces or tabs are found."
+msgstr ""
+"De regels in dit bestand zijn langer dan Bluefish kan verwerken met normale "
+"snelheid. De opsplits functie houdt echter geen rekening met opmaak of taal "
+"syntax, en kan spaties en tabs op elke plek vervangen door regeleinden, of "
+"nieuwe regeleinden toevoegen and er geen spaties of tabs gevonden zijn."
+
+#: ../src/document.c:2097
+msgid "_Convert"
+msgstr "_Omzetten"
+
+#: ../src/document.c:2101
+#, c-format
+msgid ""
+"File '%s' is not a valid text file.\n"
+"The file might be corrupted, truncated, or in an unexpected encoding."
+msgstr ""
+"Bestand '%s' is geen valide text bestand.\n"
+"Het bestand is corrupt, afgekort of onbekend gecodeerd."
+
+#: ../src/document.c:2106
+msgid ""
+"Bluefish can convert this file into a valid one by replacing illegal symbols "
+"with spaces. Convert?"
+msgstr ""
+"Bluefish kan dit bestand openen door onbekende symbolen door spaties te "
+"vervangen. Doorgaan?"
+
+#: ../src/document.c:2118
+#, c-format
+msgid ""
+"File is opened in read-only mode since it differs from original one.\n"
+"%lu characters were replaced by space"
+msgstr ""
+"Bestand is alleen-lezen geopend omdat het niet meer orgineel is.\n"
+"%lu onbekende symbolen zijn vervangen door spaties."
+
+#: ../src/document.c:2121
+msgid "Use 'Save As' to save it with different name and make editable"
+msgstr "Gebruik 'Opslaan als' om het document bewerkbaar te maken"
+
+#: ../src/document.c:2316
+msgid "Exit fullscreen"
+msgstr "Sluit volledige schermvulling"
+
+#. if (main_v->props.backup_abort_action == 2)
+#. we have to ask the user
+#. we have to ask the user what to do
+#: ../src/document.c:2516 ../src/file_dialogs.c:450 ../src/file_dialogs.c:488
+msgid "_Abort save"
+msgstr "Opslaan afbreken"
+
+#: ../src/document.c:2516
+msgid "_Continue save in UTF-8"
+msgstr "Opslaan hervatten in UTF-8"
+
+#: ../src/document.c:2529
+#, c-format
+msgid ""
+"Failed to convert %s to character encoding %s. Encoding failed on character "
+"'%s' at line %d column %d\n"
+"\n"
+"Continue saving in UTF-8 encoding?"
+msgstr ""
+"Converteren van %s naar codering %s mislukt. Codering faalde op karakter %s "
+"op regel %d kolom %d\n"
+"\n"
+"Doorgaan met opslaan in UTF-8 codering ?"
+
+#: ../src/document.c:2534
+msgid "File encoding conversion failure"
+msgstr "Bestands codering conversie fout"
+
+#: ../src/document.c:2711
+msgid "Previously: "
+msgstr "Voorheen: "
+
+#: ../src/document.c:3409
+msgid "Unable to open file"
+msgstr "Kan bestand niet openen"
+
+# c-format
+#: ../src/document.c:3421
+#, c-format
+msgid ""
+"If you revert \"%s\" to your last saved copy, your current changes will be "
+"permanently lost."
+msgstr ""
+"Als u \"%s\" terugdraait naar de laast opgeslagen versie gaan uwhuidige "
+"wijzigingen verloren."
+
+#: ../src/document.c:3425
+msgid "Revert changes to last saved copy?"
+msgstr "Veranderingen terugdraaien tot laatst opgeslagen versie?"
+
+#: ../src/document.c:3493
+msgid "_Retry"
+msgstr "Opnieuw"
+
+#: ../src/document.c:3493
+msgid "Retry _all failed"
+msgstr "Alle gefaalde opnieuw"
+
+#: ../src/document.c:3493
+msgid "Close all _failed"
+msgstr "Alle gefaalde sluiten"
+
+#: ../src/document.c:3498
+msgid "File "
+msgstr "Bestand "
+
+#: ../src/document.c:3498
+msgid " failed to load."
+msgstr " laden mislukt."
+
+#: ../src/document.c:3502
+msgid "File failed to load\n"
+msgstr "Bestand laden mislukt\n"
+
+#: ../src/document.c:3629
+msgid "Select file to insert"
+msgstr "Selecteer bestand om in te voegen"
+
+#: ../src/document.c:3638
+msgid "No file to insert"
+msgstr "Geen bestand om in te voegen"
+
+#: ../src/document.c:3730
+msgid "Save pasted image as"
+msgstr "Geplakte bestand opslaan als"
+
+#: ../src/document.c:3832
+msgid "Paste special"
+msgstr "Plakken speciaal"
+
+#: ../src/document.c:3838
+msgid "No compatible clipboard data found"
+msgstr "Geen compatibele klembord inhoud"
+
+#: ../src/document.c:3843
+msgid "Paste as _HTML"
+msgstr "Plak als _HTML"
+
+#: ../src/document.c:3848
+msgid "Paste as HTML with _JPG"
+msgstr "Plakken als HTML met _JPG"
+
+#: ../src/document.c:3858
+msgid "Paste as plain text"
+msgstr "Invoegen zonder opmaak"
+
+#: ../src/document.c:3953
+#, c-format
+msgid "%d line"
+msgid_plural "%d lines"
+msgstr[0] "%d regel"
+msgstr[1] "%d regels"
+
+#: ../src/document.c:3954
+#, c-format
+msgid "%d word"
+msgid_plural "%d words"
+msgstr[0] "%d woord"
+msgstr[1] "%d woorden"
+
+#: ../src/document.c:3955
+#, c-format
+msgid "%d character"
+msgid_plural "%d characters"
+msgstr[0] "%d karakter"
+msgstr[1] "%d karakters"
+
+#: ../src/document.c:3957
+msgid "Selection statistics: "
+msgstr "Selectie statistieken: "
+
+#: ../src/document.c:3957
+msgid "Statistics: "
+msgstr "Statistieken: "
+
+#: ../src/doc_text_tools.c:400
+msgid "Lines into columns"
+msgstr "Regels in kolommen"
+
+#: ../src/doc_text_tools.c:412
+msgid "Number of columns:"
+msgstr "Aantal kolommen:"
+
+#: ../src/doc_text_tools.c:416
+msgid "Spread lines horizontally"
+msgstr "Verspreid regels horizontaal"
+
+#: ../src/doc_text_tools.c:423
+msgid "Column separator:"
+msgstr "Kolom scheidingsteken:"
+
+#: ../src/doc_text_tools.c:427
+msgid "Fill empty entries:"
+msgstr "Vul lege plaatsen:"
+
+#: ../src/doc_extern_tools.c:63
+msgid "Number of _paragraphs:"
+msgstr "Aantal _paragrafen:"
+
+#: ../src/doc_extern_tools.c:68
+msgid "Number of _sentences:"
+msgstr "Aantal _zinnen:"
+
+#: ../src/doc_extern_tools.c:71 ../src/doc_extern_tools.c:86
+msgid "Insert plain text"
+msgstr "Invoegen zonder opmaak"
+
+#: ../src/doc_extern_tools.c:71 ../src/doc_extern_tools.c:86
+msgid "Insert in <li>"
+msgstr "Invoegen in <li>"
+
+#: ../src/doc_extern_tools.c:71 ../src/doc_extern_tools.c:86
+msgid "Insert in <p>"
+msgstr "Invoegen in <p>"
+
+#: ../src/doc_extern_tools.c:81
+msgid "Number of paragraphs"
+msgstr "Aantal paragrafen"
+
+#: ../src/doc_extern_tools.c:84
+msgid "Number of sentences"
+msgstr "Aantal zinnen"
+
+#: ../src/doc_extern_tools.c:134
+msgid "Javascript Beautify"
+msgstr "Javascript opschonen"
+
+#: ../src/doc_extern_tools.c:148
+msgid "_Indent size:"
+msgstr "_Inspring grootte:"
+
+#: ../src/doc_extern_tools.c:151 ../src/doc_extern_tools.c:178
+msgid "Use _tabs to indent, not spaces"
+msgstr "Gebruik _tabs om in te springen, geen spaties"
+
+#: ../src/doc_extern_tools.c:154 ../src/doc_extern_tools.c:183
+msgid "Do not _preserve existing line breaks"
+msgstr "Bestaande regeleinden niet in stand houden"
+
+#: ../src/doc_extern_tools.c:156 ../src/doc_extern_tools.c:184
+msgid "More _jslint-compatible output"
+msgstr "Meer _jslint-compatibele uitvoer"
+
+#: ../src/doc_extern_tools.c:159 ../src/doc_extern_tools.c:186
+msgid "_Decode printable chars encoded in \\\\xNN notation"
+msgstr "_Decodeer printbare karakters in \\\\xNN notatie"
+
+#: ../src/doc_extern_tools.c:164 ../src/doc_extern_tools.c:173
+msgid "Beautify only in _selection"
+msgstr "Alleen opschonen in _selectie"
+
+#: ../src/doc_extern_tools.c:179
+msgid "_Indent size"
+msgstr "_Inspring grootte"
+
+#: ../src/encodings_dialog.c:287
+msgid "_Available encodings:"
+msgstr "_Beschikbare coderingen:"
+
+#: ../src/encodings_dialog.c:333 ../src/encodings_dialog.c:385
+msgid "Description"
+msgstr "Beschrĳving:"
+
+#: ../src/encodings_dialog.c:339 ../src/encodings_dialog.c:390
+msgid "Encoding"
+msgstr "Codering"
+
+#: ../src/encodings_dialog.c:362
+msgid "Encodings in _menu:"
+msgstr "Coderingen in menu:"
+
+#: ../src/encodings_dialog.c:436
+msgid "Add or remove document encodings"
+msgstr "Verwijder of voeg coderingen toe"
+
+#: ../src/external_commands.c:463
+msgid "Supply extra arguments"
+msgstr "Voeg extra opties toe"
+
+#: ../src/external_commands.c:468
+#, c-format
+msgid "Supply arguments to define %%a in '%s'"
+msgstr "Geef de opties die ingevuld worden in %%a in '%s'"
+
+#: ../src/external_commands.c:749
+msgid "Internal error."
+msgstr "Intern probleem."
+
+#: ../src/external_commands.c:752
+msgid ""
+"This command requires the current document to have a file name. Please save "
+"your document first."
+msgstr ""
+"Het document moet opgeslagen zijn voor dit commando. Sla uw bestand eerst op."
+
+#: ../src/external_commands.c:755
+msgid ""
+"This command requires the current document to be a local file. Please save "
+"your document to a local file."
+msgstr ""
+"Het bestand moet lokaal staan voor dit commando. Sla uw bestand lokaal op."
+
+#: ../src/external_commands.c:758
+msgid ""
+"External commands cannot have an output defined. Please fix this command in "
+"the preferences."
+msgstr ""
+"Externe commando's ondersteunen geen uitvoer. Verbeter dit commando in de "
+"voorkeuren."
+
+#: ../src/external_commands.c:761
+msgid ""
+"This command has multiple inputs. Please fix this command in the preferences."
+msgstr ""
+"Dit commando heeft meerdere ingangen. Verbeter het commando in de voorkeuren."
+
+#: ../src/external_commands.c:764
+msgid ""
+"This command has multiple outputs. Please fix this command in the "
+"preferences."
+msgstr ""
+"Dit commando heeft meerdere uitvoeren. Verbeter het commando in de "
+"voorkeuren."
+
+#: ../src/external_commands.c:768
+#, c-format
+msgid ""
+"Failed to create a command for %s.\n"
+"%s"
+msgstr ""
+"Mislukt om een commando te maken voor %s.\n"
+"%s"
+
+#: ../src/external_commands.c:770
+msgid "Failed to create a command"
+msgstr "Mislukt om een commando to maken"
+
+#: ../src/external_commands.c:792 ../src/external_commands.c:809
+#, c-format
+msgid "The command %s exited with error code %d. %s"
+msgstr "Commando %s is gestopt met error code %d. %s"
+
+#: ../src/external_commands.c:795 ../src/external_commands.c:813
+msgid "Probably this application is not installed on your system."
+msgstr "Waarschijnlijk is deze applicatie niet geinstaleerd op uw systeem."
+
+#: ../src/external_commands.c:798
+msgid "Command returned error code"
+msgstr "Het commando heeft een foutcode teruggegeven"
+
+#: ../src/filebrowser2.c:748
+msgid "Set documentroot and webroot"
+msgstr "Zet documentroot en webroot"
+
+#: ../src/filebrowser2.c:757
+msgid ""
+"The <i>documentroot</i> is the place where Bluefish finds the file,\n"
+"the <i>webroot</i> is the location where those same files can be viewed on "
+"the webserver"
+msgstr ""
+"De <i>documentroot</i> is de locatie waar Bluefish de bestanden ziet,\n"
+"de <i>webroot</i> is de locatie waar de zelfde files te bekijken zijn via de "
+"webserver"
+
+#: ../src/filebrowser2.c:764
+msgid "Documentroot"
+msgstr "Documentroot"
+
+#: ../src/filebrowser2.c:775
+msgid "Webroot"
+msgstr "Webroot"
+
+#: ../src/filebrowser2.c:788 ../src/file_dialogs.c:776
+#, c-format
+msgid "Move/rename %s to"
+msgstr "hernoem %s naar"
+
+#: ../src/filebrowser2.c:799
+msgid "Could not rename\n"
+msgstr "Kon niet hernoemen\n"
+
+#: ../src/filebrowser2.c:873 ../src/filebrowser2.c:1289
+msgid "New directory"
+msgstr "Nieuwe directory"
+
+#. Do we really need to display the full path here?
+#. *
+#. * Having the filename in the both the primary and secondary text seems to be redundant.
+#. * Set back to just the primary text for now.
+#. *
+#. * --> Sometimes you can have a file in many directories (e.g. Makefile.in, index.html)
+#. * and then this might give you more indication if this is indeed the file you wanted to delete
+#.
+#: ../src/filebrowser2.c:983
+#, c-format
+msgid ""
+"Are you sure you want to delete\n"
+"\"%s\"?"
+msgstr ""
+"Weet u zeker dat u\n"
+"\"%s\" wilt verwĳderen?"
+
+#: ../src/filebrowser2.c:984
+#, c-format
+msgid "If you delete %s, it will be permanently lost."
+msgstr "Als u %s verwĳderd dan zal het permanent zĳn."
+
+#: ../src/filebrowser2.c:1282
+msgid "File Browser menu"
+msgstr "Bestands beheer menu"
+
+#: ../src/filebrowser2.c:1283
+msgid "_Open"
+msgstr "Open"
+
+#: ../src/filebrowser2.c:1283
+msgid "Open"
+msgstr "Open"
+
+#: ../src/filebrowser2.c:1284
+msgid "Open _Advanced..."
+msgstr "Open geavanceerd..."
+
+#: ../src/filebrowser2.c:1286
+msgid "Rena_me"
+msgstr "Hernoemen"
+
+#: ../src/filebrowser2.c:1286
+msgid "Rename"
+msgstr "Hernoemen"
+
+#: ../src/filebrowser2.c:1287
+msgid "Delete"
+msgstr "Delete"
+
+#: ../src/filebrowser2.c:1288
+msgid "New _File"
+msgstr "Nieuw bestand"
+
+#: ../src/filebrowser2.c:1289
+msgid "_New Directory"
+msgstr "Nieuwe directory"
+
+#: ../src/filebrowser2.c:1291
+msgid "_Refresh"
+msgstr "Verversen"
+
+#: ../src/filebrowser2.c:1291
+msgid "Refresh"
+msgstr "Verversen"
+
+#: ../src/filebrowser2.c:1292
+msgid "_Set as base dir"
+msgstr "Gebruik als basismap"
+
+#: ../src/filebrowser2.c:1292
+msgid "Set as base directory"
+msgstr "Gebruik als basismap"
+
+#: ../src/filebrowser2.c:1294
+msgid "Set as document root"
+msgstr "Gebruik als documentroot"
+
+#: ../src/filebrowser2.c:1296
+msgid "Show Full _Tree"
+msgstr "Toon volledige boom"
+
+#: ../src/filebrowser2.c:1296
+msgid "Show full tree"
+msgstr "Toon volledige boom"
+
+#: ../src/filebrowser2.c:1298
+msgid "View Mode"
+msgstr "Weergave mode"
+
+#: ../src/filebrowser2.c:1299
+msgid "Filter"
+msgstr "Filter"
+
+#: ../src/filebrowser2.c:1300
+msgid "New Filter"
+msgstr "Nieuw filter"
+
+#: ../src/filebrowser2.c:1300 ../src/filefilter.c:549
+msgid "New filter"
+msgstr "Nieuw filter"
+
+#: ../src/filebrowser2.c:1301
+msgid "Edit Filter"
+msgstr "Filter bewerken"
+
+#: ../src/filebrowser2.c:1301 ../src/filefilter.c:554
+msgid "Edit filter"
+msgstr "Filter bewerken"
+
+#: ../src/filebrowser2.c:1302
+msgid "Delete Filter"
+msgstr "Fileter verwĳderen"
+
+#: ../src/filebrowser2.c:1302
+msgid "Delete filter"
+msgstr "Fileter verwĳderen"
+
+#: ../src/filebrowser2.c:1306
+msgid "Follow Active Document"
+msgstr "Volg aktief document"
+
+#: ../src/filebrowser2.c:1306
+msgid "Follow active document"
+msgstr "Volg aktief document"
+
+#: ../src/filebrowser2.c:1308
+msgid "Show Backup Files"
+msgstr "Laat reserve bestanden zien"
+
+#: ../src/filebrowser2.c:1308 ../src/gtk_easy.c:1340
+msgid "Show backup files"
+msgstr "Laat reserve bestanden zien"
+
+#: ../src/filebrowser2.c:1310
+msgid "Show Hidden Files"
+msgstr "Toon verborgen bestanden"
+
+#: ../src/filebrowser2.c:1310
+msgid "Show hidden files"
+msgstr "Toon verborgen bestanden"
+
+#: ../src/filebrowser2.c:1315
+msgid "Dual"
+msgstr "Gesplitst"
+
+#: ../src/filebrowser2.c:1316
+msgid "Flat"
+msgstr "Plat"
+
+#: ../src/filebrowser2.c:1317
+msgid "Tree"
+msgstr "Boom"
+
+#: ../src/filebrowser2.c:2359
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"which is the equivalent of\n"
+"<b>%s%s</b>"
+msgstr ""
+"<b>%s</b>\n"
+"wat het equivalent is van\n"
+"<b>%s%s</b>"
+
+#: ../src/file.c:875
+#, c-format
+msgid "Still loading %d file, finished %s"
+msgid_plural "Still loading %d files, finished %s"
+msgstr[0] "Nog steeds bezig met %d bestand, %s is gereed"
+msgstr[1] "Nog steeds bezig met %d bestanden, %s is gereed"
+
+#: ../src/file.c:883
+#, c-format
+msgid "All files loaded, finished %s, %d document open"
+msgid_plural "All files loaded, finished %s, %d documents open"
+msgstr[0] "Alle bestanden geladen, klaar met %s, %d document open"
+msgstr[1] "Alle bestanden geladen, klaar met %s, %d documenten open"
+
+#: ../src/file.c:1445
+#, c-format
+msgid "Finished advanced open, %d document open."
+msgid_plural "Finished advanced open, %d documents open."
+msgstr[0] "Geavanceerd openen gereed, %d document open."
+msgstr[1] "Geavanceerd openen gereed, %d documenten open."
+
+#: ../src/file.c:1625
+msgid "_Skip"
+msgstr "Overslaan"
+
+#: ../src/file.c:1625 ../src/file_dialogs.c:624 ../src/file_dialogs.c:645
+#: ../src/project.c:339
+msgid "_Overwrite"
+msgstr "Overschrĳven"
+
+#: ../src/file.c:1629
+#, c-format
+msgid "%s cannot be copied, it already exists, overwrite?"
+msgstr "%s kan niet gekopieerd worden, het bestaat al, overschrĳven?"
+
+#: ../src/file.c:1631
+msgid "Overwrite file?"
+msgstr "Bestand overschrĳven?"
+
+#: ../src/file_autosave.c:291
+msgid "Autosave in progress..."
+msgstr "Automatisch opslaan bezig..."
+
+#: ../src/file_dialogs.c:109
+msgid "Started open advanced..."
+msgstr "Open geavanceerd gestart..."
+
+#: ../src/file_dialogs.c:120
+msgid "Select basedir"
+msgstr "Selecteer basis map"
+
+#: ../src/file_dialogs.c:142
+msgid "Advanced open file selector"
+msgstr "Geavanceerde bestands selectie"
+
+#: ../src/file_dialogs.c:159
+msgid "<b>Files</b>"
+msgstr "<b>Bestanden</b>"
+
+#: ../src/file_dialogs.c:168
+msgid "Base _Dir:"
+msgstr "Basis-map:"
+
+#: ../src/file_dialogs.c:184
+msgid "_Pattern:"
+msgstr "_Patroon:"
+
+#: ../src/file_dialogs.c:192
+msgid "Pattern matches _full path:"
+msgstr "Patroon beschrijft volledige pad:"
+
+#: ../src/file_dialogs.c:196
+msgid "_Recursive:"
+msgstr "_Recursief:"
+
+#: ../src/file_dialogs.c:200
+msgid "Ma_x recursion:"
+msgstr "Ma_ximum recursie"
+
+#: ../src/file_dialogs.c:209
+msgid "<b>Contains</b>"
+msgstr "<b>Bevat</b>"
+
+#: ../src/file_dialogs.c:214
+msgid "Pa_ttern:"
+msgstr "Patroon:"
+
+#: ../src/file_dialogs.c:218
+msgid "Is rege_x:"
+msgstr "Is reguliere expressie:"
+
+#: ../src/file_dialogs.c:287 ../src/file_dialogs.c:307
+msgid "Select files"
+msgstr "Kies bestanden"
+
+#: ../src/file_dialogs.c:367
+msgid "Open URL"
+msgstr "Open URL"
+
+#: ../src/file_dialogs.c:450 ../src/file_dialogs.c:488
+msgid "_Continue save"
+msgstr "Opslaan hervatten"
+
+#: ../src/file_dialogs.c:454
+#, c-format
+msgid ""
+"A backupfile for %s could not be created. If you continue, this file will be "
+"overwritten."
+msgstr ""
+"Een reservebestand voor %s kon niet worden gemaakt. Als u doorgaat zal dit "
+"bestand worden overschreven."
+
+#: ../src/file_dialogs.c:458
+msgid "File backup failure"
+msgstr "Bestands reservekopie fout"
+
+#: ../src/file_dialogs.c:474
+msgid "Could not save file "
+msgstr "Kon bestand niet opslaan "
+
+#: ../src/file_dialogs.c:509 ../src/file_dialogs.c:1496
+msgid "File changed on disk\n"
+msgstr "Bestand gewĳzigd op disk\n"
+
+#: ../src/file_dialogs.c:624 ../src/file_dialogs.c:645
+#: ../src/file_dialogs.c:964 ../src/project.c:339
+msgid "_Cancel"
+msgstr "_Annuleren"
+
+#: ../src/file_dialogs.c:625
+#, c-format
+msgid "File %s exists and is open, overwrite?"
+msgstr "Bestand %s bestaat en is geopend; Overschrĳven ?"
+
+#: ../src/file_dialogs.c:628
+msgid "The file you have selected is being edited in Bluefish."
+msgstr "Het bestand wat u heeft geselecteerd is geopend in Bluefish."
+
+#: ../src/file_dialogs.c:646 ../src/project.c:341
+#, c-format
+msgid "A file named \"%s\" already exists."
+msgstr "Een bestand genaamd \"%s\" bestaat al."
+
+#: ../src/file_dialogs.c:649 ../src/project.c:345
+msgid "Do you want to replace the existing file?"
+msgstr "Wilt u het bestaande bestand vervangen?"
+
+#: ../src/file_dialogs.c:756
+msgid ""
+"File:\n"
+"\""
+msgstr ""
+"Bestand:\n"
+"\""
+
+#: ../src/file_dialogs.c:757
+msgid "\" save is in progress"
+msgstr "\" wordt opgeslagen"
+
+#: ../src/file_dialogs.c:759
+msgid "Save in progress!"
+msgstr "Opslaan bezig!"
+
+#: ../src/file_dialogs.c:772
+msgid "Save"
+msgstr "Opslaan"
+
+#: ../src/file_dialogs.c:774
+#, c-format
+msgid "Save %s as"
+msgstr "Opslaan van %s als"
+
+#: ../src/file_dialogs.c:778
+#, c-format
+msgid "Save copy of %s"
+msgstr "Kopie opslaan van %s"
+
+#: ../src/file_dialogs.c:935
+msgid "Close _Without Saving"
+msgstr "Sluiten zonder opslaan"
+
+#: ../src/file_dialogs.c:938
+#, c-format
+msgid "Save changes to \"%s\" before closing?"
+msgstr "Veranderingen opslaan naar \"%s\" voor sluiten?"
+
+#: ../src/file_dialogs.c:941 ../src/file_dialogs.c:968
+msgid "If you don't save your changes they will be lost."
+msgstr "Als u niet opslaat zullen de veranderingen verloren gaan."
+
+#: ../src/file_dialogs.c:951
+msgid "_Reopen"
+msgstr "He_ropen"
+
+#: ../src/file_dialogs.c:953
+#, c-format
+msgid "Project \"%s\" failed to load"
+msgstr "Kon project \"%s\" niet laden"
+
+#: ../src/file_dialogs.c:955
+msgid "Do you want to reopen project from another location?"
+msgstr "Wilt u het project van een andere plek openen?"
+
+#: ../src/file_dialogs.c:964
+msgid "Choose per _File"
+msgstr "Per bestand kiezen"
+
+#: ../src/file_dialogs.c:964
+msgid "Close _All"
+msgstr "Alles sluiten"
+
+#: ../src/file_dialogs.c:964
+msgid "_Save All"
+msgstr "Alles opslaan"
+
+#: ../src/file_dialogs.c:967
+msgid "One or more open files have been changed."
+msgstr "Een of meerdere open bestanden zĳn gewĳzigd."
+
+#: ../src/file_dialogs.c:1288
+#, c-format
+msgid "<span color=\"red\">%d failure</span>"
+msgid_plural "<span color=\"red\">%d failures</span>"
+msgstr[0] "<span color=\"red\">%d mislukt</span>"
+msgstr[1] "<span color=\"red\">%d mislukt</span>"
+
+#: ../src/file_dialogs.c:1297
+msgid "incomplete finished"
+msgstr "incompleet gereed"
+
+#: ../src/file_dialogs.c:1299
+msgid "completed"
+msgstr "klaar"
+
+#: ../src/file_dialogs.c:1357
+msgid "Upload / Download"
+msgstr "Upload / Download"
+
+#: ../src/file_dialogs.c:1360
+msgid "Upload"
+msgstr "Upload"
+
+#: ../src/file_dialogs.c:1360
+msgid "Download"
+msgstr "Download"
+
+#: ../src/file_dialogs.c:1367
+msgid "Local directory"
+msgstr "Directory lokaal"
+
+#: ../src/file_dialogs.c:1373
+msgid "Remote directory"
+msgstr "Directory elders"
+
+#: ../src/file_dialogs.c:1378
+msgid "Delete deprecated files"
+msgstr "Verwijder overbodige bestanden"
+
+#: ../src/file_dialogs.c:1382
+msgid "Include hidden files"
+msgstr "Inclusief verborgen bestanden"
+
+#: ../src/file_dialogs.c:1385
+msgid "Include backup files"
+msgstr "Inclusief reservekopiebestanden"
+
+#. g_print("oldtimestr=%s, newtimestr=%s\n",oldtimestr,newtimestr);
+#: ../src/file_dialogs.c:1432
+#, c-format
+msgid ""
+"Filename:%s changed on disk.\n"
+"\n"
+"Original modification time was %s\n"
+"New modification time is %s\n"
+"Original size was %s bytes\n"
+"New size is %s bytes"
+msgstr ""
+"Bestand %s is veranderd op schijf.\n"
+"\n"
+"Oorspronkelijke wĳzigings tĳd was %s\n"
+"Nieuwe wĳzigings tĳd is %s\n"
+"Oorspronkelijke grootte was %s bytes\n"
+"Nieuwe grootte is %s bytes"
+
+#: ../src/file_dialogs.c:1455
+msgid "_Unset file name"
+msgstr "Bestandsnaam wissen"
+
+#. file is deleted on disk, what do we do now ?
+#: ../src/file_dialogs.c:1457
+#, c-format
+msgid "File name: %s"
+msgstr "Bestandnaam: %s"
+
+#: ../src/file_dialogs.c:1460
+msgid "File disappeared from disk\n"
+msgstr "Bestand verdwenen van schĳf\n"
+
+#: ../src/file_dialogs.c:1479
+msgid "_Ignore"
+msgstr "Negeren"
+
+#: ../src/file_dialogs.c:1479
+msgid "_Reload"
+msgstr "Herladen"
+
+#: ../src/file_dialogs.c:1479
+msgid "Check and reload all documents"
+msgstr "Controleer en herlaad alle documenten"
+
+#. build a list of filters
+#: ../src/filefilter.c:250 ../src/gtk_easy.c:1351 ../src/preferences.c:2440
+msgid "All files"
+msgstr "Alle bestanden"
+
+#: ../src/filefilter.c:639
+msgid "Hide files that match the filter"
+msgstr "Verberg bestanden die herkend worden door het filter"
+
+#: ../src/filefilter.c:643
+msgid "Add pattern"
+msgstr "Voeg patroon toe"
+
+#: ../src/filefilter.c:649 ../src/filefilter.c:661
+msgid "Mime type"
+msgstr "Mime type"
+
+#: ../src/filefilter.c:652 ../src/filefilter.c:664
+msgid "Icon"
+msgstr "Icoon"
+
+#: ../src/gtk_easy.c:970
+#, c-format
+msgid "%d of %d"
+msgstr "%d van %d"
+
+#: ../src/gtk_easy.c:1051
+msgid "Select File"
+msgstr "Kies bestand"
+
+#: ../src/gtk_easy.c:1401
+msgid "Character _Encoding:"
+msgstr "Karakter Codering:"
+
+#: ../src/gtk_easy.c:1421
+msgid "Automatic detection"
+msgstr "Automatische detectie"
+
+#: ../src/gtk_easy.c:1510
+msgid "<b>Keystroke choice</b>"
+msgstr "<b>Toetsencombinatie</b>"
+
+#: ../src/gtk_easy.c:1518
+msgid ""
+"\n"
+"Press requested key combination.\n"
+"Please use Ctrl, Shift, Alt key with any other key.\n"
+"<i>Esc to cancel, Delete to remove the accelerator.</i>"
+msgstr ""
+"\n"
+"Druk gewenste toetsencombinatie.\n"
+"Gebruik Ctrl, Shift en Alt samen met een andere toets.\n"
+"<i>Gebruik Esc om te annuleren, of Delete om de sneltoets te verwijderen.</i>"
+
+#: ../src/gtk_easy.c:1543
+msgid "Press shortcut key combination"
+msgstr "Druk sneltoets combinatie"
+
+#: ../src/outputbox.c:247
+msgid "Filename"
+msgstr "Bestandnaam"
+
+#: ../src/outputbox.c:249
+msgid "Line"
+msgstr "Regel"
+
+#: ../src/outputbox.c:251
+msgid "Output"
+msgstr "Uitvoer"
+
+#: ../src/outputbox.c:481
+#, c-format
+msgid "Failed to compile output parser pattern %s: %s"
+msgstr "Compileren van van patroon %s is mislukt: %s"
+
+#: ../src/preferences.c:321
+msgid "Untitled"
+msgstr "Naamloos"
+
+#: ../src/preferences.c:523
+msgid "_Mime type:"
+msgstr "_Mime type"
+
+#: ../src/preferences.c:535 ../src/preferences.c:537
+msgid "None"
+msgstr "Geen"
+
+#: ../src/preferences.c:539
+msgid "_Template:"
+msgstr "_Sjablonen"
+
+#: ../src/preferences.c:542 ../src/snr3.c:1586
+msgid "<b>Options</b>"
+msgstr "<b>Optie's</b>"
+
+#: ../src/preferences.c:546
+msgid "Enable a_uto-completion"
+msgstr "A_utomatische completering inschakelen"
+
+#: ../src/preferences.c:548
+msgid "Enable _block folding"
+msgstr "_Blok in- / uitklappen inschakelen "
+
+#: ../src/preferences.c:550
+msgid "Display block stack in statusbar"
+msgstr "Blok niveau in statusbalk weergeven"
+
+#: ../src/preferences.c:552
+msgid "Highlight block _delimiters"
+msgstr "B_lok uiteinden oplichten"
+
+#: ../src/preferences.c:554
+msgid "_Highlight current line"
+msgstr "_Actieve regel oplichten"
+
+#: ../src/preferences.c:556
+msgid "Show line _numbers"
+msgstr "Regel_nummers weergeven"
+
+#: ../src/preferences.c:560
+msgid "Show _right margin indicator"
+msgstr "Toon rechter marge indicator"
+
+#: ../src/preferences.c:562 ../src/preferences.c:2504
+msgid "Smart auto indentin_g"
+msgstr "Slim automatisch insprin_gen"
+
+#: ../src/preferences.c:564
+msgid "Wra_p lines"
+msgstr "Regel _omloop inschakelen"
+
+#: ../src/preferences.c:566
+msgid "Enable syntax scanning"
+msgstr "Activeer syntax herkenning"
+
+#: ../src/preferences.c:568
+msgid "Show _visible spacing"
+msgstr "Witruimte weergeven"
+
+#: ../src/preferences.c:572
+msgid "_Enable spell check"
+msgstr "Spelling controle inschakelen"
+
+#: ../src/preferences.c:577
+msgid "<b>Tab Stops</b>"
+msgstr "<b>Tab stops</b>"
+
+#: ../src/preferences.c:582
+msgid "Tab _width:"
+msgstr "Tab _breedte"
+
+#: ../src/preferences.c:585
+msgid "Insert _spaces instead of tabs"
+msgstr "Gebruik _spatie's voor inspringen, geen tabs"
+
+#: ../src/preferences.c:622 ../src/preferences.c:1341
+#: ../src/preferences.c:1500
+msgid "Enabled"
+msgstr "Ingeschakeld"
+
+#: ../src/preferences.c:624
+msgid "Path to plugin"
+msgstr "Pad naar plugin"
+
+#: ../src/preferences.c:901
+msgid "Extension"
+msgstr "Extensie"
+
+#: ../src/preferences.c:903
+msgid "Mime-Type"
+msgstr "Mimetype"
+
+#: ../src/preferences.c:1131
+msgid ""
+"<small>Text styles are applied on top of each other. If multiple styles are "
+"applied to the same text, the top-most style in this list has the highest "
+"priority. Use drag and drop to re-order the text styles.</small>"
+msgstr ""
+"<small>Tekst stĳlen worden toegepast over elkaar heen. Als meerdere stĳlen "
+"toegepast worden op dezelfde tekst, dan heeft de bovenste stĳl de hoogste "
+"prioriteit. Versleep tekst-stĳlen om ze anders te ordenen.</small>"
+
+#: ../src/preferences.c:1142 ../src/preferences.c:1342
+#: ../src/preferences.c:1502
+msgid "Label"
+msgstr "Label"
+
+#: ../src/preferences.c:1157 ../src/preferences.c:2618
+msgid "Foreground color"
+msgstr "Voorgrond kleur"
+
+#: ../src/preferences.c:1158 ../src/preferences.c:2619
+msgid "_Foreground color:"
+msgstr "_Voorgrond kleur"
+
+#: ../src/preferences.c:1159 ../src/preferences.c:2622
+msgid "Background color"
+msgstr "Achtergrond kleur"
+
+#: ../src/preferences.c:1160 ../src/preferences.c:2623
+msgid "_Background color:"
+msgstr "_Achtergrond kleur"
+
+#: ../src/preferences.c:1164
+msgid "_Normal weight"
+msgstr "_Normaal gedrukt"
+
+#: ../src/preferences.c:1166
+msgid "Bold _weight"
+msgstr "_Vet gedrukt"
+
+#: ../src/preferences.c:1168
+msgid "Normal st_yle"
+msgstr "Normale _stijl"
+
+#: ../src/preferences.c:1171
+msgid "_Italic style"
+msgstr "_Schuin gedrukt"
+
+#: ../src/preferences.c:1173
+msgid "_Spell check"
+msgstr "Spelling controleren"
+
+#: ../src/preferences.c:1215 ../src/preferences.c:1379
+#: ../src/preferences.c:1532 ../src/preferences.c:1724
+#: ../src/preferences.c:1820
+msgid "Add entry"
+msgstr "Regel toevoegen"
+
+#: ../src/preferences.c:1217 ../src/preferences.c:1381
+#: ../src/preferences.c:1534 ../src/preferences.c:1726
+#: ../src/preferences.c:1822
+msgid "Delete entry"
+msgstr "Regel verwĳderen"
+
+#: ../src/preferences.c:1318
+#, c-format
+msgid ""
+"<small><b>Input options</b>\n"
+"start with a | to send the input to the standard input\n"
+"%f local filename (available for local files)\n"
+"%i temporary filename for input, equals %f if the document is not modified "
+"and local\n"
+"<b>Other options</b>\n"
+"%a additional arguments that will be asked when this filter is activated\n"
+"%c local directory of file (available for local files)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+"<small><b>Invoer optie's</b>\n"
+"start met | om standard input (stdin) te gebruiked\n"
+"%f lokale bestandsnaam (beschikbaar voor lokale bestanden)\n"
+"%i tĳdelĳke bestandsnaam voor invoer, is gelĳk aan %f als het document niet "
+"is gewĳzigd en lokaal is\n"
+"<b>Overige optie's</b>\n"
+"%a extra opties die gevraagd worden als dit filter geactiveerd wordt\n"
+"%c lokale directory van bestand (beschikbaar voor lokale bestanden)\n"
+"%n bestandsnaam zonder pad (beschikbaar voor alle documenten met naam)\n"
+"%u URL (beschikbaar voor alle opgeslagen documenten)\n"
+"%p preview URL Als documentroot en preview map zĳn ingesteld in de project "
+"instellingen, anders identiek aan %u</small>"
+
+#: ../src/preferences.c:1344 ../src/preferences.c:1504
+#: ../src/preferences.c:1698
+msgid "Command"
+msgstr "Commando"
+
+#: ../src/preferences.c:1347
+msgid "Default browser"
+msgstr "Standaard browser"
+
+#: ../src/preferences.c:1383 ../src/preferences.c:1536
+#: ../src/preferences.c:1728
+msgid "Update defaults"
+msgstr "Standaardwaarden bijwerken"
+
+#: ../src/preferences.c:1385 ../src/preferences.c:1538
+#: ../src/preferences.c:1730
+msgid "Reset all"
+msgstr "Alles herstellen"
+
+#: ../src/preferences.c:1475
+msgid ""
+"<small><b>Input options</b>\n"
+"start with a | to send the input to the standard input\n"
+"%f local filename (requires local file, cannot operate on selection)\n"
+"%i temporary filename for input\n"
+"<b>Output options</b>\n"
+"end with a | to read the output from the standard output\n"
+"%o temporary filename\n"
+"%t temporary filename for both input and output (for in-place-editing "
+"filters, cannot operate on selection)\n"
+"<b>Other options</b>\n"
+"%a additional arguments that will be asked when this filter is activated\n"
+"%c local directory of file (requires local file)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+"<small><b>Invoer optie's</b>\n"
+"start met | om standard input (stdin) te gebruiked\n"
+"%f lokale bestandsnaam (vereist een lokaal bestand, werkt niet met "
+"selecties)\n"
+"%i tijdelijke bestandsnaam voor invoer\n"
+"<b>Uitvoer optie's</b>\n"
+"eindig met | om de standard output (stdout) te gebruiken\n"
+"%o tijdelijke bestandsnaam\n"
+"%t tijdelijke bestandsnaam voor zowel invoer als uitvoer (voor in-de-plaats-"
+"bewerken filters) werkt niet met selecties\n"
+"<b>Overige optie's</b>\n"
+"%a extra opties die gevraagd worden als dit filter geactiveerd wordt\n"
+"%c lokale directory van bestand (lokaal bestand nodig)\n"
+"%n bestandsnaam zonder pad (beschikbaar voor alle getitelde bestanden)\n"
+"%u URL (beschikbaar voor alle getitelde bestanden)\n"
+"%p preview URL als documentroot en previewmap ingesteld zijn, anders "
+"identiek aan %u</small>"
+
+#: ../src/preferences.c:1660
+#, c-format
+msgid ""
+"<small><b>Input options</b>\n"
+"start with a | to send the input to the standard input\n"
+"%f local filename (available for local files)\n"
+"%i temporary filename for input, equals %f if the document is not modified "
+"and local\n"
+"<b>Output options</b>\n"
+"end with a | to read the output from the standard output\n"
+"%o temporary filename\n"
+"<b>Other options</b>\n"
+"%a additional arguments that will be asked when this filter is activated\n"
+"%c local directory of file (available for local files)\n"
+"%n filename without path (available for all titled files)\n"
+"%u URL (available for all titled files)\n"
+"%p preview URL if basedir and preview dir are set in project settings, else "
+"identical to %u</small>"
+msgstr ""
+"<small><b>Invoer optie's</b>\n"
+"start met | om standard input (stdin) te gebruiked\n"
+"%f lokale bestandsnaam (vereist een lokaal bestand, werkt niet met "
+"selecties)\n"
+"%i tijdelijke bestandsnaam voor invoer, gelijk aan %f voor documenten zonder "
+"wijzigingen\n"
+"<b>Uitvoer optie's</b>\n"
+"eindig met | om de standard output (stdout) te gebruiken\n"
+"%o tijdelijke bestandsnaam\n"
+"<b>Overige optie's</b>\n"
+"%a extra opties die gevraagd worden als dit filter geactiveerd wordt\n"
+"%c lokale directory van bestand (lokaal bestand nodig)\n"
+"%n bestandsnaam zonder pad (beschikbaar voor alle getitelde bestanden)\n"
+"%u URL (beschikbaar voor alle getitelde bestanden)\n"
+"%p preview URL als documentroot en previewmap ingesteld zijn, anders "
+"identiek aan %u</small>"
+
+#: ../src/preferences.c:1690
+msgid "Pattern"
+msgstr "Patroon"
+
+#: ../src/preferences.c:1692
+msgid "File #"
+msgstr "Bestand  #"
+
+#: ../src/preferences.c:1694
+msgid "Line #"
+msgstr "Regel #"
+
+#: ../src/preferences.c:1696
+msgid "Output #"
+msgstr "Uitvoer #"
+
+#: ../src/preferences.c:1791
+msgid "File"
+msgstr "Bestand "
+
+#: ../src/preferences.c:1969
+msgid "A restart is needed to see the effect of these options"
+msgstr "Deze opties hebben pas effect na een herstart"
+
+#. 1=text
+#: ../src/preferences.c:1981
+msgid "Option name"
+msgstr "Optie naam"
+
+#. 2=boolean
+#: ../src/preferences.c:1983
+msgid "value"
+msgstr "waarde"
+
+#. 1=text
+#: ../src/preferences.c:2000
+msgid "Highlight name"
+msgstr "Uitlicht naam"
+
+#: ../src/preferences.c:2005
+msgid "Textstyle"
+msgstr "Tekststĳl"
+
+#: ../src/preferences.c:2167 ../src/preferences.c:2862
+msgid "Auto"
+msgstr "Automatisch"
+
+#: ../src/preferences.c:2431
+msgid "Delayed"
+msgstr "Vertraagd"
+
+#: ../src/preferences.c:2431
+msgid "Immediately"
+msgstr "Direct"
+
+#: ../src/preferences.c:2432
+msgid "Continue save"
+msgstr "Doorgaan met opslaan"
+
+#: ../src/preferences.c:2432
+msgid "Abort save"
+msgstr "Opslaan afbreken"
+
+#: ../src/preferences.c:2432
+msgid "Ask what to do"
+msgstr "Vraag wat te doen"
+
+#: ../src/preferences.c:2433 ../src/preferences.c:2440
+#: ../src/preferences.c:2447
+msgid "Never"
+msgstr "Nooit"
+
+#: ../src/preferences.c:2433
+msgid "Periodically and during save"
+msgstr "Periodiek en tijdens opslaan"
+
+#: ../src/preferences.c:2433
+msgid "Only during save"
+msgstr "Alleen tijdens opslaan"
+
+#: ../src/preferences.c:2435
+msgid "Nothing"
+msgstr "Niets"
+
+#: ../src/preferences.c:2435
+msgid "Modified time and file size"
+msgstr "Gewĳzigde tĳd en bestandsgrootte"
+
+#: ../src/preferences.c:2435
+msgid "Modified time"
+msgstr "Gewĳzigde tĳd"
+
+#: ../src/preferences.c:2435
+msgid "File size"
+msgstr "Bestands grootte"
+
+#: ../src/preferences.c:2436 ../src/preferences.c:2437
+msgid "left"
+msgstr "links"
+
+#: ../src/preferences.c:2436 ../src/preferences.c:2437
+msgid "right"
+msgstr "rechts"
+
+#: ../src/preferences.c:2436
+msgid "top"
+msgstr "boven"
+
+#: ../src/preferences.c:2436
+msgid "bottom"
+msgstr "onder"
+
+#: ../src/preferences.c:2438
+msgid "Recently opened"
+msgstr "Recent geopend"
+
+#: ../src/preferences.c:2438
+msgid "Recently closed"
+msgstr "Recent gesloten"
+
+#: ../src/preferences.c:2440
+msgid "Only project files"
+msgstr "Alleen project bestanden"
+
+#: ../src/preferences.c:2444
+msgid "All"
+msgstr "Alle"
+
+#: ../src/preferences.c:2444
+msgid "All except spaces"
+msgstr "Alle behalve spaties"
+
+#: ../src/preferences.c:2444
+msgid "All trailing"
+msgstr "Alle hangende"
+
+#: ../src/preferences.c:2444
+msgid "All except non-trailing spaces"
+msgstr "Alle behalve niet-hangende spaties"
+
+#: ../src/preferences.c:2447
+msgid "Always"
+msgstr "Altijd"
+
+#: ../src/preferences.c:2447
+msgid "Smart"
+msgstr "Slim"
+
+#: ../src/preferences.c:2458
+msgid "Edit preferences"
+msgstr "Voorkeuren aanpassen"
+
+#.
+#. *  Initial document settings
+#.
+#: ../src/preferences.c:2482
+msgid "<b>Non Project Defaults</b>"
+msgstr "<b>Non-project Standaard instellingen</b>"
+
+#: ../src/preferences.c:2484
+msgid "Initial document settings"
+msgstr "Initiële document instellingen"
+
+#: ../src/preferences.c:2496
+msgid "Editor settings"
+msgstr "Editor optie's"
+
+#: ../src/preferences.c:2499
+msgid "<b>Editor settings</b>"
+msgstr "<b>Editor instellingen</b>"
+
+#: ../src/preferences.c:2507
+msgid "Smart Home/_End cursor positioning"
+msgstr "Slimme Home/End cursor positionering"
+
+#: ../src/preferences.c:2511
+msgid "_Tab key indents selection"
+msgstr "Selectie inpringen met _tab toets"
+
+#: ../src/preferences.c:2517
+msgid "Automatically insert closing brackets"
+msgstr "Automatisch haken sluiten"
+
+#: ../src/preferences.c:2524
+msgid "Right _margin/split line end position:"
+msgstr "Rechter marge positie:"
+
+#: ../src/preferences.c:2527
+msgid "Wrap lines on right margin indicator"
+msgstr "Breek regels af op de rechter marge"
+
+#: ../src/preferences.c:2533
+msgid "Visible _whitespace mode:"
+msgstr "Zichtbare _witruimte mode:"
+
+#: ../src/preferences.c:2536
+msgid "<b>Undo</b>"
+msgstr "<b>Ongedaan maken</b>"
+
+#: ../src/preferences.c:2541
+msgid "_Number of actions in history:"
+msgstr "_Aantal acties in ongedaan maken historie"
+
+#: ../src/preferences.c:2544
+msgid "Clear _history on save"
+msgstr "Ongedaan maken historie wissen bĳ opslaan"
+
+#: ../src/preferences.c:2549
+msgid "Auto-completion & Reference"
+msgstr "Auto-completeren & Referentie"
+
+#: ../src/preferences.c:2555
+msgid "<b>Auto-completion</b>"
+msgstr "<b>Auto-completeren</b>"
+
+#: ../src/preferences.c:2561
+msgid "Show _pop-up window:"
+msgstr "_Pop-up laten zien:"
+
+#: ../src/preferences.c:2565
+msgid "Minimum matching length for auto-completion:"
+msgstr "Minimaal herkende karakters voor auto-completeren"
+
+#: ../src/preferences.c:2570
+msgid "Shortcut _key combination:"
+msgstr "Sneltoets _combinatie:"
+
+#: ../src/preferences.c:2573
+msgid "<b>Reference Information</b>"
+msgstr "<b>Referentie informatie</b>"
+
+#: ../src/preferences.c:2576
+msgid "_Load reference data from language files"
+msgstr "Referentie informatie in geheugen laden"
+
+#: ../src/preferences.c:2579
+msgid "Show references in auto-completion _pop-up window"
+msgstr "Referentie informatie bij automatische _completering weergeven"
+
+#: ../src/preferences.c:2582
+msgid "Show references if mouse is over text editor"
+msgstr "Geef referenties weer als de muis over de tekst gaat"
+
+#: ../src/preferences.c:2591 ../src/preferences.c:2968
+msgid "Font & Colors"
+msgstr "Lettertype & Kleuren"
+
+#: ../src/preferences.c:2597
+msgid "<b>Font &amp; Cursor</b>"
+msgstr "<b>Lettertype &amp; Cursor</b>"
+
+#: ../src/preferences.c:2601
+msgid "_Editor font:"
+msgstr "Lettertype"
+
+#: ../src/preferences.c:2609
+msgid "Cursor / font size ratio (%):"
+msgstr "Cursor / lettergrootte ratio (%)"
+
+#: ../src/preferences.c:2611 ../src/preferences.c:2994
+msgid "<b>Colors</b>"
+msgstr "<b>Kleuren</b>"
+
+#: ../src/preferences.c:2615
+msgid "Use system wide color settings"
+msgstr "Gebruik systeembreed ingestelde kleuren"
+
+#: ../src/preferences.c:2626
+msgid "Cursor color"
+msgstr "Cursor kleur"
+
+#: ../src/preferences.c:2627
+msgid "C_ursor color:"
+msgstr "C_ursor kleur"
+
+#: ../src/preferences.c:2630
+msgid "Selection background color"
+msgstr "Selectie achtergrond kleur"
+
+#: ../src/preferences.c:2631
+msgid "_Selection background color:"
+msgstr "Selectie achtergrond kleur:"
+
+#: ../src/preferences.c:2636
+msgid "Highlight cursor position"
+msgstr "Cursor positie oplichten"
+
+#: ../src/preferences.c:2638
+msgid "Cursor highlight color"
+msgstr "Cursor oplicht kleur"
+
+#: ../src/preferences.c:2639
+msgid "_Cursor highlight color:"
+msgstr "_Cursor oplicht kleur:"
+
+#: ../src/preferences.c:2644
+msgid "Current line color"
+msgstr "Actieve regel kleur"
+
+#: ../src/preferences.c:2645
+msgid "Cu_rrent line color:"
+msgstr "Actieve _regel kleur"
+
+#: ../src/preferences.c:2648
+msgid "Visible whitespace color"
+msgstr "Zichtbare witruimte kleur"
+
+#: ../src/preferences.c:2649
+msgid "_Visible whitespace color:"
+msgstr "Zichtbare witruimte kleur"
+
+#: ../src/preferences.c:2661
+msgid "Text styles"
+msgstr "Tekst stĳlen"
+
+#: ../src/preferences.c:2663
+msgid "<b>Text Styles</b>"
+msgstr "<b>Tekst stĳlen</b>"
+
+#: ../src/preferences.c:2676
+msgid "Files"
+msgstr "Bestanden"
+
+#: ../src/preferences.c:2679
+msgid "<b>Encoding</b>"
+msgstr "<b>Codering</b>"
+
+#: ../src/preferences.c:2695
+msgid "_Default character set for new files:"
+msgstr "_Standaard karakterset voor nieuwe bestanden"
+
+#: ../src/preferences.c:2701
+msgid "Auto set <meta> _HTML tag on encoding change"
+msgstr "Automatisch <meta> _HTML tag aanpassen bĳ coderingsverandering"
+
+#: ../src/preferences.c:2705 ../src/preferences.c:2851
+msgid "<b>Misc</b>"
+msgstr "<b>Overig</b>"
+
+#: ../src/preferences.c:2708
+msgid "Strip trailing spaces on save"
+msgstr "Verwijder naloopspaties bij opslaan"
+
+#: ../src/preferences.c:2714
+msgid "Open co_mmandline files in running bluefish process"
+msgstr "Open co_mmando-regel bestanden in een al geopend Bluefish proces"
+
+#: ../src/preferences.c:2719
+msgid "Open commandline files in new _window"
+msgstr "Open commando-regel bestanden in een nieuw _venster"
+
+#: ../src/preferences.c:2726
+msgid "Check if file is modified on disk:"
+msgstr "Ga na of bestand op disk veranderd is:"
+
+#: ../src/preferences.c:2732
+msgid "File properties to check on dis_k for modifications:"
+msgstr "Bestandseigenschappen op _schĳf ter controle van wĳzigingen"
+
+#: ../src/preferences.c:2736
+msgid "Show warning for files with very long lines"
+msgstr "Toon waarschuwing voor bestanden met hele lange regels"
+
+#: ../src/preferences.c:2746
+msgid "Backup & Recovery"
+msgstr "Reserves & Herstellen"
+
+#: ../src/preferences.c:2749
+msgid "<b>Backup</b>"
+msgstr "<b>Reserve bestanden</b>"
+
+#: ../src/preferences.c:2751
+msgid "Create _backup file during file save"
+msgstr "Maak reserve_bestand bĳ opslaan"
+
+#: ../src/preferences.c:2756
+msgid "_Remove backup file on close"
+msgstr "_Verwĳder reservebestand bĳ sluiten"
+
+#: ../src/preferences.c:2761
+msgid "If back_up fails:"
+msgstr "Als de reservekopie _mislukt"
+
+#: ../src/preferences.c:2768
+msgid "<b>Document Recovery</b>"
+msgstr "<b>Document Herstel</b>"
+
+#: ../src/preferences.c:2770
+msgid "_Enable recovery of modified documents"
+msgstr "Herstelkopie van gewijzigde documenten maken"
+
+#: ../src/preferences.c:2774
+msgid "_Frequency to store changes (seconds):"
+msgstr "Herstelkopie _frequentie (seconden)"
+
+#: ../src/preferences.c:2788 ../src/preferences.c:2789
+msgid "File Associations"
+msgstr "Bestands associaties"
+
+#: ../src/preferences.c:2807
+msgid "Templates"
+msgstr "Sjablonen"
+
+#: ../src/preferences.c:2810
+msgid "<b>Templates</b>"
+msgstr "<b>Sjablonen</b>"
+
+#: ../src/preferences.c:2823
+msgid "User interface"
+msgstr "Gebruikers interface"
+
+#: ../src/preferences.c:2826
+msgid "<b>Layout</b>"
+msgstr "<b>Layout</b>"
+
+#: ../src/preferences.c:2832
+msgid "Document _tab position:"
+msgstr "Document _tab positie:"
+
+#: ../src/preferences.c:2837
+msgid "Maximum filename length shown in tab (0 is no limit)"
+msgstr "Beperk bestandsnaam lengte in tab (0 voor onbeperkt)"
+
+#: ../src/preferences.c:2843
+msgid "_Sidebar position:"
+msgstr "Zijbalk positie:"
+
+#: ../src/preferences.c:2849
+msgid "Sidebar tab _position:"
+msgstr "Zijbalk tab positie:"
+
+#: ../src/preferences.c:2853
+msgid "Hide toolbars on full-screen"
+msgstr "Verberg werkbalk bij volledige scermvulling"
+
+#: ../src/preferences.c:2862
+msgid "User interface _language:"
+msgstr "Gebruikersinterface _taal:"
+
+#: ../src/preferences.c:2865
+msgid "<b>Recent Files</b>"
+msgstr "<b>Recente bestanden</b>"
+
+#: ../src/preferences.c:2870
+msgid "Recent files _shows:"
+msgstr "Recente bestanden _toont:"
+
+#: ../src/preferences.c:2875
+msgid "_Number of files in 'Open recent' menu:"
+msgstr "_Aantal bestanden in 'Recent geopend' menu"
+
+#: ../src/preferences.c:2880
+msgid "_Register recent files with your desktop:"
+msgstr "_Registreer recente bestanden bij uw bureaublad:"
+
+#: ../src/preferences.c:2891
+msgid "Shortcut keys"
+msgstr "Sneltoets combinaties"
+
+#: ../src/preferences.c:2896
+msgid "<b>Shortcut keys</b>"
+msgstr "<b>Sneltoets combinaties</b>"
+
+#: ../src/preferences.c:2900
+msgid "_Switch between tabs with <Alt>+0..9"
+msgstr "_Wissel tussen tabs met Alt>+0..9"
+
+#: ../src/preferences.c:2903
+msgid "_Switch between tabs with <Command>+0..9"
+msgstr "_Wissel tussen tabs met <Command>>+0..9"
+
+#: ../src/preferences.c:2908
+msgid "Save menu accelerators on exit"
+msgstr "Gebruikers sneltoetsen opslaan bij afsluiten"
+
+#: ../src/preferences.c:2911
+msgid "Save user customised menu accelerators now"
+msgstr "Gebruikers sneltoetsen opslaan"
+
+#: ../src/preferences.c:2915
+msgid "Reset menu accelerators to application defaults"
+msgstr "Sneltoetsen herstellen naar Standaardwaarden"
+
+#: ../src/preferences.c:2927
+msgid "Dimensions"
+msgstr "Afmetingen"
+
+#: ../src/preferences.c:2930
+msgid "<b>Dimensions</b>"
+msgstr "<b>Afmetingen</b>"
+
+#: ../src/preferences.c:2932
+msgid "_Leave dimensions to window manager"
+msgstr "_Laat afmetingen over aan vensterbeheer"
+
+#: ../src/preferences.c:2939
+msgid "_Restore last used dimensions"
+msgstr "_Herstel laatst gebruikte afmetingen"
+
+#: ../src/preferences.c:2947
+msgid "Initial _sidebar width:"
+msgstr "Initiële _zijbalk breedte:"
+
+#: ../src/preferences.c:2951
+msgid "Initial window _height:"
+msgstr "Initiële _venster hoogte:"
+
+#: ../src/preferences.c:2954
+msgid "Initial window _width:"
+msgstr "Initiële _venster breedte:"
+
+#: ../src/preferences.c:2961
+msgid "_Limit window title length"
+msgstr "Beperk window titel lengte"
+
+#: ../src/preferences.c:2974
+msgid "<b>Document tab</b>"
+msgstr "<b>Document tab</b>"
+
+#: ../src/preferences.c:2979
+msgid "_Use system document tab font"
+msgstr "_Gebruik systeem lettertype"
+
+#: ../src/preferences.c:2984
+msgid "_Document tab font:"
+msgstr "Document tab lettertype:"
+
+#: ../src/preferences.c:2998
+msgid "Document error tab color"
+msgstr "Document tab foutstatus kleur"
+
+#: ../src/preferences.c:3000
+msgid "Document tab _error color:"
+msgstr "Document tab _foutstatus kleur:"
+
+#: ../src/preferences.c:3004
+msgid "Document loading tab color"
+msgstr "Document tab laadt-status kleur"
+
+#: ../src/preferences.c:3006
+msgid "Document tab loadin_g color:"
+msgstr "Document tab _laadt-status kleur:"
+
+#: ../src/preferences.c:3010
+msgid "Document modified tab color"
+msgstr "Document tab gewijzigd-status kleur"
+
+#: ../src/preferences.c:3012
+msgid "Document tab _modified color:"
+msgstr "Document tab _gewijzigd-status kleur"
+
+#. arr = array_from_arglist(_("Java programming"),"1", "java:image:jsp", NULL);
+#. main_v->globses.filefilters = g_list_append(main_v->globses.filefilters, arr);
+#: ../src/preferences.c:3025 ../src/rcfile.c:1438
+msgid "Images"
+msgstr "Afbeeldingen"
+
+#: ../src/preferences.c:3028
+msgid "<b>Thumbnails</b>"
+msgstr "<b>Voorbeeldafbeeldingen</b>"
+
+#: ../src/preferences.c:3034
+msgid "Thumbnail _filetype:"
+msgstr "Voorbeeldafbeelding (thumbnail) _bestandstype:"
+
+#: ../src/preferences.c:3038
+msgid "Thumbnail _suffix:"
+msgstr "Voorbeeldafbeelding (thumbnail) _achtervoegsel:"
+
+#: ../src/preferences.c:3051
+msgid "External commands"
+msgstr "Externe commando's"
+
+#: ../src/preferences.c:3053
+msgid "<b>External Commands</b>"
+msgstr "<b>Externe Commando's</b>"
+
+#: ../src/preferences.c:3066
+msgid "External filters"
+msgstr "Externe filters"
+
+#: ../src/preferences.c:3069
+msgid "<b>External Filters</b>"
+msgstr "<b>Externe filters</b>"
+
+#: ../src/preferences.c:3082
+msgid "Output parsers"
+msgstr "Uitvoer parser"
+
+#: ../src/preferences.c:3084
+msgid "<b>Output Parsers</b>"
+msgstr "<b>Uitvoer Parser</b>"
+
+#: ../src/preferences.c:3097
+msgid "Plugins"
+msgstr "Plugins"
+
+#: ../src/preferences.c:3099
+msgid "<b>Plugins</b>"
+msgstr "<b>Plugins</b>"
+
+#: ../src/preferences.c:3121
+msgid "Language support"
+msgstr "Taal ondersteuning"
+
+#: ../src/project.c:311
+msgid "Enter Bluefish project filename"
+msgstr "Voer naam in van Bluefish project bestand"
+
+#: ../src/project.c:494
+msgid "Select Bluefish project filename"
+msgstr "Selecteer Bluefish project bestands naam"
+
+#: ../src/project.c:657
+msgid "Create New Project"
+msgstr "Nieuw project aanmaken"
+
+#: ../src/project.c:660
+msgid "Edit Project"
+msgstr "Project bewerken"
+
+# c-format
+#: ../src/project.c:685
+#, c-format
+msgid "This project contains %d file"
+msgid_plural "This project contains %d files"
+msgstr[0] "Dit project bevat %d bestand"
+msgstr[1] "Dit project bevat %d bestanden"
+
+#: ../src/project.c:698
+msgid "Project _Name:"
+msgstr "Project Naam:"
+
+#. pred->entries[template] = entry_with_text(pred->project->template, 255);
+#. bf_mnemonic_label_tad_with_alignment(_("_Template:"), pred->entries[template], 1, 0.5, table, 0, 1, 3, 4);
+#. but = file_but_new(pred->entries[template], 1, NULL);
+#. gtk_table_attach_defaults(GTK_TABLE(table), pred->entries[template], 2, 3, 3, 4);
+#. gtk_table_attach_defaults(GTK_TABLE(table), but, 3, 4, 3, 4);
+#: ../src/project.c:706
+msgid "<b>Project Defaults</b>"
+msgstr "<b>Project standaard instellingen</b>"
+
+#: ../src/project.c:720
+msgid "Create _Project"
+msgstr "Project Aanmaken"
+
+#: ../src/project.c:769
+msgid "Create project"
+msgstr "Project aanmaken"
+
+#: ../src/project.c:774
+msgid "Create project with currently opened documents"
+msgstr "Project aanmaken met huidige geopende bestanden"
+
+#: ../src/project.c:776
+msgid "Create empty project"
+msgstr "Leeg project aanmaken"
+
+#: ../src/rcfile.c:701 ../src/rcfile.c:729
+msgid "php"
+msgstr "php"
+
+#: ../src/rcfile.c:707
+msgid "make"
+msgstr "make"
+
+#: ../src/rcfile.c:711
+msgid "weblint HTML checker"
+msgstr "weblint HTML checker"
+
+#: ../src/rcfile.c:716
+msgid "tidy HTML validator"
+msgstr "tidy HTML validator"
+
+#: ../src/rcfile.c:720
+msgid "javac"
+msgstr "javac"
+
+#: ../src/rcfile.c:724
+msgid "xmllint XML checker"
+msgstr "xmllint XML checker"
+
+#: ../src/rcfile.c:733
+msgid "php syntax check"
+msgstr "php syntax test"
+
+#: ../src/rcfile.c:737
+msgid "perl syntax check"
+msgstr "perl syntax check"
+
+#: ../src/rcfile.c:741
+msgid "php codesniffer"
+msgstr "php codesniffer"
+
+#: ../src/rcfile.c:745
+msgid "pylint"
+msgstr "pylint"
+
+#: ../src/rcfile.c:758
+msgid "Sort"
+msgstr "Sorteren"
+
+#: ../src/rcfile.c:761
+msgid "Sort / Uniq"
+msgstr "Sort / Uniq"
+
+#: ../src/rcfile.c:764
+msgid "Reverse lines"
+msgstr "Regels omdraaien"
+
+#: ../src/rcfile.c:767
+msgid "Dos2unix"
+msgstr "Dos2unix"
+
+#: ../src/rcfile.c:769
+msgid "Tidy HTML"
+msgstr "Tidy HTML"
+
+#: ../src/rcfile.c:771
+msgid "Tidy convert to XHTML"
+msgstr "Tidy converteer naar XHTML"
+
+#: ../src/rcfile.c:774
+msgid "Tidy HTML (perltidy)"
+msgstr "Tidy HTML (perltidy)"
+
+#: ../src/rcfile.c:777
+msgid "Strip empty lines"
+msgstr "Verwijder lege regels"
+
+#: ../src/rcfile.c:780
+msgid "Render HTML to text"
+msgstr "Maak tekst van HTML"
+
+#: ../src/rcfile.c:783
+msgid "PHP Beautifier"
+msgstr "PHP opschonen"
+
+#: ../src/rcfile.c:787 ../src/rcfile.c:794
+msgid "Javascript Minify with jsmin"
+msgstr "Javascript Minify met jsmin"
+
+#: ../src/rcfile.c:790 ../src/rcfile.c:797
+msgid "Toggle CSS compression"
+msgstr "Schakel CSS compressie"
+
+#: ../src/rcfile.c:801
+msgid "CSS tidy"
+msgstr "CSS tidy"
+
+#: ../src/rcfile.c:813
+msgid "Windows XP Firefox"
+msgstr "Windows XP Firefox"
+
+#: ../src/rcfile.c:818
+msgid "Windows XP Internet Explorer"
+msgstr "Windows XP Internet Explorer"
+
+#: ../src/rcfile.c:823
+msgid "Windows XP Opera"
+msgstr "Windows XP Opera"
+
+#: ../src/rcfile.c:827
+msgid "Windows XP Safari"
+msgstr "Windows XP Safari"
+
+#: ../src/rcfile.c:831
+msgid "Windows 7 Firefox 32-bit"
+msgstr "Windows 7 Firefox 32-bit"
+
+#: ../src/rcfile.c:836
+msgid "Windows 7 Internet Explorer 32-bit"
+msgstr "Windows 7 Internet Explorer 32-bit"
+
+#: ../src/rcfile.c:841
+msgid "Windows 7 Internet Explorer 64-bit"
+msgstr "Windows 7 Internet Explorer 64-bit"
+
+#: ../src/rcfile.c:847
+msgid "Safari"
+msgstr "Safari"
+
+#: ../src/rcfile.c:850 ../src/rcfile.c:866
+msgid "Firefox"
+msgstr "Firefox"
+
+#: ../src/rcfile.c:853
+msgid "Google Chrome"
+msgstr "Google Chrome"
+
+#: ../src/rcfile.c:856 ../src/rcfile.c:874
+msgid "Chromium"
+msgstr "Chromium"
+
+#: ../src/rcfile.c:859 ../src/rcfile.c:870
+msgid "Opera"
+msgstr "Opera"
+
+#: ../src/rcfile.c:862 ../src/rcfile.c:889
+msgid "chmod a+x"
+msgstr "chmod a+x"
+
+#: ../src/rcfile.c:877
+msgid "Konqueror"
+msgstr "Konqueror"
+
+#: ../src/rcfile.c:880
+msgid "Epiphany"
+msgstr "Epiphany"
+
+#: ../src/rcfile.c:883
+msgid "Kazehakase"
+msgstr "Kazehakase"
+
+#: ../src/rcfile.c:886
+msgid "Links2 (graphics)"
+msgstr "Links2 (graphics)"
+
+#: ../src/rcfile.c:938
+msgid "C Header"
+msgstr "C header"
+
+#: ../src/rcfile.c:941
+msgid "C Header GPL"
+msgstr "C Header GPL"
+
+#: ../src/rcfile.c:944
+msgid "XHTML 1.0"
+msgstr "XHTML 1.0"
+
+#: ../src/rcfile.c:947
+msgid "HTML 5"
+msgstr "HTML 5"
+
+#: ../src/rcfile.c:950
+msgid "PHP"
+msgstr "PHP"
+
+#: ../src/rcfile.c:953
+msgid "LaTex Book"
+msgstr "LaTex Book"
+
+#: ../src/rcfile.c:956
+msgid "LaTex Presentation"
+msgstr "LaTex Presentation"
+
+#: ../src/rcfile.c:1323
+msgid "Untitled Project"
+msgstr "Naamloos Project"
+
+#: ../src/rcfile.c:1430
+msgid "C programming"
+msgstr "C programmeren"
+
+#: ../src/rcfile.c:1434
+msgid "Web files"
+msgstr "Web bestanden"
+
+#: ../src/rcfile.c:1441
+msgid "Hide objectfiles"
+msgstr "Object bestanden verbergen"
+
+#: ../src/snr3.c:678
+msgid "<i>Replace started</i>"
+msgstr "<i>Vervangen gestart</i>"
+
+#: ../src/snr3.c:683
+msgid "<i>Search started</i>"
+msgstr "<i>Zoeken gestart</i>"
+
+#: ../src/snr3.c:701
+msgid "<span foreground=\"red\"><b>No selection, aborted search</b></span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">Geen selectie, gestopt met zoeken.</"
+"span>"
+
+#. display warning that not all documents have yet finished loading
+#: ../src/snr3.c:710
+msgid ""
+"<span foreground=\"red\" weight=\"bold\">Some documents are still loading</"
+"span>"
+msgstr ""
+"<span foreground=\"red\" weight=\"bold\">Nog niet alle documenten zĳn "
+"geladen.</span>"
+
+#: ../src/snr3.c:844
+msgid "<span foreground=\"red\">Empty search string</span>"
+msgstr "<span foreground=\"red\">Leeg zoekveld</span>"
+
+#: ../src/snr3.c:894
+#, c-format
+msgid "<i>Replaced %d entry</i>"
+msgid_plural "<i>Replaced %d entries</i>"
+msgstr[0] "<b>%d resultaten vervangen</b>"
+msgstr[1] "<b>%d resultaat vervangen</b>"
+
+#: ../src/snr3.c:896
+#, c-format
+msgid "<i>Found %d entry</i>"
+msgid_plural "<i>Found %d entries</i>"
+msgstr[0] "<b>%d resultaat gevonden</b>"
+msgstr[1] "<b>%d resultaten gevonden</b>"
+
+#: ../src/snr3.c:1184
+#, c-format
+msgid "<i>Found %d result in %d of the %d searched documents</i>"
+msgid_plural "<i>Found %d results in %d of the %d searched documents</i>"
+msgstr[0] "<i>%d resultaat in %d van de %d documenten</i>"
+msgstr[1] "<i>%d resultaten in %d van de %d documenten</i>"
+
+#: ../src/snr3.c:1188
+#, c-format
+msgid "<i>Found %d result from character %d to %d</i>"
+msgid_plural "<i>Found %d results from character %d to %d</i>"
+msgstr[0] "<i>%d resultaat van karakter %d tot %d</i>"
+msgstr[1] "<i>%d resultaten van karakter %d tot %d</i>"
+
+#: ../src/snr3.c:1191
+#, c-format
+msgid "<i>Found %d result in the active document</i>"
+msgid_plural "<i>Found %d results in the active document</i>"
+msgstr[0] "<i>%d resultaat in het huidige actieve document</i>"
+msgstr[1] "<i>%d resultaten in het huidige actieve document</i>"
+
+#: ../src/snr3.c:1419
+msgid "No (more) results"
+msgstr "Geen (extra) resultaten"
+
+#: ../src/snr3.c:1517
+msgid "Active document"
+msgstr "Aktieve document"
+
+#: ../src/snr3.c:1518
+msgid "Forward from cursor position"
+msgstr "Voorwaarts vanaf cursor positie"
+
+#: ../src/snr3.c:1519
+msgid "Current selection"
+msgstr "Huidige selectie"
+
+#: ../src/snr3.c:1520
+msgid "All open documents"
+msgstr "Alle geopende documenten"
+
+#: ../src/snr3.c:1521
+msgid "Files on disk"
+msgstr "Bestanden op disk"
+
+#: ../src/snr3.c:1525 ../src/snr3.c:1530
+msgid "Normal"
+msgstr "Normaal"
+
+#: ../src/snr3.c:1531
+msgid "Uppercase"
+msgstr "Hoofdletters"
+
+#: ../src/snr3.c:1532
+msgid "Lowercase"
+msgstr "Kleine letters"
+
+#: ../src/snr3.c:1539
+msgid "Find and Replace"
+msgstr "Zoek en Vervang"
+
+#: ../src/snr3.c:1558
+msgid "<b>_Search for</b>"
+msgstr "<b>_Zoek naar</b>"
+
+#: ../src/snr3.c:1581
+msgid "<b>Replace _with</b>"
+msgstr "<b>Vervang _door</b>"
+
+#: ../src/snr3.c:1596
+msgid "Match Patter_n: "
+msgstr "Zoekpatroon"
+
+#: ../src/snr3.c:1608
+msgid "Replace T_ype: "
+msgstr "Vervang Type"
+
+#: ../src/snr3.c:1621
+msgid "Sco_pe: "
+msgstr "Bereik: "
+
+#: ../src/snr3.c:1631
+msgid "Filename pattern: "
+msgstr "Bestandsnaam patroon: "
+
+#: ../src/snr3.c:1637
+msgid "Recursion level: "
+msgstr "Recursie niveau:"
+
+#: ../src/snr3.c:1643
+msgid "Basedir: "
+msgstr "Basismap: "
+
+#: ../src/snr3.c:1663
+msgid "Case sensitive _matching"
+msgstr "Hoofdletter gevoelig zoeken"
+
+#: ../src/snr3.c:1665
+msgid "Only match if case (upper/lower) is identical."
+msgstr "Alleen resultaat als kast (hoofdletter/kleine letter) identiek is."
+
+#: ../src/snr3.c:1669
+msgid "Pattern contains escape-se_quences"
+msgstr "Patroon bevat escape combinaties"
+
+#: ../src/snr3.c:1672
+msgid "Pattern contains backslash escaped characters such as \\n \\t etc."
+msgstr "Patroon bevat backslash escape karakters zoals \\n, \\t etc."
+
+#: ../src/snr3.c:1676
+msgid "Dot character in regex pattern matches newlines"
+msgstr "Punt karakter in reguliere expressie pakt regeleinden"
+
+#: ../src/snr3.c:1679
+msgid ""
+"The . character will match everything including newlines, use for multiline "
+"matching."
+msgstr ""
+"Het . karakter zal alles pakken inclusies regeleinden, gebruik dit voor meer-"
+"regelige zoekopdrachten"
+
+#: ../src/snr3.c:1701
+msgid "Replace _All"
+msgstr "Alles vervangen"
+
+#: ../src/snr3.c:1703
+msgid "_Replace"
+msgstr "Vervangen"
+
+#: ../src/snr3.c:1707
+msgid "_Find All"
+msgstr "_Zoek Alle"
+
+#: ../src/snr3.c:1709
+msgid "B_ookmark All"
+msgstr "Als bladwĳzers"
+
+#: ../src/undo_redo.c:555 ../src/undo_redo.c:697
+msgid "Undo in _all documents"
+msgstr "In alle geopende documenten ongedaan maken"
+
+#: ../src/undo_redo.c:555 ../src/undo_redo.c:697
+msgid "Undo only _this document"
+msgstr "Alleen in dit document ongedaan maken"
+
+#: ../src/undo_redo.c:558 ../src/undo_redo.c:700
+msgid "Undo this change in all documents?"
+msgstr "Deze verandering in alle documenten ongedaan maken?"
+
+#: ../src/undo_redo.c:559 ../src/undo_redo.c:701
+msgid "This change concerns multiple documents."
+msgstr "Deze verandering betreft meerdere documenten."
+
+#: ../src/xmlstrings.h:2
+msgid "Allow folding of C style comments"
+msgstr "Maak C-stijl commentaar opvouwbaar"
+
+#: ../src/xmlstrings.h:3
+msgid "Allow folding of Curly brackets block"
+msgstr "Maak accolade blokken {..} opvouwbaar"
+
+#: ../src/xmlstrings.h:4
+msgid "Allow folding of Javascript Curly brackets block"
+msgstr "Maak Javascript accolade blokken {..} opvouwbaar"
+
+#: ../src/xmlstrings.h:5
+msgid "Allow folding of Javascript Parentheses block"
+msgstr "Maak Javascript (..) blokken opvouwbaar"
+
+#: ../src/xmlstrings.h:6
+msgid "Allow folding of Javascript Square brackets block"
+msgstr "Maak javascript vierkante haken [...] opvouwbaar"
+
+#: ../src/xmlstrings.h:7
+msgid "Allow folding of Parentheses block"
+msgstr "Maak (...) blokken opvouwbaar"
+
+#: ../src/xmlstrings.h:8
+msgid "Allow folding of PHP blocks"
+msgstr "Maak PHP blokken opvouwbaar"
+
+#: ../src/xmlstrings.h:9
+msgid "Allow folding of Square brackets block"
+msgstr "Maak vierkante haken blokken [...] opvouwbaar"
+
+#: ../src/xmlstrings.h:10
+msgid "Allow folding of the Parentheses block"
+msgstr "Maak (...) blokken opvouwbaar"
+
+#: ../src/xmlstrings.h:11
+msgid "Allow to fold the the root html tag"
+msgstr "Maak de root html tag opvouwbaar"
+
+#: ../src/xmlstrings.h:12
+msgid "All php functions"
+msgstr "Alle PHP functies"
+
+#: ../src/xmlstrings.h:13
+msgid "All wordpress functions"
+msgstr "Alle wordpress functies"
+
+#: ../src/xmlstrings.h:14
+msgid "Autocomplete function names with semicolon"
+msgstr "Auto-completeer functie namen met een puntcomma"
+
+#: ../src/xmlstrings.h:15
+msgid "Autocomplete HTML entities"
+msgstr "Auto-completeer HTML entities"
+
+#: ../src/xmlstrings.h:16
+msgid "Autocomplete Javascript object methods"
+msgstr "Auto-complementeer Javascript object methoden"
+
+#: ../src/xmlstrings.h:17
+msgid "autocomplete javascript variables"
+msgstr "auto-completeer Javascript variabelen"
+
+#: ../src/xmlstrings.h:18
+msgid "Auto-complete PHP functions"
+msgstr "Auto-completeer PHP functies"
+
+#: ../src/xmlstrings.h:19
+msgid "Auto-complete PHP variables"
+msgstr "Auto-completeer PHP variabelen"
+
+#: ../src/xmlstrings.h:20
+msgid "Autocomplete tags"
+msgstr "Autocompleteer tags"
+
+#: ../src/xmlstrings.h:21
+msgid "autocomplete with newlines"
+msgstr "auto-completeer met regeleinden"
+
+#: ../src/xmlstrings.h:22
+msgid "CSS properties"
+msgstr "CSS eigenschappen"
+
+#: ../src/xmlstrings.h:23
+msgid "Enable the PHP short open tag"
+msgstr "Gebruik de PHP korte openings tag"
+
+#: ../src/xmlstrings.h:24
+msgid "GNU Coreutils functions"
+msgstr "GNU coreutils functies"
+
+#: ../src/xmlstrings.h:25
+msgid "HTML entities"
+msgstr "HTML entities"
+
+#: ../src/xmlstrings.h:26
+msgid "include JQuery syntax"
+msgstr "ondersteun JQuery syntax"
+
+#: ../src/xmlstrings.h:27
+msgid "Javascript CSS properties"
+msgstr "Javascript CSS eigenschappen"
+
+#: ../src/xmlstrings.h:28
+msgid "Load all php functions"
+msgstr "Alle php functies laden"
+
+#: ../src/xmlstrings.h:29
+msgid "Load auto-completion information"
+msgstr "Auto-completering informatie laden"
+
+#: ../src/xmlstrings.h:30
+msgid "Load completion data"
+msgstr "Auto-completering informatie laden"
+
+#: ../src/xmlstrings.h:31
+msgid "Load glib types and functions"
+msgstr "Glib types en functies laden"
+
+#: ../src/xmlstrings.h:32
+msgid "Load GObject functions"
+msgstr "GObject functies laden"
+
+#: ../src/xmlstrings.h:33
+msgid "Load GTK+ functions"
+msgstr "GTK+ functies laden"
+
+#: ../src/xmlstrings.h:34
+msgid "Load reference data"
+msgstr "Referentie informatie laden"
+
+#: ../src/xmlstrings.h:35
+msgid "Load reference information"
+msgstr "Referentie informatie laden"
+
+#: ../src/xmlstrings.h:36
+msgid "Load standard C library functions "
+msgstr "Standaard C functies laden"
+
+#: ../src/xmlstrings.h:37
+msgid "Load XSLT 2.0 support."
+msgstr "XSLT2.0 support laden"
+
+#: ../src/xmlstrings.h:38
+msgid "Methods in javadoc but not in references"
+msgstr "Ondersteun methode in javadoc maar niet in de references"
+
+#: ../src/xmlstrings.h:39
+msgid "scan for sql in php strings"
+msgstr "Zoek voor SQL in PHP strings"
+
+#: ../src/xmlstrings.h:40
+msgid "Scan for sql in strings"
+msgstr "Zoek naar SQL in strings"
+
+#: ../src/xmlstrings.h:41
+msgid "Self-close tags such as br, hr, and img with /&gt;"
+msgstr "Sluit tags zoals br, hr en img met /&gt; "
+
+#: ../src/xmlstrings.h:42
+msgid "Show a string as a block"
+msgstr "Laat een string zien als blok"
+
+#: ../src/xmlstrings.h:43
+msgid "Show tag attributes as block"
+msgstr "Laat tag attributen zien als blok"
+
+#: ../src/xmlstrings.h:44
+msgid "Show this language in the menu"
+msgstr "Toon deze taal in het menu"
+
+#: ../src/xmlstrings.h:45
+msgid "Tag block-start includes all attributes"
+msgstr "Tag blok-start inclusief alle attributes"
+
+#~ msgid "CSS Minify with cssmin"
+#~ msgstr "CSS Minify met cssmin"
+
+#~ msgid "_Outputbox"
+#~ msgstr "_Uitvoervlak"
+
+#~ msgid "Cannot display file, unknown characters found."
+#~ msgstr "Kan bestand niet laten zien; Onbekende karakters gevonden."
+
+#~ msgid ""
+#~ "Your glib version (%d.%d.%d) is unreliable with remote files. Please "
+#~ "upgrade to 2.18.0 or newer."
+#~ msgstr ""
+#~ "Uw glib versie  (%d.%d.%d) werkt onbetrouwbaar met netwerk bestanden. "
+#~ "Gebruik 2.18.0 of nieuwer."
+
+#~ msgid ""
+#~ "<b>Your glib version (%d.%d.%d) works unreliable with remote files (smb, "
+#~ "ftp, sftp, webdav etc.). Please upgrade to a glib version newer than "
+#~ "2.18.0 if you rely on remote file support.</b>"
+#~ msgstr ""
+#~ "<b>Uw glib versie (%d.%d.%d) werkt onbetrouwbaar met netwerk bestanden "
+#~ "(bijv. smb, ftp, sftp of webdav). Gebruik een versie na 2.18.0 als u "
+#~ "netwerk bestanden gebruikt.</b>"
+
+#~ msgid "_Language:"
+#~ msgstr "_Taal:"
+
+#~ msgid "Error adding bookmark"
+#~ msgstr "Fout bĳ toevoegen bladwĳzer"
+
+#~ msgid "Cannot add bookmarks to unsaved files."
+#~ msgstr "Kan geen bladwĳzers toevoegen aan niet opgeslagen bestanden."
+
+#~ msgid "Paste as HTML _PNG"
+#~ msgstr "Plakken als HTML met _PNG"
+
+#~ msgid "<b>Font</b>"
+#~ msgstr "<b>Lettertype</b>"
+
+#~ msgid "Fo_rmat"
+#~ msgstr "Opmaak"
+
+#~ msgid "Goto _Line"
+#~ msgstr "Ga naar _regel"
+
+#~ msgid "Co_nnect"
+#~ msgstr "Verbinden"
+
+#~ msgid "Connect _anonymously"
+#~ msgstr "Anoniem verbinden"
+
+#~ msgid "Connect as u_ser:"
+#~ msgstr "Verbinden als gebruiker"
+
+#~ msgid "_Username:"
+#~ msgstr "Naam:"
+
+#~ msgid "_Domain:"
+#~ msgstr "Domein:"
+
+#~ msgid "_Password:"
+#~ msgstr "Wachtwoord:"
+
+#~ msgid "Forget password _immediately"
+#~ msgstr "Vergeet wachtwoord direct"
+
+#~ msgid "Remember password until you _logout"
+#~ msgstr "Onthoudt wachtwoord tot uitloggen"
+
+#~ msgid "Remember _forever"
+#~ msgstr "Onthoudt altijd"
+
+#~ msgid "<b>Open URL</b>"
+#~ msgstr "<b>Open URL</b>"
+
+#~ msgid "HTML"
+#~ msgstr "HTML"
+
+#~ msgid "<b>HTML Toolbar</b>"
+#~ msgstr "<b>HTML balk</b>"
+
+#~ msgid "Use lo_wercase HTML tags"
+#~ msgstr "Kleine l_etter HTML tags"
+
+#~ msgid "Use de_precated tags (e.g. <font> and <nobr>)"
+#~ msgstr "Gebruik _verouderde tags (bĳv. <font> en <nobr>)"
+
+#~ msgid ""
+#~ "_Format according to accessibility guidelines (e.g. <strong> for <b>)"
+#~ msgstr ""
+#~ "_Maak op volgens toegankelijkheids-richtlijnen (bijv. <strong> i.p.v. <b>)"
+
+#~ msgid "Use _XHTML style tags (<br />)"
+#~ msgstr "Gebruik XHTML syntax (zoals <br />)"
+
+#~ msgid "<b>Auto Update Tag Options</b>"
+#~ msgstr "<b>Opties voor automatisch tag aanpassen</b>"
+
+#~ msgid "Automatically update a_uthor meta tag"
+#~ msgstr "Automatisch aanpassen van _author meta tag"
+
+#~ msgid "Automatically update _date meta tag"
+#~ msgstr "Automatisch aanpassen van _datum meta tag"
+
+#~ msgid "Automatically update _generator meta tag"
+#~ msgstr "Automatisch aanpassen van _generator meta tag"
+
+#~ msgid "_Make HTML dialogs transient"
+#~ msgstr "HTML dialogen altĳd _vooraan"
+
+#~ msgid "<b>Sidebar</b>"
+#~ msgstr "<b>Zijbalk</b>"
+
+#~ msgid "L_ocation:"
+#~ msgstr "_Positie:"
+
+#~ msgid "Show in _tooltip window"
+#~ msgstr "Referentie informatie bij muis weergeven"
+
+#~ msgid "Mozilla"
+#~ msgstr "Mozilla"
+
+#~ msgid "Galeon"
+#~ msgstr "Galeon"
+
+#~ msgid "_Find..."
+#~ msgstr "_Zoeken..."
+
+#~ msgid "Re_place..."
+#~ msgstr "_Vervangen..."
+
+#~ msgid "Replace"
+#~ msgstr "Vervangen"
+
+#~ msgid "Save _As..."
+#~ msgstr "Opslaan _als..."
+
+#~ msgid "_Unindent"
+#~ msgstr "_Uitspringen"
+
+#~ msgid "_Browse..."
+#~ msgstr "Bladeren..."
+
+#, fuzzy
+#~ msgid "/Edit/Preferences"
+#~ msgstr "Voorkeuren aanpassen"
+
+#~ msgid "Find From Selection"
+#~ msgstr "Zoek van selectie"
+
+#~ msgid "Replace Agai_n"
+#~ msgstr "Herhaal vervangen"
+
+#, fuzzy
+#~ msgid "Replace again"
+#~ msgstr "Herhaal vervangen"
+
+#~ msgid "%d document open."
+#~ msgid_plural "%d documents open."
+#~ msgstr[0] "%d document open."
+#~ msgstr[1] "%d documenten open."
+
+#~ msgid "Advanced open: Finished searching files. "
+#~ msgstr "Geavanceerd openen: Gereed met zoeken naar bestanden. "
+
+#~ msgid "Search failed"
+#~ msgstr "Zoeken mislukt"
+
+#~ msgid "Regular expression error: %s"
+#~ msgstr "Reguliere expressie error: %s"
+
+#~ msgid "Regular expression error: %s at offset %d"
+#~ msgstr "Reguliere expressie error: %s na %d karakters"
+
+#~ msgid "Found %d matches, "
+#~ msgid_plural "Found %d matches, "
+#~ msgstr[0] "%d resultaten gevonden, "
+#~ msgstr[1] "%d resultaten gevonden, "
+
+#~ msgid "replaced %d"
+#~ msgid_plural "replaced %d"
+#~ msgstr[0] "%d vervangen"
+#~ msgstr[1] "%d vervangen"
+
+#~ msgid "Found %d matches"
+#~ msgid_plural "Found %d matches"
+#~ msgstr[0] "%d resultaten gevonden"
+#~ msgstr[1] "%d resultaten gevonden"
+
+#~ msgid ""
+#~ "<span foreground=\"red\" weight=\"bold\">No more matches found, next "
+#~ "search will continue at the beginning.</span>"
+#~ msgstr ""
+#~ "<span foreground=\"red\" weight=\"bold\">Niet meer resultaten gevonden, "
+#~ "volgende zoekopdracht zal verder gaan bĳ begin</span>"
+
+#~ msgid "Selection"
+#~ msgstr "Selectie"
+
+#~ msgid "Entire word only"
+#~ msgstr "Alleen gehele woorden"
+
+#~ msgid "POSIX style regular expression"
+#~ msgstr "POSIX type reguliere expressie"
+
+#~ msgid "PERL style regular expression"
+#~ msgstr "Perl type reguliere expressie"
+
+#~ msgid "The pattern to look for"
+#~ msgstr "Het patroon om naar te zoeken"
+
+#~ msgid "Replace matching text with"
+#~ msgstr "Vervang gevonden resultaat door"
+
+#~ msgid "Where to look for the pattern."
+#~ msgstr "Waar zoeken naar het patroon."
+
+#~ msgid "Found 0 matches, replaced 0"
+#~ msgstr "Vond 0 resultaten, 0 vervangen"
+
+#~ msgid "Found 0 matches"
+#~ msgstr "Vond 0 resultaten"
+
+#~ msgid "<b>_Options</b>"
+#~ msgstr "<b>Optie's</b>"
+
+#~ msgid "How to interpret the pattern."
+#~ msgstr "Hoe het patroon interpreteren."
+
+#~ msgid "What to replace with."
+#~ msgstr "Waarmee vervangen."
+
+#~ msgid "Allow o_verlapping matches"
+#~ msgstr "Overlappende resultaten toestaan"
+
+#~ msgid "After a match is found, start next search within that match."
+#~ msgstr ""
+#~ "Als een resultaat is gevonden, begin dan de volgende zoekopdracht binnen "
+#~ "dat resultaat."
+
+#~ msgid "Select matc_hes"
+#~ msgstr "Selecteer gevonden resultaten"
+
+#~ msgid "Select the matching text instead of just highlighting it"
+#~ msgstr "Selecteer gevonden tekst i.p.v. alleen uitlichten"
+
+#~ msgid "Create a bookmark for each match"
+#~ msgstr "Maak een bladwĳzer voor elk resultaat"
+
+#~ msgid "The parent window"
+#~ msgstr "Het moeder-venster"
+
+#~ msgid "Is Showing"
+#~ msgstr "Laat zien"
+
+#~ msgid "Are we showing a dialog"
+#~ msgstr "Laten we een venster zien"
+
+#~ msgid "Screen"
+#~ msgstr "Scherm"
+
+#~ msgid "The screen where this window will be displayed."
+#~ msgstr "Het scherm waar dit venster wordt weergegeven"
+
+#~ msgid "jpeg"
+#~ msgstr "jpeg"
+
+#~ msgid "png"
+#~ msgstr "png"

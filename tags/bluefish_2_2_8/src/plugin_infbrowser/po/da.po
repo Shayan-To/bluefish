@@ -1,0 +1,130 @@
+# Danish language file for Bluefish.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Rasmus Toftdahl Olesen <rto@pohldata.dk>, 2003.
+# Finn Gruwier Larsen <finngruwierlarsen@gmail.com>, 2010.
+# flemming christensen <fc@stilheden.net>, 2011, 2013, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bluefish 2.2.2\n"
+"Report-Msgid-Bugs-To: bluefish-dev@lists.ems.ru\n"
+"POT-Creation-Date: 2015-07-14 17:51+0200\n"
+"PO-Revision-Date: 2015-11-09 10:53+0100\n"
+"Last-Translator: flemming christensen <fc@stilheden.net>\n"
+"Language-Team: dansk <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: src/plugin_infbrowser/infb_gui.c:139
+msgid "Loading..."
+msgstr "Henter..."
+
+#: src/plugin_infbrowser/infb_gui.c:145 src/plugin_infbrowser/infb_gui.c:205
+msgid "Cannot load file from network"
+msgstr "Kan ikke hente fil fra netværk"
+
+#: src/plugin_infbrowser/infb_gui.c:159
+msgid "Cannot find file"
+msgstr "Kan ikke finde fil"
+
+#: src/plugin_infbrowser/infb_gui.c:369
+msgid "Fragment saved"
+msgstr "Fragment gemt"
+
+#: src/plugin_infbrowser/infb_gui.c:373
+msgid "Cannot open file"
+msgstr "Kan ikke åbne fil"
+
+#: src/plugin_infbrowser/infb_gui.c:457 src/plugin_infbrowser/infb_gui.c:495
+msgid "Nothing found"
+msgstr "Intet fundet"
+
+#: src/plugin_infbrowser/infb_gui.c:561
+msgid "Documentation index"
+msgstr "Dokumentationsindeks"
+
+#: src/plugin_infbrowser/infb_gui.c:566
+msgid "Document index"
+msgstr "Dokumentindeks"
+
+#: src/plugin_infbrowser/infb_gui.c:571
+msgid "Upper level"
+msgstr "Øvre niveau"
+
+#: src/plugin_infbrowser/infb_gui.c:577
+msgid "Save current view"
+msgstr "Gem aktuel visning"
+
+#: src/plugin_infbrowser/infb_gui.c:578
+msgid "Go to selected fragment"
+msgstr "Gå til det valgte fragment"
+
+#: src/plugin_infbrowser/infb_gui.c:600
+msgid "Find"
+msgstr "Søg"
+
+#: src/plugin_infbrowser/infb_gui.c:606
+msgid "Info Browser"
+msgstr "Info-browser"
+
+#: src/plugin_infbrowser/infb_load.c:41
+#, c-format
+msgid "Cannot load reference file %s\n"
+msgstr "Kan ikke hente referencefilen %s\n"
+
+#: src/plugin_infbrowser/infb_load.c:164
+msgid "Documentation entries"
+msgstr "Dokumentationsindgange"
+
+#: src/plugin_infbrowser/infb_load.c:168
+msgid "References"
+msgstr "Referencer"
+
+#: src/plugin_infbrowser/infb_load.c:170
+msgid "DTD"
+msgstr "DTD"
+
+#: src/plugin_infbrowser/infb_load.c:172
+msgid "Web pages"
+msgstr "Websider"
+
+#: src/plugin_infbrowser/infb_text.c:808
+msgid "Unknown document type"
+msgstr "Ukendt dokumenttype"
+
+#: src/plugin_infbrowser/infb_wizard.c:116
+#: src/plugin_infbrowser/infb_wizard.c:164
+msgid "Local DTD file"
+msgstr "Lokal DTD-fil"
+
+#: src/plugin_infbrowser/infb_wizard.c:124
+msgid "Remote DTD file"
+msgstr "Ekstern DTD-fil"
+
+#: src/plugin_infbrowser/infb_wizard.c:161
+msgid "Choose file"
+msgstr "Vælg fil"
+
+#: src/plugin_infbrowser/infb_wizard.c:213
+msgid "Entry name"
+msgstr "Indførslens navn"
+
+#: src/plugin_infbrowser/infb_wizard.c:222
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: src/plugin_infbrowser/infb_wizard.c:258
+msgid "DTD file URI"
+msgstr "URI for DTD-fil"
+
+#: src/plugin_infbrowser/infb_wizard.c:348
+msgid "New info item"
+msgstr "Nyt info-emne"
+
+#: src/plugin_infbrowser/infb_wizard.c:418
+msgid "Entries you can delete"
+msgstr "Indførsler, som kan slettes"

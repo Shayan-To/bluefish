@@ -1,0 +1,132 @@
+# translation of eu.po to Basque
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2009. 
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bluefish 2.2.2\n"
+"Report-Msgid-Bugs-To: bluefish-dev@lists.ems.ru\n"
+"POT-Creation-Date: 2014-10-09 01:05-0700\n"
+"PO-Revision-Date: 2012-06-06 18:39+0200\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/plugin_infbrowser/infb_gui.c:139
+msgid "Loading..."
+msgstr "Kargatzen..."
+
+#: src/plugin_infbrowser/infb_gui.c:145 src/plugin_infbrowser/infb_gui.c:205
+msgid "Cannot load file from network"
+msgstr "Ezin da fitxategia saretik kargatu"
+
+#: src/plugin_infbrowser/infb_gui.c:159
+msgid "Cannot find file"
+msgstr "Ezin da fitxategia bilatu"
+
+#: src/plugin_infbrowser/infb_gui.c:369
+msgid "Fragment saved"
+msgstr "Zatia gordeta"
+
+#: src/plugin_infbrowser/infb_gui.c:373
+msgid "Cannot open file"
+msgstr "Ezin da fitxategia ireki"
+
+#: src/plugin_infbrowser/infb_gui.c:457 src/plugin_infbrowser/infb_gui.c:495
+msgid "Nothing found"
+msgstr "Ezer ez da bilatu"
+
+#: src/plugin_infbrowser/infb_gui.c:561
+msgid "Documentation index"
+msgstr "Dokumentazioaren indizea"
+
+#: src/plugin_infbrowser/infb_gui.c:566
+msgid "Document index"
+msgstr "Dokumentuaren indizea"
+
+#: src/plugin_infbrowser/infb_gui.c:571
+msgid "Upper level"
+msgstr "Goikoa maila"
+
+#: src/plugin_infbrowser/infb_gui.c:577
+msgid "Save current view"
+msgstr "Gorde uneko ikuspegia"
+
+#: src/plugin_infbrowser/infb_gui.c:578
+msgid "Go to selected fragment"
+msgstr "Joan hautatutako zatira"
+
+#: src/plugin_infbrowser/infb_gui.c:600
+msgid "Find"
+msgstr "Bilatu"
+
+#: src/plugin_infbrowser/infb_gui.c:606
+msgid "Info Browser"
+msgstr "Informazio arakatzailea"
+
+#: src/plugin_infbrowser/infb_load.c:41
+#, c-format
+msgid "Cannot load reference file %s\n"
+msgstr "Ezin izan da %s erreferentziako fitxategia kargatu\n"
+
+#: src/plugin_infbrowser/infb_load.c:164
+msgid "Documentation entries"
+msgstr "Dokumentazioaren sarrerak"
+
+#: src/plugin_infbrowser/infb_load.c:168
+msgid "References"
+msgstr "Erreferentziak"
+
+#: src/plugin_infbrowser/infb_load.c:170
+msgid "DTD"
+msgstr "DTD"
+
+#: src/plugin_infbrowser/infb_load.c:172
+msgid "Web pages"
+msgstr "Web orrialdeak"
+
+#: src/plugin_infbrowser/infb_text.c:808
+msgid "Unknown document type"
+msgstr "Dokumentu mota ezezaguna"
+
+#: src/plugin_infbrowser/infb_wizard.c:116
+#: src/plugin_infbrowser/infb_wizard.c:164
+msgid "Local DTD file"
+msgstr "Lokaleko DTD fitxategia"
+
+#: src/plugin_infbrowser/infb_wizard.c:124
+msgid "Remote DTD file"
+msgstr "Urruneko DTD fitxategia"
+
+#: src/plugin_infbrowser/infb_wizard.c:161
+msgid "Choose file"
+msgstr "Aukeratu fitxategia"
+
+#: src/plugin_infbrowser/infb_wizard.c:213
+msgid "Entry name"
+msgstr "Sarrerako izena"
+
+#: src/plugin_infbrowser/infb_wizard.c:222
+msgid "Description"
+msgstr "Deskripzioa"
+
+#: src/plugin_infbrowser/infb_wizard.c:258
+msgid "DTD file URI"
+msgstr "DTD fitxategiaren URIa"
+
+#: src/plugin_infbrowser/infb_wizard.c:348
+msgid "New info item"
+msgstr "Informazio-elementu berria"
+
+#: src/plugin_infbrowser/infb_wizard.c:418
+msgid "Entries you can delete"
+msgstr "Ezaba ditzakezun sarrerak"
